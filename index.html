@@ -412,14 +412,6 @@
     </div>
   </div>
 
-  <!-- MANAGER HEAT MAP -->
-  <div class="card" style="margin-bottom:24px;">
-    <div class="card-title"><span class="dot" style="background:var(--yellow)"></span>Manager WB Heatmap — Day by Day (Jun 1–15)</div>
-    <div class="chart-wrap short">
-      <canvas id="heatmapChart"></canvas>
-    </div>
-  </div>
-
   <!-- DAY TABS -->
   <div class="section-header">Daily Case Detail</div>
   <div class="tabs">
@@ -826,21 +818,6 @@ const strong    = [5,  8,  7, 14,  6,  7,  1,  6, 12, 14,  0];
 const moderate  = [5,  4,  2,  3,  2, 12,  3,  4,  2,  1,  0];
 const noQuality = [0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  9];
 
-const managers = [
-  { name: 'Jyothirmayee Ramineni', short: 'Jyothirmayee', cls: 'm-jyo', color: '#a78bfa',
-    days: [0, 0, 0, 17, 0, 16, 0, 3, 1, 0, 0], total: 37 },
-  { name: 'Nikhil Srivastava', short: 'Nikhil', cls: 'm-nik', color: '#60c8ff',
-    days: [10, 0, 0, 0, 0, 3, 0, 0, 13, 0, 9], total: 35 },
-  { name: 'Sai Vikram Kinnera', short: 'Sai Vikram', cls: 'm-sai', color: '#fb923c',
-    days: [0, 0, 0, 0, 8, 0, 1, 0, 0, 15, 0], total: 39 },
-  { name: 'Mirza Ameer Ali Baig', short: 'Mirza', cls: 'm-mir', color: '#facc15',
-    days: [0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0], total: 12 },
-  { name: 'Shubha Vijayaraghavan', short: 'Shubha', cls: 'm-shu', color: '#2dd4bf',
-    days: [0, 0, 9, 0, 0, 0, 3, 0, 0, 0, 0], total: 12 },
-  { name: 'Rohit Kala', short: 'Rohit', cls: 'm-roh', color: '#f472b6',
-    days: [0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0], total: 7 },
-];
-
 // Week data
 const week1 = [10, 12, 9, 17, 8];
 const week2 = [19, 4, 10, 14, 15];
@@ -956,34 +933,6 @@ new Chart(ctx2, {
     }
   }
 });
-
-// ── HEATMAP (grouped bar — all 11 days) ──────────────────────
-const ctx3 = document.getElementById('heatmapChart').getContext('2d');
-new Chart(ctx3, {
-  type: 'bar',
-  data: {
-    labels: days,
-    datasets: managers.filter(m => m.total > 0).map(m => ({
-      label: m.short,
-      data: m.days,
-      backgroundColor: m.color + 'cc',
-      borderRadius: 3,
-      borderSkipped: false,
-    }))
-  },
-  options: {
-    responsive: true,
-    maintainAspectRatio: false,
-    plugins: {
-      legend: { position: 'right', labels: { boxWidth: 10, padding: 9, font: { size: 11 } } }
-    },
-    scales: {
-      x: { grid: { color: 'rgba(226,232,240,.8)' }, ticks: { font: { size: 11 } } },
-      y: { grid: { color: 'rgba(226,232,240,.8)' }, ticks: { precision: 0 }, beginAtZero: true }
-    }
-  }
-});
-
 
 // ── TAB SWITCH ────────────────────────────────────────────────
 function switchTab(day, btn) {
