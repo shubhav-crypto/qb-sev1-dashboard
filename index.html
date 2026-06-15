@@ -393,6 +393,33 @@
     </div>
   </div>
 
+  <!-- DAY-ON-DAY SUMMARY TABLE -->
+  <div class="section-header" style="margin-bottom:14px;display:flex;align-items:center;justify-content:space-between;">
+    <span id="summaryTitle">Daily Summary</span>
+    <select id="summaryMode" onchange="renderSummaryTable(this.value)"
+      style="background:var(--surface2);color:var(--text);border:1px solid var(--border);border-radius:7px;padding:5px 28px 5px 12px;font-size:12px;font-weight:600;cursor:pointer;outline:none;appearance:none;-webkit-appearance:none;background-image:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2210%22 height=%226%22 viewBox=%220 0 10 6%22><path d=%22M0 0l5 6 5-6z%22 fill=%22%2394a3b8%22/></svg>');background-repeat:no-repeat;background-position:right 10px center;">
+      <option value="daily">Daily (DoD)</option>
+      <option value="wow">Week on Week (WoW)</option>
+      <option value="mom">Month on Month (MoM)</option>
+    </select>
+  </div>
+  <div class="card" style="margin-bottom:24px;padding:0;overflow:hidden;">
+    <table id="summaryTable" style="width:100%;border-collapse:collapse;font-size:13px;">
+      <thead>
+        <tr style="background:var(--surface2);border-bottom:2px solid var(--border);">
+          <th id="summaryPeriodHeader" style="padding:12px 16px;text-align:left;font-weight:600;color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;">Date</th>
+          <th style="padding:12px 16px;text-align:left;font-weight:600;color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;">Manager</th>
+          <th style="padding:12px 16px;text-align:center;font-weight:600;color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;">Sev1s</th>
+          <th style="padding:12px 16px;text-align:center;font-weight:600;color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;">Quality</th>
+          <th style="padding:12px 16px;text-align:center;font-weight:600;color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;">Avg Alert Resolve</th>
+          <th style="padding:12px 16px;text-align:center;font-weight:600;color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;">Avg Channel Engage</th>
+          <th style="padding:12px 16px;text-align:left;font-weight:600;color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;">Red Flags</th>
+        </tr>
+      </thead>
+      <tbody id="summaryBody"></tbody>
+    </table>
+  </div>
+
   <!-- CHARTS ROW -->
   <div class="grid-2">
     <!-- Daily volume chart -->
@@ -1034,6 +1061,397 @@ document.querySelectorAll('.badge.moderate').forEach(badge => {
     modTip.style.display = 'none';
   });
 });
+
+// ── RESPONSE TIME DATA ────────────────────────────────────────
+// alert_posted → manager ack/resolve in #support-alerts-service-sig
+// Format: { ack: 'Xm Ys', resolve: 'Xm Ys' }
+// ack = time to Acknowledged (if applicable), resolve = time to Resolved
+// Source: PagerDuty thread timestamps read from Slack
+const rtData = {
+  // ── JUN 1 (Nikhil Srivastava) ────────────────────────────────
+  '473523438': { resolve: '41s' },       // 13:09:14 → res 13:09:55
+  '473600625': { resolve: '1m 1s' },     // 13:44:46 → res 13:45:47
+  '473513077': { resolve: '33s' },       // 13:59:25 → res 13:59:58
+  '473602269': { resolve: '29s' },       // 14:34:33 → res 14:35:02
+  '473587263': { resolve: '23s', channelEngage: '4m 18s' },   // sev1 ch created 16:32:12, Nikhil text 16:36:30
+  '473604096': { resolve: '22s', channelEngage: '2h 20m 36s' }, // ch created 17:24:35, Nikhil text 19:45:11
+  '473604164': { resolve: '28s' },       // ch created 17:33:47, Nikhil never appeared
+  '473604551': { resolve: '40s' },       // ch created 18:21:45, Nikhil no text
+  '473604871': { resolve: '24s', channelEngage: '56m 41s' },  // ch created 18:58:46, Nikhil text 19:55:27
+  '473604902': { resolve: '24s' },       // ch created 19:01:17, Nikhil no text
+
+  // ── JUN 2 (Mirza Ameer Ali Baig) ─────────────────────────────
+  '473611838': { resolve: '23s' },       // no channel
+  '473567778': { resolve: '1m 6s' },     // no channel
+  '473589842': { resolve: '22s', channelEngage: '20m 58s' },  // ch created 14:44:02, Mirza text 15:05:00
+  '473613430': { resolve: '16s', channelEngage: '2m 34s' },   // ch created 15:44:40, Mirza text 15:47:14
+  '473613541': { resolve: '14s', channelEngage: '3m 11s' },   // ch created 16:00:49, Mirza text 16:04:00
+  '473613830': { resolve: '18s' },       // ch created 16:41:38, Mirza no text
+  '473613868': { resolve: '33s', channelEngage: '3m 54s' },   // ch created 16:48:11, Mirza text 16:52:05
+  '473520691': { resolve: '29s', channelEngage: '1m 57s' },   // ch created 17:08:11, Mirza text 17:10:08
+  '473614090': { resolve: '13s', channelEngage: '5m 50s' },   // ch created 17:17:58, Mirza text 17:23:48
+  '473614334': { resolve: '26s', channelEngage: '1m 30s' },   // ch created 17:54:18, Mirza text 17:55:48
+  '473589470': { resolve: '15s', channelEngage: '3m 35s' },   // ch created 18:49:02, Mirza text 18:52:37
+  '473615041': { resolve: '29s', channelEngage: '5m 27s' },   // ch created 19:10:52, Mirza text 19:16:19
+
+  // ── JUN 3 (Shubha Vijayaraghavan) ────────────────────────────
+  '473622179': { ack: '25s', resolve: '27s', channelEngage: '4m 23s' }, // ch created 13:18:41, Shubha text 13:23:04
+  '473622876': { ack: '56s', resolve: '58s', channelEngage: '11m 18s' }, // ch created 14:40:34, Shubha text 14:51:52
+  '473588268': { ack: '16s', resolve: '18s', channelEngage: '2m 35s' },  // ch created 15:24:57, Shubha text 15:27:32
+  '473623584': { resolve: '1m 13s', channelEngage: '3m 51s' },           // ch created 15:59:35, Shubha text 16:03:26
+  '473624107': { ack: '23s', resolve: '24s', channelEngage: '4m 30s' },  // ch created 17:06:25, Shubha text 17:10:55
+  '473624266': { resolve: '18s', channelEngage: '3m 5s' },               // ch created 17:24:51, Shubha text 17:27:56
+  '473624051': { ack: '1m 13s', resolve: '1m 15s' },                     // ch created 16:57:07, Shubha joined only
+  '473493085': { ack: '12s', resolve: '14s' },                           // pre-existing channel (May 18)
+  '473623729': { ack: '18s', resolve: '21s', channelEngage: '3m 47s' },  // ch created 19:03:48, Shubha text 19:07:35
+
+  // ── JUN 4 (Jyothirmayee) ─────────────────────────────────────
+  '473633737': { resolve: '1m 24s', channelEngage: '1h 1m 35s' },  // ch created 12:16:15, Jyo text 13:17:50
+  '473634707': { resolve: '1m 52s' },    // ch created 13:25:16, Jyo never appeared
+  '473634750': { ack: '12s', resolve: '39s' }, // ch created 13:28:12, Jyo never appeared
+  '473634762': { resolve: '47s' },       // no channel found
+  '473633842': { ack: '27s', resolve: '1m 20s', channelEngage: '2h 49m 0s' }, // ch created 12:22:59, Jyo text 15:11:59
+  '473605601': { resolve: '22s', channelEngage: '1m 27s' },   // ch created 15:45:34, Jyo text 15:47:01
+  '473636953': { resolve: '31s', channelEngage: '9m 13s' },   // ch created 15:59:44, Jyo text 16:08:57
+  '473636986': { resolve: '23s', channelEngage: '8m 44s' },   // ch created 16:02:34, Jyo text 16:11:18
+  '473637157': { resolve: '28s' },       // no channel found
+  '473634071': { resolve: '34s' },       // no channel found
+  '473631372': { ack: '22s', resolve: '29s' }, // no channel found
+  '473612144': { resolve: '33s', channelEngage: '15m 20s' },  // ch created 17:55:07, Jyo text 18:10:27
+  '473248499': { ack: '33s', resolve: '37s' }, // pre-existing channel (Apr 15)
+  '473638777': { resolve: '33s' },       // no channel found
+  '473505955': { resolve: '19s' },       // pre-existing channel (May 26)
+  '473639607': { resolve: '2m 15s' },    // ch created 19:14:38, Jyo joined only
+  '473638243': { resolve: '22s', channelEngage: '1h 53m 42s' }, // ch created 17:37:46, Jyo text 19:31:28
+
+  // ── JUN 5 (Sai Vikram) ───────────────────────────────────────
+  '473653075': { resolve: '2m 9s', channelEngage: '34m 3s' },   // ch created 12:38:39, SV text 13:12:42
+  '473654353': { resolve: '3m 10s', channelEngage: '10m 11s' }, // ch created 14:17:10, SV text 14:27:21
+  '473654956': { resolve: '3m 9s', channelEngage: '25m 40s' },  // ch created 14:33:32, SV text 14:59:12
+  '473655407': { resolve: '3m 13s' },    // no channel
+  '473643333': { resolve: '3m 14s' },    // ch created Jun 4 22:58:58, SV joined only
+  '473657275': { resolve: '3m 12s', channelEngage: '15m 39s' }, // ch created 17:34:15, SV text 17:49:54
+  '473658432': { resolve: '3m 12s', channelEngage: '4m 28s' },  // ch created 18:55:04, SV text 18:59:32
+  '473658708': { resolve: '3m 11s', channelEngage: '5m 2s' },   // ch created 19:09:08, SV text 19:14:10
+
+  // ── JUN 8 (Jyothirmayee + Nikhil) ───────────────────────────
+  '473692532': { ack: '1m 41s', resolve: '1m 47s', channelEngage: '6m 47s' },  // ch created 12:43:02, Jyo text 12:49:49
+  '473692644': { resolve: '18s', channelEngage: '12m 8s' },   // ch created 12:49:06, Jyo text 13:01:14
+  '473692840': { resolve: '52s' },       // ch created 13:00:27, Jyo never appeared
+  '473653702': { resolve: '32s', channelEngage: '1m 38s' },   // ch created 13:19:18, Jyo text 13:20:56
+  '473693881': { resolve: '46s', channelEngage: '6m 13s' },   // ch created 14:02:12, Jyo text 14:08:25
+  '473694062': { resolve: '20s', channelEngage: '7m 10s' },   // ch created 14:22:33, Jyo text 14:29:43
+  '473694734': { resolve: '23s', channelEngage: '4m 56s' },   // ch created 14:54:45, Jyo text 14:59:41
+  '473694893': { resolve: '23s', channelEngage: '4m 15s' },   // ch created 15:05:35, Jyo text 15:09:50
+  '473663111': { resolve: '30s', channelEngage: '5m 13s' },   // ch created 16:16:01, Jyo text 16:21:14
+  '473696005': { resolve: '38s', channelEngage: '14m 17s' },  // ch created 16:20:59, Jyo text 16:35:17
+  '473697035': { resolve: '28s', channelEngage: '8m 23s' },   // ch created 17:36:54, Jyo text 17:45:17
+  '473697121': { resolve: '1m 19s', channelEngage: '7m 37s' }, // ch created 17:43:46, Jyo text 17:51:23
+  '473621085': { ack: '1m 31s', resolve: '1m 37s' },          // pre-existing channel (Jun 3)
+  '473697264': { resolve: '23s' },       // ch created 17:54:31, Jyo joined only
+  '473697509': { resolve: '58s', channelEngage: '10m 31s' },  // ch created 18:10:56, Jyo text 18:21:27
+  '473697653': { resolve: '33s', channelEngage: '6m 6s' },    // ch created 18:19:24, Jyo text 18:25:30 (Nikhil never appeared)
+  '473646616': { ack: '1m 42s', resolve: '1m 47s', channelEngage: '3m 41s' }, // ch created 18:20:25, Jyo text 18:24:06
+  '473697838': { resolve: '30s', channelEngage: '3m 26s' },   // ch created 18:32:08, Jyo text 18:35:34 (Nikhil never appeared)
+  '473245400': { resolve: '31s', channelEngage: '3m 31s' },   // ch created 18:39:10, Nikhil text 18:42:41
+
+  // ── JUN 9 (Sai Vikram + Shubha) ─────────────────────────────
+  '473711947': { ack: '2m 31s', resolve: '2m 36s', channelEngage: '49m 46s' }, // ch created 12:53:48, SV text 13:43:34
+  '473713404': { ack: '32s', resolve: '34s', channelEngage: '2m 58s' },         // ch created 14:31:47, Shubha text 14:34:45
+  '473677970': { ack: '17s', resolve: '21s', channelEngage: '13m 0s' },         // ch created 14:39:46, Shubha text 14:52:46
+
+  // ── JUN 10 (Rohit + Jyothirmayee) ────────────────────────────
+  '473729989': { ack: '25s', resolve: '1m 4s', channelEngage: '56m 31s' },  // ch created 12:33:01, Rohit text 13:29:32
+  '473733059': { resolve: '21s', channelEngage: '13m 37s' },  // ch created 13:51:42, Rohit text 14:05:19
+  '473733080': { resolve: '1m 54s' },    // ch created 13:52:36, Rohit never appeared
+  '473733820': { resolve: '25s' },       // ch created 14:40:18, Rohit never appeared
+  '473729164': { ack: '48s', channelEngage: '6m 57s' },        // ch created 15:09:47, Rohit text 15:16:44
+  '473734321': { ack: '37s', resolve: '2m 39s', channelEngage: '14m 42s' }, // ch created 15:10:02, Rohit text 15:24:44
+  '473734813': { resolve: '25s' },       // ch created 15:42:35, Rohit never appeared
+  '473731556': { resolve: '24s', channelEngage: '1m 29s' },    // ch created 19:14:24, Jyo text 19:15:53
+  '473738074': { resolve: '22s', channelEngage: '3m 24s' },    // ch created 19:19:17, Jyo text 19:22:40
+  '473738147': { resolve: '20s', channelEngage: '2m 16s' },    // ch created 19:23:11, Jyo text 19:25:27
+
+  // ── JUN 11 (Nikhil + Jyothirmayee) ──────────────────────────
+  '473751438': { resolve: '27s' },       // 12:39:56 → res 12:40:23
+  '473752851': { resolve: '20s' },       // 14:11:18 → res 14:11:38
+  '473752886': { resolve: '22s' },       // 14:14:05 → res 14:14:27
+  '473754009': { resolve: '24s' },       // 15:26:47 → res 15:27:11
+  '473755111': { resolve: '26s' },       // 16:43:20 → res 16:43:46
+  '473755197': { resolve: '30s' },       // 16:48:56 → res 16:49:26
+  '473743172': { resolve: '25s' },       // 17:38:36 → res 17:39:01
+  '473743597': { resolve: '22s' },       // 17:51:49 → res 17:52:11
+  '473756525': { resolve: '20s' },       // 18:19:13 → res 18:19:33
+  '473744331': { resolve: '16s' },       // 18:29:11 → res 18:29:27
+  '473744459': { resolve: '31s' },       // 18:34:29 → res 18:35:00
+  '473756810': { resolve: '45s' },       // 18:36:48 → res 18:37:33
+  '473756818': { ack: '2m 23s', resolve: '2m 36s' }, // 18:37:21 → ack 18:39:44 → res 18:39:57 (Jyothirmayee)
+  '473757516': { resolve: '29s' },       // 19:20:25 → res 19:20:54
+
+  // ── JUN 12 (Sai Vikram) ──────────────────────────────────────
+  '473764192': { resolve: '3m 17s' },    // 12:37:12 → 12:40:29
+  '473772063': { ack: '10s' },           // 12:51:46 → ack 12:51:56 (resolve auto next day)
+  '473772069': { ack: '1m 21s' },        // 14:09:33 → ack 14:10:54
+  '473774824': { ack: '2m 26s' },        // 15:59:56 → ack 16:02:22
+  '473774927': { ack: '29s' },           // 16:05:43 → ack 16:06:12
+  '473775323': { resolve: '3m 17s' },    // 16:32:50 → 16:36:07
+  '473775967': { resolve: '3m 21s' },    // 17:22:30 → 17:25:51
+  '473698784': { ack: '1m 21s' },        // 17:30:48 → ack 17:32:09
+  '473776135': { resolve: '3m 13s' },    // 17:33:20 → 17:36:33
+  '473776048': { resolve: '3m 11s' },    // 18:02:26 → 18:05:37
+  '473739241': { resolve: '3m 13s' },    // 18:42:49 → 18:46:02
+  '473775839': { resolve: '3m 16s' },    // 19:20:36 → 19:23:52
+  '473756017': { ack: '10s' },           // 19:24:18 → ack 19:24:28
+  '473777807': { ack: '1m 12s' },        // 19:27:27 → ack 19:28:39
+  '473777827': { ack: '8s' },            // 19:28:37 → ack 19:28:45
+
+  // ── JUN 15 (Nikhil) ──────────────────────────────────────────
+  '473774704': { resolve: '1m 2s',  channelEngage: '3m 45s' },   // ch created 12:54:25, Nikhil text 12:58:10
+  '473787849': { resolve: '33s' },                                // ch created Jun 13 — pre-existing
+  '473813191': { resolve: '21s',  channelEngage: '22m 10s' },    // ch created 13:51:09, Nikhil text 14:13:19
+  '473813208': { resolve: '2m 18s', channelEngage: '18m 39s' },  // ch created 13:51:56, Nikhil text 14:10:35
+  '473813340': { resolve: '22s',  channelEngage: '8m 20s' },     // ch created 14:00:42, Nikhil text 14:09:02
+  '473813531': { resolve: '29s',  channelEngage: '13m 40s' },    // ch created 14:10:19, Nikhil text 14:23:59
+  '473813727': { resolve: '40s',  channelEngage: '4m 56s' },     // ch created 14:22:07, Nikhil text 14:27:03
+  '473814346': { resolve: '23s',  channelEngage: '28m 58s' },    // ch created 14:59:45, Nikhil text 15:28:43
+  '473814469': { resolve: '26s',  channelEngage: '22m 59s' },    // ch created 15:07:03, Nikhil text 15:30:02
+};
+
+// ── INJECT COLUMNS ────────────────────────────────────────────
+// Add two <th> headers to every case table, then inject <td> per row
+function rtColor(seconds) {
+  if (seconds <= 60)  return { bg: 'rgba(22,163,74,.12)',  color: '#16a34a', label: '🟢' };
+  if (seconds <= 180) return { bg: 'rgba(217,119,6,.12)',  color: '#d97706', label: '🟡' };
+  return               { bg: 'rgba(220,38,38,.12)',  color: '#dc2626', label: '🔴' };
+}
+
+function parseSeconds(str) {
+  if (!str) return null;
+  const m = str.match(/(?:(\d+)h\s*)?(?:(\d+)m\s*)?(?:(\d+)s)?/);
+  return ((parseInt(m[1])||0) * 3600) + ((parseInt(m[2])||0) * 60) + (parseInt(m[3])||0);
+}
+
+function rtCell(entry, field, noColor) {
+  if (!entry) return '<td class="time-cell" style="color:#94a3b8;font-size:11px;">—</td>';
+  const val = entry[field];
+  if (!val) return '<td class="time-cell" style="color:#94a3b8;font-size:11px;">—</td>';
+  if (noColor) {
+    return `<td style="white-space:nowrap;font-size:12px;color:#0f172a;font-weight:700;">${val}</td>`;
+  }
+  const secs = parseSeconds(val);
+  const c = rtColor(secs);
+  return `<td style="white-space:nowrap;font-size:12px;">
+    <span style="background:${c.bg};color:${c.color};border-radius:5px;padding:2px 7px;font-weight:600;">${c.label} ${val}</span>
+  </td>`;
+}
+
+// Add headers to every case-table
+document.querySelectorAll('.case-table thead tr').forEach(tr => {
+  const th1 = document.createElement('th');
+  th1.textContent = 'Alert Ack';
+  th1.title = 'Time from PD alert posted in #support-alerts-service-sig → QB Manager first Acknowledged the alert';
+  th1.style.cssText = 'white-space:nowrap;cursor:help;';
+  const th2 = document.createElement('th');
+  th2.textContent = 'Alert Resolve';
+  th2.title = 'Time from PD alert posted in #support-alerts-service-sig → QB Manager Resolved the alert';
+  th2.style.cssText = 'white-space:nowrap;cursor:help;';
+  const th3 = document.createElement('th');
+  th3.textContent = 'Channel Engage';
+  th3.title = 'Time from Sev1 channel creation → QB Manager\'s first text message in the channel';
+  th3.style.cssText = 'white-space:nowrap;cursor:help;';
+  tr.appendChild(th1);
+  tr.appendChild(th2);
+  tr.appendChild(th3);
+});
+
+// Add data cells to every case row
+document.querySelectorAll('.case-table tbody tr').forEach(row => {
+  const caseCell = row.cells[1];
+  if (!caseCell) return;
+  const caseNum = caseCell.textContent.trim();
+  const entry = rtData[caseNum];
+  row.insertAdjacentHTML('beforeend',
+    rtCell(entry, 'ack') + rtCell(entry, 'resolve') + rtCell(entry, 'channelEngage', true)
+  );
+});
+
+// ── SUMMARY TABLE — Daily / WoW / MoM ────────────────────────
+
+// Base data: one entry per working day
+// Each day knows its ISO date string (YYYY-MM-DD), manager, and case list
+// Week = Sun–Sat  |  Month = calendar month
+const summaryDays = [
+  { label: 'Jun 1',  iso: '2026-06-01', manager: 'Nikhil',             panelIdx: 0,  cases: ['473523438','473600625','473513077','473602269','473587263','473604096','473604164','473604551','473604871','473604902'] },
+  { label: 'Jun 2',  iso: '2026-06-02', manager: 'Mirza',              panelIdx: 1,  cases: ['473611838','473567778','473589842','473613430','473613541','473613830','473613868','473520691','473614090','473614334','473589470','473615041'] },
+  { label: 'Jun 3',  iso: '2026-06-03', manager: 'Shubha',             panelIdx: 2,  cases: ['473622179','473622876','473588268','473623584','473624107','473624266','473624051','473493085','473623729'] },
+  { label: 'Jun 4',  iso: '2026-06-04', manager: 'Jyothirmayee',       panelIdx: 3,  cases: ['473633737','473634707','473634750','473634762','473633842','473605601','473636953','473636986','473637157','473634071','473631372','473612144','473248499','473638777','473505955','473639607','473638243'] },
+  { label: 'Jun 5',  iso: '2026-06-05', manager: 'Sai Vikram',         panelIdx: 4,  cases: ['473653075','473654353','473654956','473655407','473643333','473657275','473658432','473658708'] },
+  { label: 'Jun 8',  iso: '2026-06-08', manager: 'Jyo + Nikhil',       panelIdx: 5,  cases: ['473692532','473692644','473692840','473653702','473693881','473694062','473694734','473694893','473621085','473663111','473696005','473697035','473697121','473697264','473697509','473646616','473697653','473697838','473245400'] },
+  { label: 'Jun 9',  iso: '2026-06-09', manager: 'Sai Vikram + Shubha',panelIdx: 6,  cases: ['473711947','473713404','473677970','473697509'] },
+  { label: 'Jun 10', iso: '2026-06-10', manager: 'Rohit + Jyo',        panelIdx: 7,  cases: ['473729989','473733059','473733080','473733820','473729164','473734321','473734813','473731556','473738074','473738147'] },
+  { label: 'Jun 11', iso: '2026-06-11', manager: 'Nikhil + Jyo',       panelIdx: 8,  cases: ['473751438','473752851','473752886','473754009','473755111','473755197','473743172','473743597','473756525','473744331','473744459','473756810','473756818','473757516'] },
+  { label: 'Jun 12', iso: '2026-06-12', manager: 'Sai Vikram',         panelIdx: 9,  cases: ['473764192','473772063','473772069','473774824','473774927','473775323','473775967','473698784','473776135','473776048','473739241','473775839','473756017','473777807','473777827'] },
+  { label: 'Jun 15', iso: '2026-06-15', manager: 'Nikhil',             panelIdx: 10, cases: ['473774704','473787849','473813191','473813208','473813340','473813531','473813727','473814346','473814469'] },
+];
+
+// Pre-cache quality counts from DOM panels (run once)
+const qualityCounts = summaryDays.map(d => {
+  const panel = document.querySelectorAll('.day-panel')[d.panelIdx];
+  if (!panel) return { strong: 0, mod: 0, pending: 0 };
+  return {
+    strong:  panel.querySelectorAll('.badge.strong').length,
+    mod:     panel.querySelectorAll('.badge.moderate').length,
+    pending: panel.querySelectorAll('.badge.pending').length,
+  };
+});
+
+function fmtSecs(s) {
+  if (s === null || isNaN(s) || s < 0) return '—';
+  const h = Math.floor(s / 3600);
+  const m = Math.floor((s % 3600) / 60);
+  const sec = s % 60;
+  if (h > 0) return `${h}h ${m}m ${sec}s`;
+  if (m > 0) return `${m}m ${sec}s`;
+  return `${sec}s`;
+}
+
+function avgCell(seconds, field) {
+  if (seconds === null) return '<td style="padding:10px 16px;text-align:center;color:#94a3b8;font-size:12px;">—</td>';
+  const val = fmtSecs(Math.round(seconds));
+  if (field === 'resolve') {
+    const c = rtColor(Math.round(seconds));
+    return `<td style="padding:10px 16px;text-align:center;white-space:nowrap;font-size:12px;">
+      <span style="background:${c.bg};color:${c.color};border-radius:5px;padding:2px 7px;font-weight:600;">${c.label} ${val}</span>
+    </td>`;
+  }
+  return `<td style="padding:10px 16px;text-align:center;white-space:nowrap;font-size:12px;color:#0f172a;font-weight:700;">${val}</td>`;
+}
+
+// Returns { resolveSecs[], engageSecs[], redFlags[], managers (deduped) }
+function aggregateCases(dayList) {
+  const resolveSecs = [], engageSecs = [], redFlags = [];
+  const managerSet = new Set();
+  dayList.forEach(d => {
+    // Split composite manager strings like "Jyo + Nikhil"
+    d.manager.split(/\s*\+\s*/).forEach(m => managerSet.add(m.trim()));
+    d.cases.forEach(c => {
+      const e = rtData[c];
+      if (!e) return;
+      if (e.resolve) { const s = parseSeconds(e.resolve); if (s !== null) resolveSecs.push(s); }
+      if (e.channelEngage) {
+        const s = parseSeconds(e.channelEngage);
+        if (s !== null) {
+          engageSecs.push(s);
+          if (s >= 1800) redFlags.push({ caseNum: c, time: e.channelEngage });
+        }
+      }
+    });
+  });
+  return { resolveSecs, engageSecs, redFlags, managers: [...managerSet] };
+}
+
+// Build grouped quality HTML for a set of days
+function qualityHTML(dayList) {
+  let strong = 0, mod = 0, pending = 0;
+  dayList.forEach(d => {
+    const q = qualityCounts[d.panelIdx];
+    strong  += q.strong;
+    mod     += q.mod;
+    pending += q.pending;
+  });
+  const parts = [];
+  if (strong)  parts.push(`<span style="background:rgba(22,163,74,.12);color:#16a34a;border-radius:4px;padding:1px 6px;font-size:11px;font-weight:600;">${strong} Strong</span>`);
+  if (mod)     parts.push(`<span style="background:rgba(217,119,6,.12);color:#d97706;border-radius:4px;padding:1px 6px;font-size:11px;font-weight:600;">${mod} Mod</span>`);
+  if (pending) parts.push(`<span style="background:rgba(100,116,139,.15);color:#64748b;border-radius:4px;padding:1px 6px;font-size:11px;font-weight:600;">${pending} Pending</span>`);
+  if (!parts.length) return '<td style="padding:10px 16px;text-align:center;color:#94a3b8;font-size:12px;">—</td>';
+  return `<td style="padding:10px 16px;text-align:center;white-space:nowrap;">${parts.join(' ')}</td>`;
+}
+
+function redFlagCell(redFlags) {
+  if (!redFlags.length) return '<td style="padding:10px 16px;color:#16a34a;font-size:12px;">✓ None</td>';
+  const items = redFlags.map(f =>
+    `<span style="display:inline-block;background:rgba(220,38,38,.08);color:#dc2626;border-radius:4px;padding:1px 6px;font-size:11px;font-weight:600;margin:1px 2px;">${f.caseNum} (${f.time})</span>`
+  ).join(' ');
+  return `<td style="padding:10px 16px;font-size:11px;">${items}</td>`;
+}
+
+// Sun–Sat week key for an ISO date string
+function weekKey(iso) {
+  const d = new Date(iso + 'T00:00:00');
+  const day = d.getDay(); // 0=Sun
+  const sun = new Date(d); sun.setDate(d.getDate() - day);
+  const sat = new Date(sun); sat.setDate(sun.getDate() + 6);
+  const fmt = dt => `${['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][dt.getMonth()]} ${dt.getDate()}`;
+  return `${fmt(sun)} – ${fmt(sat)}`;
+}
+
+// Month key e.g. "June 2026"
+function monthKey(iso) {
+  const d = new Date(iso + 'T00:00:00');
+  return `${['January','February','March','April','May','June','July','August','September','October','November','December'][d.getMonth()]} ${d.getFullYear()}`;
+}
+
+function buildRow(periodLabel, dayList, idx) {
+  const { resolveSecs, engageSecs, redFlags, managers } = aggregateCases(dayList);
+  const totalCases = dayList.reduce((s, d) => s + d.cases.length, 0);
+  const avgResolve = resolveSecs.length ? resolveSecs.reduce((a,b)=>a+b,0)/resolveSecs.length : null;
+  const avgEngage  = engageSecs.length  ? engageSecs.reduce((a,b)=>a+b,0)/engageSecs.length   : null;
+  const bg = idx % 2 === 0 ? '' : 'background:rgba(255,255,255,.025)';
+  return `<tr style="${bg};border-bottom:1px solid var(--border);">
+    <td style="padding:10px 16px;font-weight:600;white-space:nowrap;color:var(--text);">${periodLabel}</td>
+    <td style="padding:10px 16px;color:var(--text-muted);font-size:12px;">${managers.join(', ')}</td>
+    <td style="padding:10px 16px;text-align:center;font-weight:700;font-size:14px;color:var(--text);">${totalCases}</td>
+    ${qualityHTML(dayList)}
+    ${avgCell(avgResolve, 'resolve')}
+    ${avgCell(avgEngage, 'channelEngage')}
+    ${redFlagCell(redFlags)}
+  </tr>`;
+}
+
+function renderSummaryTable(mode) {
+  const tbody = document.getElementById('summaryBody');
+  const titleEl = document.getElementById('summaryTitle');
+  const periodHdrEl = document.getElementById('summaryPeriodHeader');
+  tbody.innerHTML = '';
+
+  if (mode === 'daily') {
+    titleEl.textContent = 'Daily Summary';
+    periodHdrEl.textContent = 'Date';
+    summaryDays.forEach((d, idx) => {
+      tbody.insertAdjacentHTML('beforeend', buildRow(d.label, [d], idx));
+    });
+
+  } else if (mode === 'wow') {
+    titleEl.textContent = 'Week-on-Week Summary  (Sun – Sat)';
+    periodHdrEl.textContent = 'Week';
+    // Group days by Sun–Sat week, preserving order
+    const groups = [], seen = {};
+    summaryDays.forEach(d => {
+      const key = weekKey(d.iso);
+      if (!seen[key]) { seen[key] = true; groups.push({ key, days: [] }); }
+      groups[groups.length - 1].days.push(d);
+    });
+    groups.forEach((g, idx) => {
+      tbody.insertAdjacentHTML('beforeend', buildRow(g.key, g.days, idx));
+    });
+
+  } else if (mode === 'mom') {
+    titleEl.textContent = 'Month-on-Month Summary';
+    periodHdrEl.textContent = 'Month';
+    const groups = [], seen = {};
+    summaryDays.forEach(d => {
+      const key = monthKey(d.iso);
+      if (!seen[key]) { seen[key] = true; groups.push({ key, days: [] }); }
+      groups[groups.length - 1].days.push(d);
+    });
+    groups.forEach((g, idx) => {
+      tbody.insertAdjacentHTML('beforeend', buildRow(g.key, g.days, idx));
+    });
+  }
+}
+
+// Initial render
+renderSummaryTable('daily');
 </script>
 </body>
 </html>
