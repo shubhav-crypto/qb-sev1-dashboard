@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QB Sev1 Work Assurance Dashboard — Jun 2026</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #f0f4f8;
+    --surface: #ffffff;
+    --surface2: #f1f5f9;
+    --border: #e2e8f0;
+    --accent: #0284c7;
+    --accent2: #7c3aed;
+    --green: #16a34a;
+    --yellow: #d97706;
+    --red: #dc2626;
+    --text: #1e293b;
+    --text-muted: #64748b;
+    --strong: #16a34a;
+    --moderate: #d97706;
+    --needs: #dc2626;
+    --card-radius: 12px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    background: linear-gradient(135deg, #ffffff 0%, #e8f0fe 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 32px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(12px);
+  }
+  .header-logo {
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 14px; color: #fff;
+    flex-shrink: 0;
+  }
+  .header-title { font-size: 18px; font-weight: 700; }
+  .header-subtitle { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+  .header-badge {
+    margin-left: auto;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  .header-badge span { color: var(--accent); font-weight: 600; }
+
+  /* ── MAIN LAYOUT ── */
+  .main { padding: 28px 32px; max-width: 1400px; margin: 0 auto; }
+
+  /* ── KPI BAR ── */
+  .kpi-bar {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+  .kpi {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    padding: 18px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .kpi::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+  }
+  .kpi.blue::before { background: var(--accent); }
+  .kpi.green::before { background: var(--green); }
+  .kpi.yellow::before { background: var(--yellow); }
+  .kpi.purple::before { background: var(--accent2); }
+  .kpi.teal::before { background: #14b8a6; }
+  .kpi.pink::before { background: #f472b6; }
+  .kpi-value {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .kpi.blue .kpi-value { color: var(--accent); }
+  .kpi.green .kpi-value { color: var(--green); }
+  .kpi.yellow .kpi-value { color: var(--yellow); }
+  .kpi.purple .kpi-value { color: var(--accent2); }
+  .kpi.teal .kpi-value { color: #14b8a6; }
+  .kpi.pink .kpi-value { color: #f472b6; }
+  .kpi-label { font-size: 12px; color: var(--text-muted); font-weight: 500; }
+  .kpi-sub { font-size: 11px; color: var(--text-muted); margin-top: 6px; }
+
+  /* ── GRID ── */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 24px; }
+  .grid-3 { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 20px; margin-bottom: 24px; }
+
+  /* ── CARD ── */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    padding: 22px;
+  }
+  .card-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .card-title .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .chart-wrap { position: relative; height: 220px; }
+  .chart-wrap.tall { height: 300px; }
+  .chart-wrap.short { height: 180px; }
+  .chart-wrap.xshort { height: 160px; }
+
+  /* ── WEEK BAR ── */
+  .week-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+  .week-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    padding: 16px 20px;
+  }
+  .week-card-label { font-size: 11px; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 8px; }
+  .week-card-value { font-size: 28px; font-weight: 700; color: var(--accent); line-height: 1; margin-bottom: 4px; }
+  .week-card-sub { font-size: 12px; color: var(--text-muted); }
+  .week-sparkline { display: flex; align-items: flex-end; gap: 4px; height: 32px; margin-top: 10px; }
+  .spark-col { display: flex; flex-direction: column; align-items: center; gap: 2px; flex: 1; }
+  .spark-bar { width: 100%; border-radius: 2px 2px 0 0; min-height: 2px; }
+  .spark-label { font-size: 9px; color: var(--text-muted); }
+
+  /* ── TABS ── */
+  .tabs { margin-bottom: 24px; }
+  .tab-bar {
+    display: flex;
+    gap: 2px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .tab-bar::-webkit-scrollbar { display: none; }
+  .tab-btn {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 10px 16px;
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: -1px;
+    transition: color .15s, border-color .15s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .tab-btn:hover { color: var(--text); }
+  .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .tab-badge {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 11px;
+    padding: 1px 6px;
+    color: var(--text-muted);
+  }
+  .tab-btn.active .tab-badge { background: rgba(0,163,255,.15); border-color: rgba(0,163,255,.3); color: var(--accent); }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  /* ── CASE TABLE ── */
+  .case-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .case-table th {
+    text-align: left;
+    padding: 10px 14px;
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+  .case-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(226,232,240,.9);
+    vertical-align: middle;
+  }
+  .case-table tr:last-child td { border-bottom: none; }
+  .case-table tr:hover td { background: rgba(255,255,255,.02); }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 9px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .badge.strong { background: rgba(34,197,94,.12); color: var(--strong); border: 1px solid rgba(34,197,94,.2); }
+  .badge.moderate { background: rgba(245,158,11,.12); color: var(--moderate); border: 1px solid rgba(245,158,11,.2); }
+  .badge.needs { background: rgba(239,68,68,.12); color: var(--red); border: 1px solid rgba(239,68,68,.2); }
+  .badge.mci { background: rgba(124,77,255,.12); color: var(--accent2); border: 1px solid rgba(124,77,255,.2); }
+  .badge.pending { background: rgba(148,163,184,.08); color: var(--text-muted); border: 1px solid var(--border); }
+
+  .manager-chip {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .m-jyo { background: rgba(139,92,246,.15); color: #a78bfa; }
+  .m-nik { background: rgba(0,163,255,.12); color: #60c8ff; }
+  .m-shu { background: rgba(20,184,166,.12); color: #2dd4bf; }
+  .m-sai { background: rgba(249,115,22,.12); color: #fb923c; }
+  .m-roh { background: rgba(236,72,153,.12); color: #f472b6; }
+  .m-mir { background: rgba(234,179,8,.12); color: #facc15; }
+
+  .case-num { color: var(--text-muted); font-size: 12px; }
+  .account-name { font-weight: 500; max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .time-cell { color: var(--text-muted); font-size: 12px; white-space: nowrap; }
+  .product-cell { color: var(--text-muted); font-size: 12px; max-width: 150px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  /* ── MANAGER LEADERBOARD ── */
+
+  /* ── MCI CALLOUT ── */
+  .mci-callout {
+    background: rgba(124,77,255,.08);
+    border: 1px solid rgba(124,77,255,.25);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  .mci-callout strong { color: var(--accent2); }
+
+  /* ── INFO CALLOUT ── */
+  .info-callout {
+    background: rgba(0,163,255,.06);
+    border: 1px solid rgba(0,163,255,.2);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--text-muted);
+  }
+
+  /* ── SECTION HEADER ── */
+  .section-header {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text);
+  }
+  .section-header::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ── DAY SUMMARY CHIPS ── */
+  .day-chips {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  .day-chip {
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  @media (max-width: 900px) {
+    .kpi-bar { grid-template-columns: repeat(2, 1fr); }
+    .grid-2, .grid-3 { grid-template-columns: 1fr; }
+    .week-summary { grid-template-columns: 1fr; }
+    .main { padding: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-logo">QB</div>
+  <div>
+    <div class="header-title">QB Sev1 Work Assurance Dashboard</div>
+    <div class="header-subtitle">12:30 PM – 7:30 PM IST window · All 6 QB Managers · Weekdays only</div>
+  </div>
+  <div class="header-badge">Jun 1–15, 2026 · <span>11 days</span></div>
+</header>
+
+<div class="main">
+
+  <!-- KPI BAR -->
+  <div class="kpi-bar">
+    <div class="kpi blue">
+      <div class="kpi-value">127</div>
+      <div class="kpi-label">Total Sev1 Cases</div>
+      <div class="kpi-sub">MTD</div>
+    </div>
+    <div class="kpi yellow">
+      <div class="kpi-value">—</div>
+      <div class="kpi-label">Avg Alert Response Time</div>
+      <div class="kpi-sub">QB Mgr → #support-alerts-service-sig</div>
+    </div>
+    <div class="kpi pink">
+      <div class="kpi-value">—</div>
+      <div class="kpi-label">Avg Sev1 Channel Engage</div>
+      <div class="kpi-sub">QB Mgr → individual Sev1 channel</div>
+    </div>
+    <div class="kpi green">
+      <div class="kpi-value">80</div>
+      <div class="kpi-label">🟢 STRONG</div>
+      <div class="kpi-sub">68% of quality-tracked cases (Jun 1–5, 8–12)</div>
+    </div>
+
+    <div class="kpi teal">
+      <div class="kpi-value">100%</div>
+      <div class="kpi-label">CIC Engagement</div>
+      <div class="kpi-sub">Every case (Jun 1–5, 8–12 verified)</div>
+    </div>
+  </div>
+
+  <!-- WEEK SUMMARY -->
+  <div class="week-summary">
+    <div class="week-card">
+      <div class="week-card-label">📅 Week 1 · Jun 1–5</div>
+      <div class="week-card-value">56</div>
+      <div class="week-card-sub">cases · Mon–Fri</div>
+      <div class="week-sparkline" id="spark1"></div>
+    </div>
+    <div class="week-card">
+      <div class="week-card-label">📅 Week 2 · Jun 8–12</div>
+      <div class="week-card-value">62</div>
+      <div class="week-card-sub">cases · Mon–Fri <span style="color:#f59e0b;font-size:11px;">▲ +10.7% WoW</span></div>
+      <div class="week-sparkline" id="spark2"></div>
+    </div>
+    <div class="week-card">
+      <div class="week-card-label">📅 Week 3 · Jun 15 (Mon only)</div>
+      <div class="week-card-value">9</div>
+      <div class="week-card-sub">cases · partial week</div>
+      <div class="week-sparkline" id="spark3"></div>
+    </div>
+  </div>
+
+  <!-- CHARTS ROW -->
+  <div class="grid-2">
+    <!-- Daily volume chart -->
+    <div class="card">
+      <div class="card-title"><span class="dot" style="background:var(--accent)"></span>Daily Case Volume — All 11 Days</div>
+      <div class="chart-wrap tall">
+        <canvas id="dailyChart"></canvas>
+      </div>
+    </div>
+
+    <!-- Health distribution -->
+    <div class="card">
+      <div class="card-title"><span class="dot" style="background:var(--green)"></span>Work Quality Split <span style="font-size:11px;color:var(--text-muted);font-weight:400;">(Jun 1–5, 8–12)</span></div>
+      <div class="chart-wrap tall">
+        <canvas id="healthChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY TABS -->
+  <div class="section-header">Daily Case Detail</div>
+  <div class="tabs">
+    <div class="tab-bar" id="tabBar">
+      <button class="tab-btn" onclick="switchTab('jun1', this)">Jun 1 <span class="tab-badge">10</span></button>
+      <button class="tab-btn" onclick="switchTab('jun2', this)">Jun 2 <span class="tab-badge">12</span></button>
+      <button class="tab-btn" onclick="switchTab('jun3', this)">Jun 3 <span class="tab-badge">9</span></button>
+      <button class="tab-btn" onclick="switchTab('jun4', this)">Jun 4 <span class="tab-badge">17</span></button>
+      <button class="tab-btn" onclick="switchTab('jun5', this)">Jun 5 <span class="tab-badge">8</span></button>
+      <button class="tab-btn" onclick="switchTab('jun8', this)">Jun 8 <span class="tab-badge">19</span></button>
+      <button class="tab-btn" onclick="switchTab('jun9', this)">Jun 9 <span class="tab-badge">4</span></button>
+      <button class="tab-btn" onclick="switchTab('jun10', this)">Jun 10 <span class="tab-badge">10</span></button>
+      <button class="tab-btn active" onclick="switchTab('jun11', this)">Jun 11 <span class="tab-badge">14</span></button>
+      <button class="tab-btn" onclick="switchTab('jun12', this)">Jun 12 <span class="tab-badge">15</span></button>
+      <button class="tab-btn" onclick="switchTab('jun15', this)">Jun 15 <span class="tab-badge">9</span></button>
+    </div>
+
+    <!-- JUN 1 -->
+    <div id="tab-jun1" class="tab-panel">
+      <div class="day-chips">
+        <div class="day-chip" style="background:rgba(0,163,255,.08);border:1px solid rgba(0,163,255,.2);">
+          <strong style="color:#60c8ff;">Nikhil Srivastava</strong> — 10 WBs (all cases)
+        </div>
+        <div class="day-chip" style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);">
+          <strong style="color:var(--green);">5 STRONG</strong> &nbsp;·&nbsp; <strong style="color:var(--yellow);">5 MODERATE</strong>
+        </div>
+        <div class="day-chip" style="background:rgba(124,77,255,.08);border:1px solid rgba(124,77,255,.2);font-size:12px;color:#a78bfa;">
+          Canvas: <a href="https://salesforce.enterprise.slack.com/docs/T01G0063H29/F0BAKFLUMHU" style="color:#a78bfa;" target="_blank">F0BAKFLUMHU</a>
+        </div>
+      </div>
+      <div style="overflow-x:auto;">
+      <table class="case-table">
+        <thead><tr><th>#</th><th>Case</th><th>Account</th><th>Product</th><th>Time (IST)</th><th>Manager</th><th>Quality</th></tr></thead>
+        <tbody>
+          <tr><td class="case-num">1</td><td>473523438</td><td class="account-name">Williams-Sonoma, Inc.</td><td class="product-cell">Developer Support</td><td class="time-cell">1:09 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">2</td><td>473600625</td><td class="account-name">Hewlett Packard Enterprise</td><td class="product-cell">Developer Support</td><td class="time-cell">1:44 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">3</td><td>473513077</td><td class="account-name">CMA CGM SA</td><td class="product-cell">Developer Support</td><td class="time-cell">1:59 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">4</td><td>473602269</td><td class="account-name">British American Shared Svcs (GSD)</td><td class="product-cell">Developer Support</td><td class="time-cell">2:34 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">5</td><td>473587263</td><td class="account-name">The Financial Conduct Authority</td><td class="product-cell">Developer Support</td><td class="time-cell">4:31 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">6</td><td>473604096</td><td class="account-name">bp International Ltd – Colleagues Org</td><td class="product-cell">Digital Engagement</td><td class="time-cell">5:24 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">7</td><td>473604164</td><td class="account-name">ENGIE HOME SERVICES</td><td class="product-cell">How-to/Setup</td><td class="time-cell">5:33 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">8</td><td>473604551</td><td class="account-name">British American Shared Svcs (GSD) Ltd</td><td class="product-cell">Developer Support</td><td class="time-cell">6:21 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">9</td><td>473604871</td><td class="account-name">ADP, Inc.</td><td class="product-cell">Developer Support</td><td class="time-cell">6:58 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">10</td><td>473604902</td><td class="account-name">News Corp / Realtor.com</td><td class="product-cell">Digital Engagement</td><td class="time-cell">7:01 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <!-- JUN 2 -->
+    <div id="tab-jun2" class="tab-panel">
+      <div class="day-chips">
+        <div class="day-chip" style="background:rgba(234,179,8,.08);border:1px solid rgba(234,179,8,.2);">
+          <strong style="color:#facc15;">Mirza Ameer Ali Baig</strong> — 12 WBs (all cases)
+        </div>
+        <div class="day-chip" style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);">
+          <strong style="color:var(--green);">8 STRONG</strong> &nbsp;·&nbsp; <strong style="color:var(--yellow);">4 MODERATE</strong>
+        </div>
+        <div class="day-chip" style="background:rgba(124,77,255,.08);border:1px solid rgba(124,77,255,.2);font-size:12px;color:#a78bfa;">
+          Canvas: <a href="https://salesforce.enterprise.slack.com/docs/T01G0063H29/F0BA5F9CU23" style="color:#a78bfa;" target="_blank">F0BA5F9CU23</a>
+        </div>
+      </div>
+      <div style="overflow-x:auto;">
+      <table class="case-table">
+        <thead><tr><th>#</th><th>Case</th><th>Account</th><th>Product</th><th>Time (IST)</th><th>Region</th><th>Manager</th><th>Quality</th></tr></thead>
+        <tbody>
+          <tr><td class="case-num">1</td><td>473611838</td><td class="account-name">HBF Health Limited</td><td class="product-cell">Developer Support</td><td class="time-cell">12:52 PM</td><td class="time-cell">APAC</td><td><span class="manager-chip m-mir">Mirza</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">2</td><td>473567778</td><td class="account-name">ABSA Bank Limited</td><td class="product-cell">Email Delivery & Desktop</td><td class="time-cell">1:22 PM</td><td class="time-cell">EMEA</td><td><span class="manager-chip m-mir">Mirza</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">3</td><td>473589842</td><td class="account-name">BGE E&U Cloud</td><td class="product-cell">Digital Engagement</td><td class="time-cell">2:44 PM</td><td class="time-cell">EMEA</td><td><span class="manager-chip m-mir">Mirza</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">4</td><td>473613430</td><td class="account-name">Jaquar and Company Private Ltd</td><td class="product-cell">How-to / Setup</td><td class="time-cell">3:44 PM</td><td class="time-cell">APAC</td><td><span class="manager-chip m-mir">Mirza</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">5</td><td>473613541</td><td class="account-name">Cummins – Guidanz (Service Org)</td><td class="product-cell">Developer Support</td><td class="time-cell">4:00 PM</td><td class="time-cell">AMER</td><td><span class="manager-chip m-mir">Mirza</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">6</td><td>473613830</td><td class="account-name">CAE Inc.</td><td class="product-cell">Email Delivery & Desktop</td><td class="time-cell">4:41 PM</td><td class="time-cell">AMER</td><td><span class="manager-chip m-mir">Mirza</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">7</td><td>473613868</td><td class="account-name">OVO Energy</td><td class="product-cell">Security & Activations</td><td class="time-cell">4:48 PM</td><td class="time-cell">EMEA</td><td><span class="manager-chip m-mir">Mirza</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">8</td><td>473520691</td><td class="account-name">Thomson Reuters Holdings GSI</td><td class="product-cell">Digital Engagement</td><td class="time-cell">5:08 PM</td><td class="time-cell">AMER</td><td><span class="manager-chip m-mir">Mirza</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">9</td><td>473614090</td><td class="account-name">American Express Travel Related</td><td class="product-cell">Developer Support</td><td class="time-cell">5:17 PM</td><td class="time-cell">AMER</td><td><span class="manager-chip m-mir">Mirza</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">10</td><td>473614334</td><td class="account-name">Rockwell Automation (Parent)</td><td class="product-cell">Developer Support</td><td class="time-cell">5:54 PM</td><td class="time-cell">AMER</td><td><span class="manager-chip m-mir">Mirza</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">11</td><td>473589470</td><td class="account-name">BOTICARIO PRODUTOS DE BELEZA</td><td class="product-cell">Digital Engagement</td><td class="time-cell">6:49 PM</td><td class="time-cell">LACA</td><td><span class="manager-chip m-mir">Mirza</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">12</td><td>473615041</td><td class="account-name">AXA Assistance</td><td class="product-cell">Service Cloud Voice</td><td class="time-cell">7:10 PM</td><td class="time-cell">EMEA</td><td><span class="manager-chip m-mir">Mirza</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <!-- JUN 3 -->
+    <div id="tab-jun3" class="tab-panel">
+      <div class="day-chips">
+        <div class="day-chip" style="background:rgba(20,184,166,.1);border:1px solid rgba(20,184,166,.2);">
+          <strong style="color:#2dd4bf;">Shubha Vijayaraghavan</strong> — 9 WBs (all cases)
+        </div>
+        <div class="day-chip" style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);">
+          <strong style="color:var(--green);">7 STRONG</strong> &nbsp;·&nbsp; <strong style="color:var(--yellow);">2 MODERATE</strong>
+        </div>
+        <div class="day-chip" style="background:rgba(124,77,255,.08);border:1px solid rgba(124,77,255,.2);font-size:12px;color:#a78bfa;">
+          Canvas: <a href="https://salesforce.enterprise.slack.com/docs/T01G0063H29/F0BBFEYD7AL" style="color:#a78bfa;" target="_blank">F0BBFEYD7AL</a>
+        </div>
+      </div>
+      <div style="overflow-x:auto;">
+      <table class="case-table">
+        <thead><tr><th>#</th><th>Case</th><th>Account</th><th>Product</th><th>Time (IST)</th><th>Region</th><th>Manager</th><th>Quality</th></tr></thead>
+        <tbody>
+          <tr><td class="case-num">1</td><td>473622179</td><td class="account-name">Bank Leumi le-Israel B.M.</td><td class="product-cell">Digital Engagement</td><td class="time-cell">1:18 PM</td><td class="time-cell">EMEA</td><td><span class="manager-chip m-shu">Shubha</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">2</td><td>473622876</td><td class="account-name">Enel Global Services S.r.l.</td><td class="product-cell">Security & Activations</td><td class="time-cell">2:40 PM</td><td class="time-cell">EMEA</td><td><span class="manager-chip m-shu">Shubha</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">3</td><td>473588268</td><td class="account-name">The Financial Conduct Authority</td><td class="product-cell">Developer Support</td><td class="time-cell">3:24 PM</td><td class="time-cell">EMEA</td><td><span class="manager-chip m-shu">Shubha</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">4</td><td>473623584</td><td class="account-name">MetLife Services and Solutions, LLC</td><td class="product-cell">How-to / Setup</td><td class="time-cell">3:59 PM</td><td class="time-cell">AMER</td><td><span class="manager-chip m-shu">Shubha</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">5</td><td>473624107</td><td class="account-name">Palo Alto Networks, Inc.</td><td class="product-cell">Developer Support</td><td class="time-cell">5:06 PM</td><td class="time-cell">AMER</td><td><span class="manager-chip m-shu">Shubha</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">6</td><td>473624266</td><td class="account-name">Marriott International Admin. Services</td><td class="product-cell">Developer Support</td><td class="time-cell">5:24 PM</td><td class="time-cell">AMER</td><td><span class="manager-chip m-shu">Shubha</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">7</td><td>473624051</td><td class="account-name">St. James's Place Mgmt Services Ltd</td><td class="product-cell">Developer Support</td><td class="time-cell">5:40 PM</td><td class="time-cell">EMEA</td><td><span class="manager-chip m-shu">Shubha</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">8</td><td>473493085</td><td class="account-name">CMA CGM SA</td><td class="product-cell">Security & Activations</td><td class="time-cell">6:32 PM</td><td class="time-cell">EMEA</td><td><span class="manager-chip m-shu">Shubha</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">9</td><td>473623729</td><td class="account-name">YADA Energia Srl</td><td class="product-cell">Service Cloud Voice</td><td class="time-cell">7:03 PM</td><td class="time-cell">EMEA</td><td><span class="manager-chip m-shu">Shubha</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <!-- JUN 4 -->
+    <div id="tab-jun4" class="tab-panel">
+      <div class="day-chips">
+        <div class="day-chip" style="background:rgba(139,92,246,.1);border:1px solid rgba(139,92,246,.2);">
+          <strong style="color:#a78bfa;">Jyothirmayee Ramineni</strong> — 17 WBs (all cases)
+        </div>
+        <div class="day-chip" style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);">
+          <strong style="color:var(--green);">14 STRONG</strong> &nbsp;·&nbsp; <strong style="color:var(--yellow);">3 MODERATE</strong>
+        </div>
+        <div class="day-chip" style="background:rgba(124,77,255,.08);border:1px solid rgba(124,77,255,.2);font-size:12px;color:#a78bfa;">
+          Canvas: <a href="https://salesforce.enterprise.slack.com/docs/T01G0063H29/F0BA5RRKTFH" style="color:#a78bfa;" target="_blank">F0BA5RRKTFH</a>
+        </div>
+      </div>
+      <div style="overflow-x:auto;">
+      <table class="case-table">
+        <thead><tr><th>#</th><th>Case</th><th>Account</th><th>Product</th><th>Time (IST)</th><th>Manager</th><th>Quality</th></tr></thead>
+        <tbody>
+          <tr><td class="case-num">1</td><td>473633737</td><td class="account-name">Guardant Health – Screening Org</td><td class="product-cell">Digital Engagement</td><td class="time-cell">1:12 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">2</td><td>473634707</td><td class="account-name">Ecolab Inc.</td><td class="product-cell">Field Service</td><td class="time-cell">1:25 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">3</td><td>473634750</td><td class="account-name">Ecolab Inc. (2nd case)</td><td class="product-cell">Field Service</td><td class="time-cell">1:28 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">4</td><td>473634762</td><td class="account-name">Hewlett Packard Enterprise</td><td class="product-cell">Experience Mgmt & Workspaces</td><td class="time-cell">1:28 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">5</td><td>473633842</td><td class="account-name">Fitness and Lifestyle Group</td><td class="product-cell">Digital Engagement</td><td class="time-cell">3:08 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">6</td><td>473605601</td><td class="account-name">Foreign Commonwealth & Development Office</td><td class="product-cell">Developer Support</td><td class="time-cell">3:45 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">7</td><td>473636953</td><td class="account-name">GIE AXA France</td><td class="product-cell">Email Delivery & Desktop</td><td class="time-cell">3:59 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">8</td><td>473636986</td><td class="account-name">Boston Scientific Corporation</td><td class="product-cell">Service Cloud Voice</td><td class="time-cell">4:08 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">9</td><td>473637157</td><td class="account-name">F. Hoffmann-La Roche AG</td><td class="product-cell">Developer Support</td><td class="time-cell">4:14 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">10</td><td>473634071</td><td class="account-name">Boston Scientific Corporation (2nd)</td><td class="product-cell">Mobile Apps</td><td class="time-cell">4:25 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">11</td><td>473631372</td><td class="account-name">Infocomm Media Dev. Authority (Singapore)</td><td class="product-cell">Developer Support</td><td class="time-cell">5:22 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">12</td><td>473612144</td><td class="account-name">Ministry of Social & Family Dev., Singapore</td><td class="product-cell">Developer Support</td><td class="time-cell">5:55 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">13</td><td>473248499</td><td class="account-name">Johnson and Johnson Services, Inc.</td><td class="product-cell">Experience Mgmt & Workspaces</td><td class="time-cell">6:08 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">14</td><td>473638777</td><td class="account-name">Syngenta Crop Protection AG</td><td class="product-cell">Experience Mgmt & Workspaces</td><td class="time-cell">6:18 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">15</td><td>473505955</td><td class="account-name">ADP, Inc.</td><td class="product-cell">Developer Support</td><td class="time-cell">7:14 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">16</td><td>473639607</td><td class="account-name">GE Appliances (Field Service)</td><td class="product-cell">Field Service</td><td class="time-cell">7:14 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">17</td><td>473638243</td><td class="account-name">GE Appliances (Security)</td><td class="product-cell">Security & Activations</td><td class="time-cell">7:29 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <!-- JUN 5 -->
+    <div id="tab-jun5" class="tab-panel">
+      <div class="day-chips">
+        <div class="day-chip" style="background:rgba(249,115,22,.08);border:1px solid rgba(249,115,22,.2);">
+          <strong style="color:#fb923c;">Sai Vikram Kinnera</strong> — 8 WBs (all cases)
+        </div>
+        <div class="day-chip" style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);">
+          <strong style="color:var(--green);">6 STRONG</strong> &nbsp;·&nbsp; <strong style="color:var(--yellow);">2 MODERATE</strong>
+        </div>
+        <div class="day-chip" style="background:rgba(124,77,255,.08);border:1px solid rgba(124,77,255,.2);font-size:12px;color:#a78bfa;">
+          Canvas: <a href="https://salesforce.enterprise.slack.com/docs/T01G0063H29/F0BBFT9EUTS" style="color:#a78bfa;" target="_blank">F0BBFT9EUTS</a>
+        </div>
+      </div>
+      <div style="overflow-x:auto;">
+      <table class="case-table">
+        <thead><tr><th>#</th><th>Case</th><th>Account</th><th>Product</th><th>Time (IST)</th><th>Manager</th><th>Quality</th></tr></thead>
+        <tbody>
+          <tr><td class="case-num">1</td><td>473653075</td><td class="account-name">Barclays Execution Services Ltd</td><td class="product-cell">Digital Engagement</td><td class="time-cell">1:09 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">2</td><td>473654353</td><td class="account-name">Singapore Airlines Ltd</td><td class="product-cell">Developer Support</td><td class="time-cell">2:17 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">3</td><td>473654956</td><td class="account-name">Year Up (Student Org)</td><td class="product-cell">Developer Support</td><td class="time-cell">2:52 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">4</td><td>473655407</td><td class="account-name">The National Trust</td><td class="product-cell">Developer Support</td><td class="time-cell">3:07 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">5</td><td>473643333</td><td class="account-name">Alcon Vision LLC</td><td class="product-cell">Email Delivery & Desktop</td><td class="time-cell">4:05 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">6</td><td>473657275</td><td class="account-name">bp International Ltd – Colleagues Org</td><td class="product-cell">Digital Engagement</td><td class="time-cell">5:34 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">7</td><td>473658432</td><td class="account-name">ENGIE INFORMATION ET TECHNOLOGIES SA</td><td class="product-cell">Field Service</td><td class="time-cell">6:55 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">8</td><td>473658708</td><td class="account-name">HDFC Bank Limited</td><td class="product-cell">Developer Support</td><td class="time-cell">7:09 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <!-- JUN 8 -->
+    <div id="tab-jun8" class="tab-panel">
+      <div class="day-chips">
+        <div class="day-chip" style="background:rgba(139,92,246,.1);border:1px solid rgba(139,92,246,.2);">
+          <strong style="color:#a78bfa;">Jyothirmayee Ramineni</strong> — 16 WBs (Cases 1–15, 17)
+        </div>
+        <div class="day-chip" style="background:rgba(0,163,255,.08);border:1px solid rgba(0,163,255,.2);">
+          <strong style="color:#60c8ff;">Nikhil Srivastava</strong> — 3 WBs (Cases 16, 18, 19)
+        </div>
+        <div class="day-chip" style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);">
+          <strong style="color:var(--green);">7 STRONG</strong> &nbsp;·&nbsp; <strong style="color:var(--yellow);">12 MODERATE</strong>
+        </div>
+      </div>
+      <div style="overflow-x:auto;">
+      <table class="case-table">
+        <thead><tr><th>#</th><th>Case</th><th>Account</th><th>Product</th><th>Time (IST)</th><th>Manager</th><th>Quality</th></tr></thead>
+        <tbody>
+          <tr><td class="case-num">1</td><td>473692532</td><td class="account-name">Bybit Technology Limited</td><td class="product-cell">Email Delivery & Desktop</td><td class="time-cell">12:43 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">2</td><td>473692644</td><td class="account-name">Ciena Corporation</td><td class="product-cell">Developer Support</td><td class="time-cell">12:49 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">3</td><td>473692840</td><td class="account-name">ENGIE HOME SERVICES</td><td class="product-cell">Field Service</td><td class="time-cell">1:00 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">4</td><td>473653702</td><td class="account-name">Groep Securex NV</td><td class="product-cell">Developer Support</td><td class="time-cell">1:19 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">5</td><td>473693881</td><td class="account-name">Takeda Pharmaceuticals</td><td class="product-cell">Developer Support</td><td class="time-cell">2:02 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">6</td><td>473694062</td><td class="account-name">Amazon Web Services</td><td class="product-cell">Developer Support</td><td class="time-cell">2:22 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">7</td><td>473694734</td><td class="account-name">PostNL Holding BV</td><td class="product-cell">Developer Support</td><td class="time-cell">2:54 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">8</td><td>473694893</td><td class="account-name">PostNL Holding BV (2nd org)</td><td class="product-cell">Developer Support</td><td class="time-cell">3:05 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">9</td><td>473663111</td><td class="account-name">IDSI Inc.</td><td class="product-cell">Developer Support</td><td class="time-cell">4:15 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">10</td><td>473696005</td><td class="account-name">Goldman Sachs & Co. LLC</td><td class="product-cell">Network Infra & Core</td><td class="time-cell">4:20 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">11</td><td>473697035</td><td class="account-name">Tata Consumer Products</td><td class="product-cell">Agentforce – Service</td><td class="time-cell">5:42 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">12</td><td>473697121</td><td class="account-name">The Boeing Company</td><td class="product-cell">Digital Engagement</td><td class="time-cell">5:43 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">13</td><td>473621085</td><td class="account-name">McAfee LLC</td><td class="product-cell">Digital Engagement</td><td class="time-cell">5:45 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">14</td><td>473697264</td><td class="account-name">Syneos Health Commercial</td><td class="product-cell">Service Cloud Voice</td><td class="time-cell">5:54 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">15</td><td>473697509</td><td class="account-name">Claro S.A.</td><td class="product-cell">Network Infra & Core</td><td class="time-cell">6:10 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">16</td><td>473697653</td><td class="account-name">Hilton Worldwide Inc</td><td class="product-cell">Developer Support</td><td class="time-cell">6:19 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">17</td><td>473646616</td><td class="account-name">Aetna Manual Claims</td><td class="product-cell">Developer Support</td><td class="time-cell">6:20 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">18</td><td>473697838</td><td class="account-name">Intelligent Platforms LLC</td><td class="product-cell">Digital Engagement</td><td class="time-cell">6:32 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">19</td><td>473245400</td><td class="account-name">Dentsu UK Limited</td><td class="product-cell">Developer Support</td><td class="time-cell">6:39 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <!-- JUN 9 -->
+    <div id="tab-jun9" class="tab-panel">
+      <div class="day-chips">
+        <div class="day-chip" style="background:rgba(20,184,166,.1);border:1px solid rgba(20,184,166,.2);">
+          <strong style="color:#2dd4bf;">Shubha Vijayaraghavan</strong> — 3 WBs (Cases 2–4)
+        </div>
+        <div class="day-chip" style="background:rgba(249,115,22,.08);border:1px solid rgba(249,115,22,.2);">
+          <strong style="color:#fb923c;">Sai Vikram Kinnera</strong> — 1 WB (Case 1)
+        </div>
+        <div class="day-chip" style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);">
+          <strong style="color:var(--green);">1 STRONG</strong> &nbsp;·&nbsp; <strong style="color:var(--yellow);">3 MODERATE</strong>
+        </div>
+        <div class="day-chip" style="background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.2);color:var(--yellow);">
+          ⚠️ Interim report — 3 of 4 cases still active at snapshot
+        </div>
+      </div>
+      <div style="overflow-x:auto;">
+      <table class="case-table">
+        <thead><tr><th>#</th><th>Case</th><th>Account</th><th>Product</th><th>Time (IST)</th><th>Manager</th><th>Quality</th></tr></thead>
+        <tbody>
+          <tr><td class="case-num">1</td><td>473711947</td><td class="account-name">PricewaterhouseCoopers</td><td class="product-cell">Developer Support</td><td class="time-cell">12:53 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">2</td><td>473713404</td><td class="account-name">Synergy (Electricity Gen.)</td><td class="product-cell">Developer Support</td><td class="time-cell">2:31 PM</td><td><span class="manager-chip m-shu">Shubha</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">3</td><td>473677970</td><td class="account-name">Land and Housing Corp.</td><td class="product-cell">Developer Support</td><td class="time-cell">2:39 PM</td><td><span class="manager-chip m-shu">Shubha</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">4</td><td>473697509</td><td class="account-name">Claro S.A.</td><td class="product-cell">Network Infra & Core</td><td class="time-cell">2:50 PM</td><td><span class="manager-chip m-shu">Shubha</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <!-- JUN 10 -->
+    <div id="tab-jun10" class="tab-panel">
+      <div class="day-chips">
+        <div class="day-chip" style="background:rgba(236,72,153,.1);border:1px solid rgba(236,72,153,.2);">
+          <strong style="color:#f472b6;">Rohit Kala</strong> — 7 WBs (Cases 1–7)
+        </div>
+        <div class="day-chip" style="background:rgba(139,92,246,.1);border:1px solid rgba(139,92,246,.2);">
+          <strong style="color:#a78bfa;">Jyothirmayee Ramineni</strong> — 3 WBs (Cases 8–10)
+        </div>
+        <div class="day-chip" style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);">
+          <strong style="color:var(--green);">6 STRONG</strong> &nbsp;·&nbsp; <strong style="color:var(--yellow);">4 MODERATE</strong>
+        </div>
+      </div>
+      <div style="overflow-x:auto;">
+      <table class="case-table">
+        <thead><tr><th>#</th><th>Case</th><th>Account</th><th>Product</th><th>Time (IST)</th><th>Manager</th><th>Quality</th></tr></thead>
+        <tbody>
+          <tr><td class="case-num">1</td><td>473729989</td><td class="account-name">Axis Bank Ltd.</td><td class="product-cell">Security & Activations</td><td class="time-cell">12:33 PM</td><td><span class="manager-chip m-roh">Rohit</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">2</td><td>473733059</td><td class="account-name">Ola Electric Technologies</td><td class="product-cell">Developer Support</td><td class="time-cell">1:51 PM</td><td><span class="manager-chip m-roh">Rohit</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">3</td><td>473733080</td><td class="account-name">Amazon (Devices)</td><td class="product-cell">Digital Engagement</td><td class="time-cell">1:52 PM</td><td><span class="manager-chip m-roh">Rohit</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">4</td><td>473733820</td><td class="account-name">Telstra Limited</td><td class="product-cell">Security & Activations</td><td class="time-cell">2:40 PM</td><td><span class="manager-chip m-roh">Rohit</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">5</td><td>473729164</td><td class="account-name">Prudential Vietnam</td><td class="product-cell">Service Cloud Voice</td><td class="time-cell">3:09 PM</td><td><span class="manager-chip m-roh">Rohit</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">6</td><td>473734321</td><td class="account-name">Autodesk, Inc.</td><td class="product-cell">Digital Engagement</td><td class="time-cell">3:10 PM</td><td><span class="manager-chip m-roh">Rohit</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">7</td><td>473734813</td><td class="account-name">SentinelOne</td><td class="product-cell">Security & Activations</td><td class="time-cell">3:42 PM</td><td><span class="manager-chip m-roh">Rohit</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">8</td><td>473731556</td><td class="account-name">Bajaj Finance (Trial)</td><td class="product-cell">Developer Support</td><td class="time-cell">7:14 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">9</td><td>473738074</td><td class="account-name">Granite Telecommunications</td><td class="product-cell">Developer Support</td><td class="time-cell">7:19 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">10</td><td>473738147</td><td class="account-name">PepsiCo, Inc.</td><td class="product-cell">Digital Engagement</td><td class="time-cell">7:23 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <!-- JUN 11 -->
+    <div id="tab-jun11" class="tab-panel active">
+      <div class="mci-callout">
+        <strong>⚡ MCI Cluster (Cases 7–13)</strong> — MIAW "agents unable to close chats" on aws-prod3-eucentral1.
+        GUS: W-22945456 · Trust: <a href="https://status.salesforce.com/incidents/20004088" style="color:#a78bfa;" target="_blank">status.salesforce.com/incidents/20004088</a> · ICC: #icc-91558638.
+        Jyothirmayee Ramineni drove MCI identification &amp; coordination across all 7 cases.
+      </div>
+      <div class="day-chips">
+        <div class="day-chip" style="background:rgba(0,163,255,.08);border:1px solid rgba(0,163,255,.2);">
+          <strong style="color:#60c8ff;">Nikhil Srivastava</strong> — 13 WBs (Cases 1–12, 14)
+        </div>
+        <div class="day-chip" style="background:rgba(139,92,246,.1);border:1px solid rgba(139,92,246,.2);">
+          <strong style="color:#a78bfa;">Jyothirmayee Ramineni</strong> — 1 WB (Case 13)
+        </div>
+        <div class="day-chip" style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);">
+          <strong style="color:var(--green);">12 STRONG</strong> &nbsp;·&nbsp; <strong style="color:var(--yellow);">2 MODERATE</strong>
+        </div>
+      </div>
+      <div style="overflow-x:auto;">
+      <table class="case-table">
+        <thead><tr><th>#</th><th>Case</th><th>Account</th><th>Product</th><th>Time (IST)</th><th>Manager</th><th>Quality</th></tr></thead>
+        <tbody>
+          <tr><td class="case-num">1</td><td>473751438</td><td class="account-name">MRI Software SF360</td><td class="product-cell">Developer Support</td><td class="time-cell">12:39 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">2</td><td>473752851</td><td class="account-name">Telstra Limited</td><td class="product-cell">Developer Support</td><td class="time-cell">2:11 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">3</td><td>473752886</td><td class="account-name">AXA Assistance</td><td class="product-cell">Security & Activations</td><td class="time-cell">2:14 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">4</td><td>473754009</td><td class="account-name">BMC Software, Inc.</td><td class="product-cell">Developer Support</td><td class="time-cell">3:26 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">5</td><td>473755111</td><td class="account-name">Paymentsense (Dojo)</td><td class="product-cell">Service Cloud Voice</td><td class="time-cell">4:43 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">6</td><td>473755197</td><td class="account-name">Marriott International</td><td class="product-cell">Developer Support</td><td class="time-cell">4:48 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">7</td><td>473743172</td><td class="account-name">El Corte Inglés SA</td><td class="product-cell">Digital Engagement</td><td class="time-cell">5:38 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge mci">⚡ MCI</span> <span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">8</td><td>473743597</td><td class="account-name">Sky Deutschland</td><td class="product-cell">Digital Engagement</td><td class="time-cell">5:51 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge mci">⚡ MCI</span> <span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">9</td><td>473756525</td><td class="account-name">MONGERAL AEGON</td><td class="product-cell">Digital Engagement</td><td class="time-cell">6:19 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">10</td><td>473744331</td><td class="account-name">Vistaprint Limited</td><td class="product-cell">Digital Engagement</td><td class="time-cell">6:29 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge mci">⚡ MCI</span> <span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">11</td><td>473744459</td><td class="account-name">Maersk A/S</td><td class="product-cell">Digital Engagement</td><td class="time-cell">6:34 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge mci">⚡ MCI</span> <span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">12</td><td>473756810</td><td class="account-name">Maersk A/S (dup)</td><td class="product-cell">Developer Support</td><td class="time-cell">6:36 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge mci">⚡ MCI</span> <span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">13</td><td>473756818</td><td class="account-name">Maersk A/S (3rd)</td><td class="product-cell">Digital Engagement</td><td class="time-cell">6:37 PM</td><td><span class="manager-chip m-jyo">Jyothirmayee</span></td><td><span class="badge mci">⚡ MCI</span> <span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">14</td><td>473757516</td><td class="account-name">Uber Technologies, Inc.</td><td class="product-cell">Security & Activations</td><td class="time-cell">7:20 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <!-- JUN 12 -->
+    <div id="tab-jun12" class="tab-panel">
+      <div class="day-chips">
+        <div class="day-chip" style="background:rgba(249,115,22,.08);border:1px solid rgba(249,115,22,.2);">
+          <strong style="color:#fb923c;">Sai Vikram Kinnera</strong> — 15 WBs (all cases)
+        </div>
+        <div class="day-chip" style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);">
+          <strong style="color:var(--green);">14 STRONG</strong> &nbsp;·&nbsp; <strong style="color:var(--yellow);">1 MODERATE</strong>
+        </div>
+        <div class="day-chip" style="background:rgba(124,77,255,.08);border:1px solid rgba(124,77,255,.2);font-size:12px;color:#a78bfa;">
+          Canvas: <a href="https://salesforce.enterprise.slack.com/docs/T01G0063H29/F0BAR9876VA" style="color:#a78bfa;" target="_blank">F0BAR9876VA</a>
+        </div>
+      </div>
+      <div style="overflow-x:auto;">
+      <table class="case-table">
+        <thead><tr><th>#</th><th>Case</th><th>Account</th><th>Product</th><th>Time (IST)</th><th>Manager</th><th>Quality</th></tr></thead>
+        <tbody>
+          <tr><td class="case-num">1</td><td>473764192</td><td class="account-name">PointClickCare Technologies, Inc.</td><td class="product-cell">Digital Engagement</td><td class="time-cell">12:37 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">2</td><td>473772063</td><td class="account-name">Informa UK / Taylor & Francis Group</td><td class="product-cell">Developer Support</td><td class="time-cell">12:51 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">3</td><td>473772069</td><td class="account-name">Metcash Trading Limited</td><td class="product-cell">Developer Support</td><td class="time-cell">2:09 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">4</td><td>473774824</td><td class="account-name">Equans</td><td class="product-cell">Field Service</td><td class="time-cell">3:59 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">5</td><td>473774927</td><td class="account-name">ZoomInfo Technologies LLC</td><td class="product-cell">Developer Support</td><td class="time-cell">4:05 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">6</td><td>473775323</td><td class="account-name">Workday, Inc.</td><td class="product-cell">Developer Support</td><td class="time-cell">4:32 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">7</td><td>473775967</td><td class="account-name">Jaquar and Company Private Limited</td><td class="product-cell">Email Delivery & Desktop</td><td class="time-cell">5:22 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">8</td><td>473698784</td><td class="account-name">MetLife Services and Solutions, LLC</td><td class="product-cell">Service Cloud Voice</td><td class="time-cell">5:30 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">9</td><td>473776135</td><td class="account-name">PointClickCare Technologies, Inc. (2nd)</td><td class="product-cell">Experience Builder & CMS</td><td class="time-cell">5:33 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">10</td><td>473776048</td><td class="account-name">Vanquis Bank Limited</td><td class="product-cell">Developer Support</td><td class="time-cell">6:02 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">11</td><td>473739241</td><td class="account-name">WHR Operations, LLC</td><td class="product-cell">Developer Support</td><td class="time-cell">6:42 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">12</td><td>473775839</td><td class="account-name">Bajaj Finserv Health Limited</td><td class="product-cell">Developer Support</td><td class="time-cell">7:20 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">13</td><td>473756017</td><td class="account-name">Philip Morris International IT Service Center</td><td class="product-cell">Security & Activations</td><td class="time-cell">7:24 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge moderate">🟡 MODERATE</span></td></tr>
+          <tr><td class="case-num">14</td><td>473777807</td><td class="account-name">Autodesk, Inc.</td><td class="product-cell">Developer Support</td><td class="time-cell">7:27 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+          <tr><td class="case-num">15</td><td>473777827</td><td class="account-name">Ecolab Inc.</td><td class="product-cell">Developer Support</td><td class="time-cell">7:28 PM</td><td><span class="manager-chip m-sai">Sai Vikram</span></td><td><span class="badge strong">🟢 STRONG</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <!-- JUN 15 -->
+    <div id="tab-jun15" class="tab-panel">
+      <div class="day-chips">
+        <div class="day-chip" style="background:rgba(0,163,255,.08);border:1px solid rgba(0,163,255,.2);">
+          <strong style="color:#60c8ff;">Nikhil Srivastava</strong> — 9 WBs (all cases)
+        </div>
+      </div>
+      <div style="overflow-x:auto;">
+      <table class="case-table">
+        <thead><tr><th>#</th><th>Case</th><th>Account</th><th>Product</th><th>Time (IST)</th><th>Manager</th><th>Quality</th></tr></thead>
+        <tbody>
+          <tr><td class="case-num">1</td><td>473774704</td><td class="account-name">Ciena Corporation</td><td class="product-cell">Developer Support</td><td class="time-cell">12:54 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge pending">— Pending</span></td></tr>
+          <tr><td class="case-num">2</td><td>473787849</td><td class="account-name">Wolters Kluwer Tax & Accounting EU</td><td class="product-cell">Security & Activations</td><td class="time-cell">1:42 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge pending">— Pending</span></td></tr>
+          <tr><td class="case-num">3</td><td>473813191</td><td class="account-name">Telstra Limited</td><td class="product-cell">Developer Support</td><td class="time-cell">1:51 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge pending">— Pending</span></td></tr>
+          <tr><td class="case-num">4</td><td>473813208</td><td class="account-name">Thelem Assurances</td><td class="product-cell">Developer Support</td><td class="time-cell">1:51 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge pending">— Pending</span></td></tr>
+          <tr><td class="case-num">5</td><td>473813340</td><td class="account-name">Realtor.com (News Corp Services)</td><td class="product-cell">Digital Engagement</td><td class="time-cell">2:00 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge pending">— Pending</span></td></tr>
+          <tr><td class="case-num">6</td><td>473813531</td><td class="account-name">ENGIE INFORMATION ET TECHNOLOGIES SA</td><td class="product-cell">Digital Engagement</td><td class="time-cell">2:10 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge pending">— Pending</span></td></tr>
+          <tr><td class="case-num">7</td><td>473813727</td><td class="account-name">Activision Publishing, Inc.</td><td class="product-cell">Network Infra & Core</td><td class="time-cell">2:22 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge pending">— Pending</span></td></tr>
+          <tr><td class="case-num">8</td><td>473814346</td><td class="account-name">GIE AXA FRANCE</td><td class="product-cell">Developer Support</td><td class="time-cell">2:59 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge pending">— Pending</span></td></tr>
+          <tr><td class="case-num">9</td><td>473814469</td><td class="account-name">Vaillant GmbH</td><td class="product-cell">Developer Support</td><td class="time-cell">3:07 PM</td><td><span class="manager-chip m-nik">Nikhil</span></td><td><span class="badge pending">— Pending</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+  </div><!-- end .tabs -->
+
+  <!-- FOOTER -->
+  <div style="text-align:center;color:var(--text-muted);font-size:12px;padding:24px 0 16px;border-top:1px solid var(--border);margin-top:12px;">
+    QB Sev1 Work Assurance · Generated Jun 15, 2026 · Data source: Slack #support-alerts-service-sig + individual Sev1 channels · Window: 12:30–7:30 PM IST daily<br>
+    <span style="color:var(--border);">Quality ratings (STRONG/MODERATE) available for Jun 1–5, 8–12 (118 cases) from published canvas reports. Jun 15 pending publication.</span>
+  </div>
+</div>
+
+<script>
+// ── DATA ──────────────────────────────────────────────────────
+const days = ['Jun 1','Jun 2','Jun 3','Jun 4','Jun 5','Jun 8','Jun 9','Jun 10','Jun 11','Jun 12','Jun 15'];
+const totals = [10, 12, 9, 17, 8, 19, 4, 10, 14, 15, 9];
+// Quality only available for Jun 8-11 (indices 5-8)
+const strong    = [5,  8,  7, 14,  6,  7,  1,  6, 12, 14,  0];
+const moderate  = [5,  4,  2,  3,  2, 12,  3,  4,  2,  1,  0];
+const noQuality = [0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  9];
+
+// Week data
+const week1 = [10, 12, 9, 17, 8];
+const week2 = [19, 4, 10, 14, 15];
+const week3 = [9];
+
+// ── CHART DEFAULTS ────────────────────────────────────────────
+Chart.defaults.color = '#64748b';
+Chart.defaults.font.family = "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif";
+
+// ── WEEK SPARKLINES ───────────────────────────────────────────
+function buildSparkline(containerId, data, colors) {
+  const el = document.getElementById(containerId);
+  const maxVal = Math.max(...data, 1);
+  const labels = ['M','T','W','T','F'];
+  data.forEach((v, i) => {
+    const col = document.createElement('div');
+    col.className = 'spark-col';
+    const bar = document.createElement('div');
+    bar.className = 'spark-bar';
+    bar.style.height = Math.max(4, (v / maxVal) * 28) + 'px';
+    bar.style.background = colors[i % colors.length];
+    bar.style.opacity = '0.7';
+    const lbl = document.createElement('div');
+    lbl.className = 'spark-label';
+    lbl.textContent = v;
+    col.appendChild(bar);
+    col.appendChild(lbl);
+    el.appendChild(col);
+  });
+}
+buildSparkline('spark1', week1, ['#60c8ff','#facc15','#2dd4bf','#a78bfa','#fb923c']);
+buildSparkline('spark2', week2, ['#a78bfa','#2dd4bf','#f472b6','#60c8ff','#fb923c']);
+buildSparkline('spark3', week3, ['#60c8ff']);
+
+// ── DAILY VOLUME CHART ────────────────────────────────────────
+const ctx1 = document.getElementById('dailyChart').getContext('2d');
+new Chart(ctx1, {
+  type: 'bar',
+  data: {
+    labels: days,
+    datasets: [
+      {
+        label: '🟢 Strong (Jun 8–11)',
+        data: strong,
+        backgroundColor: 'rgba(34,197,94,.75)',
+        borderRadius: 4,
+        borderSkipped: false,
+        stack: 'quality',
+      },
+      {
+        label: '🟡 Moderate (Jun 8–11)',
+        data: moderate,
+        backgroundColor: 'rgba(245,158,11,.65)',
+        borderRadius: 4,
+        borderSkipped: false,
+        stack: 'quality',
+      },
+      {
+        label: '⬜ Not yet rated',
+        data: noQuality,
+        backgroundColor: 'rgba(0,163,255,.3)',
+        borderRadius: 4,
+        borderSkipped: false,
+        stack: 'quality',
+      },
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { position: 'top', labels: { boxWidth: 11, padding: 12, font: { size: 11 } } },
+      tooltip: {
+        callbacks: {
+          footer: (items) => {
+            const idx = items[0].dataIndex;
+            return `Total: ${totals[idx]} cases`;
+          }
+        }
+      }
+    },
+    scales: {
+      x: { stacked: true, grid: { color: 'rgba(226,232,240,.8)' }, ticks: { font: { size: 11 } } },
+      y: { stacked: true, grid: { color: 'rgba(226,232,240,.8)' }, ticks: { precision: 0 }, beginAtZero: true }
+    }
+  }
+});
+
+// ── HEALTH DONUT (Jun 8-11 only) ──────────────────────────────
+const ctx2 = document.getElementById('healthChart').getContext('2d');
+new Chart(ctx2, {
+  type: 'doughnut',
+  data: {
+    labels: ['🟢 STRONG', '🟡 MODERATE', '🔴 Needs Follow-up'],
+    datasets: [{
+      data: [80, 38, 0],
+      backgroundColor: ['rgba(34,197,94,.8)', 'rgba(245,158,11,.7)', 'rgba(239,68,68,.7)'],
+      borderWidth: 0,
+      hoverOffset: 8,
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    cutout: '65%',
+    plugins: {
+      legend: { position: 'bottom', labels: { boxWidth: 10, padding: 10, font: { size: 11 } } },
+      tooltip: {
+        callbacks: {
+          label: (item) => ` ${item.raw} cases (${Math.round(item.raw/118*100)}%)`
+        }
+      }
+    }
+  }
+});
+
+// ── TAB SWITCH ────────────────────────────────────────────────
+function switchTab(day, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + day).classList.add('active');
+  btn.classList.add('active');
+}
+
+// ── MODERATE REASON TOOLTIPS ──────────────────────────────────
+const moderateReasons = {
+  // Jun 1
+  '473600625': 'No sev1 Slack channel created',
+  '473602269': 'No sev1 Slack channel created',
+  '473604164': 'No sev1 Slack channel created',
+  '473604871': 'No sev1 Slack channel created',
+  '473604902': 'No sev1 Slack channel created',
+  // Jun 2
+  '473611838': 'No channel created — resolved quickly without documented BI or bridge',
+  '473567778': 'No channel created — resolved quickly without documented BI or bridge',
+  '473614334': 'Bridge attempted but customer no-show; Mule vs. Salesforce routing unresolved within window',
+  '473589470': 'Known issue, no workaround available; customer temp negative; no product ETA communicated in window',
+  // Jun 3
+  '473622179': 'No sev1 channel created — resolved via alerts thread; no channel coordination visible',
+  '473493085': 'Old case (May 18) — minimal new Jun 3 activity; prior CIC engagement already closed out',
+  // Jun 4
+  '473634707': 'Channel created but no activity beyond setup messages; handled without channel coordination',
+  '473248499': 'Old case (Apr 16) — reopened Jun 4 only to review RCA comments; no new Sev1 coordination',
+  '473505955': 'No sev1 channel link in PD thread; minimal evidence of active WB coordination',
+  // Jun 5
+  '473655407': 'No sev1 Slack channel created',
+  '473658708': "CIC declined — identified as 'how-to' clarification, not a true functional impact Sev1",
+  // Jun 8
+  '473692532': 'No sev1 channel found or limited coordination observed within WB window',
+  '473692840': 'No sev1 channel found or limited coordination observed within WB window',
+  '473694062': 'No sev1 channel found or limited coordination observed within WB window',
+  '473694734': 'No sev1 channel found or limited coordination observed within WB window',
+  '473694893': 'No sev1 channel found or limited coordination observed within WB window',
+  '473697035': 'No sev1 channel found or limited coordination observed within WB window',
+  '473697121': 'No sev1 channel found or limited coordination observed within WB window',
+  '473697264': 'No sev1 channel found or limited coordination observed within WB window',
+  '473697509': 'No sev1 channel found or limited coordination observed within WB window',
+  '473697838': 'No sev1 channel found or limited coordination observed within WB window',
+  '473245400': 'No sev1 channel found or limited coordination observed within WB window',
+  '473646616': 'No sev1 channel found or limited coordination observed within WB window',
+  // Jun 9 (interim report — cases still active at snapshot)
+  '473711947': 'Case still active at interim report snapshot — coordination in early stage',
+  '473713404': 'Case still active at interim report snapshot — coordination in early stage',
+  '473677970': 'Case still active at interim report snapshot — coordination in early stage',
+  // Jun 10
+  '473729164': 'No sev1 channel found or limited coordination observed within WB window',
+  '473734321': 'No sev1 channel found or limited coordination observed within WB window',
+  '473731556': 'No sev1 channel found or limited coordination observed within WB window',
+  '473738074': 'No sev1 channel found or limited coordination observed within WB window',
+  // Jun 11
+  '473755197': 'No sev1 channel found or limited coordination observed within WB window',
+  '473757516': 'No sev1 channel found or limited coordination observed within WB window',
+  // Jun 12
+  '473756017': 'No sev1 Slack channel found',
+};
+
+// Floating tooltip element
+const modTip = document.createElement('div');
+modTip.style.cssText = [
+  'position:fixed',
+  'background:#0f172a',
+  'color:#f1f5f9',
+  'font-size:12px',
+  'font-weight:400',
+  'padding:8px 13px',
+  'border-radius:8px',
+  'max-width:300px',
+  'line-height:1.55',
+  'z-index:9999',
+  'pointer-events:none',
+  'display:none',
+  'border:1px solid rgba(255,255,255,.13)',
+  'box-shadow:0 4px 18px rgba(0,0,0,.38)',
+  'transition:opacity .1s',
+].join(';');
+document.body.appendChild(modTip);
+
+document.querySelectorAll('.badge.moderate').forEach(badge => {
+  const row = badge.closest('tr');
+  if (!row || !row.cells[1]) return;
+  const caseNum = row.cells[1].textContent.trim();
+  const reason = moderateReasons[caseNum];
+  if (!reason) return;
+  badge.style.cursor = 'help';
+  badge.addEventListener('mouseenter', () => {
+    modTip.textContent = '⚠️  ' + reason;
+    modTip.style.display = 'block';
+  });
+  badge.addEventListener('mousemove', e => {
+    modTip.style.left = (e.clientX + 14) + 'px';
+    modTip.style.top  = (e.clientY - 50) + 'px';
+  });
+  badge.addEventListener('mouseleave', () => {
+    modTip.style.display = 'none';
+  });
+});
+</script>
+</body>
+</html>
