@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-06-16T15:35:00+05:30",
+    "generated": "2026-06-16T15:50:32+05:30",
     "totalCases": 145,
     "daysTracked": 12
   },
@@ -1463,7 +1463,7 @@
           "timeIST": "12:44 PM",
           "quality": "PENDING",
           "resolve": "16s",
-          "channelEngage": null
+          "channelEngage": "4m 34s"
         },
         {
           "caseNum": "473833219",
@@ -1472,7 +1472,7 @@
           "timeIST": "1:43 PM",
           "quality": "PENDING",
           "resolve": "12s",
-          "channelEngage": null
+          "channelEngage": "1m 33s"
         },
         {
           "caseNum": "473576862",
@@ -1499,7 +1499,7 @@
           "timeIST": "2:15 PM",
           "quality": "PENDING",
           "resolve": "14s",
-          "channelEngage": null
+          "channelEngage": "3m 48s"
         },
         {
           "caseNum": "473702574",
@@ -1517,7 +1517,7 @@
           "timeIST": "3:28 PM",
           "quality": "PENDING",
           "resolve": "14s",
-          "channelEngage": null
+          "channelEngage": "1m 36s"
         }
       ]
     }
