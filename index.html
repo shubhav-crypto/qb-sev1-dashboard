@@ -421,8 +421,25 @@ function renderCharts(){
   const mod=DB.days.map(d=>d.cases.filter(c=>c.quality==='MODERATE').length);
   const pend=DB.days.map(d=>d.cases.filter(c=>!c.quality||c.quality==='PENDING').length);
   if(dailyChart)dailyChart.destroy();
+  const totalLabelsPlugin={id:'totalLabels',afterDatasetsDraw(chart){
+    const{ctx,data}=chart;
+    const meta0=chart.getDatasetMeta(0);
+    const meta1=chart.getDatasetMeta(1);
+    const meta2=chart.getDatasetMeta(2);
+    ctx.save();ctx.font='bold 11px -apple-system,BlinkMacSystemFont,sans-serif';
+    ctx.fillStyle='#1e293b';ctx.textAlign='center';ctx.textBaseline='bottom';
+    data.labels.forEach((_,i)=>{
+      const total=totals[i];if(!total)return;
+      // find the topmost visible bar for this index
+      let topY=Infinity;
+      [meta0,meta1,meta2].forEach(m=>{const el=m.data[i];if(el&&el.y<topY)topY=el.y;});
+      if(topY<Infinity)ctx.fillText(total,meta0.data[i].x,topY-4);
+    });
+    ctx.restore();
+  }};
   dailyChart=new Chart(document.getElementById('dailyChart').getContext('2d'),{
     type:'bar',
+    plugins:[totalLabelsPlugin],
     data:{labels,datasets:[
       {label:'🟢 Strong',data:strong,backgroundColor:'rgba(34,197,94,.75)',borderRadius:4,borderSkipped:false,stack:'q'},
       {label:'🟡 Moderate',data:mod,backgroundColor:'rgba(245,158,11,.65)',borderRadius:4,borderSkipped:false,stack:'q'},
@@ -432,7 +449,8 @@ function renderCharts(){
       plugins:{legend:{position:'top',labels:{boxWidth:11,padding:12,font:{size:11}}},
         tooltip:{callbacks:{footer:items=>`Total: ${totals[items[0].dataIndex]} cases`}}},
       scales:{x:{stacked:true,grid:{color:'rgba(226,232,240,.8)'},ticks:{font:{size:11}}},
-        y:{stacked:true,grid:{color:'rgba(226,232,240,.8)'},ticks:{precision:0},beginAtZero:true}}}
+        y:{stacked:true,grid:{color:'rgba(226,232,240,.8)'},ticks:{precision:0},beginAtZero:true,
+          suggestedMax:Math.max(...totals)+3}}}
   });
   const ts=strong.reduce((a,b)=>a+b,0),tm=mod.reduce((a,b)=>a+b,0);
   if(healthChart)healthChart.destroy();
