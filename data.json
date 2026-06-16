@@ -1481,7 +1481,7 @@
           "timeIST": "1:48 PM",
           "quality": "PENDING",
           "resolve": "21s",
-          "channelEngage": null
+          "channelEngage": "No engagement"
         },
         {
           "caseNum": "473744459",
@@ -1490,7 +1490,7 @@
           "timeIST": "1:58 PM",
           "quality": "PENDING",
           "resolve": "16s",
-          "channelEngage": null
+          "channelEngage": "No engagement"
         },
         {
           "caseNum": "473751670",
@@ -1508,7 +1508,7 @@
           "timeIST": "3:01 PM",
           "quality": "PENDING",
           "resolve": "22s",
-          "channelEngage": null
+          "channelEngage": "No engagement"
         },
         {
           "caseNum": "473834963",

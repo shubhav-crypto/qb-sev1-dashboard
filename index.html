@@ -246,6 +246,7 @@ function rtColor(s){
 }
 function rtCell(val,noColor){
   if(!val)return'<td class="time-cell" style="color:#94a3b8;font-size:11px;">—</td>';
+  if(val==='No engagement')return`<td style="white-space:nowrap;font-size:12px;"><span style="background:rgba(220,38,38,.12);color:#dc2626;border-radius:5px;padding:2px 7px;font-weight:600;">🔴 No engagement</span></td>`;
   if(noColor)return`<td style="white-space:nowrap;font-size:12px;color:#0f172a;font-weight:700;">${val}</td>`;
   const s=parseSeconds(val),c=rtColor(s);
   if(!c)return'<td>—</td>';
@@ -385,9 +386,12 @@ function renderSummaryTable(){
     const pend=cases.filter(c=>!c.quality||c.quality==='PENDING').length;
     const rated=strong+mod;
     const avgRes=fmtSecs(avgSeconds(cases.map(c=>c.resolve).filter(Boolean)));
-    const avgEng=fmtSecs(avgSeconds(cases.map(c=>c.channelEngage).filter(Boolean)));
+    const avgEng=fmtSecs(avgSeconds(cases.map(c=>c.channelEngage).filter(v=>v&&v!=='No engagement')));
     const reds=cases.filter(c=>{const s=parseSeconds(c.channelEngage);return s!==null&&s>=RED;});
-    const redHtml=reds.length?reds.map(c=>`<span style="font-size:11px;color:#dc2626;margin-right:4px;">🔴 ${c.account.split(' ')[0]} (${c.channelEngage})</span>`).join(''):'<span style="color:#94a3b8;font-size:11px;">None</span>';
+    const noEngs=cases.filter(c=>c.channelEngage==='No engagement');
+    const redItems=reds.map(c=>`<span style="font-size:11px;color:#dc2626;margin-right:4px;">🔴 ${c.account.split(' ')[0]} (${c.channelEngage})</span>`);
+    const noEngItems=noEngs.map(c=>`<span style="font-size:11px;color:#dc2626;margin-right:4px;">🔴 ${c.account.split(' ')[0]} (No engagement)</span>`);
+    const redHtml=[...redItems,...noEngItems].length?[...redItems,...noEngItems].join(''):'<span style="color:#94a3b8;font-size:11px;">None</span>';
     let qHtml='—';
     if(rated>0){
       qHtml=`<span style="color:var(--green);font-weight:600;">${strong}S</span> / <span style="color:var(--yellow);font-weight:600;">${mod}M</span>`;
