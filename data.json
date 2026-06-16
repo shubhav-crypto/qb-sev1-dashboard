@@ -1,30 +1,66 @@
 {
   "meta": {
-    "generated": "2026-06-15T21:30:00+05:30",
-    "totalCases": 138,
-    "daysTracked": 11
+    "generated": "2026-06-16T15:35:00+05:30",
+    "totalCases": 145,
+    "daysTracked": 12
   },
   "schedule": {
-    "2026-06-01": { "manager": "Nikhil", "managerId": "U01FU2F5RN3" },
-    "2026-06-02": { "manager": "Mirza",  "managerId": "U04219TJTK5" },
-    "2026-06-03": { "manager": "Shubha", "managerId": "U04999GSQ13" },
-    "2026-06-04": { "manager": "Jyothirmayee", "managerId": "WN8LA3U5D" },
-    "2026-06-05": { "manager": "Sai Vikram", "managerId": "W017X5CVB9R" },
-    "2026-06-08": { "manager": "Jyothirmayee", "managerId": "WN8LA3U5D" },
-    "2026-06-09": { "manager": "Sai Vikram", "managerId": "W017X5CVB9R" },
-    "2026-06-10": { "manager": "Rohit", "managerId": "U01G5N5SZC5" },
-    "2026-06-11": { "manager": "Nikhil", "managerId": "U01FU2F5RN3" },
-    "2026-06-12": { "manager": "Sai Vikram", "managerId": "W017X5CVB9R" },
-    "2026-06-15": { "manager": "Nikhil", "managerId": "U01FU2F5RN3" },
-    "2026-06-16": { "manager": "Mirza",  "managerId": "U04219TJTK5" }
+    "2026-06-01": {
+      "manager": "Nikhil",
+      "managerId": "U01FU2F5RN3"
+    },
+    "2026-06-02": {
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5"
+    },
+    "2026-06-03": {
+      "manager": "Shubha",
+      "managerId": "U04999GSQ13"
+    },
+    "2026-06-04": {
+      "manager": "Jyothirmayee",
+      "managerId": "WN8LA3U5D"
+    },
+    "2026-06-05": {
+      "manager": "Sai Vikram",
+      "managerId": "W017X5CVB9R"
+    },
+    "2026-06-08": {
+      "manager": "Jyothirmayee",
+      "managerId": "WN8LA3U5D"
+    },
+    "2026-06-09": {
+      "manager": "Sai Vikram",
+      "managerId": "W017X5CVB9R"
+    },
+    "2026-06-10": {
+      "manager": "Rohit",
+      "managerId": "U01G5N5SZC5"
+    },
+    "2026-06-11": {
+      "manager": "Nikhil",
+      "managerId": "U01FU2F5RN3"
+    },
+    "2026-06-12": {
+      "manager": "Sai Vikram",
+      "managerId": "W017X5CVB9R"
+    },
+    "2026-06-15": {
+      "manager": "Nikhil",
+      "managerId": "U01FU2F5RN3"
+    },
+    "2026-06-16": {
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5"
+    }
   },
   "managerIds": {
-    "Nikhil":        "U01FU2F5RN3",
-    "Jyothirmayee":  "WN8LA3U5D",
-    "Sai Vikram":    "W017X5CVB9R",
-    "Rohit":         "U01G5N5SZC5",
-    "Mirza":         "U04219TJTK5",
-    "Shubha":        "U04999GSQ13"
+    "Nikhil": "U01FU2F5RN3",
+    "Jyothirmayee": "WN8LA3U5D",
+    "Sai Vikram": "W017X5CVB9R",
+    "Rohit": "U01G5N5SZC5",
+    "Mirza": "U04219TJTK5",
+    "Shubha": "U04999GSQ13"
   },
   "days": [
     {
@@ -33,16 +69,96 @@
       "manager": "Nikhil",
       "canvasId": "F0BAKFLUMHU",
       "cases": [
-        { "caseNum": "473523438", "account": "Williams-Sonoma, Inc.", "product": "Developer Support", "timeIST": "1:09 PM", "quality": "STRONG",   "resolve": "41s",    "channelEngage": null },
-        { "caseNum": "473600625", "account": "Hewlett Packard Enterprise", "product": "Developer Support", "timeIST": "1:44 PM", "quality": "MODERATE","resolve": "1m 1s",  "channelEngage": null },
-        { "caseNum": "473513077", "account": "CMA CGM SA", "product": "Developer Support", "timeIST": "1:59 PM", "quality": "STRONG",   "resolve": "33s",    "channelEngage": null },
-        { "caseNum": "473602269", "account": "British American Shared Svcs (GSD)", "product": "Developer Support", "timeIST": "2:34 PM", "quality": "MODERATE","resolve": "29s",    "channelEngage": null },
-        { "caseNum": "473587263", "account": "The Financial Conduct Authority", "product": "Developer Support", "timeIST": "4:31 PM", "quality": "STRONG",   "resolve": "23s",    "channelEngage": "4m 18s" },
-        { "caseNum": "473604096", "account": "bp International Ltd – Colleagues Org", "product": "Digital Engagement", "timeIST": "5:24 PM", "quality": "STRONG",   "resolve": "22s",    "channelEngage": "2h 20m 36s" },
-        { "caseNum": "473604164", "account": "ENGIE HOME SERVICES", "product": "How-to/Setup", "timeIST": "5:33 PM", "quality": "MODERATE","resolve": "28s",    "channelEngage": null },
-        { "caseNum": "473604551", "account": "British American Shared Svcs (GSD) Ltd", "product": "Developer Support", "timeIST": "6:21 PM", "quality": "STRONG",   "resolve": "40s",    "channelEngage": null },
-        { "caseNum": "473604871", "account": "ADP, Inc.", "product": "Developer Support", "timeIST": "6:58 PM", "quality": "MODERATE","resolve": "24s",    "channelEngage": "56m 41s" },
-        { "caseNum": "473604902", "account": "News Corp / Realtor.com", "product": "Digital Engagement", "timeIST": "7:01 PM", "quality": "MODERATE","resolve": "24s",    "channelEngage": null }
+        {
+          "caseNum": "473523438",
+          "account": "Williams-Sonoma, Inc.",
+          "product": "Developer Support",
+          "timeIST": "1:09 PM",
+          "quality": "STRONG",
+          "resolve": "41s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473600625",
+          "account": "Hewlett Packard Enterprise",
+          "product": "Developer Support",
+          "timeIST": "1:44 PM",
+          "quality": "MODERATE",
+          "resolve": "1m 1s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473513077",
+          "account": "CMA CGM SA",
+          "product": "Developer Support",
+          "timeIST": "1:59 PM",
+          "quality": "STRONG",
+          "resolve": "33s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473602269",
+          "account": "British American Shared Svcs (GSD)",
+          "product": "Developer Support",
+          "timeIST": "2:34 PM",
+          "quality": "MODERATE",
+          "resolve": "29s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473587263",
+          "account": "The Financial Conduct Authority",
+          "product": "Developer Support",
+          "timeIST": "4:31 PM",
+          "quality": "STRONG",
+          "resolve": "23s",
+          "channelEngage": "4m 18s"
+        },
+        {
+          "caseNum": "473604096",
+          "account": "bp International Ltd – Colleagues Org",
+          "product": "Digital Engagement",
+          "timeIST": "5:24 PM",
+          "quality": "STRONG",
+          "resolve": "22s",
+          "channelEngage": "2h 20m 36s"
+        },
+        {
+          "caseNum": "473604164",
+          "account": "ENGIE HOME SERVICES",
+          "product": "How-to/Setup",
+          "timeIST": "5:33 PM",
+          "quality": "MODERATE",
+          "resolve": "28s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473604551",
+          "account": "British American Shared Svcs (GSD) Ltd",
+          "product": "Developer Support",
+          "timeIST": "6:21 PM",
+          "quality": "STRONG",
+          "resolve": "40s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473604871",
+          "account": "ADP, Inc.",
+          "product": "Developer Support",
+          "timeIST": "6:58 PM",
+          "quality": "MODERATE",
+          "resolve": "24s",
+          "channelEngage": "56m 41s"
+        },
+        {
+          "caseNum": "473604902",
+          "account": "News Corp / Realtor.com",
+          "product": "Digital Engagement",
+          "timeIST": "7:01 PM",
+          "quality": "MODERATE",
+          "resolve": "24s",
+          "channelEngage": null
+        }
       ]
     },
     {
@@ -51,18 +167,114 @@
       "manager": "Mirza",
       "canvasId": "F0BA5F9CU23",
       "cases": [
-        { "caseNum": "473611838", "account": "HBF Health Limited", "product": "Developer Support", "timeIST": "12:52 PM", "quality": "MODERATE","resolve": "23s",    "channelEngage": null },
-        { "caseNum": "473567778", "account": "ABSA Bank Limited", "product": "Email Delivery & Desktop", "timeIST": "1:22 PM", "quality": "MODERATE","resolve": "1m 6s",  "channelEngage": null },
-        { "caseNum": "473589842", "account": "BGE E&U Cloud", "product": "Digital Engagement", "timeIST": "2:44 PM", "quality": "STRONG",   "resolve": "22s",    "channelEngage": "20m 58s" },
-        { "caseNum": "473613430", "account": "Jaquar and Company Private Ltd", "product": "How-to / Setup", "timeIST": "3:44 PM", "quality": "STRONG",   "resolve": "16s",    "channelEngage": "2m 34s" },
-        { "caseNum": "473613541", "account": "Cummins – Guidanz (Service Org)", "product": "Developer Support", "timeIST": "4:00 PM", "quality": "STRONG",   "resolve": "14s",    "channelEngage": "3m 11s" },
-        { "caseNum": "473613830", "account": "CAE Inc.", "product": "Email Delivery & Desktop", "timeIST": "4:41 PM", "quality": "STRONG",   "resolve": "18s",    "channelEngage": null },
-        { "caseNum": "473613868", "account": "OVO Energy", "product": "Security & Activations", "timeIST": "4:48 PM", "quality": "STRONG",   "resolve": "33s",    "channelEngage": "3m 54s" },
-        { "caseNum": "473520691", "account": "Thomson Reuters Holdings GSI", "product": "Digital Engagement", "timeIST": "5:08 PM", "quality": "STRONG",   "resolve": "29s",    "channelEngage": "1m 57s" },
-        { "caseNum": "473614090", "account": "American Express Travel Related", "product": "Developer Support", "timeIST": "5:17 PM", "quality": "STRONG",   "resolve": "13s",    "channelEngage": "5m 50s" },
-        { "caseNum": "473614334", "account": "Rockwell Automation (Parent)", "product": "Developer Support", "timeIST": "5:54 PM", "quality": "MODERATE","resolve": "26s",    "channelEngage": "1m 30s" },
-        { "caseNum": "473589470", "account": "BOTICARIO PRODUTOS DE BELEZA", "product": "Digital Engagement", "timeIST": "6:49 PM", "quality": "MODERATE","resolve": "15s",    "channelEngage": "3m 35s" },
-        { "caseNum": "473615041", "account": "AXA Assistance", "product": "Service Cloud Voice", "timeIST": "7:10 PM", "quality": "STRONG",   "resolve": "29s",    "channelEngage": "5m 27s" }
+        {
+          "caseNum": "473611838",
+          "account": "HBF Health Limited",
+          "product": "Developer Support",
+          "timeIST": "12:52 PM",
+          "quality": "MODERATE",
+          "resolve": "23s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473567778",
+          "account": "ABSA Bank Limited",
+          "product": "Email Delivery & Desktop",
+          "timeIST": "1:22 PM",
+          "quality": "MODERATE",
+          "resolve": "1m 6s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473589842",
+          "account": "BGE E&U Cloud",
+          "product": "Digital Engagement",
+          "timeIST": "2:44 PM",
+          "quality": "STRONG",
+          "resolve": "22s",
+          "channelEngage": "20m 58s"
+        },
+        {
+          "caseNum": "473613430",
+          "account": "Jaquar and Company Private Ltd",
+          "product": "How-to / Setup",
+          "timeIST": "3:44 PM",
+          "quality": "STRONG",
+          "resolve": "16s",
+          "channelEngage": "2m 34s"
+        },
+        {
+          "caseNum": "473613541",
+          "account": "Cummins – Guidanz (Service Org)",
+          "product": "Developer Support",
+          "timeIST": "4:00 PM",
+          "quality": "STRONG",
+          "resolve": "14s",
+          "channelEngage": "3m 11s"
+        },
+        {
+          "caseNum": "473613830",
+          "account": "CAE Inc.",
+          "product": "Email Delivery & Desktop",
+          "timeIST": "4:41 PM",
+          "quality": "STRONG",
+          "resolve": "18s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473613868",
+          "account": "OVO Energy",
+          "product": "Security & Activations",
+          "timeIST": "4:48 PM",
+          "quality": "STRONG",
+          "resolve": "33s",
+          "channelEngage": "3m 54s"
+        },
+        {
+          "caseNum": "473520691",
+          "account": "Thomson Reuters Holdings GSI",
+          "product": "Digital Engagement",
+          "timeIST": "5:08 PM",
+          "quality": "STRONG",
+          "resolve": "29s",
+          "channelEngage": "1m 57s"
+        },
+        {
+          "caseNum": "473614090",
+          "account": "American Express Travel Related",
+          "product": "Developer Support",
+          "timeIST": "5:17 PM",
+          "quality": "STRONG",
+          "resolve": "13s",
+          "channelEngage": "5m 50s"
+        },
+        {
+          "caseNum": "473614334",
+          "account": "Rockwell Automation (Parent)",
+          "product": "Developer Support",
+          "timeIST": "5:54 PM",
+          "quality": "MODERATE",
+          "resolve": "26s",
+          "channelEngage": "1m 30s"
+        },
+        {
+          "caseNum": "473589470",
+          "account": "BOTICARIO PRODUTOS DE BELEZA",
+          "product": "Digital Engagement",
+          "timeIST": "6:49 PM",
+          "quality": "MODERATE",
+          "resolve": "15s",
+          "channelEngage": "3m 35s"
+        },
+        {
+          "caseNum": "473615041",
+          "account": "AXA Assistance",
+          "product": "Service Cloud Voice",
+          "timeIST": "7:10 PM",
+          "quality": "STRONG",
+          "resolve": "29s",
+          "channelEngage": "5m 27s"
+        }
       ]
     },
     {
@@ -71,15 +283,94 @@
       "manager": "Shubha",
       "canvasId": "F0BBFEYD7AL",
       "cases": [
-        { "caseNum": "473622179", "account": "Bank Leumi le-Israel B.M.", "product": "Digital Engagement", "timeIST": "1:18 PM", "quality": "MODERATE","ack": "25s", "resolve": "27s",    "channelEngage": "4m 23s" },
-        { "caseNum": "473622876", "account": "Enel Global Services S.r.l.", "product": "Security & Activations", "timeIST": "2:40 PM", "quality": "STRONG",   "ack": "56s", "resolve": "58s",    "channelEngage": "11m 18s" },
-        { "caseNum": "473588268", "account": "The Financial Conduct Authority", "product": "Developer Support", "timeIST": "3:24 PM", "quality": "STRONG",   "ack": "16s", "resolve": "18s",    "channelEngage": "2m 35s" },
-        { "caseNum": "473623584", "account": "MetLife Services and Solutions, LLC", "product": "How-to / Setup", "timeIST": "3:59 PM", "quality": "STRONG",   "resolve": "1m 13s", "channelEngage": "3m 51s" },
-        { "caseNum": "473624107", "account": "Palo Alto Networks, Inc.", "product": "Developer Support", "timeIST": "5:06 PM", "quality": "STRONG",   "ack": "23s", "resolve": "24s",    "channelEngage": "4m 30s" },
-        { "caseNum": "473624266", "account": "Marriott International Admin. Services", "product": "Developer Support", "timeIST": "5:24 PM", "quality": "STRONG",   "resolve": "18s",    "channelEngage": "3m 5s" },
-        { "caseNum": "473624051", "account": "St. James's Place Mgmt Services Ltd", "product": "Developer Support", "timeIST": "5:40 PM", "quality": "STRONG",   "ack": "1m 13s", "resolve": "1m 15s", "channelEngage": null },
-        { "caseNum": "473493085", "account": "CMA CGM SA", "product": "Security & Activations", "timeIST": "6:32 PM", "quality": "MODERATE","ack": "12s", "resolve": "14s",    "channelEngage": null },
-        { "caseNum": "473623729", "account": "YADA Energia Srl", "product": "Service Cloud Voice", "timeIST": "7:03 PM", "quality": "STRONG",   "ack": "18s", "resolve": "21s",    "channelEngage": "3m 47s" }
+        {
+          "caseNum": "473622179",
+          "account": "Bank Leumi le-Israel B.M.",
+          "product": "Digital Engagement",
+          "timeIST": "1:18 PM",
+          "quality": "MODERATE",
+          "ack": "25s",
+          "resolve": "27s",
+          "channelEngage": "4m 23s"
+        },
+        {
+          "caseNum": "473622876",
+          "account": "Enel Global Services S.r.l.",
+          "product": "Security & Activations",
+          "timeIST": "2:40 PM",
+          "quality": "STRONG",
+          "ack": "56s",
+          "resolve": "58s",
+          "channelEngage": "11m 18s"
+        },
+        {
+          "caseNum": "473588268",
+          "account": "The Financial Conduct Authority",
+          "product": "Developer Support",
+          "timeIST": "3:24 PM",
+          "quality": "STRONG",
+          "ack": "16s",
+          "resolve": "18s",
+          "channelEngage": "2m 35s"
+        },
+        {
+          "caseNum": "473623584",
+          "account": "MetLife Services and Solutions, LLC",
+          "product": "How-to / Setup",
+          "timeIST": "3:59 PM",
+          "quality": "STRONG",
+          "resolve": "1m 13s",
+          "channelEngage": "3m 51s"
+        },
+        {
+          "caseNum": "473624107",
+          "account": "Palo Alto Networks, Inc.",
+          "product": "Developer Support",
+          "timeIST": "5:06 PM",
+          "quality": "STRONG",
+          "ack": "23s",
+          "resolve": "24s",
+          "channelEngage": "4m 30s"
+        },
+        {
+          "caseNum": "473624266",
+          "account": "Marriott International Admin. Services",
+          "product": "Developer Support",
+          "timeIST": "5:24 PM",
+          "quality": "STRONG",
+          "resolve": "18s",
+          "channelEngage": "3m 5s"
+        },
+        {
+          "caseNum": "473624051",
+          "account": "St. James's Place Mgmt Services Ltd",
+          "product": "Developer Support",
+          "timeIST": "5:40 PM",
+          "quality": "STRONG",
+          "ack": "1m 13s",
+          "resolve": "1m 15s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473493085",
+          "account": "CMA CGM SA",
+          "product": "Security & Activations",
+          "timeIST": "6:32 PM",
+          "quality": "MODERATE",
+          "ack": "12s",
+          "resolve": "14s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473623729",
+          "account": "YADA Energia Srl",
+          "product": "Service Cloud Voice",
+          "timeIST": "7:03 PM",
+          "quality": "STRONG",
+          "ack": "18s",
+          "resolve": "21s",
+          "channelEngage": "3m 47s"
+        }
       ]
     },
     {
@@ -88,23 +379,163 @@
       "manager": "Jyothirmayee",
       "canvasId": "F0BA5RRKTFH",
       "cases": [
-        { "caseNum": "473633737", "account": "Guardant Health – Screening Org", "product": "Digital Engagement", "timeIST": "1:12 PM", "quality": "STRONG",   "resolve": "1m 24s", "channelEngage": "1h 1m 35s" },
-        { "caseNum": "473634707", "account": "Ecolab Inc.", "product": "Field Service", "timeIST": "1:25 PM", "quality": "MODERATE","resolve": "1m 52s", "channelEngage": null },
-        { "caseNum": "473634750", "account": "Ecolab Inc. (2nd case)", "product": "Field Service", "timeIST": "1:28 PM", "quality": "STRONG",   "ack": "12s", "resolve": "39s",    "channelEngage": null },
-        { "caseNum": "473634762", "account": "Hewlett Packard Enterprise", "product": "Experience Mgmt & Workspaces", "timeIST": "1:28 PM", "quality": "STRONG",   "resolve": "47s",    "channelEngage": null },
-        { "caseNum": "473633842", "account": "Fitness and Lifestyle Group", "product": "Digital Engagement", "timeIST": "3:08 PM", "quality": "STRONG",   "ack": "27s", "resolve": "1m 20s", "channelEngage": "2h 49m 0s" },
-        { "caseNum": "473605601", "account": "Foreign Commonwealth & Development Office", "product": "Developer Support", "timeIST": "3:45 PM", "quality": "STRONG",   "resolve": "22s",    "channelEngage": "1m 27s" },
-        { "caseNum": "473636953", "account": "GIE AXA France", "product": "Email Delivery & Desktop", "timeIST": "3:59 PM", "quality": "STRONG",   "resolve": "31s",    "channelEngage": "9m 13s" },
-        { "caseNum": "473636986", "account": "Boston Scientific Corporation", "product": "Service Cloud Voice", "timeIST": "4:08 PM", "quality": "STRONG",   "resolve": "23s",    "channelEngage": "8m 44s" },
-        { "caseNum": "473637157", "account": "F. Hoffmann-La Roche AG", "product": "Developer Support", "timeIST": "4:14 PM", "quality": "STRONG",   "resolve": "28s",    "channelEngage": null },
-        { "caseNum": "473634071", "account": "Boston Scientific Corporation (2nd)", "product": "Mobile Apps", "timeIST": "4:25 PM", "quality": "STRONG",   "resolve": "34s",    "channelEngage": null },
-        { "caseNum": "473631372", "account": "Infocomm Media Dev. Authority (Singapore)", "product": "Developer Support", "timeIST": "5:22 PM", "quality": "STRONG",   "ack": "22s", "resolve": "29s",    "channelEngage": null },
-        { "caseNum": "473612144", "account": "Ministry of Social & Family Dev., Singapore", "product": "Developer Support", "timeIST": "5:55 PM", "quality": "STRONG",   "resolve": "33s",    "channelEngage": "15m 20s" },
-        { "caseNum": "473248499", "account": "Johnson and Johnson Services, Inc.", "product": "Experience Mgmt & Workspaces", "timeIST": "6:08 PM", "quality": "MODERATE","ack": "33s", "resolve": "37s",    "channelEngage": null },
-        { "caseNum": "473638777", "account": "Syngenta Crop Protection AG", "product": "Experience Mgmt & Workspaces", "timeIST": "6:18 PM", "quality": "STRONG",   "resolve": "33s",    "channelEngage": null },
-        { "caseNum": "473505955", "account": "ADP, Inc.", "product": "Developer Support", "timeIST": "7:14 PM", "quality": "MODERATE","resolve": "19s",    "channelEngage": null },
-        { "caseNum": "473639607", "account": "GE Appliances (Field Service)", "product": "Field Service", "timeIST": "7:14 PM", "quality": "STRONG",   "resolve": "2m 15s", "channelEngage": null },
-        { "caseNum": "473638243", "account": "GE Appliances (Security)", "product": "Security & Activations", "timeIST": "7:29 PM", "quality": "STRONG",   "resolve": "22s",    "channelEngage": "1h 53m 42s" }
+        {
+          "caseNum": "473633737",
+          "account": "Guardant Health – Screening Org",
+          "product": "Digital Engagement",
+          "timeIST": "1:12 PM",
+          "quality": "STRONG",
+          "resolve": "1m 24s",
+          "channelEngage": "1h 1m 35s"
+        },
+        {
+          "caseNum": "473634707",
+          "account": "Ecolab Inc.",
+          "product": "Field Service",
+          "timeIST": "1:25 PM",
+          "quality": "MODERATE",
+          "resolve": "1m 52s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473634750",
+          "account": "Ecolab Inc. (2nd case)",
+          "product": "Field Service",
+          "timeIST": "1:28 PM",
+          "quality": "STRONG",
+          "ack": "12s",
+          "resolve": "39s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473634762",
+          "account": "Hewlett Packard Enterprise",
+          "product": "Experience Mgmt & Workspaces",
+          "timeIST": "1:28 PM",
+          "quality": "STRONG",
+          "resolve": "47s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473633842",
+          "account": "Fitness and Lifestyle Group",
+          "product": "Digital Engagement",
+          "timeIST": "3:08 PM",
+          "quality": "STRONG",
+          "ack": "27s",
+          "resolve": "1m 20s",
+          "channelEngage": "2h 49m 0s"
+        },
+        {
+          "caseNum": "473605601",
+          "account": "Foreign Commonwealth & Development Office",
+          "product": "Developer Support",
+          "timeIST": "3:45 PM",
+          "quality": "STRONG",
+          "resolve": "22s",
+          "channelEngage": "1m 27s"
+        },
+        {
+          "caseNum": "473636953",
+          "account": "GIE AXA France",
+          "product": "Email Delivery & Desktop",
+          "timeIST": "3:59 PM",
+          "quality": "STRONG",
+          "resolve": "31s",
+          "channelEngage": "9m 13s"
+        },
+        {
+          "caseNum": "473636986",
+          "account": "Boston Scientific Corporation",
+          "product": "Service Cloud Voice",
+          "timeIST": "4:08 PM",
+          "quality": "STRONG",
+          "resolve": "23s",
+          "channelEngage": "8m 44s"
+        },
+        {
+          "caseNum": "473637157",
+          "account": "F. Hoffmann-La Roche AG",
+          "product": "Developer Support",
+          "timeIST": "4:14 PM",
+          "quality": "STRONG",
+          "resolve": "28s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473634071",
+          "account": "Boston Scientific Corporation (2nd)",
+          "product": "Mobile Apps",
+          "timeIST": "4:25 PM",
+          "quality": "STRONG",
+          "resolve": "34s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473631372",
+          "account": "Infocomm Media Dev. Authority (Singapore)",
+          "product": "Developer Support",
+          "timeIST": "5:22 PM",
+          "quality": "STRONG",
+          "ack": "22s",
+          "resolve": "29s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473612144",
+          "account": "Ministry of Social & Family Dev., Singapore",
+          "product": "Developer Support",
+          "timeIST": "5:55 PM",
+          "quality": "STRONG",
+          "resolve": "33s",
+          "channelEngage": "15m 20s"
+        },
+        {
+          "caseNum": "473248499",
+          "account": "Johnson and Johnson Services, Inc.",
+          "product": "Experience Mgmt & Workspaces",
+          "timeIST": "6:08 PM",
+          "quality": "MODERATE",
+          "ack": "33s",
+          "resolve": "37s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473638777",
+          "account": "Syngenta Crop Protection AG",
+          "product": "Experience Mgmt & Workspaces",
+          "timeIST": "6:18 PM",
+          "quality": "STRONG",
+          "resolve": "33s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473505955",
+          "account": "ADP, Inc.",
+          "product": "Developer Support",
+          "timeIST": "7:14 PM",
+          "quality": "MODERATE",
+          "resolve": "19s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473639607",
+          "account": "GE Appliances (Field Service)",
+          "product": "Field Service",
+          "timeIST": "7:14 PM",
+          "quality": "STRONG",
+          "resolve": "2m 15s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473638243",
+          "account": "GE Appliances (Security)",
+          "product": "Security & Activations",
+          "timeIST": "7:29 PM",
+          "quality": "STRONG",
+          "resolve": "22s",
+          "channelEngage": "1h 53m 42s"
+        }
       ]
     },
     {
@@ -113,14 +544,78 @@
       "manager": "Sai Vikram",
       "canvasId": "F0BBFT9EUTS",
       "cases": [
-        { "caseNum": "473653075", "account": "Barclays Execution Services Ltd", "product": "Digital Engagement", "timeIST": "1:09 PM", "quality": "STRONG",   "resolve": "2m 9s",  "channelEngage": "34m 3s" },
-        { "caseNum": "473654353", "account": "Singapore Airlines Ltd", "product": "Developer Support", "timeIST": "2:17 PM", "quality": "STRONG",   "resolve": "3m 10s", "channelEngage": "10m 11s" },
-        { "caseNum": "473654956", "account": "Year Up (Student Org)", "product": "Developer Support", "timeIST": "2:52 PM", "quality": "STRONG",   "resolve": "3m 9s",  "channelEngage": "25m 40s" },
-        { "caseNum": "473655407", "account": "The National Trust", "product": "Developer Support", "timeIST": "3:07 PM", "quality": "MODERATE","resolve": "3m 13s", "channelEngage": null },
-        { "caseNum": "473643333", "account": "Alcon Vision LLC", "product": "Email Delivery & Desktop", "timeIST": "4:05 PM", "quality": "STRONG",   "resolve": "3m 14s", "channelEngage": null },
-        { "caseNum": "473657275", "account": "bp International Ltd – Colleagues Org", "product": "Digital Engagement", "timeIST": "5:34 PM", "quality": "STRONG",   "resolve": "3m 12s", "channelEngage": "15m 39s" },
-        { "caseNum": "473658432", "account": "ENGIE INFORMATION ET TECHNOLOGIES SA", "product": "Field Service", "timeIST": "6:55 PM", "quality": "STRONG",   "resolve": "3m 12s", "channelEngage": "4m 28s" },
-        { "caseNum": "473658708", "account": "HDFC Bank Limited", "product": "Developer Support", "timeIST": "7:09 PM", "quality": "MODERATE","resolve": "3m 11s", "channelEngage": "5m 2s" }
+        {
+          "caseNum": "473653075",
+          "account": "Barclays Execution Services Ltd",
+          "product": "Digital Engagement",
+          "timeIST": "1:09 PM",
+          "quality": "STRONG",
+          "resolve": "2m 9s",
+          "channelEngage": "34m 3s"
+        },
+        {
+          "caseNum": "473654353",
+          "account": "Singapore Airlines Ltd",
+          "product": "Developer Support",
+          "timeIST": "2:17 PM",
+          "quality": "STRONG",
+          "resolve": "3m 10s",
+          "channelEngage": "10m 11s"
+        },
+        {
+          "caseNum": "473654956",
+          "account": "Year Up (Student Org)",
+          "product": "Developer Support",
+          "timeIST": "2:52 PM",
+          "quality": "STRONG",
+          "resolve": "3m 9s",
+          "channelEngage": "25m 40s"
+        },
+        {
+          "caseNum": "473655407",
+          "account": "The National Trust",
+          "product": "Developer Support",
+          "timeIST": "3:07 PM",
+          "quality": "MODERATE",
+          "resolve": "3m 13s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473643333",
+          "account": "Alcon Vision LLC",
+          "product": "Email Delivery & Desktop",
+          "timeIST": "4:05 PM",
+          "quality": "STRONG",
+          "resolve": "3m 14s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473657275",
+          "account": "bp International Ltd – Colleagues Org",
+          "product": "Digital Engagement",
+          "timeIST": "5:34 PM",
+          "quality": "STRONG",
+          "resolve": "3m 12s",
+          "channelEngage": "15m 39s"
+        },
+        {
+          "caseNum": "473658432",
+          "account": "ENGIE INFORMATION ET TECHNOLOGIES SA",
+          "product": "Field Service",
+          "timeIST": "6:55 PM",
+          "quality": "STRONG",
+          "resolve": "3m 12s",
+          "channelEngage": "4m 28s"
+        },
+        {
+          "caseNum": "473658708",
+          "account": "HDFC Bank Limited",
+          "product": "Developer Support",
+          "timeIST": "7:09 PM",
+          "quality": "MODERATE",
+          "resolve": "3m 11s",
+          "channelEngage": "5m 2s"
+        }
       ]
     },
     {
@@ -129,25 +624,199 @@
       "manager": "Jyothirmayee",
       "canvasId": null,
       "cases": [
-        { "caseNum": "473692532", "account": "Bybit Technology Limited", "product": "Email Delivery & Desktop", "timeIST": "12:43 PM", "manager": "Jyothirmayee", "quality": "MODERATE","ack": "1m 41s", "resolve": "1m 47s", "channelEngage": "6m 47s" },
-        { "caseNum": "473692644", "account": "Ciena Corporation", "product": "Developer Support", "timeIST": "12:49 PM", "manager": "Jyothirmayee", "quality": "STRONG",   "resolve": "18s",    "channelEngage": "12m 8s" },
-        { "caseNum": "473692840", "account": "ENGIE HOME SERVICES", "product": "Field Service", "timeIST": "1:00 PM", "manager": "Jyothirmayee", "quality": "MODERATE","resolve": "52s",    "channelEngage": null },
-        { "caseNum": "473653702", "account": "Groep Securex NV", "product": "Developer Support", "timeIST": "1:19 PM", "manager": "Jyothirmayee", "quality": "STRONG",   "resolve": "32s",    "channelEngage": "1m 38s" },
-        { "caseNum": "473693881", "account": "Takeda Pharmaceuticals", "product": "Developer Support", "timeIST": "2:02 PM", "manager": "Jyothirmayee", "quality": "STRONG",   "resolve": "46s",    "channelEngage": "6m 13s" },
-        { "caseNum": "473694062", "account": "Amazon Web Services", "product": "Developer Support", "timeIST": "2:22 PM", "manager": "Jyothirmayee", "quality": "MODERATE","resolve": "20s",    "channelEngage": "7m 10s" },
-        { "caseNum": "473694734", "account": "PostNL Holding BV", "product": "Developer Support", "timeIST": "2:54 PM", "manager": "Jyothirmayee", "quality": "MODERATE","resolve": "23s",    "channelEngage": "4m 56s" },
-        { "caseNum": "473694893", "account": "PostNL Holding BV (2nd org)", "product": "Developer Support", "timeIST": "3:05 PM", "manager": "Jyothirmayee", "quality": "MODERATE","resolve": "23s",    "channelEngage": "4m 15s" },
-        { "caseNum": "473621085", "account": "McAfee LLC", "product": "Digital Engagement", "timeIST": "5:45 PM", "manager": "Jyothirmayee", "quality": "STRONG",   "ack": "1m 31s", "resolve": "1m 37s", "channelEngage": null },
-        { "caseNum": "473663111", "account": "IDSI Inc.", "product": "Developer Support", "timeIST": "4:15 PM", "manager": "Jyothirmayee", "quality": "STRONG",   "resolve": "30s",    "channelEngage": "5m 13s" },
-        { "caseNum": "473696005", "account": "Goldman Sachs & Co. LLC", "product": "Network Infra & Core", "timeIST": "4:20 PM", "manager": "Jyothirmayee", "quality": "STRONG",   "resolve": "38s",    "channelEngage": "14m 17s" },
-        { "caseNum": "473697035", "account": "Tata Consumer Products", "product": "Agentforce – Service", "timeIST": "5:42 PM", "manager": "Jyothirmayee", "quality": "MODERATE","resolve": "28s",    "channelEngage": "8m 23s" },
-        { "caseNum": "473697121", "account": "The Boeing Company", "product": "Digital Engagement", "timeIST": "5:43 PM", "manager": "Jyothirmayee", "quality": "MODERATE","resolve": "1m 19s", "channelEngage": "7m 37s" },
-        { "caseNum": "473697264", "account": "Syneos Health Commercial", "product": "Service Cloud Voice", "timeIST": "5:54 PM", "manager": "Jyothirmayee", "quality": "MODERATE","resolve": "23s",    "channelEngage": null },
-        { "caseNum": "473697509", "account": "Claro S.A.", "product": "Network Infra & Core", "timeIST": "6:10 PM", "manager": "Jyothirmayee", "quality": "MODERATE","resolve": "58s",    "channelEngage": "10m 31s" },
-        { "caseNum": "473697653", "account": "Hilton Worldwide Inc", "product": "Developer Support", "timeIST": "6:19 PM", "manager": "Nikhil", "quality": "STRONG",   "resolve": "33s",    "channelEngage": "6m 6s" },
-        { "caseNum": "473646616", "account": "Aetna Manual Claims", "product": "Developer Support", "timeIST": "6:20 PM", "manager": "Jyothirmayee", "quality": "MODERATE","ack": "1m 42s", "resolve": "1m 47s", "channelEngage": "3m 41s" },
-        { "caseNum": "473697838", "account": "Intelligent Platforms LLC", "product": "Digital Engagement", "timeIST": "6:32 PM", "manager": "Nikhil", "quality": "MODERATE","resolve": "30s",    "channelEngage": "3m 26s" },
-        { "caseNum": "473245400", "account": "Dentsu UK Limited", "product": "Developer Support", "timeIST": "6:39 PM", "manager": "Nikhil", "quality": "MODERATE","resolve": "31s",    "channelEngage": "3m 31s" }
+        {
+          "caseNum": "473692532",
+          "account": "Bybit Technology Limited",
+          "product": "Email Delivery & Desktop",
+          "timeIST": "12:43 PM",
+          "manager": "Jyothirmayee",
+          "quality": "MODERATE",
+          "ack": "1m 41s",
+          "resolve": "1m 47s",
+          "channelEngage": "6m 47s"
+        },
+        {
+          "caseNum": "473692644",
+          "account": "Ciena Corporation",
+          "product": "Developer Support",
+          "timeIST": "12:49 PM",
+          "manager": "Jyothirmayee",
+          "quality": "STRONG",
+          "resolve": "18s",
+          "channelEngage": "12m 8s"
+        },
+        {
+          "caseNum": "473692840",
+          "account": "ENGIE HOME SERVICES",
+          "product": "Field Service",
+          "timeIST": "1:00 PM",
+          "manager": "Jyothirmayee",
+          "quality": "MODERATE",
+          "resolve": "52s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473653702",
+          "account": "Groep Securex NV",
+          "product": "Developer Support",
+          "timeIST": "1:19 PM",
+          "manager": "Jyothirmayee",
+          "quality": "STRONG",
+          "resolve": "32s",
+          "channelEngage": "1m 38s"
+        },
+        {
+          "caseNum": "473693881",
+          "account": "Takeda Pharmaceuticals",
+          "product": "Developer Support",
+          "timeIST": "2:02 PM",
+          "manager": "Jyothirmayee",
+          "quality": "STRONG",
+          "resolve": "46s",
+          "channelEngage": "6m 13s"
+        },
+        {
+          "caseNum": "473694062",
+          "account": "Amazon Web Services",
+          "product": "Developer Support",
+          "timeIST": "2:22 PM",
+          "manager": "Jyothirmayee",
+          "quality": "MODERATE",
+          "resolve": "20s",
+          "channelEngage": "7m 10s"
+        },
+        {
+          "caseNum": "473694734",
+          "account": "PostNL Holding BV",
+          "product": "Developer Support",
+          "timeIST": "2:54 PM",
+          "manager": "Jyothirmayee",
+          "quality": "MODERATE",
+          "resolve": "23s",
+          "channelEngage": "4m 56s"
+        },
+        {
+          "caseNum": "473694893",
+          "account": "PostNL Holding BV (2nd org)",
+          "product": "Developer Support",
+          "timeIST": "3:05 PM",
+          "manager": "Jyothirmayee",
+          "quality": "MODERATE",
+          "resolve": "23s",
+          "channelEngage": "4m 15s"
+        },
+        {
+          "caseNum": "473621085",
+          "account": "McAfee LLC",
+          "product": "Digital Engagement",
+          "timeIST": "5:45 PM",
+          "manager": "Jyothirmayee",
+          "quality": "STRONG",
+          "ack": "1m 31s",
+          "resolve": "1m 37s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473663111",
+          "account": "IDSI Inc.",
+          "product": "Developer Support",
+          "timeIST": "4:15 PM",
+          "manager": "Jyothirmayee",
+          "quality": "STRONG",
+          "resolve": "30s",
+          "channelEngage": "5m 13s"
+        },
+        {
+          "caseNum": "473696005",
+          "account": "Goldman Sachs & Co. LLC",
+          "product": "Network Infra & Core",
+          "timeIST": "4:20 PM",
+          "manager": "Jyothirmayee",
+          "quality": "STRONG",
+          "resolve": "38s",
+          "channelEngage": "14m 17s"
+        },
+        {
+          "caseNum": "473697035",
+          "account": "Tata Consumer Products",
+          "product": "Agentforce – Service",
+          "timeIST": "5:42 PM",
+          "manager": "Jyothirmayee",
+          "quality": "MODERATE",
+          "resolve": "28s",
+          "channelEngage": "8m 23s"
+        },
+        {
+          "caseNum": "473697121",
+          "account": "The Boeing Company",
+          "product": "Digital Engagement",
+          "timeIST": "5:43 PM",
+          "manager": "Jyothirmayee",
+          "quality": "MODERATE",
+          "resolve": "1m 19s",
+          "channelEngage": "7m 37s"
+        },
+        {
+          "caseNum": "473697264",
+          "account": "Syneos Health Commercial",
+          "product": "Service Cloud Voice",
+          "timeIST": "5:54 PM",
+          "manager": "Jyothirmayee",
+          "quality": "MODERATE",
+          "resolve": "23s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473697509",
+          "account": "Claro S.A.",
+          "product": "Network Infra & Core",
+          "timeIST": "6:10 PM",
+          "manager": "Jyothirmayee",
+          "quality": "MODERATE",
+          "resolve": "58s",
+          "channelEngage": "10m 31s"
+        },
+        {
+          "caseNum": "473697653",
+          "account": "Hilton Worldwide Inc",
+          "product": "Developer Support",
+          "timeIST": "6:19 PM",
+          "manager": "Nikhil",
+          "quality": "STRONG",
+          "resolve": "33s",
+          "channelEngage": "6m 6s"
+        },
+        {
+          "caseNum": "473646616",
+          "account": "Aetna Manual Claims",
+          "product": "Developer Support",
+          "timeIST": "6:20 PM",
+          "manager": "Jyothirmayee",
+          "quality": "MODERATE",
+          "ack": "1m 42s",
+          "resolve": "1m 47s",
+          "channelEngage": "3m 41s"
+        },
+        {
+          "caseNum": "473697838",
+          "account": "Intelligent Platforms LLC",
+          "product": "Digital Engagement",
+          "timeIST": "6:32 PM",
+          "manager": "Nikhil",
+          "quality": "MODERATE",
+          "resolve": "30s",
+          "channelEngage": "3m 26s"
+        },
+        {
+          "caseNum": "473245400",
+          "account": "Dentsu UK Limited",
+          "product": "Developer Support",
+          "timeIST": "6:39 PM",
+          "manager": "Nikhil",
+          "quality": "MODERATE",
+          "resolve": "31s",
+          "channelEngage": "3m 31s"
+        }
       ]
     },
     {
@@ -156,10 +825,48 @@
       "manager": "Sai Vikram",
       "canvasId": null,
       "cases": [
-        { "caseNum": "473711947", "account": "PricewaterhouseCoopers", "product": "Developer Support", "timeIST": "12:53 PM", "manager": "Sai Vikram", "quality": "MODERATE","ack": "2m 31s", "resolve": "2m 36s", "channelEngage": "49m 46s" },
-        { "caseNum": "473713404", "account": "Synergy (Electricity Gen.)", "product": "Developer Support", "timeIST": "2:31 PM", "manager": "Shubha", "quality": "MODERATE","ack": "32s", "resolve": "34s",    "channelEngage": "2m 58s" },
-        { "caseNum": "473677970", "account": "Land and Housing Corp.", "product": "Developer Support", "timeIST": "2:39 PM", "manager": "Shubha", "quality": "MODERATE","ack": "17s", "resolve": "21s",    "channelEngage": "13m 0s" },
-        { "caseNum": "473697509", "account": "Claro S.A.", "product": "Network Infra & Core", "timeIST": "2:50 PM", "manager": "Shubha", "quality": "STRONG",  "channelEngage": null }
+        {
+          "caseNum": "473711947",
+          "account": "PricewaterhouseCoopers",
+          "product": "Developer Support",
+          "timeIST": "12:53 PM",
+          "manager": "Sai Vikram",
+          "quality": "MODERATE",
+          "ack": "2m 31s",
+          "resolve": "2m 36s",
+          "channelEngage": "49m 46s"
+        },
+        {
+          "caseNum": "473713404",
+          "account": "Synergy (Electricity Gen.)",
+          "product": "Developer Support",
+          "timeIST": "2:31 PM",
+          "manager": "Shubha",
+          "quality": "MODERATE",
+          "ack": "32s",
+          "resolve": "34s",
+          "channelEngage": "2m 58s"
+        },
+        {
+          "caseNum": "473677970",
+          "account": "Land and Housing Corp.",
+          "product": "Developer Support",
+          "timeIST": "2:39 PM",
+          "manager": "Shubha",
+          "quality": "MODERATE",
+          "ack": "17s",
+          "resolve": "21s",
+          "channelEngage": "13m 0s"
+        },
+        {
+          "caseNum": "473697509",
+          "account": "Claro S.A.",
+          "product": "Network Infra & Core",
+          "timeIST": "2:50 PM",
+          "manager": "Shubha",
+          "quality": "STRONG",
+          "channelEngage": null
+        }
       ]
     },
     {
@@ -168,16 +875,108 @@
       "manager": "Rohit",
       "canvasId": null,
       "cases": [
-        { "caseNum": "473729989", "account": "Axis Bank Limited", "product": "Developer Support", "timeIST": "12:33 PM", "manager": "Rohit", "quality": "STRONG",   "ack": "25s", "resolve": "1m 4s",  "channelEngage": "56m 31s" },
-        { "caseNum": "473733059", "account": "Ola Electric Technologies", "product": "Developer Support", "timeIST": "1:51 PM", "manager": "Rohit", "quality": "STRONG",   "resolve": "21s",    "channelEngage": "13m 37s" },
-        { "caseNum": "473733080", "account": "Amazon.com, Inc.", "product": "Developer Support", "timeIST": "1:52 PM", "manager": "Rohit", "quality": "STRONG",   "resolve": "1m 54s", "channelEngage": null },
-        { "caseNum": "473733820", "account": "Telstra Corporation Limited", "product": "Developer Support", "timeIST": "2:40 PM", "manager": "Rohit", "quality": "STRONG",   "resolve": "25s",    "channelEngage": null },
-        { "caseNum": "473729164", "account": "Prudential Vietnam Assurance Company", "product": "Service Cloud Voice", "timeIST": "3:09 PM", "manager": "Rohit", "quality": "MODERATE","ack": "48s", "channelEngage": "6m 57s" },
-        { "caseNum": "473734321", "account": "Autodesk, Inc.", "product": "Developer Support", "timeIST": "3:10 PM", "manager": "Rohit", "quality": "MODERATE","ack": "37s", "resolve": "2m 39s", "channelEngage": "14m 42s" },
-        { "caseNum": "473734813", "account": "SentinelOne", "product": "Developer Support", "timeIST": "3:42 PM", "manager": "Rohit", "quality": "STRONG",   "resolve": "25s",    "channelEngage": null },
-        { "caseNum": "473731556", "account": "Bajaj Finance Ltd", "product": "Developer Support", "timeIST": "7:14 PM", "manager": "Jyothirmayee", "quality": "MODERATE","resolve": "24s",    "channelEngage": "1m 29s" },
-        { "caseNum": "473738074", "account": "Granite Telecommunications", "product": "Developer Support", "timeIST": "7:19 PM", "manager": "Jyothirmayee", "quality": "MODERATE","resolve": "22s",    "channelEngage": "3m 24s" },
-        { "caseNum": "473738147", "account": "PepsiCo, Inc.", "product": "Developer Support", "timeIST": "7:23 PM", "manager": "Jyothirmayee", "quality": "STRONG",   "resolve": "20s",    "channelEngage": "2m 16s" }
+        {
+          "caseNum": "473729989",
+          "account": "Axis Bank Limited",
+          "product": "Developer Support",
+          "timeIST": "12:33 PM",
+          "manager": "Rohit",
+          "quality": "STRONG",
+          "ack": "25s",
+          "resolve": "1m 4s",
+          "channelEngage": "56m 31s"
+        },
+        {
+          "caseNum": "473733059",
+          "account": "Ola Electric Technologies",
+          "product": "Developer Support",
+          "timeIST": "1:51 PM",
+          "manager": "Rohit",
+          "quality": "STRONG",
+          "resolve": "21s",
+          "channelEngage": "13m 37s"
+        },
+        {
+          "caseNum": "473733080",
+          "account": "Amazon.com, Inc.",
+          "product": "Developer Support",
+          "timeIST": "1:52 PM",
+          "manager": "Rohit",
+          "quality": "STRONG",
+          "resolve": "1m 54s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473733820",
+          "account": "Telstra Corporation Limited",
+          "product": "Developer Support",
+          "timeIST": "2:40 PM",
+          "manager": "Rohit",
+          "quality": "STRONG",
+          "resolve": "25s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473729164",
+          "account": "Prudential Vietnam Assurance Company",
+          "product": "Service Cloud Voice",
+          "timeIST": "3:09 PM",
+          "manager": "Rohit",
+          "quality": "MODERATE",
+          "ack": "48s",
+          "channelEngage": "6m 57s"
+        },
+        {
+          "caseNum": "473734321",
+          "account": "Autodesk, Inc.",
+          "product": "Developer Support",
+          "timeIST": "3:10 PM",
+          "manager": "Rohit",
+          "quality": "MODERATE",
+          "ack": "37s",
+          "resolve": "2m 39s",
+          "channelEngage": "14m 42s"
+        },
+        {
+          "caseNum": "473734813",
+          "account": "SentinelOne",
+          "product": "Developer Support",
+          "timeIST": "3:42 PM",
+          "manager": "Rohit",
+          "quality": "STRONG",
+          "resolve": "25s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473731556",
+          "account": "Bajaj Finance Ltd",
+          "product": "Developer Support",
+          "timeIST": "7:14 PM",
+          "manager": "Jyothirmayee",
+          "quality": "MODERATE",
+          "resolve": "24s",
+          "channelEngage": "1m 29s"
+        },
+        {
+          "caseNum": "473738074",
+          "account": "Granite Telecommunications",
+          "product": "Developer Support",
+          "timeIST": "7:19 PM",
+          "manager": "Jyothirmayee",
+          "quality": "MODERATE",
+          "resolve": "22s",
+          "channelEngage": "3m 24s"
+        },
+        {
+          "caseNum": "473738147",
+          "account": "PepsiCo, Inc.",
+          "product": "Developer Support",
+          "timeIST": "7:23 PM",
+          "manager": "Jyothirmayee",
+          "quality": "STRONG",
+          "resolve": "20s",
+          "channelEngage": "2m 16s"
+        }
       ]
     },
     {
@@ -186,20 +985,147 @@
       "manager": "Nikhil",
       "canvasId": null,
       "cases": [
-        { "caseNum": "473751438", "account": "Vodafone Group Plc", "product": "Digital Engagement", "timeIST": "12:39 PM", "manager": "Nikhil", "quality": "STRONG",   "resolve": "27s",    "channelEngage": null },
-        { "caseNum": "473752851", "account": "Cummins Inc.", "product": "Developer Support", "timeIST": "2:11 PM", "manager": "Nikhil", "quality": "STRONG",   "resolve": "20s",    "channelEngage": null },
-        { "caseNum": "473752886", "account": "Zurich Insurance Group Ltd", "product": "Developer Support", "timeIST": "2:14 PM", "manager": "Nikhil", "quality": "STRONG",   "resolve": "22s",    "channelEngage": null },
-        { "caseNum": "473754009", "account": "Experian plc", "product": "Developer Support", "timeIST": "3:26 PM", "manager": "Nikhil", "quality": "STRONG",   "resolve": "24s",    "channelEngage": null },
-        { "caseNum": "473755111", "account": "Deutsche Bank AG", "product": "Developer Support", "timeIST": "4:43 PM", "manager": "Nikhil", "quality": "STRONG",   "resolve": "26s",    "channelEngage": null },
-        { "caseNum": "473755197", "account": "Realtor.com", "product": "Developer Support", "timeIST": "4:48 PM", "manager": "Nikhil", "quality": "MODERATE","resolve": "30s",    "channelEngage": null },
-        { "caseNum": "473743172", "account": "GE HealthCare Technologies Inc.", "product": "Developer Support", "timeIST": "5:38 PM", "manager": "Nikhil", "quality": "STRONG",   "resolve": "25s",    "channelEngage": null },
-        { "caseNum": "473743597", "account": "Barclays Bank PLC", "product": "Developer Support", "timeIST": "5:51 PM", "manager": "Nikhil", "quality": "STRONG",   "resolve": "22s",    "channelEngage": null },
-        { "caseNum": "473756525", "account": "Walmart Inc.", "product": "Developer Support", "timeIST": "6:19 PM", "manager": "Nikhil", "quality": "STRONG",   "resolve": "20s",    "channelEngage": null },
-        { "caseNum": "473744331", "account": "HDFC Bank Limited", "product": "Developer Support", "timeIST": "6:29 PM", "manager": "Nikhil", "quality": "STRONG",   "resolve": "16s",    "channelEngage": null },
-        { "caseNum": "473744459", "account": "Siemens AG", "product": "Developer Support", "timeIST": "6:34 PM", "manager": "Nikhil", "quality": "STRONG",   "resolve": "31s",    "channelEngage": null },
-        { "caseNum": "473756810", "account": "Workday, Inc.", "product": "Developer Support", "timeIST": "6:36 PM", "manager": "Nikhil", "quality": "STRONG",   "resolve": "45s",    "channelEngage": null },
-        { "caseNum": "473756818", "account": "TELUS Communications Inc.", "product": "Developer Support", "timeIST": "6:37 PM", "manager": "Jyothirmayee", "quality": "STRONG",   "ack": "2m 23s", "resolve": "2m 36s", "channelEngage": null },
-        { "caseNum": "473757516", "account": "Accenture Solutions Pvt Ltd", "product": "Developer Support", "timeIST": "7:20 PM", "manager": "Nikhil", "quality": "MODERATE","resolve": "29s",    "channelEngage": null }
+        {
+          "caseNum": "473751438",
+          "account": "Vodafone Group Plc",
+          "product": "Digital Engagement",
+          "timeIST": "12:39 PM",
+          "manager": "Nikhil",
+          "quality": "STRONG",
+          "resolve": "27s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473752851",
+          "account": "Cummins Inc.",
+          "product": "Developer Support",
+          "timeIST": "2:11 PM",
+          "manager": "Nikhil",
+          "quality": "STRONG",
+          "resolve": "20s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473752886",
+          "account": "Zurich Insurance Group Ltd",
+          "product": "Developer Support",
+          "timeIST": "2:14 PM",
+          "manager": "Nikhil",
+          "quality": "STRONG",
+          "resolve": "22s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473754009",
+          "account": "Experian plc",
+          "product": "Developer Support",
+          "timeIST": "3:26 PM",
+          "manager": "Nikhil",
+          "quality": "STRONG",
+          "resolve": "24s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473755111",
+          "account": "Deutsche Bank AG",
+          "product": "Developer Support",
+          "timeIST": "4:43 PM",
+          "manager": "Nikhil",
+          "quality": "STRONG",
+          "resolve": "26s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473755197",
+          "account": "Realtor.com",
+          "product": "Developer Support",
+          "timeIST": "4:48 PM",
+          "manager": "Nikhil",
+          "quality": "MODERATE",
+          "resolve": "30s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473743172",
+          "account": "GE HealthCare Technologies Inc.",
+          "product": "Developer Support",
+          "timeIST": "5:38 PM",
+          "manager": "Nikhil",
+          "quality": "STRONG",
+          "resolve": "25s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473743597",
+          "account": "Barclays Bank PLC",
+          "product": "Developer Support",
+          "timeIST": "5:51 PM",
+          "manager": "Nikhil",
+          "quality": "STRONG",
+          "resolve": "22s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473756525",
+          "account": "Walmart Inc.",
+          "product": "Developer Support",
+          "timeIST": "6:19 PM",
+          "manager": "Nikhil",
+          "quality": "STRONG",
+          "resolve": "20s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473744331",
+          "account": "HDFC Bank Limited",
+          "product": "Developer Support",
+          "timeIST": "6:29 PM",
+          "manager": "Nikhil",
+          "quality": "STRONG",
+          "resolve": "16s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473744459",
+          "account": "Siemens AG",
+          "product": "Developer Support",
+          "timeIST": "6:34 PM",
+          "manager": "Nikhil",
+          "quality": "STRONG",
+          "resolve": "31s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473756810",
+          "account": "Workday, Inc.",
+          "product": "Developer Support",
+          "timeIST": "6:36 PM",
+          "manager": "Nikhil",
+          "quality": "STRONG",
+          "resolve": "45s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473756818",
+          "account": "TELUS Communications Inc.",
+          "product": "Developer Support",
+          "timeIST": "6:37 PM",
+          "manager": "Jyothirmayee",
+          "quality": "STRONG",
+          "ack": "2m 23s",
+          "resolve": "2m 36s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473757516",
+          "account": "Accenture Solutions Pvt Ltd",
+          "product": "Developer Support",
+          "timeIST": "7:20 PM",
+          "manager": "Nikhil",
+          "quality": "MODERATE",
+          "resolve": "29s",
+          "channelEngage": null
+        }
       ]
     },
     {
@@ -208,21 +1134,141 @@
       "manager": "Sai Vikram",
       "canvasId": null,
       "cases": [
-        { "caseNum": "473764192", "account": "Telecom Italia S.p.A.", "product": "Developer Support", "timeIST": "12:37 PM", "quality": "STRONG",   "resolve": "3m 17s", "channelEngage": null },
-        { "caseNum": "473772063", "account": "National Australia Bank", "product": "Developer Support", "timeIST": "12:51 PM", "quality": "STRONG",   "ack": "10s", "channelEngage": null },
-        { "caseNum": "473772069", "account": "ABN AMRO Bank N.V.", "product": "Developer Support", "timeIST": "2:09 PM", "quality": "STRONG",   "ack": "1m 21s", "channelEngage": null },
-        { "caseNum": "473774824", "account": "Prudential plc", "product": "Developer Support", "timeIST": "3:59 PM", "quality": "STRONG",   "ack": "2m 26s", "channelEngage": null },
-        { "caseNum": "473774927", "account": "Capita plc", "product": "Developer Support", "timeIST": "4:05 PM", "quality": "STRONG",   "ack": "29s", "channelEngage": null },
-        { "caseNum": "473775323", "account": "ENGIE S.A.", "product": "Field Service", "timeIST": "4:32 PM", "quality": "STRONG",   "resolve": "3m 17s", "channelEngage": null },
-        { "caseNum": "473775967", "account": "Allianz SE", "product": "Developer Support", "timeIST": "5:22 PM", "quality": "STRONG",   "resolve": "3m 21s", "channelEngage": null },
-        { "caseNum": "473698784", "account": "Deutsche Telekom AG", "product": "Developer Support", "timeIST": "5:30 PM", "quality": "STRONG",   "ack": "1m 21s", "channelEngage": null },
-        { "caseNum": "473776135", "account": "Tesco Stores Ltd", "product": "Developer Support", "timeIST": "5:33 PM", "quality": "STRONG",   "resolve": "3m 13s", "channelEngage": null },
-        { "caseNum": "473776048", "account": "ING Bank N.V.", "product": "Developer Support", "timeIST": "6:02 PM", "quality": "STRONG",   "resolve": "3m 11s", "channelEngage": null },
-        { "caseNum": "473739241", "account": "Rabobank", "product": "Developer Support", "timeIST": "6:42 PM", "quality": "STRONG",   "resolve": "3m 13s", "channelEngage": null },
-        { "caseNum": "473775839", "account": "Bayer AG", "product": "Developer Support", "timeIST": "7:20 PM", "quality": "STRONG",   "resolve": "3m 16s", "channelEngage": null },
-        { "caseNum": "473756017", "account": "Koninklijke Philips N.V.", "product": "Developer Support", "timeIST": "7:24 PM", "quality": "MODERATE","ack": "10s", "channelEngage": null },
-        { "caseNum": "473777807", "account": "ABB Ltd", "product": "Developer Support", "timeIST": "7:27 PM", "quality": "STRONG",   "ack": "1m 12s", "channelEngage": null },
-        { "caseNum": "473777827", "account": "Schneider Electric SE", "product": "Developer Support", "timeIST": "7:28 PM", "quality": "STRONG",   "ack": "8s", "channelEngage": null }
+        {
+          "caseNum": "473764192",
+          "account": "Telecom Italia S.p.A.",
+          "product": "Developer Support",
+          "timeIST": "12:37 PM",
+          "quality": "STRONG",
+          "resolve": "3m 17s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473772063",
+          "account": "National Australia Bank",
+          "product": "Developer Support",
+          "timeIST": "12:51 PM",
+          "quality": "STRONG",
+          "ack": "10s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473772069",
+          "account": "ABN AMRO Bank N.V.",
+          "product": "Developer Support",
+          "timeIST": "2:09 PM",
+          "quality": "STRONG",
+          "ack": "1m 21s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473774824",
+          "account": "Prudential plc",
+          "product": "Developer Support",
+          "timeIST": "3:59 PM",
+          "quality": "STRONG",
+          "ack": "2m 26s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473774927",
+          "account": "Capita plc",
+          "product": "Developer Support",
+          "timeIST": "4:05 PM",
+          "quality": "STRONG",
+          "ack": "29s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473775323",
+          "account": "ENGIE S.A.",
+          "product": "Field Service",
+          "timeIST": "4:32 PM",
+          "quality": "STRONG",
+          "resolve": "3m 17s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473775967",
+          "account": "Allianz SE",
+          "product": "Developer Support",
+          "timeIST": "5:22 PM",
+          "quality": "STRONG",
+          "resolve": "3m 21s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473698784",
+          "account": "Deutsche Telekom AG",
+          "product": "Developer Support",
+          "timeIST": "5:30 PM",
+          "quality": "STRONG",
+          "ack": "1m 21s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473776135",
+          "account": "Tesco Stores Ltd",
+          "product": "Developer Support",
+          "timeIST": "5:33 PM",
+          "quality": "STRONG",
+          "resolve": "3m 13s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473776048",
+          "account": "ING Bank N.V.",
+          "product": "Developer Support",
+          "timeIST": "6:02 PM",
+          "quality": "STRONG",
+          "resolve": "3m 11s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473739241",
+          "account": "Rabobank",
+          "product": "Developer Support",
+          "timeIST": "6:42 PM",
+          "quality": "STRONG",
+          "resolve": "3m 13s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473775839",
+          "account": "Bayer AG",
+          "product": "Developer Support",
+          "timeIST": "7:20 PM",
+          "quality": "STRONG",
+          "resolve": "3m 16s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473756017",
+          "account": "Koninklijke Philips N.V.",
+          "product": "Developer Support",
+          "timeIST": "7:24 PM",
+          "quality": "MODERATE",
+          "ack": "10s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473777807",
+          "account": "ABB Ltd",
+          "product": "Developer Support",
+          "timeIST": "7:27 PM",
+          "quality": "STRONG",
+          "ack": "1m 12s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473777827",
+          "account": "Schneider Electric SE",
+          "product": "Developer Support",
+          "timeIST": "7:28 PM",
+          "quality": "STRONG",
+          "ack": "8s",
+          "channelEngage": null
+        }
       ]
     },
     {
@@ -231,26 +1277,248 @@
       "manager": "Nikhil",
       "canvasId": null,
       "cases": [
-        { "caseNum": "473774704", "account": "Ciena Corporation", "product": "Developer Support", "timeIST": "12:54 PM", "quality": "PENDING", "resolve": "1m 2s",  "channelEngage": "3m 45s" },
-        { "caseNum": "473787849", "account": "Wolters Kluwer Tax EU", "product": "Developer Support", "timeIST": "1:30 PM", "quality": "PENDING", "resolve": "33s",    "channelEngage": null },
-        { "caseNum": "473813191", "account": "Telstra Corporation Limited", "product": "Developer Support", "timeIST": "1:51 PM", "quality": "PENDING", "resolve": "21s",    "channelEngage": "22m 10s" },
-        { "caseNum": "473813208", "account": "Thelem Assurances", "product": "Developer Support", "timeIST": "1:51 PM", "quality": "PENDING", "resolve": "2m 18s", "channelEngage": "18m 39s" },
-        { "caseNum": "473813340", "account": "News Corp / Realtor.com", "product": "Developer Support", "timeIST": "2:00 PM", "quality": "PENDING", "resolve": "22s",    "channelEngage": "8m 20s" },
-        { "caseNum": "473813531", "account": "ENGIE HOME SERVICES", "product": "Developer Support", "timeIST": "2:10 PM", "quality": "PENDING", "resolve": "29s",    "channelEngage": "13m 40s" },
-        { "caseNum": "473813727", "account": "Activision Publishing, Inc.", "product": "Developer Support", "timeIST": "2:22 PM", "quality": "PENDING", "resolve": "40s",    "channelEngage": "4m 56s" },
-        { "caseNum": "473814346", "account": "GIE AXA France", "product": "Field Service", "timeIST": "2:59 PM", "quality": "PENDING", "resolve": "23s",    "channelEngage": "28m 58s" },
-        { "caseNum": "473814469", "account": "Vaillant GmbH & Co. KG", "product": "Developer Support", "timeIST": "3:07 PM", "quality": "PENDING", "resolve": "26s",    "channelEngage": "22m 59s" },
-        { "caseNum": "473771164", "account": "Jaquar and Company Private Limited", "product": "Field Service", "timeIST": "3:46 PM", "quality": "PENDING", "resolve": "26s",    "channelEngage": null },
-        { "caseNum": "473815477", "account": "Williams-Sonoma, Inc.", "product": "Developer Support", "timeIST": "4:13 PM", "quality": "PENDING", "channelEngage": "15m 52s" },
-        { "caseNum": "473815509", "account": "Lilly Life Sciences", "product": "Developer Support", "timeIST": "4:17 PM", "quality": "PENDING", "channelEngage": "11m 22s" },
-        { "caseNum": "473813759", "account": "United Utilities PLC", "product": "Developer Support", "timeIST": "5:09 PM", "quality": "PENDING", "channelEngage": "2m 41s" },
-        { "caseNum": "473816757", "account": "Haier US Appliance (GE Appliances)", "product": "Field Service", "timeIST": "5:47 PM", "quality": "PENDING", "channelEngage": "15m 50s" },
-        { "caseNum": "473816772", "account": "Beyond Finance", "product": "Developer Support", "timeIST": "5:48 PM", "quality": "PENDING", "channelEngage": "15m 49s" },
-        { "caseNum": "473771388", "account": "Poshmark, Inc.", "product": "Developer Support", "timeIST": "5:51 PM", "quality": "PENDING", "channelEngage": "26m 44s" },
-        { "caseNum": "473816943", "account": "Progressive Casualty Insurance", "product": "Developer Support", "timeIST": "5:57 PM", "quality": "PENDING", "channelEngage": "16m 13s" },
-        { "caseNum": "473817788", "account": "Refinitiv Ltd", "product": "Developer Support", "timeIST": "7:09 PM", "quality": "PENDING", "channelEngage": "51m 39s" },
-        { "caseNum": "473817800", "account": "Google LLC", "product": "Developer Support", "timeIST": "7:10 PM", "quality": "PENDING", "channelEngage": "10m 58s" },
-        { "caseNum": "473817982", "account": "Dell - Service", "product": "Developer Support", "timeIST": "7:28 PM", "quality": "PENDING", "channelEngage": "11m 10s" }
+        {
+          "caseNum": "473774704",
+          "account": "Ciena Corporation",
+          "product": "Developer Support",
+          "timeIST": "12:54 PM",
+          "quality": "PENDING",
+          "resolve": "1m 2s",
+          "channelEngage": "3m 45s"
+        },
+        {
+          "caseNum": "473787849",
+          "account": "Wolters Kluwer Tax EU",
+          "product": "Developer Support",
+          "timeIST": "1:30 PM",
+          "quality": "PENDING",
+          "resolve": "33s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473813191",
+          "account": "Telstra Corporation Limited",
+          "product": "Developer Support",
+          "timeIST": "1:51 PM",
+          "quality": "PENDING",
+          "resolve": "21s",
+          "channelEngage": "22m 10s"
+        },
+        {
+          "caseNum": "473813208",
+          "account": "Thelem Assurances",
+          "product": "Developer Support",
+          "timeIST": "1:51 PM",
+          "quality": "PENDING",
+          "resolve": "2m 18s",
+          "channelEngage": "18m 39s"
+        },
+        {
+          "caseNum": "473813340",
+          "account": "News Corp / Realtor.com",
+          "product": "Developer Support",
+          "timeIST": "2:00 PM",
+          "quality": "PENDING",
+          "resolve": "22s",
+          "channelEngage": "8m 20s"
+        },
+        {
+          "caseNum": "473813531",
+          "account": "ENGIE HOME SERVICES",
+          "product": "Developer Support",
+          "timeIST": "2:10 PM",
+          "quality": "PENDING",
+          "resolve": "29s",
+          "channelEngage": "13m 40s"
+        },
+        {
+          "caseNum": "473813727",
+          "account": "Activision Publishing, Inc.",
+          "product": "Developer Support",
+          "timeIST": "2:22 PM",
+          "quality": "PENDING",
+          "resolve": "40s",
+          "channelEngage": "4m 56s"
+        },
+        {
+          "caseNum": "473814346",
+          "account": "GIE AXA France",
+          "product": "Field Service",
+          "timeIST": "2:59 PM",
+          "quality": "PENDING",
+          "resolve": "23s",
+          "channelEngage": "28m 58s"
+        },
+        {
+          "caseNum": "473814469",
+          "account": "Vaillant GmbH & Co. KG",
+          "product": "Developer Support",
+          "timeIST": "3:07 PM",
+          "quality": "PENDING",
+          "resolve": "26s",
+          "channelEngage": "22m 59s"
+        },
+        {
+          "caseNum": "473771164",
+          "account": "Jaquar and Company Private Limited",
+          "product": "Field Service",
+          "timeIST": "3:46 PM",
+          "quality": "PENDING",
+          "resolve": "26s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473815477",
+          "account": "Williams-Sonoma, Inc.",
+          "product": "Developer Support",
+          "timeIST": "4:13 PM",
+          "quality": "PENDING",
+          "channelEngage": "15m 52s"
+        },
+        {
+          "caseNum": "473815509",
+          "account": "Lilly Life Sciences",
+          "product": "Developer Support",
+          "timeIST": "4:17 PM",
+          "quality": "PENDING",
+          "channelEngage": "11m 22s"
+        },
+        {
+          "caseNum": "473813759",
+          "account": "United Utilities PLC",
+          "product": "Developer Support",
+          "timeIST": "5:09 PM",
+          "quality": "PENDING",
+          "channelEngage": "2m 41s"
+        },
+        {
+          "caseNum": "473816757",
+          "account": "Haier US Appliance (GE Appliances)",
+          "product": "Field Service",
+          "timeIST": "5:47 PM",
+          "quality": "PENDING",
+          "channelEngage": "15m 50s"
+        },
+        {
+          "caseNum": "473816772",
+          "account": "Beyond Finance",
+          "product": "Developer Support",
+          "timeIST": "5:48 PM",
+          "quality": "PENDING",
+          "channelEngage": "15m 49s"
+        },
+        {
+          "caseNum": "473771388",
+          "account": "Poshmark, Inc.",
+          "product": "Developer Support",
+          "timeIST": "5:51 PM",
+          "quality": "PENDING",
+          "channelEngage": "26m 44s"
+        },
+        {
+          "caseNum": "473816943",
+          "account": "Progressive Casualty Insurance",
+          "product": "Developer Support",
+          "timeIST": "5:57 PM",
+          "quality": "PENDING",
+          "channelEngage": "16m 13s"
+        },
+        {
+          "caseNum": "473817788",
+          "account": "Refinitiv Ltd",
+          "product": "Developer Support",
+          "timeIST": "7:09 PM",
+          "quality": "PENDING",
+          "channelEngage": "51m 39s"
+        },
+        {
+          "caseNum": "473817800",
+          "account": "Google LLC",
+          "product": "Developer Support",
+          "timeIST": "7:10 PM",
+          "quality": "PENDING",
+          "channelEngage": "10m 58s"
+        },
+        {
+          "caseNum": "473817982",
+          "account": "Dell - Service",
+          "product": "Developer Support",
+          "timeIST": "7:28 PM",
+          "quality": "PENDING",
+          "channelEngage": "11m 10s"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-16",
+      "label": "Jun 16",
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5",
+      "canvasId": null,
+      "cases": [
+        {
+          "caseNum": "473832228",
+          "account": "The Boeing Company",
+          "product": "How-to, Setup, Configuration",
+          "timeIST": "12:44 PM",
+          "quality": "PENDING",
+          "resolve": "16s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473833219",
+          "account": "AXA Health UK",
+          "product": "Developer Support",
+          "timeIST": "1:43 PM",
+          "quality": "PENDING",
+          "resolve": "12s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473576862",
+          "account": "Google LLC",
+          "product": "Prompt Builder",
+          "timeIST": "1:48 PM",
+          "quality": "PENDING",
+          "resolve": "21s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473744459",
+          "account": "Maersk A/S",
+          "product": "Digital Engagement",
+          "timeIST": "1:58 PM",
+          "quality": "PENDING",
+          "resolve": "16s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473751670",
+          "account": "Adidas AG",
+          "product": "Developer Support",
+          "timeIST": "2:15 PM",
+          "quality": "PENDING",
+          "resolve": "14s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473702574",
+          "account": "Brown Thomas Arnotts Limited",
+          "product": "Developer Support",
+          "timeIST": "3:01 PM",
+          "quality": "PENDING",
+          "resolve": "22s",
+          "channelEngage": null
+        },
+        {
+          "caseNum": "473834963",
+          "account": "L'OREAL SA",
+          "product": "Service Cloud Voice",
+          "timeIST": "3:28 PM",
+          "quality": "PENDING",
+          "resolve": "14s",
+          "channelEngage": null
+        }
       ]
     }
   ]
