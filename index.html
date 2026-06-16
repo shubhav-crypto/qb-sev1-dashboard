@@ -245,9 +245,108 @@ function rtColor(s){
   if(s<=180)return{bg:'rgba(217,119,6,.12)',color:'#d97706',label:'🟡'};
   return{bg:'rgba(220,38,38,.12)',color:'#dc2626',label:'🔴'};
 }
-const NO_ENG_HTML='<td style="white-space:nowrap;font-size:12px;"><span style="background:rgba(220,38,38,.12);color:#dc2626;border-radius:5px;padding:2px 7px;font-weight:600;">🔴 No engagement</span></td>';
-function rtCell(val,noColor,isEngage){
-  if(!val||val==='No engagement')return isEngage?NO_ENG_HTML:'<td class="time-cell" style="color:#94a3b8;font-size:11px;">—</td>';
+const noEngReasons = {
+  // Jun 1
+  '473523438':'Pre-existing channel — Sev1 channel was created before QB window; no new engagement required',
+  '473600625':'Pre-existing channel; CIC disengaged — Mobile Publisher iOS issue, prod go-live >7 days away, not an active production outage',
+  '473513077':'Pre-existing channel — resolved quickly before QB manager engaged',
+  '473602269':'Channel created; CIC engaged; no bridge — assessed as no critical production impact; CIC disengaged quickly',
+  '473604164':'Channel created; bridge held; sandbox restoration — sandboxes restored, customer confirmed access; CIC disengaged',
+  '473604902':'No further messages in WB window — insufficient coordination activity documented within 12:30–7:30 PM IST',
+  // Jun 2
+  '473611838':'No channel created — resolved quickly without documented BI or bridge',
+  '473567778':'No channel created — resolved quickly without documented BI or bridge',
+  '473613830':'Pre-existing channel — no new QB-window engagement documented',
+  // Jun 3
+  '473624051':'Pre-existing channel — CIC coordination concluded outside WB window',
+  '473493085':'Old case (May 18) — minimal Jun 3 activity; prior CIC engagement already closed out',
+  // Jun 4
+  '473634707':'Channel created but no activity beyond setup; handled without channel coordination',
+  '473634750':'No channel engagement documented within QB window',
+  '473634762':'No channel engagement documented within QB window',
+  '473637157':'No channel engagement documented within QB window',
+  '473634071':'No channel engagement documented within QB window',
+  '473631372':'No channel engagement documented within QB window',
+  '473248499':'Old case (Apr 16) — reopened Jun 4 to review RCA; no new Sev1 coordination',
+  '473638777':'No channel engagement documented within QB window',
+  '473505955':'No Sev1 channel link in PD thread; minimal evidence of active WB coordination',
+  '473639607':'No channel engagement documented within QB window',
+  // Jun 5
+  '473655407':'No Sev1 Slack channel created',
+  '473643333':'No channel engagement documented within QB window',
+  // Jun 8
+  '473692840':'Major DB CPU throttle (FRA80); CIC engagement began after WB window close (8:09 PM IST vs 7:30 PM cutoff)',
+  '473694062':'Proactive monitoring alert (Connection Pool Errors); routed to reactive team; no confirmed customer business impact',
+  '473694734':'Throttle expired before CIC engaged; customer unresponsive; no active production impact',
+  '473694893':'Throttle expired before CIC engaged; CIC disengaged immediately — no active impact confirmed',
+  '473697035':'Agentforce usage limit on sandbox/dev org only, not a production blocker',
+  '473697121':'Channel created but no CIC engagement before 7:30 PM cutoff; multi-day investigation continued from Jun 9',
+  '473697264':'Sandbox-only issue (voicemail >2 min); no production impact; CIC disengaged',
+  '473697509':'Multi-day case; limited WB coordination on Jun 8; full CIC engagement picked up from Jun 9',
+  '473697838':'Omni routing assessed as WAD (Working As Designed) in sandbox org; no production blocker',
+  '473245400':"Summer '26 release investigation; CIC disengaged pending next-day customer availability; partial workaround available",
+  '473646616':'Customer unresponsive for 6+ hours; Sev1 BI not validated before escalation; CIC disengaged',
+  '473621085':'No channel engagement documented within QB window',
+  // Jun 9
+  '473697509_jun9':'Multi-day case; limited WB coordination; full CIC + engineering engagement from Jun 9',
+  // Jun 10
+  '473733080':'No channel engagement documented within QB window',
+  '473733820':'No channel engagement documented within QB window',
+  '473734813':'No channel engagement documented within QB window',
+  // Jun 11
+  '473751438':'No channel engagement documented within QB window',
+  '473752851':'No channel engagement documented within QB window',
+  '473752886':'No channel engagement documented within QB window',
+  '473754009':'No channel engagement documented within QB window',
+  '473755111':'No channel engagement documented within QB window',
+  '473755197':'DB CPU throttle detected; throttle self-resolving; no sustained production impact within WB window',
+  '473743172':'MCI case — engagement tracked under MCI cluster; individual channel engage not separately recorded',
+  '473743597':'MCI case — engagement tracked under MCI cluster; individual channel engage not separately recorded',
+  '473756525':'No channel engagement documented within QB window',
+  '473744331':'MCI case — engagement tracked under MCI cluster',
+  '473744459':'MCI case — engagement tracked under MCI cluster',
+  '473756810':'MCI case — engagement tracked under MCI cluster',
+  '473756818':'No channel engagement documented within QB window',
+  '473757516':'CIC declined — how-to inquiry on passwordless login, not a true functional impact Sev1',
+  // Jun 12
+  '473764192':'No channel engagement documented within QB window',
+  '473772063':'No channel engagement documented within QB window',
+  '473772069':'No channel engagement documented within QB window',
+  '473774824':'No channel engagement documented within QB window',
+  '473774927':'No channel engagement documented within QB window',
+  '473775323':'No channel engagement documented within QB window',
+  '473775967':'No channel engagement documented within QB window',
+  '473698784':'No channel engagement documented within QB window',
+  '473776135':'No channel engagement documented within QB window',
+  '473776048':'No channel engagement documented within QB window',
+  '473739241':'No channel engagement documented within QB window',
+  '473775839':'No channel engagement documented within QB window',
+  '473756017':'No Sev1 Slack channel found',
+  '473777807':'No channel engagement documented within QB window',
+  '473777827':'No channel engagement documented within QB window',
+  // Jun 15
+  '473787849':'No channel engagement documented within QB window',
+  '473771164':'No channel engagement documented within QB window',
+  // Jun 16
+  '473576862':'Pre-existing channel — created before QB window; no new engagement required during this alert',
+  '473744459_jun16':'Pre-existing channel — multi-day MCI case; duplicate case (473756810) linked; no new QB engagement',
+  '473702574':'Channel created but no CIC engagement documented within QB window',
+  // Jun 16 new cases — PENDING
+  '473835308':'Pending QB assessment — case came in during QB window; engagement details not yet reviewed',
+  '473835820':'Pending QB assessment — case came in during QB window; engagement details not yet reviewed',
+  '473836077':'Pending QB assessment — case came in during QB window; engagement details not yet reviewed',
+  '473553588':'Pre-existing channel — case created before Jun 16; re-alerted during QB window',
+  '473837041':'Pending QB assessment — case came in during QB window; engagement details not yet reviewed',
+  '473837116':'Pending QB assessment — case came in during QB window; engagement details not yet reviewed',
+  '473837684':'Pending QB assessment — case came in during QB window; engagement details not yet reviewed',
+};
+function makeNoEngHtml(caseNum){
+  const reason=noEngReasons[caseNum]||'No channel engagement recorded within QB window (12:30–7:30 PM IST)';
+  const safe=reason.replace(/"/g,'&quot;');
+  return`<td style="white-space:nowrap;font-size:12px;"><span style="background:rgba(220,38,38,.12);color:#dc2626;border-radius:5px;padding:2px 7px;font-weight:600;cursor:help;border-bottom:1px dashed rgba(220,38,38,.5);" title="${safe}">🔴 No engagement</span></td>`;
+}
+function rtCell(val,noColor,isEngage,caseNum){
+  if(!val||val==='No engagement')return isEngage?makeNoEngHtml(caseNum):'<td class="time-cell" style="color:#94a3b8;font-size:11px;">—</td>';
   if(noColor)return`<td style="white-space:nowrap;font-size:12px;color:#0f172a;font-weight:700;">${val}</td>`;
   const s=parseSeconds(val),c=rtColor(s);
   if(!c)return'<td>—</td>';
@@ -535,7 +634,7 @@ function buildDayPanel(day){
       <td class="account-name">${mciTag}${c.account}</td><td class="product-cell">${c.product}</td>
       <td class="time-cell">${c.timeIST}</td>
       <td><span class="manager-chip ${chipCls}">${mgr}</span></td>
-      ${rtCell(c.ack)}${rtCell(c.resolve)}${rtCell(c.channelEngage,true,true)}</tr>`;
+      ${rtCell(c.ack)}${rtCell(c.resolve)}${rtCell(c.channelEngage,true,true,c.caseNum)}</tr>`;
   });
   html+='</tbody></table></div>';
   return html;
