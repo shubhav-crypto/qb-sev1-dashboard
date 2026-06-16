@@ -425,9 +425,21 @@ function renderCharts(){
     const secs=avgSeconds(d.cases.map(c=>c.channelEngage).filter(v=>v&&v!=='No engagement'&&parseSeconds(v)!==null));
     return secs!==null?Math.round(secs/60*10)/10:null;
   });
+  const engageLabelsPlugin={id:'engageLabels',afterDatasetsDraw(chart){
+    const{ctx}=chart;
+    const meta=chart.getDatasetMeta(0);
+    ctx.save();ctx.font='bold 11px -apple-system,BlinkMacSystemFont,sans-serif';
+    ctx.fillStyle='#1e293b';ctx.textAlign='center';ctx.textBaseline='bottom';
+    meta.data.forEach((el,i)=>{
+      const v=engageMins[i];if(v===null)return;
+      ctx.fillText(v+'m',el.x,el.y-4);
+    });
+    ctx.restore();
+  }};
   if(healthChart)healthChart.destroy();
   healthChart=new Chart(document.getElementById('healthChart').getContext('2d'),{
     type:'bar',
+    plugins:[engageLabelsPlugin],
     data:{labels,datasets:[{
       label:'Avg Engage (min)',
       data:engageMins,
@@ -438,7 +450,9 @@ function renderCharts(){
       plugins:{legend:{display:false},
         tooltip:{callbacks:{label:item=>item.raw!==null?`${item.raw} min avg`:'No data'}}},
       scales:{x:{grid:{color:'rgba(226,232,240,.8)'},ticks:{font:{size:11}}},
-        y:{grid:{color:'rgba(226,232,240,.8)'},beginAtZero:true,ticks:{callback:v=>v+'m'}}}}
+        y:{grid:{color:'rgba(226,232,240,.8)'},beginAtZero:true,
+          suggestedMax:Math.max(...engageMins.filter(v=>v!==null))+3,
+          ticks:{callback:v=>v+'m'}}}}
   });
 }
 
