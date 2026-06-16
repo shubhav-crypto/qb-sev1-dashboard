@@ -331,14 +331,9 @@ const noEngReasons = {
   '473576862':'Pre-existing channel — created before QB window; no new engagement required during this alert',
   '473744459_jun16':'Pre-existing channel — multi-day MCI case; duplicate case (473756810) linked; no new QB engagement',
   '473702574':'Channel created but no CIC engagement documented within QB window',
-  // Jun 16 new cases — PENDING
-  '473835308':'Pending QB assessment — case came in during QB window; engagement details not yet reviewed',
-  '473835820':'Pending QB assessment — case came in during QB window; engagement details not yet reviewed',
-  '473836077':'Pending QB assessment — case came in during QB window; engagement details not yet reviewed',
-  '473553588':'Pre-existing channel — case created before Jun 16; re-alerted during QB window',
-  '473837041':'Pending QB assessment — case came in during QB window; engagement details not yet reviewed',
-  '473837116':'Pending QB assessment — case came in during QB window; engagement details not yet reviewed',
-  '473837684':'Pending QB assessment — case came in during QB window; engagement details not yet reviewed',
+  // Jun 16 new cases — ASSESSED
+  '473553588':'Pre-existing channel — case re-alerted Jun 16 for existing Caterpillar issue; no new CIC engagement within QB window',
+  '473838045':'Sandbox throttle — CIC assessed immediately and disengaged at 6:52 PM IST; sandbox-only impact, no production blocker',
 };
 function makeNoEngHtml(caseNum){
   const reason=noEngReasons[caseNum]||'No channel engagement recorded within QB window (12:30–7:30 PM IST)';
