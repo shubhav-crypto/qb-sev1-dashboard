@@ -47,15 +47,24 @@ MANAGER_IDS = {
 # ── SLACK API HELPERS ────────────────────────────────────────────────────────
 TOKEN = os.environ.get("SLACK_USER_TOKEN") or os.environ.get("SLACK_BOT_TOKEN")
 
+# xoxd- tokens are browser session cookies — must be sent as a cookie, not Bearer
+IS_COOKIE_TOKEN = TOKEN and TOKEN.startswith("xoxd-")
+
 def slack_get(method, params=None, retries=5, delay=2):
-    """Call a Slack Web API method (POST with Authorization header — works with all token types)."""
+    """Call a Slack Web API method. Supports both xoxp- (Bearer) and xoxd- (cookie) tokens."""
     params = params or {}
     url = f"https://slack.com/api/{method}"
     body = urllib.parse.urlencode(params).encode()
-    headers = {
-        "Authorization": f"Bearer {TOKEN}",
-        "Content-Type": "application/x-www-form-urlencoded",
-    }
+    if IS_COOKIE_TOKEN:
+        headers = {
+            "Cookie": f"d={TOKEN}",
+            "Content-Type": "application/x-www-form-urlencoded",
+        }
+    else:
+        headers = {
+            "Authorization": f"Bearer {TOKEN}",
+            "Content-Type": "application/x-www-form-urlencoded",
+        }
     req = urllib.request.Request(url, data=body, headers=headers, method="POST")
     for attempt in range(retries):
         try:
