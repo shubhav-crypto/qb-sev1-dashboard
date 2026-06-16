@@ -343,7 +343,7 @@ const noEngReasons = {
 function makeNoEngHtml(caseNum){
   const reason=noEngReasons[caseNum]||'No channel engagement recorded within QB window (12:30–7:30 PM IST)';
   const safe=reason.replace(/"/g,'&quot;');
-  return`<td style="white-space:nowrap;font-size:12px;"><span style="background:rgba(220,38,38,.12);color:#dc2626;border-radius:5px;padding:2px 7px;font-weight:600;cursor:help;border-bottom:1px dashed rgba(220,38,38,.5);" title="${safe}">🔴 No engagement</span></td>`;
+  return`<td style="white-space:nowrap;font-size:12px;"><span class="no-eng-tip" data-reason="${safe}" style="background:rgba(220,38,38,.12);color:#dc2626;border-radius:5px;padding:2px 7px;font-weight:600;cursor:default;border-bottom:1px dashed rgba(220,38,38,.5);">🔴 No engagement</span></td>`;
 }
 function rtCell(val,noColor,isEngage,caseNum){
   if(!val||val==='No engagement')return isEngage?makeNoEngHtml(caseNum):'<td class="time-cell" style="color:#94a3b8;font-size:11px;">—</td>';
@@ -654,8 +654,29 @@ function renderFooter(){
     '<span style="color:var(--border);">Live — data.json auto-refreshed every 5 min via GitHub Actions.</span>';
 }
 
-// ── TOOLTIPS (no-op — quality removed) ──────────────────────────────────────
-function attachTooltips(){}
+// ── TOOLTIPS ─────────────────────────────────────────────────────────────────
+let _tipAttached=false;
+function attachTooltips(){
+  if(_tipAttached)return;
+  _tipAttached=true;
+  const tip=document.getElementById('modTip');
+  document.addEventListener('mouseover',e=>{
+    const el=e.target.closest('.no-eng-tip');
+    if(!el)return;
+    tip.textContent=el.dataset.reason||'No channel engagement recorded';
+    tip.style.display='block';
+  });
+  document.addEventListener('mousemove',e=>{
+    if(tip.style.display==='none')return;
+    const x=e.clientX,y=e.clientY;
+    const tw=tip.offsetWidth,th=tip.offsetHeight;
+    tip.style.left=(x+tw+16>window.innerWidth?x-tw-8:x+12)+'px';
+    tip.style.top=(y+th+8>window.innerHeight?y-th-8:y+12)+'px';
+  });
+  document.addEventListener('mouseout',e=>{
+    if(e.target.closest('.no-eng-tip'))tip.style.display='none';
+  });
+}
 
 // ── BOOT ─────────────────────────────────────────────────────────────────────
 loadData(true);
