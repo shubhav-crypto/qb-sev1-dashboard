@@ -26,7 +26,9 @@
 
   .main{padding:28px 32px;max-width:1400px;margin:0 auto}
 
-  .kpi-bar{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:28px}
+  .kpi-bar{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:28px}
+  @media(max-width:900px){.kpi-bar{grid-template-columns:repeat(3,1fr)}}
+  @media(max-width:600px){.kpi-bar{grid-template-columns:repeat(2,1fr)}}
   .kpi{background:var(--surface);border:1px solid var(--border);border-radius:var(--card-radius);padding:18px 20px;position:relative;overflow:hidden}
   .kpi::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
   .kpi.blue::before{background:var(--accent)}.kpi.green::before{background:var(--green)}
@@ -121,6 +123,8 @@
     <div class="kpi blue"><div class="kpi-value" id="kpiTotal">—</div><div class="kpi-label">Total Sev1 Cases</div><div class="kpi-sub" id="kpiTotalSub"></div></div>
     <div class="kpi teal"><div class="kpi-value" id="kpiDays">—</div><div class="kpi-label">Days Tracked</div><div class="kpi-sub" id="kpiDaysSub"></div></div>
     <div class="kpi yellow"><div class="kpi-value" id="kpiAvgPerDay">—</div><div class="kpi-label">Avg Cases / Day</div><div class="kpi-sub" id="kpiAvgSub"></div></div>
+    <div class="kpi green"><div class="kpi-value" id="kpiMonthEngage" style="font-size:24px;">—</div><div class="kpi-label">Monthly Avg Engage</div><div class="kpi-sub" id="kpiMonthEngageSub"></div></div>
+    <div class="kpi purple"><div class="kpi-value" id="kpiWeekEngage" style="font-size:24px;">—</div><div class="kpi-label">This Week Avg Engage</div><div class="kpi-sub" id="kpiWeekEngageSub"></div></div>
   </div>
 
   <div class="week-summary" id="weekSummary"></div>
@@ -321,6 +325,25 @@ function renderKPIs(){
   document.getElementById('kpiDaysSub').textContent='Jun 1–'+DB.days[DB.days.length-1].label.replace('Jun ','');
   document.getElementById('kpiAvgPerDay').textContent=avg;
   document.getElementById('kpiAvgSub').textContent='across '+DB.days.length+' days';
+
+  // Monthly avg channel engage (all days)
+  const allEngageSecs=DB.days.flatMap(d=>d.cases.map(c=>c.channelEngage))
+    .filter(v=>v&&v!=='No engagement')
+    .map(v=>parseSeconds(v)).filter(v=>v!==null);
+  const monthAvgEngage=allEngageSecs.length?fmtSecs(Math.round(allEngageSecs.reduce((a,b)=>a+b,0)/allEngageSecs.length)):null;
+  document.getElementById('kpiMonthEngage').textContent=monthAvgEngage||'—';
+  document.getElementById('kpiMonthEngageSub').textContent=monthAvgEngage?'across all '+DB.days.length+' days':'no data yet';
+
+  // This week avg channel engage (current week = last 5 weekdays)
+  const weeks=groupByWeek(DB.days);
+  const thisWeek=weeks[weeks.length-1]||[];
+  const weekEngageSecs=thisWeek.flatMap(d=>d.cases.map(c=>c.channelEngage))
+    .filter(v=>v&&v!=='No engagement')
+    .map(v=>parseSeconds(v)).filter(v=>v!==null);
+  const weekAvgEngage=weekEngageSecs.length?fmtSecs(Math.round(weekEngageSecs.reduce((a,b)=>a+b,0)/weekEngageSecs.length)):null;
+  const wkLabel=thisWeek.length?thisWeek[0].label+(thisWeek.length>1?'–'+thisWeek[thisWeek.length-1].label.split(' ')[1]:''):'';
+  document.getElementById('kpiWeekEngage').textContent=weekAvgEngage||'—';
+  document.getElementById('kpiWeekEngageSub').textContent=weekAvgEngage?(wkLabel+', '+thisWeek.length+' days'):'no data yet';
 }
 
 // ── WEEK CARDS ───────────────────────────────────────────────────────────────
