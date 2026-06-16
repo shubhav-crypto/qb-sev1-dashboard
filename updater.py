@@ -47,13 +47,18 @@ MANAGER_IDS = {
 TOKEN = os.environ.get("SLACK_USER_TOKEN") or os.environ.get("SLACK_BOT_TOKEN")
 
 def slack_get(method, params=None, retries=5, delay=2):
-    """Call a Slack Web API method (GET-style via URL params)."""
+    """Call a Slack Web API method (POST with Authorization header — works with all token types)."""
     params = params or {}
-    params["token"] = TOKEN
-    url = f"https://slack.com/api/{method}?" + urllib.parse.urlencode(params)
+    url = f"https://slack.com/api/{method}"
+    body = urllib.parse.urlencode(params).encode()
+    headers = {
+        "Authorization": f"Bearer {TOKEN}",
+        "Content-Type": "application/x-www-form-urlencoded",
+    }
+    req = urllib.request.Request(url, data=body, headers=headers, method="POST")
     for attempt in range(retries):
         try:
-            with urllib.request.urlopen(url, timeout=15) as resp:
+            with urllib.request.urlopen(req, timeout=15) as resp:
                 data = json.loads(resp.read())
             if not data.get("ok"):
                 err = data.get("error", "unknown")
