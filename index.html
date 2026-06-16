@@ -26,7 +26,7 @@
 
   .main{padding:28px 32px;max-width:1400px;margin:0 auto}
 
-  .kpi-bar{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:28px}
+  .kpi-bar{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:28px}
   .kpi{background:var(--surface);border:1px solid var(--border);border-radius:var(--card-radius);padding:18px 20px;position:relative;overflow:hidden}
   .kpi::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
   .kpi.blue::before{background:var(--accent)}.kpi.green::before{background:var(--green)}
@@ -119,10 +119,8 @@
 
   <div class="kpi-bar">
     <div class="kpi blue"><div class="kpi-value" id="kpiTotal">—</div><div class="kpi-label">Total Sev1 Cases</div><div class="kpi-sub" id="kpiTotalSub"></div></div>
-    <div class="kpi green"><div class="kpi-value" id="kpiStrong">—</div><div class="kpi-label">🟢 STRONG</div><div class="kpi-sub" id="kpiStrongSub"></div></div>
-    <div class="kpi yellow"><div class="kpi-value" id="kpiModerate">—</div><div class="kpi-label">🟡 MODERATE</div><div class="kpi-sub" id="kpiModerateSub"></div></div>
-    <div class="kpi purple"><div class="kpi-value" id="kpiPending">—</div><div class="kpi-label">⏳ Pending Quality</div><div class="kpi-sub" id="kpiPendingSub"></div></div>
     <div class="kpi teal"><div class="kpi-value" id="kpiDays">—</div><div class="kpi-label">Days Tracked</div><div class="kpi-sub" id="kpiDaysSub"></div></div>
+    <div class="kpi yellow"><div class="kpi-value" id="kpiAvgPerDay">—</div><div class="kpi-label">Avg Cases / Day</div><div class="kpi-sub" id="kpiAvgSub"></div></div>
   </div>
 
   <div class="week-summary" id="weekSummary"></div>
@@ -146,7 +144,6 @@
           <th id="summaryPeriodHeader" style="padding:12px 16px;text-align:left;font-weight:600;color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;">Date</th>
           <th style="padding:12px 16px;text-align:left;font-weight:600;color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;">Manager</th>
           <th style="padding:12px 16px;text-align:center;font-weight:600;color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;">Sev1s</th>
-          <th style="padding:12px 16px;text-align:center;font-weight:600;color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;">Quality</th>
           <th style="padding:12px 16px;text-align:center;font-weight:600;color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;">Avg Alert Resolve</th>
           <th style="padding:12px 16px;text-align:center;font-weight:600;color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;">Avg Channel Engage</th>
           <th style="padding:12px 16px;text-align:left;font-weight:600;color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;">Red Flags</th>
@@ -162,7 +159,7 @@
       <div class="chart-wrap tall"><canvas id="dailyChart"></canvas></div>
     </div>
     <div class="card">
-      <div class="card-title"><span class="dot" style="background:var(--green)"></span>Work Quality Split</div>
+      <div class="card-title"><span class="dot" style="background:var(--accent2)"></span>Avg Channel Engage Time (per day)</div>
       <div class="chart-wrap tall"><canvas id="healthChart"></canvas></div>
     </div>
   </div>
@@ -315,24 +312,15 @@ function renderHeader(){
 
 // ── KPIs ─────────────────────────────────────────────────────────────────────
 function renderKPIs(){
-  let total=0,strong=0,mod=0,pend=0;
-  for(const d of DB.days)for(const c of d.cases){
-    total++;
-    if(c.quality==='STRONG')strong++;
-    else if(c.quality==='MODERATE')mod++;
-    else pend++;
-  }
-  const rated=strong+mod,pct=rated>0?Math.round(strong/rated*100):0;
+  let total=0;
+  for(const d of DB.days)total+=d.cases.length;
+  const avg=(total/DB.days.length).toFixed(1);
   document.getElementById('kpiTotal').textContent=total;
   document.getElementById('kpiTotalSub').textContent=DB.days.length+' days tracked';
-  document.getElementById('kpiStrong').textContent=strong;
-  document.getElementById('kpiStrongSub').textContent=rated?pct+'% of rated':'—';
-  document.getElementById('kpiModerate').textContent=mod;
-  document.getElementById('kpiModerateSub').textContent=rated?(100-pct)+'% of rated':'—';
-  document.getElementById('kpiPending').textContent=pend;
-  document.getElementById('kpiPendingSub').textContent=(total-pend)+' rated';
   document.getElementById('kpiDays').textContent=DB.days.length;
   document.getElementById('kpiDaysSub').textContent='Jun 1–'+DB.days[DB.days.length-1].label.replace('Jun ','');
+  document.getElementById('kpiAvgPerDay').textContent=avg;
+  document.getElementById('kpiAvgSub').textContent='across '+DB.days.length+' days';
 }
 
 // ── WEEK CARDS ───────────────────────────────────────────────────────────────
@@ -381,10 +369,6 @@ function renderSummaryTable(){
   const RED=30*60;
   rows.forEach((row,ri)=>{
     const{cases}=row,total=cases.length;
-    const strong=cases.filter(c=>c.quality==='STRONG').length;
-    const mod=cases.filter(c=>c.quality==='MODERATE').length;
-    const pend=cases.filter(c=>!c.quality||c.quality==='PENDING').length;
-    const rated=strong+mod;
     const avgRes=fmtSecs(avgSeconds(cases.map(c=>c.resolve).filter(Boolean)));
     const avgEng=fmtSecs(avgSeconds(cases.map(c=>c.channelEngage).filter(v=>v&&v!=='No engagement'&&parseSeconds(v)!==null)));
     const reds=cases.filter(c=>{const s=parseSeconds(c.channelEngage);return s!==null&&s>=RED;});
@@ -392,18 +376,12 @@ function renderSummaryTable(){
     const redItems=reds.map(c=>`<span style="font-size:11px;color:#dc2626;margin-right:4px;">🔴 ${c.account.split(' ')[0]} (${c.channelEngage})</span>`);
     const noEngItems=noEngs.map(c=>`<span style="font-size:11px;color:#dc2626;margin-right:4px;">🔴 ${c.account.split(' ')[0]} (No engagement)</span>`);
     const redHtml=[...redItems,...noEngItems].length?[...redItems,...noEngItems].join(''):'<span style="color:#94a3b8;font-size:11px;">None</span>';
-    let qHtml='—';
-    if(rated>0){
-      qHtml=`<span style="color:var(--green);font-weight:600;">${strong}S</span> / <span style="color:var(--yellow);font-weight:600;">${mod}M</span>`;
-      if(pend>0)qHtml+=` / <span style="color:var(--text-muted);font-weight:600;">${pend}P</span>`;
-    }else if(pend>0)qHtml=`<span style="color:var(--text-muted);font-size:11px;">${pend} pending</span>`;
     const mgrHtml=row.manager!=='All'?row.manager.split(' / ').map(m=>mgrChip(m.trim())).join(' '):'—';
     const tr=document.createElement('tr');
     tr.style.cssText=ri%2===0?'':'background:rgba(241,245,249,.5)';
     tr.innerHTML=`<td style="padding:12px 16px;font-weight:600;">${row.label}</td>
       <td style="padding:12px 16px;">${mgrHtml}</td>
       <td style="padding:12px 16px;text-align:center;font-weight:700;color:var(--accent);">${total}</td>
-      <td style="padding:12px 16px;text-align:center;">${qHtml}</td>
       <td style="padding:12px 16px;text-align:center;font-size:12px;color:var(--text-muted);">${avgRes}</td>
       <td style="padding:12px 16px;text-align:center;font-size:12px;color:var(--text-muted);">${avgEng}</td>
       <td style="padding:12px 16px;">${redHtml}</td>`;
@@ -417,23 +395,15 @@ function renderCharts(){
   Chart.defaults.font.family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif";
   const labels=DB.days.map(d=>d.label);
   const totals=DB.days.map(d=>d.cases.length);
-  const strong=DB.days.map(d=>d.cases.filter(c=>c.quality==='STRONG').length);
-  const mod=DB.days.map(d=>d.cases.filter(c=>c.quality==='MODERATE').length);
-  const pend=DB.days.map(d=>d.cases.filter(c=>!c.quality||c.quality==='PENDING').length);
   if(dailyChart)dailyChart.destroy();
   const totalLabelsPlugin={id:'totalLabels',afterDatasetsDraw(chart){
     const{ctx,data}=chart;
     const meta0=chart.getDatasetMeta(0);
-    const meta1=chart.getDatasetMeta(1);
-    const meta2=chart.getDatasetMeta(2);
     ctx.save();ctx.font='bold 11px -apple-system,BlinkMacSystemFont,sans-serif';
     ctx.fillStyle='#1e293b';ctx.textAlign='center';ctx.textBaseline='bottom';
     data.labels.forEach((_,i)=>{
       const total=totals[i];if(!total)return;
-      // find the topmost visible bar for this index
-      let topY=Infinity;
-      [meta0,meta1,meta2].forEach(m=>{const el=m.data[i];if(el&&el.y<topY)topY=el.y;});
-      if(topY<Infinity)ctx.fillText(total,meta0.data[i].x,topY-4);
+      const el=meta0.data[i];if(el)ctx.fillText(total,el.x,el.y-4);
     });
     ctx.restore();
   }};
@@ -441,26 +411,34 @@ function renderCharts(){
     type:'bar',
     plugins:[totalLabelsPlugin],
     data:{labels,datasets:[
-      {label:'🟢 Strong',data:strong,backgroundColor:'rgba(34,197,94,.75)',borderRadius:4,borderSkipped:false,stack:'q'},
-      {label:'🟡 Moderate',data:mod,backgroundColor:'rgba(245,158,11,.65)',borderRadius:4,borderSkipped:false,stack:'q'},
-      {label:'⬜ Pending',data:pend,backgroundColor:'rgba(0,163,255,.3)',borderRadius:4,borderSkipped:false,stack:'q'},
+      {label:'Sev1 Cases',data:totals,backgroundColor:'rgba(2,132,199,.65)',borderRadius:5,borderSkipped:false},
     ]},
     options:{responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{position:'top',labels:{boxWidth:11,padding:12,font:{size:11}}},
-        tooltip:{callbacks:{footer:items=>`Total: ${totals[items[0].dataIndex]} cases`}}},
-      scales:{x:{stacked:true,grid:{color:'rgba(226,232,240,.8)'},ticks:{font:{size:11}}},
-        y:{stacked:true,grid:{color:'rgba(226,232,240,.8)'},ticks:{precision:0},beginAtZero:true,
+      plugins:{legend:{display:false},
+        tooltip:{callbacks:{label:items=>`${items.raw} cases`}}},
+      scales:{x:{grid:{color:'rgba(226,232,240,.8)'},ticks:{font:{size:11}}},
+        y:{grid:{color:'rgba(226,232,240,.8)'},ticks:{precision:0},beginAtZero:true,
           suggestedMax:Math.max(...totals)+3}}}
   });
-  const ts=strong.reduce((a,b)=>a+b,0),tm=mod.reduce((a,b)=>a+b,0);
+  // Avg channel engage per day (in minutes)
+  const engageMins=DB.days.map(d=>{
+    const secs=avgSeconds(d.cases.map(c=>c.channelEngage).filter(v=>v&&v!=='No engagement'&&parseSeconds(v)!==null));
+    return secs!==null?Math.round(secs/60*10)/10:null;
+  });
   if(healthChart)healthChart.destroy();
   healthChart=new Chart(document.getElementById('healthChart').getContext('2d'),{
-    type:'doughnut',
-    data:{labels:['🟢 STRONG','🟡 MODERATE'],
-      datasets:[{data:[ts,tm],backgroundColor:['rgba(34,197,94,.8)','rgba(245,158,11,.7)'],borderWidth:0,hoverOffset:8}]},
-    options:{responsive:true,maintainAspectRatio:false,cutout:'65%',
-      plugins:{legend:{position:'bottom',labels:{boxWidth:10,padding:10,font:{size:11}}},
-        tooltip:{callbacks:{label:item=>` ${item.raw} cases (${Math.round(item.raw/(ts+tm)*100)}%)`}}}}
+    type:'bar',
+    data:{labels,datasets:[{
+      label:'Avg Engage (min)',
+      data:engageMins,
+      backgroundColor:engageMins.map(v=>v===null?'rgba(148,163,184,.2)':v<=5?'rgba(34,197,94,.65)':v<=15?'rgba(245,158,11,.65)':'rgba(220,38,38,.65)'),
+      borderRadius:5,borderSkipped:false
+    }]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false},
+        tooltip:{callbacks:{label:item=>item.raw!==null?`${item.raw} min avg`:'No data'}}},
+      scales:{x:{grid:{color:'rgba(226,232,240,.8)'},ticks:{font:{size:11}}},
+        y:{grid:{color:'rgba(226,232,240,.8)'},beginAtZero:true,ticks:{callback:v=>v+'m'}}}}
   });
 }
 
@@ -486,9 +464,6 @@ function buildDayPanel(day){
   const cases=day.cases;
   const byMgr={};
   cases.forEach(c=>{const m=c.manager||day.manager;if(!byMgr[m])byMgr[m]=[];byMgr[m].push(c);});
-  const strong=cases.filter(c=>c.quality==='STRONG').length;
-  const mod=cases.filter(c=>c.quality==='MODERATE').length;
-  const pend=cases.filter(c=>!c.quality||c.quality==='PENDING').length;
   let html='';
   if(mciNotes[day.date])html+=`<div class="mci-callout">${mciNotes[day.date]}</div>`;
   html+='<div class="day-chips">';
@@ -496,19 +471,10 @@ function buildDayPanel(day){
     const color=CHIP_COLOR[mgr]||'#999',bg=CHIP_BG[mgr]||'rgba(100,116,139,.1)',full=FULL_NAME[mgr]||mgr;
     html+=`<div class="day-chip" style="background:${bg};border:1px solid ${color}40;"><strong style="color:${color};">${full}</strong> — ${mc.length} WB${mc.length!==1?'s':''}</div>`;
   });
-  if(strong+mod>0){
-    let q=strong?`<strong style="color:var(--green);">${strong} STRONG</strong>`:'';
-    if(strong&&mod)q+=' &nbsp;·&nbsp; ';
-    if(mod)q+=`<strong style="color:var(--yellow);">${mod} MODERATE</strong>`;
-    if(pend)q+=` &nbsp;·&nbsp; <strong style="color:var(--text-muted);">${pend} Pending</strong>`;
-    html+=`<div class="day-chip" style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);">${q}</div>`;
-  }else if(pend>0){
-    html+=`<div class="day-chip" style="background:rgba(148,163,184,.08);border:1px solid var(--border);"><strong style="color:var(--text-muted);">Quality pending — ${pend} cases</strong></div>`;
-  }
   if(day.canvasId)html+=`<div class="day-chip" style="background:rgba(124,77,255,.08);border:1px solid rgba(124,77,255,.2);font-size:12px;color:#a78bfa;">Canvas: <a href="https://salesforce.enterprise.slack.com/docs/T01G0063H29/${day.canvasId}" style="color:#a78bfa;" target="_blank">${day.canvasId}</a></div>`;
   html+='</div>';
   html+='<div style="overflow-x:auto;"><table class="case-table"><thead><tr>';
-  html+='<th>#</th><th>Case</th><th>Account</th><th>Product</th><th>Time (IST)</th><th>Manager</th><th>Quality</th>';
+  html+='<th>#</th><th>Case</th><th>Account</th><th>Product</th><th>Time (IST)</th><th>Manager</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Time from PD alert → QB Manager Acknowledged">Alert Ack</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Time from PD alert → QB Manager Resolved">Alert Resolve</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Time from Sev1 channel creation → QB Manager first text">Channel Engage</th>';
@@ -517,12 +483,12 @@ function buildDayPanel(day){
   cases.forEach((c,i)=>{
     const mgr=c.manager||day.manager,chipCls=CHIP_CLS[mgr]||'';
     const isMCI=mciSet.includes(c.caseNum);
-    const qual=isMCI?`<span class="badge mci">⚡ MCI</span> ${qBadge(c.quality)}`:qBadge(c.quality);
+    const mciTag=isMCI?'<span class="badge mci">⚡ MCI</span> ':'';
     html+=`<tr><td class="case-num">${i+1}</td><td>${c.caseNum}</td>
-      <td class="account-name">${c.account}</td><td class="product-cell">${c.product}</td>
+      <td class="account-name">${mciTag}${c.account}</td><td class="product-cell">${c.product}</td>
       <td class="time-cell">${c.timeIST}</td>
       <td><span class="manager-chip ${chipCls}">${mgr}</span></td>
-      <td>${qual}</td>${rtCell(c.ack)}${rtCell(c.resolve)}${rtCell(c.channelEngage,true,true)}</tr>`;
+      ${rtCell(c.ack)}${rtCell(c.resolve)}${rtCell(c.channelEngage,true,true)}</tr>`;
   });
   html+='</tbody></table></div>';
   return html;
@@ -538,24 +504,12 @@ function switchTab(id,btn){
 // ── FOOTER ───────────────────────────────────────────────────────────────────
 function renderFooter(){
   document.getElementById('footer').innerHTML=
-    'QB Sev1 Work Assurance · Data: Slack #support-alerts-service-sig + individual Sev1 channels · Window: 12:30–9:00 PM IST daily<br>'+
-    '<span style="color:var(--border);">Live — data.json auto-refreshed every 5 min via GitHub Actions. Quality detected from Sev1 channel messages.</span>';
+    'QB Sev1 Work Assurance · Data: Slack #support-alerts-service-sig · Window: 12:30–7:30 PM IST daily<br>'+
+    '<span style="color:var(--border);">Live — data.json auto-refreshed every 5 min via GitHub Actions.</span>';
 }
 
-// ── MODERATE TOOLTIPS ────────────────────────────────────────────────────────
-function attachTooltips(){
-  const tip=document.getElementById('modTip');
-  document.querySelectorAll('.badge.moderate').forEach(badge=>{
-    const row=badge.closest('tr');
-    if(!row||!row.cells[1])return;
-    const reason=moderateReasons[row.cells[1].textContent.trim()];
-    if(!reason)return;
-    badge.style.cursor='help';
-    badge.addEventListener('mouseenter',()=>{tip.textContent='⚠️  '+reason;tip.style.display='block';});
-    badge.addEventListener('mousemove',e=>{tip.style.left=(e.clientX+14)+'px';tip.style.top=(e.clientY-50)+'px';});
-    badge.addEventListener('mouseleave',()=>{tip.style.display='none';});
-  });
-}
+// ── TOOLTIPS (no-op — quality removed) ──────────────────────────────────────
+function attachTooltips(){}
 
 // ── BOOT ─────────────────────────────────────────────────────────────────────
 loadData(true);
