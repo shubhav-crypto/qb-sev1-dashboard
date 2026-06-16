@@ -146,6 +146,7 @@
           <th style="padding:12px 16px;text-align:center;font-weight:600;color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;">Sev1s</th>
           <th style="padding:12px 16px;text-align:center;font-weight:600;color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;">Avg Alert Resolve</th>
           <th style="padding:12px 16px;text-align:center;font-weight:600;color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;">Avg Channel Engage</th>
+          <th style="padding:12px 16px;text-align:center;font-weight:600;color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;">EOD Post</th>
         </tr>
       </thead>
       <tbody id="summaryBody"></tbody>
@@ -354,15 +355,16 @@ function renderSummaryTable(){
   document.getElementById('summaryPeriodHeader').textContent=mode==='daily'?'Date':mode==='wow'?'Week':'Month';
   let rows=[];
   if(mode==='daily'){
-    rows=DB.days.map(d=>({label:d.label,manager:d.manager,cases:d.cases}));
+    rows=DB.days.map(d=>({label:d.label,manager:d.manager,cases:d.cases,eodDone:d.eodDone}));
   }else if(mode==='wow'){
     rows=groupByWeek(DB.days).map(wk=>({
       label:wk[0].label+(wk.length>1?'–'+wk[wk.length-1].label.split(' ')[1]:''),
       manager:[...new Set(wk.map(d=>d.manager))].join(' / '),
-      cases:wk.flatMap(d=>d.cases)
+      cases:wk.flatMap(d=>d.cases),
+      eodDone:wk.every(d=>d.eodDone)
     }));
   }else{
-    rows=[{label:'Jun 2026',manager:'All',cases:DB.days.flatMap(d=>d.cases)}];
+    rows=[{label:'Jun 2026',manager:'All',cases:DB.days.flatMap(d=>d.cases),eodDone:DB.days.every(d=>d.eodDone)}];
   }
   const tbody=document.getElementById('summaryBody');tbody.innerHTML='';
   const RED=30*60;
@@ -373,11 +375,15 @@ function renderSummaryTable(){
     const mgrHtml=row.manager!=='All'?row.manager.split(' / ').map(m=>mgrChip(m.trim())).join(' '):'—';
     const tr=document.createElement('tr');
     tr.style.cssText=ri%2===0?'':'background:rgba(241,245,249,.5)';
+    const eodHtml=row.eodDone
+      ?'<span title="EMEA EOD post done" style="font-size:16px;">✅</span>'
+      :'<span style="color:#94a3b8;font-size:12px;">—</span>';
     tr.innerHTML=`<td style="padding:12px 16px;font-weight:600;">${row.label}</td>
       <td style="padding:12px 16px;">${mgrHtml}</td>
       <td style="padding:12px 16px;text-align:center;font-weight:700;color:var(--accent);">${total}</td>
       <td style="padding:12px 16px;text-align:center;font-size:12px;color:var(--text-muted);">${avgRes}</td>
-      <td style="padding:12px 16px;text-align:center;font-size:12px;color:var(--text-muted);">${avgEng}</td>`;
+      <td style="padding:12px 16px;text-align:center;font-size:12px;color:var(--text-muted);">${avgEng}</td>
+      <td style="padding:12px 16px;text-align:center;">${eodHtml}</td>`;
     tbody.appendChild(tr);
   });
 }

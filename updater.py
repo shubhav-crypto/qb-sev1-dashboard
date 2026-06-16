@@ -26,6 +26,7 @@ import urllib.error
 # ── CONFIG ──────────────────────────────────────────────────────────────────
 ALERTS_CHANNEL     = "C02K54WLXM2"   # #support-alerts-service-sig
 TEAM_CHANNEL       = "C026E3HCG04"   # #nikhil-team-signature (schedule posts)
+OPS_EXCEL_CHANNEL  = "C079QNQQTFC"   # #support-service-sev1-ops-excellence
 DATA_FILE          = os.path.join(os.path.dirname(__file__), "data.json")
 IST                = ZoneInfo("Asia/Kolkata")
 QB_START_HOUR_IST  = 12   # QB window: 12:30 PM IST
@@ -336,6 +337,24 @@ def get_todays_manager(target_date: date):
             return m.group(1).strip()
     return None
 
+# ── EOD POST CHECKER ────────────────────────────────────────────────────────
+EOD_POST_RE = re.compile(r"Signature EMEA Update", re.IGNORECASE)
+
+def check_eod_post_done(target_date: date) -> bool:
+    """
+    Return True if the QB manager has posted the Signature EMEA Update EOD
+    callout in #support-service-sev1-ops-excellence for target_date.
+    The post typically happens after QB window ends (around 7–8 PM IST).
+    We scan the full IST day so it's detected whenever it arrives.
+    """
+    oldest, latest = ist_day_timestamps(target_date)
+    msgs = history(OPS_EXCEL_CHANNEL, oldest=oldest, latest=latest, limit=100)
+    for msg in msgs:
+        if EOD_POST_RE.search(msg.get("text", "")):
+            print(f"  Found EMEA EOD post for {target_date}", flush=True)
+            return True
+    return False
+
 # ── MAIN UPDATE LOGIC ────────────────────────────────────────────────────────
 def load_data():
     with open(DATA_FILE) as f:
@@ -361,6 +380,7 @@ def find_or_create_day(data, target_date: date, manager: str):
         "label": label,
         "manager": manager,
         "canvasId": None,
+        "eodDone": False,
         "cases": []
     }
     data["days"].append(new_day)
@@ -490,7 +510,16 @@ def update_day(target_date: date):
 
         time.sleep(0.3)   # be gentle with Slack rate limits
 
-    # 5. Update metadata
+    # 5. Check for EMEA EOD post (only update if not already True)
+    if not day_entry.get("eodDone"):
+        print("Checking for EMEA EOD post …", flush=True)
+        if check_eod_post_done(target_date):
+            day_entry["eodDone"] = True
+            changed = True
+        else:
+            day_entry.setdefault("eodDone", False)
+
+    # 7. Update metadata
     total = sum(len(d["cases"]) for d in data["days"])
     data["meta"]["totalCases"] = total
     data["meta"]["daysTracked"] = len(data["days"])

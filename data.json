@@ -159,7 +159,8 @@
           "resolve": "24s",
           "channelEngage": null
         }
-      ]
+      ],
+      "eodDone": true
     },
     {
       "date": "2026-06-02",
@@ -275,7 +276,8 @@
           "resolve": "29s",
           "channelEngage": "5m 27s"
         }
-      ]
+      ],
+      "eodDone": true
     },
     {
       "date": "2026-06-03",
@@ -371,7 +373,8 @@
           "resolve": "21s",
           "channelEngage": "3m 47s"
         }
-      ]
+      ],
+      "eodDone": true
     },
     {
       "date": "2026-06-04",
@@ -536,7 +539,8 @@
           "resolve": "22s",
           "channelEngage": "1h 53m 42s"
         }
-      ]
+      ],
+      "eodDone": false
     },
     {
       "date": "2026-06-05",
@@ -616,7 +620,8 @@
           "resolve": "3m 11s",
           "channelEngage": "5m 2s"
         }
-      ]
+      ],
+      "eodDone": false
     },
     {
       "date": "2026-06-08",
@@ -817,7 +822,8 @@
           "resolve": "31s",
           "channelEngage": "3m 31s"
         }
-      ]
+      ],
+      "eodDone": false
     },
     {
       "date": "2026-06-09",
@@ -867,7 +873,8 @@
           "quality": "STRONG",
           "channelEngage": null
         }
-      ]
+      ],
+      "eodDone": false
     },
     {
       "date": "2026-06-10",
@@ -977,7 +984,8 @@
           "resolve": "20s",
           "channelEngage": "2m 16s"
         }
-      ]
+      ],
+      "eodDone": false
     },
     {
       "date": "2026-06-11",
@@ -1126,7 +1134,8 @@
           "resolve": "29s",
           "channelEngage": null
         }
-      ]
+      ],
+      "eodDone": true
     },
     {
       "date": "2026-06-12",
@@ -1269,7 +1278,8 @@
           "ack": "8s",
           "channelEngage": null
         }
-      ]
+      ],
+      "eodDone": true
     },
     {
       "date": "2026-06-15",
@@ -1447,7 +1457,8 @@
           "quality": "PENDING",
           "channelEngage": "11m 10s"
         }
-      ]
+      ],
+      "eodDone": true
     },
     {
       "date": "2026-06-16",
@@ -1519,7 +1530,8 @@
           "resolve": "14s",
           "channelEngage": "1m 36s"
         }
-      ]
+      ],
+      "eodDone": false
     }
   ]
 }
