@@ -1,0 +1,59 @@
+name: Live Dashboard Update
+
+on:
+  # Run every 5 minutes during QB hours (12:30 PM – 9:00 PM IST)
+  # IST = UTC+5:30, so 12:30 PM IST = 07:00 UTC, 9:00 PM IST = 15:30 UTC
+  # Cron runs Mon–Sat (QB runs Mon–Sat)
+  schedule:
+    - cron: "*/5 7-15 * * 1-6"    # Mon–Sat, 07:00–15:59 UTC (≈ 12:30–21:30 IST)
+
+  # Also allow manual trigger (e.g. to force-refresh or run on a specific date)
+  workflow_dispatch:
+    inputs:
+      target_date:
+        description: "Date to update (YYYY-MM-DD). Leave empty for today."
+        required: false
+        default: ""
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write   # needed to push data.json back to repo
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run updater
+        env:
+          SLACK_USER_TOKEN: ${{ secrets.SLACK_USER_TOKEN }}
+          TARGET_DATE: ${{ github.event.inputs.target_date }}
+        run: |
+          if [ -n "$TARGET_DATE" ]; then
+            python3 updater.py "$TARGET_DATE"
+          else
+            python3 updater.py
+          fi
+
+      - name: Commit and push if data changed
+        run: |
+          git config user.name  "QB Dashboard Bot"
+          git config user.email "noreply@github.com"
+          git add data.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            TIMESTAMP=$(TZ='Asia/Kolkata' date '+%Y-%m-%d %H:%M IST')
+            git commit -m "Live update: ${TIMESTAMP}"
+            git pull --rebase origin main
+            git push origin main
+          fi
