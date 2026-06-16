@@ -355,16 +355,19 @@ function renderSummaryTable(){
   document.getElementById('summaryPeriodHeader').textContent=mode==='daily'?'Date':mode==='wow'?'Week':'Month';
   let rows=[];
   if(mode==='daily'){
-    rows=DB.days.map(d=>({label:d.label,manager:d.manager,cases:d.cases,eodDone:d.eodDone}));
+    rows=DB.days.map(d=>({label:d.label,manager:d.manager,cases:d.cases,eodDone:d.eodDone,eodCount:d.eodDone?1:0,eodTotal:1}));
   }else if(mode==='wow'){
     rows=groupByWeek(DB.days).map(wk=>({
       label:wk[0].label+(wk.length>1?'–'+wk[wk.length-1].label.split(' ')[1]:''),
       manager:[...new Set(wk.map(d=>d.manager))].join(' / '),
       cases:wk.flatMap(d=>d.cases),
-      eodDone:wk.every(d=>d.eodDone)
+      eodDone:wk.every(d=>d.eodDone),
+      eodCount:wk.filter(d=>d.eodDone).length,
+      eodTotal:wk.length
     }));
   }else{
-    rows=[{label:'Jun 2026',manager:'All',cases:DB.days.flatMap(d=>d.cases),eodDone:DB.days.every(d=>d.eodDone)}];
+    const allDays=DB.days;
+    rows=[{label:'Jun 2026',manager:'All',cases:allDays.flatMap(d=>d.cases),eodDone:allDays.every(d=>d.eodDone),eodCount:allDays.filter(d=>d.eodDone).length,eodTotal:allDays.length}];
   }
   const tbody=document.getElementById('summaryBody');tbody.innerHTML='';
   const RED=30*60;
@@ -375,9 +378,17 @@ function renderSummaryTable(){
     const mgrHtml=row.manager!=='All'?row.manager.split(' / ').map(m=>mgrChip(m.trim())).join(' '):'—';
     const tr=document.createElement('tr');
     tr.style.cssText=ri%2===0?'':'background:rgba(241,245,249,.5)';
-    const eodHtml=row.eodDone
-      ?'<span title="EMEA EOD post done" style="font-size:16px;">✅</span>'
-      :'<span style="color:#94a3b8;font-size:12px;">—</span>';
+    // EOD cell: daily → ✅/—, week/month → "3/5 ✅" count
+    let eodHtml;
+    if(mode==='daily'){
+      eodHtml=row.eodDone
+        ?'<span title="EMEA EOD post done" style="font-size:16px;">✅</span>'
+        :'<span style="color:#94a3b8;font-size:12px;">—</span>';
+    }else{
+      const c=row.eodCount,t=row.eodTotal,all=c===t;
+      eodHtml=`<span style="font-weight:600;color:${all?'#16a34a':c===0?'#94a3b8':'#d97706'};">${c}/${t}</span>`
+        +(all?' <span style="font-size:14px;">✅</span>':'');
+    }
     tr.innerHTML=`<td style="padding:12px 16px;font-weight:600;">${row.label}</td>
       <td style="padding:12px 16px;">${mgrHtml}</td>
       <td style="padding:12px 16px;text-align:center;font-weight:700;color:var(--accent);">${total}</td>
