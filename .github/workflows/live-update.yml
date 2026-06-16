@@ -1,11 +1,11 @@
 name: Live Dashboard Update
 
 on:
-  # Run every 5 minutes during QB hours (12:30 PM – 9:00 PM IST)
-  # IST = UTC+5:30, so 12:30 PM IST = 07:00 UTC, 9:00 PM IST = 15:30 UTC
+  # Run every 5 minutes during QB hours (12:30 PM – 7:30 PM IST)
+  # IST = UTC+5:30, so 12:30 PM IST = 07:00 UTC, 7:30 PM IST = 14:00 UTC
   # Cron runs Mon–Sat (QB runs Mon–Sat)
   schedule:
-    - cron: "*/5 7-15 * * 1-6"    # Mon–Sat, 07:00–15:59 UTC (≈ 12:30–21:30 IST)
+    - cron: "*/5 7-14 * * 1-6"    # Mon–Sat, 07:00–14:59 UTC (≈ 12:30–20:29 IST)
 
   # Also allow manual trigger (e.g. to force-refresh or run on a specific date)
   workflow_dispatch:

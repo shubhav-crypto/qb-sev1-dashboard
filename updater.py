@@ -30,8 +30,8 @@ DATA_FILE          = os.path.join(os.path.dirname(__file__), "data.json")
 IST                = ZoneInfo("Asia/Kolkata")
 QB_START_HOUR_IST  = 12   # QB window: 12:30 PM IST
 QB_START_MIN_IST   = 30
-QB_END_HOUR_IST    = 21   # 9:00 PM IST
-QB_END_MIN_IST     = 0
+QB_END_HOUR_IST    = 19   # 7:30 PM IST
+QB_END_MIN_IST     = 30
 
 # Manager Slack IDs  (used to find channel engage)
 MANAGER_IDS = {
