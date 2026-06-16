@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-06-16T15:50:32+05:30",
+    "generated": "2026-06-16T16:07:48+05:30",
     "totalCases": 145,
     "daysTracked": 12
   },
@@ -1461,7 +1461,7 @@
           "account": "The Boeing Company",
           "product": "How-to, Setup, Configuration",
           "timeIST": "12:44 PM",
-          "quality": "PENDING",
+          "quality": "MODERATE",
           "resolve": "16s",
           "channelEngage": "4m 34s"
         },
@@ -1470,7 +1470,7 @@
           "account": "AXA Health UK",
           "product": "Developer Support",
           "timeIST": "1:43 PM",
-          "quality": "PENDING",
+          "quality": "MODERATE",
           "resolve": "12s",
           "channelEngage": "1m 33s"
         },
@@ -1479,7 +1479,7 @@
           "account": "Google LLC",
           "product": "Prompt Builder",
           "timeIST": "1:48 PM",
-          "quality": "PENDING",
+          "quality": "MODERATE",
           "resolve": "21s",
           "channelEngage": "No engagement"
         },
@@ -1488,7 +1488,7 @@
           "account": "Maersk A/S",
           "product": "Digital Engagement",
           "timeIST": "1:58 PM",
-          "quality": "PENDING",
+          "quality": "MODERATE",
           "resolve": "16s",
           "channelEngage": "No engagement"
         },
@@ -1497,7 +1497,7 @@
           "account": "Adidas AG",
           "product": "Developer Support",
           "timeIST": "2:15 PM",
-          "quality": "PENDING",
+          "quality": "STRONG",
           "resolve": "14s",
           "channelEngage": "3m 48s"
         },
@@ -1506,7 +1506,7 @@
           "account": "Brown Thomas Arnotts Limited",
           "product": "Developer Support",
           "timeIST": "3:01 PM",
-          "quality": "PENDING",
+          "quality": "MODERATE",
           "resolve": "22s",
           "channelEngage": "No engagement"
         },
@@ -1515,7 +1515,7 @@
           "account": "L'OREAL SA",
           "product": "Service Cloud Voice",
           "timeIST": "3:28 PM",
-          "quality": "PENDING",
+          "quality": "MODERATE",
           "resolve": "14s",
           "channelEngage": "1m 36s"
         }
