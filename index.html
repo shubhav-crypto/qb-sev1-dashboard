@@ -244,9 +244,9 @@ function rtColor(s){
   if(s<=180)return{bg:'rgba(217,119,6,.12)',color:'#d97706',label:'🟡'};
   return{bg:'rgba(220,38,38,.12)',color:'#dc2626',label:'🔴'};
 }
-function rtCell(val,noColor){
-  if(!val)return'<td class="time-cell" style="color:#94a3b8;font-size:11px;">—</td>';
-  if(val==='No engagement')return`<td style="white-space:nowrap;font-size:12px;"><span style="background:rgba(220,38,38,.12);color:#dc2626;border-radius:5px;padding:2px 7px;font-weight:600;">🔴 No engagement</span></td>`;
+const NO_ENG_HTML='<td style="white-space:nowrap;font-size:12px;"><span style="background:rgba(220,38,38,.12);color:#dc2626;border-radius:5px;padding:2px 7px;font-weight:600;">🔴 No engagement</span></td>';
+function rtCell(val,noColor,isEngage){
+  if(!val||val==='No engagement')return isEngage?NO_ENG_HTML:'<td class="time-cell" style="color:#94a3b8;font-size:11px;">—</td>';
   if(noColor)return`<td style="white-space:nowrap;font-size:12px;color:#0f172a;font-weight:700;">${val}</td>`;
   const s=parseSeconds(val),c=rtColor(s);
   if(!c)return'<td>—</td>';
@@ -386,9 +386,9 @@ function renderSummaryTable(){
     const pend=cases.filter(c=>!c.quality||c.quality==='PENDING').length;
     const rated=strong+mod;
     const avgRes=fmtSecs(avgSeconds(cases.map(c=>c.resolve).filter(Boolean)));
-    const avgEng=fmtSecs(avgSeconds(cases.map(c=>c.channelEngage).filter(v=>v&&v!=='No engagement')));
+    const avgEng=fmtSecs(avgSeconds(cases.map(c=>c.channelEngage).filter(v=>v&&v!=='No engagement'&&parseSeconds(v)!==null)));
     const reds=cases.filter(c=>{const s=parseSeconds(c.channelEngage);return s!==null&&s>=RED;});
-    const noEngs=cases.filter(c=>c.channelEngage==='No engagement');
+    const noEngs=cases.filter(c=>!c.channelEngage||c.channelEngage==='No engagement');
     const redItems=reds.map(c=>`<span style="font-size:11px;color:#dc2626;margin-right:4px;">🔴 ${c.account.split(' ')[0]} (${c.channelEngage})</span>`);
     const noEngItems=noEngs.map(c=>`<span style="font-size:11px;color:#dc2626;margin-right:4px;">🔴 ${c.account.split(' ')[0]} (No engagement)</span>`);
     const redHtml=[...redItems,...noEngItems].length?[...redItems,...noEngItems].join(''):'<span style="color:#94a3b8;font-size:11px;">None</span>';
@@ -504,7 +504,7 @@ function buildDayPanel(day){
       <td class="account-name">${c.account}</td><td class="product-cell">${c.product}</td>
       <td class="time-cell">${c.timeIST}</td>
       <td><span class="manager-chip ${chipCls}">${mgr}</span></td>
-      <td>${qual}</td>${rtCell(c.ack)}${rtCell(c.resolve)}${rtCell(c.channelEngage,true)}</tr>`;
+      <td>${qual}</td>${rtCell(c.ack)}${rtCell(c.resolve)}${rtCell(c.channelEngage,true,true)}</tr>`;
   });
   html+='</tbody></table></div>';
   return html;
