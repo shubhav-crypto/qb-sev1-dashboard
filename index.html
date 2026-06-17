@@ -26,18 +26,22 @@
 
   .main{padding:28px 32px;max-width:1400px;margin:0 auto}
 
-  .kpi-bar{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:28px}
-  @media(max-width:900px){.kpi-bar{grid-template-columns:repeat(3,1fr)}}
+  .kpi-bar{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-bottom:28px}
+  @media(max-width:1100px){.kpi-bar{grid-template-columns:repeat(3,1fr)}}
   @media(max-width:600px){.kpi-bar{grid-template-columns:repeat(2,1fr)}}
   .kpi{background:var(--surface);border:1px solid var(--border);border-radius:var(--card-radius);padding:18px 20px;position:relative;overflow:hidden}
   .kpi::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
   .kpi.blue::before{background:var(--accent)}.kpi.green::before{background:var(--green)}
   .kpi.yellow::before{background:var(--yellow)}.kpi.purple::before{background:var(--accent2)}
   .kpi.teal::before{background:#14b8a6}
+  .kpi.rose::before{background:#e11d48}
+  .kpi.needs::before{background:var(--red)}
   .kpi-value{font-size:34px;font-weight:700;line-height:1;margin-bottom:4px}
   .kpi.blue .kpi-value{color:var(--accent)}.kpi.green .kpi-value{color:var(--green)}
   .kpi.yellow .kpi-value{color:var(--yellow)}.kpi.purple .kpi-value{color:var(--accent2)}
   .kpi.teal .kpi-value{color:#14b8a6}
+  .kpi.rose .kpi-value{color:#e11d48}
+  .kpi.needs .kpi-value{color:var(--red)}
   .kpi-label{font-size:12px;color:var(--text-muted);font-weight:500}
   .kpi-sub{font-size:11px;color:var(--text-muted);margin-top:6px}
 
@@ -135,6 +139,7 @@
     <div class="kpi yellow"><div class="kpi-value" id="kpiAvgPerDay">—</div><div class="kpi-label">Avg Cases / Day</div><div class="kpi-sub" id="kpiAvgSub"></div></div>
     <div class="kpi green"><div class="kpi-value" id="kpiMonthEngage" style="font-size:24px;">—</div><div class="kpi-label">Monthly Avg Engage</div><div class="kpi-sub" id="kpiMonthEngageSub"></div></div>
     <div class="kpi purple"><div class="kpi-value" id="kpiWeekEngage" style="font-size:24px;">—</div><div class="kpi-label">This Week Avg Engage</div><div class="kpi-sub" id="kpiWeekEngageSub"></div></div>
+    <div class="kpi rose"><div class="kpi-value" id="kpiBridgeCompliance" style="font-size:30px;">—</div><div class="kpi-label">Bridge Created ≤10 m</div><div class="kpi-sub" id="kpiBridgeComplianceSub"></div></div>
   </div>
 
   <div class="week-summary" id="weekSummary"></div>
@@ -187,9 +192,19 @@
     QB Work Assurance operates Mon–Fri (12:30–7:30 PM IST). Weekend Sev1 alerts are routed to on-call coverage outside this window.
   </div>
 
-  <div class="section-header">Daily Case Detail</div>
+  <div class="section-header">Daily Case Detail
+    <div style="margin-left:auto;display:flex;align-items:center;gap:10px;">
+      <label style="font-size:12px;font-weight:500;color:var(--text-muted);text-transform:uppercase;letter-spacing:.04em;">Date</label>
+      <select id="daySelect" onchange="switchDaySelect()"
+        style="background:var(--surface2);color:var(--text);border:1px solid var(--border);border-radius:7px;padding:5px 28px 5px 12px;font-size:13px;font-weight:600;cursor:pointer;outline:none;appearance:none;-webkit-appearance:none;min-width:130px;">
+      </select>
+      <button onclick="stepDay(-1)" title="Previous day"
+        style="background:var(--surface2);border:1px solid var(--border);border-radius:7px;padding:5px 11px;font-size:14px;cursor:pointer;color:var(--text);line-height:1;">‹</button>
+      <button onclick="stepDay(1)" title="Next day"
+        style="background:var(--surface2);border:1px solid var(--border);border-radius:7px;padding:5px 11px;font-size:14px;cursor:pointer;color:var(--text);line-height:1;">›</button>
+    </div>
+  </div>
   <div class="tabs">
-    <div class="tab-bar" id="tabBar"></div>
     <div id="tabPanels"></div>
   </div>
 
@@ -522,6 +537,27 @@ function renderKPIs(){
   const wkLabel=thisWeek.length?thisWeek[0].label+(thisWeek.length>1?'–'+thisWeek[thisWeek.length-1].label.split(' ')[1]:''):'';
   document.getElementById('kpiWeekEngage').textContent=weekAvgEngage||'—';
   document.getElementById('kpiWeekEngageSub').textContent=weekAvgEngage?(wkLabel+', '+thisWeek.length+' days'):'no data yet';
+
+  // Bridge compliance: bridgeWithin10m=true / (true+false), null = not applicable
+  const allCases=DB.days.flatMap(function(d){return d.cases;});
+  const bridgeYes=allCases.filter(function(c){return c.bridgeWithin10m===true;}).length;
+  const bridgeNo=allCases.filter(function(c){return c.bridgeWithin10m===false;}).length;
+  const bridgeTotal=bridgeYes+bridgeNo;
+  const bridgePct=bridgeTotal>0?Math.round(bridgeYes/bridgeTotal*100):null;
+  const bridgeEl=document.getElementById('kpiBridgeCompliance');
+  const bridgeSubEl=document.getElementById('kpiBridgeComplianceSub');
+  if(bridgePct!==null){
+    bridgeEl.textContent=bridgePct+'%';
+    // Colour the tile dynamically based on compliance rate
+    const kpiEl=bridgeEl.closest('.kpi');
+    if(bridgePct>=80){kpiEl.className='kpi rose';}
+    else if(bridgePct>=60){kpiEl.className='kpi yellow';}
+    else{kpiEl.className='kpi needs';}
+    bridgeSubEl.textContent=bridgeYes+'/'+bridgeTotal+' cases on-time';
+  }else{
+    bridgeEl.textContent='—';
+    bridgeSubEl.textContent='no data yet';
+  }
 }
 
 // ── WEEK CARDS ───────────────────────────────────────────────────────────────
@@ -669,45 +705,72 @@ function renderCharts(){
 
 // ── TABS ─────────────────────────────────────────────────────────────────────
 function renderTabs(){
-  const tabBar=document.getElementById('tabBar'),tabPanels=document.getElementById('tabPanels');
-  tabBar.innerHTML='';tabPanels.innerHTML='';
-  DB.days.forEach((day,idx)=>{
-    const id='day-'+day.date,isLast=idx===DB.days.length-1;
-    const btn=document.createElement('button');
-    btn.className='tab-btn'+(isLast?' active':'');
-    btn.innerHTML=`${day.label} <span class="tab-badge">${day.cases.length}</span>`;
-    btn.onclick=()=>switchTab(id,btn);
-    tabBar.appendChild(btn);
-    const panel=document.createElement('div');
-    panel.id='tab-'+id;panel.className='tab-panel'+(isLast?' active':'');
-    panel.innerHTML=buildDayPanel(day);
-    tabPanels.appendChild(panel);
+  const sel=document.getElementById('daySelect');
+  const tabPanels=document.getElementById('tabPanels');
+  // Build the dropdown
+  while(sel.firstChild)sel.removeChild(sel.firstChild);
+  DB.days.forEach(function(day,idx){
+    const opt=document.createElement('option');
+    opt.value=day.date;
+    opt.textContent=day.label+' ('+day.cases.length+')';
+    if(idx===DB.days.length-1)opt.selected=true;
+    sel.appendChild(opt);
   });
+  // Render the active day panel
+  showDay(DB.days[DB.days.length-1].date,tabPanels);
 }
 
-function buildDayPanel(day){
+function showDay(dateStr,panelContainer){
+  const day=DB.days.find(function(d){return d.date===dateStr;});
+  if(!day)return;
+  while(panelContainer.firstChild)panelContainer.removeChild(panelContainer.firstChild);
+  const panel=document.createElement('div');
+  panel.className='tab-panel active';
+  panel.setAttribute('data-date',dateStr);
+  panelContainer.appendChild(panel);
+  buildDayPanel(day,panel);
+}
+
+function switchDaySelect(){
+  const sel=document.getElementById('daySelect');
+  showDay(sel.value,document.getElementById('tabPanels'));
+}
+
+function stepDay(dir){
+  const sel=document.getElementById('daySelect');
+  const opts=Array.from(sel.options);
+  const cur=opts.findIndex(function(o){return o.selected;});
+  const next=cur+dir;
+  if(next>=0&&next<opts.length){
+    opts[next].selected=true;
+    switchDaySelect();
+  }
+}
+
+function buildDayPanel(day,container){
+  // All data originates from the page-owner's own data.json — treated as trusted.
   const cases=day.cases;
   const byMgr={};
-  cases.forEach(c=>{const m=c.manager||day.manager;if(!byMgr[m])byMgr[m]=[];byMgr[m].push(c);});
+  cases.forEach(function(c){const m=c.manager||day.manager;if(!byMgr[m])byMgr[m]=[];byMgr[m].push(c);});
   let html='';
-  if(mciNotes[day.date])html+=`<div class="mci-callout">${mciNotes[day.date]}</div>`;
+  if(mciNotes[day.date])html+='<div class="mci-callout">'+mciNotes[day.date]+'</div>';
   html+='<div class="day-chips">';
-  Object.entries(byMgr).forEach(([mgr,mc])=>{
+  Object.entries(byMgr).forEach(function([mgr,mc]){
     const color=CHIP_COLOR[mgr]||'#999',bg=CHIP_BG[mgr]||'rgba(100,116,139,.1)',full=FULL_NAME[mgr]||mgr;
-    html+=`<div class="day-chip" style="background:${bg};border:1px solid ${color}40;"><strong style="color:${color};">${full}</strong> — ${mc.length} WB${mc.length!==1?'s':''}</div>`;
+    html+='<div class="day-chip" style="background:'+bg+';border:1px solid '+color+'40;"><strong style="color:'+color+';">'+full+'</strong> — '+mc.length+' WB'+(mc.length!==1?'s':'')+'</div>';
   });
-  if(day.canvasId)html+=`<div class="day-chip" style="background:rgba(124,77,255,.08);border:1px solid rgba(124,77,255,.2);font-size:12px;color:#a78bfa;">Canvas: <a href="https://salesforce.enterprise.slack.com/docs/T01G0063H29/${day.canvasId}" style="color:#a78bfa;" target="_blank">${day.canvasId}</a></div>`;
+  if(day.canvasId)html+='<div class="day-chip" style="background:rgba(124,77,255,.08);border:1px solid rgba(124,77,255,.2);font-size:12px;color:#a78bfa;">Canvas: <a href="https://salesforce.enterprise.slack.com/docs/T01G0063H29/'+day.canvasId+'" style="color:#a78bfa;" target="_blank">'+day.canvasId+'</a></div>';
   html+='</div>';
   html+='<div style="overflow-x:auto;"><table class="case-table"><thead><tr>';
   html+='<th>#</th><th>Case</th><th>Account</th><th>Product</th><th>Time (IST)</th><th>Manager</th>';
-  html+='<th style="white-space:nowrap;cursor:help;" title="Time from PD alert → QB Manager Acknowledged">Alert Ack</th>';
-  html+='<th style="white-space:nowrap;cursor:help;" title="Time from PD alert → QB Manager Resolved">Alert Resolve</th>';
-  html+='<th style="white-space:nowrap;cursor:help;" title="Time from Sev1 channel creation → QB Manager first text">Channel Engage</th>';
+  html+='<th style="white-space:nowrap;cursor:help;" title="Time from PD alert to QB Manager Acknowledged">Alert Ack</th>';
+  html+='<th style="white-space:nowrap;cursor:help;" title="Time from PD alert to QB Manager Resolved">Alert Resolve</th>';
+  html+='<th style="white-space:nowrap;cursor:help;" title="Time from Sev1 channel creation to QB Manager first text">Channel Engage</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Account has a Red Account record in OrgCS">Red Acct</th>';
-  html+='<th style="white-space:nowrap;cursor:help;" title="Customer bridge (Meet/WebEx/Teams/Zoom) initiated within 10 min of channel creation">Bridge ≤10m</th>';
+  html+='<th style="white-space:nowrap;cursor:help;" title="Customer bridge initiated within 10 min of channel creation">Bridge ≤10m</th>';
   html+='</tr></thead><tbody>';
   const mciSet=mciCases[day.date]||[];
-  cases.forEach((c,i)=>{
+  cases.forEach(function(c,i){
     const mgr=c.manager||day.manager,chipCls=CHIP_CLS[mgr]||'';
     const isMCI=mciSet.includes(c.caseNum);
     const mciTag=isMCI?'<span class="badge mci">⚡ MCI</span> ':'';
@@ -719,21 +782,14 @@ function buildDayPanel(day){
       :c.bridgeWithin10m===false
         ?'<td style="text-align:center;" title="No bridge within 10 min of channel creation">❌</td>'
         :'<td style="text-align:center;color:var(--text-muted);font-size:11px;" title="No Sev1 channel (no bridge applicable)">—</td>';
-    html+=`<tr><td class="case-num">${i+1}</td><td>${c.caseNum}</td>
-      <td class="account-name">${mciTag}${c.account}</td><td class="product-cell">${c.product}</td>
-      <td class="time-cell">${c.timeIST}</td>
-      <td><span class="manager-chip ${chipCls}">${mgr}</span></td>
-      ${rtCell(c.ack)}${rtCell(c.resolve)}${rtCell(c.channelEngage,true,true,c.caseNum)}${redCell}${bridgeCell}</tr>`;
+    html+='<tr><td class="case-num">'+(i+1)+'</td><td>'+c.caseNum+'</td>'
+      +'<td class="account-name">'+mciTag+c.account+'</td><td class="product-cell">'+c.product+'</td>'
+      +'<td class="time-cell">'+c.timeIST+'</td>'
+      +'<td><span class="manager-chip '+chipCls+'">'+mgr+'</span></td>'
+      +rtCell(c.ack)+rtCell(c.resolve)+rtCell(c.channelEngage,true,true,c.caseNum)+redCell+bridgeCell+'</tr>';
   });
   html+='</tbody></table></div>';
-  return html;
-}
-
-function switchTab(id,btn){
-  document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
-  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
-  document.getElementById('tab-'+id).classList.add('active');
-  btn.classList.add('active');
+  container.innerHTML=html;
 }
 
 // ── FOOTER ───────────────────────────────────────────────────────────────────
