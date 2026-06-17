@@ -403,19 +403,19 @@ function mgrChip(name){
 }
 function oiCell(c){
   if(!c.oiDuration&&!c.resolvedAt){
-    // No channel or no resolution signal found
-    const hasChannel=c.channelEngage||c.channelEngage==='No engagement';
-    if(!hasChannel&&!c.resolvedAt)
-      return'<td style="text-align:center;color:var(--text-muted);font-size:11px;" title="No Sev1 channel">—</td>';
-    return'<td style="text-align:center;color:var(--text-muted);font-size:11px;" title="No out-of-impact signal found on channel">—</td>';
+    // Still-open confirmed by OrgCS
+    if(c.oiSource==='orgcs'&&c.resolvedText){
+      const tt=c.resolvedText.substring(0,120);
+      return`<td style="white-space:nowrap;" title="${tt.replace(/"/g,'&quot;')}"><span style="background:rgba(245,158,11,.10);color:#b45309;border:1px solid rgba(245,158,11,.25);border-radius:5px;padding:2px 8px;font-size:11px;font-weight:500;">open <sup style="font-size:9px;opacity:.7;">OrgCS</sup></span></td>`;
+    }
+    return'<td style="text-align:center;color:var(--text-muted);font-size:11px;" title="No out-of-impact signal found">—</td>';
   }
   const dur=c.oiDuration;
-  const tooltip=(c.resolvedText?c.resolvedText.substring(0,100):'Out of impact confirmed');
+  const tooltip=(c.resolvedText?c.resolvedText.substring(0,120):'Out of impact confirmed');
   // Colour by duration: ≤2h green, ≤8h yellow, >8h red
   const mins=dur?((d)=>{
-    const hm=d.match(/(\d+)d/),hh=d.match(/(\d+)h/),mm=d.match(/^(\d+)m$/);
     let t=0;
-    if(hm)t+=parseInt(hm[1])*1440;
+    const hm=d.match(/(\d+)d/);if(hm)t+=parseInt(hm[1])*1440;
     const hmatch=d.match(/(\d+)h/);if(hmatch)t+=parseInt(hmatch[1])*60;
     const mmatch=d.match(/(\d+)m/);if(mmatch)t+=parseInt(mmatch[1]);
     return t;
@@ -423,7 +423,8 @@ function oiCell(c){
   const bg=mins<=120?'rgba(34,197,94,.12)':mins<=480?'rgba(245,158,11,.12)':'rgba(220,38,38,.1)';
   const col=mins<=120?'#15803d':mins<=480?'#b45309':'#dc2626';
   const border=mins<=120?'rgba(34,197,94,.25)':mins<=480?'rgba(245,158,11,.3)':'rgba(220,38,38,.25)';
-  return`<td style="white-space:nowrap;" title="${tooltip.replace(/"/g,'&quot;')}"><span style="background:${bg};color:${col};border:1px solid ${border};border-radius:5px;padding:2px 8px;font-size:12px;font-weight:600;">${dur}</span></td>`;
+  const srcBadge=c.oiSource==='orgcs'?`<sup style="font-size:9px;opacity:.6;margin-left:2px;">OrgCS</sup>`:'';
+  return`<td style="white-space:nowrap;" title="${tooltip.replace(/"/g,'&quot;')}"><span style="background:${bg};color:${col};border:1px solid ${border};border-radius:5px;padding:2px 8px;font-size:12px;font-weight:600;">${dur}${srcBadge}</span></td>`;
 }
 function groupByWeek(days){
   const weeks=[];let cur=[];
