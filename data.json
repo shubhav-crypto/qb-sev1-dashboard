@@ -1,7 +1,7 @@
 {
   "meta": {
     "generated": "2026-06-17T00:00:00+05:30",
-    "totalCases": 169,
+    "totalCases": 179,
     "daysTracked": 13
   },
   "schedule": {
@@ -153,7 +153,7 @@
         },
         {
           "caseNum": "473604096",
-          "account": "bp International Ltd – Colleagues Org",
+          "account": "bp International Ltd \u2013 Colleagues Org",
           "product": "Digital Engagement",
           "timeIST": "5:24 PM",
           "quality": "STRONG",
@@ -301,7 +301,7 @@
         },
         {
           "caseNum": "473613541",
-          "account": "Cummins – Guidanz (Service Org)",
+          "account": "Cummins \u2013 Guidanz (Service Org)",
           "product": "Developer Support",
           "timeIST": "4:00 PM",
           "quality": "STRONG",
@@ -586,7 +586,7 @@
       "cases": [
         {
           "caseNum": "473633737",
-          "account": "Guardant Health – Screening Org",
+          "account": "Guardant Health \u2013 Screening Org",
           "product": "Digital Engagement",
           "timeIST": "1:12 PM",
           "quality": "STRONG",
@@ -689,7 +689,7 @@
           "isRed": false,
           "bridgeWithin10m": false,
           "resolvedAt": null,
-          "resolvedText": "Still open — no Sev1 end time recorded (Status: Need More Information)",
+          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Need More Information)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-04 15:59:44 IST",
           "oiSource": "orgcs"
@@ -831,7 +831,7 @@
           "bridgeWithin10m": true,
           "resolvedAt": null,
           "oiDuration": null,
-          "resolvedText": "Still open — no Sev1 end time recorded (Status: Solution Provided)",
+          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Solution Provided)",
           "channelCreatedAt": "2026-06-04 19:15:11 IST",
           "oiSource": "orgcs"
         },
@@ -938,7 +938,7 @@
         },
         {
           "caseNum": "473657275",
-          "account": "bp International Ltd – Colleagues Org",
+          "account": "bp International Ltd \u2013 Colleagues Org",
           "product": "Digital Engagement",
           "timeIST": "5:34 PM",
           "quality": "STRONG",
@@ -1179,7 +1179,7 @@
         {
           "caseNum": "473697035",
           "account": "Tata Consumer Products",
-          "product": "Agentforce – Service",
+          "product": "Agentforce \u2013 Service",
           "timeIST": "5:42 PM",
           "manager": "Jyothirmayee",
           "quality": "MODERATE",
@@ -1556,7 +1556,7 @@
           "isRed": false,
           "bridgeWithin10m": false,
           "resolvedAt": "2026-06-10 19:54:13 IST",
-          "resolvedText": "no actions pending — their team had a confusion",
+          "resolvedText": "no actions pending \u2014 their team had a confusion",
           "oiDuration": "31m",
           "channelCreatedAt": "2026-06-10 19:23:00 IST"
         }
@@ -1950,7 +1950,7 @@
           "bridgeWithin10m": false,
           "resolvedAt": "2026-06-13 10:41:46 IST",
           "oiDuration": "17h 8m",
-          "resolvedText": "CIC Update :: Issue has been mitigated - component switched V2→V1, resolved.",
+          "resolvedText": "CIC Update :: Issue has been mitigated - component switched V2\u2192V1, resolved.",
           "channelCreatedAt": "2026-06-12 17:33:22 IST"
         },
         {
@@ -2213,7 +2213,7 @@
           "isRed": true,
           "bridgeWithin10m": false,
           "resolvedAt": null,
-          "resolvedText": "Still open — no Sev1 end time recorded (Status: Working)",
+          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Working)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-15 16:13:33 IST",
           "oiSource": "orgcs"
@@ -2328,7 +2328,7 @@
           "isRed": false,
           "bridgeWithin10m": false,
           "resolvedAt": "2026-06-15 19:38:36 IST",
-          "resolvedText": "There is no issue — they are receiving and able to send emails.",
+          "resolvedText": "There is no issue \u2014 they are receiving and able to send emails.",
           "oiDuration": "28m",
           "channelCreatedAt": "2026-06-15 19:10:00 IST"
         },
@@ -2382,7 +2382,7 @@
           "isRed": false,
           "bridgeWithin10m": true,
           "resolvedAt": "2026-06-16 15:23:51 IST",
-          "resolvedText": "they can login manually after session timeout — CIC disengaging",
+          "resolvedText": "they can login manually after session timeout \u2014 CIC disengaging",
           "oiDuration": "1h 40m",
           "channelCreatedAt": "2026-06-16 13:43:00 IST"
         },
@@ -2429,7 +2429,7 @@
           "isRed": false,
           "bridgeWithin10m": false,
           "resolvedAt": "2026-06-16 17:57:59 IST",
-          "resolvedText": "issue is intermittent — CIC can disengage for now",
+          "resolvedText": "issue is intermittent \u2014 CIC can disengage for now",
           "oiDuration": "3h 42m",
           "channelCreatedAt": "2026-06-16 14:15:00 IST"
         },
@@ -2490,7 +2490,7 @@
           "isRed": false,
           "bridgeWithin10m": false,
           "resolvedAt": null,
-          "resolvedText": "Still open — no Sev1 end time recorded (Status: Working)",
+          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Working)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 16:26:04 IST",
           "oiSource": "orgcs"
@@ -2506,7 +2506,7 @@
           "isRed": false,
           "bridgeWithin10m": true,
           "resolvedAt": null,
-          "resolvedText": "Still open — no Sev1 end time recorded (Status: Working)",
+          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Working)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 16:42:34 IST",
           "oiSource": "orgcs"
@@ -2537,7 +2537,7 @@
           "isRed": false,
           "bridgeWithin10m": false,
           "resolvedAt": null,
-          "resolvedText": "Still open — no Sev1 end time recorded (Status: Need More Information)",
+          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Need More Information)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 17:49:40 IST",
           "oiSource": "orgcs"
@@ -2568,7 +2568,7 @@
           "isRed": false,
           "bridgeWithin10m": true,
           "resolvedAt": null,
-          "resolvedText": "Still open — no Sev1 end time recorded (Status: Need More Information)",
+          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Need More Information)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 18:29:21 IST",
           "oiSource": "orgcs"
@@ -2585,7 +2585,7 @@
           "bridgeWithin10m": false,
           "bridgeNA": "throttle",
           "resolvedAt": null,
-          "resolvedText": "Still open — no Sev1 end time recorded (Status: Solution Provided)",
+          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Solution Provided)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 18:49:27 IST",
           "oiSource": "orgcs"
@@ -2697,7 +2697,7 @@
         },
         {
           "caseNum": "473853466",
-          "account": "Stellantis España S.L.",
+          "account": "Stellantis Espa\u00f1a S.L.",
           "product": "Service-Cases/Knowledge",
           "timeIST": "11:50 AM",
           "quality": "PENDING",
@@ -2819,7 +2819,7 @@
           "bridgeWithin10m": true,
           "bridgeNA": null,
           "resolvedAt": null,
-          "resolvedText": "Certificate renewal blocked for services.jaguar.co.uk — domain configured on MRT not eCDN. Customer confirmed happy with existing approach; case mitigated.",
+          "resolvedText": "Certificate renewal blocked for services.jaguar.co.uk \u2014 domain configured on MRT not eCDN. Customer confirmed happy with existing approach; case mitigated.",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-17 14:56:29 IST"
         },
@@ -2854,8 +2854,179 @@
           "resolvedText": "Daily scheduled Apex job limit exhausted (100/day). LAP submitted to increase limit to 110 for 31 days. Mitigated.",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-17 16:07:00 IST"
+        },
+        {
+          "caseNum": "473843612",
+          "account": "Indeed, Inc",
+          "product": "Developer Support",
+          "timeIST": "1:49 PM",
+          "quality": "STRONG",
+          "ack": "18s",
+          "resolve": "20s",
+          "channelEngage": "9s",
+          "isRed": false,
+          "bridgeWithin10m": false,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": "Re-alert of Jun 16 case; team monitoring; case downgraded to Sev2 by ~02:04 Jun 17.",
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-16 23:06:07 IST"
+        },
+        {
+          "caseNum": "473855538",
+          "account": "Marriott International",
+          "product": "Developer Support",
+          "timeIST": "1:49 PM",
+          "quality": "STRONG",
+          "ack": "43s",
+          "resolve": "45s",
+          "channelEngage": "7m 6s",
+          "isRed": false,
+          "bridgeWithin10m": false,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": "Issue resolved by giving appropriate access. CIC Benita Lennon engaged; bridge launched.",
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-17 13:49:44 IST"
+        },
+        {
+          "caseNum": "473855848",
+          "account": "Mercedes-Benz Group AG",
+          "product": "Security & Activations",
+          "timeIST": "2:07 PM",
+          "quality": "MODERATE",
+          "ack": "10s",
+          "resolve": "12s",
+          "channelEngage": "6m 35s",
+          "isRed": false,
+          "bridgeWithin10m": false,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": "CIC assessed as not a business-affecting Sev1 \u2014 LAP filings for MFA enforcement on test orgs, no production impact.",
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-17 14:07:40 IST"
+        },
+        {
+          "caseNum": "473770521",
+          "account": "NTT DATA Americas",
+          "product": "Developer Support",
+          "timeIST": "4:45 PM",
+          "quality": "MODERATE",
+          "ack": "22s",
+          "resolve": "24s",
+          "channelEngage": "1m 26s",
+          "isRed": false,
+          "bridgeWithin10m": false,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": "Re-alert of Jun 12 case; MFA/Phishing-Resistant MFA clarification for Marken (NTT DATA subsidiary). Pending customer response.",
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-12 10:46:50 IST"
+        },
+        {
+          "caseNum": "473754007",
+          "account": "CMA CGM SA",
+          "product": "Developer Support",
+          "timeIST": "5:29 PM",
+          "quality": "STRONG",
+          "ack": "57s",
+          "resolve": "60s",
+          "channelEngage": "37s",
+          "isRed": false,
+          "bridgeWithin10m": false,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": "Complex row lock investigation; Core DB SME Oleg Korotkov engaged; CIC Dominika Barrett disengaged with comprehensive CS/BI/NS summary.",
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-17 17:29:10 IST"
+        },
+        {
+          "caseNum": "473859520",
+          "account": "MS Financing LLC",
+          "product": "Network Infra & Core Maintenance",
+          "timeIST": "5:31 PM",
+          "quality": "STRONG",
+          "ack": "10s",
+          "resolve": "12s",
+          "channelEngage": "4m 7s",
+          "isRed": false,
+          "bridgeWithin10m": false,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": "NA237 performance degradation \u2014 trust incident #20004111 raised; linked to incident channel icc-91757097.",
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-17 17:31:20 IST"
+        },
+        {
+          "caseNum": "473372581",
+          "account": "Richemont International S.A",
+          "product": "Digital Engagement",
+          "timeIST": "5:41 PM",
+          "quality": "MODERATE",
+          "ack": "20s",
+          "resolve": "22s",
+          "channelEngage": "13s",
+          "isRed": false,
+          "bridgeWithin10m": false,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": "Facebook messages not arriving; blocked on customer's Meta developer admin access. Management mediation by Shubha at 18:33.",
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-17 17:41:31 IST"
+        },
+        {
+          "caseNum": "473860129",
+          "account": "Blue Shield of California",
+          "product": "Email Delivery & Desktop Integrations",
+          "timeIST": "6:07 PM",
+          "quality": "STRONG",
+          "ack": null,
+          "resolve": "69s",
+          "channelEngage": "8m 8s",
+          "isRed": false,
+          "bridgeWithin10m": false,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": "Root cause: external mail forwarding issue (not Salesforce-side). Victor Ashby posted full resolution summary; case closed.",
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-17 18:07:34 IST"
+        },
+        {
+          "caseNum": "473860190",
+          "account": "Zoetis [Touchpoint]",
+          "product": "Developer Support",
+          "timeIST": "6:11 PM",
+          "quality": "STRONG",
+          "ack": "45s",
+          "resolve": "47s",
+          "channelEngage": "1m 38s",
+          "isRed": false,
+          "bridgeWithin10m": true,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": "Flow unable to set field to null \u2014 assessed non-critical, production fully operational. CIC Benita Lennon disengaged.",
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-17 18:11:05 IST"
+        },
+        {
+          "caseNum": "473860267",
+          "account": "PostNord Group AB",
+          "product": "Developer Support",
+          "timeIST": "6:36 PM",
+          "quality": "STRONG",
+          "ack": null,
+          "resolve": "40s",
+          "channelEngage": "1m 6s",
+          "isRed": false,
+          "bridgeWithin10m": false,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": "DevOps Center blocking deployment. CIC Kranti Bharath Tadipatri engaged; bridge launched.",
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-17 18:37:03 IST"
         }
-      ]
+      ],
+      "canvasId": "F0BB2DYRMNF"
     }
   ]
 }
