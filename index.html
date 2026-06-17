@@ -398,6 +398,71 @@ function groupByWeek(days){
   return weeks;
 }
 
+// ── WEEKENDS ─────────────────────────────────────────────────────────────────
+function renderWeekends(){
+  const container=document.getElementById('weekendGrid');
+  while(container.firstChild)container.removeChild(container.firstChild);
+
+  const firstDate=new Date(DB.days[0].date+'T00:00:00');
+  const lastDate=new Date(DB.days[DB.days.length-1].date+'T00:00:00');
+  const year=firstDate.getFullYear(),month=firstDate.getMonth();
+
+  const dateCaseMap={};
+  DB.days.forEach(function(d){dateCaseMap[d.date]=d.cases.length;});
+
+  const DAY_NAMES=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  const weekends=[];
+  const cursor=new Date(year,month,1);
+  while(cursor.getMonth()===month&&cursor<=lastDate){
+    const dow=cursor.getDay();
+    if(dow===0||dow===6){
+      const iso=cursor.toISOString().slice(0,10);
+      const mon=cursor.toLocaleString('en-US',{month:'short'});
+      weekends.push({date:iso,label:mon+' '+cursor.getDate(),dayName:DAY_NAMES[dow],cases:dateCaseMap[iso]||0});
+    }
+    cursor.setDate(cursor.getDate()+1);
+  }
+
+  if(!weekends.length){
+    const p=document.createElement('p');
+    p.style.cssText='color:var(--text-muted);font-size:13px;';
+    p.textContent='No weekend dates found in the tracked range.';
+    container.appendChild(p);
+    return;
+  }
+
+  weekends.forEach(function(w){
+    const card=document.createElement('div');
+    card.className='weekend-card';
+
+    const dayEl=document.createElement('div');
+    dayEl.className='weekend-card-day';
+    dayEl.textContent=w.dayName;
+    card.appendChild(dayEl);
+
+    const dateEl=document.createElement('div');
+    dateEl.className='weekend-card-date';
+    dateEl.textContent=w.label;
+    card.appendChild(dateEl);
+
+    const badge=document.createElement('div');
+    const noteEl=document.createElement('div');
+    noteEl.className='weekend-note';
+    if(w.cases>0){
+      badge.className='weekend-has-cases';
+      badge.textContent='⚠️ '+w.cases+(w.cases!==1?' cases':' case')+' logged';
+      noteEl.textContent='Cases logged outside QB window — reviewed by on-call.';
+    }else{
+      badge.className='weekend-no-coverage';
+      badge.textContent='🌙 No coverage';
+      noteEl.textContent='Outside QB window (12:30–7:30 PM IST).';
+    }
+    card.appendChild(badge);
+    card.appendChild(noteEl);
+    container.appendChild(card);
+  });
+}
+
 // ── GLOBAL ───────────────────────────────────────────────────────────────────
 let DB=null,dailyChart=null,healthChart=null;
 
