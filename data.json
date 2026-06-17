@@ -77,7 +77,8 @@
           "quality": "STRONG",
           "resolve": "41s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473600625",
@@ -87,7 +88,8 @@
           "quality": "MODERATE",
           "resolve": "1m 1s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473513077",
@@ -97,7 +99,8 @@
           "quality": "STRONG",
           "resolve": "33s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473602269",
@@ -107,7 +110,8 @@
           "quality": "MODERATE",
           "resolve": "29s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473587263",
@@ -117,17 +121,19 @@
           "quality": "STRONG",
           "resolve": "23s",
           "channelEngage": "4m 18s",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473604096",
-          "account": "bp International Ltd – Colleagues Org",
+          "account": "bp International Ltd \u2013 Colleagues Org",
           "product": "Digital Engagement",
           "timeIST": "5:24 PM",
           "quality": "STRONG",
           "resolve": "22s",
           "channelEngage": "2h 20m 36s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473604164",
@@ -137,7 +143,8 @@
           "quality": "MODERATE",
           "resolve": "28s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473604551",
@@ -147,7 +154,8 @@
           "quality": "STRONG",
           "resolve": "40s",
           "channelEngage": null,
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473604871",
@@ -157,7 +165,8 @@
           "quality": "MODERATE",
           "resolve": "24s",
           "channelEngage": "56m 41s",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473604902",
@@ -167,7 +176,8 @@
           "quality": "MODERATE",
           "resolve": "24s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         }
       ],
       "eodDone": true
@@ -186,7 +196,8 @@
           "quality": "MODERATE",
           "resolve": "23s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473567778",
@@ -196,7 +207,8 @@
           "quality": "MODERATE",
           "resolve": "1m 6s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473589842",
@@ -206,7 +218,8 @@
           "quality": "STRONG",
           "resolve": "22s",
           "channelEngage": "20m 58s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473613430",
@@ -216,17 +229,19 @@
           "quality": "STRONG",
           "resolve": "16s",
           "channelEngage": "2m 34s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473613541",
-          "account": "Cummins – Guidanz (Service Org)",
+          "account": "Cummins \u2013 Guidanz (Service Org)",
           "product": "Developer Support",
           "timeIST": "4:00 PM",
           "quality": "STRONG",
           "resolve": "14s",
           "channelEngage": "3m 11s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473613830",
@@ -236,7 +251,8 @@
           "quality": "STRONG",
           "resolve": "18s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473613868",
@@ -246,7 +262,8 @@
           "quality": "STRONG",
           "resolve": "33s",
           "channelEngage": "3m 54s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473520691",
@@ -256,7 +273,8 @@
           "quality": "STRONG",
           "resolve": "29s",
           "channelEngage": "1m 57s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473614090",
@@ -266,7 +284,8 @@
           "quality": "STRONG",
           "resolve": "13s",
           "channelEngage": "5m 50s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473614334",
@@ -276,7 +295,8 @@
           "quality": "MODERATE",
           "resolve": "26s",
           "channelEngage": "1m 30s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473589470",
@@ -286,7 +306,8 @@
           "quality": "MODERATE",
           "resolve": "15s",
           "channelEngage": "3m 35s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473615041",
@@ -296,7 +317,8 @@
           "quality": "STRONG",
           "resolve": "29s",
           "channelEngage": "5m 27s",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": false
         }
       ],
       "eodDone": true
@@ -316,7 +338,8 @@
           "ack": "25s",
           "resolve": "27s",
           "channelEngage": "4m 23s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473622876",
@@ -327,7 +350,8 @@
           "ack": "56s",
           "resolve": "58s",
           "channelEngage": "11m 18s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473588268",
@@ -338,7 +362,8 @@
           "ack": "16s",
           "resolve": "18s",
           "channelEngage": "2m 35s",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473623584",
@@ -348,7 +373,8 @@
           "quality": "STRONG",
           "resolve": "1m 13s",
           "channelEngage": "3m 51s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473624107",
@@ -359,7 +385,8 @@
           "ack": "23s",
           "resolve": "24s",
           "channelEngage": "4m 30s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473624266",
@@ -369,7 +396,8 @@
           "quality": "STRONG",
           "resolve": "18s",
           "channelEngage": "3m 5s",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473624051",
@@ -380,7 +408,8 @@
           "ack": "1m 13s",
           "resolve": "1m 15s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473493085",
@@ -391,7 +420,8 @@
           "ack": "12s",
           "resolve": "14s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473623729",
@@ -402,7 +432,8 @@
           "ack": "18s",
           "resolve": "21s",
           "channelEngage": "3m 47s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         }
       ],
       "eodDone": true
@@ -415,13 +446,14 @@
       "cases": [
         {
           "caseNum": "473633737",
-          "account": "Guardant Health – Screening Org",
+          "account": "Guardant Health \u2013 Screening Org",
           "product": "Digital Engagement",
           "timeIST": "1:12 PM",
           "quality": "STRONG",
           "resolve": "1m 24s",
           "channelEngage": "1h 1m 35s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473634707",
@@ -431,7 +463,8 @@
           "quality": "MODERATE",
           "resolve": "1m 52s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473634750",
@@ -442,7 +475,8 @@
           "ack": "12s",
           "resolve": "39s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473634762",
@@ -452,7 +486,8 @@
           "quality": "STRONG",
           "resolve": "47s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473633842",
@@ -463,7 +498,8 @@
           "ack": "27s",
           "resolve": "1m 20s",
           "channelEngage": "2h 49m 0s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473605601",
@@ -473,7 +509,8 @@
           "quality": "STRONG",
           "resolve": "22s",
           "channelEngage": "1m 27s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473636953",
@@ -483,7 +520,8 @@
           "quality": "STRONG",
           "resolve": "31s",
           "channelEngage": "9m 13s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473636986",
@@ -493,7 +531,8 @@
           "quality": "STRONG",
           "resolve": "23s",
           "channelEngage": "8m 44s",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473637157",
@@ -503,7 +542,8 @@
           "quality": "STRONG",
           "resolve": "28s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473634071",
@@ -513,7 +553,8 @@
           "quality": "STRONG",
           "resolve": "34s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473631372",
@@ -524,7 +565,8 @@
           "ack": "22s",
           "resolve": "29s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473612144",
@@ -534,7 +576,8 @@
           "quality": "STRONG",
           "resolve": "33s",
           "channelEngage": "15m 20s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473248499",
@@ -545,7 +588,8 @@
           "ack": "33s",
           "resolve": "37s",
           "channelEngage": null,
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473638777",
@@ -555,7 +599,8 @@
           "quality": "STRONG",
           "resolve": "33s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473505955",
@@ -565,7 +610,8 @@
           "quality": "MODERATE",
           "resolve": "19s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473639607",
@@ -575,7 +621,8 @@
           "quality": "STRONG",
           "resolve": "2m 15s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473638243",
@@ -585,7 +632,8 @@
           "quality": "STRONG",
           "resolve": "22s",
           "channelEngage": "1h 53m 42s",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": false
         }
       ],
       "eodDone": false
@@ -604,7 +652,8 @@
           "quality": "STRONG",
           "resolve": "2m 9s",
           "channelEngage": "34m 3s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473654353",
@@ -614,7 +663,8 @@
           "quality": "STRONG",
           "resolve": "3m 10s",
           "channelEngage": "10m 11s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473654956",
@@ -624,7 +674,8 @@
           "quality": "STRONG",
           "resolve": "3m 9s",
           "channelEngage": "25m 40s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473655407",
@@ -634,7 +685,8 @@
           "quality": "MODERATE",
           "resolve": "3m 13s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473643333",
@@ -644,17 +696,19 @@
           "quality": "STRONG",
           "resolve": "3m 14s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473657275",
-          "account": "bp International Ltd – Colleagues Org",
+          "account": "bp International Ltd \u2013 Colleagues Org",
           "product": "Digital Engagement",
           "timeIST": "5:34 PM",
           "quality": "STRONG",
           "resolve": "3m 12s",
           "channelEngage": "15m 39s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473658432",
@@ -664,7 +718,8 @@
           "quality": "STRONG",
           "resolve": "3m 12s",
           "channelEngage": "4m 28s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473658708",
@@ -674,7 +729,8 @@
           "quality": "MODERATE",
           "resolve": "3m 11s",
           "channelEngage": "5m 2s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         }
       ],
       "eodDone": false
@@ -695,7 +751,8 @@
           "ack": "1m 41s",
           "resolve": "1m 47s",
           "channelEngage": "6m 47s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473692644",
@@ -706,7 +763,8 @@
           "quality": "STRONG",
           "resolve": "18s",
           "channelEngage": "12m 8s",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473692840",
@@ -717,7 +775,8 @@
           "quality": "MODERATE",
           "resolve": "52s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473653702",
@@ -728,7 +787,8 @@
           "quality": "STRONG",
           "resolve": "32s",
           "channelEngage": "1m 38s",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473693881",
@@ -739,7 +799,8 @@
           "quality": "STRONG",
           "resolve": "46s",
           "channelEngage": "6m 13s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473694062",
@@ -750,7 +811,8 @@
           "quality": "MODERATE",
           "resolve": "20s",
           "channelEngage": "7m 10s",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473694734",
@@ -761,7 +823,8 @@
           "quality": "MODERATE",
           "resolve": "23s",
           "channelEngage": "4m 56s",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473694893",
@@ -772,7 +835,8 @@
           "quality": "MODERATE",
           "resolve": "23s",
           "channelEngage": "4m 15s",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473621085",
@@ -784,7 +848,8 @@
           "ack": "1m 31s",
           "resolve": "1m 37s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473663111",
@@ -795,7 +860,8 @@
           "quality": "STRONG",
           "resolve": "30s",
           "channelEngage": "5m 13s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473696005",
@@ -806,18 +872,20 @@
           "quality": "STRONG",
           "resolve": "38s",
           "channelEngage": "14m 17s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473697035",
           "account": "Tata Consumer Products",
-          "product": "Agentforce – Service",
+          "product": "Agentforce \u2013 Service",
           "timeIST": "5:42 PM",
           "manager": "Jyothirmayee",
           "quality": "MODERATE",
           "resolve": "28s",
           "channelEngage": "8m 23s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473697121",
@@ -828,7 +896,8 @@
           "quality": "MODERATE",
           "resolve": "1m 19s",
           "channelEngage": "7m 37s",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473697264",
@@ -839,7 +908,8 @@
           "quality": "MODERATE",
           "resolve": "23s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473697509",
@@ -850,7 +920,8 @@
           "quality": "MODERATE",
           "resolve": "58s",
           "channelEngage": "10m 31s",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473697653",
@@ -861,7 +932,8 @@
           "quality": "STRONG",
           "resolve": "33s",
           "channelEngage": "6m 6s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473646616",
@@ -873,7 +945,8 @@
           "ack": "1m 42s",
           "resolve": "1m 47s",
           "channelEngage": "3m 41s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473697838",
@@ -884,7 +957,8 @@
           "quality": "MODERATE",
           "resolve": "30s",
           "channelEngage": "3m 26s",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473245400",
@@ -895,7 +969,8 @@
           "quality": "MODERATE",
           "resolve": "31s",
           "channelEngage": "3m 31s",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": false
         }
       ],
       "eodDone": false
@@ -916,7 +991,8 @@
           "ack": "2m 31s",
           "resolve": "2m 36s",
           "channelEngage": "49m 46s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473713404",
@@ -928,7 +1004,8 @@
           "ack": "32s",
           "resolve": "34s",
           "channelEngage": "2m 58s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473677970",
@@ -940,7 +1017,8 @@
           "ack": "17s",
           "resolve": "21s",
           "channelEngage": "13m 0s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473697509",
@@ -950,7 +1028,8 @@
           "manager": "Shubha",
           "quality": "STRONG",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": false
         }
       ],
       "eodDone": false
@@ -971,7 +1050,8 @@
           "ack": "25s",
           "resolve": "1m 4s",
           "channelEngage": "56m 31s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473733059",
@@ -982,7 +1062,8 @@
           "quality": "STRONG",
           "resolve": "21s",
           "channelEngage": "13m 37s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473733080",
@@ -993,7 +1074,8 @@
           "quality": "STRONG",
           "resolve": "1m 54s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473733820",
@@ -1004,7 +1086,8 @@
           "quality": "STRONG",
           "resolve": "25s",
           "channelEngage": null,
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473729164",
@@ -1015,7 +1098,8 @@
           "quality": "MODERATE",
           "ack": "48s",
           "channelEngage": "6m 57s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473734321",
@@ -1027,7 +1111,8 @@
           "ack": "37s",
           "resolve": "2m 39s",
           "channelEngage": "14m 42s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473734813",
@@ -1038,7 +1123,8 @@
           "quality": "STRONG",
           "resolve": "25s",
           "channelEngage": null,
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473731556",
@@ -1049,7 +1135,8 @@
           "quality": "MODERATE",
           "resolve": "24s",
           "channelEngage": "1m 29s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473738074",
@@ -1060,7 +1147,8 @@
           "quality": "MODERATE",
           "resolve": "22s",
           "channelEngage": "3m 24s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473738147",
@@ -1071,7 +1159,8 @@
           "quality": "STRONG",
           "resolve": "20s",
           "channelEngage": "2m 16s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         }
       ],
       "eodDone": false
@@ -1091,7 +1180,8 @@
           "quality": "STRONG",
           "resolve": "27s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473752851",
@@ -1102,7 +1192,8 @@
           "quality": "STRONG",
           "resolve": "20s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473752886",
@@ -1113,7 +1204,8 @@
           "quality": "STRONG",
           "resolve": "22s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473754009",
@@ -1124,7 +1216,8 @@
           "quality": "STRONG",
           "resolve": "24s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473755111",
@@ -1135,7 +1228,8 @@
           "quality": "STRONG",
           "resolve": "26s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473755197",
@@ -1146,7 +1240,8 @@
           "quality": "MODERATE",
           "resolve": "30s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473743172",
@@ -1157,7 +1252,8 @@
           "quality": "STRONG",
           "resolve": "25s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473743597",
@@ -1168,7 +1264,8 @@
           "quality": "STRONG",
           "resolve": "22s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473756525",
@@ -1179,7 +1276,8 @@
           "quality": "STRONG",
           "resolve": "20s",
           "channelEngage": null,
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473744331",
@@ -1190,7 +1288,8 @@
           "quality": "STRONG",
           "resolve": "16s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473744459",
@@ -1201,7 +1300,8 @@
           "quality": "STRONG",
           "resolve": "31s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473756810",
@@ -1212,7 +1312,8 @@
           "quality": "STRONG",
           "resolve": "45s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473756818",
@@ -1224,7 +1325,8 @@
           "ack": "2m 23s",
           "resolve": "2m 36s",
           "channelEngage": null,
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473757516",
@@ -1235,7 +1337,8 @@
           "quality": "MODERATE",
           "resolve": "29s",
           "channelEngage": null,
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         }
       ],
       "eodDone": true
@@ -1254,7 +1357,8 @@
           "quality": "STRONG",
           "resolve": "3m 17s",
           "channelEngage": null,
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473772063",
@@ -1264,7 +1368,8 @@
           "quality": "STRONG",
           "ack": "10s",
           "channelEngage": null,
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473772069",
@@ -1274,7 +1379,8 @@
           "quality": "STRONG",
           "ack": "1m 21s",
           "channelEngage": null,
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473774824",
@@ -1284,7 +1390,8 @@
           "quality": "STRONG",
           "ack": "2m 26s",
           "channelEngage": null,
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473774927",
@@ -1294,7 +1401,8 @@
           "quality": "STRONG",
           "ack": "29s",
           "channelEngage": null,
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473775323",
@@ -1304,7 +1412,8 @@
           "quality": "STRONG",
           "resolve": "3m 17s",
           "channelEngage": null,
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473775967",
@@ -1314,7 +1423,8 @@
           "quality": "STRONG",
           "resolve": "3m 21s",
           "channelEngage": null,
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473698784",
@@ -1324,7 +1434,8 @@
           "quality": "STRONG",
           "ack": "1m 21s",
           "channelEngage": null,
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473776135",
@@ -1334,7 +1445,8 @@
           "quality": "STRONG",
           "resolve": "3m 13s",
           "channelEngage": null,
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473776048",
@@ -1344,7 +1456,8 @@
           "quality": "STRONG",
           "resolve": "3m 11s",
           "channelEngage": null,
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473739241",
@@ -1354,7 +1467,8 @@
           "quality": "STRONG",
           "resolve": "3m 13s",
           "channelEngage": null,
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473775839",
@@ -1364,7 +1478,8 @@
           "quality": "STRONG",
           "resolve": "3m 16s",
           "channelEngage": null,
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473756017",
@@ -1374,7 +1489,8 @@
           "quality": "MODERATE",
           "ack": "10s",
           "channelEngage": null,
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473777807",
@@ -1384,7 +1500,8 @@
           "quality": "STRONG",
           "ack": "1m 12s",
           "channelEngage": null,
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473777827",
@@ -1394,7 +1511,8 @@
           "quality": "STRONG",
           "ack": "8s",
           "channelEngage": null,
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         }
       ],
       "eodDone": true
@@ -1413,7 +1531,8 @@
           "quality": "PENDING",
           "resolve": "1m 2s",
           "channelEngage": "3m 45s",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473787849",
@@ -1423,7 +1542,8 @@
           "quality": "PENDING",
           "resolve": "33s",
           "channelEngage": null,
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473813191",
@@ -1433,7 +1553,8 @@
           "quality": "PENDING",
           "resolve": "21s",
           "channelEngage": "22m 10s",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473813208",
@@ -1443,7 +1564,8 @@
           "quality": "PENDING",
           "resolve": "2m 18s",
           "channelEngage": "18m 39s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473813340",
@@ -1453,7 +1575,8 @@
           "quality": "PENDING",
           "resolve": "22s",
           "channelEngage": "8m 20s",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473813531",
@@ -1463,7 +1586,8 @@
           "quality": "PENDING",
           "resolve": "29s",
           "channelEngage": "13m 40s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473813727",
@@ -1473,7 +1597,8 @@
           "quality": "PENDING",
           "resolve": "40s",
           "channelEngage": "4m 56s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473814346",
@@ -1483,7 +1608,8 @@
           "quality": "PENDING",
           "resolve": "23s",
           "channelEngage": "28m 58s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473814469",
@@ -1493,7 +1619,8 @@
           "quality": "PENDING",
           "resolve": "26s",
           "channelEngage": "22m 59s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473771164",
@@ -1503,7 +1630,8 @@
           "quality": "PENDING",
           "resolve": "26s",
           "channelEngage": null,
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473815477",
@@ -1512,7 +1640,8 @@
           "timeIST": "4:13 PM",
           "quality": "PENDING",
           "channelEngage": "15m 52s",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473815509",
@@ -1521,7 +1650,8 @@
           "timeIST": "4:17 PM",
           "quality": "PENDING",
           "channelEngage": "11m 22s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473813759",
@@ -1530,7 +1660,8 @@
           "timeIST": "5:09 PM",
           "quality": "PENDING",
           "channelEngage": "2m 41s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473816757",
@@ -1539,7 +1670,8 @@
           "timeIST": "5:47 PM",
           "quality": "PENDING",
           "channelEngage": "15m 50s",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473816772",
@@ -1548,7 +1680,8 @@
           "timeIST": "5:48 PM",
           "quality": "PENDING",
           "channelEngage": "15m 49s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473771388",
@@ -1557,7 +1690,8 @@
           "timeIST": "5:51 PM",
           "quality": "PENDING",
           "channelEngage": "26m 44s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473816943",
@@ -1566,7 +1700,8 @@
           "timeIST": "5:57 PM",
           "quality": "PENDING",
           "channelEngage": "16m 13s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473817788",
@@ -1575,7 +1710,8 @@
           "timeIST": "7:09 PM",
           "quality": "PENDING",
           "channelEngage": "51m 39s",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473817800",
@@ -1584,7 +1720,8 @@
           "timeIST": "7:10 PM",
           "quality": "PENDING",
           "channelEngage": "10m 58s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473817982",
@@ -1593,7 +1730,8 @@
           "timeIST": "7:28 PM",
           "quality": "PENDING",
           "channelEngage": "11m 10s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         }
       ],
       "eodDone": true
@@ -1613,7 +1751,8 @@
           "quality": "MODERATE",
           "resolve": "16s",
           "channelEngage": "4m 34s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473833219",
@@ -1623,7 +1762,8 @@
           "quality": "MODERATE",
           "resolve": "12s",
           "channelEngage": "1m 33s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473576862",
@@ -1633,7 +1773,8 @@
           "quality": "MODERATE",
           "resolve": "21s",
           "channelEngage": "No engagement",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473744459",
@@ -1643,7 +1784,8 @@
           "quality": "MODERATE",
           "resolve": "16s",
           "channelEngage": "No engagement",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473751670",
@@ -1653,7 +1795,8 @@
           "quality": "STRONG",
           "resolve": "14s",
           "channelEngage": "3m 48s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473702574",
@@ -1663,7 +1806,8 @@
           "quality": "MODERATE",
           "resolve": "22s",
           "channelEngage": "No engagement",
-          "isRed": true
+          "isRed": true,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473834963",
@@ -1673,7 +1817,8 @@
           "quality": "MODERATE",
           "resolve": "14s",
           "channelEngage": "1m 36s",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473835308",
@@ -1683,7 +1828,8 @@
           "quality": "STRONG",
           "resolve": "15s",
           "channelEngage": "5m",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473835820",
@@ -1693,7 +1839,8 @@
           "quality": "MODERATE",
           "resolve": "31s",
           "channelEngage": "1m",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473836077",
@@ -1703,7 +1850,8 @@
           "quality": "MODERATE",
           "resolve": "27s",
           "channelEngage": "11m",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473553588",
@@ -1713,7 +1861,8 @@
           "quality": "MODERATE",
           "resolve": "9s",
           "channelEngage": "No engagement",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": null
         },
         {
           "caseNum": "473837041",
@@ -1723,7 +1872,8 @@
           "quality": "MODERATE",
           "resolve": "17s",
           "channelEngage": "1m",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473837116",
@@ -1733,7 +1883,8 @@
           "quality": "STRONG",
           "resolve": "18s",
           "channelEngage": "2m",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473837684",
@@ -1743,7 +1894,8 @@
           "quality": "MODERATE",
           "resolve": "27s",
           "channelEngage": "4m",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473838045",
@@ -1753,7 +1905,8 @@
           "quality": "MODERATE",
           "resolve": "19s",
           "channelEngage": "1m",
-          "isRed": false
+          "isRed": false,
+          "bridgeWithin10m": false
         }
       ],
       "eodDone": true

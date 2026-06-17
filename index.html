@@ -704,6 +704,7 @@ function buildDayPanel(day){
   html+='<th style="white-space:nowrap;cursor:help;" title="Time from PD alert → QB Manager Resolved">Alert Resolve</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Time from Sev1 channel creation → QB Manager first text">Channel Engage</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Account has a Red Account record in OrgCS">Red Acct</th>';
+  html+='<th style="white-space:nowrap;cursor:help;" title="Customer bridge (Meet/WebEx/Teams/Zoom) initiated within 10 min of channel creation">Bridge ≤10m</th>';
   html+='</tr></thead><tbody>';
   const mciSet=mciCases[day.date]||[];
   cases.forEach((c,i)=>{
@@ -713,11 +714,16 @@ function buildDayPanel(day){
     const redCell=c.isRed===true
       ?'<td style="text-align:center;" title="Red Account in OrgCS">🔴</td>'
       :'<td style="text-align:center;color:var(--text-muted);font-size:11px;" title="No Red Account record">—</td>';
+    const bridgeCell=c.bridgeWithin10m===true
+      ?'<td style="text-align:center;" title="Bridge initiated within 10 min of channel creation">✅</td>'
+      :c.bridgeWithin10m===false
+        ?'<td style="text-align:center;" title="No bridge within 10 min of channel creation">❌</td>'
+        :'<td style="text-align:center;color:var(--text-muted);font-size:11px;" title="No Sev1 channel (no bridge applicable)">—</td>';
     html+=`<tr><td class="case-num">${i+1}</td><td>${c.caseNum}</td>
       <td class="account-name">${mciTag}${c.account}</td><td class="product-cell">${c.product}</td>
       <td class="time-cell">${c.timeIST}</td>
       <td><span class="manager-chip ${chipCls}">${mgr}</span></td>
-      ${rtCell(c.ack)}${rtCell(c.resolve)}${rtCell(c.channelEngage,true,true,c.caseNum)}${redCell}</tr>`;
+      ${rtCell(c.ack)}${rtCell(c.resolve)}${rtCell(c.channelEngage,true,true,c.caseNum)}${redCell}${bridgeCell}</tr>`;
   });
   html+='</tbody></table></div>';
   return html;
