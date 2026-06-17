@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>QB Sev1 Work Assurance Dashboard — Jun 2026</title>
+<title>QB Sev1 Work Assurance Dashboard — Jun 2026 v2</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
   :root {
@@ -97,6 +97,16 @@
   .refresh-bar{display:flex;align-items:center;gap:10px;margin-bottom:16px;font-size:12px;color:var(--text-muted)}
   .refresh-btn{background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:4px 10px;font-size:11px;font-weight:500;cursor:pointer;color:var(--text);transition:background .15s}
   .refresh-btn:hover{background:#e2e8f0}
+
+  /* ── Weekend section ─────────────────────────────────────────────────── */
+  .weekend-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px;margin-bottom:8px}
+  .weekend-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--card-radius);padding:16px 18px;position:relative;overflow:hidden}
+  .weekend-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#94a3b8,#cbd5e1)}
+  .weekend-card-day{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#94a3b8;margin-bottom:4px}
+  .weekend-card-date{font-size:22px;font-weight:700;color:#94a3b8;line-height:1;margin-bottom:10px}
+  .weekend-no-coverage{display:inline-flex;align-items:center;gap:5px;background:rgba(148,163,184,.1);border:1px solid rgba(148,163,184,.25);border-radius:6px;padding:4px 10px;font-size:12px;font-weight:600;color:#94a3b8;margin-bottom:6px}
+  .weekend-has-cases{display:inline-flex;align-items:center;gap:5px;background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.25);border-radius:6px;padding:4px 10px;font-size:12px;font-weight:600;color:#d97706;margin-bottom:6px}
+  .weekend-note{font-size:11px;color:#94a3b8;line-height:1.4}
 </style>
 </head>
 <body>
@@ -166,6 +176,15 @@
       <div class="card-title"><span class="dot" style="background:var(--accent2)"></span>Avg Channel Engage Time (per day)</div>
       <div class="chart-wrap tall"><canvas id="healthChart"></canvas></div>
     </div>
+  </div>
+
+  <div class="section-header" id="weekendSectionHeader" style="margin-top:4px;">
+    <span>📅 Weekends</span>
+    <span style="font-size:12px;font-weight:400;color:var(--text-muted);margin-left:4px;">— No QB coverage window (Sat &amp; Sun)</span>
+  </div>
+  <div class="weekend-grid" id="weekendGrid"></div>
+  <div style="font-size:12px;color:var(--text-muted);margin-bottom:24px;padding-left:2px;" id="weekendNote">
+    QB Work Assurance operates Mon–Fri (12:30–7:30 PM IST). Weekend Sev1 alerts are routed to on-call coverage outside this window.
   </div>
 
   <div class="section-header">Daily Case Detail</div>
@@ -396,7 +415,7 @@ async function loadData(force){
 
 function renderAll(){
   renderHeader();renderKPIs();renderWeekCards();
-  renderSummaryTable();renderCharts();renderTabs();renderFooter();
+  renderSummaryTable();renderCharts();renderWeekends();renderTabs();renderFooter();
   attachTooltips();
 }
 
