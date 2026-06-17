@@ -141,27 +141,6 @@
   .pm-btn.clear{background:rgba(220,38,38,.1);color:#dc2626;border:1px solid rgba(220,38,38,.2);}
   .pm-btn.dismiss{background:var(--surface2);color:var(--text);border:1px solid var(--border);}
 
-  /* ── EMEA Escalation section ──────────────────────────────────────── */
-  .esc-wrap{background:var(--surface);border:1px solid var(--border);border-radius:var(--card-radius);overflow:hidden;margin-bottom:24px;}
-  .esc-hdr{padding:16px 22px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px;background:linear-gradient(90deg,rgba(124,77,255,.05) 0%,rgba(2,132,199,.03) 100%);}
-  .esc-hdr-ttl{font-size:14px;font-weight:700;}
-  .esc-pill{border-radius:20px;padding:2px 10px;font-size:12px;font-weight:700;}
-  .esc-pill.open{background:rgba(220,38,38,.1);color:#dc2626;border:1px solid rgba(220,38,38,.2);}
-  .esc-pill.mon{background:rgba(245,158,11,.1);color:#d97706;border:1px solid rgba(245,158,11,.2);}
-  .esc-pill.res{background:rgba(22,163,74,.1);color:#16a34a;border:1px solid rgba(22,163,74,.2);}
-  .esc-table{width:100%;border-collapse:collapse;font-size:13px;}
-  .esc-table th{text-align:left;padding:10px 14px;color:var(--text-muted);font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.04em;border-bottom:1px solid var(--border);white-space:nowrap;background:var(--surface2);}
-  .esc-table td{padding:10px 14px;border-bottom:1px solid rgba(226,232,240,.8);vertical-align:middle;}
-  .esc-table tr:last-child td{border-bottom:none;}
-  .esc-table tr:hover td{background:rgba(2,132,199,.03);}
-  .es-group{display:inline-flex;gap:2px;}
-  .es-opt{border:1px solid var(--border);border-radius:5px;padding:3px 9px;font-size:12px;font-weight:600;cursor:pointer;background:var(--surface2);color:var(--text-muted);opacity:.35;line-height:1.5;transition:all .1s;}
-  .es-opt:hover{opacity:.7;}
-  .es-opt.es-Open{background:rgba(220,38,38,.1);color:#dc2626;border-color:rgba(220,38,38,.25);opacity:1;}
-  .es-opt.es-Monitoring{background:rgba(245,158,11,.1);color:#d97706;border-color:rgba(245,158,11,.25);opacity:1;}
-  .es-opt.es-Resolved{background:rgba(22,163,74,.1);color:#16a34a;border-color:rgba(22,163,74,.25);opacity:1;}
-  .esc-reason{font-size:12px;color:var(--text-muted);max-width:300px;line-height:1.4;}
-  .esc-empty{padding:32px;text-align:center;color:var(--text-muted);font-size:13px;}
 </style>
 </head>
 <body>
@@ -259,32 +238,6 @@
     <div id="tabPanels"></div>
   </div>
 
-  <!-- ── EMEA Sig Escalations ──────────────────────────────────── -->
-  <div class="section-header" style="margin-top:8px;">
-    <span>📋 EMEA Sig Escalations</span>
-    <span style="font-size:12px;font-weight:400;color:var(--text-muted);margin-left:4px;">— Separate tracker · click radio to set status</span>
-    <button onclick="addEscalation()" style="margin-left:auto;background:var(--accent);color:#fff;border:none;border-radius:7px;padding:6px 14px;font-size:12px;font-weight:600;cursor:pointer;">+ Add</button>
-  </div>
-  <div class="esc-wrap">
-    <div class="esc-hdr">
-      <span class="esc-hdr-ttl">Active Escalations</span>
-      <span class="esc-pill open" id="escOpenCount">0 Open</span>
-      <span class="esc-pill mon" id="escMonCount">0 Monitoring</span>
-      <span class="esc-pill res" id="escResCount">0 Resolved</span>
-      <span style="margin-left:auto;font-size:12px;color:var(--text-muted);">Stored locally in browser · not in data.json</span>
-    </div>
-    <div id="escTableWrap">
-      <div class="esc-empty" id="escEmpty">No escalations yet — click <strong>+ Add</strong> to track one.</div>
-      <table class="esc-table" id="escTable" style="display:none;">
-        <thead><tr>
-          <th>Case</th><th>Account</th><th>Product / Topic</th><th>Owner</th>
-          <th>Opened (IST)</th><th>Status</th><th>Notes</th><th></th>
-        </tr></thead>
-        <tbody id="escBody"></tbody>
-      </table>
-    </div>
-  </div>
-
   <div id="footer" style="text-align:center;color:var(--text-muted);font-size:12px;padding:24px 0 16px;border-top:1px solid var(--border);margin-top:12px;"></div>
 </div>
 
@@ -309,39 +262,6 @@
       <button class="pm-btn copy" onclick="copyPatch()">📋 Copy JSON</button>
       <button class="pm-btn clear" onclick="clearPatches()">🗑 Clear all changes</button>
       <button class="pm-btn dismiss" onclick="closePatchModal()">Dismiss</button>
-    </div>
-  </div>
-</div>
-
-<!-- Add escalation modal -->
-<div id="escModal" style="position:fixed;inset:0;background:rgba(15,23,42,.65);z-index:9000;display:none;align-items:center;justify-content:center;backdrop-filter:blur(4px);">
-  <div style="background:#fff;border-radius:16px;padding:28px;max-width:520px;width:92%;box-shadow:0 20px 60px rgba(0,0,0,.35);">
-    <div style="font-size:16px;font-weight:700;margin-bottom:18px;">Add EMEA Sig Escalation</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;">
-      <div>
-        <label style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:.04em;display:block;margin-bottom:4px;">Case Number *</label>
-        <input id="escCaseNum" type="text" placeholder="e.g. 473854364" style="width:100%;border:1px solid var(--border);border-radius:7px;padding:8px 12px;font-size:13px;outline:none;background:var(--surface2);">
-      </div>
-      <div>
-        <label style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:.04em;display:block;margin-bottom:4px;">Account</label>
-        <input id="escAccount" type="text" placeholder="Account name" style="width:100%;border:1px solid var(--border);border-radius:7px;padding:8px 12px;font-size:13px;outline:none;background:var(--surface2);">
-      </div>
-      <div>
-        <label style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:.04em;display:block;margin-bottom:4px;">Product / Topic</label>
-        <input id="escProduct" type="text" placeholder="e.g. Sales-Developer Support" style="width:100%;border:1px solid var(--border);border-radius:7px;padding:8px 12px;font-size:13px;outline:none;background:var(--surface2);">
-      </div>
-      <div>
-        <label style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:.04em;display:block;margin-bottom:4px;">Owner (TE name)</label>
-        <input id="escOwner" type="text" placeholder="Engineer name" style="width:100%;border:1px solid var(--border);border-radius:7px;padding:8px 12px;font-size:13px;outline:none;background:var(--surface2);">
-      </div>
-    </div>
-    <div style="margin-bottom:12px;">
-      <label style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:.04em;display:block;margin-bottom:4px;">Notes / Context</label>
-      <textarea id="escNotes" rows="2" placeholder="Brief summary of issue, customer impact, next steps…" style="width:100%;border:1px solid var(--border);border-radius:7px;padding:8px 12px;font-size:13px;outline:none;resize:vertical;background:var(--surface2);font-family:inherit;"></textarea>
-    </div>
-    <div style="display:flex;gap:10px;justify-content:flex-end;">
-      <button onclick="closeEscModal()" style="background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:9px 18px;font-size:13px;font-weight:600;cursor:pointer;">Cancel</button>
-      <button onclick="saveEscalation()" style="background:var(--accent);color:#fff;border:none;border-radius:8px;padding:9px 18px;font-size:13px;font-weight:600;cursor:pointer;">Save Escalation</button>
     </div>
   </div>
 </div>
@@ -1107,113 +1027,12 @@ function clearPatches(){
   const sel = document.getElementById('daySelect');
   showDay(sel.value, document.getElementById('tabPanels'));
 }
-document.addEventListener('keydown', function(e){ if(e.key==='Escape'){ closePatchModal(); closeEscModal(); } });
-
-// ── EMEA SIG ESCALATIONS ─────────────────────────────────────────────────────
-const ESC_KEY = 'qb_esc_emea_sig_v1';
-let escData = [];
-try { escData = JSON.parse(localStorage.getItem(ESC_KEY)||'[]'); } catch(e){}
-
-function saveEscStorage(){ try { localStorage.setItem(ESC_KEY, JSON.stringify(escData)); } catch(e){} }
-
-function addEscalation(){
-  // Clear form
-  ['escCaseNum','escAccount','escProduct','escOwner','escNotes'].forEach(function(id){
-    document.getElementById(id).value='';
-  });
-  document.getElementById('escModal').style.display='flex';
-  setTimeout(function(){ document.getElementById('escCaseNum').focus(); }, 50);
-}
-function closeEscModal(){ document.getElementById('escModal').style.display='none'; }
-function saveEscalation(){
-  const caseNum = document.getElementById('escCaseNum').value.trim();
-  if(!caseNum){ alert('Case number is required.'); return; }
-  const now = new Date();
-  const istStr = now.toLocaleString('en-IN',{timeZone:'Asia/Kolkata',day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit',hour12:false})+' IST';
-  escData.unshift({
-    id: Date.now(),
-    caseNum: caseNum,
-    account: document.getElementById('escAccount').value.trim()||'—',
-    product: document.getElementById('escProduct').value.trim()||'—',
-    owner: document.getElementById('escOwner').value.trim()||'—',
-    notes: document.getElementById('escNotes').value.trim()||'',
-    status: 'Open',
-    openedIST: istStr
-  });
-  saveEscStorage();
-  closeEscModal();
-  renderEscalations();
-}
-
-function setEscStatus(id, status){
-  const item = escData.find(function(e){ return e.id===id; });
-  if(!item) return;
-  item.status = status;
-  saveEscStorage();
-  renderEscalations();
-}
-
-function deleteEsc(id){
-  if(!confirm('Remove this escalation?')) return;
-  escData = escData.filter(function(e){ return e.id!==id; });
-  saveEscStorage();
-  renderEscalations();
-}
-
-function renderEscalations(){
-  const empty = document.getElementById('escEmpty');
-  const table = document.getElementById('escTable');
-  const tbody = document.getElementById('escBody');
-
-  // Sort: Open first, then Monitoring, then Resolved
-  const ORDER = {Open:0, Monitoring:1, Resolved:2};
-  const sorted = escData.slice().sort(function(a,b){ return (ORDER[a.status]||0)-(ORDER[b.status]||0); });
-
-  const openN = escData.filter(function(e){ return e.status==='Open'; }).length;
-  const monN  = escData.filter(function(e){ return e.status==='Monitoring'; }).length;
-  const resN  = escData.filter(function(e){ return e.status==='Resolved'; }).length;
-  document.getElementById('escOpenCount').textContent = openN+' Open';
-  document.getElementById('escMonCount').textContent  = monN+' Monitoring';
-  document.getElementById('escResCount').textContent  = resN+' Resolved';
-
-  if(!sorted.length){
-    empty.style.display='';
-    table.style.display='none';
-    return;
-  }
-  empty.style.display='none';
-  table.style.display='';
-
-  tbody.innerHTML='';
-  sorted.forEach(function(e){
-    const statuses = ['Open','Monitoring','Resolved'];
-    let sHtml = '<div class="es-group">';
-    statuses.forEach(function(sv){
-      const active = e.status===sv?' es-'+sv:'';
-      sHtml+='<button class="es-opt'+active+'" onclick="setEscStatus('+e.id+',\''+sv+'\')">'+sv+'</button>';
-    });
-    sHtml+='</div>';
-    const notesHtml = e.notes
-      ? '<span class="esc-reason" title="'+e.notes.replace(/"/g,'&quot;')+'">'+e.notes.substring(0,80)+(e.notes.length>80?'…':'')+'</span>'
-      : '<span style="color:var(--text-muted);font-size:11px;">—</span>';
-    const tr = document.createElement('tr');
-    tr.innerHTML = '<td style="font-weight:600;font-size:13px;">'+e.caseNum+'</td>'
-      +'<td style="max-width:170px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:500;">'+e.account+'</td>'
-      +'<td style="color:var(--text-muted);font-size:12px;max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">'+e.product+'</td>'
-      +'<td style="font-size:12px;white-space:nowrap;">'+e.owner+'</td>'
-      +'<td style="font-size:11px;color:var(--text-muted);white-space:nowrap;">'+e.openedIST+'</td>'
-      +'<td style="white-space:nowrap;">'+sHtml+'</td>'
-      +'<td>'+notesHtml+'</td>'
-      +'<td style="white-space:nowrap;"><button onclick="deleteEsc('+e.id+')" title="Remove" style="background:none;border:none;cursor:pointer;color:#94a3b8;font-size:16px;padding:2px 5px;" onmouseover="this.style.color=\'#dc2626\'" onmouseout="this.style.color=\'#94a3b8\'">×</button></td>';
-    tbody.appendChild(tr);
-  });
-}
+document.addEventListener('keydown', function(e){ if(e.key==='Escape'){ closePatchModal(); } });
 
 // ── BOOT ─────────────────────────────────────────────────────────────────────
 loadData(true);
 setInterval(()=>loadData(true),5*60*1000);
 updatePatchBadge();
-renderEscalations();
 </script>
 </body>
 </html>
