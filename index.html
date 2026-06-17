@@ -111,6 +111,57 @@
   .weekend-no-coverage{display:inline-flex;align-items:center;gap:5px;background:rgba(148,163,184,.1);border:1px solid rgba(148,163,184,.25);border-radius:6px;padding:4px 10px;font-size:12px;font-weight:600;color:#94a3b8;margin-bottom:6px}
   .weekend-has-cases{display:inline-flex;align-items:center;gap:5px;background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.25);border-radius:6px;padding:4px 10px;font-size:12px;font-weight:600;color:#d97706;margin-bottom:6px}
   .weekend-note{font-size:11px;color:#94a3b8;line-height:1.4}
+
+  /* ── Inline quality radio ─────────────────────────────────────────── */
+  .q-group{display:inline-flex;gap:2px;}
+  .q-opt{border:1px solid var(--border);border-radius:5px;padding:3px 9px;font-size:12px;font-weight:600;cursor:pointer;background:var(--surface2);color:var(--text-muted);opacity:.35;line-height:1.5;transition:all .1s;}
+  .q-opt:hover{opacity:.7;}
+  .q-opt.qs-STRONG{background:rgba(22,163,74,.13);color:#16a34a;border-color:rgba(22,163,74,.3);opacity:1;}
+  .q-opt.qs-MODERATE{background:rgba(217,119,6,.12);color:#d97706;border-color:rgba(217,119,6,.3);opacity:1;}
+  .q-opt.qs-NEEDS{background:rgba(220,38,38,.1);color:#dc2626;border-color:rgba(220,38,38,.25);opacity:1;}
+  .q-opt.qs-PENDING{background:rgba(148,163,184,.08);color:#94a3b8;border-color:var(--border);opacity:1;}
+
+  /* ── Floating patch badge ─────────────────────────────────────────── */
+  #patchBadge{position:fixed;bottom:24px;right:24px;background:#0f172a;color:#f1f5f9;padding:11px 18px;border-radius:12px;font-size:13px;font-weight:600;z-index:1000;display:none;box-shadow:0 6px 28px rgba(0,0,0,.55);cursor:pointer;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.1);}
+  #patchBadge.vis{display:flex;}
+  .pb-count{background:#3b82f6;border-radius:20px;padding:2px 9px;font-size:12px;}
+
+  /* ── Export / patch modal ─────────────────────────────────────────── */
+  #patchModal{position:fixed;inset:0;background:rgba(15,23,42,.65);z-index:9000;display:none;align-items:center;justify-content:center;backdrop-filter:blur(4px);}
+  #patchModal.vis{display:flex;}
+  .pm-box{background:#fff;border-radius:16px;padding:28px;max-width:640px;width:92%;box-shadow:0 20px 60px rgba(0,0,0,.35);max-height:85vh;overflow-y:auto;}
+  .pm-title{font-size:16px;font-weight:700;margin-bottom:6px;}
+  .pm-sub{font-size:12px;color:var(--text-muted);margin-bottom:14px;}
+  .pm-pre{background:#0f172a;color:#7dd3fc;border-radius:10px;padding:16px;font-size:12px;font-family:'SFMono-Regular',Consolas,monospace;overflow-x:auto;line-height:1.6;max-height:280px;overflow-y:auto;margin-bottom:16px;white-space:pre-wrap;word-break:break-all;}
+  .pm-hint{font-size:12px;color:var(--text-muted);line-height:1.7;background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:12px 14px;margin-bottom:16px;}
+  .pm-btns{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap;}
+  .pm-btn{border:none;border-radius:8px;padding:9px 18px;font-size:13px;font-weight:600;cursor:pointer;transition:opacity .1s;}
+  .pm-btn:hover{opacity:.85;}
+  .pm-btn.copy{background:var(--accent);color:#fff;}
+  .pm-btn.clear{background:rgba(220,38,38,.1);color:#dc2626;border:1px solid rgba(220,38,38,.2);}
+  .pm-btn.dismiss{background:var(--surface2);color:var(--text);border:1px solid var(--border);}
+
+  /* ── EMEA Escalation section ──────────────────────────────────────── */
+  .esc-wrap{background:var(--surface);border:1px solid var(--border);border-radius:var(--card-radius);overflow:hidden;margin-bottom:24px;}
+  .esc-hdr{padding:16px 22px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px;background:linear-gradient(90deg,rgba(124,77,255,.05) 0%,rgba(2,132,199,.03) 100%);}
+  .esc-hdr-ttl{font-size:14px;font-weight:700;}
+  .esc-pill{border-radius:20px;padding:2px 10px;font-size:12px;font-weight:700;}
+  .esc-pill.open{background:rgba(220,38,38,.1);color:#dc2626;border:1px solid rgba(220,38,38,.2);}
+  .esc-pill.mon{background:rgba(245,158,11,.1);color:#d97706;border:1px solid rgba(245,158,11,.2);}
+  .esc-pill.res{background:rgba(22,163,74,.1);color:#16a34a;border:1px solid rgba(22,163,74,.2);}
+  .esc-table{width:100%;border-collapse:collapse;font-size:13px;}
+  .esc-table th{text-align:left;padding:10px 14px;color:var(--text-muted);font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.04em;border-bottom:1px solid var(--border);white-space:nowrap;background:var(--surface2);}
+  .esc-table td{padding:10px 14px;border-bottom:1px solid rgba(226,232,240,.8);vertical-align:middle;}
+  .esc-table tr:last-child td{border-bottom:none;}
+  .esc-table tr:hover td{background:rgba(2,132,199,.03);}
+  .es-group{display:inline-flex;gap:2px;}
+  .es-opt{border:1px solid var(--border);border-radius:5px;padding:3px 9px;font-size:12px;font-weight:600;cursor:pointer;background:var(--surface2);color:var(--text-muted);opacity:.35;line-height:1.5;transition:all .1s;}
+  .es-opt:hover{opacity:.7;}
+  .es-opt.es-Open{background:rgba(220,38,38,.1);color:#dc2626;border-color:rgba(220,38,38,.25);opacity:1;}
+  .es-opt.es-Monitoring{background:rgba(245,158,11,.1);color:#d97706;border-color:rgba(245,158,11,.25);opacity:1;}
+  .es-opt.es-Resolved{background:rgba(22,163,74,.1);color:#16a34a;border-color:rgba(22,163,74,.25);opacity:1;}
+  .esc-reason{font-size:12px;color:var(--text-muted);max-width:300px;line-height:1.4;}
+  .esc-empty{padding:32px;text-align:center;color:var(--text-muted);font-size:13px;}
 </style>
 </head>
 <body>
@@ -208,7 +259,91 @@
     <div id="tabPanels"></div>
   </div>
 
+  <!-- ── EMEA Sig Escalations ──────────────────────────────────── -->
+  <div class="section-header" style="margin-top:8px;">
+    <span>📋 EMEA Sig Escalations</span>
+    <span style="font-size:12px;font-weight:400;color:var(--text-muted);margin-left:4px;">— Separate tracker · click radio to set status</span>
+    <button onclick="addEscalation()" style="margin-left:auto;background:var(--accent);color:#fff;border:none;border-radius:7px;padding:6px 14px;font-size:12px;font-weight:600;cursor:pointer;">+ Add</button>
+  </div>
+  <div class="esc-wrap">
+    <div class="esc-hdr">
+      <span class="esc-hdr-ttl">Active Escalations</span>
+      <span class="esc-pill open" id="escOpenCount">0 Open</span>
+      <span class="esc-pill mon" id="escMonCount">0 Monitoring</span>
+      <span class="esc-pill res" id="escResCount">0 Resolved</span>
+      <span style="margin-left:auto;font-size:12px;color:var(--text-muted);">Stored locally in browser · not in data.json</span>
+    </div>
+    <div id="escTableWrap">
+      <div class="esc-empty" id="escEmpty">No escalations yet — click <strong>+ Add</strong> to track one.</div>
+      <table class="esc-table" id="escTable" style="display:none;">
+        <thead><tr>
+          <th>Case</th><th>Account</th><th>Product / Topic</th><th>Owner</th>
+          <th>Opened (IST)</th><th>Status</th><th>Notes</th><th></th>
+        </tr></thead>
+        <tbody id="escBody"></tbody>
+      </table>
+    </div>
+  </div>
+
   <div id="footer" style="text-align:center;color:var(--text-muted);font-size:12px;padding:24px 0 16px;border-top:1px solid var(--border);margin-top:12px;"></div>
+</div>
+
+<!-- Floating patch badge -->
+<div id="patchBadge" onclick="openPatchModal()">
+  <span>🟡 Unsaved quality changes</span>
+  <span class="pb-count" id="patchCount">0</span>
+  <span style="font-size:11px;opacity:.65;">Click to export</span>
+</div>
+
+<!-- Patch export modal -->
+<div id="patchModal">
+  <div class="pm-box">
+    <div class="pm-title">Export Quality Updates</div>
+    <div class="pm-sub">Copy the JSON snippet below and apply it to the relevant cases in <code>data.json</code>.</div>
+    <pre class="pm-pre" id="patchPre"></pre>
+    <div class="pm-hint">
+      <strong>How to apply:</strong> Open <code>data.json</code>, find each case by <code>caseNum</code>, and set its <code>"quality"</code> field to the value shown.<br>
+      Or run: <code>python3 apply_quality_patch.py</code> if you have the patch script.
+    </div>
+    <div class="pm-btns">
+      <button class="pm-btn copy" onclick="copyPatch()">📋 Copy JSON</button>
+      <button class="pm-btn clear" onclick="clearPatches()">🗑 Clear all changes</button>
+      <button class="pm-btn dismiss" onclick="closePatchModal()">Dismiss</button>
+    </div>
+  </div>
+</div>
+
+<!-- Add escalation modal -->
+<div id="escModal" style="position:fixed;inset:0;background:rgba(15,23,42,.65);z-index:9000;display:none;align-items:center;justify-content:center;backdrop-filter:blur(4px);">
+  <div style="background:#fff;border-radius:16px;padding:28px;max-width:520px;width:92%;box-shadow:0 20px 60px rgba(0,0,0,.35);">
+    <div style="font-size:16px;font-weight:700;margin-bottom:18px;">Add EMEA Sig Escalation</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;">
+      <div>
+        <label style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:.04em;display:block;margin-bottom:4px;">Case Number *</label>
+        <input id="escCaseNum" type="text" placeholder="e.g. 473854364" style="width:100%;border:1px solid var(--border);border-radius:7px;padding:8px 12px;font-size:13px;outline:none;background:var(--surface2);">
+      </div>
+      <div>
+        <label style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:.04em;display:block;margin-bottom:4px;">Account</label>
+        <input id="escAccount" type="text" placeholder="Account name" style="width:100%;border:1px solid var(--border);border-radius:7px;padding:8px 12px;font-size:13px;outline:none;background:var(--surface2);">
+      </div>
+      <div>
+        <label style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:.04em;display:block;margin-bottom:4px;">Product / Topic</label>
+        <input id="escProduct" type="text" placeholder="e.g. Sales-Developer Support" style="width:100%;border:1px solid var(--border);border-radius:7px;padding:8px 12px;font-size:13px;outline:none;background:var(--surface2);">
+      </div>
+      <div>
+        <label style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:.04em;display:block;margin-bottom:4px;">Owner (TE name)</label>
+        <input id="escOwner" type="text" placeholder="Engineer name" style="width:100%;border:1px solid var(--border);border-radius:7px;padding:8px 12px;font-size:13px;outline:none;background:var(--surface2);">
+      </div>
+    </div>
+    <div style="margin-bottom:12px;">
+      <label style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:.04em;display:block;margin-bottom:4px;">Notes / Context</label>
+      <textarea id="escNotes" rows="2" placeholder="Brief summary of issue, customer impact, next steps…" style="width:100%;border:1px solid var(--border);border-radius:7px;padding:8px 12px;font-size:13px;outline:none;resize:vertical;background:var(--surface2);font-family:inherit;"></textarea>
+    </div>
+    <div style="display:flex;gap:10px;justify-content:flex-end;">
+      <button onclick="closeEscModal()" style="background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:9px 18px;font-size:13px;font-weight:600;cursor:pointer;">Cancel</button>
+      <button onclick="saveEscalation()" style="background:var(--accent);color:#fff;border:none;border-radius:8px;padding:9px 18px;font-size:13px;font-weight:600;cursor:pointer;">Save Escalation</button>
+    </div>
+  </div>
 </div>
 
 <div id="modTip" style="position:fixed;background:#0f172a;color:#f1f5f9;font-size:12px;font-weight:400;padding:8px 13px;border-radius:8px;max-width:300px;line-height:1.55;z-index:9999;pointer-events:none;display:none;border:1px solid rgba(255,255,255,.13);box-shadow:0 4px 18px rgba(0,0,0,.38);"></div>
@@ -817,6 +952,7 @@ function buildDayPanel(day,container){
   html+='<th style="white-space:nowrap;cursor:help;" title="Account has a Red Account record in OrgCS">Red Acct</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Customer bridge (Meet/WebEx/Teams/Zoom) initiated within 10 min of channel creation. Every Sev1 has a channel — null means CIC did not engage or bridge data was not captured.">Bridge ≤10m</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Time from Sev1 channel creation to customer confirmed out-of-impact (first explicit OOI/resolved/mitigated message on channel)">OI Duration</th>';
+  html+='<th style="white-space:nowrap;cursor:help;" title="QB quality assessment — click to update. Changes are held locally and shown in the export patch.">Quality</th>';
   html+='</tr></thead><tbody>';
   const mciSet=mciCases[day.date]||[];
   cases.forEach(function(c,i){
@@ -856,11 +992,21 @@ function buildDayPanel(day,container){
         bridgeCell='<td style="white-space:nowrap;font-size:11px;"><span style="background:rgba(148,163,184,.1);color:#94a3b8;border-radius:5px;padding:2px 7px;border:1px solid rgba(148,163,184,.25);" title="No CIC engagement in QB window — bridge not applicable">⛔ No CIC engage</span></td>';
       }
     }
+    // Quality radio cell — live editable
+    const qCurrent = (qualityPatches[c.caseNum] !== undefined ? qualityPatches[c.caseNum] : (c.quality||'PENDING'));
+    const qOpts = ['STRONG','MODERATE','NEEDS','PENDING'];
+    const qLabels = {STRONG:'🟢 Strong',MODERATE:'🟡 Moderate',NEEDS:'🔴 Needs follow-up',PENDING:'—'};
+    let qHtml = '<td><div class="q-group">';
+    qOpts.forEach(function(qv){
+      const active = qCurrent===qv?' qs-'+qv:'';
+      qHtml+='<button class="q-opt'+active+'" data-case="'+c.caseNum+'" data-q="'+qv+'" onclick="setQuality(\''+c.caseNum+'\',\''+qv+'\')" title="Mark as '+qv+'">'+qLabels[qv]+'</button>';
+    });
+    qHtml+='</div></td>';
     html+='<tr><td class="case-num">'+(i+1)+'</td><td>'+c.caseNum+'</td>'
       +'<td class="account-name">'+mciTag+c.account+'</td><td class="product-cell">'+c.product+'</td>'
       +'<td class="time-cell">'+c.timeIST+'</td>'
       +'<td><span class="manager-chip '+chipCls+'">'+mgr+'</span></td>'
-      +rtCell(c.ack)+rtCell(c.resolve)+rtCell(c.channelEngage,true,true,c.caseNum)+redCell+bridgeCell+oiCell(c)+'</tr>';
+      +rtCell(c.ack)+rtCell(c.resolve)+rtCell(c.channelEngage,true,true,c.caseNum)+redCell+bridgeCell+oiCell(c)+qHtml+'</tr>';
   });
   html+='</tbody></table></div>';
   container.innerHTML=html;
@@ -897,9 +1043,177 @@ function attachTooltips(){
   });
 }
 
+// ── QUALITY PATCH SYSTEM ─────────────────────────────────────────────────────
+// qualityPatches = { caseNum: 'STRONG'|'MODERATE'|'NEEDS'|'PENDING' }
+// Persisted in localStorage so refreshes don't wipe your work.
+const PATCH_KEY = 'qb_quality_patches_v1';
+let qualityPatches = {};
+try { qualityPatches = JSON.parse(localStorage.getItem(PATCH_KEY)||'{}'); } catch(e){}
+
+function setQuality(caseNum, qVal){
+  // Find original value in DB
+  let original = 'PENDING';
+  for(const d of DB.days){
+    const c = d.cases.find(function(x){return x.caseNum===caseNum;});
+    if(c){ original = c.quality||'PENDING'; break; }
+  }
+  if(qVal === original){
+    // Clicking the already-set-in-data value → remove patch (revert)
+    delete qualityPatches[caseNum];
+  } else {
+    qualityPatches[caseNum] = qVal;
+  }
+  try { localStorage.setItem(PATCH_KEY, JSON.stringify(qualityPatches)); } catch(e){}
+  updatePatchBadge();
+  // Re-render the active day panel so radio buttons refresh
+  const sel = document.getElementById('daySelect');
+  showDay(sel.value, document.getElementById('tabPanels'));
+}
+
+function updatePatchBadge(){
+  const n = Object.keys(qualityPatches).length;
+  const badge = document.getElementById('patchBadge');
+  document.getElementById('patchCount').textContent = n;
+  if(n>0){ badge.classList.add('vis'); } else { badge.classList.remove('vis'); }
+}
+
+function openPatchModal(){
+  const patches = qualityPatches;
+  const n = Object.keys(patches).length;
+  if(!n){ alert('No unsaved changes.'); return; }
+  // Build human-readable + copy-friendly JSON
+  const lines = Object.entries(patches).map(function([cnum, qval]){
+    return '  {"caseNum":"'+cnum+'","quality":"'+qval+'"}';
+  });
+  const preview = '[\n'+lines.join(',\n')+'\n]';
+  document.getElementById('patchPre').textContent = preview;
+  document.getElementById('patchModal').classList.add('vis');
+}
+function closePatchModal(){ document.getElementById('patchModal').classList.remove('vis'); }
+function copyPatch(){
+  const text = document.getElementById('patchPre').textContent;
+  navigator.clipboard.writeText(text).then(function(){
+    const btn = document.querySelector('.pm-btn.copy');
+    btn.textContent = '✅ Copied!';
+    setTimeout(function(){ btn.textContent = '📋 Copy JSON'; }, 1800);
+  }).catch(function(){ alert('Copy failed — please select and copy manually.'); });
+}
+function clearPatches(){
+  if(!confirm('Clear all '+Object.keys(qualityPatches).length+' local quality changes?')) return;
+  qualityPatches = {};
+  try { localStorage.removeItem(PATCH_KEY); } catch(e){}
+  updatePatchBadge();
+  closePatchModal();
+  const sel = document.getElementById('daySelect');
+  showDay(sel.value, document.getElementById('tabPanels'));
+}
+document.addEventListener('keydown', function(e){ if(e.key==='Escape'){ closePatchModal(); closeEscModal(); } });
+
+// ── EMEA SIG ESCALATIONS ─────────────────────────────────────────────────────
+const ESC_KEY = 'qb_esc_emea_sig_v1';
+let escData = [];
+try { escData = JSON.parse(localStorage.getItem(ESC_KEY)||'[]'); } catch(e){}
+
+function saveEscStorage(){ try { localStorage.setItem(ESC_KEY, JSON.stringify(escData)); } catch(e){} }
+
+function addEscalation(){
+  // Clear form
+  ['escCaseNum','escAccount','escProduct','escOwner','escNotes'].forEach(function(id){
+    document.getElementById(id).value='';
+  });
+  document.getElementById('escModal').style.display='flex';
+  setTimeout(function(){ document.getElementById('escCaseNum').focus(); }, 50);
+}
+function closeEscModal(){ document.getElementById('escModal').style.display='none'; }
+function saveEscalation(){
+  const caseNum = document.getElementById('escCaseNum').value.trim();
+  if(!caseNum){ alert('Case number is required.'); return; }
+  const now = new Date();
+  const istStr = now.toLocaleString('en-IN',{timeZone:'Asia/Kolkata',day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit',hour12:false})+' IST';
+  escData.unshift({
+    id: Date.now(),
+    caseNum: caseNum,
+    account: document.getElementById('escAccount').value.trim()||'—',
+    product: document.getElementById('escProduct').value.trim()||'—',
+    owner: document.getElementById('escOwner').value.trim()||'—',
+    notes: document.getElementById('escNotes').value.trim()||'',
+    status: 'Open',
+    openedIST: istStr
+  });
+  saveEscStorage();
+  closeEscModal();
+  renderEscalations();
+}
+
+function setEscStatus(id, status){
+  const item = escData.find(function(e){ return e.id===id; });
+  if(!item) return;
+  item.status = status;
+  saveEscStorage();
+  renderEscalations();
+}
+
+function deleteEsc(id){
+  if(!confirm('Remove this escalation?')) return;
+  escData = escData.filter(function(e){ return e.id!==id; });
+  saveEscStorage();
+  renderEscalations();
+}
+
+function renderEscalations(){
+  const empty = document.getElementById('escEmpty');
+  const table = document.getElementById('escTable');
+  const tbody = document.getElementById('escBody');
+
+  // Sort: Open first, then Monitoring, then Resolved
+  const ORDER = {Open:0, Monitoring:1, Resolved:2};
+  const sorted = escData.slice().sort(function(a,b){ return (ORDER[a.status]||0)-(ORDER[b.status]||0); });
+
+  const openN = escData.filter(function(e){ return e.status==='Open'; }).length;
+  const monN  = escData.filter(function(e){ return e.status==='Monitoring'; }).length;
+  const resN  = escData.filter(function(e){ return e.status==='Resolved'; }).length;
+  document.getElementById('escOpenCount').textContent = openN+' Open';
+  document.getElementById('escMonCount').textContent  = monN+' Monitoring';
+  document.getElementById('escResCount').textContent  = resN+' Resolved';
+
+  if(!sorted.length){
+    empty.style.display='';
+    table.style.display='none';
+    return;
+  }
+  empty.style.display='none';
+  table.style.display='';
+
+  tbody.innerHTML='';
+  sorted.forEach(function(e){
+    const statuses = ['Open','Monitoring','Resolved'];
+    let sHtml = '<div class="es-group">';
+    statuses.forEach(function(sv){
+      const active = e.status===sv?' es-'+sv:'';
+      sHtml+='<button class="es-opt'+active+'" onclick="setEscStatus('+e.id+',\''+sv+'\')">'+sv+'</button>';
+    });
+    sHtml+='</div>';
+    const notesHtml = e.notes
+      ? '<span class="esc-reason" title="'+e.notes.replace(/"/g,'&quot;')+'">'+e.notes.substring(0,80)+(e.notes.length>80?'…':'')+'</span>'
+      : '<span style="color:var(--text-muted);font-size:11px;">—</span>';
+    const tr = document.createElement('tr');
+    tr.innerHTML = '<td style="font-weight:600;font-size:13px;">'+e.caseNum+'</td>'
+      +'<td style="max-width:170px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:500;">'+e.account+'</td>'
+      +'<td style="color:var(--text-muted);font-size:12px;max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">'+e.product+'</td>'
+      +'<td style="font-size:12px;white-space:nowrap;">'+e.owner+'</td>'
+      +'<td style="font-size:11px;color:var(--text-muted);white-space:nowrap;">'+e.openedIST+'</td>'
+      +'<td style="white-space:nowrap;">'+sHtml+'</td>'
+      +'<td>'+notesHtml+'</td>'
+      +'<td style="white-space:nowrap;"><button onclick="deleteEsc('+e.id+')" title="Remove" style="background:none;border:none;cursor:pointer;color:#94a3b8;font-size:16px;padding:2px 5px;" onmouseover="this.style.color=\'#dc2626\'" onmouseout="this.style.color=\'#94a3b8\'">×</button></td>';
+    tbody.appendChild(tr);
+  });
+}
+
 // ── BOOT ─────────────────────────────────────────────────────────────────────
 loadData(true);
 setInterval(()=>loadData(true),5*60*1000);
+updatePatchBadge();
+renderEscalations();
 </script>
 </body>
 </html>
