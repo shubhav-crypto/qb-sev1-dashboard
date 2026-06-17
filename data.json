@@ -89,7 +89,7 @@
           "resolve": "1m 1s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473513077",
@@ -100,7 +100,7 @@
           "resolve": "33s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473602269",
@@ -144,7 +144,7 @@
           "resolve": "28s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473604551",
@@ -155,7 +155,7 @@
           "resolve": "40s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473604871",
@@ -263,7 +263,7 @@
           "resolve": "33s",
           "channelEngage": "3m 54s",
           "isRed": false,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473520691",
@@ -374,7 +374,7 @@
           "resolve": "1m 13s",
           "channelEngage": "3m 51s",
           "isRed": false,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473624107",
@@ -397,7 +397,7 @@
           "resolve": "18s",
           "channelEngage": "3m 5s",
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473624051",
@@ -433,7 +433,7 @@
           "resolve": "21s",
           "channelEngage": "3m 47s",
           "isRed": false,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         }
       ],
       "eodDone": true
@@ -476,7 +476,7 @@
           "resolve": "39s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473634762",
@@ -487,7 +487,7 @@
           "resolve": "47s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473633842",
@@ -543,7 +543,7 @@
           "resolve": "28s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473634071",
@@ -554,7 +554,7 @@
           "resolve": "34s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473631372",
@@ -566,7 +566,7 @@
           "resolve": "29s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473612144",
@@ -600,7 +600,7 @@
           "resolve": "33s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473505955",
@@ -611,7 +611,7 @@
           "resolve": "19s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473639607",
@@ -622,7 +622,7 @@
           "resolve": "2m 15s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473638243",
@@ -697,7 +697,7 @@
           "resolve": "3m 14s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473657275",
@@ -777,7 +777,7 @@
           "resolve": "52s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473653702",
@@ -1094,7 +1094,7 @@
           "resolve": "25s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473729164",
@@ -1132,7 +1132,7 @@
           "resolve": "25s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473731556",
@@ -1191,7 +1191,8 @@
           "resolve": "27s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": null,
+          "bridgeNA": "howto"
         },
         {
           "caseNum": "473752851",
@@ -1203,7 +1204,8 @@
           "resolve": "20s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": null,
+          "bridgeNA": "throttle"
         },
         {
           "caseNum": "473752886",
@@ -1227,7 +1229,7 @@
           "resolve": "24s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473755111",
@@ -1251,7 +1253,8 @@
           "resolve": "30s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": null,
+          "bridgeNA": "throttle"
         },
         {
           "caseNum": "473743172",
@@ -1263,7 +1266,7 @@
           "resolve": "25s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473743597",
@@ -1275,7 +1278,7 @@
           "resolve": "22s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473756525",
@@ -1287,7 +1290,7 @@
           "resolve": "20s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473744331",
@@ -1299,7 +1302,7 @@
           "resolve": "16s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473744459",
@@ -1311,7 +1314,7 @@
           "resolve": "31s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473756810",
@@ -1323,7 +1326,7 @@
           "resolve": "45s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473756818",
@@ -1336,7 +1339,7 @@
           "resolve": "2m 36s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473757516",
@@ -1348,7 +1351,8 @@
           "resolve": "29s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": null,
+          "bridgeNA": "howto"
         }
       ],
       "eodDone": true
@@ -1379,7 +1383,7 @@
           "ack": "10s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473772069",
@@ -1390,7 +1394,7 @@
           "ack": "1m 21s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473774824",
@@ -1401,7 +1405,7 @@
           "ack": "2m 26s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473774927",
@@ -1412,7 +1416,7 @@
           "ack": "29s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473775323",
@@ -1423,7 +1427,8 @@
           "resolve": "3m 17s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": null,
+          "bridgeNA": "throttle"
         },
         {
           "caseNum": "473775967",
@@ -1456,7 +1461,7 @@
           "resolve": "3m 13s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473776048",
@@ -1489,7 +1494,7 @@
           "resolve": "3m 16s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473756017",
@@ -1500,7 +1505,7 @@
           "ack": "10s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473777807",
@@ -1511,7 +1516,8 @@
           "ack": "1m 12s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": null,
+          "bridgeNA": "throttle"
         },
         {
           "caseNum": "473777827",
@@ -1641,7 +1647,7 @@
           "resolve": "26s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473815477",
@@ -1784,7 +1790,7 @@
           "resolve": "21s",
           "channelEngage": "No engagement",
           "isRed": false,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473744459",
@@ -1795,7 +1801,7 @@
           "resolve": "16s",
           "channelEngage": "No engagement",
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": true
         },
         {
           "caseNum": "473751670",
@@ -1817,7 +1823,7 @@
           "resolve": "22s",
           "channelEngage": "No engagement",
           "isRed": true,
-          "bridgeWithin10m": null
+          "bridgeWithin10m": false
         },
         {
           "caseNum": "473834963",
