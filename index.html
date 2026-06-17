@@ -538,29 +538,44 @@ function renderKPIs(){
   document.getElementById('kpiWeekEngage').textContent=weekAvgEngage||'—';
   document.getElementById('kpiWeekEngageSub').textContent=weekAvgEngage?(wkLabel+', '+thisWeek.length+' days'):'no data yet';
 
-  // Bridge compliance — denominator = only cases where a bridge decision was made
-  // (bridgeWithin10m=true or false). Null cases are excluded and broken down by reason.
+  // Bridge compliance — denominator = cases where bridge was genuinely required
+  // Excluded from denominator: bridgeNA set (throttle/lap/monitoring/howto/sandbox) + null (no CIC engage / disengaged / untracked)
   const allCases=DB.days.flatMap(function(d){return d.cases;});
-  const bridgeYes=allCases.filter(function(c){return c.bridgeWithin10m===true;}).length;
-  const bridgeNo=allCases.filter(function(c){return c.bridgeWithin10m===false;}).length;
+  const inScope=allCases.filter(function(c){return !c.bridgeNA&&c.bridgeWithin10m!==null;});
+  const bridgeYes=inScope.filter(function(c){return c.bridgeWithin10m===true;}).length;
+  const bridgeNo=inScope.filter(function(c){return c.bridgeWithin10m===false;}).length;
   const bridgeTotal=bridgeYes+bridgeNo;
   const bridgePct=bridgeTotal>0?Math.round(bridgeYes/bridgeTotal*100):null;
   // Excluded bucket breakdown
-  const exclNoCic=allCases.filter(function(c){return c.bridgeWithin10m===null&&!c.channelEngage;}).length;
-  const exclDiseng=allCases.filter(function(c){return c.bridgeWithin10m===null&&c.channelEngage==='No engagement';}).length;
-  const exclNoData=allCases.filter(function(c){return c.bridgeWithin10m===null&&c.channelEngage&&c.channelEngage!=='No engagement';}).length;
-  const exclTotal=exclNoCic+exclDiseng+exclNoData;
+  const exclNA=allCases.filter(function(c){return !!c.bridgeNA;});
+  const exclThrottle=exclNA.filter(function(c){return c.bridgeNA==='throttle';}).length;
+  const exclLap=exclNA.filter(function(c){return c.bridgeNA==='lap';}).length;
+  const exclMonitor=exclNA.filter(function(c){return c.bridgeNA==='monitoring';}).length;
+  const exclHowto=exclNA.filter(function(c){return c.bridgeNA==='howto';}).length;
+  const exclSandbox=exclNA.filter(function(c){return c.bridgeNA==='sandbox';}).length;
+  const exclNoCic=allCases.filter(function(c){return !c.bridgeNA&&c.bridgeWithin10m===null&&!c.channelEngage;}).length;
+  const exclDiseng=allCases.filter(function(c){return !c.bridgeNA&&c.bridgeWithin10m===null&&c.channelEngage==='No engagement';}).length;
+  const exclNoData=allCases.filter(function(c){return !c.bridgeNA&&c.bridgeWithin10m===null&&c.channelEngage&&c.channelEngage!=='No engagement';}).length;
+  const exclNAParts=[];
+  if(exclThrottle)exclNAParts.push(exclThrottle+' throttle');
+  if(exclLap)exclNAParts.push(exclLap+' LAP');
+  if(exclMonitor)exclNAParts.push(exclMonitor+' monitoring');
+  if(exclHowto)exclNAParts.push(exclHowto+' how-to');
+  if(exclSandbox)exclNAParts.push(exclSandbox+' sandbox');
   const bridgeEl=document.getElementById('kpiBridgeCompliance');
   const bridgeSubEl=document.getElementById('kpiBridgeComplianceSub');
   const bridgeExclEl=document.getElementById('kpiBridgeComplianceExcl');
-  if(bridgePct!==null){
-    bridgeEl.textContent=bridgePct+'%';
+  if(bridgePct!==null||bridgeTotal===0){
+    bridgeEl.textContent=bridgePct!==null?bridgePct+'%':'—';
     const kpiEl=bridgeEl.closest('.kpi');
-    if(bridgePct>=80){kpiEl.className='kpi rose';}
+    if(bridgePct===null){kpiEl.className='kpi rose';}
+    else if(bridgePct>=80){kpiEl.className='kpi rose';}
     else if(bridgePct>=60){kpiEl.className='kpi yellow';}
     else{kpiEl.className='kpi needs';}
     bridgeSubEl.textContent=bridgeYes+'/'+bridgeTotal+' cases in scope';
-    bridgeExclEl.textContent=exclTotal+' excl: '+exclNoCic+' no CIC · '+exclDiseng+' disengaged · '+exclNoData+' untracked';
+    const naPart=exclNAParts.length?'N/A: '+exclNAParts.join(', ')+' · ':'';
+    const nullPart=exclNoCic+exclDiseng+exclNoData>0?'no data: '+(exclNoCic+exclDiseng+exclNoData):'';
+    bridgeExclEl.textContent=naPart+nullPart||'all cases tracked';
   }else{
     bridgeEl.textContent='—';
     bridgeSubEl.textContent='no data yet';
@@ -786,7 +801,18 @@ function buildDayPanel(day,container){
       ?'<td style="text-align:center;" title="Red Account in OrgCS">🔴</td>'
       :'<td style="text-align:center;color:var(--text-muted);font-size:11px;" title="No Red Account record">—</td>';
     let bridgeCell;
-    if(c.bridgeWithin10m===true){
+    // bridgeNA takes priority — these cases are excluded from compliance denominator
+    const NA_LABEL={'throttle':'🌡️ Throttle','lap':'📋 LAP','monitoring':'📡 Monitoring','howto':'💬 How-to','sandbox':'🧪 Sandbox'};
+    const NA_COLOR={'throttle':'rgba(99,102,241,.1)','lap':'rgba(20,184,166,.1)','monitoring':'rgba(99,102,241,.1)','howto':'rgba(148,163,184,.1)','sandbox':'rgba(245,158,11,.1)'};
+    const NA_BORDER={'throttle':'rgba(99,102,241,.3)','lap':'rgba(20,184,166,.3)','monitoring':'rgba(99,102,241,.3)','howto':'rgba(148,163,184,.3)','sandbox':'rgba(245,158,11,.3)'};
+    const NA_TEXT={'throttle':'#6366f1','lap':'#14b8a6','monitoring':'#6366f1','howto':'#94a3b8','sandbox':'#d97706'};
+    if(c.bridgeNA){
+      const label=NA_LABEL[c.bridgeNA]||('N/A: '+c.bridgeNA);
+      const bg=NA_COLOR[c.bridgeNA]||'rgba(148,163,184,.1)';
+      const border=NA_BORDER[c.bridgeNA]||'rgba(148,163,184,.25)';
+      const col=NA_TEXT[c.bridgeNA]||'#94a3b8';
+      bridgeCell='<td style="white-space:nowrap;font-size:11px;"><span style="background:'+bg+';color:'+col+';border-radius:5px;padding:2px 7px;border:1px solid '+border+';" title="Bridge not required — excluded from compliance denominator">'+label+'</span></td>';
+    }else if(c.bridgeWithin10m===true){
       bridgeCell='<td style="text-align:center;" title="Bridge initiated within 10 min of channel creation">✅</td>';
     }else if(c.bridgeWithin10m===false){
       bridgeCell='<td style="text-align:center;" title="No bridge within 10 min of channel creation">❌</td>';
