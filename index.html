@@ -619,17 +619,21 @@ function buildDayPanel(day){
   html+='<th style="white-space:nowrap;cursor:help;" title="Time from PD alert → QB Manager Acknowledged">Alert Ack</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Time from PD alert → QB Manager Resolved">Alert Resolve</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Time from Sev1 channel creation → QB Manager first text">Channel Engage</th>';
+  html+='<th style="white-space:nowrap;cursor:help;" title="Account has a Red Account record in OrgCS">Red Acct</th>';
   html+='</tr></thead><tbody>';
   const mciSet=mciCases[day.date]||[];
   cases.forEach((c,i)=>{
     const mgr=c.manager||day.manager,chipCls=CHIP_CLS[mgr]||'';
     const isMCI=mciSet.includes(c.caseNum);
     const mciTag=isMCI?'<span class="badge mci">⚡ MCI</span> ':'';
+    const redCell=c.isRed===true
+      ?'<td style="text-align:center;" title="Red Account in OrgCS">🔴</td>'
+      :'<td style="text-align:center;color:var(--text-muted);font-size:11px;" title="No Red Account record">—</td>';
     html+=`<tr><td class="case-num">${i+1}</td><td>${c.caseNum}</td>
       <td class="account-name">${mciTag}${c.account}</td><td class="product-cell">${c.product}</td>
       <td class="time-cell">${c.timeIST}</td>
       <td><span class="manager-chip ${chipCls}">${mgr}</span></td>
-      ${rtCell(c.ack)}${rtCell(c.resolve)}${rtCell(c.channelEngage,true,true,c.caseNum)}</tr>`;
+      ${rtCell(c.ack)}${rtCell(c.resolve)}${rtCell(c.channelEngage,true,true,c.caseNum)}${redCell}</tr>`;
   });
   html+='</tbody></table></div>';
   return html;
