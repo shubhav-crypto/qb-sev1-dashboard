@@ -767,7 +767,7 @@ function buildDayPanel(day,container){
   html+='<th style="white-space:nowrap;cursor:help;" title="Time from PD alert to QB Manager Resolved">Alert Resolve</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Time from Sev1 channel creation to QB Manager first text">Channel Engage</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Account has a Red Account record in OrgCS">Red Acct</th>';
-  html+='<th style="white-space:nowrap;cursor:help;" title="Customer bridge initiated within 10 min of channel creation">Bridge ≤10m</th>';
+  html+='<th style="white-space:nowrap;cursor:help;" title="Customer bridge (Meet/WebEx/Teams/Zoom) initiated within 10 min of channel creation. Every Sev1 has a channel — null means CIC did not engage or bridge data was not captured.">Bridge ≤10m</th>';
   html+='</tr></thead><tbody>';
   const mciSet=mciCases[day.date]||[];
   cases.forEach(function(c,i){
@@ -783,17 +783,17 @@ function buildDayPanel(day,container){
     }else if(c.bridgeWithin10m===false){
       bridgeCell='<td style="text-align:center;" title="No bridge within 10 min of channel creation">❌</td>';
     }else{
-      // null — three distinct reasons based on channelEngage value
+      // null — bridge data not captured; categorise by whether CIC engaged at all
       const ce=c.channelEngage;
-      if(!ce){
-        // No Sev1 channel was ever created — bridge inherently N/A
-        bridgeCell='<td style="white-space:nowrap;font-size:11px;"><span style="background:rgba(148,163,184,.1);color:#94a3b8;border-radius:5px;padding:2px 7px;border:1px solid rgba(148,163,184,.25);" title="No Sev1 channel created — bridge not applicable">🚫 No channel</span></td>';
+      if(ce&&ce!=='No engagement'){
+        // CIC engaged in channel but bridge tracking data was not recorded
+        bridgeCell='<td style="white-space:nowrap;font-size:11px;"><span style="background:rgba(100,116,139,.08);color:#64748b;border-radius:5px;padding:2px 7px;border:1px solid rgba(100,116,139,.2);" title="CIC engaged but bridge data was not captured for this case">❓ Not tracked</span></td>';
       }else if(ce==='No engagement'){
-        // Channel existed but CIC disengaged before a bridge was initiated
-        bridgeCell='<td style="white-space:nowrap;font-size:11px;"><span style="background:rgba(245,158,11,.1);color:#d97706;border-radius:5px;padding:2px 7px;border:1px solid rgba(245,158,11,.25);" title="CIC disengaged before bridge — bridge not applicable">⚡ CIC disengaged</span></td>';
+        // CIC disengaged from channel — no bridge was applicable
+        bridgeCell='<td style="white-space:nowrap;font-size:11px;"><span style="background:rgba(245,158,11,.1);color:#d97706;border-radius:5px;padding:2px 7px;border:1px solid rgba(245,158,11,.25);" title="CIC disengaged from channel — no bridge applicable">⚡ CIC disengaged</span></td>';
       }else{
-        // channelEngage has a time but bridge data was not captured (early tracking gap)
-        bridgeCell='<td style="white-space:nowrap;font-size:11px;"><span style="background:rgba(100,116,139,.08);color:#64748b;border-radius:5px;padding:2px 7px;border:1px solid rgba(100,116,139,.2);" title="Channel engaged but bridge data was not tracked for this case">❓ Not tracked</span></td>';
+        // channelEngage=null: CIC did not engage in the QB window — bridge N/A
+        bridgeCell='<td style="white-space:nowrap;font-size:11px;"><span style="background:rgba(148,163,184,.1);color:#94a3b8;border-radius:5px;padding:2px 7px;border:1px solid rgba(148,163,184,.25);" title="No CIC engagement in QB window — bridge not applicable">⛔ No CIC engage</span></td>';
       }
     }
     html+='<tr><td class="case-num">'+(i+1)+'</td><td>'+c.caseNum+'</td>'
