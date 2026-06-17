@@ -139,7 +139,7 @@
     <div class="kpi yellow"><div class="kpi-value" id="kpiAvgPerDay">—</div><div class="kpi-label">Avg Cases / Day</div><div class="kpi-sub" id="kpiAvgSub"></div></div>
     <div class="kpi green"><div class="kpi-value" id="kpiMonthEngage" style="font-size:24px;">—</div><div class="kpi-label">Monthly Avg Engage</div><div class="kpi-sub" id="kpiMonthEngageSub"></div></div>
     <div class="kpi purple"><div class="kpi-value" id="kpiWeekEngage" style="font-size:24px;">—</div><div class="kpi-label">This Week Avg Engage</div><div class="kpi-sub" id="kpiWeekEngageSub"></div></div>
-    <div class="kpi rose"><div class="kpi-value" id="kpiBridgeCompliance" style="font-size:30px;">—</div><div class="kpi-label">Bridge Created ≤10 m</div><div class="kpi-sub" id="kpiBridgeComplianceSub"></div></div>
+    <div class="kpi rose"><div class="kpi-value" id="kpiBridgeCompliance" style="font-size:30px;">—</div><div class="kpi-label">Bridge Created ≤10 m</div><div class="kpi-sub" id="kpiBridgeComplianceSub"></div><div class="kpi-sub" id="kpiBridgeComplianceExcl" style="margin-top:3px;font-size:10px;"></div></div>
   </div>
 
   <div class="week-summary" id="weekSummary"></div>
@@ -538,25 +538,33 @@ function renderKPIs(){
   document.getElementById('kpiWeekEngage').textContent=weekAvgEngage||'—';
   document.getElementById('kpiWeekEngageSub').textContent=weekAvgEngage?(wkLabel+', '+thisWeek.length+' days'):'no data yet';
 
-  // Bridge compliance: bridgeWithin10m=true / (true+false), null = not applicable
+  // Bridge compliance — denominator = only cases where a bridge decision was made
+  // (bridgeWithin10m=true or false). Null cases are excluded and broken down by reason.
   const allCases=DB.days.flatMap(function(d){return d.cases;});
   const bridgeYes=allCases.filter(function(c){return c.bridgeWithin10m===true;}).length;
   const bridgeNo=allCases.filter(function(c){return c.bridgeWithin10m===false;}).length;
   const bridgeTotal=bridgeYes+bridgeNo;
   const bridgePct=bridgeTotal>0?Math.round(bridgeYes/bridgeTotal*100):null;
+  // Excluded bucket breakdown
+  const exclNoCic=allCases.filter(function(c){return c.bridgeWithin10m===null&&!c.channelEngage;}).length;
+  const exclDiseng=allCases.filter(function(c){return c.bridgeWithin10m===null&&c.channelEngage==='No engagement';}).length;
+  const exclNoData=allCases.filter(function(c){return c.bridgeWithin10m===null&&c.channelEngage&&c.channelEngage!=='No engagement';}).length;
+  const exclTotal=exclNoCic+exclDiseng+exclNoData;
   const bridgeEl=document.getElementById('kpiBridgeCompliance');
   const bridgeSubEl=document.getElementById('kpiBridgeComplianceSub');
+  const bridgeExclEl=document.getElementById('kpiBridgeComplianceExcl');
   if(bridgePct!==null){
     bridgeEl.textContent=bridgePct+'%';
-    // Colour the tile dynamically based on compliance rate
     const kpiEl=bridgeEl.closest('.kpi');
     if(bridgePct>=80){kpiEl.className='kpi rose';}
     else if(bridgePct>=60){kpiEl.className='kpi yellow';}
     else{kpiEl.className='kpi needs';}
-    bridgeSubEl.textContent=bridgeYes+'/'+bridgeTotal+' cases on-time';
+    bridgeSubEl.textContent=bridgeYes+'/'+bridgeTotal+' cases in scope';
+    bridgeExclEl.textContent=exclTotal+' excl: '+exclNoCic+' no CIC · '+exclDiseng+' disengaged · '+exclNoData+' untracked';
   }else{
     bridgeEl.textContent='—';
     bridgeSubEl.textContent='no data yet';
+    bridgeExclEl.textContent='';
   }
 }
 
