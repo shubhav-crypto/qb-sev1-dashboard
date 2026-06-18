@@ -8,10 +8,6 @@ Required env vars:
   SLACK_USER_TOKEN  - User token (needed for private channel reads)
   SLACK_BOT_TOKEN   - Bot token fallback with channels:history, channels:read scopes
 
-Optional env vars (for OI Duration OrgCS fallback):
-  SF_INSTANCE_URL   - Salesforce instance URL (e.g. https://yourorg.my.salesforce.com)
-  SF_ACCESS_TOKEN   - Salesforce OAuth access token (or session ID)
-
 Run: python3 updater.py [YYYY-MM-DD]
 """
 
@@ -20,7 +16,7 @@ import os
 import re
 import sys
 import time
-from datetime import datetime, date, timezone, timedelta
+from datetime import datetime, date
 from zoneinfo import ZoneInfo
 
 import urllib.request
@@ -156,29 +152,6 @@ def fmt_duration(secs):
     if s or not parts: parts.append(f"{s}s")
     return " ".join(parts)
 
-def fmt_oi_duration(secs):
-    """
-    Format seconds as OI duration string.
-    Matches existing data format: '2d 7h', '5h 30m', '45m'.
-    For multi-day durations only show days+hours (no minutes).
-    For sub-day durations show hours+minutes.
-    """
-    if secs is None:
-        return None
-    d = secs // 86400
-    h = (secs % 86400) // 3600
-    m = (secs % 3600) // 60
-    parts = []
-    if d:
-        parts.append(f"{d}d")
-        if h: parts.append(f"{h}h")
-    elif h:
-        parts.append(f"{h}h")
-        if m: parts.append(f"{m}m")
-    else:
-        parts.append(f"{m}m" if m else "0m")
-    return " ".join(parts)
-
 # ── QUALITY DETECTION ────────────────────────────────────────────────────────
 STRONG_RE   = re.compile(r"\bstrong\b",   re.IGNORECASE)
 MODERATE_RE = re.compile(r"\bmoderate\b", re.IGNORECASE)
@@ -235,196 +208,7 @@ def get_channel_engage(channel_id, channel_created_ts, manager_id):
         return fmt_duration(engage_secs), float(msg["ts"])
     return None, None
 
-# ── OI DURATION DETECTION ─────────────────────────────────────────────────────
-# Keywords that indicate the customer/team has confirmed out-of-impact
-OI_SIGNAL_RE = re.compile(
-    r"out\s+of\s+impact"
-    r"|oi\s+confirmed"
-    r"|back\s+online"
-    r"|back\s+up"
-    r"|no\s+longer\s+impact"
-    r"|issue\s+(?:has\s+been\s+)?resolved"
-    r"|problem\s+(?:has\s+been\s+)?resolved"
-    r"|working\s+(?:now|fine|again)"
-    r"|it['’s]+\s+working"
-    r"|resolved\s+now"
-    r"|confirmed\s+(?:out\s+of\s+impact|resolved)"
-    r"|impact\s+(?:is\s+)?over"
-    r"|services?\s+(?:is\s+|are\s+)?(?:back|restored|working)",
-    re.IGNORECASE
-)
-
-# Negative phrases to skip (e.g. "not out of impact yet")
-OI_NEGATIVE_RE = re.compile(
-    r"not\s+(?:yet\s+)?(?:out\s+of\s+impact|resolved|working|back)"
-    r"|still\s+(?:down|impacted|not\s+working)"
-    r"|not\s+(?:resolved|working)",
-    re.IGNORECASE
-)
-
-def detect_oi_from_messages(messages, channel_created_ts):
-    """
-    Scan channel messages (chronologically) for the first OI signal.
-    Returns (oi_ts_float, oi_text_str) or (None, None).
-    Only considers messages AFTER channel creation.
-    """
-    for msg in sorted(messages, key=lambda m: float(m.get("ts", 0))):
-        # Only look at messages after the channel was created
-        if channel_created_ts and float(msg.get("ts", 0)) <= float(channel_created_ts):
-            continue
-        # Skip bot/system messages
-        if msg.get("subtype"):
-            continue
-        text = msg.get("text", "")
-        if not text.strip():
-            continue
-        if OI_SIGNAL_RE.search(text) and not OI_NEGATIVE_RE.search(text):
-            return float(msg["ts"]), text.strip()
-    return None, None
-
-# ── ORGCS API HELPERS ────────────────────────────────────────────────────────
-SF_INSTANCE_URL = os.environ.get("SF_INSTANCE_URL", "").rstrip("/")
-SF_TOKEN        = os.environ.get("SF_ACCESS_TOKEN") or os.environ.get("SF_SESSION_ID")
-
-def orgcs_query(soql):
-    """Execute a SOQL query via Salesforce REST API. Returns records list or []."""
-    if not SF_INSTANCE_URL or not SF_TOKEN:
-        return []
-    encoded = urllib.parse.quote(soql)
-    url = f"{SF_INSTANCE_URL}/services/data/v64.0/query?q={encoded}"
-    headers = {
-        "Authorization": f"Bearer {SF_TOKEN}",
-        "Accept": "application/json",
-    }
-    req = urllib.request.Request(url, headers=headers)
-    try:
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            data = json.loads(resp.read())
-        return data.get("records", [])
-    except Exception as exc:
-        print(f"  OrgCS query error: {exc}", flush=True)
-        return []
-
-def get_case_from_orgcs(case_num):
-    """
-    Fetch key OI-related fields for a case from OrgCS.
-    Returns the record dict or None.
-    """
-    records = orgcs_query(
-        f"SELECT Id, CaseNumber, IsClosed, Status, ClosedDate, "
-        f"AX_Sev1_Start_Time__c, AX_Sev1_End_Time__c "
-        f"FROM Case WHERE CaseNumber = '{case_num}' LIMIT 1"
-    )
-    return records[0] if records else None
-
-def _parse_sf_dt(dt_str):
-    """Parse Salesforce ISO datetime string to aware datetime."""
-    if not dt_str:
-        return None
-    return datetime.fromisoformat(dt_str.replace("Z", "+00:00"))
-
-def get_oi_duration(case_num, channel_id, channel_created_ts):
-    """
-    3-tier OI duration detection cascade:
-
-    Tier 1 — Sev1 channel scan:
-        Look for OI signal messages posted by customer/team.
-        Duration = OI_message_ts - channel_created_ts.
-
-    Tier 2 — OrgCS fallback (if case is closed):
-        Use AX_Sev1_End_Time__c - AX_Sev1_Start_Time__c.
-        If AX_Sev1_End_Time__c missing, fall back to ClosedDate.
-        If case is open in OrgCS, return 'still open' marker.
-
-    Tier 3 — No OrgCS creds / case not found:
-        Return 'still open' marker so we re-check next run.
-
-    Returns dict with keys: oiDuration, oiSource, resolvedAt, resolvedText
-    Returns None if we have no new info (e.g. OrgCS not configured and no channel).
-    """
-    # ── Tier 1: Sev1 channel ──────────────────────────────────────────────
-    if channel_id and channel_created_ts:
-        msgs = history(channel_id, limit=200)
-        oi_ts, oi_text = detect_oi_from_messages(msgs, channel_created_ts)
-        if oi_ts is not None:
-            dur_secs = max(0, int(oi_ts - float(channel_created_ts)))
-            resolved_at_ist = datetime.fromtimestamp(oi_ts, tz=IST).strftime("%Y-%m-%d %H:%M:%S IST")
-            # Truncate long text for tooltip
-            short_text = (oi_text[:180] + "…") if len(oi_text) > 180 else oi_text
-            print(f"    OI signal found in channel: {short_text[:60]}…", flush=True)
-            return {
-                "oiDuration":   fmt_oi_duration(dur_secs),
-                "oiSource":     "channel",
-                "resolvedAt":   resolved_at_ist,
-                "resolvedText": short_text,
-            }
-        print(f"    No OI signal found in channel for {case_num}", flush=True)
-
-    # ── Tier 2: OrgCS ────────────────────────────────────────────────────
-    if SF_INSTANCE_URL and SF_TOKEN:
-        rec = get_case_from_orgcs(case_num)
-        if rec is None:
-            print(f"    Case {case_num} not found in OrgCS", flush=True)
-            # Can't determine status — leave as-is for next run
-            return None
-
-        if rec.get("IsClosed"):
-            # Determine end time: prefer AX_Sev1_End_Time__c, then ClosedDate
-            end_dt   = _parse_sf_dt(rec.get("AX_Sev1_End_Time__c")) or \
-                       _parse_sf_dt(rec.get("ClosedDate"))
-            end_label = "AX_Sev1_End_Time__c" if rec.get("AX_Sev1_End_Time__c") else "ClosedDate"
-
-            # Determine start time: prefer AX_Sev1_Start_Time__c, then channel_created_ts
-            start_dt = _parse_sf_dt(rec.get("AX_Sev1_Start_Time__c"))
-            if start_dt:
-                start_label = "Sev1 start time (OrgCS)"
-            elif channel_created_ts:
-                start_dt    = datetime.fromtimestamp(float(channel_created_ts), tz=timezone.utc)
-                start_label = "channel creation"
-            else:
-                start_dt    = None
-                start_label = "unknown start"
-
-            if end_dt and start_dt:
-                dur_secs = max(0, int((end_dt - start_dt).total_seconds()))
-                resolved_at_ist = end_dt.astimezone(IST).strftime("%Y-%m-%d %H:%M:%S IST")
-                resolved_text   = (
-                    f"{end_label} from OrgCS "
-                    f"(Status: {rec.get('Status', 'Closed')}; "
-                    f"measured from {start_label})"
-                )
-                print(f"    OI from OrgCS [{end_label}]: {fmt_oi_duration(dur_secs)}", flush=True)
-                return {
-                    "oiDuration":   fmt_oi_duration(dur_secs),
-                    "oiSource":     "orgcs",
-                    "resolvedAt":   resolved_at_ist,
-                    "resolvedText": resolved_text,
-                }
-            else:
-                # Closed but timestamps missing — mark as closed with no duration
-                print(f"    Case {case_num} closed in OrgCS but timestamps missing", flush=True)
-                return {
-                    "oiDuration":   None,
-                    "oiSource":     "orgcs",
-                    "resolvedAt":   None,
-                    "resolvedText": f"Case closed in OrgCS (Status: {rec.get('Status')}); timestamps unavailable",
-                }
-        else:
-            # Case is still open in OrgCS
-            print(f"    Case {case_num} still open in OrgCS (Status: {rec.get('Status')})", flush=True)
-            return {
-                "oiDuration":   None,
-                "oiSource":     "orgcs",
-                "resolvedAt":   None,
-                "resolvedText": f"Still open in OrgCS (Status: {rec.get('Status', 'Open')})",
-            }
-
-    # ── Tier 3: No OrgCS creds and no channel signal ─────────────────────
-    # Return None so we re-check on next run rather than permanently marking open
-    print(f"    Cannot determine OI for {case_num} (no channel signal, OrgCS not configured)", flush=True)
-    return None
-
-# ── TODAY'S ALERTS READER ────────────────────────────────────────────────────
+# ── TODAY’S ALERTS READER ────────────────────────────────────────────────────
 SEV1_ALERT_RE = re.compile(
     r"Sev1\|Signature Success",
     re.IGNORECASE
@@ -441,13 +225,6 @@ def ist_day_timestamps(day: date):
     end   = datetime(day.year, day.month, day.day, 23, 59, 59, tzinfo=IST)
     return start.timestamp(), end.timestamp()
 
-def ist_qb_timestamps(day: date):
-    """Return (oldest_unix, latest_unix) for QB window on a given IST day."""
-    start = datetime(day.year, day.month, day.day,
-                     QB_START_HOUR_IST, QB_START_MIN_IST, 0, tzinfo=IST)
-    end   = datetime(day.year, day.month, day.day,
-                     QB_END_HOUR_IST, QB_END_MIN_IST, 0, tzinfo=IST)
-    return start.timestamp(), end.timestamp()
 
 def ts_to_ist_str(ts):
     """Convert unix timestamp to 'H:MM AM/PM' IST string."""
@@ -596,25 +373,6 @@ def find_or_create_day(data, target_date: date, manager: str):
     data["days"].sort(key=lambda d: d["date"])
     return new_day
 
-def needs_oi_check(case):
-    """
-    Return True if this case still needs OI duration to be determined.
-    We re-check if:
-      - oiDuration is not set yet (no resolved duration found), AND
-      - oiSource is not already a final resolved source ('channel' or a closed OrgCS result)
-    In other words: keep re-checking if the case might still be open.
-    """
-    if case.get("oiDuration"):
-        # Already have a duration — no need to re-check
-        return False
-    # If oiSource is 'channel' or 'orgcs' with a resolvedAt → already final
-    if case.get("oiSource") in ("channel",) and case.get("resolvedAt"):
-        return False
-    if case.get("oiSource") == "orgcs" and case.get("resolvedAt"):
-        return False
-    # Otherwise (null, 'open', 'orgcs' with no resolvedAt) → re-check
-    return True
-
 def update_day(target_date: date):
     """Main update function for a given IST date."""
     if not TOKEN:
@@ -685,30 +443,25 @@ def update_day(target_date: date):
                 "quality":       "PENDING",
                 "resolve":       resolve_str,
                 "channelEngage": None,
-                "oiDuration":    None,
-                "oiSource":      None,
-                "resolvedAt":    None,
-                "resolvedText":  None,
             }
             day_entry["cases"].append(new_case)
             existing_cases[case_num] = new_case
             changed = True
 
-    # 4. Per-case channel checks: engage, quality, and OI duration
-    print("Checking Sev1 channels for channel-engage, quality, and OI duration …", flush=True)
+    # 4. Per-case channel checks: engage and quality
+    print("Checking Sev1 channels for channel-engage and quality …", flush=True)
     for case in day_entry["cases"]:
         case_num = case["caseNum"]
         needs_engage  = not case.get("channelEngage")
         needs_quality = case.get("quality") in (None, "PENDING")
-        needs_oi      = needs_oi_check(case)
 
-        if not (needs_engage or needs_quality or needs_oi):
+        if not (needs_engage or needs_quality):
             continue
 
         print(f"  Searching channel for case {case_num} …", flush=True)
         channel = search_channel_by_case(case_num)
 
-        channel_id      = channel["id"]      if channel else None
+        channel_id      = channel["id"]          if channel else None
         channel_created = channel.get("created") if channel else None  # unix int
 
         if channel:
@@ -718,9 +471,8 @@ def update_day(target_date: date):
 
         # ── Channel engage ────────────────────────────────────────────────
         if needs_engage and channel_id and manager_id and channel_created:
-            alert_date = target_date
             created_dt = datetime.fromtimestamp(channel_created, tz=IST).date()
-            if created_dt == alert_date:
+            if created_dt == target_date:
                 engage, _ = get_channel_engage(channel_id, channel_created, manager_id)
                 if engage:
                     case["channelEngage"] = engage
@@ -738,19 +490,6 @@ def update_day(target_date: date):
                 print(f"    Quality: {quality}", flush=True)
             else:
                 print(f"    Quality not yet determined", flush=True)
-
-        # ── OI Duration (3-tier cascade) ──────────────────────────────────
-        if needs_oi:
-            print(f"    Checking OI duration for {case_num} …", flush=True)
-            oi_result = get_oi_duration(case_num, channel_id, channel_created)
-            if oi_result is not None:
-                case["oiDuration"]   = oi_result["oiDuration"]
-                case["oiSource"]     = oi_result["oiSource"]
-                case["resolvedAt"]   = oi_result["resolvedAt"]
-                case["resolvedText"] = oi_result["resolvedText"]
-                changed = True
-                status = oi_result["oiDuration"] or f"still open ({oi_result['oiSource']})"
-                print(f"    OI Duration: {status}", flush=True)
 
         time.sleep(0.3)   # be gentle with Slack rate limits
 
@@ -784,8 +523,5 @@ if __name__ == "__main__":
         target  = now_ist.date()
 
     print(f"QB Sev1 Dashboard Updater — target date: {target}", flush=True)
-    if not SF_INSTANCE_URL or not SF_TOKEN:
-        print("  (OrgCS fallback disabled — SF_INSTANCE_URL / SF_ACCESS_TOKEN not set)", flush=True)
-
     result = update_day(target)
     sys.exit(0)   # always exit 0 (no changes is not an error)
