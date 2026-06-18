@@ -1,7 +1,7 @@
 {
   "meta": {
     "generated": "2026-06-17T00:00:00+05:30",
-    "totalCases": 170,
+    "totalCases": 168,
     "daysTracked": 13
   },
   "schedule": {
@@ -2600,22 +2600,6 @@
       "managerId": "U04999GSQ13",
       "cases": [
         {
-          "caseNum": "473854225",
-          "account": "Visa U.S.A. Inc.",
-          "product": "Tableau-Connecting to Data",
-          "timeIST": "12:39 PM",
-          "quality": "PENDING",
-          "resolve": null,
-          "channelEngage": "No engagement",
-          "isRed": false,
-          "bridgeWithin10m": false,
-          "bridgeNA": null,
-          "resolvedAt": null,
-          "resolvedText": null,
-          "oiDuration": null,
-          "channelCreatedAt": "2026-06-17 12:39:00 IST"
-        },
-        {
           "caseNum": "473854364",
           "account": "DBS Bank Ltd",
           "product": "Tableau-Performance & Stability",
@@ -2646,22 +2630,6 @@
           "resolvedText": "Unable to see reports for Einstein Conversation Insights; sandbox issue confirmed. CIC disengaged.",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-17 13:09:44 IST"
-        },
-        {
-          "caseNum": "473854785",
-          "account": "Skechers USA Inc.",
-          "product": "Industry-Loyalty Management",
-          "timeIST": "1:12 PM",
-          "quality": "PENDING",
-          "resolve": null,
-          "channelEngage": "No engagement",
-          "isRed": false,
-          "bridgeWithin10m": false,
-          "bridgeNA": null,
-          "resolvedAt": null,
-          "resolvedText": "Customer requested call at 8:30 AM PST; issue with redeem points in loyalty cloud point balance. No active bridge during EMEA hours.",
-          "oiDuration": null,
-          "channelCreatedAt": "2026-06-17 13:12:23 IST"
         },
         {
           "caseNum": "473856779",
