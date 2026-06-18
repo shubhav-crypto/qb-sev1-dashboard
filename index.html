@@ -169,7 +169,7 @@
     <div class="kpi yellow"><div class="kpi-value" id="kpiAvgPerDay">—</div><div class="kpi-label">Avg Cases / Day</div><div class="kpi-sub" id="kpiAvgSub"></div></div>
     <div class="kpi green"><div class="kpi-value" id="kpiMonthEngage" style="font-size:24px;">—</div><div class="kpi-label">Monthly Avg Engage</div><div class="kpi-sub" id="kpiMonthEngageSub"></div></div>
     <div class="kpi purple"><div class="kpi-value" id="kpiWeekEngage" style="font-size:24px;">—</div><div class="kpi-label">This Week Avg Engage</div><div class="kpi-sub" id="kpiWeekEngageSub"></div></div>
-    <div class="kpi rose"><div class="kpi-value" id="kpiBridgeCompliance" style="font-size:30px;">—</div><div class="kpi-label">Bridge Created ≤10 m</div><div class="kpi-sub" id="kpiBridgeComplianceSub"></div><div class="kpi-sub" id="kpiBridgeComplianceExcl" style="margin-top:3px;font-size:10px;"></div></div>
+    <div class="kpi rose"><div class="kpi-value" id="kpiBridgeCompliance" style="font-size:30px;">—</div><div class="kpi-label">Bridge ≤15 min</div><div class="kpi-sub" id="kpiBridgeComplianceSub"></div><div class="kpi-sub" id="kpiBridgeComplianceExcl" style="margin-top:3px;font-size:10px;"></div></div>
   </div>
 
   <div class="week-summary" id="weekSummary"></div>
@@ -618,30 +618,29 @@ function renderKPIs(){
   document.getElementById('kpiWeekEngage').textContent=weekAvgEngage||'—';
   document.getElementById('kpiWeekEngageSub').textContent=weekAvgEngage?(wkLabel+', '+thisWeek.length+' days'):'no data yet';
 
-  // Bridge compliance — denominator = cases where bridge was genuinely required
-  // Excluded from denominator: bridgeNA set (throttle/lap/monitoring/howto/sandbox) + null (no CIC engage / disengaged / untracked)
-  const allCases=DB.days.flatMap(function(d){return d.cases;});
-  const inScope=allCases.filter(function(c){return !c.bridgeNA&&c.bridgeWithin15m!==null;});
+  // Bridge compliance — denominator = all new Sev1s (not pre-existing re-alerts, not GHOs)
+  // Pre-existing = channelCreatedAt date is before the day's date (re-alerted cases)
+  // GHOs are tracked separately and excluded; escalated cases never appear in data
+  // bridgeNA cases (throttle/lap/monitoring/howto/sandbox) are now INCLUDED in denominator
+  const allCases=DB.days.flatMap(function(d){
+    return d.cases.map(function(c){return Object.assign({},c,{_dayDate:d.date});});
+  });
+  // New Sev1 = channel was created on the same day (not a pre-existing re-alert)
+  const newCases=allCases.filter(function(c){
+    var cat=c.channelCreatedAt;
+    if(!cat)return true; // no channel date = treat as new
+    return cat.slice(0,10)===c._dayDate;
+  });
+  const inScope=newCases.filter(function(c){return c.bridgeWithin15m!==null;});
   const bridgeYes=inScope.filter(function(c){return c.bridgeWithin15m===true;}).length;
   const bridgeNo=inScope.filter(function(c){return c.bridgeWithin15m===false;}).length;
   const bridgeTotal=bridgeYes+bridgeNo;
   const bridgePct=bridgeTotal>0?Math.round(bridgeYes/bridgeTotal*100):null;
-  // Excluded bucket breakdown
-  const exclNA=allCases.filter(function(c){return !!c.bridgeNA;});
-  const exclThrottle=exclNA.filter(function(c){return c.bridgeNA==='throttle';}).length;
-  const exclLap=exclNA.filter(function(c){return c.bridgeNA==='lap';}).length;
-  const exclMonitor=exclNA.filter(function(c){return c.bridgeNA==='monitoring';}).length;
-  const exclHowto=exclNA.filter(function(c){return c.bridgeNA==='howto';}).length;
-  const exclSandbox=exclNA.filter(function(c){return c.bridgeNA==='sandbox';}).length;
-  const exclNoCic=allCases.filter(function(c){return !c.bridgeNA&&c.bridgeWithin15m===null&&!c.channelEngage;}).length;
-  const exclDiseng=allCases.filter(function(c){return !c.bridgeNA&&c.bridgeWithin15m===null&&c.channelEngage==='No engagement';}).length;
-  const exclNoData=allCases.filter(function(c){return !c.bridgeNA&&c.bridgeWithin15m===null&&c.channelEngage&&c.channelEngage!=='No engagement';}).length;
-  const exclNAParts=[];
-  if(exclThrottle)exclNAParts.push(exclThrottle+' throttle');
-  if(exclLap)exclNAParts.push(exclLap+' LAP');
-  if(exclMonitor)exclNAParts.push(exclMonitor+' monitoring');
-  if(exclHowto)exclNAParts.push(exclHowto+' how-to');
-  if(exclSandbox)exclNAParts.push(exclSandbox+' sandbox');
+  const exclPreExist=allCases.filter(function(c){
+    var cat=c.channelCreatedAt;
+    return cat&&cat.slice(0,10)!==c._dayDate;
+  }).length;
+  const exclNull=newCases.filter(function(c){return c.bridgeWithin15m===null;}).length;
   const bridgeEl=document.getElementById('kpiBridgeCompliance');
   const bridgeSubEl=document.getElementById('kpiBridgeComplianceSub');
   const bridgeExclEl=document.getElementById('kpiBridgeComplianceExcl');
@@ -653,9 +652,10 @@ function renderKPIs(){
     else if(bridgePct>=60){kpiEl.className='kpi yellow';}
     else{kpiEl.className='kpi needs';}
     bridgeSubEl.textContent=bridgeYes+'/'+bridgeTotal+' cases in scope';
-    const naPart=exclNAParts.length?'N/A: '+exclNAParts.join(', ')+' · ':'';
-    const nullPart=exclNoCic+exclDiseng+exclNoData>0?'no data: '+(exclNoCic+exclDiseng+exclNoData):'';
-    bridgeExclEl.textContent=naPart+nullPart||'all cases tracked';
+    const parts=[];
+    if(exclPreExist)parts.push(exclPreExist+' pre-existing excl.');
+    if(exclNull)parts.push(exclNull+' no data');
+    bridgeExclEl.textContent=parts.length?parts.join(' · '):'all cases tracked';
   }else{
     bridgeEl.textContent='—';
     bridgeSubEl.textContent='no data yet';
@@ -893,7 +893,7 @@ function buildDayPanel(day,container){
       const bg=NA_COLOR[c.bridgeNA]||'rgba(148,163,184,.1)';
       const border=NA_BORDER[c.bridgeNA]||'rgba(148,163,184,.25)';
       const col=NA_TEXT[c.bridgeNA]||'#94a3b8';
-      bridgeCell='<td style="white-space:nowrap;font-size:11px;"><span style="background:'+bg+';color:'+col+';border-radius:5px;padding:2px 7px;border:1px solid '+border+';" title="Bridge not required — excluded from compliance denominator">'+label+'</span></td>';
+      bridgeCell='<td style="white-space:nowrap;font-size:11px;"><span style="background:'+bg+';color:'+col+';border-radius:5px;padding:2px 7px;border:1px solid '+border+';" title="'+label+' case">'+label+'</span></td>';
     }else if(c.bridgeWithin15m===true){
       bridgeCell='<td style="text-align:center;" title="Bridge initiated within 15 min of channel creation">✅</td>';
     }else if(c.bridgeWithin15m===false){
