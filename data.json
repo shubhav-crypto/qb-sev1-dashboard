@@ -2850,7 +2850,8 @@
           "channelCreatedAt": "2026-06-17 18:37:03 IST"
         }
       ],
-      "canvasId": "F0BB2DYRMNF"
+      "canvasId": "F0BB2DYRMNF",
+      "eodDone": true
     }
   ]
 }
