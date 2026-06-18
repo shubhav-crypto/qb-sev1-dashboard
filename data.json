@@ -1,7 +1,7 @@
 {
   "meta": {
     "generated": "2026-06-17T00:00:00+05:30",
-    "totalCases": 179,
+    "totalCases": 170,
     "daysTracked": 13
   },
   "schedule": {
@@ -153,7 +153,7 @@
         },
         {
           "caseNum": "473604096",
-          "account": "bp International Ltd \u2013 Colleagues Org",
+          "account": "bp International Ltd – Colleagues Org",
           "product": "Digital Engagement",
           "timeIST": "5:24 PM",
           "quality": "STRONG",
@@ -301,7 +301,7 @@
         },
         {
           "caseNum": "473613541",
-          "account": "Cummins \u2013 Guidanz (Service Org)",
+          "account": "Cummins – Guidanz (Service Org)",
           "product": "Developer Support",
           "timeIST": "4:00 PM",
           "quality": "STRONG",
@@ -586,7 +586,7 @@
       "cases": [
         {
           "caseNum": "473633737",
-          "account": "Guardant Health \u2013 Screening Org",
+          "account": "Guardant Health – Screening Org",
           "product": "Digital Engagement",
           "timeIST": "1:12 PM",
           "quality": "STRONG",
@@ -689,7 +689,7 @@
           "isRed": false,
           "bridgeWithin10m": false,
           "resolvedAt": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Need More Information)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Need More Information)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-04 15:59:44 IST",
           "oiSource": "orgcs"
@@ -831,7 +831,7 @@
           "bridgeWithin10m": true,
           "resolvedAt": null,
           "oiDuration": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Solution Provided)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Solution Provided)",
           "channelCreatedAt": "2026-06-04 19:15:11 IST",
           "oiSource": "orgcs"
         },
@@ -938,7 +938,7 @@
         },
         {
           "caseNum": "473657275",
-          "account": "bp International Ltd \u2013 Colleagues Org",
+          "account": "bp International Ltd – Colleagues Org",
           "product": "Digital Engagement",
           "timeIST": "5:34 PM",
           "quality": "STRONG",
@@ -1179,7 +1179,7 @@
         {
           "caseNum": "473697035",
           "account": "Tata Consumer Products",
-          "product": "Agentforce \u2013 Service",
+          "product": "Agentforce – Service",
           "timeIST": "5:42 PM",
           "manager": "Jyothirmayee",
           "quality": "MODERATE",
@@ -1556,7 +1556,7 @@
           "isRed": false,
           "bridgeWithin10m": false,
           "resolvedAt": "2026-06-10 19:54:13 IST",
-          "resolvedText": "no actions pending \u2014 their team had a confusion",
+          "resolvedText": "no actions pending — their team had a confusion",
           "oiDuration": "31m",
           "channelCreatedAt": "2026-06-10 19:23:00 IST"
         }
@@ -1950,7 +1950,7 @@
           "bridgeWithin10m": false,
           "resolvedAt": "2026-06-13 10:41:46 IST",
           "oiDuration": "17h 8m",
-          "resolvedText": "CIC Update :: Issue has been mitigated - component switched V2\u2192V1, resolved.",
+          "resolvedText": "CIC Update :: Issue has been mitigated - component switched V2→V1, resolved.",
           "channelCreatedAt": "2026-06-12 17:33:22 IST"
         },
         {
@@ -2213,7 +2213,7 @@
           "isRed": true,
           "bridgeWithin10m": false,
           "resolvedAt": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Working)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Working)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-15 16:13:33 IST",
           "oiSource": "orgcs"
@@ -2328,7 +2328,7 @@
           "isRed": false,
           "bridgeWithin10m": false,
           "resolvedAt": "2026-06-15 19:38:36 IST",
-          "resolvedText": "There is no issue \u2014 they are receiving and able to send emails.",
+          "resolvedText": "There is no issue — they are receiving and able to send emails.",
           "oiDuration": "28m",
           "channelCreatedAt": "2026-06-15 19:10:00 IST"
         },
@@ -2382,7 +2382,7 @@
           "isRed": false,
           "bridgeWithin10m": true,
           "resolvedAt": "2026-06-16 15:23:51 IST",
-          "resolvedText": "they can login manually after session timeout \u2014 CIC disengaging",
+          "resolvedText": "they can login manually after session timeout — CIC disengaging",
           "oiDuration": "1h 40m",
           "channelCreatedAt": "2026-06-16 13:43:00 IST"
         },
@@ -2429,7 +2429,7 @@
           "isRed": false,
           "bridgeWithin10m": false,
           "resolvedAt": "2026-06-16 17:57:59 IST",
-          "resolvedText": "issue is intermittent \u2014 CIC can disengage for now",
+          "resolvedText": "issue is intermittent — CIC can disengage for now",
           "oiDuration": "3h 42m",
           "channelCreatedAt": "2026-06-16 14:15:00 IST"
         },
@@ -2490,7 +2490,7 @@
           "isRed": false,
           "bridgeWithin10m": false,
           "resolvedAt": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Working)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Working)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 16:26:04 IST",
           "oiSource": "orgcs"
@@ -2506,7 +2506,7 @@
           "isRed": false,
           "bridgeWithin10m": true,
           "resolvedAt": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Working)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Working)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 16:42:34 IST",
           "oiSource": "orgcs"
@@ -2537,7 +2537,7 @@
           "isRed": false,
           "bridgeWithin10m": false,
           "resolvedAt": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Need More Information)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Need More Information)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 17:49:40 IST",
           "oiSource": "orgcs"
@@ -2568,7 +2568,7 @@
           "isRed": false,
           "bridgeWithin10m": true,
           "resolvedAt": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Need More Information)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Need More Information)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 18:29:21 IST",
           "oiSource": "orgcs"
@@ -2585,7 +2585,7 @@
           "bridgeWithin10m": false,
           "bridgeNA": "throttle",
           "resolvedAt": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Solution Provided)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Solution Provided)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 18:49:27 IST",
           "oiSource": "orgcs"
@@ -2599,150 +2599,6 @@
       "manager": "Shubha",
       "managerId": "U04999GSQ13",
       "cases": [
-        {
-          "caseNum": "473844696",
-          "account": "Acxiom LLC",
-          "product": "Sales-Email Delivery & Desktop Integrations",
-          "timeIST": "12:07 AM",
-          "quality": "PENDING",
-          "resolve": null,
-          "channelEngage": null,
-          "isRed": false,
-          "bridgeWithin10m": null,
-          "bridgeNA": null,
-          "resolvedAt": null,
-          "resolvedText": null,
-          "oiDuration": null,
-          "channelCreatedAt": "2026-06-17 00:07:45 IST"
-        },
-        {
-          "caseNum": "473844749",
-          "account": "Movida Locacao De Veiculos Sa",
-          "product": "Engagement-Email Deliverability",
-          "timeIST": "12:10 AM",
-          "quality": "PENDING",
-          "resolve": null,
-          "channelEngage": null,
-          "isRed": false,
-          "bridgeWithin10m": null,
-          "bridgeNA": null,
-          "resolvedAt": null,
-          "resolvedText": null,
-          "oiDuration": null,
-          "channelCreatedAt": "2026-06-17 00:10:56 IST"
-        },
-        {
-          "caseNum": "473844849",
-          "account": "Kaiser Foundation Hospitals",
-          "product": "Service-Digital Engagement",
-          "timeIST": "12:17 AM",
-          "quality": "PENDING",
-          "resolve": null,
-          "channelEngage": "No engagement",
-          "isRed": false,
-          "bridgeWithin10m": false,
-          "bridgeNA": null,
-          "resolvedAt": null,
-          "resolvedText": null,
-          "oiDuration": null,
-          "channelCreatedAt": "2026-06-17 00:17:00 IST"
-        },
-        {
-          "caseNum": "473844008",
-          "account": "Euromarket Designs Inc. (Crate & Barrel)",
-          "product": "Marketing-Email Studio",
-          "timeIST": "2:52 AM",
-          "quality": "MODERATE",
-          "resolve": null,
-          "channelEngage": "No engagement",
-          "isRed": false,
-          "bridgeWithin10m": false,
-          "bridgeNA": null,
-          "resolvedAt": null,
-          "resolvedText": "Product team confirmed Einstein Recommendations UI working as intended; catalog issue is customer-side data problem. Case downgraded.",
-          "oiDuration": null,
-          "channelCreatedAt": "2026-06-17 02:52:00 IST"
-        },
-        {
-          "caseNum": "473845955",
-          "account": "Electronic Arts Inc.",
-          "product": "Service-Digital Engagement",
-          "timeIST": "3:50 AM",
-          "quality": "MODERATE",
-          "resolve": null,
-          "channelEngage": "4m 16s",
-          "isRed": false,
-          "bridgeWithin10m": true,
-          "bridgeNA": null,
-          "resolvedAt": null,
-          "resolvedText": "Enhanced omni-channel routing disabled by product release job; added to exclusion list. Queue routing rule misconfiguration also resolved. Customer asked to close case.",
-          "oiDuration": null,
-          "channelCreatedAt": "2026-06-17 03:50:46 IST"
-        },
-        {
-          "caseNum": "473851236",
-          "account": "Hong Kong Telecommunications (HKT) Limited",
-          "product": "Industry-CPQ/Order Management",
-          "timeIST": "8:53 AM",
-          "quality": "PENDING",
-          "resolve": null,
-          "channelEngage": "6m 38s",
-          "isRed": false,
-          "bridgeWithin10m": false,
-          "bridgeNA": null,
-          "resolvedAt": null,
-          "resolvedText": "Orchestration plans failing to generate for Now TV provisioning during FIFA World Cup period. EPC cache cleared; monitoring ongoing.",
-          "oiDuration": null,
-          "channelCreatedAt": "2026-06-17 08:53:00 IST"
-        },
-        {
-          "caseNum": "473853466",
-          "account": "Stellantis Espa\u00f1a S.L.",
-          "product": "Service-Cases/Knowledge",
-          "timeIST": "11:50 AM",
-          "quality": "PENDING",
-          "resolve": null,
-          "channelEngage": "1m 43s",
-          "isRed": false,
-          "bridgeWithin10m": true,
-          "bridgeNA": null,
-          "resolvedAt": null,
-          "resolvedText": "Error creating Knowledge articles due to restricted managed package component. Awaiting vendor team availability for live troubleshooting.",
-          "oiDuration": null,
-          "channelCreatedAt": "2026-06-17 11:50:00 IST"
-        },
-        {
-          "caseNum": "473857606",
-          "account": "Joint Stock Commercial Bank for Foreign Trade of Vietnam (VietinBank)",
-          "product": "Unknown",
-          "timeIST": "11:12 AM",
-          "quality": "PENDING",
-          "resolve": null,
-          "channelEngage": null,
-          "isRed": false,
-          "bridgeWithin10m": null,
-          "bridgeNA": null,
-          "resolvedAt": null,
-          "resolvedText": null,
-          "oiDuration": null,
-          "channelCreatedAt": "2026-06-17 11:12:00 IST"
-        },
-        {
-          "caseNum": "473853782",
-          "account": "ERM Europe Ltd",
-          "product": "Sales-Developer Support",
-          "timeIST": "12:13 PM",
-          "quality": "PENDING",
-          "resolve": null,
-          "channelEngage": "No engagement",
-          "isRed": false,
-          "bridgeWithin10m": false,
-          "bridgeNA": null,
-          "resolvedAt": null,
-          "resolvedText": null,
-          "oiDuration": null,
-          "channelCreatedAt": "2026-06-17 12:13:00 IST"
-        },
         {
           "caseNum": "473854225",
           "account": "Visa U.S.A. Inc.",
@@ -2819,7 +2675,7 @@
           "bridgeWithin10m": true,
           "bridgeNA": null,
           "resolvedAt": null,
-          "resolvedText": "Certificate renewal blocked for services.jaguar.co.uk \u2014 domain configured on MRT not eCDN. Customer confirmed happy with existing approach; case mitigated.",
+          "resolvedText": "Certificate renewal blocked for services.jaguar.co.uk — domain configured on MRT not eCDN. Customer confirmed happy with existing approach; case mitigated.",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-17 14:56:29 IST"
         },
@@ -2902,7 +2758,7 @@
           "bridgeWithin10m": false,
           "bridgeNA": null,
           "resolvedAt": null,
-          "resolvedText": "CIC assessed as not a business-affecting Sev1 \u2014 LAP filings for MFA enforcement on test orgs, no production impact.",
+          "resolvedText": "CIC assessed as not a business-affecting Sev1 — LAP filings for MFA enforcement on test orgs, no production impact.",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-17 14:07:40 IST"
         },
@@ -2953,7 +2809,7 @@
           "bridgeWithin10m": false,
           "bridgeNA": null,
           "resolvedAt": null,
-          "resolvedText": "NA237 performance degradation \u2014 trust incident #20004111 raised; linked to incident channel icc-91757097.",
+          "resolvedText": "NA237 performance degradation — trust incident #20004111 raised; linked to incident channel icc-91757097.",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-17 17:31:20 IST"
         },
@@ -3004,7 +2860,7 @@
           "bridgeWithin10m": true,
           "bridgeNA": null,
           "resolvedAt": null,
-          "resolvedText": "Flow unable to set field to null \u2014 assessed non-critical, production fully operational. CIC Benita Lennon disengaged.",
+          "resolvedText": "Flow unable to set field to null — assessed non-critical, production fully operational. CIC Benita Lennon disengaged.",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-17 18:11:05 IST"
         },
