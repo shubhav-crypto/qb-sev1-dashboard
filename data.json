@@ -2626,10 +2626,11 @@
           "isRed": true,
           "bridgeWithin10m": true,
           "bridgeNA": null,
-          "resolvedAt": null,
+          "resolvedAt": "2026-06-17 13:41:52 IST",
           "resolvedText": "Unable to see reports for Einstein Conversation Insights; sandbox issue confirmed. CIC disengaged.",
-          "oiDuration": null,
-          "channelCreatedAt": "2026-06-17 13:09:44 IST"
+          "oiDuration": "32m 8s",
+          "channelCreatedAt": "2026-06-17 13:09:44 IST",
+          "oiSource": "orgcs"
         },
         {
           "caseNum": "473856779",
@@ -2642,10 +2643,11 @@
           "isRed": false,
           "bridgeWithin10m": true,
           "bridgeNA": null,
-          "resolvedAt": null,
+          "resolvedAt": "2026-06-17 15:36:20 IST",
           "resolvedText": "Certificate renewal blocked for services.jaguar.co.uk — domain configured on MRT not eCDN. Customer confirmed happy with existing approach; case mitigated.",
-          "oiDuration": null,
-          "channelCreatedAt": "2026-06-17 14:56:29 IST"
+          "oiDuration": "39m 51s",
+          "channelCreatedAt": "2026-06-17 14:56:29 IST",
+          "oiSource": "orgcs"
         },
         {
           "caseNum": "473857756",
@@ -2674,10 +2676,11 @@
           "isRed": false,
           "bridgeWithin10m": false,
           "bridgeNA": "lap",
-          "resolvedAt": null,
+          "resolvedAt": "2026-06-17 16:39:24 IST",
           "resolvedText": "Daily scheduled Apex job limit exhausted (100/day). LAP submitted to increase limit to 110 for 31 days. Mitigated.",
-          "oiDuration": null,
-          "channelCreatedAt": "2026-06-17 16:07:00 IST"
+          "oiDuration": "32m 24s",
+          "channelCreatedAt": "2026-06-17 16:07:00 IST",
+          "oiSource": "orgcs"
         },
         {
           "caseNum": "473843612",
@@ -2691,10 +2694,11 @@
           "isRed": false,
           "bridgeWithin10m": false,
           "bridgeNA": null,
-          "resolvedAt": null,
+          "resolvedAt": "2026-06-17 13:58:26 IST",
           "resolvedText": "Re-alert of Jun 16 case; team monitoring; case downgraded to Sev2 by ~02:04 Jun 17.",
-          "oiDuration": null,
-          "channelCreatedAt": "2026-06-16 23:06:07 IST"
+          "oiDuration": "14h 52m",
+          "channelCreatedAt": "2026-06-16 23:06:07 IST",
+          "oiSource": "orgcs"
         },
         {
           "caseNum": "473855538",
@@ -2708,10 +2712,11 @@
           "isRed": false,
           "bridgeWithin10m": false,
           "bridgeNA": null,
-          "resolvedAt": null,
+          "resolvedAt": "2026-06-17 20:44:16 IST",
           "resolvedText": "Issue resolved by giving appropriate access. CIC Benita Lennon engaged; bridge launched.",
-          "oiDuration": null,
-          "channelCreatedAt": "2026-06-17 13:49:44 IST"
+          "oiDuration": "6h 54m",
+          "channelCreatedAt": "2026-06-17 13:49:44 IST",
+          "oiSource": "orgcs"
         },
         {
           "caseNum": "473855848",
@@ -2725,10 +2730,11 @@
           "isRed": false,
           "bridgeWithin10m": false,
           "bridgeNA": null,
-          "resolvedAt": null,
+          "resolvedAt": "2026-06-17 15:00:59 IST",
           "resolvedText": "CIC assessed as not a business-affecting Sev1 — LAP filings for MFA enforcement on test orgs, no production impact.",
-          "oiDuration": null,
-          "channelCreatedAt": "2026-06-17 14:07:40 IST"
+          "oiDuration": "53m 19s",
+          "channelCreatedAt": "2026-06-17 14:07:40 IST",
+          "oiSource": "orgcs"
         },
         {
           "caseNum": "473770521",
@@ -2776,10 +2782,11 @@
           "isRed": false,
           "bridgeWithin10m": false,
           "bridgeNA": null,
-          "resolvedAt": null,
+          "resolvedAt": "2026-06-17 22:58:34 IST",
           "resolvedText": "NA237 performance degradation — trust incident #20004111 raised; linked to incident channel icc-91757097.",
-          "oiDuration": null,
-          "channelCreatedAt": "2026-06-17 17:31:20 IST"
+          "oiDuration": "5h 27m",
+          "channelCreatedAt": "2026-06-17 17:31:20 IST",
+          "oiSource": "orgcs"
         },
         {
           "caseNum": "473372581",
@@ -2810,10 +2817,11 @@
           "isRed": false,
           "bridgeWithin10m": false,
           "bridgeNA": null,
-          "resolvedAt": null,
+          "resolvedAt": "2026-06-17 19:17:00 IST",
           "resolvedText": "Root cause: external mail forwarding issue (not Salesforce-side). Victor Ashby posted full resolution summary; case closed.",
-          "oiDuration": null,
-          "channelCreatedAt": "2026-06-17 18:07:34 IST"
+          "oiDuration": "1h 9m",
+          "channelCreatedAt": "2026-06-17 18:07:34 IST",
+          "oiSource": "orgcs"
         },
         {
           "caseNum": "473860190",
@@ -2827,10 +2835,11 @@
           "isRed": false,
           "bridgeWithin10m": true,
           "bridgeNA": null,
-          "resolvedAt": null,
+          "resolvedAt": "2026-06-18 12:52:52 IST",
           "resolvedText": "Flow unable to set field to null — assessed non-critical, production fully operational. CIC Benita Lennon disengaged.",
-          "oiDuration": null,
-          "channelCreatedAt": "2026-06-17 18:11:05 IST"
+          "oiDuration": "18h 41m",
+          "channelCreatedAt": "2026-06-17 18:11:05 IST",
+          "oiSource": "orgcs"
         },
         {
           "caseNum": "473860267",
