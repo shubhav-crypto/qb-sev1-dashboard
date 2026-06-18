@@ -1,13 +1,9 @@
 name: Live Dashboard Update
 
 on:
-  # Run every 5 minutes during QB hours (12:30 PM – 7:30 PM IST)
-  # IST = UTC+5:30, so 12:30 PM IST = 07:00 UTC, 7:30 PM IST = 14:00 UTC
-  # Cron runs Mon–Sat (QB runs Mon–Sat)
   schedule:
-    - cron: "*/5 7-14 * * 1-6"    # Mon–Sat, 07:00–14:59 UTC (12:30–20:29 IST)
-
-  # Also allow manual trigger (e.g. to force-refresh or run on a specific date)
+    - cron: "*/5 7-14 * * 1-6"   # Every 5 min, 12:30–8:30 PM IST (Mon–Sat)
+    - cron: "0 16 * * 1-6"       # Once at 9:30 PM IST (4:00 PM UTC) for EOD check
   workflow_dispatch:
     inputs:
       target_date:
@@ -21,9 +17,8 @@ env:
 jobs:
   update:
     runs-on: ubuntu-latest
-
     permissions:
-      contents: write   # needed to push data.json back to repo
+      contents: write
 
     steps:
       - name: Checkout
@@ -39,6 +34,8 @@ jobs:
       - name: Run updater
         env:
           SLACK_USER_TOKEN: ${{ secrets.SLACK_USER_TOKEN }}
+          SF_INSTANCE_URL: ${{ secrets.SF_INSTANCE_URL }}
+          SF_ACCESS_TOKEN: ${{ secrets.SF_ACCESS_TOKEN }}
           TARGET_DATE: ${{ github.event.inputs.target_date }}
         run: |
           if [ -n "$TARGET_DATE" ]; then
