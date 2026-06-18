@@ -621,9 +621,9 @@ function renderKPIs(){
   // Bridge compliance — denominator = cases where bridge was genuinely required
   // Excluded from denominator: bridgeNA set (throttle/lap/monitoring/howto/sandbox) + null (no CIC engage / disengaged / untracked)
   const allCases=DB.days.flatMap(function(d){return d.cases;});
-  const inScope=allCases.filter(function(c){return !c.bridgeNA&&c.bridgeWithin10m!==null;});
-  const bridgeYes=inScope.filter(function(c){return c.bridgeWithin10m===true;}).length;
-  const bridgeNo=inScope.filter(function(c){return c.bridgeWithin10m===false;}).length;
+  const inScope=allCases.filter(function(c){return !c.bridgeNA&&c.bridgeWithin15m!==null;});
+  const bridgeYes=inScope.filter(function(c){return c.bridgeWithin15m===true;}).length;
+  const bridgeNo=inScope.filter(function(c){return c.bridgeWithin15m===false;}).length;
   const bridgeTotal=bridgeYes+bridgeNo;
   const bridgePct=bridgeTotal>0?Math.round(bridgeYes/bridgeTotal*100):null;
   // Excluded bucket breakdown
@@ -633,9 +633,9 @@ function renderKPIs(){
   const exclMonitor=exclNA.filter(function(c){return c.bridgeNA==='monitoring';}).length;
   const exclHowto=exclNA.filter(function(c){return c.bridgeNA==='howto';}).length;
   const exclSandbox=exclNA.filter(function(c){return c.bridgeNA==='sandbox';}).length;
-  const exclNoCic=allCases.filter(function(c){return !c.bridgeNA&&c.bridgeWithin10m===null&&!c.channelEngage;}).length;
-  const exclDiseng=allCases.filter(function(c){return !c.bridgeNA&&c.bridgeWithin10m===null&&c.channelEngage==='No engagement';}).length;
-  const exclNoData=allCases.filter(function(c){return !c.bridgeNA&&c.bridgeWithin10m===null&&c.channelEngage&&c.channelEngage!=='No engagement';}).length;
+  const exclNoCic=allCases.filter(function(c){return !c.bridgeNA&&c.bridgeWithin15m===null&&!c.channelEngage;}).length;
+  const exclDiseng=allCases.filter(function(c){return !c.bridgeNA&&c.bridgeWithin15m===null&&c.channelEngage==='No engagement';}).length;
+  const exclNoData=allCases.filter(function(c){return !c.bridgeNA&&c.bridgeWithin15m===null&&c.channelEngage&&c.channelEngage!=='No engagement';}).length;
   const exclNAParts=[];
   if(exclThrottle)exclNAParts.push(exclThrottle+' throttle');
   if(exclLap)exclNAParts.push(exclLap+' LAP');
@@ -870,7 +870,7 @@ function buildDayPanel(day,container){
   html+='<th style="white-space:nowrap;cursor:help;" title="Time from PD alert to QB Manager Resolved">Alert Resolve</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Time from Sev1 channel creation to QB Manager first text">Channel Engage</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Account has a Red Account record in OrgCS">Red Acct</th>';
-  html+='<th style="white-space:nowrap;cursor:help;" title="Customer bridge (Meet/WebEx/Teams/Zoom) initiated within 10 min of channel creation. Every Sev1 has a channel — null means CIC did not engage or bridge data was not captured.">Bridge ≤10m</th>';
+  html+='<th style="white-space:nowrap;cursor:help;" title="Customer bridge (Meet/WebEx/Teams/Zoom) initiated within 15 min of channel creation. Every Sev1 has a channel — null means CIC did not engage or bridge data was not captured.">Bridge ≤15m</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Time from Sev1 channel creation to customer confirmed out-of-impact (first explicit OOI/resolved/mitigated message on channel)">OI Duration</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="QB quality assessment — click to update. Changes are held locally and shown in the export patch.">Quality</th>';
   html+='</tr></thead><tbody>';
@@ -894,10 +894,10 @@ function buildDayPanel(day,container){
       const border=NA_BORDER[c.bridgeNA]||'rgba(148,163,184,.25)';
       const col=NA_TEXT[c.bridgeNA]||'#94a3b8';
       bridgeCell='<td style="white-space:nowrap;font-size:11px;"><span style="background:'+bg+';color:'+col+';border-radius:5px;padding:2px 7px;border:1px solid '+border+';" title="Bridge not required — excluded from compliance denominator">'+label+'</span></td>';
-    }else if(c.bridgeWithin10m===true){
-      bridgeCell='<td style="text-align:center;" title="Bridge initiated within 10 min of channel creation">✅</td>';
-    }else if(c.bridgeWithin10m===false){
-      bridgeCell='<td style="text-align:center;" title="No bridge within 10 min of channel creation">❌</td>';
+    }else if(c.bridgeWithin15m===true){
+      bridgeCell='<td style="text-align:center;" title="Bridge initiated within 15 min of channel creation">✅</td>';
+    }else if(c.bridgeWithin15m===false){
+      bridgeCell='<td style="text-align:center;" title="No bridge within 15 min of channel creation">❌</td>';
     }else{
       // null — bridge data not captured; categorise by whether CIC engaged at all
       const ce=c.channelEngage;
