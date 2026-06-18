@@ -2612,7 +2612,7 @@
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": "Single user issue with Tableau Desktop 2025.3.1; lower version workaround available. No business impact. Customer to schedule troubleshooting session.",
-          "oiDuration": null,
+          "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-17 12:47:36 IST"
         },
         {
@@ -2662,7 +2662,7 @@
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": "Security incident: data breach via Klue Battlecards Salesforce integration. Redirected to Security Incident team via ask-scct.",
-          "oiDuration": null,
+          "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-17 15:51:23 IST"
         },
         {
@@ -2750,7 +2750,7 @@
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": "Re-alert of Jun 12 case; MFA/Phishing-Resistant MFA clarification for Marken (NTT DATA subsidiary). Pending customer response.",
-          "oiDuration": null,
+          "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-12 10:46:50 IST"
         },
         {
@@ -2767,7 +2767,7 @@
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": "Complex row lock investigation; Core DB SME Oleg Korotkov engaged; CIC Dominika Barrett disengaged with comprehensive CS/BI/NS summary.",
-          "oiDuration": null,
+          "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-17 17:29:10 IST"
         },
         {
@@ -2802,7 +2802,7 @@
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": "Facebook messages not arriving; blocked on customer's Meta developer admin access. Management mediation by Shubha at 18:33.",
-          "oiDuration": null,
+          "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-17 17:41:31 IST"
         },
         {
@@ -2855,7 +2855,7 @@
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": "DevOps Center blocking deployment. CIC Kranti Bharath Tadipatri engaged; bridge launched.",
-          "oiDuration": null,
+          "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-17 18:37:03 IST"
         }
       ],
