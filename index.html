@@ -456,31 +456,7 @@ function qBadge(q){
 function mgrChip(name){
   return`<span class="manager-chip ${CHIP_CLS[name]||''}">${name}</span>`;
 }
-function oiCell(c){
-  if(!c.oiDuration&&!c.resolvedAt){
-    // Still-open confirmed by OrgCS
-    if(c.oiSource==='orgcs'&&c.resolvedText){
-      const tt=c.resolvedText.substring(0,120);
-      return`<td style="white-space:nowrap;" title="${tt.replace(/"/g,'&quot;')}"><span style="background:rgba(245,158,11,.10);color:#b45309;border:1px solid rgba(245,158,11,.25);border-radius:5px;padding:2px 8px;font-size:11px;font-weight:500;">open <sup style="font-size:9px;opacity:.7;">OrgCS</sup></span></td>`;
-    }
-    return'<td style="text-align:center;color:var(--text-muted);font-size:11px;" title="No out-of-impact signal found">—</td>';
-  }
-  const dur=c.oiDuration;
-  const tooltip=(c.resolvedText?c.resolvedText.substring(0,120):'Out of impact confirmed');
-  // Colour by duration: ≤2h green, ≤8h yellow, >8h red
-  const mins=dur?((d)=>{
-    let t=0;
-    const hm=d.match(/(\d+)d/);if(hm)t+=parseInt(hm[1])*1440;
-    const hmatch=d.match(/(\d+)h/);if(hmatch)t+=parseInt(hmatch[1])*60;
-    const mmatch=d.match(/(\d+)m/);if(mmatch)t+=parseInt(mmatch[1]);
-    return t;
-  })(dur):9999;
-  const bg=mins<=120?'rgba(34,197,94,.12)':mins<=480?'rgba(245,158,11,.12)':'rgba(220,38,38,.1)';
-  const col=mins<=120?'#15803d':mins<=480?'#b45309':'#dc2626';
-  const border=mins<=120?'rgba(34,197,94,.25)':mins<=480?'rgba(245,158,11,.3)':'rgba(220,38,38,.25)';
-  const srcBadge=c.oiSource==='orgcs'?`<sup style="font-size:9px;opacity:.6;margin-left:2px;">OrgCS</sup>`:'';
-  return`<td style="white-space:nowrap;" title="${tooltip.replace(/"/g,'&quot;')}"><span style="background:${bg};color:${col};border:1px solid ${border};border-radius:5px;padding:2px 8px;font-size:12px;font-weight:600;">${dur}${srcBadge}</span></td>`;
-}
+
 function groupByWeek(days){
   const weeks=[];let cur=[];
   for(const d of days){
@@ -871,7 +847,7 @@ function buildDayPanel(day,container){
   html+='<th style="white-space:nowrap;cursor:help;" title="Time from Sev1 channel creation to QB Manager first text">Channel Engage</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Account has a Red Account record in OrgCS">Red Acct</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Customer bridge (Meet/WebEx/Teams/Zoom) initiated within 15 min of channel creation. Every Sev1 has a channel — null means CIC did not engage or bridge data was not captured.">Bridge ≤15m</th>';
-  html+='<th style="white-space:nowrap;cursor:help;" title="Time from Sev1 channel creation to customer confirmed out-of-impact (first explicit OOI/resolved/mitigated message on channel)">OI Duration</th>';
+
   html+='<th style="white-space:nowrap;cursor:help;" title="QB quality assessment — click to update. Changes are held locally and shown in the export patch.">Quality</th>';
   html+='</tr></thead><tbody>';
   const mciSet=mciCases[day.date]||[];
@@ -926,7 +902,7 @@ function buildDayPanel(day,container){
       +'<td class="account-name">'+mciTag+c.account+'</td><td class="product-cell">'+c.product+'</td>'
       +'<td class="time-cell">'+c.timeIST+'</td>'
       +'<td><span class="manager-chip '+chipCls+'">'+mgr+'</span></td>'
-      +rtCell(c.ack)+rtCell(c.resolve)+rtCell(c.channelEngage,true,true,c.caseNum)+redCell+bridgeCell+oiCell(c)+qHtml+'</tr>';
+      +rtCell(c.ack)+rtCell(c.resolve)+rtCell(c.channelEngage,true,true,c.caseNum)+redCell+bridgeCell+qHtml+'</tr>';
   });
   html+='</tbody></table></div>';
   container.innerHTML=html;
