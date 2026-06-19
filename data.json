@@ -3554,7 +3554,17 @@
           "manager": "Jyothirmayee"
         }
       ],
-      "eodDone": true
+      "eodDone": true,
+      "callouts": [
+        {
+          "type": "mci",
+          "text": "⚡ Active MCI: Lightning Record Page Error | $A.componentService.hasDefinition — CIR: #icc-91807036 · GUS Bug (fix): W-22994699 · SRE: W-23065279 · PD: Q16E8V2F9NT71W"
+        },
+        {
+          "type": "exec",
+          "text": "👁 Exec Visibility — Continue to monitor: lululemon athletica Canada, Inc."
+        }
+      ]
     }
   ]
 }
