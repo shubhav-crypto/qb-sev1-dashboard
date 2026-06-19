@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated": "2026-06-19T09:00:00+05:30",
-    "totalCases": 233,
-    "daysTracked": 14
+    "generated": "2026-06-19T16:10:00+05:30",
+    "totalCases": 246,
+    "daysTracked": 19
   },
   "schedule": {
     "2026-06-01": {
@@ -4052,6 +4052,165 @@
         {
           "type": "exec",
           "text": "👁 Exec Visibility — Continue to monitor: lululemon athletica Canada, Inc."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-19",
+      "label": "Jun 19",
+      "dayOfWeek": "Thu",
+      "isWeekend": false,
+      "manager": "Sai Vikram",
+      "canvasId": null,
+      "eodDone": false,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "473887467",
+          "account": "GHO Warm handover to EMEA",
+          "product": "Developer Support",
+          "timeIST": "12:43 PM",
+          "isRed": false,
+          "resolve": "Resolved by Sai Vikram",
+          "channelEngage": false,
+          "bridgeWithin15m": false,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "473623991",
+          "account": "GHO Warm handover to EMEA",
+          "product": "Digital Engagement",
+          "timeIST": "12:45 PM",
+          "isRed": false,
+          "resolve": "Resolved by Sai Vikram",
+          "channelEngage": false,
+          "bridgeWithin15m": false,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "473889523",
+          "account": "GHO Warm handover to EMEA",
+          "product": "Service Cloud Voice",
+          "timeIST": "12:47 PM",
+          "isRed": true,
+          "resolve": null,
+          "channelEngage": false,
+          "bridgeWithin15m": false,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "473418567",
+          "account": "Zalando SE - ZCare (Ztg8)",
+          "product": "Developer Support",
+          "timeIST": "12:58 PM",
+          "isRed": true,
+          "resolve": null,
+          "channelEngage": false,
+          "bridgeWithin15m": false,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "473890235",
+          "account": "AbbVie",
+          "product": "Experience Management and Workspaces",
+          "timeIST": "12:58 PM",
+          "isRed": true,
+          "resolve": null,
+          "channelEngage": false,
+          "bridgeWithin15m": false,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "473809862",
+          "account": "The Boeing Company",
+          "product": "Mobile apps",
+          "timeIST": "1:01 PM",
+          "isRed": true,
+          "resolve": null,
+          "channelEngage": false,
+          "bridgeWithin15m": false,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "473877651",
+          "account": "Thelem Assurances",
+          "product": "Developer Support",
+          "timeIST": "1:07 PM",
+          "isRed": false,
+          "resolve": "Resolved by Sai Vikram",
+          "channelEngage": false,
+          "bridgeWithin15m": false,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "473372581",
+          "account": "GHO Warm handover to EMEA",
+          "product": "Digital Engagement",
+          "timeIST": "1:07 PM",
+          "isRed": false,
+          "resolve": "Resolved by Sai Vikram",
+          "channelEngage": false,
+          "bridgeWithin15m": false,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "473885111",
+          "account": "GHO Warm handover to EMEA",
+          "product": "Digital Engagement",
+          "timeIST": "1:13 PM",
+          "isRed": true,
+          "resolve": null,
+          "channelEngage": false,
+          "bridgeWithin15m": false,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "473890585",
+          "account": "The Home Depot U.S.A.",
+          "product": "Digital Engagement",
+          "timeIST": "1:37 PM",
+          "isRed": false,
+          "resolve": "Resolved by Sai Vikram",
+          "channelEngage": true,
+          "bridgeWithin15m": true,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-06-19 13:40 IST"
+        },
+        {
+          "caseNum": "473890764",
+          "account": "Autodesk, Inc.",
+          "product": "Service Cloud Voice",
+          "timeIST": "1:56 PM",
+          "isRed": true,
+          "resolve": null,
+          "channelEngage": true,
+          "bridgeWithin15m": true,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-06-19 13:58 IST"
+        },
+        {
+          "caseNum": "473890789",
+          "account": "Thelem Assurances",
+          "product": "Developer Support",
+          "timeIST": "1:58 PM",
+          "isRed": true,
+          "resolve": null,
+          "channelEngage": true,
+          "bridgeWithin15m": true,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-06-19 14:01 IST"
+        },
+        {
+          "caseNum": "473891341",
+          "account": "ADITYA BIRLA FINANCIAL SHARED SERVICES LIMITED",
+          "product": "Developer Support",
+          "timeIST": "2:55 PM",
+          "isRed": false,
+          "resolve": "Resolved by Sai Vikram",
+          "channelEngage": true,
+          "bridgeWithin15m": true,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-06-19 14:59 IST"
         }
       ]
     }
