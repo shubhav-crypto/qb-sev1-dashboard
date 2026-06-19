@@ -168,6 +168,7 @@
           <th style="padding:12px 16px;text-align:center;font-weight:600;color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;">Avg Alert Resolve</th>
           <th style="padding:12px 16px;text-align:center;font-weight:600;color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;">Avg Channel Engage</th>
           <th style="padding:12px 16px;text-align:center;font-weight:600;color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;">EOD Post</th>
+          <th id="summaryCalloutsHeader" style="padding:12px 16px;text-align:left;font-weight:600;color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;">Callouts</th>
         </tr>
       </thead>
       <tbody id="summaryBody"></tbody>
@@ -606,9 +607,17 @@ function renderWeekCards(){
 }
 
 // ── SUMMARY TABLE ─────────────────────────────────────────────────────────────
+const CALLOUT_STYLE={
+  mci: {bg:'rgba(124,77,255,.10)',border:'rgba(124,77,255,.25)',color:'#a78bfa'},
+  exec:{bg:'rgba(245,158,11,.10)',border:'rgba(245,158,11,.25)',color:'#b45309'},
+  warn:{bg:'rgba(220,38,38,.10)',border:'rgba(220,38,38,.25)',color:'#dc2626'},
+};
 function renderSummaryTable(){
   const mode=document.getElementById('summaryMode').value;
   document.getElementById('summaryPeriodHeader').textContent=mode==='daily'?'Date':mode==='wow'?'Week':'Month';
+  // Show/hide the Callouts column header in non-daily modes
+  const calloutsHeader=document.getElementById('summaryCalloutsHeader');
+  if(calloutsHeader)calloutsHeader.style.display=mode==='daily'?'':'none';
   let rows=[];
   if(mode==='daily'){
     rows=DB.days.map(d=>({label:d.label,manager:d.manager,cases:d.cases,eodDone:d.eodDone,eodCount:d.eodDone?1:0,eodTotal:1,day:d}));
@@ -626,7 +635,6 @@ function renderSummaryTable(){
     rows=[{label:'Jun 2026',manager:'All',cases:allDays.flatMap(d=>d.cases),eodDone:allDays.every(d=>d.eodDone),eodCount:allDays.filter(d=>d.eodDone).length,eodTotal:allDays.length}];
   }
   const tbody=document.getElementById('summaryBody');tbody.innerHTML='';
-  const RED=30*60;
   rows.forEach((row,ri)=>{
     const{cases}=row,total=cases.length;
     const avgRes=fmtSecs(avgSeconds(cases.map(c=>c.resolve).filter(Boolean)));
@@ -634,7 +642,7 @@ function renderSummaryTable(){
     const mgrHtml=row.manager!=='All'?row.manager.split(' / ').map(m=>mgrChip(m.trim())).join(' '):'—';
     const tr=document.createElement('tr');
     tr.style.cssText=ri%2===0?'':'background:rgba(241,245,249,.5)';
-    // EOD cell: daily → ✅/—, week/month → "3/5 ✅" count
+    // EOD cell
     let eodHtml;
     if(mode==='daily'){
       eodHtml=row.eodDone
@@ -645,29 +653,27 @@ function renderSummaryTable(){
       eodHtml=`<span style="font-weight:600;color:${all?'#16a34a':c===0?'#94a3b8':'#d97706'};">${c}/${t}</span>`
         +(all?' <span style="font-size:14px;">✅</span>':'');
     }
+    // Callouts cell — inline pills, daily view only
+    let calloutCell='';
+    if(mode==='daily'){
+      const co=row.day&&row.day.callouts;
+      if(co&&co.length){
+        const pills=co.map(function(c){
+          const s=CALLOUT_STYLE[c.type]||CALLOUT_STYLE.warn;
+          return '<span style="display:inline-flex;align-items:center;background:'+s.bg+';border:1px solid '+s.border+';border-radius:6px;padding:3px 9px;font-size:11px;font-weight:500;color:'+s.color+';white-space:normal;line-height:1.4;">'+c.text+'</span>';
+        }).join('');
+        calloutCell='<td style="padding:8px 16px;max-width:340px;"><div style="display:flex;flex-direction:column;gap:4px;">'+pills+'</div></td>';
+      }else{
+        calloutCell='<td style="padding:12px 16px;color:#cbd5e1;font-size:11px;">—</td>';
+      }
+    }
     tr.innerHTML=`<td style="padding:12px 16px;font-weight:600;">${row.label}</td>
       <td style="padding:12px 16px;">${mgrHtml}</td>
       <td style="padding:12px 16px;text-align:center;font-weight:700;color:var(--accent);">${total}</td>
       <td style="padding:12px 16px;text-align:center;font-size:12px;color:var(--text-muted);">${avgRes}</td>
       <td style="padding:12px 16px;text-align:center;font-size:12px;color:var(--text-muted);">${avgEng}</td>
-      <td style="padding:12px 16px;text-align:center;">${eodHtml}</td>`;
+      <td style="padding:12px 16px;text-align:center;">${eodHtml}</td>${calloutCell}`;
     tbody.appendChild(tr);
-    // Callout sub-row (daily view only, when callouts exist on the day)
-    if(mode==='daily' && row.day && row.day.callouts && row.day.callouts.length){
-      const CALLOUT_STYLE={
-        mci: {bg:'rgba(124,77,255,.07)',border:'rgba(124,77,255,.2)',color:'#a78bfa',icon:'⚡'},
-        exec:{bg:'rgba(245,158,11,.07)',border:'rgba(245,158,11,.2)',color:'#d97706',icon:'👁'},
-        warn:{bg:'rgba(220,38,38,.07)',border:'rgba(220,38,38,.2)',color:'#dc2626',icon:'⚠️'},
-      };
-      const calloutHtml = row.day.callouts.map(function(co){
-        const s=CALLOUT_STYLE[co.type]||CALLOUT_STYLE.warn;
-        return `<div style="background:${s.bg};border:1px solid ${s.border};border-radius:7px;padding:6px 12px;font-size:12px;color:${s.color};font-weight:500;line-height:1.5;">${co.text}</div>`;
-      }).join('');
-      const calloutRow=document.createElement('tr');
-      calloutRow.style.cssText=ri%2===0?'':'background:rgba(241,245,249,.5)';
-      calloutRow.innerHTML=`<td colspan="6" style="padding:4px 16px 10px 16px;"><div style="display:flex;flex-direction:column;gap:5px;">${calloutHtml}</div></td>`;
-      tbody.appendChild(calloutRow);
-    }
   });
 }
 
