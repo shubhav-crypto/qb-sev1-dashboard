@@ -112,34 +112,6 @@
   .weekend-has-cases{display:inline-flex;align-items:center;gap:5px;background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.25);border-radius:6px;padding:4px 10px;font-size:12px;font-weight:600;color:#d97706;margin-bottom:6px}
   .weekend-note{font-size:11px;color:#94a3b8;line-height:1.4}
 
-  /* ── Inline quality radio ─────────────────────────────────────────── */
-  .q-group{display:inline-flex;gap:2px;}
-  .q-opt{border:1px solid var(--border);border-radius:5px;padding:3px 9px;font-size:12px;font-weight:600;cursor:pointer;background:var(--surface2);color:var(--text-muted);opacity:.35;line-height:1.5;transition:all .1s;}
-  .q-opt:hover{opacity:.7;}
-  .q-opt.qs-STRONG{background:rgba(22,163,74,.13);color:#16a34a;border-color:rgba(22,163,74,.3);opacity:1;}
-  .q-opt.qs-MODERATE{background:rgba(217,119,6,.12);color:#d97706;border-color:rgba(217,119,6,.3);opacity:1;}
-  .q-opt.qs-NEEDS{background:rgba(220,38,38,.1);color:#dc2626;border-color:rgba(220,38,38,.25);opacity:1;}
-  .q-opt.qs-PENDING{background:rgba(148,163,184,.08);color:#94a3b8;border-color:var(--border);opacity:1;}
-
-  /* ── Floating patch badge ─────────────────────────────────────────── */
-  #patchBadge{position:fixed;bottom:24px;right:24px;background:#0f172a;color:#f1f5f9;padding:11px 18px;border-radius:12px;font-size:13px;font-weight:600;z-index:1000;display:none;box-shadow:0 6px 28px rgba(0,0,0,.55);cursor:pointer;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.1);}
-  #patchBadge.vis{display:flex;}
-  .pb-count{background:#3b82f6;border-radius:20px;padding:2px 9px;font-size:12px;}
-
-  /* ── Export / patch modal ─────────────────────────────────────────── */
-  #patchModal{position:fixed;inset:0;background:rgba(15,23,42,.65);z-index:9000;display:none;align-items:center;justify-content:center;backdrop-filter:blur(4px);}
-  #patchModal.vis{display:flex;}
-  .pm-box{background:#fff;border-radius:16px;padding:28px;max-width:640px;width:92%;box-shadow:0 20px 60px rgba(0,0,0,.35);max-height:85vh;overflow-y:auto;}
-  .pm-title{font-size:16px;font-weight:700;margin-bottom:6px;}
-  .pm-sub{font-size:12px;color:var(--text-muted);margin-bottom:14px;}
-  .pm-pre{background:#0f172a;color:#7dd3fc;border-radius:10px;padding:16px;font-size:12px;font-family:'SFMono-Regular',Consolas,monospace;overflow-x:auto;line-height:1.6;max-height:280px;overflow-y:auto;margin-bottom:16px;white-space:pre-wrap;word-break:break-all;}
-  .pm-hint{font-size:12px;color:var(--text-muted);line-height:1.7;background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:12px 14px;margin-bottom:16px;}
-  .pm-btns{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap;}
-  .pm-btn{border:none;border-radius:8px;padding:9px 18px;font-size:13px;font-weight:600;cursor:pointer;transition:opacity .1s;}
-  .pm-btn:hover{opacity:.85;}
-  .pm-btn.copy{background:var(--accent);color:#fff;}
-  .pm-btn.clear{background:rgba(220,38,38,.1);color:#dc2626;border:1px solid rgba(220,38,38,.2);}
-  .pm-btn.dismiss{background:var(--surface2);color:var(--text);border:1px solid var(--border);}
 
 </style>
 </head>
@@ -239,31 +211,6 @@
   </div>
 
   <div id="footer" style="text-align:center;color:var(--text-muted);font-size:12px;padding:24px 0 16px;border-top:1px solid var(--border);margin-top:12px;"></div>
-</div>
-
-<!-- Floating patch badge -->
-<div id="patchBadge" onclick="openPatchModal()">
-  <span>🟡 Unsaved quality changes</span>
-  <span class="pb-count" id="patchCount">0</span>
-  <span style="font-size:11px;opacity:.65;">Click to export</span>
-</div>
-
-<!-- Patch export modal -->
-<div id="patchModal">
-  <div class="pm-box">
-    <div class="pm-title">Export Quality Updates</div>
-    <div class="pm-sub">Copy the JSON snippet below and apply it to the relevant cases in <code>data.json</code>.</div>
-    <pre class="pm-pre" id="patchPre"></pre>
-    <div class="pm-hint">
-      <strong>How to apply:</strong> Open <code>data.json</code>, find each case by <code>caseNum</code>, and set its <code>"quality"</code> field to the value shown.<br>
-      Or run: <code>python3 apply_quality_patch.py</code> if you have the patch script.
-    </div>
-    <div class="pm-btns">
-      <button class="pm-btn copy" onclick="copyPatch()">📋 Copy JSON</button>
-      <button class="pm-btn clear" onclick="clearPatches()">🗑 Clear all changes</button>
-      <button class="pm-btn dismiss" onclick="closePatchModal()">Dismiss</button>
-    </div>
-  </div>
 </div>
 
 <div id="modTip" style="position:fixed;background:#0f172a;color:#f1f5f9;font-size:12px;font-weight:400;padding:8px 13px;border-radius:8px;max-width:300px;line-height:1.55;z-index:9999;pointer-events:none;display:none;border:1px solid rgba(255,255,255,.13);box-shadow:0 4px 18px rgba(0,0,0,.38);"></div>
@@ -445,13 +392,6 @@ function fmtSecs(s){
   if(s===null)return'—';
   const h=Math.floor(s/3600),m=Math.floor((s%3600)/60),sc=s%60;
   const p=[];if(h)p.push(h+'h');if(m)p.push(m+'m');if(sc||!p.length)p.push(sc+'s');return p.join(' ');
-}
-function qBadge(q){
-  if(!q||q==='PENDING')return'<span class="badge pending">— Pending</span>';
-  if(q==='STRONG')return'<span class="badge strong">🟢 STRONG</span>';
-  if(q==='MODERATE')return'<span class="badge moderate">🟡 MODERATE</span>';
-  if(q==='NEEDS')return'<span class="badge needs">🔴 NEEDS FOLLOW-UP</span>';
-  return`<span class="badge pending">${q}</span>`;
 }
 function mgrChip(name){
   return`<span class="manager-chip ${CHIP_CLS[name]||''}">${name}</span>`;
@@ -848,7 +788,6 @@ function buildDayPanel(day,container){
   html+='<th style="white-space:nowrap;cursor:help;" title="Account has a Red Account record in OrgCS">Red Acct</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Customer bridge (Meet/WebEx/Teams/Zoom) initiated within 15 min of channel creation. Every Sev1 has a channel — null means CIC did not engage or bridge data was not captured.">Bridge ≤15m</th>';
 
-  html+='<th style="white-space:nowrap;cursor:help;" title="QB quality assessment — click to update. Changes are held locally and shown in the export patch.">Quality</th>';
   html+='</tr></thead><tbody>';
   const mciSet=mciCases[day.date]||[];
   cases.forEach(function(c,i){
@@ -888,21 +827,11 @@ function buildDayPanel(day,container){
         bridgeCell='<td style="white-space:nowrap;font-size:11px;"><span style="background:rgba(148,163,184,.1);color:#94a3b8;border-radius:5px;padding:2px 7px;border:1px solid rgba(148,163,184,.25);" title="No CIC engagement in QB window — bridge not applicable">⛔ No CIC engage</span></td>';
       }
     }
-    // Quality radio cell — live editable
-    const qCurrent = (qualityPatches[c.caseNum] !== undefined ? qualityPatches[c.caseNum] : (c.quality||'PENDING'));
-    const qOpts = ['STRONG','MODERATE','NEEDS','PENDING'];
-    const qLabels = {STRONG:'🟢 Strong',MODERATE:'🟡 Moderate',NEEDS:'🔴 Needs follow-up',PENDING:'—'};
-    let qHtml = '<td><div class="q-group">';
-    qOpts.forEach(function(qv){
-      const active = qCurrent===qv?' qs-'+qv:'';
-      qHtml+='<button class="q-opt'+active+'" data-case="'+c.caseNum+'" data-q="'+qv+'" onclick="setQuality(\''+c.caseNum+'\',\''+qv+'\')" title="Mark as '+qv+'">'+qLabels[qv]+'</button>';
-    });
-    qHtml+='</div></td>';
     html+='<tr><td class="case-num">'+(i+1)+'</td><td>'+c.caseNum+'</td>'
       +'<td class="account-name">'+mciTag+c.account+'</td><td class="product-cell">'+c.product+'</td>'
       +'<td class="time-cell">'+c.timeIST+'</td>'
       +'<td><span class="manager-chip '+chipCls+'">'+mgr+'</span></td>'
-      +rtCell(c.ack)+rtCell(c.resolve)+rtCell(c.channelEngage,true,true,c.caseNum)+redCell+bridgeCell+qHtml+'</tr>';
+      +rtCell(c.ack)+rtCell(c.resolve)+rtCell(c.channelEngage,true,true,c.caseNum)+redCell+bridgeCell+'</tr>';
   });
   html+='</tbody></table></div>';
   container.innerHTML=html;
@@ -939,76 +868,9 @@ function attachTooltips(){
   });
 }
 
-// ── QUALITY PATCH SYSTEM ─────────────────────────────────────────────────────
-// qualityPatches = { caseNum: 'STRONG'|'MODERATE'|'NEEDS'|'PENDING' }
-// Persisted in localStorage so refreshes don't wipe your work.
-const PATCH_KEY = 'qb_quality_patches_v1';
-let qualityPatches = {};
-try { qualityPatches = JSON.parse(localStorage.getItem(PATCH_KEY)||'{}'); } catch(e){}
-
-function setQuality(caseNum, qVal){
-  // Find original value in DB
-  let original = 'PENDING';
-  for(const d of DB.days){
-    const c = d.cases.find(function(x){return x.caseNum===caseNum;});
-    if(c){ original = c.quality||'PENDING'; break; }
-  }
-  if(qVal === original){
-    // Clicking the already-set-in-data value → remove patch (revert)
-    delete qualityPatches[caseNum];
-  } else {
-    qualityPatches[caseNum] = qVal;
-  }
-  try { localStorage.setItem(PATCH_KEY, JSON.stringify(qualityPatches)); } catch(e){}
-  updatePatchBadge();
-  // Re-render the active day panel so radio buttons refresh
-  const sel = document.getElementById('daySelect');
-  showDay(sel.value, document.getElementById('tabPanels'));
-}
-
-function updatePatchBadge(){
-  const n = Object.keys(qualityPatches).length;
-  const badge = document.getElementById('patchBadge');
-  document.getElementById('patchCount').textContent = n;
-  if(n>0){ badge.classList.add('vis'); } else { badge.classList.remove('vis'); }
-}
-
-function openPatchModal(){
-  const patches = qualityPatches;
-  const n = Object.keys(patches).length;
-  if(!n){ alert('No unsaved changes.'); return; }
-  // Build human-readable + copy-friendly JSON
-  const lines = Object.entries(patches).map(function([cnum, qval]){
-    return '  {"caseNum":"'+cnum+'","quality":"'+qval+'"}';
-  });
-  const preview = '[\n'+lines.join(',\n')+'\n]';
-  document.getElementById('patchPre').textContent = preview;
-  document.getElementById('patchModal').classList.add('vis');
-}
-function closePatchModal(){ document.getElementById('patchModal').classList.remove('vis'); }
-function copyPatch(){
-  const text = document.getElementById('patchPre').textContent;
-  navigator.clipboard.writeText(text).then(function(){
-    const btn = document.querySelector('.pm-btn.copy');
-    btn.textContent = '✅ Copied!';
-    setTimeout(function(){ btn.textContent = '📋 Copy JSON'; }, 1800);
-  }).catch(function(){ alert('Copy failed — please select and copy manually.'); });
-}
-function clearPatches(){
-  if(!confirm('Clear all '+Object.keys(qualityPatches).length+' local quality changes?')) return;
-  qualityPatches = {};
-  try { localStorage.removeItem(PATCH_KEY); } catch(e){}
-  updatePatchBadge();
-  closePatchModal();
-  const sel = document.getElementById('daySelect');
-  showDay(sel.value, document.getElementById('tabPanels'));
-}
-document.addEventListener('keydown', function(e){ if(e.key==='Escape'){ closePatchModal(); } });
-
 // ── BOOT ─────────────────────────────────────────────────────────────────────
 loadData(true);
 setInterval(()=>loadData(true),5*60*1000);
-updatePatchBadge();
 </script>
 </body>
 </html>
