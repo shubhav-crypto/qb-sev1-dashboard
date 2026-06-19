@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-06-19T16:10:00+05:30",
+    "generated": "2026-06-19T16:45:00+05:30",
     "totalCases": 246,
     "daysTracked": 19
   },
@@ -4070,10 +4070,12 @@
           "account": "GHO Warm handover to EMEA",
           "product": "Developer Support",
           "timeIST": "12:43 PM",
+          "manager": "Sai Vikram",
           "isRed": false,
-          "resolve": null,
+          "ack": "2m 59s",
+          "resolve": "3m 13s",
           "channelEngage": null,
-          "bridgeWithin15m": false,
+          "bridgeWithin15m": null,
           "bridgeNA": false
         },
         {
@@ -4081,10 +4083,12 @@
           "account": "GHO Warm handover to EMEA",
           "product": "Digital Engagement",
           "timeIST": "12:45 PM",
+          "manager": "Sai Vikram",
           "isRed": false,
-          "resolve": null,
+          "ack": "1m 2s",
+          "resolve": "1m 13s",
           "channelEngage": null,
-          "bridgeWithin15m": false,
+          "bridgeWithin15m": null,
           "bridgeNA": false
         },
         {
@@ -4092,10 +4096,12 @@
           "account": "GHO Warm handover to EMEA",
           "product": "Service Cloud Voice",
           "timeIST": "12:47 PM",
+          "manager": "Sai Vikram",
           "isRed": true,
+          "ack": "45s",
           "resolve": null,
           "channelEngage": null,
-          "bridgeWithin15m": false,
+          "bridgeWithin15m": null,
           "bridgeNA": false
         },
         {
@@ -4103,10 +4109,12 @@
           "account": "Zalando SE - ZCare (Ztg8)",
           "product": "Developer Support",
           "timeIST": "12:58 PM",
+          "manager": "Sai Vikram",
           "isRed": true,
+          "ack": "38s",
           "resolve": null,
           "channelEngage": null,
-          "bridgeWithin15m": false,
+          "bridgeWithin15m": null,
           "bridgeNA": false
         },
         {
@@ -4114,10 +4122,12 @@
           "account": "AbbVie",
           "product": "Experience Management and Workspaces",
           "timeIST": "12:58 PM",
+          "manager": "Sai Vikram",
           "isRed": true,
+          "ack": "12s",
           "resolve": null,
           "channelEngage": null,
-          "bridgeWithin15m": false,
+          "bridgeWithin15m": null,
           "bridgeNA": false
         },
         {
@@ -4125,10 +4135,12 @@
           "account": "The Boeing Company",
           "product": "Mobile apps",
           "timeIST": "1:01 PM",
+          "manager": "Sai Vikram",
           "isRed": true,
+          "ack": "36s",
           "resolve": null,
           "channelEngage": null,
-          "bridgeWithin15m": false,
+          "bridgeWithin15m": null,
           "bridgeNA": false
         },
         {
@@ -4136,10 +4148,12 @@
           "account": "Thelem Assurances",
           "product": "Developer Support",
           "timeIST": "1:07 PM",
+          "manager": "Sai Vikram",
           "isRed": false,
-          "resolve": null,
+          "ack": null,
+          "resolve": "3m 13s",
           "channelEngage": null,
-          "bridgeWithin15m": false,
+          "bridgeWithin15m": null,
           "bridgeNA": false
         },
         {
@@ -4147,10 +4161,12 @@
           "account": "GHO Warm handover to EMEA",
           "product": "Digital Engagement",
           "timeIST": "1:07 PM",
+          "manager": "Sai Vikram",
           "isRed": false,
-          "resolve": null,
+          "ack": null,
+          "resolve": "3m",
           "channelEngage": null,
-          "bridgeWithin15m": false,
+          "bridgeWithin15m": null,
           "bridgeNA": false
         },
         {
@@ -4158,10 +4174,12 @@
           "account": "GHO Warm handover to EMEA",
           "product": "Digital Engagement",
           "timeIST": "1:13 PM",
+          "manager": "Sai Vikram",
           "isRed": true,
+          "ack": "5s",
           "resolve": null,
           "channelEngage": null,
-          "bridgeWithin15m": false,
+          "bridgeWithin15m": null,
           "bridgeNA": false
         },
         {
@@ -4169,48 +4187,52 @@
           "account": "The Home Depot U.S.A.",
           "product": "Digital Engagement",
           "timeIST": "1:37 PM",
+          "manager": "Sai Vikram",
           "isRed": false,
-          "resolve": null,
-          "channelEngage": null,
+          "ack": null,
+          "resolve": "3m 14s",
+          "channelEngage": "1m 1s",
           "bridgeWithin15m": true,
-          "bridgeNA": false,
-          "channelCreatedAt": "2026-06-19 13:40 IST"
+          "bridgeNA": false
         },
         {
           "caseNum": "473890764",
           "account": "Autodesk, Inc.",
           "product": "Service Cloud Voice",
           "timeIST": "1:56 PM",
+          "manager": "Sai Vikram",
           "isRed": true,
+          "ack": "2m 46s",
           "resolve": null,
-          "channelEngage": null,
+          "channelEngage": "40s",
           "bridgeWithin15m": true,
-          "bridgeNA": false,
-          "channelCreatedAt": "2026-06-19 13:58 IST"
+          "bridgeNA": false
         },
         {
           "caseNum": "473890789",
           "account": "Thelem Assurances",
           "product": "Developer Support",
           "timeIST": "1:58 PM",
+          "manager": "Sai Vikram",
           "isRed": true,
+          "ack": "33s",
           "resolve": null,
-          "channelEngage": null,
+          "channelEngage": "2m 59s",
           "bridgeWithin15m": true,
-          "bridgeNA": false,
-          "channelCreatedAt": "2026-06-19 14:01 IST"
+          "bridgeNA": false
         },
         {
           "caseNum": "473891341",
           "account": "ADITYA BIRLA FINANCIAL SHARED SERVICES LIMITED",
           "product": "Developer Support",
           "timeIST": "2:55 PM",
+          "manager": "Sai Vikram",
           "isRed": false,
-          "resolve": null,
-          "channelEngage": null,
+          "ack": null,
+          "resolve": "3m 17s",
+          "channelEngage": "42s",
           "bridgeWithin15m": true,
-          "bridgeNA": false,
-          "channelCreatedAt": "2026-06-19 14:59 IST"
+          "bridgeNA": false
         }
       ]
     }
