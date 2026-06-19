@@ -219,10 +219,21 @@
 
   <!-- ── Weekend panel ── -->
   <div id="panel-weekend" style="display:none;">
-    <div id="weekendGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-bottom:16px;"></div>
-    <div style="font-size:12px;color:var(--text-muted);padding-left:2px;">
-      Cases tracked within the 12:30–7:30 PM IST window. QB manager may differ from weekday rotation.
+    <div class="section-header">Weekend Case Detail
+      <div style="margin-left:auto;display:flex;align-items:center;gap:10px;">
+        <label style="font-size:12px;font-weight:500;color:var(--text-muted);text-transform:uppercase;letter-spacing:.04em;">Date</label>
+        <select id="weDaySelect" onchange="switchWeDaySelect()"
+          style="background:var(--surface2);color:var(--text);border:1px solid var(--border);border-radius:7px;padding:5px 28px 5px 12px;font-size:13px;font-weight:600;cursor:pointer;outline:none;appearance:none;-webkit-appearance:none;min-width:130px;">
+        </select>
+        <button onclick="stepWeDay(-1)" title="Previous day"
+          style="background:var(--surface2);border:1px solid var(--border);border-radius:7px;padding:5px 11px;font-size:14px;cursor:pointer;color:var(--text);line-height:1;">‹</button>
+        <button onclick="stepWeDay(1)" title="Next day"
+          style="background:var(--surface2);border:1px solid var(--border);border-radius:7px;padding:5px 11px;font-size:14px;cursor:pointer;color:var(--text);line-height:1;">›</button>
+      </div>
     </div>
+    <div id="weDayPanels"></div>
+    <!-- hidden div kept so renderWeekends() still has a target for its badge update -->
+    <div id="weekendGrid" style="display:none;"></div>
   </div>
 
   <div id="footer" style="text-align:center;color:var(--text-muted);font-size:12px;padding:24px 0 16px;border-top:1px solid var(--border);margin-top:12px;"></div>
@@ -477,80 +488,6 @@ function renderWeekends(){
   const totalWeCases=allWeekends.reduce(function(s,w){return s+(w.cases?w.cases.length:0);},0);
   const badge=document.getElementById('ptab-weekend-badge');
   if(badge)badge.textContent=totalWeCases+' Sev1s';
-
-  allWeekends.forEach(function(w){
-    const dow=new Date(w.date+'T00:00:00').getDay();
-    const dayName=w.dayOfWeek||DAY_NAMES[dow];
-    const count=w.cases?w.cases.length:0;
-
-    // Build a card per day
-    const card=document.createElement('div');
-    card.style.cssText='background:var(--surface);border:1px solid var(--border);border-radius:var(--card-radius);overflow:hidden;';
-
-    // Card header
-    const mgrColor={'Sai Vikram':'#fb923c','Mirza':'#facc15','Nikhil':'#60c8ff','Jyothirmayee':'#a78bfa','Shubha':'#2dd4bf','Rohit':'#f472b6'};
-    const mgrBg={'Sai Vikram':'rgba(249,115,22,.08)','Mirza':'rgba(234,179,8,.08)','Nikhil':'rgba(0,163,255,.08)','Jyothirmayee':'rgba(139,92,246,.08)','Shubha':'rgba(20,184,166,.08)','Rohit':'rgba(236,72,153,.08)'};
-    const headerDiv=document.createElement('div');
-    headerDiv.style.cssText='padding:14px 18px 12px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;';
-    const titleDiv=document.createElement('div');
-    titleDiv.innerHTML='<div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted);">'+dayName+'</div>'
-      +'<div style="font-size:20px;font-weight:700;color:var(--text);line-height:1.2;">'+w.label+'</div>';
-    const metaDiv=document.createElement('div');
-    metaDiv.style.cssText='text-align:right;';
-    if(count>0){
-      metaDiv.innerHTML='<div style="font-size:22px;font-weight:700;color:var(--accent);">'+count+'</div>'
-        +'<div style="font-size:11px;color:var(--text-muted);">Sev1'+(count!==1?'s':'')+'</div>';
-    }else{
-      metaDiv.innerHTML='<div style="font-size:13px;color:#94a3b8;">🌙 None</div>';
-    }
-    headerDiv.appendChild(titleDiv);
-    headerDiv.appendChild(metaDiv);
-    card.appendChild(headerDiv);
-
-    // Manager row
-    const mgrDiv=document.createElement('div');
-    mgrDiv.style.cssText='padding:8px 18px;background:var(--surface2);border-bottom:1px solid var(--border);font-size:12px;display:flex;align-items:center;gap:8px;';
-    if(w.manager){
-      mgrDiv.innerHTML='<span style="color:var(--text-muted);">QB Manager:</span> <span style="background:'+(mgrBg[w.manager]||'rgba(100,116,139,.1)')+';color:'+(mgrColor[w.manager]||'#64748b')+';border-radius:5px;padding:2px 8px;font-weight:600;font-size:11px;">'+w.manager+'</span>';
-    }else{
-      mgrDiv.innerHTML='<span style="color:#94a3b8;font-size:12px;">QB Manager: not confirmed for this day</span>';
-    }
-    card.appendChild(mgrDiv);
-
-    // Cases table or empty state
-    if(count===0){
-      const emptyDiv=document.createElement('div');
-      emptyDiv.style.cssText='padding:20px 18px;font-size:13px;color:#94a3b8;';
-      emptyDiv.textContent='No new Service Sev1s in the 12:30–7:30 PM IST window.';
-      card.appendChild(emptyDiv);
-    }else{
-      const tableWrap=document.createElement('div');
-      tableWrap.style.cssText='overflow-x:auto;';
-      let tableHtml='<table style="width:100%;border-collapse:collapse;font-size:12px;">'
-        +'<thead><tr style="background:var(--surface2);border-bottom:1px solid var(--border);">'
-        +'<th style="padding:8px 12px;text-align:left;color:var(--text-muted);font-size:10px;text-transform:uppercase;font-weight:600;white-space:nowrap;">#</th>'
-        +'<th style="padding:8px 12px;text-align:left;color:var(--text-muted);font-size:10px;text-transform:uppercase;font-weight:600;white-space:nowrap;">Time (IST)</th>'
-        +'<th style="padding:8px 12px;text-align:left;color:var(--text-muted);font-size:10px;text-transform:uppercase;font-weight:600;">Account</th>'
-        +'<th style="padding:8px 12px;text-align:left;color:var(--text-muted);font-size:10px;text-transform:uppercase;font-weight:600;">Product</th>'
-        +'<th style="padding:8px 12px;text-align:left;color:var(--text-muted);font-size:10px;text-transform:uppercase;font-weight:600;white-space:nowrap;">Case #</th>'
-        +'</tr></thead><tbody>';
-      w.cases.forEach(function(c,i){
-        const bg=i%2===0?'':'background:rgba(241,245,249,.5);';
-        tableHtml+='<tr style="'+bg+'border-bottom:1px solid rgba(226,232,240,.6);">'
-          +'<td style="padding:8px 12px;color:var(--text-muted);">'+(i+1)+'</td>'
-          +'<td style="padding:8px 12px;white-space:nowrap;color:var(--text-muted);">'+c.timeIST+'</td>'
-          +'<td style="padding:8px 12px;font-weight:500;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">'+c.account+'</td>'
-          +'<td style="padding:8px 12px;color:var(--text-muted);max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">'+c.product+'</td>'
-          +'<td style="padding:8px 12px;color:var(--text-muted);font-size:11px;white-space:nowrap;">'+c.caseNum+'</td>'
-          +'</tr>';
-      });
-      tableHtml+='</tbody></table>';
-      tableWrap.innerHTML=tableHtml;
-      card.appendChild(tableWrap);
-    }
-
-    container.appendChild(card);
-  });
 }
 
 // ── GLOBAL ───────────────────────────────────────────────────────────────────
@@ -572,7 +509,7 @@ async function loadData(force){
 
 function renderAll(){
   renderHeader();renderKPIs();renderWeekCards();
-  renderSummaryTable();renderCharts();renderWeekends();renderTabs();renderFooter();
+  renderSummaryTable();renderCharts();renderWeekends();renderTabs();renderWeTabs();renderFooter();
   attachTooltips();
 }
 
@@ -825,12 +762,11 @@ function renderCharts(){
   });
 }
 
-// ── TABS ─────────────────────────────────────────────────────────────────────
+// ── TABS (weekdays) ───────────────────────────────────────────────────────────
 function renderTabs(){
   const sel=document.getElementById('daySelect');
   const tabPanels=document.getElementById('tabPanels');
   const wdays=weekdays();
-  // Build the dropdown (weekdays only)
   while(sel.firstChild)sel.removeChild(sel.firstChild);
   wdays.forEach(function(day,idx){
     const opt=document.createElement('option');
@@ -839,8 +775,55 @@ function renderTabs(){
     if(idx===wdays.length-1)opt.selected=true;
     sel.appendChild(opt);
   });
-  // Render the active day panel
   showDay(wdays[wdays.length-1].date,tabPanels);
+}
+
+// ── TABS (weekends) ───────────────────────────────────────────────────────────
+function renderWeTabs(){
+  const sel=document.getElementById('weDaySelect');
+  const wePanels=document.getElementById('weDayPanels');
+  const wedays=DB.days.filter(function(d){return d.isWeekend;});
+  while(sel.firstChild)sel.removeChild(sel.firstChild);
+  wedays.forEach(function(day,idx){
+    const opt=document.createElement('option');
+    opt.value=day.date;
+    const suffix=day.cases.length>0?' ('+day.cases.length+')':' (—)';
+    opt.textContent=day.label+' · '+(day.dayOfWeek||'Weekend')+suffix;
+    if(idx===wedays.length-1)opt.selected=true;
+    sel.appendChild(opt);
+  });
+  if(wedays.length)showWeDay(wedays[wedays.length-1].date,wePanels);
+}
+
+function showWeDay(dateStr,panelContainer){
+  const day=DB.days.find(function(d){return d.date===dateStr;});
+  if(!day)return;
+  while(panelContainer.firstChild)panelContainer.removeChild(panelContainer.firstChild);
+  const panel=document.createElement('div');
+  panel.className='tab-panel active';
+  panelContainer.appendChild(panel);
+  // Show a "no cases" note, or reuse the same buildDayPanel
+  if(day.cases.length===0){
+    panel.innerHTML='<div style="padding:32px 16px;text-align:center;color:var(--text-muted);font-size:14px;">🌙 No new Service Sev1s in the 12:30–7:30 PM IST window on '+day.label+'.</div>';
+  }else{
+    buildDayPanel(day,panel);
+  }
+}
+
+function switchWeDaySelect(){
+  const sel=document.getElementById('weDaySelect');
+  showWeDay(sel.value,document.getElementById('weDayPanels'));
+}
+
+function stepWeDay(dir){
+  const sel=document.getElementById('weDaySelect');
+  const opts=Array.from(sel.options);
+  const cur=opts.findIndex(function(o){return o.selected;});
+  const next=cur+dir;
+  if(next>=0&&next<opts.length){
+    opts[next].selected=true;
+    switchWeDaySelect();
+  }
 }
 
 function showDay(dateStr,panelContainer){
