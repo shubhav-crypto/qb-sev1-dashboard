@@ -233,7 +233,8 @@
           "oiSource": "orgcs"
         }
       ],
-      "eodDone": true
+      "eodDone": true,
+      "callouts": []
     },
     {
       "date": "2026-06-02",
@@ -427,7 +428,8 @@
           "oiSource": "orgcs"
         }
       ],
-      "eodDone": true
+      "eodDone": true,
+      "callouts": []
     },
     {
       "date": "2026-06-03",
@@ -580,7 +582,8 @@
           "channelCreatedAt": "2026-06-03 19:03:00 IST"
         }
       ],
-      "eodDone": true
+      "eodDone": true,
+      "callouts": []
     },
     {
       "date": "2026-06-04",
@@ -855,7 +858,8 @@
           "channelCreatedAt": "2026-06-04 19:29:00 IST"
         }
       ],
-      "eodDone": false
+      "eodDone": false,
+      "callouts": []
     },
     {
       "date": "2026-06-05",
@@ -988,7 +992,8 @@
           "oiSource": "orgcs"
         }
       ],
-      "eodDone": false
+      "eodDone": false,
+      "callouts": []
     },
     {
       "date": "2026-06-08",
@@ -1314,7 +1319,8 @@
           "channelCreatedAt": "2026-06-08 18:39:00 IST"
         }
       ],
-      "eodDone": false
+      "eodDone": false,
+      "callouts": []
     },
     {
       "date": "2026-06-09",
@@ -1390,7 +1396,8 @@
           "channelCreatedAt": "2026-06-08 18:10:00 IST"
         }
       ],
-      "eodDone": false
+      "eodDone": false,
+      "callouts": []
     },
     {
       "date": "2026-06-10",
@@ -1565,7 +1572,8 @@
           "channelCreatedAt": "2026-06-10 19:23:00 IST"
         }
       ],
-      "eodDone": false
+      "eodDone": false,
+      "callouts": []
     },
     {
       "date": "2026-06-11",
@@ -1808,7 +1816,17 @@
           "oiSource": "orgcs"
         }
       ],
-      "eodDone": true
+      "eodDone": true,
+      "callouts": [
+        {
+          "type": "mci",
+          "text": "⚡ Active MCI: MCS Prod3 Availability Drop — CIR: #icc-91554592 · Sev4 · Team: Messaging Channels and Features"
+        },
+        {
+          "type": "exec",
+          "text": "👁 Exec Visibility — Continue to monitor: Maersk (Issue recurred, customer temp: HOT)"
+        }
+      ]
     },
     {
       "date": "2026-06-12",
@@ -2049,7 +2067,13 @@
           "channelCreatedAt": "2026-06-12 19:28:40 IST"
         }
       ],
-      "eodDone": true
+      "eodDone": true,
+      "callouts": [
+        {
+          "type": "exec",
+          "text": "👁 Exec Visibility — Continue to monitor: Claro S.A., The Reinalt-Thomas Corporation (customer temp: HOT)"
+        }
+      ]
     },
     {
       "date": "2026-06-15",
@@ -2351,7 +2375,13 @@
           "channelCreatedAt": "2026-06-15 19:28:00 IST"
         }
       ],
-      "eodDone": true
+      "eodDone": true,
+      "callouts": [
+        {
+          "type": "exec",
+          "text": "👁 Exec Visibility — Continue to monitor: Claro S.A., The Reinalt-Thomas Corporation, Philip Morris International IT Service Center Sàrl, Affirm (customer temp: Warm)"
+        }
+      ]
     },
     {
       "date": "2026-06-16",
@@ -2595,7 +2625,13 @@
           "oiSource": "orgcs"
         }
       ],
-      "eodDone": true
+      "eodDone": true,
+      "callouts": [
+        {
+          "type": "exec",
+          "text": "👁 Exec Visibility — Continue to monitor: Disney Streaming Services LLC, Avent-INC, Claro S.A., The Reinalt-Thomas Corporation, Philip Morris International IT Service Center Sàrl"
+        }
+      ]
     },
     {
       "label": "Jun 17",
@@ -2864,7 +2900,13 @@
         }
       ],
       "canvasId": "F0BB2DYRMNF",
-      "eodDone": true
+      "eodDone": true,
+      "callouts": [
+        {
+          "type": "exec",
+          "text": "👁 Exec Visibility — Continue to monitor: Disney Streaming Services LLC, Pentagon Federal Credit Union"
+        }
+      ]
     },
     {
       "date": "2026-06-18",
