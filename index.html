@@ -135,6 +135,20 @@
     <span style="margin-left:auto;font-size:11px;">Auto-refreshes every 5 min during QB hours</span>
   </div>
 
+  <!-- ── Page-level tab bar ── -->
+  <div style="display:flex;gap:2px;border-bottom:2px solid var(--border);margin-bottom:24px;">
+    <button id="ptab-weekday" onclick="switchPageTab('weekday')"
+      style="background:none;border:none;border-bottom:3px solid var(--accent);margin-bottom:-2px;padding:10px 20px;font-size:14px;font-weight:600;color:var(--accent);cursor:pointer;display:flex;align-items:center;gap:7px;">
+      📋 Weekdays
+    </button>
+    <button id="ptab-weekend" onclick="switchPageTab('weekend')"
+      style="background:none;border:none;border-bottom:3px solid transparent;margin-bottom:-2px;padding:10px 20px;font-size:14px;font-weight:600;color:var(--text-muted);cursor:pointer;display:flex;align-items:center;gap:7px;">
+      🌙 Weekends <span id="ptab-weekend-badge" style="background:var(--surface2);border:1px solid var(--border);border-radius:10px;font-size:11px;padding:1px 7px;color:var(--text-muted);font-weight:500;"></span>
+    </button>
+  </div>
+
+  <!-- ── Weekday panel ── -->
+  <div id="panel-weekday">
   <div class="kpi-bar">
     <div class="kpi blue"><div class="kpi-value" id="kpiTotal">—</div><div class="kpi-label">Total Sev1 Cases</div><div class="kpi-sub" id="kpiTotalSub"></div></div>
     <div class="kpi teal"><div class="kpi-value" id="kpiDays">—</div><div class="kpi-label">Days Tracked</div><div class="kpi-sub" id="kpiDaysSub"></div></div>
@@ -186,15 +200,6 @@
     </div>
   </div>
 
-  <div class="section-header" id="weekendSectionHeader" style="margin-top:4px;">
-    <span>📅 Weekends</span>
-    <span style="font-size:12px;font-weight:400;color:var(--text-muted);margin-left:4px;">— No QB coverage window (Sat &amp; Sun)</span>
-  </div>
-  <div class="weekend-grid" id="weekendGrid"></div>
-  <div style="font-size:12px;color:var(--text-muted);margin-bottom:24px;padding-left:2px;" id="weekendNote">
-    QB Work Assurance window is 12:30–7:30 PM IST daily. Weekend cases are tracked for visibility — QB manager may differ from weekday rotation.
-  </div>
-
   <div class="section-header">Daily Case Detail
     <div style="margin-left:auto;display:flex;align-items:center;gap:10px;">
       <label style="font-size:12px;font-weight:500;color:var(--text-muted);text-transform:uppercase;letter-spacing:.04em;">Date</label>
@@ -209,6 +214,15 @@
   </div>
   <div class="tabs">
     <div id="tabPanels"></div>
+  </div>
+  </div><!-- end #panel-weekday -->
+
+  <!-- ── Weekend panel ── -->
+  <div id="panel-weekend" style="display:none;">
+    <div id="weekendGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-bottom:16px;"></div>
+    <div style="font-size:12px;color:var(--text-muted);padding-left:2px;">
+      Cases tracked within the 12:30–7:30 PM IST window. QB manager may differ from weekday rotation.
+    </div>
   </div>
 
   <div id="footer" style="text-align:center;color:var(--text-muted);font-size:12px;padding:24px 0 16px;border-top:1px solid var(--border);margin-top:12px;"></div>
@@ -410,6 +424,18 @@ function groupByWeek(days){
   return weeks;
 }
 
+// ── PAGE TABS ────────────────────────────────────────────────────────────────
+function switchPageTab(tab){
+  document.getElementById('panel-weekday').style.display=tab==='weekday'?'':'none';
+  document.getElementById('panel-weekend').style.display=tab==='weekend'?'':'none';
+  const wdBtn=document.getElementById('ptab-weekday');
+  const weBtn=document.getElementById('ptab-weekend');
+  wdBtn.style.cssText=wdBtn.style.cssText.replace(/border-bottom:[^;]+/,'border-bottom:3px solid '+(tab==='weekday'?'var(--accent)':'transparent'));
+  wdBtn.style.color=tab==='weekday'?'var(--accent)':'var(--text-muted)';
+  weBtn.style.cssText=weBtn.style.cssText.replace(/border-bottom:[^;]+/,'border-bottom:3px solid '+(tab==='weekend'?'var(--accent)':'transparent'));
+  weBtn.style.color=tab==='weekend'?'var(--accent)':'var(--text-muted)';
+}
+
 // ── WEEKENDS ─────────────────────────────────────────────────────────────────
 function renderWeekends(){
   const container=document.getElementById('weekendGrid');
@@ -447,59 +473,82 @@ function renderWeekends(){
     return;
   }
 
+  // Update weekend tab badge with total case count
+  const totalWeCases=allWeekends.reduce(function(s,w){return s+(w.cases?w.cases.length:0);},0);
+  const badge=document.getElementById('ptab-weekend-badge');
+  if(badge)badge.textContent=totalWeCases+' Sev1s';
+
   allWeekends.forEach(function(w){
     const dow=new Date(w.date+'T00:00:00').getDay();
     const dayName=w.dayOfWeek||DAY_NAMES[dow];
     const count=w.cases?w.cases.length:0;
 
+    // Build a card per day
     const card=document.createElement('div');
-    card.className='weekend-card';
+    card.style.cssText='background:var(--surface);border:1px solid var(--border);border-radius:var(--card-radius);overflow:hidden;';
 
-    const dayEl=document.createElement('div');
-    dayEl.className='weekend-card-day';
-    dayEl.textContent=dayName;
-    card.appendChild(dayEl);
-
-    const dateEl=document.createElement('div');
-    dateEl.className='weekend-card-date';
-    dateEl.textContent=w.label;
-    card.appendChild(dateEl);
-
-    const badge=document.createElement('div');
-    const noteEl=document.createElement('div');
-    noteEl.className='weekend-note';
-
-    if(w.noData){
-      badge.className='weekend-no-coverage';
-      badge.textContent='🌙 No data';
-      noteEl.textContent='No cases tracked for this day.';
-    } else if(count===0){
-      badge.className='weekend-no-coverage';
-      badge.textContent='🌙 No Sev1s';
-      noteEl.textContent='No new Service Sev1s in the 12:30–7:30 PM IST window.';
-    } else {
-      badge.className='weekend-has-cases';
-      badge.textContent='🔔 '+count+(count!==1?' Sev1s':' Sev1')+' in window';
-      noteEl.innerHTML=(w.manager?'QB: <strong style="color:#fb923c;">'+w.manager+'</strong><br>':'QB manager not confirmed<br>')+
-        'Cases tracked 12:30–7:30 PM IST.';
+    // Card header
+    const mgrColor={'Sai Vikram':'#fb923c','Mirza':'#facc15','Nikhil':'#60c8ff','Jyothirmayee':'#a78bfa','Shubha':'#2dd4bf','Rohit':'#f472b6'};
+    const mgrBg={'Sai Vikram':'rgba(249,115,22,.08)','Mirza':'rgba(234,179,8,.08)','Nikhil':'rgba(0,163,255,.08)','Jyothirmayee':'rgba(139,92,246,.08)','Shubha':'rgba(20,184,166,.08)','Rohit':'rgba(236,72,153,.08)'};
+    const headerDiv=document.createElement('div');
+    headerDiv.style.cssText='padding:14px 18px 12px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;';
+    const titleDiv=document.createElement('div');
+    titleDiv.innerHTML='<div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted);">'+dayName+'</div>'
+      +'<div style="font-size:20px;font-weight:700;color:var(--text);line-height:1.2;">'+w.label+'</div>';
+    const metaDiv=document.createElement('div');
+    metaDiv.style.cssText='text-align:right;';
+    if(count>0){
+      metaDiv.innerHTML='<div style="font-size:22px;font-weight:700;color:var(--accent);">'+count+'</div>'
+        +'<div style="font-size:11px;color:var(--text-muted);">Sev1'+(count!==1?'s':'')+'</div>';
+    }else{
+      metaDiv.innerHTML='<div style="font-size:13px;color:#94a3b8;">🌙 None</div>';
     }
-    card.appendChild(badge);
+    headerDiv.appendChild(titleDiv);
+    headerDiv.appendChild(metaDiv);
+    card.appendChild(headerDiv);
 
-    // If cases exist, show a mini list
-    if(count>0 && w.cases){
-      const list=document.createElement('div');
-      list.style.cssText='margin-top:8px;display:flex;flex-direction:column;gap:3px;';
-      w.cases.forEach(function(c){
-        const row=document.createElement('div');
-        row.style.cssText='font-size:10px;color:#64748b;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;';
-        row.title=c.account+' — '+c.product;
-        row.textContent=c.timeIST+' · '+c.account;
-        list.appendChild(row);
+    // Manager row
+    const mgrDiv=document.createElement('div');
+    mgrDiv.style.cssText='padding:8px 18px;background:var(--surface2);border-bottom:1px solid var(--border);font-size:12px;display:flex;align-items:center;gap:8px;';
+    if(w.manager){
+      mgrDiv.innerHTML='<span style="color:var(--text-muted);">QB Manager:</span> <span style="background:'+(mgrBg[w.manager]||'rgba(100,116,139,.1)')+';color:'+(mgrColor[w.manager]||'#64748b')+';border-radius:5px;padding:2px 8px;font-weight:600;font-size:11px;">'+w.manager+'</span>';
+    }else{
+      mgrDiv.innerHTML='<span style="color:#94a3b8;font-size:12px;">QB Manager: not confirmed for this day</span>';
+    }
+    card.appendChild(mgrDiv);
+
+    // Cases table or empty state
+    if(count===0){
+      const emptyDiv=document.createElement('div');
+      emptyDiv.style.cssText='padding:20px 18px;font-size:13px;color:#94a3b8;';
+      emptyDiv.textContent='No new Service Sev1s in the 12:30–7:30 PM IST window.';
+      card.appendChild(emptyDiv);
+    }else{
+      const tableWrap=document.createElement('div');
+      tableWrap.style.cssText='overflow-x:auto;';
+      let tableHtml='<table style="width:100%;border-collapse:collapse;font-size:12px;">'
+        +'<thead><tr style="background:var(--surface2);border-bottom:1px solid var(--border);">'
+        +'<th style="padding:8px 12px;text-align:left;color:var(--text-muted);font-size:10px;text-transform:uppercase;font-weight:600;white-space:nowrap;">#</th>'
+        +'<th style="padding:8px 12px;text-align:left;color:var(--text-muted);font-size:10px;text-transform:uppercase;font-weight:600;white-space:nowrap;">Time (IST)</th>'
+        +'<th style="padding:8px 12px;text-align:left;color:var(--text-muted);font-size:10px;text-transform:uppercase;font-weight:600;">Account</th>'
+        +'<th style="padding:8px 12px;text-align:left;color:var(--text-muted);font-size:10px;text-transform:uppercase;font-weight:600;">Product</th>'
+        +'<th style="padding:8px 12px;text-align:left;color:var(--text-muted);font-size:10px;text-transform:uppercase;font-weight:600;white-space:nowrap;">Case #</th>'
+        +'</tr></thead><tbody>';
+      w.cases.forEach(function(c,i){
+        const bg=i%2===0?'':'background:rgba(241,245,249,.5);';
+        tableHtml+='<tr style="'+bg+'border-bottom:1px solid rgba(226,232,240,.6);">'
+          +'<td style="padding:8px 12px;color:var(--text-muted);">'+(i+1)+'</td>'
+          +'<td style="padding:8px 12px;white-space:nowrap;color:var(--text-muted);">'+c.timeIST+'</td>'
+          +'<td style="padding:8px 12px;font-weight:500;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">'+c.account+'</td>'
+          +'<td style="padding:8px 12px;color:var(--text-muted);max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">'+c.product+'</td>'
+          +'<td style="padding:8px 12px;color:var(--text-muted);font-size:11px;white-space:nowrap;">'+c.caseNum+'</td>'
+          +'</tr>';
       });
-      card.appendChild(list);
+      tableHtml+='</tbody></table>';
+      tableWrap.innerHTML=tableHtml;
+      card.appendChild(tableWrap);
     }
 
-    card.appendChild(noteEl);
     container.appendChild(card);
   });
 }
