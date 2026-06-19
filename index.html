@@ -192,7 +192,7 @@
   </div>
   <div class="weekend-grid" id="weekendGrid"></div>
   <div style="font-size:12px;color:var(--text-muted);margin-bottom:24px;padding-left:2px;" id="weekendNote">
-    QB Work Assurance operates Mon–Fri (12:30–7:30 PM IST). Weekend Sev1 alerts are routed to on-call coverage outside this window.
+    QB Work Assurance window is 12:30–7:30 PM IST daily. Weekend cases are tracked for visibility — QB manager may differ from weekday rotation.
   </div>
 
   <div class="section-header">Daily Case Detail
@@ -415,27 +415,31 @@ function renderWeekends(){
   const container=document.getElementById('weekendGrid');
   while(container.firstChild)container.removeChild(container.firstChild);
 
+  const DAY_NAMES=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  const weekendDays=DB.days.filter(function(d){return d.isWeekend;});
+
+  // Also enumerate any weekend dates in the month range that have no data entry
+  const allDates=new Set(DB.days.map(function(d){return d.date;}));
   const firstDate=new Date(DB.days[0].date+'T00:00:00');
   const lastDate=new Date(DB.days[DB.days.length-1].date+'T00:00:00');
   const year=firstDate.getFullYear(),month=firstDate.getMonth();
-
-  const dateCaseMap={};
-  DB.days.forEach(function(d){dateCaseMap[d.date]=d.cases.length;});
-
-  const DAY_NAMES=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-  const weekends=[];
   const cursor=new Date(year,month,1);
+  const extraWeekends=[];
   while(cursor.getMonth()===month&&cursor<=lastDate){
     const dow=cursor.getDay();
-    if(dow===0||dow===6){
+    if((dow===0||dow===6)){
       const iso=cursor.toISOString().slice(0,10);
-      const mon=cursor.toLocaleString('en-US',{month:'short'});
-      weekends.push({date:iso,label:mon+' '+cursor.getDate(),dayName:DAY_NAMES[dow],cases:dateCaseMap[iso]||0});
+      if(!allDates.has(iso)){
+        const mon=cursor.toLocaleString('en-US',{month:'short'});
+        extraWeekends.push({date:iso,label:mon+' '+cursor.getDate(),dayOfWeek:DAY_NAMES[dow],manager:null,cases:[],isWeekend:true,eodDone:false,noData:true});
+      }
     }
     cursor.setDate(cursor.getDate()+1);
   }
 
-  if(!weekends.length){
+  const allWeekends=[...weekendDays,...extraWeekends].sort(function(a,b){return a.date<b.date?-1:1;});
+
+  if(!allWeekends.length){
     const p=document.createElement('p');
     p.style.cssText='color:var(--text-muted);font-size:13px;';
     p.textContent='No weekend dates found in the tracked range.';
@@ -443,13 +447,17 @@ function renderWeekends(){
     return;
   }
 
-  weekends.forEach(function(w){
+  allWeekends.forEach(function(w){
+    const dow=new Date(w.date+'T00:00:00').getDay();
+    const dayName=w.dayOfWeek||DAY_NAMES[dow];
+    const count=w.cases?w.cases.length:0;
+
     const card=document.createElement('div');
     card.className='weekend-card';
 
     const dayEl=document.createElement('div');
     dayEl.className='weekend-card-day';
-    dayEl.textContent=w.dayName;
+    dayEl.textContent=dayName;
     card.appendChild(dayEl);
 
     const dateEl=document.createElement('div');
@@ -460,16 +468,37 @@ function renderWeekends(){
     const badge=document.createElement('div');
     const noteEl=document.createElement('div');
     noteEl.className='weekend-note';
-    if(w.cases>0){
-      badge.className='weekend-has-cases';
-      badge.textContent='⚠️ '+w.cases+(w.cases!==1?' cases':' case')+' logged';
-      noteEl.textContent='Cases logged outside QB window — reviewed by on-call.';
-    }else{
+
+    if(w.noData){
       badge.className='weekend-no-coverage';
-      badge.textContent='🌙 No coverage';
-      noteEl.textContent='Outside QB window (12:30–7:30 PM IST).';
+      badge.textContent='🌙 No data';
+      noteEl.textContent='No cases tracked for this day.';
+    } else if(count===0){
+      badge.className='weekend-no-coverage';
+      badge.textContent='🌙 No Sev1s';
+      noteEl.textContent='No new Service Sev1s in the 12:30–7:30 PM IST window.';
+    } else {
+      badge.className='weekend-has-cases';
+      badge.textContent='🔔 '+count+(count!==1?' Sev1s':' Sev1')+' in window';
+      noteEl.innerHTML=(w.manager?'QB: <strong style="color:#fb923c;">'+w.manager+'</strong><br>':'QB manager not confirmed<br>')+
+        'Cases tracked 12:30–7:30 PM IST.';
     }
     card.appendChild(badge);
+
+    // If cases exist, show a mini list
+    if(count>0 && w.cases){
+      const list=document.createElement('div');
+      list.style.cssText='margin-top:8px;display:flex;flex-direction:column;gap:3px;';
+      w.cases.forEach(function(c){
+        const row=document.createElement('div');
+        row.style.cssText='font-size:10px;color:#64748b;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;';
+        row.title=c.account+' — '+c.product;
+        row.textContent=c.timeIST+' · '+c.account;
+        list.appendChild(row);
+      });
+      card.appendChild(list);
+    }
+
     card.appendChild(noteEl);
     container.appendChild(card);
   });
@@ -477,6 +506,8 @@ function renderWeekends(){
 
 // ── GLOBAL ───────────────────────────────────────────────────────────────────
 let DB=null,dailyChart=null,healthChart=null;
+// Helper: weekday days only (used for all KPIs, charts, summary, tabs)
+function weekdays(){return DB.days.filter(function(d){return !d.isWeekend;});}
 
 // ── LOAD ─────────────────────────────────────────────────────────────────────
 async function loadData(force){
@@ -501,31 +532,34 @@ function renderHeader(){
   const dt=new Date(DB.meta.generated);
   const fmt=dt.toLocaleString('en-IN',{timeZone:'Asia/Kolkata',day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'})+' IST';
   document.getElementById('lastUpdated').innerHTML=`<strong>Last updated:</strong> ${fmt}`;
-  document.getElementById('headerBadge').innerHTML=`<span class="live-dot"></span>Live · <span>${DB.meta.totalCases} cases</span>`;
+  const wdCases=weekdays().reduce(function(s,d){return s+d.cases.length;},0);
+  const weCases=DB.days.filter(function(d){return d.isWeekend;}).reduce(function(s,d){return s+d.cases.length;},0);
+  document.getElementById('headerBadge').innerHTML=`<span class="live-dot"></span>Live · <span>${wdCases} weekday</span> · <span>${weCases} weekend</span>`;
 }
 
 // ── KPIs ─────────────────────────────────────────────────────────────────────
 function renderKPIs(){
+  const wdays=weekdays();
   let total=0;
-  for(const d of DB.days)total+=d.cases.length;
-  const avg=(total/DB.days.length).toFixed(1);
+  for(const d of wdays)total+=d.cases.length;
+  const avg=(total/wdays.length).toFixed(1);
   document.getElementById('kpiTotal').textContent=total;
-  document.getElementById('kpiTotalSub').textContent=DB.days.length+' days tracked';
-  document.getElementById('kpiDays').textContent=DB.days.length;
-  document.getElementById('kpiDaysSub').textContent='Jun 1–'+DB.days[DB.days.length-1].label.replace('Jun ','');
+  document.getElementById('kpiTotalSub').textContent=wdays.length+' weekdays tracked';
+  document.getElementById('kpiDays').textContent=wdays.length;
+  document.getElementById('kpiDaysSub').textContent='Jun 1–'+wdays[wdays.length-1].label.replace('Jun ','');
   document.getElementById('kpiAvgPerDay').textContent=avg;
-  document.getElementById('kpiAvgSub').textContent='across '+DB.days.length+' days';
+  document.getElementById('kpiAvgSub').textContent='across '+wdays.length+' weekdays';
 
-  // Monthly avg channel engage (all days)
-  const allEngageSecs=DB.days.flatMap(d=>d.cases.map(c=>c.channelEngage))
+  // Monthly avg channel engage (weekdays only)
+  const allEngageSecs=wdays.flatMap(d=>d.cases.map(c=>c.channelEngage))
     .filter(v=>v&&v!=='No engagement')
     .map(v=>parseSeconds(v)).filter(v=>v!==null);
   const monthAvgEngage=allEngageSecs.length?fmtSecs(Math.round(allEngageSecs.reduce((a,b)=>a+b,0)/allEngageSecs.length)):null;
   document.getElementById('kpiMonthEngage').textContent=monthAvgEngage||'—';
-  document.getElementById('kpiMonthEngageSub').textContent=monthAvgEngage?'across all '+DB.days.length+' days':'no data yet';
+  document.getElementById('kpiMonthEngageSub').textContent=monthAvgEngage?'across all '+wdays.length+' weekdays':'no data yet';
 
-  // This week avg channel engage (current week = last 5 weekdays)
-  const weeks=groupByWeek(DB.days);
+  // This week avg channel engage (weekdays of most recent week)
+  const weeks=groupByWeek(wdays);
   const thisWeek=weeks[weeks.length-1]||[];
   const weekEngageSecs=thisWeek.flatMap(d=>d.cases.map(c=>c.channelEngage))
     .filter(v=>v&&v!=='No engagement')
@@ -535,11 +569,8 @@ function renderKPIs(){
   document.getElementById('kpiWeekEngage').textContent=weekAvgEngage||'—';
   document.getElementById('kpiWeekEngageSub').textContent=weekAvgEngage?(wkLabel+', '+thisWeek.length+' days'):'no data yet';
 
-  // Bridge compliance — denominator = all new Sev1s (not pre-existing re-alerts, not GHOs)
-  // Pre-existing = channelCreatedAt date is before the day's date (re-alerted cases)
-  // GHOs are tracked separately and excluded; escalated cases never appear in data
-  // bridgeNA cases (throttle/lap/monitoring/howto/sandbox) are now INCLUDED in denominator
-  const allCases=DB.days.flatMap(function(d){
+  // Bridge compliance — weekdays only
+  const allCases=wdays.flatMap(function(d){
     return d.cases.map(function(c){return Object.assign({},c,{_dayDate:d.date});});
   });
   // New Sev1 = channel was created on the same day (not a pre-existing re-alert)
@@ -582,7 +613,7 @@ function renderKPIs(){
 
 // ── WEEK CARDS ───────────────────────────────────────────────────────────────
 function renderWeekCards(){
-  const weeks=groupByWeek(DB.days);
+  const weeks=groupByWeek(weekdays());
   const palette=[['#60c8ff','#facc15','#2dd4bf','#a78bfa','#fb923c'],['#a78bfa','#2dd4bf','#f472b6','#60c8ff','#fb923c'],['#60c8ff','#facc15','#2dd4bf','#a78bfa','#fb923c']];
   const wkLabels=['Week 1 (Jun 1–5)','Week 2 (Jun 8–12)','Week 3 (Jun 15+)'];
   const container=document.getElementById('weekSummary');
@@ -618,11 +649,12 @@ function renderSummaryTable(){
   // Show/hide the Callouts column header in non-daily modes
   const calloutsHeader=document.getElementById('summaryCalloutsHeader');
   if(calloutsHeader)calloutsHeader.style.display=mode==='daily'?'':'none';
+  const wdays=weekdays();
   let rows=[];
   if(mode==='daily'){
-    rows=DB.days.map(d=>({label:d.label,manager:d.manager,cases:d.cases,eodDone:d.eodDone,eodCount:d.eodDone?1:0,eodTotal:1,day:d}));
+    rows=wdays.map(d=>({label:d.label,manager:d.manager,cases:d.cases,eodDone:d.eodDone,eodCount:d.eodDone?1:0,eodTotal:1,day:d}));
   }else if(mode==='wow'){
-    rows=groupByWeek(DB.days).map(wk=>({
+    rows=groupByWeek(wdays).map(wk=>({
       label:wk[0].label+(wk.length>1?'–'+wk[wk.length-1].label.split(' ')[1]:''),
       manager:[...new Set(wk.map(d=>d.manager))].join(' / '),
       cases:wk.flatMap(d=>d.cases),
@@ -631,8 +663,7 @@ function renderSummaryTable(){
       eodTotal:wk.length
     }));
   }else{
-    const allDays=DB.days;
-    rows=[{label:'Jun 2026',manager:'All',cases:allDays.flatMap(d=>d.cases),eodDone:allDays.every(d=>d.eodDone),eodCount:allDays.filter(d=>d.eodDone).length,eodTotal:allDays.length}];
+    rows=[{label:'Jun 2026',manager:'All',cases:wdays.flatMap(d=>d.cases),eodDone:wdays.every(d=>d.eodDone),eodCount:wdays.filter(d=>d.eodDone).length,eodTotal:wdays.length}];
   }
   const tbody=document.getElementById('summaryBody');tbody.innerHTML='';
   rows.forEach((row,ri)=>{
@@ -681,8 +712,9 @@ function renderSummaryTable(){
 function renderCharts(){
   Chart.defaults.color='#64748b';
   Chart.defaults.font.family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif";
-  const labels=DB.days.map(d=>d.label);
-  const totals=DB.days.map(d=>d.cases.length);
+  const wdays=weekdays();
+  const labels=wdays.map(d=>d.label);
+  const totals=wdays.map(d=>d.cases.length);
   if(dailyChart)dailyChart.destroy();
   const totalLabelsPlugin={id:'totalLabels',afterDatasetsDraw(chart){
     const{ctx,data}=chart;
@@ -709,7 +741,7 @@ function renderCharts(){
           suggestedMax:Math.max(...totals)+3}}}
   });
   // Avg channel engage per day (in minutes)
-  const engageMins=DB.days.map(d=>{
+  const engageMins=wdays.map(d=>{
     const secs=avgSeconds(d.cases.map(c=>c.channelEngage).filter(v=>v&&v!=='No engagement'&&parseSeconds(v)!==null));
     return secs!==null?Math.round(secs/60*10)/10:null;
   });
@@ -748,17 +780,18 @@ function renderCharts(){
 function renderTabs(){
   const sel=document.getElementById('daySelect');
   const tabPanels=document.getElementById('tabPanels');
-  // Build the dropdown
+  const wdays=weekdays();
+  // Build the dropdown (weekdays only)
   while(sel.firstChild)sel.removeChild(sel.firstChild);
-  DB.days.forEach(function(day,idx){
+  wdays.forEach(function(day,idx){
     const opt=document.createElement('option');
     opt.value=day.date;
     opt.textContent=day.label+' ('+day.cases.length+')';
-    if(idx===DB.days.length-1)opt.selected=true;
+    if(idx===wdays.length-1)opt.selected=true;
     sel.appendChild(opt);
   });
   // Render the active day panel
-  showDay(DB.days[DB.days.length-1].date,tabPanels);
+  showDay(wdays[wdays.length-1].date,tabPanels);
 }
 
 function showDay(dateStr,panelContainer){
