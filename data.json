@@ -4453,7 +4453,9 @@
           "channelCreatedAt": "2026-06-20 17:37:28 IST"
         }
       ],
-      "eodDone": false
+      "eodDone": false,
+      "isWeekend": true,
+      "dayOfWeek": "Saturday"
     },
     {
       "date": "2026-06-21",
@@ -4479,7 +4481,9 @@
           "channelCreatedAt": "2026-06-21 12:50:34 IST"
         }
       ],
-      "eodDone": false
+      "eodDone": false,
+      "isWeekend": true,
+      "dayOfWeek": "Sunday"
     }
   ]
 }
