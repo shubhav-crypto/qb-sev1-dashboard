@@ -860,6 +860,11 @@ function buildDayPanel(day,container){
   cases.forEach(function(c){const m=c.manager||day.manager;if(!byMgr[m])byMgr[m]=[];byMgr[m].push(c);});
   let html='';
   if(mciNotes[day.date])html+='<div class="mci-callout">'+mciNotes[day.date]+'</div>';
+  if(day.callouts&&day.callouts.length){
+    const CALLOUT_STYLE2={mci:{bg:'rgba(124,77,255,.08)',border:'rgba(124,77,255,.25)',color:'#a78bfa'},exec:{bg:'rgba(245,158,11,.10)',border:'rgba(245,158,11,.25)',color:'#b45309'},warn:{bg:'rgba(220,38,38,.10)',border:'rgba(220,38,38,.25)',color:'#dc2626'}};
+    const pills=day.callouts.map(function(co){const s=CALLOUT_STYLE2[co.type]||CALLOUT_STYLE2.warn;return'<span style="display:inline-flex;align-items:center;background:'+s.bg+';border:1px solid '+s.border+';border-radius:6px;padding:4px 11px;font-size:12px;font-weight:500;color:'+s.color+';white-space:normal;line-height:1.4;">'+co.text+'</span>';}).join(' ');
+    html+='<div style="margin-bottom:12px;display:flex;flex-wrap:wrap;gap:6px;">'+pills+'</div>';
+  }
   html+='<div class="day-chips">';
   Object.entries(byMgr).forEach(function([mgr,mc]){
     const color=CHIP_COLOR[mgr]||'#999',bg=CHIP_BG[mgr]||'rgba(100,116,139,.1)',full=FULL_NAME[mgr]||(mgr||'Weekend CIC');
@@ -874,7 +879,7 @@ function buildDayPanel(day,container){
   html+='<th style="white-space:nowrap;cursor:help;" title="Time from Sev1 channel creation to QB Manager first text">Channel Engage</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Account has a Red Account record in OrgCS">Red Acct</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Customer bridge (Meet/WebEx/Teams/Zoom) initiated within 15 min of channel creation. Every Sev1 has a channel — null means CIC did not engage or bridge data was not captured.">Bridge ≤15m</th>';
-
+  html+='<th style="white-space:nowrap;cursor:help;" title="Case notes or callout context">Notes</th>';
   html+='</tr></thead><tbody>';
   const mciSet=mciCases[day.date]||[];
   cases.forEach(function(c,i){
@@ -914,11 +919,15 @@ function buildDayPanel(day,container){
         bridgeCell='<td style="white-space:nowrap;font-size:11px;"><span style="background:rgba(148,163,184,.1);color:#94a3b8;border-radius:5px;padding:2px 7px;border:1px solid rgba(148,163,184,.25);" title="No CIC engagement in QB window — bridge not applicable">⛔ No CIC engage</span></td>';
       }
     }
+    const notesCell=c.resolvedText
+      ?'<td style="font-size:11px;color:#94a3b8;max-width:200px;white-space:normal;line-height:1.4;padding:8px 12px;">'+c.resolvedText+'</td>'
+      :(c.callout?'<td style="font-size:11px;color:#b45309;max-width:200px;white-space:normal;line-height:1.4;padding:8px 12px;">'+c.callout+'</td>'
+      :'<td style="color:#cbd5e1;font-size:11px;text-align:center;">—</td>');
     html+='<tr><td class="case-num">'+(i+1)+'</td><td>'+c.caseNum+'</td>'
       +'<td class="account-name">'+mciTag+c.account+'</td><td class="product-cell">'+c.product+'</td>'
       +'<td class="time-cell">'+c.timeIST+'</td>'
       +'<td><span class="manager-chip '+chipCls+'">'+mgr+'</span></td>'
-      +rtCell(c.ack)+rtCell(c.resolve)+rtCell(c.channelEngage,true,true,c.caseNum)+redCell+bridgeCell+'</tr>';
+      +rtCell(c.ack)+rtCell(c.resolve)+rtCell(c.channelEngage,true,true,c.caseNum)+redCell+bridgeCell+notesCell+'</tr>';
   });
   html+='</tbody></table></div>';
   container.innerHTML=html;
