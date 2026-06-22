@@ -411,6 +411,8 @@ const noEngReasons = {
   // Jun 16 new cases — ASSESSED
   '473553588':'Pre-existing channel — case re-alerted Jun 16 for existing Caterpillar issue; no new CIC engagement within QB window',
   '473838045':'Sandbox throttle — CIC assessed immediately and disengaged at 6:52 PM IST; sandbox-only impact, no production blocker',
+  // Jun 22
+  '473878209':'Pre-existing re-alert — Sev1 channel created 2026-06-18; performance degradation tied to 262.10 release; fix deployed Jun 18–19; customer re-opened asking for RCA; no new QB engagement needed',
 };
 function makeNoEngHtml(caseNum){
   const reason=noEngReasons[caseNum]||'No channel engagement recorded within QB window (12:30–7:30 PM IST)';
