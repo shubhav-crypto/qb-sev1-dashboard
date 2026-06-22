@@ -229,6 +229,7 @@
           <th style="padding:10px 14px;text-align:center;">Avg Channel Engage</th>
           <th style="padding:10px 14px;text-align:center;">STRONG ≤5m</th>
           <th style="padding:10px 14px;text-align:center;">No Engage</th>
+          <th style="padding:10px 14px;text-align:left;">Callouts</th>
         </tr></thead>
         <tbody id="weekendSummaryBody"></tbody>
       </table>
@@ -837,6 +838,22 @@ function renderWeekendSummary(){
     const noCol=noEngage>0?'#d97706':'#94a3b8';
     const noFw=noEngage>0?'600':'400';
     tr.appendChild(cell(total?String(noEngage):'—','padding:10px 14px;text-align:center;font-size:12px;color:'+noCol+';font-weight:'+noFw+';'));
+    // callouts cell
+    const coTd=document.createElement('td');
+    coTd.style.cssText='padding:8px 14px;max-width:280px;';
+    const CALLOUT_STYLE_WE={mci:{bg:'rgba(124,77,255,.08)',border:'rgba(124,77,255,.25)',color:'#a78bfa'},exec:{bg:'rgba(245,158,11,.10)',border:'rgba(245,158,11,.25)',color:'#b45309'},warn:{bg:'rgba(220,38,38,.10)',border:'rgba(220,38,38,.25)',color:'#dc2626'}};
+    if(day.callouts&&day.callouts.length){
+      day.callouts.forEach(function(co){
+        const s=CALLOUT_STYLE_WE[co.type]||CALLOUT_STYLE_WE.warn;
+        const pill=document.createElement('span');
+        pill.style.cssText='display:inline-flex;align-items:center;background:'+s.bg+';border:1px solid '+s.border+';border-radius:6px;padding:3px 9px;font-size:11px;font-weight:500;color:'+s.color+';white-space:normal;line-height:1.4;margin:2px 0;';
+        pill.textContent=co.text;
+        coTd.appendChild(pill);
+      });
+    } else {
+      const dash=document.createElement('span');dash.style.color='#cbd5e1';dash.textContent='—';coTd.appendChild(dash);
+    }
+    tr.appendChild(coTd);
     tbody.appendChild(tr);
   });
 }

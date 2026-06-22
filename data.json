@@ -2213,7 +2213,7 @@
       "manager": "Sai Vikram",
       "canvasId": null,
       "eodDone": true,
-      "callouts": [],
+      "callouts": [{"type": "warn", "text": "📈 High volume: 17 Sev1s — highest weekend on record (CONA ×2, Cisco, Airbnb, JPMorgan, Robinhood, GM & more)"}],
       "isWeekend": true,
       "cases": [
         {
