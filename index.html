@@ -551,7 +551,7 @@ function renderKPIs(){
     .filter(v=>v&&v!=='No engagement')
     .map(v=>parseSeconds(v)).filter(v=>v!==null);
   const weekAvgEngage=weekEngageSecs.length?fmtSecs(Math.round(weekEngageSecs.reduce((a,b)=>a+b,0)/weekEngageSecs.length)):null;
-  const wkLabel=thisWeek.length?thisWeek[0].label+(thisWeek.length>1?'–'+thisWeek[thisWeek.length-1].label.split(' ')[1]:''):'';
+  const wkLabel=thisWeek.length?thisWeek[0].label+(thisWeek.length>1&&thisWeek[thisWeek.length-1].label?'–'+thisWeek[thisWeek.length-1].label.split(' ')[1]:''):'';
   document.getElementById('kpiWeekEngage').textContent=weekAvgEngage||'—';
   document.getElementById('kpiWeekEngageSub').textContent=weekAvgEngage?(wkLabel+', '+thisWeek.length+' days'):'no data yet';
 
@@ -641,7 +641,7 @@ function renderSummaryTable(){
     rows=wdays.map(d=>({label:d.label,manager:d.manager,cases:d.cases,eodDone:d.eodDone,eodCount:d.eodDone?1:0,eodTotal:1,day:d}));
   }else if(mode==='wow'){
     rows=groupByWeek(wdays).map(wk=>({
-      label:wk[0].label+(wk.length>1?'–'+wk[wk.length-1].label.split(' ')[1]:''),
+      label:wk[0].label+(wk.length>1&&wk[wk.length-1].label?'–'+wk[wk.length-1].label.split(' ')[1]:''),
       manager:[...new Set(wk.map(d=>d.manager))].join(' / '),
       cases:wk.flatMap(d=>d.cases),
       eodDone:wk.every(d=>d.eodDone),
@@ -656,7 +656,7 @@ function renderSummaryTable(){
     const{cases}=row,total=cases.length;
     const avgRes=fmtSecs(avgSeconds(cases.map(c=>c.resolve).filter(Boolean)));
     const avgEng=fmtSecs(avgSeconds(cases.map(c=>c.channelEngage).filter(v=>v&&v!=='No engagement'&&parseSeconds(v)!==null)));
-    const mgrHtml=row.manager!=='All'?row.manager.split(' / ').map(m=>mgrChip(m.trim())).join(' '):'—';
+    const mgrHtml=row.manager&&row.manager!=='All'?row.manager.split(' / ').map(m=>mgrChip(m.trim())).join(' '):'—';
     const tr=document.createElement('tr');
     tr.style.cssText=ri%2===0?'':'background:rgba(241,245,249,.5)';
     // EOD cell
@@ -862,7 +862,7 @@ function buildDayPanel(day,container){
   if(mciNotes[day.date])html+='<div class="mci-callout">'+mciNotes[day.date]+'</div>';
   html+='<div class="day-chips">';
   Object.entries(byMgr).forEach(function([mgr,mc]){
-    const color=CHIP_COLOR[mgr]||'#999',bg=CHIP_BG[mgr]||'rgba(100,116,139,.1)',full=FULL_NAME[mgr]||mgr;
+    const color=CHIP_COLOR[mgr]||'#999',bg=CHIP_BG[mgr]||'rgba(100,116,139,.1)',full=FULL_NAME[mgr]||(mgr||'Weekend CIC');
     html+='<div class="day-chip" style="background:'+bg+';border:1px solid '+color+'40;"><strong style="color:'+color+';">'+full+'</strong> — '+mc.length+' WB'+(mc.length!==1?'s':'')+'</div>';
   });
   if(day.canvasId)html+='<div class="day-chip" style="background:rgba(124,77,255,.08);border:1px solid rgba(124,77,255,.2);font-size:12px;color:#a78bfa;">Canvas: <a href="https://salesforce.enterprise.slack.com/docs/T01G0063H29/'+day.canvasId+'" style="color:#a78bfa;" target="_blank">'+day.canvasId+'</a></div>';
@@ -878,7 +878,7 @@ function buildDayPanel(day,container){
   html+='</tr></thead><tbody>';
   const mciSet=mciCases[day.date]||[];
   cases.forEach(function(c,i){
-    const mgr=c.manager||day.manager,chipCls=CHIP_CLS[mgr]||'';
+    const mgr=c.manager||day.manager||'Weekend CIC',chipCls=CHIP_CLS[mgr]||'';
     const isMCI=mciSet.includes(c.caseNum);
     const mciTag=isMCI?'<span class="badge mci">⚡ MCI</span> ':'';
     const redCell=c.isRed===true
