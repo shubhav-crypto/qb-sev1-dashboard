@@ -1,8 +1,8 @@
 {
   "meta": {
     "generated": "2026-06-22T08:00:00+05:30",
-    "totalCases": 257,
-    "daysTracked": 21
+    "totalCases": 266,
+    "daysTracked": 22
   },
   "schedule": {
     "2026-06-01": {
@@ -72,6 +72,10 @@
     "2026-06-21": {
       "manager": null,
       "managerId": null
+    },
+    "2026-06-22": {
+      "manager": "Jyothirmayee",
+      "managerId": "WN8LA3U5D"
     }
   },
   "managerIds": {
@@ -4490,6 +4494,161 @@
       "eodDone": false,
       "isWeekend": true,
       "dayOfWeek": "Sunday"
+    },
+    {
+      "date": "2026-06-22",
+      "label": "Jun 22",
+      "manager": "Jyothirmayee",
+      "managerId": "WN8LA3U5D",
+      "canvasId": null,
+      "eodDone": false,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "473902128",
+          "account": "National Disability Insurance Agency",
+          "product": "Experience Management and Workspaces",
+          "timeIST": "1:09 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "1m 5s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-22 13:09:49 IST"
+        },
+        {
+          "caseNum": "473878209",
+          "account": "Cater Allen Limited",
+          "product": "How-to, Setup, Configuration, Data Management",
+          "timeIST": "1:49 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": null,
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": "howto",
+          "resolvedAt": null,
+          "resolvedText": "Pre-existing re-alert (channel created 2026-06-18)",
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-18 IST"
+        },
+        {
+          "caseNum": "473903848",
+          "account": "Solenis LLC",
+          "product": "Field Service",
+          "timeIST": "2:09 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "6m 26s",
+          "isRed": true,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-22 14:09:06 IST"
+        },
+        {
+          "caseNum": "473905029",
+          "account": "HDFC Bank Limited",
+          "product": "Developer Support",
+          "timeIST": "4:08 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "1m 47s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-22 16:08:33 IST"
+        },
+        {
+          "caseNum": "473905039",
+          "account": "Philip Morris Products S.A., OC Division",
+          "product": "Developer Support",
+          "timeIST": "4:09 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "4m 51s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-22 16:09:19 IST"
+        },
+        {
+          "caseNum": "473905182",
+          "account": "Autodesk, Inc.",
+          "product": "Developer Support",
+          "timeIST": "4:56 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "46s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-22 16:56:11 IST"
+        },
+        {
+          "caseNum": "473905639",
+          "account": "Twitch Customer Experience (Media)",
+          "product": "Digital Engagement",
+          "timeIST": "5:25 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "50s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-22 17:26:08 IST"
+        },
+        {
+          "caseNum": "473582644",
+          "account": "Fox Corporation",
+          "product": "Developer Support",
+          "timeIST": "6:15 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "1m 33s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": "Pre-existing re-alert (channel created earlier — case 473582644 opened pre-Jun 22)",
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-22 18:15:51 IST"
+        },
+        {
+          "caseNum": "473906098",
+          "account": "Sysco Corporation",
+          "product": "Email Delivery and Desktop Integrations",
+          "timeIST": "6:22 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "2m 56s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-22 18:23:11 IST"
+        }
+      ]
     }
   ]
 }
