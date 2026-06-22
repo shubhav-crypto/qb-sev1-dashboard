@@ -219,6 +219,20 @@
 
   <!-- ── Weekend panel ── -->
   <div id="panel-weekend" style="display:none;">
+    <div class="section-header" style="margin-bottom:12px;">Weekend Summary</div>
+    <div style="overflow-x:auto;margin-bottom:24px;">
+      <table class="case-table" id="weekendSummaryTable">
+        <thead><tr>
+          <th style="padding:10px 14px;text-align:left;">Date</th>
+          <th style="padding:10px 14px;text-align:left;">Day</th>
+          <th style="padding:10px 14px;text-align:center;">Sev1s</th>
+          <th style="padding:10px 14px;text-align:center;">Avg Channel Engage</th>
+          <th style="padding:10px 14px;text-align:center;">STRONG ≤5m</th>
+          <th style="padding:10px 14px;text-align:center;">No Engage</th>
+        </tr></thead>
+        <tbody id="weekendSummaryBody"></tbody>
+      </table>
+    </div>
     <div class="section-header">Weekend Case Detail
       <div style="margin-left:auto;display:flex;align-items:center;gap:10px;">
         <label style="font-size:12px;font-weight:500;color:var(--text-muted);text-transform:uppercase;letter-spacing:.04em;">Date</label>
@@ -509,7 +523,7 @@ async function loadData(force){
 
 function renderAll(){
   renderHeader();renderKPIs();renderWeekCards();
-  renderSummaryTable();renderCharts();renderWeekends();renderTabs();renderWeTabs();renderFooter();
+  renderSummaryTable();renderCharts();renderWeekends();renderWeekendSummary();renderTabs();renderWeTabs();renderFooter();
   attachTooltips();
 }
 
@@ -776,6 +790,55 @@ function renderTabs(){
     sel.appendChild(opt);
   });
   showDay(wdays[wdays.length-1].date,tabPanels);
+}
+
+// ── WEEKEND SUMMARY TABLE ────────────────────────────────────────────────────
+function renderWeekendSummary(){
+  const tbody=document.getElementById('weekendSummaryBody');
+  if(!tbody)return;
+  while(tbody.firstChild)tbody.removeChild(tbody.firstChild);
+  const wedays=DB.days.filter(function(d){return d.isWeekend;});
+  if(!wedays.length){
+    const tr=document.createElement('tr');
+    const td=document.createElement('td');
+    td.colSpan=6;td.style.cssText='text-align:center;color:var(--text-muted);padding:16px;';
+    td.textContent='No weekend data yet.';
+    tr.appendChild(td);tbody.appendChild(tr);return;
+  }
+  wedays.forEach(function(day,ri){
+    const cases=day.cases||[];
+    const total=cases.length;
+    const engSecs=cases.map(function(c){return parseSeconds(c.channelEngage);}).filter(function(v){return v!==null;});
+    const avgEng=engSecs.length?fmtSecs(Math.round(engSecs.reduce(function(a,b){return a+b;},0)/engSecs.length)):null;
+    const strong=cases.filter(function(c){const s=parseSeconds(c.channelEngage);return s!==null&&s<=300;}).length;
+    const noEngage=cases.filter(function(c){return c.channelEngage===null||c.channelEngage===undefined;}).length;
+    const tr=document.createElement('tr');
+    tr.style.cssText=(ri%2===0?'':'background:rgba(241,245,249,.5)')+'cursor:pointer;';
+    tr.title='Click to view '+day.label+' cases';
+    tr.onclick=(function(d){return function(){
+      const sel=document.getElementById('weDaySelect');
+      if(sel){sel.value=d.date;switchWeDaySelect();}
+      const panels=document.getElementById('weDayPanels');
+      if(panels)panels.scrollIntoView({behavior:'smooth',block:'start'});
+    };})(day);
+    function cell(txt,style){const td=document.createElement('td');td.style.cssText=style||'padding:10px 14px;';td.textContent=txt;return td;}
+    function cellN(node,style){const td=document.createElement('td');td.style.cssText=style||'padding:10px 14px;';td.appendChild(node);return td;}
+    function sp(txt,col,fw){const s=document.createElement('span');s.textContent=txt;if(col)s.style.color=col;if(fw)s.style.fontWeight=fw;return s;}
+    tr.appendChild(cell(day.label,'padding:10px 14px;font-weight:600;'));
+    tr.appendChild(cell(day.dayOfWeek||'Weekend','padding:10px 14px;color:var(--text-muted);font-size:12px;'));
+    const totalSp=sp(total?String(total):'—','var(--accent)','700');
+    tr.appendChild(cellN(totalSp,'padding:10px 14px;text-align:center;'));
+    tr.appendChild(cell(avgEng||'—','padding:10px 14px;text-align:center;font-size:12px;color:var(--text-muted);'));
+    if(total){
+      const frac=document.createElement('td');frac.style.cssText='padding:10px 14px;text-align:center;font-size:12px;';
+      const s2=sp(String(strong),'#16a34a','600');frac.appendChild(s2);
+      frac.appendChild(document.createTextNode(' / '+total));tr.appendChild(frac);
+    }else{tr.appendChild(cell('—','padding:10px 14px;text-align:center;font-size:12px;'));}
+    const noCol=noEngage>0?'#d97706':'#94a3b8';
+    const noFw=noEngage>0?'600':'400';
+    tr.appendChild(cell(total?String(noEngage):'—','padding:10px 14px;text-align:center;font-size:12px;color:'+noCol+';font-weight:'+noFw+';'));
+    tbody.appendChild(tr);
+  });
 }
 
 // ── TABS (weekends) ───────────────────────────────────────────────────────────
