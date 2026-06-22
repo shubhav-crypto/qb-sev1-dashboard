@@ -4347,7 +4347,7 @@
           "channelCreatedAt": "2026-06-19 19:25:57 IST"
         }
       ],
-      "eodDone": false
+      "eodDone": true
     },
     {
       "date": "2026-06-20",
