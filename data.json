@@ -4501,7 +4501,7 @@
       "manager": "Jyothirmayee",
       "managerId": "WN8LA3U5D",
       "canvasId": null,
-      "eodDone": false,
+      "eodDone": true,
       "callouts": [],
       "cases": [
         {
