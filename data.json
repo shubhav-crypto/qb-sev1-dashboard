@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-06-22T08:00:00+05:30",
+    "generated": "2026-06-22T20:00:00+05:30",
     "totalCases": 266,
     "daysTracked": 22
   },
@@ -4628,7 +4628,7 @@
           "bridgeWithin15m": null,
           "bridgeNA": null,
           "resolvedAt": null,
-          "resolvedText": "Pre-existing re-alert (channel created earlier — case 473582644 opened pre-Jun 22)",
+          "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-22 18:15:51 IST"
         },
