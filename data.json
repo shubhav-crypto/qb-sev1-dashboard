@@ -1,8 +1,8 @@
 {
   "meta": {
     "generated": "2026-06-29T20:00:00+05:30",
-    "totalCases": 287,
-    "daysTracked": 25
+    "totalCases": 291,
+    "daysTracked": 26
   },
   "schedule": {
     "2026-06-01": {
@@ -84,6 +84,10 @@
     "2026-06-24": {
       "manager": "Jyothirmayee",
       "managerId": "WN8LA3U5D"
+    },
+    "2026-06-25": {
+      "manager": "Nikhil",
+      "managerId": "U01FU2F5RN3"
     },
     "2026-06-29": {
       "manager": "Mirza",
@@ -5006,6 +5010,81 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-24 18:38:47 IST"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-25",
+      "label": "Jun 25",
+      "manager": "Nikhil",
+      "managerId": "U01FU2F5RN3",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "473935416",
+          "account": "Hewlett Packard Enterprise Company",
+          "product": "Developer Support",
+          "timeIST": "1:05 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "2m 21s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-25 13:05:03 IST"
+        },
+        {
+          "caseNum": "473936036",
+          "account": "PT Indosat Tbk",
+          "product": "Security & Activations",
+          "timeIST": "2:15 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "6m 41s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-25 14:15:34 IST"
+        },
+        {
+          "caseNum": "473937814",
+          "account": "YADA Energia Srl",
+          "product": "Service Cloud Voice",
+          "timeIST": "5:49 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "2m 56s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-25 17:49:55 IST"
+        },
+        {
+          "caseNum": "473937925",
+          "account": "Shoppers Drug Mart Inc.",
+          "product": "Security & Activations",
+          "timeIST": "6:03 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "1m 58s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-25 18:03:53 IST"
         }
       ]
     },
