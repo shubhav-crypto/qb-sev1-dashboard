@@ -4673,7 +4673,7 @@
       "manager": "Mirza",
       "managerId": "U04219TJTK5",
       "canvasId": null,
-      "eodDone": false,
+      "eodDone": true,
       "callouts": [],
       "cases": [
         {
@@ -4876,7 +4876,7 @@
       "manager": "Jyothirmayee",
       "managerId": "WN8LA3U5D",
       "canvasId": null,
-      "eodDone": false,
+      "eodDone": true,
       "callouts": [],
       "cases": [
         {
