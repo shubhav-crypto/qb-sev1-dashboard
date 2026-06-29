@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated": "2026-06-29T00:00:00+05:30",
-    "totalCases": 274,
-    "daysTracked": 23
+    "generated": "2026-06-29T20:00:00+05:30",
+    "totalCases": 287,
+    "daysTracked": 25
   },
   "schedule": {
     "2026-06-01": {
@@ -77,9 +77,17 @@
       "manager": "Jyothirmayee",
       "managerId": "WN8LA3U5D"
     },
+    "2026-06-23": {
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5"
+    },
     "2026-06-24": {
       "manager": "Jyothirmayee",
       "managerId": "WN8LA3U5D"
+    },
+    "2026-06-29": {
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5"
     }
   },
   "managerIds": {
@@ -4660,6 +4668,209 @@
       ]
     },
     {
+      "date": "2026-06-23",
+      "label": "Jun 23",
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5",
+      "canvasId": null,
+      "eodDone": false,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "473913766",
+          "account": "Private National Mortgage Acceptance Company, LLC (CDL Org)",
+          "product": "Developer Support",
+          "timeIST": "12:57 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "2m 17s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": "throttle",
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-23 12:57:01 IST"
+        },
+        {
+          "caseNum": "473913173",
+          "account": "ADP, Inc.",
+          "product": "Developer Support",
+          "timeIST": "2:29 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "4m 40s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-23 14:29:10 IST"
+        },
+        {
+          "caseNum": "473914810",
+          "account": "Brunello Cucinelli SpA",
+          "product": "Service Cloud Voice",
+          "timeIST": "2:49 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "7m 36s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-23 14:49:48 IST"
+        },
+        {
+          "caseNum": "473914839",
+          "account": "Autodesk, Inc.",
+          "product": "Developer Support",
+          "timeIST": "2:52 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "1m 28s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-23 14:52:02 IST"
+        },
+        {
+          "caseNum": "473914880",
+          "account": "SPIE Operations",
+          "product": "Field Service",
+          "timeIST": "2:56 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "1m 57s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-23 14:56:25 IST"
+        },
+        {
+          "caseNum": "473916031",
+          "account": "Hewlett Packard Enterprise Company",
+          "product": "Developer Support",
+          "timeIST": "4:54 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "1m 41s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-23 16:54:31 IST"
+        },
+        {
+          "caseNum": "473916467",
+          "account": "Banco BTG Pactual S.A.",
+          "product": "Digital Engagement",
+          "timeIST": "5:53 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "2m 6s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-23 17:53:24 IST"
+        },
+        {
+          "caseNum": "473916586",
+          "account": "ABB E-mobility Holding AG",
+          "product": "Field Service",
+          "timeIST": "6:07 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "53s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-23 18:07:28 IST"
+        },
+        {
+          "caseNum": "473814386",
+          "account": "Stellantis España S.L.",
+          "product": "Developer Support",
+          "timeIST": "6:08 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": null,
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": "Pre-existing re-alert (channel created 2026-06-15)",
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-15 IST"
+        },
+        {
+          "caseNum": "473839908",
+          "account": "Thelem Assurances",
+          "product": "Email Delivery and Desktop Integrations",
+          "timeIST": "6:24 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "10m 47s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-23 18:24:08 IST"
+        },
+        {
+          "caseNum": "473916887",
+          "account": "Wolters Kluwer Global Business Services B.V.",
+          "product": "Developer Support",
+          "timeIST": "6:44 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "43s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-23 18:44:56 IST"
+        },
+        {
+          "caseNum": "473886349",
+          "account": "Senske Family of Companies",
+          "product": "Field Service",
+          "timeIST": "7:24 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "1m 50s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-23 19:24:29 IST"
+        }
+      ]
+    },
+    {
       "date": "2026-06-24",
       "label": "Jun 24",
       "manager": "Jyothirmayee",
@@ -4795,6 +5006,33 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-24 18:38:47 IST"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-29",
+      "label": "Jun 29",
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5",
+      "canvasId": null,
+      "eodDone": false,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "473963860",
+          "account": "Jaquar and Company Private Limited",
+          "product": "Field Service",
+          "timeIST": "2:52 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "26s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-29 14:52:43 IST"
         }
       ]
     }
