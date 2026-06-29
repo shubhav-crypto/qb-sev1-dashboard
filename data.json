@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated": "2026-06-22T20:00:00+05:30",
-    "totalCases": 266,
-    "daysTracked": 22
+    "generated": "2026-06-29T00:00:00+05:30",
+    "totalCases": 274,
+    "daysTracked": 23
   },
   "schedule": {
     "2026-06-01": {
@@ -74,6 +74,10 @@
       "managerId": null
     },
     "2026-06-22": {
+      "manager": "Jyothirmayee",
+      "managerId": "WN8LA3U5D"
+    },
+    "2026-06-24": {
       "manager": "Jyothirmayee",
       "managerId": "WN8LA3U5D"
     }
@@ -173,7 +177,7 @@
         },
         {
           "caseNum": "473604096",
-          "account": "bp International Ltd \u2013 Colleagues Org",
+          "account": "bp International Ltd – Colleagues Org",
           "product": "Digital Engagement",
           "timeIST": "5:24 PM",
           "quality": "STRONG",
@@ -322,7 +326,7 @@
         },
         {
           "caseNum": "473613541",
-          "account": "Cummins \u2013 Guidanz (Service Org)",
+          "account": "Cummins – Guidanz (Service Org)",
           "product": "Developer Support",
           "timeIST": "4:00 PM",
           "quality": "STRONG",
@@ -609,7 +613,7 @@
       "cases": [
         {
           "caseNum": "473633737",
-          "account": "Guardant Health \u2013 Screening Org",
+          "account": "Guardant Health – Screening Org",
           "product": "Digital Engagement",
           "timeIST": "1:12 PM",
           "quality": "STRONG",
@@ -712,7 +716,7 @@
           "isRed": false,
           "bridgeWithin15m": false,
           "resolvedAt": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Need More Information)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Need More Information)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-04 15:59:44 IST",
           "oiSource": "orgcs"
@@ -854,7 +858,7 @@
           "bridgeWithin15m": true,
           "resolvedAt": null,
           "oiDuration": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Solution Provided)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Solution Provided)",
           "channelCreatedAt": "2026-06-04 19:15:11 IST",
           "oiSource": "orgcs"
         },
@@ -962,7 +966,7 @@
         },
         {
           "caseNum": "473657275",
-          "account": "bp International Ltd \u2013 Colleagues Org",
+          "account": "bp International Ltd – Colleagues Org",
           "product": "Digital Engagement",
           "timeIST": "5:34 PM",
           "quality": "STRONG",
@@ -1323,7 +1327,7 @@
         {
           "caseNum": "473697035",
           "account": "Tata Consumer Products",
-          "product": "Agentforce \u2013 Service",
+          "product": "Agentforce – Service",
           "timeIST": "5:42 PM",
           "manager": "Jyothirmayee",
           "quality": "MODERATE",
@@ -1702,7 +1706,7 @@
           "isRed": false,
           "bridgeWithin15m": false,
           "resolvedAt": "2026-06-10 19:54:13 IST",
-          "resolvedText": "no actions pending \u2014 their team had a confusion",
+          "resolvedText": "no actions pending — their team had a confusion",
           "oiDuration": "31m",
           "channelCreatedAt": "2026-06-10 19:23:00 IST"
         }
@@ -1955,11 +1959,11 @@
       "callouts": [
         {
           "type": "mci",
-          "text": "\u26a1 Active MCI: MCS Prod3 Availability Drop \u2014 CIR: #icc-91554592 \u00b7 Sev4 \u00b7 Team: Messaging Channels and Features"
+          "text": "⚡ Active MCI: MCS Prod3 Availability Drop — CIR: #icc-91554592 · Sev4 · Team: Messaging Channels and Features"
         },
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Continue to monitor: Maersk (Issue recurred, customer temp: HOT)"
+          "text": "👁 Exec Visibility — Continue to monitor: Maersk (Issue recurred, customer temp: HOT)"
         }
       ]
     },
@@ -2107,7 +2111,7 @@
           "bridgeWithin15m": false,
           "resolvedAt": "2026-06-13 10:41:46 IST",
           "oiDuration": "17h 8m",
-          "resolvedText": "CIC Update :: Issue has been mitigated - component switched V2\u2192V1, resolved.",
+          "resolvedText": "CIC Update :: Issue has been mitigated - component switched V2→V1, resolved.",
           "channelCreatedAt": "2026-06-12 17:33:22 IST"
         },
         {
@@ -2206,7 +2210,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Continue to monitor: Claro S.A., The Reinalt-Thomas Corporation (customer temp: HOT)"
+          "text": "👁 Exec Visibility — Continue to monitor: Claro S.A., The Reinalt-Thomas Corporation (customer temp: HOT)"
         }
       ]
     },
@@ -2217,7 +2221,12 @@
       "manager": "Sai Vikram",
       "canvasId": null,
       "eodDone": true,
-      "callouts": [{"type": "warn", "text": "📈 High volume: 17 Sev1s — highest weekend on record (CONA ×2, Cisco, Airbnb, JPMorgan, Robinhood, GM & more)"}],
+      "callouts": [
+        {
+          "type": "warn",
+          "text": "📈 High volume: 17 Sev1s — highest weekend on record (CONA ×2, Cisco, Airbnb, JPMorgan, Robinhood, GM & more)"
+        }
+      ],
       "isWeekend": true,
       "cases": [
         {
@@ -2704,7 +2713,7 @@
           "isRed": true,
           "bridgeWithin15m": false,
           "resolvedAt": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Working)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Working)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-15 16:13:33 IST",
           "oiSource": "orgcs"
@@ -2819,7 +2828,7 @@
           "isRed": false,
           "bridgeWithin15m": false,
           "resolvedAt": "2026-06-15 19:38:36 IST",
-          "resolvedText": "There is no issue \u2014 they are receiving and able to send emails.",
+          "resolvedText": "There is no issue — they are receiving and able to send emails.",
           "oiDuration": "28m",
           "channelCreatedAt": "2026-06-15 19:10:00 IST"
         },
@@ -2842,7 +2851,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Continue to monitor: Claro S.A., The Reinalt-Thomas Corporation, Philip Morris International IT Service Center S\u00e0rl, Affirm (customer temp: Warm)"
+          "text": "👁 Exec Visibility — Continue to monitor: Claro S.A., The Reinalt-Thomas Corporation, Philip Morris International IT Service Center Sàrl, Affirm (customer temp: Warm)"
         }
       ]
     },
@@ -2879,7 +2888,7 @@
           "isRed": false,
           "bridgeWithin15m": true,
           "resolvedAt": "2026-06-16 15:23:51 IST",
-          "resolvedText": "they can login manually after session timeout \u2014 CIC disengaging",
+          "resolvedText": "they can login manually after session timeout — CIC disengaging",
           "oiDuration": "1h 40m",
           "channelCreatedAt": "2026-06-16 13:43:00 IST"
         },
@@ -2926,7 +2935,7 @@
           "isRed": false,
           "bridgeWithin15m": true,
           "resolvedAt": "2026-06-16 17:57:59 IST",
-          "resolvedText": "issue is intermittent \u2014 CIC can disengage for now",
+          "resolvedText": "issue is intermittent — CIC can disengage for now",
           "oiDuration": "3h 42m",
           "channelCreatedAt": "2026-06-16 14:15:00 IST"
         },
@@ -2987,7 +2996,7 @@
           "isRed": false,
           "bridgeWithin15m": true,
           "resolvedAt": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Working)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Working)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 16:26:04 IST",
           "oiSource": "orgcs"
@@ -3003,7 +3012,7 @@
           "isRed": false,
           "bridgeWithin15m": true,
           "resolvedAt": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Working)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Working)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 16:42:34 IST",
           "oiSource": "orgcs"
@@ -3034,7 +3043,7 @@
           "isRed": false,
           "bridgeWithin15m": true,
           "resolvedAt": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Need More Information)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Need More Information)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 17:49:40 IST",
           "oiSource": "orgcs"
@@ -3065,7 +3074,7 @@
           "isRed": false,
           "bridgeWithin15m": true,
           "resolvedAt": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Need More Information)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Need More Information)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 18:29:21 IST",
           "oiSource": "orgcs"
@@ -3082,7 +3091,7 @@
           "bridgeWithin15m": true,
           "bridgeNA": "throttle",
           "resolvedAt": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Solution Provided)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Solution Provided)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 18:49:27 IST",
           "oiSource": "orgcs"
@@ -3092,7 +3101,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Continue to monitor: Disney Streaming Services LLC, Avent-INC, Claro S.A., The Reinalt-Thomas Corporation, Philip Morris International IT Service Center S\u00e0rl"
+          "text": "👁 Exec Visibility — Continue to monitor: Disney Streaming Services LLC, Avent-INC, Claro S.A., The Reinalt-Thomas Corporation, Philip Morris International IT Service Center Sàrl"
         }
       ]
     },
@@ -3147,7 +3156,7 @@
           "bridgeWithin15m": true,
           "bridgeNA": null,
           "resolvedAt": "2026-06-17 15:36:20 IST",
-          "resolvedText": "Certificate renewal blocked for services.jaguar.co.uk \u2014 domain configured on MRT not eCDN. Customer confirmed happy with existing approach; case mitigated.",
+          "resolvedText": "Certificate renewal blocked for services.jaguar.co.uk — domain configured on MRT not eCDN. Customer confirmed happy with existing approach; case mitigated.",
           "oiDuration": "39m 51s",
           "channelCreatedAt": "2026-06-17 14:56:29 IST",
           "oiSource": "orgcs"
@@ -3234,7 +3243,7 @@
           "bridgeWithin15m": true,
           "bridgeNA": null,
           "resolvedAt": "2026-06-17 15:00:59 IST",
-          "resolvedText": "CIC assessed as not a business-affecting Sev1 \u2014 LAP filings for MFA enforcement on test orgs, no production impact.",
+          "resolvedText": "CIC assessed as not a business-affecting Sev1 — LAP filings for MFA enforcement on test orgs, no production impact.",
           "oiDuration": "53m 19s",
           "channelCreatedAt": "2026-06-17 14:07:40 IST",
           "oiSource": "orgcs"
@@ -3286,7 +3295,7 @@
           "bridgeWithin15m": true,
           "bridgeNA": null,
           "resolvedAt": "2026-06-17 22:58:34 IST",
-          "resolvedText": "NA237 performance degradation \u2014 trust incident #20004111 raised; linked to incident channel icc-91757097.",
+          "resolvedText": "NA237 performance degradation — trust incident #20004111 raised; linked to incident channel icc-91757097.",
           "oiDuration": "5h 27m",
           "channelCreatedAt": "2026-06-17 17:31:20 IST",
           "oiSource": "orgcs"
@@ -3339,7 +3348,7 @@
           "bridgeWithin15m": true,
           "bridgeNA": null,
           "resolvedAt": "2026-06-18 12:52:52 IST",
-          "resolvedText": "Flow unable to set field to null \u2014 assessed non-critical, production fully operational. CIC Benita Lennon disengaged.",
+          "resolvedText": "Flow unable to set field to null — assessed non-critical, production fully operational. CIC Benita Lennon disengaged.",
           "oiDuration": "18h 41m",
           "channelCreatedAt": "2026-06-17 18:11:05 IST",
           "oiSource": "orgcs"
@@ -3367,7 +3376,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Continue to monitor: Disney Streaming Services LLC, Pentagon Federal Credit Union"
+          "text": "👁 Exec Visibility — Continue to monitor: Disney Streaming Services LLC, Pentagon Federal Credit Union"
         }
       ]
     },
@@ -3992,7 +4001,7 @@
         },
         {
           "caseNum": "473881543",
-          "account": "CIELO S.A. \u2014 Instituicao de Pagamento",
+          "account": "CIELO S.A. — Instituicao de Pagamento",
           "product": "Service-Cases, Knowledge, Service Cloud Console, Work.com",
           "timeIST": "7:05 PM",
           "quality": "PENDING",
@@ -4063,11 +4072,11 @@
       "callouts": [
         {
           "type": "mci",
-          "text": "\u26a1 Active MCI: Lightning Record Page Error | $A.componentService.hasDefinition \u2014 CIR: #icc-91807036 \u00b7 GUS Bug (fix): W-22994699 \u00b7 SRE: W-23065279 \u00b7 PD: Q16E8V2F9NT71W"
+          "text": "⚡ Active MCI: Lightning Record Page Error | $A.componentService.hasDefinition — CIR: #icc-91807036 · GUS Bug (fix): W-22994699 · SRE: W-23065279 · PD: Q16E8V2F9NT71W"
         },
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Continue to monitor: lululemon athletica Canada, Inc."
+          "text": "👁 Exec Visibility — Continue to monitor: lululemon athletica Canada, Inc."
         }
       ]
     },
@@ -4355,7 +4364,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Continue to monitor: ADP INC"
+          "text": "👁 Exec Visibility — Continue to monitor: ADP INC"
         }
       ]
     },
@@ -4647,6 +4656,145 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-22 18:23:11 IST"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-24",
+      "label": "Jun 24",
+      "manager": "Jyothirmayee",
+      "managerId": "WN8LA3U5D",
+      "canvasId": null,
+      "eodDone": false,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "473925433",
+          "account": "Veolia Environmental Services (Australia) Pty Ltd",
+          "product": "Service Cloud Voice",
+          "timeIST": "2:45 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "6m 24s",
+          "isRed": false,
+          "bridgeWithin15m": false,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-24 14:42:59 IST"
+        },
+        {
+          "caseNum": "473925458",
+          "account": "Strategic Education, Inc",
+          "product": "How-to, Setup, Configuration, Data Management",
+          "timeIST": "2:49 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "6m 2s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": "howto",
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-24 14:45:55 IST"
+        },
+        {
+          "caseNum": "473925809",
+          "account": "British American Shared Services (GSD) Limited",
+          "product": "Digital Engagement",
+          "timeIST": "3:24 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "3m 14s",
+          "isRed": false,
+          "bridgeWithin15m": false,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-24 15:24:39 IST"
+        },
+        {
+          "caseNum": "473695120",
+          "account": "St. James's Place Management Services Limited",
+          "product": "Mobile apps",
+          "timeIST": "5:05 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "2m 25s",
+          "isRed": false,
+          "bridgeWithin15m": false,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-24 17:05:49 IST"
+        },
+        {
+          "caseNum": "473835820",
+          "account": "Kotak Mahindra Bank Ltd. (HL Org)",
+          "product": "Developer Support",
+          "timeIST": "5:06 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": null,
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": "Pre-existing re-alert (channel created 2026-06-16)",
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-16 IST"
+        },
+        {
+          "caseNum": "473926795",
+          "account": "Grabtaxi Holdings Pte Ltd",
+          "product": "Developer Support",
+          "timeIST": "5:25 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "2m 37s",
+          "isRed": false,
+          "bridgeWithin15m": false,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-24 17:25:59 IST"
+        },
+        {
+          "caseNum": "473738738",
+          "account": "CONA Services, LLC.",
+          "product": "Field Service",
+          "timeIST": "6:28 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": null,
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": "Pre-existing re-alert (channel created 2026-06-10)",
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-10 IST"
+        },
+        {
+          "caseNum": "473896185",
+          "account": "UnitedHealthCare Services, Inc.",
+          "product": "Email Delivery and Desktop Integrations",
+          "timeIST": "6:38 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "47s",
+          "isRed": false,
+          "bridgeWithin15m": false,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-24 18:38:47 IST"
         }
       ]
     }
