@@ -5035,11 +5035,11 @@
           "resolve": null,
           "channelEngage": "2m 21s",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": true,
           "bridgeNA": null,
-          "resolvedAt": null,
-          "resolvedText": null,
-          "oiDuration": "Still open",
+          "resolvedAt": "2026-06-25 14:28:32 IST",
+          "resolvedText": "CIC disengaged as the issue did not qualify as a true Sev1 \u2014 customer could not reproduce the error, could not join the bridge, and sandbox was working as expected.",
+          "oiDuration": "1h 23m",
           "channelCreatedAt": "2026-06-25 13:05:03 IST"
         },
         {
@@ -5051,11 +5051,11 @@
           "resolve": null,
           "channelEngage": "6m 41s",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
-          "resolvedAt": null,
-          "resolvedText": null,
-          "oiDuration": "Still open",
+          "resolvedAt": "2026-06-25 14:25:48 IST",
+          "resolvedText": "CIC disengaged as the active impact had already been resolved; remaining customer asks (RCA and event monitoring guidance) were consultative and post-resolution.",
+          "oiDuration": "10m",
           "channelCreatedAt": "2026-06-25 14:15:34 IST"
         },
         {
@@ -5067,11 +5067,11 @@
           "resolve": null,
           "channelEngage": "2m 56s",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": true,
           "bridgeNA": null,
-          "resolvedAt": null,
-          "resolvedText": null,
-          "oiDuration": "Still open",
+          "resolvedAt": "2026-06-25 18:14:30 IST",
+          "resolvedText": "CIC disengaged because the customer could not be reached on the bridge; AWS was investigating the toll-free number outage and case was left with the support engineer.",
+          "oiDuration": "24m",
           "channelCreatedAt": "2026-06-25 17:49:55 IST"
         },
         {
@@ -5083,11 +5083,11 @@
           "resolve": null,
           "channelEngage": "1m 58s",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": true,
           "bridgeNA": null,
-          "resolvedAt": null,
-          "resolvedText": null,
-          "oiDuration": "Still open",
+          "resolvedAt": "2026-06-25 20:04:01 IST",
+          "resolvedText": "CIC disengaged after the file upload vulnerability was determined to be WAD (Working As Designed); a custom Apex trigger workaround was provided to the customer.",
+          "oiDuration": "2h 0m",
           "channelCreatedAt": "2026-06-25 18:03:53 IST"
         }
       ]
