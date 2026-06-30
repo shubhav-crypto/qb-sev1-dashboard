@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated": "2026-06-29T20:30:00+05:30",
-    "totalCases": 325,
+    "generated": "2026-06-29T21:30:00+05:30",
+    "totalCases": 327,
     "daysTracked": 27
   },
   "schedule": {
@@ -5658,8 +5658,10 @@
       "manager": "Mirza",
       "managerId": "U04219TJTK5",
       "canvasId": null,
-      "eodDone": false,
-      "callouts": [],
+      "eodDone": true,
+      "callouts": [
+        {"type": "exec", "text": "👁 Exec Visibility — Continue to monitor: ADP Inc"}
+      ],
       "cases": [
         {
           "caseNum": "473963860",
@@ -5676,6 +5678,38 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-29 14:52:43 IST"
+        },
+        {
+          "caseNum": "473930412",
+          "account": "Vertex Inc. (Enterprise)",
+          "product": "Developer Support",
+          "timeIST": "6:14 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "2m 6s",
+          "isRed": false,
+          "bridgeWithin15m": false,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-29 18:15:00 IST"
+        },
+        {
+          "caseNum": "473965759",
+          "account": "Mastercard Technologies, LLC",
+          "product": "Security & Activations",
+          "timeIST": "6:59 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "6m 30s",
+          "isRed": false,
+          "bridgeWithin15m": false,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": "Still open",
+          "channelCreatedAt": "2026-06-29 18:54:16 IST"
         }
       ]
     }
