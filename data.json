@@ -5672,11 +5672,11 @@
           "resolve": null,
           "channelEngage": "26s",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": true,
           "bridgeNA": null,
-          "resolvedAt": null,
-          "resolvedText": null,
-          "oiDuration": "Still open",
+          "resolvedAt": "2026-06-29 18:38:23 IST",
+          "resolvedText": "Fixed gap config with 0 min travel time; customer confirmed appointment scheduling resolved. Case closed with customer consent.",
+          "oiDuration": "3h 45m",
           "channelCreatedAt": "2026-06-29 14:52:43 IST"
         },
         {
@@ -5691,7 +5691,7 @@
           "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
-          "resolvedText": null,
+          "resolvedText": "Solutions provided for cross-domain session bridging (SSO/OAuth/frontdoor.jsp). CIC disengaged; re-engage if BI changes.",
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-29 18:15:00 IST"
         },
@@ -5707,7 +5707,7 @@
           "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
-          "resolvedText": null,
+          "resolvedText": "CIC disengaged — no active CIC engagement needed. Case handed to Baji Shaik (case owner).",
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-29 18:54:16 IST"
         }
