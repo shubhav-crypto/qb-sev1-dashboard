@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated": "2026-06-29T21:30:00+05:30",
-    "totalCases": 327,
-    "daysTracked": 27
+    "generated": "2026-06-30T20:30:00+05:30",
+    "totalCases": 339,
+    "daysTracked": 28
   },
   "schedule": {
     "2026-06-01": {
@@ -96,6 +96,10 @@
     "2026-06-29": {
       "manager": "Mirza",
       "managerId": "U04219TJTK5"
+    },
+    "2026-06-30": {
+      "manager": "Nikhil",
+      "managerId": "U01FU2F5RN3"
     }
   },
   "managerIds": {
@@ -5713,6 +5717,209 @@
           "resolvedText": "CIC disengaged \u2014 no active CIC engagement needed. Case handed to Baji Shaik (case owner).",
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-29 18:54:16 IST"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-30",
+      "label": "Jun 30",
+      "manager": "Nikhil",
+      "managerId": "U01FU2F5RN3",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "473973385",
+          "account": "NTT DATA Americas, Inc.",
+          "product": "Service-Digital Engagement",
+          "timeIST": "13:06",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "3m",
+          "isRed": false,
+          "bridgeWithin15m": true,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-30"
+        },
+        {
+          "caseNum": "473973865",
+          "account": "Bayer US LLC",
+          "product": "Service-Developer Support",
+          "timeIST": "14:00",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "48m 1s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": "throttle",
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-30"
+        },
+        {
+          "caseNum": "473974080",
+          "account": "Samsung Electronics Co.,Ltd.",
+          "product": "Service-Experience Management and Workspaces",
+          "timeIST": "14:22",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": null,
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-30"
+        },
+        {
+          "caseNum": "473926163",
+          "account": "ProQuest LLC",
+          "product": "Service-Developer Support",
+          "timeIST": "14:36",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "7m 40s",
+          "isRed": false,
+          "bridgeWithin15m": false,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-30"
+        },
+        {
+          "caseNum": "473974174",
+          "account": "The Standard Bank of South Africa Ltd",
+          "product": "Service-Experience Management and Workspaces",
+          "timeIST": "15:02",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "28m 52s",
+          "isRed": false,
+          "bridgeWithin15m": false,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-30"
+        },
+        {
+          "caseNum": "473974668",
+          "account": "Richemont International S.A",
+          "product": "Service-Digital Engagement",
+          "timeIST": "15:27",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "3m 9s",
+          "isRed": false,
+          "bridgeWithin15m": true,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-30"
+        },
+        {
+          "caseNum": "473975556",
+          "account": "Google LLC",
+          "product": "Service-Cases, Knowledge, Service Cloud Console, Work.com",
+          "timeIST": "17:16",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "2m 10s",
+          "isRed": false,
+          "bridgeWithin15m": false,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-30"
+        },
+        {
+          "caseNum": "473975565",
+          "account": "American Eagle Outfitters, Inc (AEO)",
+          "product": "Service-Digital Engagement",
+          "timeIST": "17:17",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "10m 48s",
+          "isRed": false,
+          "bridgeWithin15m": true,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-30"
+        },
+        {
+          "caseNum": "473975709",
+          "account": "Eli Lilly and Company",
+          "product": "Service-Email Delivery & Desktop Integrations",
+          "timeIST": "17:35",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "7m 55s",
+          "isRed": false,
+          "bridgeWithin15m": true,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-30"
+        },
+        {
+          "caseNum": "473976143",
+          "account": "Bybit Technology Limited",
+          "product": "Service-Developer Support",
+          "timeIST": "18:25",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "28s",
+          "isRed": false,
+          "bridgeWithin15m": false,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-30"
+        },
+        {
+          "caseNum": "473976189",
+          "account": "Nestl\u00e9 Operational Services Worldwide (NOSW) S.A.",
+          "product": "Service-Service Cloud Voice",
+          "timeIST": "18:31",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "29s",
+          "isRed": false,
+          "bridgeWithin15m": true,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-30"
+        },
+        {
+          "caseNum": "473976297",
+          "account": "Baptist Health South Florida",
+          "product": "Service-Service Cloud Voice",
+          "timeIST": "18:41",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "6m 57s",
+          "isRed": false,
+          "bridgeWithin15m": false,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-30"
         }
       ]
     }
