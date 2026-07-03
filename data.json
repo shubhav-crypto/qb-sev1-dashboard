@@ -1,8 +1,8 @@
 {
   "meta": {
     "generated": "2026-07-03T12:00:00+05:30",
-    "totalCases": 350,
-    "daysTracked": 29
+    "totalCases": 362,
+    "daysTracked": 30
   },
   "schedule": {
     "2026-06-01": {
@@ -100,6 +100,10 @@
     "2026-06-30": {
       "manager": "Nikhil",
       "managerId": "U01FU2F5RN3"
+    },
+    "2026-07-01": {
+      "manager": "Rohit",
+      "managerId": "U01G5N5SZC5"
     },
     "2026-07-02": {
       "manager": "Shubha",
@@ -5928,6 +5932,214 @@
       ]
     },
     {
+      "date": "2026-07-01",
+      "label": "Jul 1",
+      "manager": "Rohit",
+      "managerId": "U01G5N5SZC5",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [
+        {
+          "type": "exec",
+          "text": "👁 Exec Visibility — ADP Inc (case 473987822, MFA-related outage, bridge active)"
+        }
+      ],
+      "cases": [
+        {
+          "caseNum": "473984124",
+          "account": "St. James's Place Management Services Limited",
+          "product": "Mobile apps",
+          "timeIST": "12:35 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": null,
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-01 12:35:36 IST"
+        },
+        {
+          "caseNum": "473907175",
+          "account": "Deutsche Börse AG",
+          "product": "Developer Support",
+          "timeIST": "2:05 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": null,
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-01 14:05:06 IST"
+        },
+        {
+          "caseNum": "473985557",
+          "account": "Criteo Technology.",
+          "product": "Developer Support",
+          "timeIST": "2:37 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": null,
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-01 14:37:19 IST"
+        },
+        {
+          "caseNum": "473980354",
+          "account": "Indeed, Inc",
+          "product": "Developer Support",
+          "timeIST": "2:58 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "17s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-01 14:58:30 IST"
+        },
+        {
+          "caseNum": "473914810",
+          "account": "Brunello Cucinelli SpA",
+          "product": "Service Cloud Voice",
+          "timeIST": "3:43 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": null,
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": "Pre-existing re-alert (channel created 2026-06-23)",
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-23"
+        },
+        {
+          "caseNum": "473986781",
+          "account": "Guardant Health",
+          "product": "Digital Engagement",
+          "timeIST": "5:18 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "5m 19s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-01 17:18:11 IST"
+        },
+        {
+          "caseNum": "473987070",
+          "account": "British Telecommunications PLC (Digico)",
+          "product": "Digital Engagement",
+          "timeIST": "5:50 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": null,
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-01 17:50:32 IST"
+        },
+        {
+          "caseNum": "473987105",
+          "account": "Xero Limited",
+          "product": "Developer Support",
+          "timeIST": "5:55 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": null,
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-01 17:55:15 IST"
+        },
+        {
+          "caseNum": "473987799",
+          "account": "AXA Assistance",
+          "product": "Service Cloud Voice",
+          "timeIST": "7:07 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "18s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-01 19:07:22 IST"
+        },
+        {
+          "caseNum": "473987822",
+          "account": "ADP, Inc.",
+          "product": "Agentforce Contact Center",
+          "timeIST": "7:09 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "46s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-01 19:09:04 IST"
+        },
+        {
+          "caseNum": "473988020",
+          "account": "MRI Software SF360 (formerly P360)",
+          "product": "Developer Support",
+          "timeIST": "7:28 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "18s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-01 19:28:21 IST"
+        },
+        {
+          "caseNum": "473938782",
+          "account": "Arthur J. Gallagher & Co.",
+          "product": "Email Delivery & Desktop Integrations",
+          "timeIST": "7:28 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": null,
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-01 19:28:41 IST"
+        }
+      ]
+    },
+    {
       "date": "2026-07-02",
       "label": "Jul 2",
       "manager": "Shubha",
@@ -6068,7 +6280,7 @@
           "caseNum": "473996456",
           "account": "Indeed, Inc",
           "product": "Developer Support",
-          "timeIST": "4:21 PM",
+          "timeIST": "6:49 PM",
           "quality": "PENDING",
           "resolve": null,
           "channelEngage": "5m 44s",
