@@ -54,15 +54,8 @@
   .card-title .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
   .chart-wrap{position:relative;height:220px}.chart-wrap.tall{height:300px}
 
-  .week-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px}
-  .week-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--card-radius);padding:16px 20px}
-  .week-card-label{font-size:11px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px}
-  .week-card-value{font-size:28px;font-weight:700;color:var(--accent);line-height:1;margin-bottom:4px}
-  .week-card-sub{font-size:12px;color:var(--text-muted)}
-  .week-sparkline{display:flex;align-items:flex-end;gap:4px;height:32px;margin-top:10px}
-  .spark-col{display:flex;flex-direction:column;align-items:center;gap:2px;flex:1}
-  .spark-bar{width:100%;border-radius:2px 2px 0 0;min-height:2px}
-  .spark-label{font-size:9px;color:var(--text-muted)}
+  .wow-engage-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--card-radius);padding:20px 24px;margin-bottom:24px}
+  .wow-engage-title{font-size:11px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:16px}
 
   .tabs{margin-bottom:24px}
   .tab-bar{display:flex;gap:2px;border-bottom:1px solid var(--border);margin-bottom:20px;overflow-x:auto;scrollbar-width:none}
@@ -161,7 +154,10 @@
     <div class="kpi rose"><div class="kpi-value" id="kpiBridgeCompliance" style="font-size:30px;">—</div><div class="kpi-label">Bridge ≤15 min</div><div class="kpi-sub" id="kpiBridgeComplianceSub"></div><div class="kpi-sub" id="kpiBridgeComplianceExcl" style="margin-top:3px;font-size:10px;"></div></div>
   </div>
 
-  <div class="week-summary" id="weekSummary"></div>
+  <div class="wow-engage-card">
+    <div class="wow-engage-title">Week-on-Week · Avg Channel Engage Time</div>
+    <canvas id="wowEngageChart" height="90"></canvas>
+  </div>
 
   <div class="section-header" style="margin-top:4px;">
     <span>Daily Summary</span>
@@ -617,29 +613,90 @@ function renderKPIs(){
   }
 }
 
-// ── WEEK CARDS ───────────────────────────────────────────────────────────────
+// ── WOW ENGAGE CHART ─────────────────────────────────────────────────────────
+let wowEngageChart=null;
 function renderWeekCards(){
   const weeks=groupByWeek(weekdays());
-  const palette=[['#60c8ff','#facc15','#2dd4bf','#a78bfa','#fb923c'],['#a78bfa','#2dd4bf','#f472b6','#60c8ff','#fb923c'],['#60c8ff','#facc15','#2dd4bf','#a78bfa','#fb923c']];
-  const wkLabels=['Week 1 (Jun 1–5)','Week 2 (Jun 8–12)','Week 3 (Jun 15+)'];
-  const container=document.getElementById('weekSummary');
-  container.innerHTML='';
-  weeks.forEach((wk,wi)=>{
-    const total=wk.reduce((s,d)=>s+d.cases.length,0);
-    const avg=(total/wk.length).toFixed(1);
-    const card=document.createElement('div');card.className='week-card';
-    card.innerHTML=`<div class="week-card-label">${wkLabels[wi]||'Week '+(wi+1)}</div>
-      <div class="week-card-value">${total}</div>
-      <div class="week-card-sub">${wk.length} days · avg ${avg}/day</div>
-      <div class="week-sparkline"></div>`;
-    container.appendChild(card);
-    const spark=card.querySelector('.week-sparkline'),maxV=Math.max(...wk.map(d=>d.cases.length),1);
-    wk.forEach((d,di)=>{
-      const v=d.cases.length,col=document.createElement('div'),bar=document.createElement('div'),lbl=document.createElement('div');
-      col.className='spark-col';bar.className='spark-bar';lbl.className='spark-label';
-      bar.style.cssText=`height:${Math.max(4,v/maxV*28)}px;background:${palette[wi%3][di%5]};opacity:.7`;
-      lbl.textContent=v;col.appendChild(bar);col.appendChild(lbl);spark.appendChild(col);
+  // Build label: "Wk1 Jun 1–5", "Wk2 Jun 8–12", etc.
+  const labels=weeks.map(function(wk,wi){
+    const first=wk[0],last=wk[wk.length-1];
+    const fDate=new Date(first.date),lDate=new Date(last.date);
+    const fMon=fDate.toLocaleString('en-US',{month:'short'});
+    const lMon=lDate.toLocaleString('en-US',{month:'short'});
+    const fDay=fDate.getDate(),lDay=lDate.getDate();
+    const range=fMon===lMon?fMon+' '+fDay+'–'+lDay:fMon+' '+fDay+'–'+lMon+' '+lDay;
+    return 'Wk'+(wi+1)+' · '+range;
+  });
+  // Avg engage per week in seconds, null if no data
+  const data=weeks.map(function(wk){
+    const secs=wk.flatMap(function(d){
+      return d.cases.map(function(c){return parseSeconds(c.channelEngage);}).filter(function(v){return v!==null;});
     });
+    return secs.length?Math.round(secs.reduce(function(a,b){return a+b;},0)/secs.length):null;
+  });
+  // Colour each point by tier: ≤300 green, 301–600 yellow, >600 red
+  const pointColors=data.map(function(v){
+    if(v===null)return '#94a3b8';
+    if(v<=300)return '#22c55e';
+    if(v<=600)return '#f59e0b';
+    return '#ef4444';
+  });
+  const canvas=document.getElementById('wowEngageChart');
+  if(!canvas)return;
+  if(wowEngageChart){wowEngageChart.destroy();wowEngageChart=null;}
+  const isDark=document.documentElement.getAttribute('data-theme')==='dark';
+  const gridColor=isDark?'rgba(255,255,255,.07)':'rgba(0,0,0,.06)';
+  const textColor=isDark?'#94a3b8':'#64748b';
+  wowEngageChart=new Chart(canvas,{
+    type:'line',
+    data:{
+      labels:labels,
+      datasets:[{
+        label:'Avg Channel Engage',
+        data:data,
+        borderColor:'#60c8ff',
+        borderWidth:2.5,
+        pointBackgroundColor:pointColors,
+        pointBorderColor:pointColors,
+        pointRadius:6,
+        pointHoverRadius:8,
+        tension:0.35,
+        fill:true,
+        backgroundColor:'rgba(96,200,255,.08)',
+        spanGaps:true
+      }]
+    },
+    options:{
+      responsive:true,
+      plugins:{
+        legend:{display:false},
+        tooltip:{
+          callbacks:{
+            label:function(ctx){
+              const v=ctx.parsed.y;
+              if(v===null)return 'No data';
+              return 'Avg engage: '+fmtSecs(v)+(v<=300?' ✅ STRONG':v<=600?' ⚡ MODERATE':' 🔴 SLOW');
+            }
+          }
+        }
+      },
+      scales:{
+        x:{
+          grid:{color:gridColor},
+          ticks:{color:textColor,font:{size:11}}
+        },
+        y:{
+          grid:{color:gridColor},
+          ticks:{
+            color:textColor,
+            font:{size:11},
+            callback:function(v){return fmtSecs(v);}
+          },
+          suggestedMin:0,
+          title:{display:true,text:'Avg Engage Time',color:textColor,font:{size:11}}
+        }
+      }
+    }
   });
 }
 
