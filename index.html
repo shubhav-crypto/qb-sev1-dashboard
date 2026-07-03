@@ -1040,7 +1040,7 @@ function buildDayPanel(day,container){
   html+='<th style="white-space:nowrap;cursor:help;" title="Time from PD alert to QB Manager Resolved">Alert Resolve</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Time from Sev1 channel creation to QB Manager first text">Channel Engage</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Account has a Red Account record in OrgCS">Red Acct</th>';
-  html+='<th style="white-space:nowrap;cursor:help;" title="Customer bridge (Meet/WebEx/Teams/Zoom) initiated within 15 min of channel creation. Every Sev1 has a channel — null means CIC did not engage or bridge data was not captured.">Bridge ≤15m</th>';
+  html+='<th style="white-space:nowrap;cursor:help;" title="Time from Sev1 channel creation to bridge (Meet/WebEx/Teams/Zoom) start. Green = ≤15m, Red = >15m. Null means CIC did not engage or bridge data was not captured. Add bridgeTime (e.g. \"7m 32s\") to data.json to show actual time.">Bridge ≤15m</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Case notes or callout context">Notes</th>';
   html+='</tr></thead><tbody>';
   const mciSet=mciCases[day.date]||[];
@@ -1064,9 +1064,21 @@ function buildDayPanel(day,container){
       const col=NA_TEXT[c.bridgeNA]||'#94a3b8';
       bridgeCell='<td style="white-space:nowrap;font-size:11px;"><span style="background:'+bg+';color:'+col+';border-radius:5px;padding:2px 7px;border:1px solid '+border+';" title="'+label+' case">'+label+'</span></td>';
     }else if(c.bridgeWithin15m===true){
-      bridgeCell='<td style="text-align:center;" title="Bridge initiated within 15 min of channel creation">✅</td>';
+      if(c.bridgeTime){
+        const bSecs=parseSeconds(c.bridgeTime);
+        const bColor=bSecs!==null&&bSecs<=900?{bg:'rgba(22,163,74,.12)',color:'#16a34a',icon:'🟢'}:{bg:'rgba(220,38,38,.12)',color:'#dc2626',icon:'🔴'};
+        bridgeCell='<td style="white-space:nowrap;font-size:12px;"><span style="background:'+bColor.bg+';color:'+bColor.color+';border-radius:5px;padding:2px 7px;font-weight:600;" title="Bridge created '+c.bridgeTime+' after channel creation">'+bColor.icon+' '+c.bridgeTime+'</span></td>';
+      }else{
+        bridgeCell='<td style="text-align:center;" title="Bridge initiated within 15 min of channel creation">✅</td>';
+      }
     }else if(c.bridgeWithin15m===false){
-      bridgeCell='<td style="text-align:center;" title="No bridge within 15 min of channel creation">❌</td>';
+      if(c.bridgeTime){
+        const bSecs=parseSeconds(c.bridgeTime);
+        const bColor=bSecs!==null&&bSecs<=900?{bg:'rgba(22,163,74,.12)',color:'#16a34a',icon:'🟢'}:{bg:'rgba(220,38,38,.12)',color:'#dc2626',icon:'🔴'};
+        bridgeCell='<td style="white-space:nowrap;font-size:12px;"><span style="background:'+bColor.bg+';color:'+bColor.color+';border-radius:5px;padding:2px 7px;font-weight:600;" title="Bridge created '+c.bridgeTime+' after channel creation">'+bColor.icon+' '+c.bridgeTime+'</span></td>';
+      }else{
+        bridgeCell='<td style="text-align:center;" title="No bridge within 15 min of channel creation">❌</td>';
+      }
     }else{
       // null — bridge data not captured; categorise by whether CIC engaged at all
       const ce=c.channelEngage;
