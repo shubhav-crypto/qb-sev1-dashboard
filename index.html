@@ -666,7 +666,26 @@ function renderSummaryTable(){
       eodTotal:wk.length
     }));
   }else{
-    rows=[{label:'Jun 2026',manager:'All',cases:wdays.flatMap(d=>d.cases),eodDone:wdays.every(d=>d.eodDone),eodCount:wdays.filter(d=>d.eodDone).length,eodTotal:wdays.length}];
+    // Group weekdays by calendar month dynamically
+    const byMonth={};
+    wdays.forEach(function(d){
+      const key=d.date?d.date.slice(0,7):'unknown'; // 'YYYY-MM'
+      if(!byMonth[key])byMonth[key]=[];
+      byMonth[key].push(d);
+    });
+    rows=Object.keys(byMonth).sort().map(function(ym){
+      const mdays=byMonth[ym];
+      const dt=new Date(ym+'-01');
+      const mLabel=dt.toLocaleString('en-US',{month:'short',year:'numeric'});
+      return {
+        label:mLabel,
+        manager:'All',
+        cases:mdays.flatMap(function(d){return d.cases;}),
+        eodDone:mdays.every(function(d){return d.eodDone;}),
+        eodCount:mdays.filter(function(d){return d.eodDone;}).length,
+        eodTotal:mdays.length
+      };
+    });
   }
   const tbody=document.getElementById('summaryBody');tbody.innerHTML='';
   rows.forEach((row,ri)=>{
