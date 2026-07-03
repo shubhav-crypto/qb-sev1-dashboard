@@ -576,20 +576,10 @@ function renderKPIs(){
   const allCases=wdays.flatMap(function(d){
     return d.cases.map(function(c){return Object.assign({},c,{_dayDate:d.date});});
   });
-  // Denominator = ALL Sev1s except pre-existing re-alerts and bridgeNA cases
-  // null bridgeWithin15m = not bridged (counts against compliance, not excluded)
-  const exclPreExist=allCases.filter(function(c){
-    return c.resolvedText&&c.resolvedText.indexOf('Pre-existing re-alert')===0;
-  }).length;
-  const inScope=allCases.filter(function(c){
-    if(c.bridgeNA)return false;
-    if(c.resolvedText&&c.resolvedText.indexOf('Pre-existing re-alert')===0)return false;
-    return true;
-  });
-  const bridgeTotal=inScope.length;
-  const bridgeYes=inScope.filter(function(c){return c.bridgeWithin15m===true;}).length;
+  // Denominator = ALL Sev1s, no exclusions — matches SEV1S column exactly
+  const bridgeTotal=allCases.length;
+  const bridgeYes=allCases.filter(function(c){return c.bridgeWithin15m===true;}).length;
   const bridgePct=bridgeTotal>0?Math.round(bridgeYes/bridgeTotal*100):null;
-  const exclNA=allCases.filter(function(c){return !!c.bridgeNA;}).length;
   const bridgeEl=document.getElementById('kpiBridgeCompliance');
   const bridgeSubEl=document.getElementById('kpiBridgeComplianceSub');
   const bridgeExclEl=document.getElementById('kpiBridgeComplianceExcl');
@@ -601,10 +591,7 @@ function renderKPIs(){
     else if(bridgePct>=60){kpiEl.className='kpi yellow';}
     else{kpiEl.className='kpi needs';}
     bridgeSubEl.textContent=bridgeYes+'/'+bridgeTotal+' cases in scope';
-    const parts=[];
-    if(exclPreExist)parts.push(exclPreExist+' pre-existing excl.');
-    if(exclNA)parts.push(exclNA+' N/A excl.');
-    bridgeExclEl.textContent=parts.length?parts.join(' · '):'all cases tracked';
+    bridgeExclEl.textContent='all cases tracked';
   }else{
     bridgeEl.textContent='—';
     bridgeSubEl.textContent='no data yet';
@@ -766,15 +753,9 @@ function renderSummaryTable(){
         +(all?' <span style="font-size:14px;">✅</span>':'');
     }
     // Bridge ≤15m cell
-    // Denominator = all Sev1s except bridgeNA and pre-existing re-alerts
-    // null bridgeWithin15m = not bridged (counts against), not excluded
-    const brInScope=cases.filter(function(c){
-      if(c.bridgeNA)return false;
-      if(c.resolvedText&&c.resolvedText.indexOf('Pre-existing re-alert')===0)return false;
-      return true;
-    });
-    const brYes=brInScope.filter(function(c){return c.bridgeWithin15m===true;}).length;
-    const brTotal=brInScope.length;
+    // Denominator = ALL Sev1s, no exclusions — matches SEV1S column exactly
+    const brYes=cases.filter(function(c){return c.bridgeWithin15m===true;}).length;
+    const brTotal=cases.length;
     let bridgeCellHtml;
     if(brTotal===0){
       bridgeCellHtml='<td style="padding:12px 16px;text-align:center;color:#94a3b8;font-size:11px;">—</td>';
