@@ -771,8 +771,8 @@ function renderKPIs(){
   document.getElementById('kpiBridgeAvgSub').textContent=bridgeDeltas.length?'channel creation → bridge start':'no bridge data yet';
 
   // QB Engage Compliance — new channels only
-  // Excluded from denominator: lap, throttle, mci, resolved, outside-window, no-channel, howto, cic-disengaged(no-impact), sandbox, monitoring
-  const EXCLUDED_CATEGORIES=['lap','throttle','mci','resolved','outside-window','no-channel','howto','cic-disengaged','sandbox','monitoring'];
+  // Excluded from denominator: lap, throttle, mci, resolved, outside-window, no-channel, howto, cic-disengaged(no-impact), monitoring
+  const EXCLUDED_CATEGORIES=['lap','throttle','mci','resolved','outside-window','no-channel','howto','cic-disengaged','monitoring'];
   const preExistingExcluded=wdays.flatMap(function(d){
     return d.cases.filter(function(c){
       if(!c.channelCreatedAt)return false;
