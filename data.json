@@ -6930,12 +6930,13 @@
           "resolve": null,
           "channelEngage": "3m 20s",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": true,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-03T14:40:31+05:30"
+          "channelCreatedAt": "2026-07-03T14:40:31+05:30",
+          "bridgeCreatedAt": "2026-07-03T14:45:36+05:30"
         },
         {
           "caseNum": "474005907",
@@ -6946,12 +6947,13 @@
           "resolve": null,
           "channelEngage": "2m 5s",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": true,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-03T15:48:00+05:30"
+          "channelCreatedAt": "2026-07-03T15:48:00+05:30",
+          "bridgeCreatedAt": "2026-07-03T15:55:45+05:30"
         },
         {
           "caseNum": "474006689",
@@ -6963,11 +6965,12 @@
           "channelEngage": "5m 1s",
           "isRed": false,
           "bridgeWithin15m": null,
-          "bridgeNA": null,
+          "bridgeNA": "throttle",
           "resolvedAt": null,
           "resolvedText": null,
-          "oiDuration": null,
-          "channelCreatedAt": "2026-07-03T18:20:02+05:30"
+          "oiDuration": "15m",
+          "channelCreatedAt": "2026-07-03T18:20:02+05:30",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "474000300",
@@ -6994,12 +6997,13 @@
           "resolve": null,
           "channelEngage": "2m 0s",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": true,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-03T19:24:52+05:30"
+          "channelCreatedAt": "2026-07-03T19:24:52+05:30",
+          "bridgeCreatedAt": "2026-07-03T19:29:08+05:30"
         }
       ]
     }
