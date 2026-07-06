@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated": "2026-07-03T14:30:00+05:30",
-    "totalCases": 382,
-    "daysTracked": 32
+    "generated": "2026-07-03T21:00:00+05:30",
+    "totalCases": 386,
+    "daysTracked": 33
   },
   "schedule": {
     "2026-06-01": {
@@ -116,6 +116,10 @@
     "2026-07-02": {
       "manager": "Shubha",
       "managerId": "U04999GSQ13"
+    },
+    "2026-07-03": {
+      "manager": "Jyothirmayee",
+      "managerId": "WN8LA3U5D"
     }
   },
   "managerIds": {
@@ -6900,6 +6904,102 @@
           "resolvedText": "Pre-existing re-alert (channel created 2026-06-26)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-26"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-03",
+      "label": "Jul 3",
+      "manager": "Jyothirmayee",
+      "managerId": "WN8LA3U5D",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [
+        {
+          "type": "exec",
+          "text": "\ud83d\udc41 Exec Visibility \u2014 Continue to monitor: Macquarie Group"
+        }
+      ],
+      "cases": [
+        {
+          "caseNum": "474005397",
+          "account": "Lexisnexis Risk Solutions Inc.",
+          "product": "Service-Digital Engagement",
+          "timeIST": "2:40 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "3m 20s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-03T14:40:31+05:30"
+        },
+        {
+          "caseNum": "474005907",
+          "account": "Google LLC",
+          "product": "Service-Cases, Knowledge, Service Cloud Console, Work.com",
+          "timeIST": "3:47 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "2m 5s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-03T15:48:00+05:30"
+        },
+        {
+          "caseNum": "474006689",
+          "account": "PricewaterhouseCoopers Global Licensing Services Corporation",
+          "product": "Service-Developer Support",
+          "timeIST": "6:20 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "5m 1s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-03T18:20:02+05:30"
+        },
+        {
+          "caseNum": "474000300",
+          "account": "iFood.com Agencia de Restaurantes Online S.A.",
+          "product": "Service-Digital Engagement",
+          "timeIST": "6:43 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": null,
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": "Pre-existing re-alert (channel created 2026-07-02)",
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-02T23:51:30+05:30"
+        },
+        {
+          "caseNum": "474006837",
+          "account": "SP Power Systems Limited",
+          "product": "Service-Developer Support",
+          "timeIST": "7:24 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "2m 0s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-03T19:24:52+05:30"
         }
       ]
     }
