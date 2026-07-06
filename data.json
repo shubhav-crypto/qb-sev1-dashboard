@@ -1352,24 +1352,6 @@
           "oiSource": "orgcs"
         },
         {
-          "caseNum": "473621085",
-          "account": "McAfee LLC",
-          "product": "Digital Engagement",
-          "timeIST": "5:45 PM",
-          "manager": "Jyothirmayee",
-          "quality": "STRONG",
-          "ack": "1m 31s",
-          "resolve": "1m 37s",
-          "channelEngage": null,
-          "isRed": true,
-          "bridgeWithin15m": false,
-          "resolvedAt": "2026-06-03 19:19:53 IST",
-          "oiDuration": "8h 30m",
-          "resolvedText": "Root cause identified; clear path to resolution confirmed; CIC can disengage",
-          "channelCreatedAt": "2026-06-03 10:49:43 IST",
-          "bridgeCreatedAt": "2026-06-03 11:24:12 IST"
-        },
-        {
           "caseNum": "473663111",
           "account": "IDSI Inc.",
           "product": "Developer Support",
@@ -1865,7 +1847,8 @@
           "oiDuration": "22h 19m",
           "resolvedText": "The change was done for the org...I would inform the customer and close this case out.",
           "channelCreatedAt": "2026-06-11 14:14:06 IST",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "bridgeNA": "lap"
         },
         {
           "caseNum": "473754009",
