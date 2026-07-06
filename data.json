@@ -3736,14 +3736,13 @@
           "timeIST": "3:21 PM",
           "quality": "PENDING",
           "resolve": "22s",
-          "channelEngage": "No engagement",
+          "channelEngage": "1m 57s",
           "isRed": false,
           "bridgeWithin15m": null,
-          "bridgeNA": "sandbox",
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": null,
+          "channelCreatedAt": "2026-06-18T15:18:07+05:30",
           "manager": "Jyothirmayee"
         },
         {
@@ -3934,11 +3933,10 @@
           "channelEngage": "No engagement",
           "isRed": false,
           "bridgeWithin15m": null,
-          "bridgeNA": "throttle",
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": null,
+          "channelCreatedAt": "2026-06-18T18:19:27+05:30",
           "manager": "Jyothirmayee"
         },
         {
@@ -4485,14 +4483,13 @@
           "timeIST": "5:42 PM",
           "quality": "PENDING",
           "resolve": null,
-          "channelEngage": null,
+          "channelEngage": "No engagement",
           "isRed": false,
           "bridgeWithin15m": false,
-          "bridgeNA": "no-channel",
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-19 17:42:17 IST",
+          "channelCreatedAt": "2026-06-19T17:42:16+05:30",
           "bridgeCreatedAt": "2026-06-19 18:27:56 IST"
         },
         {
