@@ -746,13 +746,11 @@ function renderKPIs(){
   document.getElementById('kpiBridgeAvg').textContent=bridgeAvgSecs!==null?fmtBridgeSecs(bridgeAvgSecs):'—';
   document.getElementById('kpiBridgeAvgSub').textContent=bridgeDeltas.length?'channel creation → bridge start':'no bridge data yet';
 
-  // QB Engage Compliance — new channels only, excluding MCI cases
+  // QB Engage Compliance — new channels only (all categories included in denominator)
   const allCasesFlat=wdays.flatMap(function(d){
     return d.cases.filter(function(c){
       if(!c.channelCreatedAt)return false;
-      if(c.channelCreatedAt.slice(0,10)!==d.date)return false;
-      if(c.bridgeNA==='mci')return false; // MCI engagement tracked separately
-      return true;
+      return c.channelCreatedAt.slice(0,10)===d.date;
     });
   });
   const engagedCount=allCasesFlat.filter(function(c){return c.channelEngage&&c.channelEngage!=='No engagement';}).length;
@@ -761,7 +759,8 @@ function renderKPIs(){
   const throttleNoEngage=notEngaged.filter(function(c){return c.bridgeNA==='throttle';}).length;
   const lapNoEngage=notEngaged.filter(function(c){return c.bridgeNA==='lap';}).length;
   const howtoNoEngage=notEngaged.filter(function(c){return c.bridgeNA==='howto';}).length;
-  const otherNoEngage=notEngaged.length-throttleNoEngage-lapNoEngage-howtoNoEngage;
+  const mciNoEngage=notEngaged.filter(function(c){return c.bridgeNA==='mci';}).length;
+  const otherNoEngage=notEngaged.length-throttleNoEngage-lapNoEngage-howtoNoEngage-mciNoEngage;
   const engagePct=engageTotal>0?Math.round(engagedCount/engageTotal*100):null;
   const engageEl=document.getElementById('kpiEngageCompliance');
   const engageSubEl=document.getElementById('kpiEngageComplianceSub');
@@ -774,6 +773,7 @@ function renderKPIs(){
       if(throttleNoEngage)parts.push(throttleNoEngage+' throttle');
       if(lapNoEngage)parts.push(lapNoEngage+' LAP');
       if(howtoNoEngage)parts.push(howtoNoEngage+' how-to');
+      if(mciNoEngage)parts.push(mciNoEngage+' MCI');
       if(otherNoEngage)parts.push(otherNoEngage+' other');
       engageThrottleEl.textContent=parts.length?'not engaged: '+parts.join(' · '):'';
     }else{
