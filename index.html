@@ -773,6 +773,12 @@ function renderKPIs(){
   // QB Engage Compliance — new channels only
   // Excluded from denominator: lap, throttle, mci, resolved, outside-window, no-channel, other, howto, cic-disengaged(no-impact)
   const EXCLUDED_CATEGORIES=['lap','throttle','mci','resolved','outside-window','no-channel','other','howto','cic-disengaged','sandbox','monitoring'];
+  const preExistingExcluded=wdays.flatMap(function(d){
+    return d.cases.filter(function(c){
+      if(!c.channelCreatedAt)return false;
+      return c.channelCreatedAt.slice(0,10)!==d.date;
+    });
+  }).length;
   const allNewChannels=wdays.flatMap(function(d){
     return d.cases.filter(function(c){
       if(!c.channelCreatedAt)return false;
@@ -798,6 +804,7 @@ function renderKPIs(){
   engageSubEl.textContent=engagePct!==null?engagedCount+'/'+engageTotal+' actionable cases':'no data yet';
   if(engageThrottleEl){
     const excParts=[];
+    if(preExistingExcluded)excParts.push(preExistingExcluded+' pre-existing');
     if(lapExcluded)excParts.push(lapExcluded+' LAP');
     if(throttleExcluded)excParts.push(throttleExcluded+' throttle');
     if(mciExcluded)excParts.push(mciExcluded+' MCI');
