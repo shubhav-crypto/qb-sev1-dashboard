@@ -4563,7 +4563,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-22 13:09:49 IST"
+          "channelCreatedAt": "2026-06-22 13:09:49 IST",
+          "bridgeCreatedAt": "2026-06-22 13:15:05 IST"
         },
         {
           "caseNum": "473878209",
@@ -4595,7 +4596,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-22 14:09:06 IST"
+          "channelCreatedAt": "2026-06-22 14:09:06 IST",
+          "bridgeCreatedAt": "2026-06-22 14:13:08 IST"
         },
         {
           "caseNum": "473905029",
@@ -4611,7 +4613,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-22 16:08:33 IST"
+          "channelCreatedAt": "2026-06-22 16:08:33 IST",
+          "bridgeCreatedAt": "2026-06-22 16:20:37 IST"
         },
         {
           "caseNum": "473905039",
@@ -4627,7 +4630,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-22 16:09:19 IST"
+          "channelCreatedAt": "2026-06-22 16:09:19 IST",
+          "bridgeCreatedAt": "2026-06-22 16:17:24 IST"
         },
         {
           "caseNum": "473905182",
@@ -4643,7 +4647,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-22 16:56:11 IST"
+          "channelCreatedAt": "2026-06-22 16:56:11 IST",
+          "bridgeCreatedAt": "2026-06-22 17:01:06 IST"
         },
         {
           "caseNum": "473905639",
@@ -4659,7 +4664,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-22 17:26:08 IST"
+          "channelCreatedAt": "2026-06-22 17:26:08 IST",
+          "bridgeCreatedAt": "2026-06-22 19:05:14 IST"
         },
         {
           "caseNum": "473582644",
@@ -4691,7 +4697,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-22 18:23:11 IST"
+          "channelCreatedAt": "2026-06-22 18:23:11 IST",
+          "bridgeCreatedAt": "2026-06-22 18:29:27 IST"
         }
       ]
     },
@@ -4734,7 +4741,8 @@
           "resolvedAt": "2026-06-24 17:33:38 IST",
           "resolvedText": "CIC disengaged after a fix for the global search Known Issue was confirmed via Patch 10.5, scheduled for deployment to instance USA350 at 02:15 AM UTC on 25 June 2026.",
           "oiDuration": "27h 4m",
-          "channelCreatedAt": "2026-06-23 14:29:10 IST"
+          "channelCreatedAt": "2026-06-23 14:29:10 IST",
+          "bridgeCreatedAt": "2026-06-23 14:36:31 IST"
         },
         {
           "caseNum": "473914810",
@@ -4750,7 +4758,8 @@
           "resolvedAt": "2026-06-23 16:45:33 IST",
           "resolvedText": "CIC disengaged after root cause was confirmed as WAD — queue configuration changes must be made from the AWS Connect side, not within Salesforce setup.",
           "oiDuration": "1h 55m",
-          "channelCreatedAt": "2026-06-23 14:49:48 IST"
+          "channelCreatedAt": "2026-06-23 14:49:48 IST",
+          "bridgeCreatedAt": "2026-06-23 14:56:18 IST"
         },
         {
           "caseNum": "473914839",
@@ -4782,7 +4791,8 @@
           "resolvedAt": "2026-06-23 17:31:36 IST",
           "resolvedText": "CIC disengaged as the issue was confirmed a declared multi-customer incident (IR# 91970235) affecting Field Service Mobile globally, with Engineering having resolved the trigger and Trust page posted.",
           "oiDuration": "2h 35m",
-          "channelCreatedAt": "2026-06-23 14:56:25 IST"
+          "channelCreatedAt": "2026-06-23 14:56:25 IST",
+          "bridgeCreatedAt": "2026-06-23 15:03:48 IST"
         },
         {
           "caseNum": "473916031",
@@ -4798,7 +4808,8 @@
           "resolvedAt": "2026-06-23 19:28:47 IST",
           "resolvedText": "CIC disengaged after support engineer began deep log analysis on the intermittent platform event failure in the Case Comment Translation flow, with hourly customer updates committed.",
           "oiDuration": "2h 34m",
-          "channelCreatedAt": "2026-06-23 16:54:31 IST"
+          "channelCreatedAt": "2026-06-23 16:54:31 IST",
+          "bridgeCreatedAt": "2026-06-23 17:00:36 IST"
         },
         {
           "caseNum": "473916467",
@@ -4814,7 +4825,8 @@
           "resolvedAt": "2026-06-23 21:17:09 IST",
           "resolvedText": "CIC disengaged after customer was confirmed out of impact; case handed back to support after two CIC engagement cycles.",
           "oiDuration": "3h 24m",
-          "channelCreatedAt": "2026-06-23 17:53:24 IST"
+          "channelCreatedAt": "2026-06-23 17:53:24 IST",
+          "bridgeCreatedAt": "2026-06-23 18:06:20 IST"
         },
         {
           "caseNum": "473916586",
@@ -4830,7 +4842,8 @@
           "resolvedAt": "2026-06-23 18:47:38 IST",
           "resolvedText": "CIC disengaged after confirming the issue was limited to a single user and the support engineer had set up a meeting to investigate further.",
           "oiDuration": "40m",
-          "channelCreatedAt": "2026-06-23 18:07:28 IST"
+          "channelCreatedAt": "2026-06-23 18:07:28 IST",
+          "bridgeCreatedAt": "2026-06-23 18:23:28 IST"
         },
         {
           "caseNum": "473814386",
@@ -4862,7 +4875,8 @@
           "resolvedAt": "2026-06-24 20:16:18 IST",
           "resolvedText": "CIC disengaged after product team confirmed Outlook Integration failure was caused by third-party cookie policy and Inbox Terms of Use, with actionable guidance provided.",
           "oiDuration": "25h 52m",
-          "channelCreatedAt": "2026-06-23 18:24:08 IST"
+          "channelCreatedAt": "2026-06-23 18:24:08 IST",
+          "bridgeCreatedAt": "2026-06-23 18:28:48 IST"
         },
         {
           "caseNum": "473916887",
@@ -4894,7 +4908,8 @@
           "resolvedAt": "2026-06-30 18:02:58 IST",
           "resolvedText": "CIC disengaged after engineering identified ~13% data volume increase breaching heap size limits as root cause of FSL Global Optimization failures; bug fix targeted for 262 patch 10 on July 1.",
           "oiDuration": "6d 22h 39m",
-          "channelCreatedAt": "2026-06-23 19:24:29 IST"
+          "channelCreatedAt": "2026-06-23 19:24:29 IST",
+          "bridgeCreatedAt": "2026-06-23 19:27:32 IST"
         }
       ]
     },
@@ -6412,7 +6427,8 @@
           "resolvedAt": null,
           "resolvedText": "Pre-existing re-alert (channel created 2026-06-23)",
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-23"
+          "channelCreatedAt": "2026-06-23",
+          "bridgeCreatedAt": "2026-06-23 14:56:18 IST"
         },
         {
           "caseNum": "473986781",
