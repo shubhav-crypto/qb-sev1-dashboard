@@ -794,6 +794,8 @@ function renderKPIs(){
   const outsideExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='outside-window';}).length;
   const nochanExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='no-channel';}).length;
   const howtoExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='howto';}).length;
+  const cicDisengagedExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='cic-disengaged';}).length;
+  const monitoringExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='monitoring';}).length;
   const otherExcluded=0;// 'other' is included in denominator
   const allCasesFlat=allNewChannels.filter(function(c){return !EXCLUDED_CATEGORIES.includes(c.bridgeNA);});
   const engagedCount=allCasesFlat.filter(function(c){return c.channelEngage&&c.channelEngage!=='No engagement';}).length;
@@ -814,6 +816,8 @@ function renderKPIs(){
     if(outsideExcluded)excParts.push(outsideExcluded+' outside window');
     if(howtoExcluded)excParts.push(howtoExcluded+' how-to');
     if(nochanExcluded)excParts.push(nochanExcluded+' no channel');
+    if(cicDisengagedExcluded)excParts.push(cicDisengagedExcluded+' CIC disengaged');
+    if(monitoringExcluded)excParts.push(monitoringExcluded+' monitoring');
     if(otherExcluded)excParts.push(otherExcluded+' other');
     engageThrottleEl.textContent=excParts.length?'excl: '+excParts.join(' · '):'';
   }
