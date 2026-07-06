@@ -29,7 +29,7 @@
 
   .main{padding:28px 32px;max-width:1400px;margin:0 auto}
 
-  .kpi-bar{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:28px}
+  .kpi-bar{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-bottom:28px}
   @media(max-width:1100px){.kpi-bar{grid-template-columns:repeat(3,1fr)}}
   @media(max-width:600px){.kpi-bar{grid-template-columns:repeat(2,1fr)}}
   .kpi{background:var(--surface);border:1px solid var(--border);border-radius:var(--card-radius);padding:18px 20px;position:relative;overflow:hidden}
@@ -176,6 +176,7 @@
     <div class="kpi yellow"><div class="kpi-value" id="kpiAvgPerDay">—</div><div class="kpi-label">Avg Cases / Day</div><div class="kpi-sub" id="kpiAvgSub"></div></div>
     <div class="kpi green"><div class="kpi-value" id="kpiMonthEngage" style="font-size:24px;">—</div><div class="kpi-label">Monthly Avg Engage</div><div class="kpi-sub" id="kpiMonthEngageSub"></div></div>
     <div class="kpi purple"><div class="kpi-value" id="kpiWeekEngage" style="font-size:24px;">—</div><div class="kpi-label">This Week Avg Engage</div><div class="kpi-sub" id="kpiWeekEngageSub"></div></div>
+    <div class="kpi rose"><div class="kpi-value" id="kpiBridgeAvg" style="font-size:24px;">—</div><div class="kpi-label">Bridge Creation Avg</div><div class="kpi-sub" id="kpiBridgeAvgSub"></div></div>
   </div>
 
   <div class="wow-engage-card">
@@ -693,6 +694,8 @@ function renderKPIs(){
     document.getElementById('kpiMonthEngageSub').textContent='no data in range';
     document.getElementById('kpiWeekEngage').textContent='—';
     document.getElementById('kpiWeekEngageSub').textContent='no data in range';
+    document.getElementById('kpiBridgeAvg').textContent='—';
+    document.getElementById('kpiBridgeAvgSub').textContent='no data in range';
     updateKpiFilterLabel();
     return;
   }
@@ -729,6 +732,15 @@ function renderKPIs(){
   const wkLabel=thisWeek.length?thisWeek[0].label+(thisWeek.length>1&&thisWeek[thisWeek.length-1].label?'–'+thisWeek[thisWeek.length-1].label.split(' ')[1]:''):'';
   document.getElementById('kpiWeekEngage').textContent=weekAvgEngage||'—';
   document.getElementById('kpiWeekEngageSub').textContent=weekAvgEngage?(wkLabel+', '+thisWeek.length+' days'):'no data yet';
+
+  // Bridge creation avg — mean of (bridgeCreatedAt − channelCreatedAt) for cases where both exist and bridgeWithin15m is not null
+  const bridgeDeltas=wdays.flatMap(function(d){return d.cases;})
+    .filter(function(c){return !c.bridgeNA&&c.bridgeCreatedAt&&c.channelCreatedAt;})
+    .map(function(c){return bridgeDeltaSecs(c);})
+    .filter(function(v){return v!==null&&v>=0;});
+  const bridgeAvgSecs=bridgeDeltas.length?Math.round(bridgeDeltas.reduce(function(a,b){return a+b;},0)/bridgeDeltas.length):null;
+  document.getElementById('kpiBridgeAvg').textContent=bridgeAvgSecs!==null?fmtBridgeSecs(bridgeAvgSecs):'—';
+  document.getElementById('kpiBridgeAvgSub').textContent=bridgeDeltas.length?bridgeDeltas.length+' case'+(bridgeDeltas.length!==1?'s':'')+' with bridge data':'no bridge data yet';
 
   updateKpiFilterLabel();
 }
