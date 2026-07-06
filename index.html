@@ -177,7 +177,7 @@
     <div class="kpi green"><div class="kpi-value" id="kpiMonthEngage" style="font-size:24px;">—</div><div class="kpi-label">Monthly Avg Engage</div><div class="kpi-sub" id="kpiMonthEngageSub"></div></div>
     <div class="kpi purple"><div class="kpi-value" id="kpiWeekEngage" style="font-size:24px;">—</div><div class="kpi-label">This Week Avg Engage</div><div class="kpi-sub" id="kpiWeekEngageSub"></div></div>
     <div class="kpi rose"><div class="kpi-value" id="kpiBridgeAvg" style="font-size:24px;">—</div><div class="kpi-label">Bridge Creation Avg</div><div class="kpi-sub" id="kpiBridgeAvgSub"></div></div>
-    <div class="kpi green"><div class="kpi-value" id="kpiEngageCompliance" style="font-size:30px;">—</div><div class="kpi-label">QB Engage Compliance</div><div class="kpi-sub" id="kpiEngageComplianceSub"></div></div>
+    <div class="kpi green"><div class="kpi-value" id="kpiEngageCompliance" style="font-size:30px;">—</div><div class="kpi-label">QB Engage Compliance</div><div class="kpi-sub" id="kpiEngageComplianceSub"></div><div class="kpi-sub" id="kpiEngageComplianceThrottle" style="margin-top:3px;font-size:10px;"></div></div>
   </div>
 
   <div class="wow-engage-card">
@@ -699,6 +699,7 @@ function renderKPIs(){
     document.getElementById('kpiBridgeAvgSub').textContent='no data in range';
     document.getElementById('kpiEngageCompliance').textContent='—';
     document.getElementById('kpiEngageComplianceSub').textContent='no data in range';
+    const et=document.getElementById('kpiEngageComplianceThrottle');if(et)et.textContent='';
     updateKpiFilterLabel();
     return;
   }
@@ -754,11 +755,22 @@ function renderKPIs(){
   });
   const engagedCount=allCasesFlat.filter(function(c){return c.channelEngage&&c.channelEngage!=='No engagement';}).length;
   const engageTotal=allCasesFlat.length;
+  const notEngaged=allCasesFlat.filter(function(c){return !c.channelEngage||c.channelEngage==='No engagement';});
+  const throttleNoEngage=notEngaged.filter(function(c){return c.bridgeNA==='throttle';}).length;
+  const otherNoEngage=notEngaged.length-throttleNoEngage;
   const engagePct=engageTotal>0?Math.round(engagedCount/engageTotal*100):null;
   const engageEl=document.getElementById('kpiEngageCompliance');
   const engageSubEl=document.getElementById('kpiEngageComplianceSub');
+  const engageThrottleEl=document.getElementById('kpiEngageComplianceThrottle');
   engageEl.textContent=engagePct!==null?engagePct+'%':'—';
   engageSubEl.textContent=engagePct!==null?engagedCount+'/'+engageTotal+' cases':'no data yet';
+  if(engageThrottleEl){
+    if(engagePct!==null&&notEngaged.length>0){
+      engageThrottleEl.textContent='not engaged: '+throttleNoEngage+' throttle · '+otherNoEngage+' other';
+    }else{
+      engageThrottleEl.textContent='';
+    }
+  }
   const engageKpi=engageEl.closest('.kpi');
   if(engagePct===null){engageKpi.className='kpi green';}
   else if(engagePct>=80){engageKpi.className='kpi green';}
