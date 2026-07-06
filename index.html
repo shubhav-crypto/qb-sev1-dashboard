@@ -463,13 +463,25 @@ const noEngReasons = {
   // Jun 22
   '473878209':'Pre-existing re-alert — Sev1 channel created 2026-06-18; performance degradation tied to 262.10 release; fix deployed Jun 18–19; customer re-opened asking for RCA; no new QB engagement needed',
 };
-function makeNoEngHtml(caseNum){
+function makeNoEngHtml(caseNum,bridgeNA){
   const reason=noEngReasons[caseNum]||'No channel engagement recorded within QB window (12:30–7:30 PM IST)';
   const safe=reason.replace(/"/g,'&quot;');
+  if(bridgeNA==='lap'){
+    return`<td style="white-space:nowrap;font-size:12px;"><span class="no-eng-tip" data-reason="${safe}" style="background:rgba(20,184,166,.12);color:#0d9488;border-radius:5px;padding:2px 7px;font-weight:600;cursor:default;border-bottom:1px dashed rgba(20,184,166,.5);">📋 LAP</span></td>`;
+  }
+  if(bridgeNA==='throttle'){
+    return`<td style="white-space:nowrap;font-size:12px;"><span class="no-eng-tip" data-reason="${safe}" style="background:rgba(99,102,241,.12);color:#6366f1;border-radius:5px;padding:2px 7px;font-weight:600;cursor:default;border-bottom:1px dashed rgba(99,102,241,.5);">🌡️ Throttle</span></td>`;
+  }
+  if(bridgeNA==='howto'){
+    return`<td style="white-space:nowrap;font-size:12px;"><span class="no-eng-tip" data-reason="${safe}" style="background:rgba(148,163,184,.12);color:#64748b;border-radius:5px;padding:2px 7px;font-weight:600;cursor:default;border-bottom:1px dashed rgba(148,163,184,.5);">💬 How-to</span></td>`;
+  }
+  if(bridgeNA==='mci'){
+    return`<td style="white-space:nowrap;font-size:12px;"><span class="no-eng-tip" data-reason="${safe}" style="background:rgba(124,77,255,.10);color:#a78bfa;border-radius:5px;padding:2px 7px;font-weight:600;cursor:default;border-bottom:1px dashed rgba(124,77,255,.4);">⚡ MCI</span></td>`;
+  }
   return`<td style="white-space:nowrap;font-size:12px;"><span class="no-eng-tip" data-reason="${safe}" style="background:rgba(220,38,38,.12);color:#dc2626;border-radius:5px;padding:2px 7px;font-weight:600;cursor:default;border-bottom:1px dashed rgba(220,38,38,.5);">🔴 No engagement</span></td>`;
 }
-function rtCell(val,noColor,isEngage,caseNum){
-  if(!val||val==='No engagement')return isEngage?makeNoEngHtml(caseNum):'<td class="time-cell" style="color:#94a3b8;font-size:11px;">—</td>';
+function rtCell(val,noColor,isEngage,caseNum,bridgeNA){
+  if(!val||val==='No engagement')return isEngage?makeNoEngHtml(caseNum,bridgeNA):'<td class="time-cell" style="color:#94a3b8;font-size:11px;">—</td>';
   if(noColor)return`<td style="white-space:nowrap;font-size:12px;color:#0f172a;font-weight:700;">${val}</td>`;
   const s=parseSeconds(val),c=rtColor(s);
   if(!c)return'<td>—</td>';
@@ -1288,7 +1300,7 @@ function buildDayPanel(day,container){
       +'<td class="account-name">'+mciTag+c.account+'</td><td class="product-cell">'+c.product+'</td>'
       +'<td class="time-cell">'+c.timeIST+'</td>'
       +'<td><span class="manager-chip '+chipCls+'">'+mgr+'</span></td>'
-      +rtCell(c.ack)+rtCell(c.resolve)+rtCell(c.channelEngage,true,true,c.caseNum)+redCell+bridgeCell+notesCell+'</tr>';
+      +rtCell(c.ack)+rtCell(c.resolve)+rtCell(c.channelEngage,true,true,c.caseNum,c.bridgeNA)+redCell+bridgeCell+notesCell+'</tr>';
   });
   html+='</tbody></table></div>';
   container.innerHTML=html;
