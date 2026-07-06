@@ -5961,7 +5961,7 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": null
+          "channelCreatedAt": "2026-06-28 00:26:56 IST"
         },
         {
           "caseNum": "473741914",
@@ -5977,7 +5977,7 @@
           "resolvedAt": null,
           "resolvedText": "Pre-existing re-alert (channel created 2026-05-14)",
           "oiDuration": null,
-          "channelCreatedAt": null
+          "channelCreatedAt": "2026-06-28 00:32:07 IST"
         },
         {
           "caseNum": "473959296",
@@ -5993,7 +5993,7 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": null
+          "channelCreatedAt": "2026-06-28 03:27:13 IST"
         },
         {
           "caseNum": "473959961",
@@ -6009,7 +6009,7 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": null
+          "channelCreatedAt": "2026-06-28 15:56:17 IST"
         }
       ],
       "eodDone": false,
@@ -6044,7 +6044,8 @@
           "resolvedAt": "2026-06-29 18:38:23 IST",
           "resolvedText": "Fixed gap config with 0 min travel time; customer confirmed appointment scheduling resolved. Case closed with customer consent.",
           "oiDuration": "3h 45m",
-          "channelCreatedAt": "2026-06-29 14:52:43 IST"
+          "channelCreatedAt": "2026-06-29 14:52:43 IST",
+          "bridgeCreatedAt": "2026-06-29 14:58:33 IST"
         },
         {
           "caseNum": "473930412",
@@ -6060,7 +6061,8 @@
           "resolvedAt": null,
           "resolvedText": "Solutions provided for cross-domain session bridging (SSO/OAuth/frontdoor.jsp). CIC disengaged; re-engage if BI changes.",
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-29 18:15:00 IST"
+          "channelCreatedAt": "2026-06-29 18:15:00 IST",
+          "bridgeCreatedAt": "2026-06-29 21:34:07 IST"
         },
         {
           "caseNum": "473965759",
