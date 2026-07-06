@@ -29,7 +29,7 @@
 
   .main{padding:28px 32px;max-width:1400px;margin:0 auto}
 
-  .kpi-bar{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-bottom:28px}
+  .kpi-bar{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:28px}
   @media(max-width:1100px){.kpi-bar{grid-template-columns:repeat(3,1fr)}}
   @media(max-width:600px){.kpi-bar{grid-template-columns:repeat(2,1fr)}}
   .kpi{background:var(--surface);border:1px solid var(--border);border-radius:var(--card-radius);padding:18px 20px;position:relative;overflow:hidden}
@@ -151,7 +151,6 @@
     <div class="kpi yellow"><div class="kpi-value" id="kpiAvgPerDay">—</div><div class="kpi-label">Avg Cases / Day</div><div class="kpi-sub" id="kpiAvgSub"></div></div>
     <div class="kpi green"><div class="kpi-value" id="kpiMonthEngage" style="font-size:24px;">—</div><div class="kpi-label">Monthly Avg Engage</div><div class="kpi-sub" id="kpiMonthEngageSub"></div></div>
     <div class="kpi purple"><div class="kpi-value" id="kpiWeekEngage" style="font-size:24px;">—</div><div class="kpi-label">This Week Avg Engage</div><div class="kpi-sub" id="kpiWeekEngageSub"></div></div>
-    <div class="kpi rose"><div class="kpi-value" id="kpiBridgeCompliance" style="font-size:30px;">—</div><div class="kpi-label">Bridge ≤15 min</div><div class="kpi-sub" id="kpiBridgeComplianceSub"></div><div class="kpi-sub" id="kpiBridgeComplianceExcl" style="margin-top:3px;font-size:10px;"></div></div>
   </div>
 
   <div class="wow-engage-card">
@@ -595,31 +594,6 @@ function renderKPIs(){
   document.getElementById('kpiWeekEngage').textContent=weekAvgEngage||'—';
   document.getElementById('kpiWeekEngageSub').textContent=weekAvgEngage?(wkLabel+', '+thisWeek.length+' days'):'no data yet';
 
-  // Bridge compliance — weekdays only
-  const allCases=wdays.flatMap(function(d){
-    return d.cases.map(function(c){return Object.assign({},c,{_dayDate:d.date});});
-  });
-  // Denominator = ALL Sev1s, no exclusions — matches SEV1S column exactly
-  const bridgeTotal=allCases.length;
-  const bridgeYes=allCases.filter(function(c){return c.bridgeWithin15m===true;}).length;
-  const bridgePct=bridgeTotal>0?Math.round(bridgeYes/bridgeTotal*100):null;
-  const bridgeEl=document.getElementById('kpiBridgeCompliance');
-  const bridgeSubEl=document.getElementById('kpiBridgeComplianceSub');
-  const bridgeExclEl=document.getElementById('kpiBridgeComplianceExcl');
-  if(bridgePct!==null||bridgeTotal===0){
-    bridgeEl.textContent=bridgePct!==null?bridgePct+'%':'—';
-    const kpiEl=bridgeEl.closest('.kpi');
-    if(bridgePct===null){kpiEl.className='kpi rose';}
-    else if(bridgePct>=80){kpiEl.className='kpi rose';}
-    else if(bridgePct>=60){kpiEl.className='kpi yellow';}
-    else{kpiEl.className='kpi needs';}
-    bridgeSubEl.textContent=bridgeYes+'/'+bridgeTotal+' cases in scope';
-    bridgeExclEl.textContent='all cases tracked';
-  }else{
-    bridgeEl.textContent='—';
-    bridgeSubEl.textContent='no data yet';
-    bridgeExclEl.textContent='';
-  }
 }
 
 // ── WOW ENGAGE CHART ─────────────────────────────────────────────────────────
