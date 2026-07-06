@@ -771,8 +771,8 @@ function renderKPIs(){
   document.getElementById('kpiBridgeAvgSub').textContent=bridgeDeltas.length?'channel creation → bridge start':'no bridge data yet';
 
   // QB Engage Compliance — new channels only
-  // Excluded from denominator: lap, throttle, mci, resolved, outside-window, no-channel, other, howto, cic-disengaged(no-impact)
-  const EXCLUDED_CATEGORIES=['lap','throttle','mci','resolved','outside-window','no-channel','other','howto','cic-disengaged','sandbox','monitoring'];
+  // Excluded from denominator: lap, throttle, mci, resolved, outside-window, no-channel, howto, cic-disengaged(no-impact), sandbox, monitoring
+  const EXCLUDED_CATEGORIES=['lap','throttle','mci','resolved','outside-window','no-channel','howto','cic-disengaged','sandbox','monitoring'];
   const preExistingExcluded=wdays.flatMap(function(d){
     return d.cases.filter(function(c){
       if(!c.channelCreatedAt)return false;
@@ -792,7 +792,7 @@ function renderKPIs(){
   const outsideExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='outside-window';}).length;
   const nochanExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='no-channel';}).length;
   const howtoExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='howto';}).length;
-  const otherExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='other';}).length;
+  const otherExcluded=0;// 'other' is included in denominator
   const allCasesFlat=allNewChannels.filter(function(c){return !EXCLUDED_CATEGORIES.includes(c.bridgeNA);});
   const engagedCount=allCasesFlat.filter(function(c){return c.channelEngage&&c.channelEngage!=='No engagement';}).length;
   const engageTotal=allCasesFlat.length;
