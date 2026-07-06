@@ -345,6 +345,8 @@ function parseSeconds(s){
 // Parse "YYYY-MM-DD HH:MM:SS IST" → Date (IST = UTC+5:30)
 function parseISTTimestamp(s){
   if(!s)return null;
+  // Already has timezone offset — use as-is
+  if(s.includes('+05:30')||s.includes('Z'))return new Date(s);
   const iso=s.replace(' IST','').replace(' ','T')+'+05:30';
   const d=new Date(iso);
   return isNaN(d.getTime())?null:d;
