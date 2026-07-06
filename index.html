@@ -48,6 +48,14 @@
   .kpi-label{font-size:12px;color:var(--text-muted);font-weight:500}
   .kpi-sub{font-size:11px;color:var(--text-muted);margin-top:6px}
 
+  .kpi-filter-bar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--border);border-radius:var(--card-radius);padding:10px 16px;margin-bottom:12px;}
+  .kpi-preset{background:var(--surface2);border:1px solid var(--border);border-radius:20px;padding:4px 13px;font-size:12px;font-weight:500;cursor:pointer;color:var(--text-muted);transition:all .15s;line-height:1.5;}
+  .kpi-preset:hover{background:#e2e8f0;color:var(--text);}
+  .kpi-preset.active{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600;}
+  .kpi-filter-sep{width:1px;height:18px;background:var(--border);flex-shrink:0;margin:0 2px;}
+  .kpi-date-input{background:var(--surface2);border:1px solid var(--border);border-radius:7px;padding:4px 8px;font-size:12px;color:var(--text);outline:none;cursor:pointer;font-family:inherit;}
+  .kpi-date-input:focus{border-color:var(--accent);}
+
   .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:24px}
   .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--card-radius);padding:22px}
   .card-title{font-size:14px;font-weight:600;margin-bottom:18px;color:var(--text);display:flex;align-items:center;gap:8px}
@@ -145,6 +153,23 @@
 
   <!-- ── Weekday panel ── -->
   <div id="panel-weekday">
+
+  <!-- KPI date-range filter bar -->
+  <div class="kpi-filter-bar">
+    <span style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em;flex-shrink:0;">KPI Range</span>
+    <div class="kpi-filter-sep"></div>
+    <button class="kpi-preset active" onclick="setKpiPreset('all',this)">All Time</button>
+    <button class="kpi-preset" onclick="setKpiPreset('month',this)">This Month</button>
+    <button class="kpi-preset" onclick="setKpiPreset('week',this)">This Week</button>
+    <button class="kpi-preset" onclick="setKpiPreset('lastweek',this)">Last Week</button>
+    <div class="kpi-filter-sep"></div>
+    <label style="font-size:11px;color:var(--text-muted);font-weight:500;flex-shrink:0;">From</label>
+    <input type="date" id="kpiFrom" class="kpi-date-input" onchange="setKpiPreset('custom',null)">
+    <label style="font-size:11px;color:var(--text-muted);font-weight:500;flex-shrink:0;">To</label>
+    <input type="date" id="kpiTo" class="kpi-date-input" onchange="setKpiPreset('custom',null)">
+    <span id="kpiFilterLabel" style="margin-left:4px;font-size:11px;color:var(--text-muted);"></span>
+  </div>
+
   <div class="kpi-bar">
     <div class="kpi blue"><div class="kpi-value" id="kpiTotal">—</div><div class="kpi-label">Total Sev1 Cases</div><div class="kpi-sub" id="kpiTotalSub"></div></div>
     <div class="kpi teal"><div class="kpi-value" id="kpiDays">—</div><div class="kpi-label">Days Tracked</div><div class="kpi-sub" id="kpiDaysSub"></div></div>
@@ -531,8 +556,89 @@ function renderWeekends(){
 
 // ── GLOBAL ───────────────────────────────────────────────────────────────────
 let DB=null,dailyChart=null,healthChart=null;
-// Helper: weekday days only (used for all KPIs, charts, summary, tabs)
+// KPI filter state
+let kpiFilter={from:null,to:null}; // null = no bound (all time)
+
+// Helper: all weekday days (used for charts, summary, tabs)
 function weekdays(){return DB.days.filter(function(d){return !d.isWeekend;});}
+
+// Helper: weekday days filtered to KPI date range
+function filteredWeekdays(){
+  const wdays=weekdays();
+  if(!kpiFilter.from&&!kpiFilter.to)return wdays;
+  return wdays.filter(function(d){
+    if(kpiFilter.from&&d.date<kpiFilter.from)return false;
+    if(kpiFilter.to&&d.date>kpiFilter.to)return false;
+    return true;
+  });
+}
+
+// ── KPI FILTER PRESET ────────────────────────────────────────────────────────
+function setKpiPreset(preset,btn){
+  // Deactivate all preset buttons, activate clicked one
+  document.querySelectorAll('.kpi-preset').forEach(function(b){b.classList.remove('active');});
+  if(btn)btn.classList.add('active');
+
+  const wdays=weekdays();
+  if(!wdays.length)return;
+  const allDates=wdays.map(function(d){return d.date;}).sort();
+  const firstDate=allDates[0],lastDate=allDates[allDates.length-1];
+
+  // Compute week boundaries from most-recent tracked day
+  function getWeekBounds(referenceDate){
+    const d=new Date(referenceDate+'T00:00:00');
+    const dow=d.getDay(); // 0=Sun,1=Mon…
+    const monday=new Date(d);monday.setDate(d.getDate()-(dow===0?6:dow-1));
+    const friday=new Date(monday);friday.setDate(monday.getDate()+4);
+    return{from:monday.toISOString().slice(0,10),to:friday.toISOString().slice(0,10)};
+  }
+
+  if(preset==='all'){
+    kpiFilter={from:null,to:null};
+    document.getElementById('kpiFrom').value='';
+    document.getElementById('kpiTo').value='';
+  }else if(preset==='month'){
+    const ym=lastDate.slice(0,7); // 'YYYY-MM'
+    kpiFilter={from:ym+'-01',to:lastDate};
+    document.getElementById('kpiFrom').value=ym+'-01';
+    document.getElementById('kpiTo').value=lastDate;
+  }else if(preset==='week'){
+    const b=getWeekBounds(lastDate);
+    kpiFilter={from:b.from,to:b.to};
+    document.getElementById('kpiFrom').value=b.from;
+    document.getElementById('kpiTo').value=b.to;
+  }else if(preset==='lastweek'){
+    const lastMon=new Date(lastDate+'T00:00:00');
+    const dow=lastMon.getDay();
+    lastMon.setDate(lastMon.getDate()-(dow===0?6:dow-1)-7);
+    const lastFri=new Date(lastMon);lastFri.setDate(lastMon.getDate()+4);
+    const lf=lastFri.toISOString().slice(0,10);
+    const lm=lastMon.toISOString().slice(0,10);
+    kpiFilter={from:lm,to:lf};
+    document.getElementById('kpiFrom').value=lm;
+    document.getElementById('kpiTo').value=lf;
+  }else if(preset==='custom'){
+    const f=document.getElementById('kpiFrom').value;
+    const t=document.getElementById('kpiTo').value;
+    kpiFilter={from:f||null,to:t||null};
+    // Remove active class from all presets (custom, no pill highlighted)
+    document.querySelectorAll('.kpi-preset').forEach(function(b){b.classList.remove('active');});
+  }
+
+  renderKPIs();
+  updateKpiFilterLabel();
+}
+
+function updateKpiFilterLabel(){
+  const lbl=document.getElementById('kpiFilterLabel');
+  if(!lbl)return;
+  const wdays=filteredWeekdays();
+  if(!kpiFilter.from&&!kpiFilter.to){lbl.textContent='';return;}
+  const fmtD=function(s){if(!s)return'';const d=new Date(s+'T00:00:00');return d.toLocaleString('en-US',{month:'short',day:'numeric'});};
+  const fromLbl=kpiFilter.from?fmtD(kpiFilter.from):'start';
+  const toLbl=kpiFilter.to?fmtD(kpiFilter.to):'end';
+  lbl.textContent='· '+fromLbl+' – '+toLbl+' ('+wdays.length+' day'+(wdays.length!==1?'s':'')+')';
+}
 
 // ── LOAD ─────────────────────────────────────────────────────────────────────
 async function loadData(force){
@@ -564,36 +670,67 @@ function renderHeader(){
 
 // ── KPIs ─────────────────────────────────────────────────────────────────────
 function renderKPIs(){
-  const wdays=weekdays();
+  const wdays=filteredWeekdays();
+  const allWdays=weekdays();
+
+  // Initialise date input min/max from full dataset (harmless to repeat)
+  if(allWdays.length){
+    const dates=allWdays.map(function(d){return d.date;}).sort();
+    const fromEl=document.getElementById('kpiFrom');
+    const toEl=document.getElementById('kpiTo');
+    if(fromEl){fromEl.min=dates[0];fromEl.max=dates[dates.length-1];}
+    if(toEl){toEl.min=dates[0];toEl.max=dates[dates.length-1];}
+  }
+
+  if(!wdays.length){
+    document.getElementById('kpiTotal').textContent='—';
+    document.getElementById('kpiTotalSub').textContent='no data in range';
+    document.getElementById('kpiDays').textContent='—';
+    document.getElementById('kpiDaysSub').textContent='';
+    document.getElementById('kpiAvgPerDay').textContent='—';
+    document.getElementById('kpiAvgSub').textContent='';
+    document.getElementById('kpiMonthEngage').textContent='—';
+    document.getElementById('kpiMonthEngageSub').textContent='no data in range';
+    document.getElementById('kpiWeekEngage').textContent='—';
+    document.getElementById('kpiWeekEngageSub').textContent='no data in range';
+    updateKpiFilterLabel();
+    return;
+  }
+
   let total=0;
   for(const d of wdays)total+=d.cases.length;
   const avg=(total/wdays.length).toFixed(1);
   document.getElementById('kpiTotal').textContent=total;
-  document.getElementById('kpiTotalSub').textContent=wdays.length+' weekdays tracked';
+  document.getElementById('kpiTotalSub').textContent=wdays.length+' weekday'+(wdays.length!==1?'s':'')+' tracked';
   document.getElementById('kpiDays').textContent=wdays.length;
-  document.getElementById('kpiDaysSub').textContent='Jun 1–'+wdays[wdays.length-1].label.replace('Jun ','');
+  const firstDay=wdays[0],lastDay=wdays[wdays.length-1];
+  document.getElementById('kpiDaysSub').textContent=firstDay.label+(firstDay.label!==lastDay.label?' – '+lastDay.label:'');
   document.getElementById('kpiAvgPerDay').textContent=avg;
-  document.getElementById('kpiAvgSub').textContent='across '+wdays.length+' weekdays';
+  document.getElementById('kpiAvgSub').textContent='across '+wdays.length+' weekday'+(wdays.length!==1?'s':'');
 
-  // Monthly avg channel engage (weekdays only)
-  const allEngageSecs=wdays.flatMap(d=>d.cases.map(c=>c.channelEngage))
-    .filter(v=>v&&v!=='No engagement')
-    .map(v=>parseSeconds(v)).filter(v=>v!==null);
-  const monthAvgEngage=allEngageSecs.length?fmtSecs(Math.round(allEngageSecs.reduce((a,b)=>a+b,0)/allEngageSecs.length)):null;
-  document.getElementById('kpiMonthEngage').textContent=monthAvgEngage||'—';
-  document.getElementById('kpiMonthEngageSub').textContent=monthAvgEngage?'across all '+wdays.length+' weekdays':'no data yet';
+  // Avg channel engage over filtered range
+  const isFiltered=!!(kpiFilter.from||kpiFilter.to);
+  const allEngageSecs=wdays.flatMap(function(d){return d.cases.map(function(c){return c.channelEngage;});})
+    .filter(function(v){return v&&v!=='No engagement';})
+    .map(function(v){return parseSeconds(v);}).filter(function(v){return v!==null;});
+  const avgEngage=allEngageSecs.length?fmtSecs(Math.round(allEngageSecs.reduce(function(a,b){return a+b;},0)/allEngageSecs.length)):null;
+  document.getElementById('kpiMonthEngage').textContent=avgEngage||'—';
+  document.getElementById('kpiMonthEngageSub').textContent=avgEngage?(isFiltered?'over selected range':'across all '+wdays.length+' weekdays'):'no data yet';
+  const monthLabelEl=document.getElementById('kpiMonthEngage').closest('.kpi').querySelector('.kpi-label');
+  if(monthLabelEl)monthLabelEl.textContent=isFiltered?'Range Avg Engage':'Monthly Avg Engage';
 
-  // This week avg channel engage (weekdays of most recent week)
+  // Most-recent week within the filtered set
   const weeks=groupByWeek(wdays);
   const thisWeek=weeks[weeks.length-1]||[];
-  const weekEngageSecs=thisWeek.flatMap(d=>d.cases.map(c=>c.channelEngage))
-    .filter(v=>v&&v!=='No engagement')
-    .map(v=>parseSeconds(v)).filter(v=>v!==null);
-  const weekAvgEngage=weekEngageSecs.length?fmtSecs(Math.round(weekEngageSecs.reduce((a,b)=>a+b,0)/weekEngageSecs.length)):null;
+  const weekEngageSecs=thisWeek.flatMap(function(d){return d.cases.map(function(c){return c.channelEngage;});})
+    .filter(function(v){return v&&v!=='No engagement';})
+    .map(function(v){return parseSeconds(v);}).filter(function(v){return v!==null;});
+  const weekAvgEngage=weekEngageSecs.length?fmtSecs(Math.round(weekEngageSecs.reduce(function(a,b){return a+b;},0)/weekEngageSecs.length)):null;
   const wkLabel=thisWeek.length?thisWeek[0].label+(thisWeek.length>1&&thisWeek[thisWeek.length-1].label?'–'+thisWeek[thisWeek.length-1].label.split(' ')[1]:''):'';
   document.getElementById('kpiWeekEngage').textContent=weekAvgEngage||'—';
   document.getElementById('kpiWeekEngageSub').textContent=weekAvgEngage?(wkLabel+', '+thisWeek.length+' days'):'no data yet';
 
+  updateKpiFilterLabel();
 }
 
 // ── WOW ENGAGE CHART ─────────────────────────────────────────────────────────
