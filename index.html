@@ -745,8 +745,13 @@ function renderKPIs(){
   document.getElementById('kpiBridgeAvg').textContent=bridgeAvgSecs!==null?fmtBridgeSecs(bridgeAvgSecs):'—';
   document.getElementById('kpiBridgeAvgSub').textContent=bridgeDeltas.length?'channel creation → bridge start':'no bridge data yet';
 
-  // QB Engage Compliance — cases with engagement / all cases
-  const allCasesFlat=wdays.flatMap(function(d){return d.cases;});
+  // QB Engage Compliance — new channels only (channelCreatedAt on the same day), engaged / total
+  const allCasesFlat=wdays.flatMap(function(d){
+    return d.cases.filter(function(c){
+      if(!c.channelCreatedAt)return false;
+      return c.channelCreatedAt.slice(0,10)===d.date;
+    });
+  });
   const engagedCount=allCasesFlat.filter(function(c){return c.channelEngage&&c.channelEngage!=='No engagement';}).length;
   const engageTotal=allCasesFlat.length;
   const engagePct=engageTotal>0?Math.round(engagedCount/engageTotal*100):null;
