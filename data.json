@@ -152,7 +152,8 @@
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-01 13:09:16 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473600625",
@@ -169,7 +170,8 @@
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-01 13:44:47 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-01 14:01:03 IST"
+          "bridgeCreatedAt": "2026-06-01 14:01:03 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473513077",
@@ -185,7 +187,8 @@
           "oiDuration": "8d 3h",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from Sev1 start time (OrgCS))",
           "channelCreatedAt": "2026-05-22 13:10:58 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "execTagged": []
         },
         {
           "caseNum": "473602269",
@@ -201,7 +204,8 @@
           "oiDuration": "16m",
           "resolvedText": "CIC can dis-engage. I have provided the details to the customer via case comment",
           "channelCreatedAt": "2026-06-01 14:34:34 IST",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473587263",
@@ -217,7 +221,8 @@
           "resolvedText": "no active swim lanes to drive at the moment and also no impact on the customer business",
           "oiDuration": "38m",
           "channelCreatedAt": "2026-06-01 16:32:00 IST",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473604096",
@@ -233,7 +238,8 @@
           "resolvedText": "Currently customer is out of impact.",
           "oiDuration": "1d 7h",
           "channelCreatedAt": "2026-06-01 17:24:35 IST",
-          "bridgeCreatedAt": "2026-06-01 17:32:19 IST"
+          "bridgeCreatedAt": "2026-06-01 17:32:19 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473604164",
@@ -249,7 +255,8 @@
           "oiDuration": "1h 10m",
           "resolvedText": "Customer can use these sandboxes now",
           "channelCreatedAt": "2026-06-01 17:33:47 IST",
-          "bridgeCreatedAt": "2026-06-01 18:14:08 IST"
+          "bridgeCreatedAt": "2026-06-01 18:14:08 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473604551",
@@ -266,7 +273,8 @@
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-01 18:21:45 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-01 18:29:56 IST"
+          "bridgeCreatedAt": "2026-06-01 18:29:56 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473604871",
@@ -282,7 +290,8 @@
           "resolvedText": "patch 22 deployed in prod org, customer confirmed version 260.14.22",
           "oiDuration": "1d 12h",
           "channelCreatedAt": "2026-06-01 18:58:47 IST",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473604902",
@@ -299,7 +308,8 @@
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-01 19:01:17 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         }
       ],
       "eodDone": true,
@@ -327,7 +337,8 @@
           "channelCreatedAt": "2026-06-02 12:52:32 IST",
           "oiSource": "orgcs",
           "bridgeCreatedAt": null,
-          "bridgeNA": "throttle"
+          "bridgeNA": "throttle",
+          "execTagged": []
         },
         {
           "caseNum": "473567778",
@@ -342,7 +353,8 @@
           "resolvedAt": "2026-05-27 16:26:07 IST",
           "oiDuration": "3h 20m",
           "resolvedText": "customer confirmed able to add attachments; initial issue is resolved, CIC disengaging",
-          "channelCreatedAt": "2026-05-27 13:05:21 IST"
+          "channelCreatedAt": "2026-05-27 13:05:21 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473589842",
@@ -358,7 +370,8 @@
           "resolvedText": "\"Draft With AI\" button issue should now be resolved.",
           "oiDuration": "23h 26m",
           "channelCreatedAt": "2026-06-02 14:44:03 IST",
-          "bridgeCreatedAt": "2026-06-02 20:05:15 IST"
+          "bridgeCreatedAt": "2026-06-02 20:05:15 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473613430",
@@ -375,7 +388,8 @@
           "oiDuration": "2h 43m",
           "channelCreatedAt": "2026-06-02 15:44:57 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-02 15:48:34 IST"
+          "bridgeCreatedAt": "2026-06-02 15:48:34 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473613541",
@@ -391,7 +405,8 @@
           "resolvedText": "this is WAD. I will inform the customer with the details.",
           "oiDuration": "16m",
           "channelCreatedAt": "2026-06-02 16:00:49 IST",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473613830",
@@ -408,7 +423,8 @@
           "resolvedText": "limit increased from 5k to 20k for 30 days. Customer is out of impact!",
           "channelCreatedAt": "2026-06-02 16:41:38 IST",
           "bridgeCreatedAt": null,
-          "bridgeNA": "lap"
+          "bridgeNA": "lap",
+          "execTagged": []
         },
         {
           "caseNum": "473613868",
@@ -424,7 +440,8 @@
           "resolvedText": "no current impact to prod as confirmed by the customer, CIC will disengage",
           "oiDuration": "20m",
           "channelCreatedAt": "2026-06-02 16:48:11 IST",
-          "bridgeCreatedAt": "2026-06-02 16:54:32 IST"
+          "bridgeCreatedAt": "2026-06-02 16:54:32 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473520691",
@@ -441,7 +458,8 @@
           "oiDuration": "3d 9h",
           "channelCreatedAt": "2026-06-02 17:08:11 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473614090",
@@ -457,7 +475,8 @@
           "resolvedText": "I'll close the CIC escalation: case won't go on GHO, support has clear next steps",
           "oiDuration": "3h 11m",
           "channelCreatedAt": "2026-06-02 17:17:57 IST",
-          "bridgeCreatedAt": "2026-06-02 18:19:32 IST"
+          "bridgeCreatedAt": "2026-06-02 18:19:32 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473614334",
@@ -474,7 +493,8 @@
           "oiDuration": "4h 13m",
           "channelCreatedAt": "2026-06-02 17:54:18 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-02 18:04:07 IST"
+          "bridgeCreatedAt": "2026-06-02 18:04:07 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473589470",
@@ -490,7 +510,8 @@
           "resolvedText": "at this point the customer is not in impact",
           "oiDuration": "1d 16h",
           "channelCreatedAt": "2026-06-02 18:49:02 IST",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473615041",
@@ -507,7 +528,8 @@
           "oiDuration": "6h 49m",
           "channelCreatedAt": "2026-06-02 19:10:52 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-02 19:29:28 IST"
+          "bridgeCreatedAt": "2026-06-02 19:29:28 IST",
+          "execTagged": []
         }
       ],
       "eodDone": true,
@@ -534,7 +556,8 @@
           "resolvedText": "the platform event solved the issue . You can close the case.",
           "oiDuration": "1d 4h",
           "channelCreatedAt": "2026-06-03 13:18:42 IST",
-          "bridgeCreatedAt": "2026-06-03 13:40:03 IST"
+          "bridgeCreatedAt": "2026-06-03 13:40:03 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473622876",
@@ -551,7 +574,8 @@
           "resolvedText": "customer has blocked the identified source IP address",
           "oiDuration": "1h 32m",
           "channelCreatedAt": "2026-06-03 14:40:35 IST",
-          "bridgeCreatedAt": "2026-06-03 15:47:23 IST"
+          "bridgeCreatedAt": "2026-06-03 15:47:23 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473588268",
@@ -569,7 +593,8 @@
           "oiDuration": "2d 5h",
           "channelCreatedAt": "2026-06-03 15:24:57 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473623584",
@@ -585,7 +610,8 @@
           "resolvedText": "The issue is resolved.",
           "oiDuration": "42m",
           "channelCreatedAt": "2026-06-03 15:59:35 IST",
-          "bridgeCreatedAt": "2026-06-03 16:15:00 IST"
+          "bridgeCreatedAt": "2026-06-03 16:15:00 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473624107",
@@ -602,7 +628,8 @@
           "resolvedText": "CX stopped CDC integration; 24hr limit will decrease from 9 PM IST",
           "oiDuration": "1h 15m",
           "channelCreatedAt": "2026-06-03 17:06:26 IST",
-          "bridgeCreatedAt": "2026-06-03 17:17:06 IST"
+          "bridgeCreatedAt": "2026-06-03 17:17:06 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473624266",
@@ -618,7 +645,8 @@
           "resolvedText": "CIC confirmed issue is resolved and environment is stable.",
           "oiDuration": "30m",
           "channelCreatedAt": "2026-06-03 17:24:52 IST",
-          "bridgeCreatedAt": "2026-06-03 17:28:50 IST"
+          "bridgeCreatedAt": "2026-06-03 17:28:50 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473624051",
@@ -635,7 +663,8 @@
           "oiDuration": "1d 1h",
           "resolvedText": "Customer provided the consent to close the case.",
           "channelCreatedAt": "2026-06-03 16:57:08 IST",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473493085",
@@ -652,7 +681,8 @@
           "oiDuration": "5d 1h",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Need More Information; measured from Sev1 start time (OrgCS))",
           "channelCreatedAt": "2026-05-18 19:16:50 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "execTagged": []
         },
         {
           "caseNum": "473623729",
@@ -669,7 +699,8 @@
           "resolvedText": "Customer: \"ok seems like is working properly now\"",
           "oiDuration": "18h 8m",
           "channelCreatedAt": "2026-06-03 19:03:49 IST",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         }
       ],
       "eodDone": true,
@@ -694,7 +725,8 @@
           "resolvedAt": "2026-06-05 11:50:29 IST",
           "resolvedText": "Customer has granted closure consent on this Sev-1.",
           "oiDuration": "22h 38m",
-          "channelCreatedAt": "2026-06-04 13:12:00 IST"
+          "channelCreatedAt": "2026-06-04 13:12:00 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473634707",
@@ -711,7 +743,8 @@
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-04 13:25:16 IST",
           "oiSource": "orgcs",
-          "bridgeNA": "other"
+          "bridgeNA": "other",
+          "execTagged": []
         },
         {
           "caseNum": "473634750",
@@ -728,7 +761,8 @@
           "oiDuration": "7d 3h",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-04 13:28:12 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "execTagged": []
         },
         {
           "caseNum": "473634762",
@@ -743,7 +777,8 @@
           "resolvedAt": "2026-06-04 20:27:08 IST",
           "oiDuration": "6h 58m",
           "resolvedText": "The behaviour CX reported is WAD. CX has asked us to wait until tomorrow.",
-          "channelCreatedAt": "2026-06-04 13:29:01 IST"
+          "channelCreatedAt": "2026-06-04 13:29:01 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473633842",
@@ -759,7 +794,8 @@
           "resolvedAt": "2026-06-05 11:00:10 IST",
           "oiDuration": "22h 37m",
           "resolvedText": "customer is no longer experiencing an active impact",
-          "channelCreatedAt": "2026-06-04 12:22:59 IST"
+          "channelCreatedAt": "2026-06-04 12:22:59 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473605601",
@@ -774,7 +810,8 @@
           "resolvedAt": "2026-06-04 18:29:48 IST",
           "resolvedText": "case severity is reduced to Sev2. hence, CIC will disengage here.",
           "oiDuration": "2h 44m",
-          "channelCreatedAt": "2026-06-04 15:45:00 IST"
+          "channelCreatedAt": "2026-06-04 15:45:00 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473636953",
@@ -790,7 +827,8 @@
           "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Need More Information)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-04 15:59:44 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "execTagged": []
         },
         {
           "caseNum": "473636986",
@@ -805,7 +843,8 @@
           "resolvedAt": "2026-06-04 19:47:47 IST",
           "resolvedText": "reduced the severity to Sev-2 (not production impact, sandbox testing)",
           "oiDuration": "3h 39m",
-          "channelCreatedAt": "2026-06-04 16:08:00 IST"
+          "channelCreatedAt": "2026-06-04 16:08:00 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473637157",
@@ -821,7 +860,8 @@
           "oiDuration": "1h 24m",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-04 16:14:41 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "execTagged": []
         },
         {
           "caseNum": "473634071",
@@ -837,7 +877,8 @@
           "oiDuration": "1d 1h",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-04 12:41:10 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "execTagged": []
         },
         {
           "caseNum": "473631372",
@@ -853,7 +894,8 @@
           "resolvedAt": "2026-06-04 21:56:57 IST",
           "oiDuration": "4h 34m",
           "resolvedText": "Domain is now provisioned, please let customer know.",
-          "channelCreatedAt": "2026-06-04 17:22:31 IST"
+          "channelCreatedAt": "2026-06-04 17:22:31 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473612144",
@@ -868,7 +910,8 @@
           "resolvedAt": "2026-06-04 20:35:16 IST",
           "resolvedText": "Customer confirmed all deployments completed, asked to downgrade to Sev2.",
           "oiDuration": "2h 40m",
-          "channelCreatedAt": "2026-06-04 17:55:00 IST"
+          "channelCreatedAt": "2026-06-04 17:55:00 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473248499",
@@ -884,7 +927,8 @@
           "resolvedAt": "2026-04-16 09:29:56 IST",
           "oiDuration": "1d 4h",
           "resolvedText": "Customer will complete metadata updates; testing one rule showed positive results",
-          "channelCreatedAt": "2026-04-15 04:40:42 IST"
+          "channelCreatedAt": "2026-04-15 04:40:42 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473638777",
@@ -900,7 +944,8 @@
           "oiDuration": "7h 39m",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-04 18:19:00 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "execTagged": []
         },
         {
           "caseNum": "473505955",
@@ -915,7 +960,8 @@
           "resolvedAt": "2026-05-27 06:25:54 IST",
           "oiDuration": "10h 40m",
           "resolvedText": "The certificate issue is resolved, This is more of monitoring the case.",
-          "channelCreatedAt": "2026-05-26 19:45:45 IST"
+          "channelCreatedAt": "2026-05-26 19:45:45 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473639607",
@@ -931,7 +977,8 @@
           "oiDuration": null,
           "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Solution Provided)",
           "channelCreatedAt": "2026-06-04 19:15:11 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "execTagged": []
         },
         {
           "caseNum": "473638243",
@@ -947,7 +994,8 @@
           "resolvedText": "auto change queued; Opt out would reflect soon which should take customer OOI",
           "oiDuration": "1h 13m",
           "channelCreatedAt": "2026-06-04 19:29:00 IST",
-          "bridgeNA": "lap"
+          "bridgeNA": "lap",
+          "execTagged": []
         }
       ],
       "eodDone": false,
@@ -973,7 +1021,8 @@
           "resolvedText": "customer confirmed 5 accounts were successfully processed",
           "oiDuration": "6h 44m",
           "channelCreatedAt": "2026-06-05 12:38:40 IST",
-          "bridgeCreatedAt": "2026-06-05 13:12:49 IST"
+          "bridgeCreatedAt": "2026-06-05 13:12:49 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473654353",
@@ -990,7 +1039,8 @@
           "oiDuration": "4h 11m",
           "channelCreatedAt": "2026-06-05 14:17:11 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-05 14:18:06 IST"
+          "bridgeCreatedAt": "2026-06-05 14:18:06 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473654956",
@@ -1006,7 +1056,8 @@
           "resolvedText": "The issue customer facing is a Known issue from Salesforce.",
           "oiDuration": "21m",
           "channelCreatedAt": "2026-06-05 14:33:33 IST",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473655407",
@@ -1023,7 +1074,8 @@
           "resolvedText": "The limit increase should resolve the issue. No pending actions left.",
           "channelCreatedAt": "2026-06-05 15:07:48 IST",
           "bridgeCreatedAt": null,
-          "bridgeNA": "lap"
+          "bridgeNA": "lap",
+          "execTagged": []
         },
         {
           "caseNum": "473643333",
@@ -1040,7 +1092,8 @@
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from Sev1 start time (OrgCS))",
           "channelCreatedAt": "2026-06-04 22:58:59 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-04 23:02:34 IST"
+          "bridgeCreatedAt": "2026-06-04 23:02:34 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473657275",
@@ -1056,7 +1109,8 @@
           "resolvedText": "They are okay with solution we provided but not agreeing with RCA.",
           "oiDuration": "6d 18h",
           "channelCreatedAt": "2026-06-05 17:34:15 IST",
-          "bridgeCreatedAt": "2026-06-05 17:51:05 IST"
+          "bridgeCreatedAt": "2026-06-05 17:51:05 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473658432",
@@ -1072,7 +1126,8 @@
           "resolvedText": "Work Order Creation for Today looks stable and normal",
           "oiDuration": "2d 20h",
           "channelCreatedAt": "2026-06-05 18:55:05 IST",
-          "bridgeCreatedAt": "2026-06-05 18:59:42 IST"
+          "bridgeCreatedAt": "2026-06-05 18:59:42 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473658708",
@@ -1089,7 +1144,8 @@
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "oiDuration": "1h 22m",
           "channelCreatedAt": "2026-06-05 19:09:08 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "execTagged": []
         }
       ],
       "eodDone": false,
@@ -1119,7 +1175,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-06"
+          "channelCreatedAt": "2026-06-06",
+          "execTagged": []
         },
         {
           "caseNum": "473670699",
@@ -1135,7 +1192,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-06"
+          "channelCreatedAt": "2026-06-06",
+          "execTagged": []
         },
         {
           "caseNum": "473672473",
@@ -1151,7 +1209,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-06"
+          "channelCreatedAt": "2026-06-06",
+          "execTagged": []
         },
         {
           "caseNum": "473672481",
@@ -1167,7 +1226,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-06"
+          "channelCreatedAt": "2026-06-06",
+          "execTagged": []
         },
         {
           "caseNum": "473672786",
@@ -1183,7 +1243,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-06"
+          "channelCreatedAt": "2026-06-06",
+          "execTagged": []
         },
         {
           "caseNum": "473672625",
@@ -1199,7 +1260,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-06"
+          "channelCreatedAt": "2026-06-06",
+          "execTagged": []
         }
       ]
     },
@@ -1237,7 +1299,8 @@
           "oiDuration": "4h 23m",
           "channelCreatedAt": "2026-06-08 12:43:03 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-08 13:06:45 IST"
+          "bridgeCreatedAt": "2026-06-08 13:06:45 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473692644",
@@ -1255,7 +1318,8 @@
           "oiDuration": "5h 41m",
           "channelCreatedAt": "2026-06-08 12:49:07 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-08 13:22:23 IST"
+          "bridgeCreatedAt": "2026-06-08 13:22:23 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473692840",
@@ -1273,7 +1337,8 @@
           "resolvedText": "fix applied, issue no longer reproducible, CIC standing down",
           "channelCreatedAt": "2026-06-08 13:00:28 IST",
           "bridgeCreatedAt": "2026-06-08 13:21:22 IST",
-          "bridgeNA": "throttle"
+          "bridgeNA": "throttle",
+          "execTagged": []
         },
         {
           "caseNum": "473653702",
@@ -1290,7 +1355,8 @@
           "resolvedText": "The incident is resolved, the changes Salesforce provided helped mitigate the issue.",
           "oiDuration": "1d 4h",
           "channelCreatedAt": "2026-06-08 13:19:19 IST",
-          "bridgeCreatedAt": "2026-06-08 13:34:43 IST"
+          "bridgeCreatedAt": "2026-06-08 13:34:43 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473693881",
@@ -1308,7 +1374,8 @@
           "oiDuration": "1h 11m",
           "channelCreatedAt": "2026-06-08 14:02:13 IST",
           "bridgeCreatedAt": "2026-06-08 14:14:26 IST",
-          "bridgeNA": "lap"
+          "bridgeNA": "lap",
+          "execTagged": []
         },
         {
           "caseNum": "473694062",
@@ -1325,7 +1392,8 @@
           "resolvedAt": "2026-06-08 14:42:51 IST",
           "resolvedText": "The prom alert now became OKAY from Critical.",
           "oiDuration": "20m",
-          "channelCreatedAt": "2026-06-08 14:22:00 IST"
+          "channelCreatedAt": "2026-06-08 14:22:00 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473694734",
@@ -1342,7 +1410,8 @@
           "resolvedAt": "2026-06-08 15:03:58 IST",
           "resolvedText": "AutoThrottle (REMOVED) - throttle is removed",
           "oiDuration": "9m",
-          "channelCreatedAt": "2026-06-08 14:54:00 IST"
+          "channelCreatedAt": "2026-06-08 14:54:00 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473694893",
@@ -1360,7 +1429,8 @@
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "oiDuration": "1d 6h",
           "channelCreatedAt": "2026-06-08 15:05:36 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "execTagged": []
         },
         {
           "caseNum": "473663111",
@@ -1378,7 +1448,8 @@
           "oiDuration": "2d 6h",
           "channelCreatedAt": "2026-06-08 16:16:02 IST",
           "bridgeCreatedAt": null,
-          "bridgeNA": "lap"
+          "bridgeNA": "lap",
+          "execTagged": []
         },
         {
           "caseNum": "473696005",
@@ -1395,7 +1466,8 @@
           "resolvedText": "issue is no longer occurring, integration working as expected",
           "oiDuration": "1h 45m",
           "channelCreatedAt": "2026-06-08 16:21:00 IST",
-          "bridgeCreatedAt": "2026-06-08 16:41:46 IST"
+          "bridgeCreatedAt": "2026-06-08 16:41:46 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473697035",
@@ -1412,7 +1484,8 @@
           "resolvedAt": "2026-06-08 19:38:13 IST",
           "resolvedText": "customer facing an error but it is not a blocker for them",
           "oiDuration": "1h 56m",
-          "channelCreatedAt": "2026-06-08 17:42:00 IST"
+          "channelCreatedAt": "2026-06-08 17:42:00 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473697121",
@@ -1429,7 +1502,8 @@
           "resolvedText": "Sev-1 Mitigated (SupportBot)",
           "oiDuration": "7m",
           "channelCreatedAt": "2026-06-08 17:43:48 IST",
-          "bridgeCreatedAt": "2026-06-08 18:06:13 IST"
+          "bridgeCreatedAt": "2026-06-08 18:06:13 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473697264",
@@ -1447,7 +1521,8 @@
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-08 17:54:33 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473697509",
@@ -1464,7 +1539,8 @@
           "resolvedText": "The customer is out of impact",
           "oiDuration": "1d",
           "channelCreatedAt": "2026-06-08 18:10:58 IST",
-          "bridgeCreatedAt": "2026-06-08 19:24:00 IST"
+          "bridgeCreatedAt": "2026-06-08 19:24:00 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473697653",
@@ -1481,7 +1557,8 @@
           "resolvedText": "user confirmed now able to login to all of their sites",
           "oiDuration": "26m",
           "channelCreatedAt": "2026-06-08 18:19:26 IST",
-          "bridgeCreatedAt": "2026-06-08 18:29:41 IST"
+          "bridgeCreatedAt": "2026-06-08 18:29:41 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473646616",
@@ -1500,7 +1577,8 @@
           "oiDuration": "8d 6h",
           "channelCreatedAt": "2026-06-08 18:20:26 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473697838",
@@ -1517,7 +1595,8 @@
           "resolvedAt": "2026-06-08 21:11:15 IST",
           "resolvedText": "WAD scenario, showcased Omni design and shared a workaround",
           "oiDuration": "2h 39m",
-          "channelCreatedAt": "2026-06-08 18:32:00 IST"
+          "channelCreatedAt": "2026-06-08 18:32:00 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473245400",
@@ -1534,7 +1613,8 @@
           "resolvedText": "user Sean can successfully deploy and the Cx is out of impact.",
           "oiDuration": "1d 2h",
           "channelCreatedAt": "2026-06-08 18:39:11 IST",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         }
       ],
       "eodDone": false,
@@ -1562,7 +1642,8 @@
           "resolvedAt": "2026-06-09 13:10:05 IST",
           "resolvedText": "Throttle is expired.",
           "oiDuration": "17m",
-          "channelCreatedAt": "2026-06-09 12:53:00 IST"
+          "channelCreatedAt": "2026-06-09 12:53:00 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473713404",
@@ -1580,7 +1661,8 @@
           "resolvedText": "No issues in Salesforce; root cause was Kafka Connector",
           "oiDuration": "1d 17h",
           "channelCreatedAt": "2026-06-09 14:31:48 IST",
-          "bridgeCreatedAt": "2026-06-09 14:50:15 IST"
+          "bridgeCreatedAt": "2026-06-09 14:50:15 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473677970",
@@ -1598,7 +1680,8 @@
           "resolvedText": "Clarified their doubts, they are good. CIC can be disengaged.",
           "oiDuration": "45m",
           "channelCreatedAt": "2026-06-09 14:39:47 IST",
-          "bridgeCreatedAt": "2026-06-09 14:54:59 IST"
+          "bridgeCreatedAt": "2026-06-09 14:54:59 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473697509",
@@ -1614,7 +1697,8 @@
           "resolvedText": "The customer is out of impact",
           "oiDuration": "1d",
           "channelCreatedAt": "2026-06-08 18:10:58 IST",
-          "bridgeCreatedAt": "2026-06-08 19:24:00 IST"
+          "bridgeCreatedAt": "2026-06-08 19:24:00 IST",
+          "execTagged": []
         }
       ],
       "eodDone": false,
@@ -1642,7 +1726,8 @@
           "resolvedText": "Shared analysis with Cx on bridge; planned resolution/bugfix",
           "oiDuration": "5h 21m",
           "channelCreatedAt": "2026-06-10 12:33:03 IST",
-          "bridgeCreatedAt": "2026-06-10 12:48:19 IST"
+          "bridgeCreatedAt": "2026-06-10 12:48:19 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473733059",
@@ -1660,7 +1745,8 @@
           "oiDuration": "51m",
           "channelCreatedAt": "2026-06-10 13:51:43 IST",
           "bridgeCreatedAt": "2026-06-10 14:08:41 IST",
-          "bridgeNA": "lap"
+          "bridgeNA": "lap",
+          "execTagged": []
         },
         {
           "caseNum": "473733080",
@@ -1678,7 +1764,8 @@
           "resolvedText": "I could see the case was closed by the customer",
           "channelCreatedAt": "2026-06-10 13:52:37 IST",
           "bridgeCreatedAt": null,
-          "bridgeNA": "resolved"
+          "bridgeNA": "resolved",
+          "execTagged": []
         },
         {
           "caseNum": "473733820",
@@ -1696,7 +1783,8 @@
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-10 14:40:20 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473729164",
@@ -1713,7 +1801,8 @@
           "resolvedText": "yes, I close this morning.",
           "oiDuration": "4d 16h",
           "channelCreatedAt": "2026-06-10 15:09:48 IST",
-          "bridgeCreatedAt": "2026-06-10 17:17:24 IST"
+          "bridgeCreatedAt": "2026-06-10 17:17:24 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473734321",
@@ -1731,7 +1820,8 @@
           "resolvedAt": "2026-06-11 09:25:54 IST",
           "resolvedText": "issue is resolved in EMEA and AMER; no further action on Salesforce side",
           "oiDuration": "18h 15m",
-          "channelCreatedAt": "2026-06-10 15:10:00 IST"
+          "channelCreatedAt": "2026-06-10 15:10:00 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473734813",
@@ -1749,7 +1839,8 @@
           "resolvedText": "LAP approved and communicated the same with customer.",
           "channelCreatedAt": "2026-06-10 15:42:36 IST",
           "bridgeCreatedAt": "2026-06-10 15:58:36 IST",
-          "bridgeNA": "lap"
+          "bridgeNA": "lap",
+          "execTagged": []
         },
         {
           "caseNum": "473731556",
@@ -1766,7 +1857,8 @@
           "resolvedAt": "2026-06-10 23:37:00 IST",
           "resolvedText": "Glad to hear the customer is out of impact in time for their Scale Testing.",
           "oiDuration": "4h 23m",
-          "channelCreatedAt": "2026-06-10 19:14:25 IST"
+          "channelCreatedAt": "2026-06-10 19:14:25 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473738074",
@@ -1783,7 +1875,8 @@
           "resolvedAt": "2026-06-10 20:48:52 IST",
           "resolvedText": "issue is resolved as per customer confirmation.",
           "oiDuration": "1h 29m",
-          "channelCreatedAt": "2026-06-10 19:19:38 IST"
+          "channelCreatedAt": "2026-06-10 19:19:38 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473738147",
@@ -1800,7 +1893,8 @@
           "resolvedText": "no actions pending \u2014 their team had a confusion",
           "oiDuration": "31m",
           "channelCreatedAt": "2026-06-10 19:23:12 IST",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         }
       ],
       "eodDone": false,
@@ -1828,7 +1922,8 @@
           "oiDuration": "9h 31m",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-11 12:40:25 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "execTagged": []
         },
         {
           "caseNum": "473752851",
@@ -1845,7 +1940,8 @@
           "resolvedAt": "2026-06-11 14:34:59 IST",
           "oiDuration": "23m",
           "resolvedText": "I can check the throttle is not active now.",
-          "channelCreatedAt": "2026-06-11 14:11:19 IST"
+          "channelCreatedAt": "2026-06-11 14:11:19 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473752886",
@@ -1863,7 +1959,8 @@
           "resolvedText": "The change was done for the org...I would inform the customer and close this case out.",
           "channelCreatedAt": "2026-06-11 14:14:06 IST",
           "bridgeCreatedAt": null,
-          "bridgeNA": "lap"
+          "bridgeNA": "lap",
+          "execTagged": []
         },
         {
           "caseNum": "473754009",
@@ -1881,7 +1978,8 @@
           "resolvedText": "Cx applied the workaround in production org and is out of impact for now.",
           "channelCreatedAt": "2026-06-11 15:26:50 IST",
           "bridgeCreatedAt": "2026-06-11 15:44:26 IST",
-          "bridgeNA": "resolved"
+          "bridgeNA": "resolved",
+          "execTagged": []
         },
         {
           "caseNum": "473755111",
@@ -1899,7 +1997,8 @@
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-11 16:43:21 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473755197",
@@ -1916,7 +2015,8 @@
           "resolvedAt": "2026-06-11 18:11:31 IST",
           "oiDuration": "1h 22m",
           "resolvedText": "Throttle is expired. CIC can disengage.",
-          "channelCreatedAt": "2026-06-11 16:48:57 IST"
+          "channelCreatedAt": "2026-06-11 16:48:57 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473743172",
@@ -1934,7 +2034,8 @@
           "resolvedText": "External users confirmed issue no longer happening. Customer gave consent to close.",
           "channelCreatedAt": "2026-06-11 00:40:43 IST",
           "bridgeCreatedAt": "2026-06-11 00:54:12 IST",
-          "bridgeNA": "outside-window"
+          "bridgeNA": "outside-window",
+          "execTagged": []
         },
         {
           "caseNum": "473743597",
@@ -1952,7 +2053,8 @@
           "resolvedText": "incident has been resolved and the customer is out of impact",
           "channelCreatedAt": "2026-06-11 17:51:51 IST",
           "bridgeCreatedAt": "2026-06-11 18:14:37 IST",
-          "bridgeNA": "mci"
+          "bridgeNA": "mci",
+          "execTagged": []
         },
         {
           "caseNum": "473756525",
@@ -1969,7 +2071,8 @@
           "oiDuration": "51m",
           "resolvedText": "Customer identified root cause, able to login successfully. Downgrade to Sev2.",
           "channelCreatedAt": "2026-06-11 18:19:14 IST",
-          "bridgeCreatedAt": "2026-06-11 18:30:44 IST"
+          "bridgeCreatedAt": "2026-06-11 18:30:44 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473744331",
@@ -1987,7 +2090,8 @@
           "resolvedText": "Issue is resolved as per the bridge. Customer testing confirmed.",
           "channelCreatedAt": "2026-06-11 18:29:12 IST",
           "bridgeCreatedAt": "2026-06-11 18:39:12 IST",
-          "bridgeNA": "mci"
+          "bridgeNA": "mci",
+          "execTagged": []
         },
         {
           "caseNum": "473744459",
@@ -2005,7 +2109,8 @@
           "resolvedText": "The customer is no longer impacted, agents able to connect with end users on chat",
           "channelCreatedAt": "2026-06-11 02:15:54 IST",
           "bridgeCreatedAt": "2026-06-11 02:24:13 IST",
-          "bridgeNA": "mci"
+          "bridgeNA": "mci",
+          "execTagged": []
         },
         {
           "caseNum": "473756810",
@@ -2024,7 +2129,8 @@
           "channelCreatedAt": "2026-06-11 18:36:49 IST",
           "oiSource": "orgcs",
           "bridgeCreatedAt": "2026-06-11 19:07:45 IST",
-          "bridgeNA": "mci"
+          "bridgeNA": "mci",
+          "execTagged": []
         },
         {
           "caseNum": "473756818",
@@ -2044,7 +2150,8 @@
           "channelCreatedAt": "2026-06-11 18:37:22 IST",
           "oiSource": "orgcs",
           "bridgeCreatedAt": null,
-          "bridgeNA": "mci"
+          "bridgeNA": "mci",
+          "execTagged": []
         },
         {
           "caseNum": "473757516",
@@ -2062,7 +2169,8 @@
           "oiDuration": "20m",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-11 19:20:26 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "execTagged": []
         }
       ],
       "eodDone": true,
@@ -2098,7 +2206,8 @@
           "resolvedText": "CIC Update :: Workaround has been shared to get the customer OOI",
           "channelCreatedAt": "2026-06-12 01:51:24 IST",
           "bridgeCreatedAt": "2026-06-12 02:12:55 IST",
-          "bridgeNA": "outside-window"
+          "bridgeNA": "outside-window",
+          "execTagged": []
         },
         {
           "caseNum": "473772063",
@@ -2115,7 +2224,8 @@
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-12 12:45:04 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-12 13:04:52 IST"
+          "bridgeCreatedAt": "2026-06-12 13:04:52 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473772069",
@@ -2132,7 +2242,8 @@
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-12 14:09:26 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-12 14:30:00 IST"
+          "bridgeCreatedAt": "2026-06-12 14:30:00 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473774824",
@@ -2148,7 +2259,8 @@
           "oiDuration": "21m",
           "resolvedText": "lower the case severity to 2 and reconnect on Monday",
           "channelCreatedAt": "2026-06-12 15:58:18 IST",
-          "bridgeCreatedAt": "2026-06-12 16:09:50 IST"
+          "bridgeCreatedAt": "2026-06-12 16:09:50 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473774927",
@@ -2165,7 +2277,8 @@
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-12 16:05:44 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-12 16:11:48 IST"
+          "bridgeCreatedAt": "2026-06-12 16:11:48 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473775323",
@@ -2182,7 +2295,8 @@
           "oiDuration": "8h 31m",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-12 16:32:53 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "execTagged": []
         },
         {
           "caseNum": "473775967",
@@ -2199,7 +2313,8 @@
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Need More Information; measured from Sev1 start time (OrgCS))",
           "channelCreatedAt": "2026-06-12 17:22:33 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-12 17:53:31 IST"
+          "bridgeCreatedAt": "2026-06-12 17:53:31 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473698784",
@@ -2214,7 +2329,8 @@
           "resolvedAt": "2026-06-09 03:34:24 IST",
           "oiDuration": "6h 45m",
           "resolvedText": "set Manage MFA in User Interface to none, no error for last 1 hr",
-          "channelCreatedAt": "2026-06-08 20:48:25 IST"
+          "channelCreatedAt": "2026-06-08 20:48:25 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473776135",
@@ -2231,7 +2347,8 @@
           "resolvedText": "CIC Update :: Issue has been mitigated - component switched V2\u2192V1, resolved.",
           "channelCreatedAt": "2026-06-12 17:33:22 IST",
           "bridgeCreatedAt": "2026-06-13 09:39:54 IST",
-          "bridgeNA": "outside-window"
+          "bridgeNA": "outside-window",
+          "execTagged": []
         },
         {
           "caseNum": "473776048",
@@ -2247,7 +2364,8 @@
           "oiDuration": "3d 20h",
           "resolvedText": "we can close this down now at the customers request",
           "channelCreatedAt": "2026-06-12 18:02:27 IST",
-          "bridgeCreatedAt": "2026-06-12 18:13:44 IST"
+          "bridgeCreatedAt": "2026-06-12 18:13:44 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473739241",
@@ -2263,7 +2381,8 @@
           "oiDuration": "2h 39m",
           "resolvedText": "devops issue is not considered a blocker. (customer on manual deploy path)",
           "channelCreatedAt": "2026-06-12 18:42:51 IST",
-          "bridgeCreatedAt": "2026-06-12 19:18:58 IST"
+          "bridgeCreatedAt": "2026-06-12 19:18:58 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473775839",
@@ -2280,7 +2399,8 @@
           "resolvedText": "Customer confirmed the workaround worked in Postman.",
           "channelCreatedAt": "2026-06-12 19:20:38 IST",
           "bridgeCreatedAt": "2026-06-12 19:23:23 IST",
-          "bridgeNA": "outside-window"
+          "bridgeNA": "outside-window",
+          "execTagged": []
         },
         {
           "caseNum": "473756017",
@@ -2297,7 +2417,8 @@
           "resolvedText": "Attack activity stopped around 1 PM ET",
           "channelCreatedAt": "2026-06-12 19:24:00 IST",
           "bridgeCreatedAt": null,
-          "bridgeNA": "other"
+          "bridgeNA": "other",
+          "execTagged": []
         },
         {
           "caseNum": "473777807",
@@ -2313,7 +2434,8 @@
           "resolvedAt": "2026-06-12 20:16:19 IST",
           "oiDuration": "48m",
           "resolvedText": "CIC is disengaging now as the throttle is expired",
-          "channelCreatedAt": "2026-06-12 19:27:27 IST"
+          "channelCreatedAt": "2026-06-12 19:27:27 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473777827",
@@ -2330,7 +2452,8 @@
           "resolvedText": "they are out of impact as they have aborted the culprit batch job",
           "channelCreatedAt": "2026-06-12 19:28:40 IST",
           "bridgeCreatedAt": null,
-          "bridgeNA": "lap"
+          "bridgeNA": "lap",
+          "execTagged": []
         }
       ],
       "eodDone": true,
@@ -2370,7 +2493,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-13"
+          "channelCreatedAt": "2026-06-13",
+          "execTagged": []
         },
         {
           "caseNum": "473789358",
@@ -2386,7 +2510,14 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-13"
+          "channelCreatedAt": "2026-06-13",
+          "execTagged": [
+            {
+              "name": "Pablo Pellegrini",
+              "title": "RVP, Customer Success Management",
+              "slackId": "U027CKENFG9"
+            }
+          ]
         },
         {
           "caseNum": "473789517",
@@ -2402,7 +2533,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-13"
+          "channelCreatedAt": "2026-06-13",
+          "execTagged": []
         },
         {
           "caseNum": "473789578",
@@ -2418,7 +2550,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-13"
+          "channelCreatedAt": "2026-06-13",
+          "execTagged": []
         },
         {
           "caseNum": "473789824",
@@ -2434,7 +2567,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-13"
+          "channelCreatedAt": "2026-06-13",
+          "execTagged": []
         },
         {
           "caseNum": "473790390",
@@ -2450,7 +2584,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-13"
+          "channelCreatedAt": "2026-06-13",
+          "execTagged": []
         },
         {
           "caseNum": "473790516",
@@ -2466,7 +2601,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-13"
+          "channelCreatedAt": "2026-06-13",
+          "execTagged": []
         },
         {
           "caseNum": "473790543",
@@ -2482,7 +2618,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-13"
+          "channelCreatedAt": "2026-06-13",
+          "execTagged": []
         },
         {
           "caseNum": "473790676",
@@ -2498,7 +2635,29 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-13"
+          "channelCreatedAt": "2026-06-13",
+          "execTagged": [
+            {
+              "name": "Susan Putvin",
+              "title": "Senior Director, Software Engineering",
+              "slackId": "WHZPH2ZMK"
+            },
+            {
+              "name": "Jonathan Sun",
+              "title": "Senior Director, CIC/Critical Incidents Center",
+              "slackId": "WPKJH0B5L"
+            },
+            {
+              "name": "Molly Ross",
+              "title": "RVP, Customer Success Management",
+              "slackId": "U01GYKALRNU"
+            },
+            {
+              "name": "Jenna Ramsland",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U01FTPBRTAB"
+            }
+          ]
         },
         {
           "caseNum": "473728576",
@@ -2514,7 +2673,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-13"
+          "channelCreatedAt": "2026-06-13",
+          "execTagged": []
         },
         {
           "caseNum": "473758348",
@@ -2530,7 +2690,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-13"
+          "channelCreatedAt": "2026-06-13",
+          "execTagged": []
         },
         {
           "caseNum": "473697347",
@@ -2546,7 +2707,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-13"
+          "channelCreatedAt": "2026-06-13",
+          "execTagged": []
         },
         {
           "caseNum": "473791379",
@@ -2562,7 +2724,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-13"
+          "channelCreatedAt": "2026-06-13",
+          "execTagged": []
         },
         {
           "caseNum": "473791659",
@@ -2578,7 +2741,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-13"
+          "channelCreatedAt": "2026-06-13",
+          "execTagged": []
         },
         {
           "caseNum": "473634175",
@@ -2594,7 +2758,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-13"
+          "channelCreatedAt": "2026-06-13",
+          "execTagged": []
         },
         {
           "caseNum": "473791825",
@@ -2610,7 +2775,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-13"
+          "channelCreatedAt": "2026-06-13",
+          "execTagged": []
         },
         {
           "caseNum": "473792206",
@@ -2626,7 +2792,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-13"
+          "channelCreatedAt": "2026-06-13",
+          "execTagged": []
         }
       ]
     },
@@ -2654,7 +2821,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-14"
+          "channelCreatedAt": "2026-06-14",
+          "execTagged": []
         },
         {
           "caseNum": "473713763",
@@ -2670,7 +2838,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-14"
+          "channelCreatedAt": "2026-06-14",
+          "execTagged": []
         }
       ]
     },
@@ -2694,7 +2863,8 @@
           "resolvedText": "issue in sandbox not production. please feel free to dis-engage",
           "oiDuration": "55m",
           "channelCreatedAt": "2026-06-15 12:54:25 IST",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473787849",
@@ -2709,7 +2879,8 @@
           "resolvedAt": "2026-06-13 10:33:35 IST",
           "oiDuration": "42m",
           "resolvedText": "Issue is resolved, they will test for other users",
-          "channelCreatedAt": "2026-06-13 09:51:26 IST"
+          "channelCreatedAt": "2026-06-13 09:51:26 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473813191",
@@ -2725,7 +2896,8 @@
           "resolvedText": "This is not sev 1 lower down severity to 2 no help needed from cic",
           "oiDuration": "42m",
           "channelCreatedAt": "2026-06-15 13:51:09 IST",
-          "bridgeCreatedAt": "2026-06-15 13:59:41 IST"
+          "bridgeCreatedAt": "2026-06-15 13:59:41 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473813208",
@@ -2741,7 +2913,8 @@
           "resolvedText": "As the issue is resolved and the customer is out of impact, CIC will disengage.",
           "oiDuration": "1h 43m",
           "channelCreatedAt": "2026-06-15 13:51:56 IST",
-          "bridgeCreatedAt": "2026-06-15 14:09:08 IST"
+          "bridgeCreatedAt": "2026-06-15 14:09:08 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473813340",
@@ -2757,7 +2930,8 @@
           "resolvedText": "the issue is resolved using change sets.",
           "oiDuration": "1h 28m",
           "channelCreatedAt": "2026-06-15 14:00:42 IST",
-          "bridgeCreatedAt": "2026-06-15 14:33:55 IST"
+          "bridgeCreatedAt": "2026-06-15 14:33:55 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473813531",
@@ -2774,7 +2948,8 @@
           "oiDuration": "4h 50m",
           "channelCreatedAt": "2026-06-15 14:10:20 IST",
           "bridgeCreatedAt": "2026-06-15 14:28:07 IST",
-          "bridgeNA": "lap"
+          "bridgeNA": "lap",
+          "execTagged": []
         },
         {
           "caseNum": "473813727",
@@ -2790,7 +2965,8 @@
           "resolvedText": "Issue is not reproducible from cx end.",
           "oiDuration": "59m",
           "channelCreatedAt": "2026-06-15 14:22:07 IST",
-          "bridgeCreatedAt": "2026-06-15 14:29:49 IST"
+          "bridgeCreatedAt": "2026-06-15 14:29:49 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473814346",
@@ -2807,7 +2983,8 @@
           "oiDuration": "1h 9m",
           "channelCreatedAt": "2026-06-15 14:59:45 IST",
           "bridgeCreatedAt": "2026-06-15 15:34:05 IST",
-          "bridgeNA": "throttle"
+          "bridgeNA": "throttle",
+          "execTagged": []
         },
         {
           "caseNum": "473814469",
@@ -2824,7 +3001,8 @@
           "oiDuration": "25m",
           "channelCreatedAt": "2026-06-15 15:07:03 IST",
           "bridgeCreatedAt": null,
-          "bridgeNA": "throttle"
+          "bridgeNA": "throttle",
+          "execTagged": []
         },
         {
           "caseNum": "473771164",
@@ -2839,7 +3017,8 @@
           "resolvedAt": "2026-06-12 12:32:20 IST",
           "oiDuration": "56m",
           "resolvedText": "primary issue resolved, package installation is successful. Sev 1 case is resolved",
-          "channelCreatedAt": "2026-06-12 11:36:08 IST"
+          "channelCreatedAt": "2026-06-12 11:36:08 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473815477",
@@ -2855,7 +3034,8 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-06-15 16:13:34 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-15 16:33:48 IST"
+          "bridgeCreatedAt": "2026-06-15 16:33:48 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473815509",
@@ -2870,7 +3050,8 @@
           "resolvedText": "Customer has stated that the issue is now resolved.",
           "oiDuration": "4h 50m",
           "channelCreatedAt": "2026-06-15 16:15:15 IST",
-          "bridgeCreatedAt": "2026-06-15 17:07:35 IST"
+          "bridgeCreatedAt": "2026-06-15 17:07:35 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473813759",
@@ -2885,7 +3066,8 @@
           "resolvedText": "The customer downgraded the severity.",
           "oiDuration": "31m",
           "channelCreatedAt": "2026-06-15 17:09:43 IST",
-          "bridgeCreatedAt": "2026-06-15 17:22:17 IST"
+          "bridgeCreatedAt": "2026-06-15 17:22:17 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473816757",
@@ -2901,7 +3083,8 @@
           "oiDuration": "11h 55m",
           "channelCreatedAt": "2026-06-15 17:46:07 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-15 18:08:53 IST"
+          "bridgeCreatedAt": "2026-06-15 18:08:53 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473816772",
@@ -2916,7 +3099,8 @@
           "resolvedText": "customer confirmed no revenue loss or production outage",
           "oiDuration": "35m",
           "channelCreatedAt": "2026-06-15 17:47:06 IST",
-          "bridgeCreatedAt": "2026-06-15 18:12:10 IST"
+          "bridgeCreatedAt": "2026-06-15 18:12:10 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473771388",
@@ -2931,7 +3115,8 @@
           "resolvedText": "no further reports of latency from their users since this morning",
           "oiDuration": "17h 28m",
           "channelCreatedAt": "2026-06-15 17:50:27 IST",
-          "bridgeCreatedAt": "2026-06-15 18:16:56 IST"
+          "bridgeCreatedAt": "2026-06-15 18:16:56 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473816943",
@@ -2946,7 +3131,8 @@
           "resolvedText": "Issue is mitigated. Disabled the BT perm: Authentication: Disable OAuth",
           "oiDuration": "1h 23m",
           "channelCreatedAt": "2026-06-15 17:57:32 IST",
-          "bridgeCreatedAt": "2026-06-15 18:14:19 IST"
+          "bridgeCreatedAt": "2026-06-15 18:14:19 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473817788",
@@ -2962,7 +3148,8 @@
           "oiDuration": "3h 48m",
           "channelCreatedAt": "2026-06-15 18:52:38 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473817800",
@@ -2977,7 +3164,8 @@
           "resolvedText": "There is no issue \u2014 they are receiving and able to send emails.",
           "oiDuration": "28m",
           "channelCreatedAt": "2026-06-15 18:53:34 IST",
-          "bridgeCreatedAt": "2026-06-15 19:06:07 IST"
+          "bridgeCreatedAt": "2026-06-15 19:06:07 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473817982",
@@ -2992,7 +3180,8 @@
           "resolvedText": "issue is resolved; now able to see all queue in transfer option",
           "oiDuration": "8h 15m",
           "channelCreatedAt": "2026-06-15 19:04:24 IST",
-          "bridgeCreatedAt": "2026-06-15 19:16:22 IST"
+          "bridgeCreatedAt": "2026-06-15 19:16:22 IST",
+          "execTagged": []
         }
       ],
       "eodDone": true,
@@ -3024,7 +3213,8 @@
           "resolvedText": "user confirmed New buttons now appearing correctly in Production",
           "oiDuration": "28m",
           "channelCreatedAt": "2026-06-16 12:44:38 IST",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473833219",
@@ -3040,7 +3230,8 @@
           "resolvedText": "they can login manually after session timeout \u2014 CIC disengaging",
           "oiDuration": "1h 40m",
           "channelCreatedAt": "2026-06-16 13:43:35 IST",
-          "bridgeCreatedAt": "2026-06-16 13:49:07 IST"
+          "bridgeCreatedAt": "2026-06-16 13:49:07 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473576862",
@@ -3056,7 +3247,8 @@
           "oiDuration": "1h 7m",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from Sev1 start time (OrgCS))",
           "channelCreatedAt": "2026-06-04 20:09:29 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "execTagged": []
         },
         {
           "caseNum": "473744459",
@@ -3074,7 +3266,8 @@
           "channelCreatedAt": "2026-06-11 02:15:54 IST",
           "oiSource": "orgcs",
           "bridgeCreatedAt": "2026-06-11 02:24:13 IST",
-          "bridgeNA": "mci"
+          "bridgeNA": "mci",
+          "execTagged": []
         },
         {
           "caseNum": "473751670",
@@ -3090,7 +3283,8 @@
           "resolvedText": "issue is intermittent \u2014 CIC can disengage for now",
           "oiDuration": "3h 42m",
           "channelCreatedAt": "2026-06-16 14:15:02 IST",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473702574",
@@ -3106,7 +3300,8 @@
           "oiDuration": "8h 29m",
           "resolvedText": "Chandralekha M marked this case as Sev1 Mitigated",
           "channelCreatedAt": "2026-06-16 15:05:42 IST",
-          "bridgeCreatedAt": "2026-06-16 15:13:40 IST"
+          "bridgeCreatedAt": "2026-06-16 15:13:40 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473834963",
@@ -3123,7 +3318,8 @@
           "oiDuration": "5h 9m",
           "channelCreatedAt": "2026-06-16 15:28:22 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473835308",
@@ -3139,7 +3335,8 @@
           "resolvedText": "Yes. CIC can disengage. We will reengage again if necessary.",
           "oiDuration": "4h 44m",
           "channelCreatedAt": "2026-06-16 15:50:34 IST",
-          "bridgeCreatedAt": "2026-06-16 16:12:51 IST"
+          "bridgeCreatedAt": "2026-06-16 16:12:51 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473835820",
@@ -3156,7 +3353,8 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 16:26:04 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-16 16:42:38 IST"
+          "bridgeCreatedAt": "2026-06-16 16:42:38 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473836077",
@@ -3173,7 +3371,8 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 16:42:35 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-16 16:53:21 IST"
+          "bridgeCreatedAt": "2026-06-16 16:53:21 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473553588",
@@ -3189,7 +3388,8 @@
           "oiDuration": "20h 29m",
           "resolvedText": "gate is disabled now since the issue is fixed...informed this to the customer",
           "channelCreatedAt": "2026-06-16 16:46:19 IST",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473837041",
@@ -3206,7 +3406,8 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 17:49:41 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473837116",
@@ -3222,7 +3423,8 @@
           "resolvedText": "As the issue has been resolved, CIC will disengage",
           "oiDuration": "58m",
           "channelCreatedAt": "2026-06-16 17:54:41 IST",
-          "bridgeCreatedAt": "2026-06-16 18:11:22 IST"
+          "bridgeCreatedAt": "2026-06-16 18:11:22 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473837684",
@@ -3239,7 +3441,8 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 18:29:22 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-16 18:34:52 IST"
+          "bridgeCreatedAt": "2026-06-16 18:34:52 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473838045",
@@ -3256,7 +3459,8 @@
           "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Solution Provided)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 18:49:27 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "execTagged": []
         }
       ],
       "eodDone": true,
@@ -3288,7 +3492,8 @@
           "resolvedText": "Single user issue with Tableau Desktop 2025.3.1; lower version workaround available. No business impact. Customer to schedule troubleshooting session.",
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-17 12:47:36 IST",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473854733",
@@ -3306,7 +3511,8 @@
           "oiDuration": "32m 8s",
           "channelCreatedAt": "2026-06-17 13:09:44 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-17 13:17:39 IST"
+          "bridgeCreatedAt": "2026-06-17 13:17:39 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473856779",
@@ -3324,7 +3530,8 @@
           "oiDuration": "39m 51s",
           "channelCreatedAt": "2026-06-17 14:56:29 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-17 15:01:17 IST"
+          "bridgeCreatedAt": "2026-06-17 15:01:17 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473857756",
@@ -3341,7 +3548,8 @@
           "resolvedText": "Security incident: data breach via Klue Battlecards Salesforce integration. Redirected to Security Incident team via ask-scct.",
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-17 15:51:23 IST",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473858046",
@@ -3358,7 +3566,8 @@
           "resolvedText": "Daily scheduled Apex job limit exhausted (100/day). LAP submitted to increase limit to 110 for 31 days. Mitigated.",
           "oiDuration": "32m 24s",
           "channelCreatedAt": "2026-06-17 16:07:47 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "execTagged": []
         },
         {
           "caseNum": "473843612",
@@ -3376,7 +3585,8 @@
           "resolvedText": "Re-alert of Jun 16 case; team monitoring; case downgraded to Sev2 by ~02:04 Jun 17.",
           "oiDuration": "14h 52m",
           "channelCreatedAt": "2026-06-16 23:06:07 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "execTagged": []
         },
         {
           "caseNum": "473855538",
@@ -3395,7 +3605,8 @@
           "oiDuration": "6h 54m",
           "channelCreatedAt": "2026-06-17 13:49:44 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-17 14:07:10 IST"
+          "bridgeCreatedAt": "2026-06-17 14:07:10 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473855848",
@@ -3414,7 +3625,8 @@
           "oiDuration": "53m 19s",
           "channelCreatedAt": "2026-06-17 14:07:40 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473770521",
@@ -3431,7 +3643,8 @@
           "resolvedAt": null,
           "resolvedText": "Re-alert of Jun 12 case; MFA/Phishing-Resistant MFA clarification for Marken (NTT DATA subsidiary). Pending customer response.",
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-12 10:46:50 IST"
+          "channelCreatedAt": "2026-06-12 10:46:50 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473754007",
@@ -3449,7 +3662,8 @@
           "resolvedText": "Complex row lock investigation; Core DB SME Oleg Korotkov engaged; CIC Dominika Barrett disengaged with comprehensive CS/BI/NS summary.",
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-17 17:29:10 IST",
-          "bridgeCreatedAt": "2026-06-17 17:44:56 IST"
+          "bridgeCreatedAt": "2026-06-17 17:44:56 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473859520",
@@ -3468,7 +3682,8 @@
           "oiDuration": "5h 27m",
           "channelCreatedAt": "2026-06-17 17:31:20 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473372581",
@@ -3486,7 +3701,8 @@
           "resolvedText": "Facebook messages not arriving; blocked on customer's Meta developer admin access. Management mediation by Shubha at 18:33.",
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-17 17:41:31 IST",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473860129",
@@ -3505,7 +3721,8 @@
           "oiDuration": "1h 9m",
           "channelCreatedAt": "2026-06-17 18:07:34 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-17 18:20:40 IST"
+          "bridgeCreatedAt": "2026-06-17 18:20:40 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473860190",
@@ -3524,7 +3741,8 @@
           "oiDuration": "18h 41m",
           "channelCreatedAt": "2026-06-17 18:11:05 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-17 18:18:44 IST"
+          "bridgeCreatedAt": "2026-06-17 18:18:44 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473860267",
@@ -3542,7 +3760,8 @@
           "resolvedText": "DevOps Center blocking deployment. CIC Kranti Bharath Tadipatri engaged; bridge launched.",
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-17 18:37:03 IST",
-          "bridgeCreatedAt": "2026-06-17 18:48:20 IST"
+          "bridgeCreatedAt": "2026-06-17 18:48:20 IST",
+          "execTagged": []
         }
       ],
       "canvasId": "F0BB2DYRMNF",
@@ -3576,7 +3795,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 14:36:49 IST",
-          "manager": "Jyothirmayee"
+          "manager": "Jyothirmayee",
+          "execTagged": []
         },
         {
           "caseNum": "473876597",
@@ -3593,7 +3813,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 12:52:46 IST",
-          "manager": "Jyothirmayee"
+          "manager": "Jyothirmayee",
+          "execTagged": []
         },
         {
           "caseNum": "473876710",
@@ -3610,7 +3831,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 13:05:59 IST",
-          "manager": "Jyothirmayee"
+          "manager": "Jyothirmayee",
+          "execTagged": []
         },
         {
           "caseNum": "473876722",
@@ -3627,7 +3849,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 13:06:52 IST",
-          "manager": "Jyothirmayee"
+          "manager": "Jyothirmayee",
+          "execTagged": []
         },
         {
           "caseNum": "473877549",
@@ -3644,7 +3867,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 14:19:54 IST",
-          "manager": "Jyothirmayee"
+          "manager": "Jyothirmayee",
+          "execTagged": []
         },
         {
           "caseNum": "473877573",
@@ -3661,7 +3885,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 14:22:11 IST",
-          "manager": "Jyothirmayee"
+          "manager": "Jyothirmayee",
+          "execTagged": []
         },
         {
           "caseNum": "473623991",
@@ -3678,7 +3903,8 @@
           "resolvedText": "Pre-existing re-alert (channel from Jun 6)",
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-06 14:03:00 IST",
-          "manager": "Jyothirmayee"
+          "manager": "Jyothirmayee",
+          "execTagged": []
         },
         {
           "caseNum": "473877780",
@@ -3695,7 +3921,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 18:52:29 IST",
-          "manager": "Jyothirmayee"
+          "manager": "Jyothirmayee",
+          "execTagged": []
         },
         {
           "caseNum": "473877951",
@@ -3713,7 +3940,8 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 17:25:17 IST",
           "manager": "Jyothirmayee",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473878098",
@@ -3731,7 +3959,8 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 15:10:27 IST",
           "manager": "Jyothirmayee",
-          "bridgeCreatedAt": "2026-06-18 15:19:09 IST"
+          "bridgeCreatedAt": "2026-06-18 15:19:09 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473878190",
@@ -3747,7 +3976,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18T15:18:07+05:30",
-          "manager": "Jyothirmayee"
+          "manager": "Jyothirmayee",
+          "execTagged": []
         },
         {
           "caseNum": "473878209",
@@ -3765,7 +3995,8 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 15:19:52 IST",
           "manager": "Jyothirmayee",
-          "bridgeCreatedAt": "2026-06-18 15:25:26 IST"
+          "bridgeCreatedAt": "2026-06-18 15:25:26 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473878466",
@@ -3783,7 +4014,8 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 15:44:35 IST",
           "manager": "Jyothirmayee",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473878622",
@@ -3801,7 +4033,8 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 15:58:42 IST",
           "manager": "Jyothirmayee",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473816898",
@@ -3818,7 +4051,8 @@
           "resolvedText": "Pre-existing re-alert (channel from Jun 15)",
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-15 16:42:00 IST",
-          "manager": "Jyothirmayee"
+          "manager": "Jyothirmayee",
+          "execTagged": []
         },
         {
           "caseNum": "473880616",
@@ -3836,7 +4070,8 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 17:49:16 IST",
           "manager": "Jyothirmayee",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473880652",
@@ -3854,7 +4089,8 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 17:54:07 IST",
           "manager": "Jyothirmayee",
-          "bridgeCreatedAt": "2026-06-18 19:05:57 IST"
+          "bridgeCreatedAt": "2026-06-18 19:05:57 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473880724",
@@ -3872,7 +4108,8 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 18:01:42 IST",
           "manager": "Jyothirmayee",
-          "bridgeCreatedAt": "2026-06-18 18:55:12 IST"
+          "bridgeCreatedAt": "2026-06-18 18:55:12 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473880830",
@@ -3890,7 +4127,8 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 18:11:11 IST",
           "manager": "Jyothirmayee",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473880837",
@@ -3908,7 +4146,8 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 18:24:06 IST",
           "manager": "Jyothirmayee",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473880914",
@@ -3925,7 +4164,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 18:19:06 IST",
-          "manager": "Jyothirmayee"
+          "manager": "Jyothirmayee",
+          "execTagged": []
         },
         {
           "caseNum": "473880925",
@@ -3941,7 +4181,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18T18:19:27+05:30",
-          "manager": "Jyothirmayee"
+          "manager": "Jyothirmayee",
+          "execTagged": []
         },
         {
           "caseNum": "473880936",
@@ -3958,7 +4199,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 18:20:28 IST",
-          "manager": "Jyothirmayee"
+          "manager": "Jyothirmayee",
+          "execTagged": []
         },
         {
           "caseNum": "473881015",
@@ -3975,7 +4217,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 18:28:14 IST",
-          "manager": "Jyothirmayee"
+          "manager": "Jyothirmayee",
+          "execTagged": []
         },
         {
           "caseNum": "473881079",
@@ -3993,7 +4236,8 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 18:33:52 IST",
           "manager": "Jyothirmayee",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473881209",
@@ -4011,7 +4255,8 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 18:42:55 IST",
           "manager": "Jyothirmayee",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473881241",
@@ -4028,7 +4273,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 18:44:22 IST",
-          "manager": "Jyothirmayee"
+          "manager": "Jyothirmayee",
+          "execTagged": []
         },
         {
           "caseNum": "473881330",
@@ -4045,7 +4291,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 19:06:37 IST",
-          "manager": "Jyothirmayee"
+          "manager": "Jyothirmayee",
+          "execTagged": []
         },
         {
           "caseNum": "473881358",
@@ -4063,7 +4310,8 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 18:52:54 IST",
           "manager": "Jyothirmayee",
-          "bridgeCreatedAt": "2026-06-18 19:08:00 IST"
+          "bridgeCreatedAt": "2026-06-18 19:08:00 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473881360",
@@ -4080,7 +4328,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 18:52:55 IST",
-          "manager": "Jyothirmayee"
+          "manager": "Jyothirmayee",
+          "execTagged": []
         },
         {
           "caseNum": "473881372",
@@ -4097,7 +4346,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 18:53:32 IST",
-          "manager": "Jyothirmayee"
+          "manager": "Jyothirmayee",
+          "execTagged": []
         },
         {
           "caseNum": "473881386",
@@ -4115,7 +4365,8 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 18:54:07 IST",
           "manager": "Jyothirmayee",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473881430",
@@ -4133,7 +4384,8 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 18:57:16 IST",
           "manager": "Jyothirmayee",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473881500",
@@ -4151,7 +4403,8 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 19:01:54 IST",
           "manager": "Jyothirmayee",
-          "bridgeCreatedAt": "2026-06-18 19:17:29 IST"
+          "bridgeCreatedAt": "2026-06-18 19:17:29 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473881531",
@@ -4168,7 +4421,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 19:04:28 IST",
-          "manager": "Jyothirmayee"
+          "manager": "Jyothirmayee",
+          "execTagged": []
         },
         {
           "caseNum": "473881535",
@@ -4186,7 +4440,8 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 19:27:43 IST",
           "manager": "Jyothirmayee",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473881543",
@@ -4204,7 +4459,8 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 19:05:08 IST",
           "manager": "Jyothirmayee",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473881843",
@@ -4222,7 +4478,8 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 19:23:27 IST",
           "manager": "Jyothirmayee",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473881886",
@@ -4239,7 +4496,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 19:26:53 IST",
-          "manager": "Jyothirmayee"
+          "manager": "Jyothirmayee",
+          "execTagged": []
         },
         {
           "caseNum": "473881890",
@@ -4257,7 +4515,8 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 19:27:26 IST",
           "manager": "Jyothirmayee",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         }
       ],
       "eodDone": true,
@@ -4293,7 +4552,8 @@
           "resolvedAt": null,
           "resolvedText": "Pre-existing re-alert. Original channel created 2026-05-07.",
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-05-07 00:00:00 IST"
+          "channelCreatedAt": "2026-05-07 00:00:00 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473890235",
@@ -4310,7 +4570,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-19 12:55:12 IST",
-          "bridgeCreatedAt": "2026-06-19 13:03:51 IST"
+          "bridgeCreatedAt": "2026-06-19 13:03:51 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473809862",
@@ -4327,7 +4588,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-19 13:01:45 IST",
-          "bridgeCreatedAt": "2026-06-19 13:49:02 IST"
+          "bridgeCreatedAt": "2026-06-19 13:49:02 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473877651",
@@ -4344,7 +4606,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-19 13:07:46 IST",
-          "bridgeCreatedAt": "2026-06-19 13:23:05 IST"
+          "bridgeCreatedAt": "2026-06-19 13:23:05 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473890719",
@@ -4360,7 +4623,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-19 13:51:27 IST"
+          "channelCreatedAt": "2026-06-19 13:51:27 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473890585",
@@ -4377,7 +4641,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-19 13:37:07 IST",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473890764",
@@ -4394,7 +4659,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-19 13:56:03 IST",
-          "bridgeCreatedAt": "2026-06-19 14:12:54 IST"
+          "bridgeCreatedAt": "2026-06-19 14:12:54 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473890789",
@@ -4411,7 +4677,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-19 13:58:15 IST",
-          "bridgeCreatedAt": "2026-06-19 14:12:13 IST"
+          "bridgeCreatedAt": "2026-06-19 14:12:13 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473884379",
@@ -4428,7 +4695,8 @@
           "resolvedText": "Pre-existing re-alert. Original channel created 2026-06-18 21:59.",
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 21:59:00 IST",
-          "bridgeCreatedAt": "2026-06-18 22:15:21 IST"
+          "bridgeCreatedAt": "2026-06-18 22:15:21 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473890903",
@@ -4444,7 +4712,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-19 14:10:57 IST"
+          "channelCreatedAt": "2026-06-19 14:10:57 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473891341",
@@ -4461,7 +4730,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-19 14:55:53 IST",
-          "bridgeCreatedAt": "2026-06-19 15:04:43 IST"
+          "bridgeCreatedAt": "2026-06-19 15:04:43 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473890389",
@@ -4478,7 +4748,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-19 16:30:08 IST",
-          "bridgeCreatedAt": "2026-06-19 18:04:00 IST"
+          "bridgeCreatedAt": "2026-06-19 18:04:00 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473892538",
@@ -4494,7 +4765,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-19T17:42:16+05:30",
-          "bridgeCreatedAt": "2026-06-19 18:27:56 IST"
+          "bridgeCreatedAt": "2026-06-19 18:27:56 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473892625",
@@ -4510,7 +4782,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-19 17:53:08 IST"
+          "channelCreatedAt": "2026-06-19 17:53:08 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473892858",
@@ -4527,7 +4800,19 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-19 18:27:08 IST",
-          "bridgeCreatedAt": "2026-06-19 18:38:48 IST"
+          "bridgeCreatedAt": "2026-06-19 18:38:48 IST",
+          "execTagged": [
+            {
+              "name": "Joe Chrzanowski",
+              "title": "VP, Software Engineering",
+              "slackId": "WHUM9TF8C"
+            },
+            {
+              "name": "Anuja Verma",
+              "title": "Director, Software Engineering",
+              "slackId": "U084H9JC9M5"
+            }
+          ]
         },
         {
           "caseNum": "473893099",
@@ -4544,7 +4829,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-19 18:49:04 IST",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473893432",
@@ -4561,7 +4847,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-19 19:25:57 IST",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": []
         }
       ],
       "eodDone": true,
@@ -4593,7 +4880,8 @@
           "resolvedAt": null,
           "resolvedText": "Pre-existing re-alert (channel created 2026-06-13)",
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-13 16:43:56 IST"
+          "channelCreatedAt": "2026-06-13 16:43:56 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473897922",
@@ -4609,7 +4897,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-20 14:27:50 IST"
+          "channelCreatedAt": "2026-06-20 14:27:50 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473812685",
@@ -4625,7 +4914,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-20 15:51:17 IST"
+          "channelCreatedAt": "2026-06-20 15:51:17 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473898082",
@@ -4641,7 +4931,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-20 17:05:05 IST"
+          "channelCreatedAt": "2026-06-20 17:05:05 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473898096",
@@ -4657,7 +4948,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-20 17:23:55 IST"
+          "channelCreatedAt": "2026-06-20 17:23:55 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473898106",
@@ -4673,7 +4965,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-20 17:37:28 IST"
+          "channelCreatedAt": "2026-06-20 17:37:28 IST",
+          "execTagged": []
         }
       ],
       "eodDone": false,
@@ -4701,7 +4994,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-21 12:50:34 IST"
+          "channelCreatedAt": "2026-06-21 12:50:34 IST",
+          "execTagged": []
         }
       ],
       "eodDone": false,
@@ -4732,7 +5026,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-22 13:09:49 IST",
-          "bridgeCreatedAt": "2026-06-22 13:15:05 IST"
+          "bridgeCreatedAt": "2026-06-22 13:15:05 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473878209",
@@ -4749,7 +5044,8 @@
           "resolvedText": "Pre-existing re-alert (channel created 2026-06-18)",
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 15:19:52 IST",
-          "bridgeCreatedAt": "2026-06-18 15:25:26 IST"
+          "bridgeCreatedAt": "2026-06-18 15:25:26 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473903848",
@@ -4766,7 +5062,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-22 14:09:06 IST",
-          "bridgeCreatedAt": "2026-06-22 14:13:08 IST"
+          "bridgeCreatedAt": "2026-06-22 14:13:08 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473905029",
@@ -4783,7 +5080,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-22 16:08:33 IST",
-          "bridgeCreatedAt": "2026-06-22 16:20:37 IST"
+          "bridgeCreatedAt": "2026-06-22 16:20:37 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473905039",
@@ -4800,7 +5098,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-22 16:09:19 IST",
-          "bridgeCreatedAt": "2026-06-22 16:17:24 IST"
+          "bridgeCreatedAt": "2026-06-22 16:17:24 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473905182",
@@ -4817,7 +5116,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-22 16:56:11 IST",
-          "bridgeCreatedAt": "2026-06-22 17:01:06 IST"
+          "bridgeCreatedAt": "2026-06-22 17:01:06 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473905639",
@@ -4834,7 +5134,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-22 17:26:08 IST",
-          "bridgeCreatedAt": "2026-06-22 19:05:14 IST"
+          "bridgeCreatedAt": "2026-06-22 19:05:14 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473582644",
@@ -4850,7 +5151,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-22 18:15:51 IST"
+          "channelCreatedAt": "2026-06-22 18:15:51 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473906098",
@@ -4867,7 +5169,8 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-22 18:23:11 IST",
-          "bridgeCreatedAt": "2026-06-22 18:29:27 IST"
+          "bridgeCreatedAt": "2026-06-22 18:29:27 IST",
+          "execTagged": []
         }
       ]
     },
@@ -4894,7 +5197,8 @@
           "resolvedAt": "2026-06-23 13:23:54 IST",
           "resolvedText": "CIC disengaged as the throttle on the org had expired.",
           "oiDuration": "26m",
-          "channelCreatedAt": "2026-06-23 12:57:01 IST"
+          "channelCreatedAt": "2026-06-23 12:57:01 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473913173",
@@ -4911,7 +5215,8 @@
           "resolvedText": "CIC disengaged after a fix for the global search Known Issue was confirmed via Patch 10.5, scheduled for deployment to instance USA350 at 02:15 AM UTC on 25 June 2026.",
           "oiDuration": "27h 4m",
           "channelCreatedAt": "2026-06-23 14:29:10 IST",
-          "bridgeCreatedAt": "2026-06-23 14:36:31 IST"
+          "bridgeCreatedAt": "2026-06-23 14:36:31 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473914810",
@@ -4928,7 +5233,8 @@
           "resolvedText": "CIC disengaged after root cause was confirmed as WAD \u2014 queue configuration changes must be made from the AWS Connect side, not within Salesforce setup.",
           "oiDuration": "1h 55m",
           "channelCreatedAt": "2026-06-23 14:49:48 IST",
-          "bridgeCreatedAt": "2026-06-23 14:56:18 IST"
+          "bridgeCreatedAt": "2026-06-23 14:56:18 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473914839",
@@ -4944,7 +5250,8 @@
           "resolvedAt": "2026-06-23 15:22:24 IST",
           "resolvedText": "CIC disengaged after confirming the throttle was still active and no further CIC action was required.",
           "oiDuration": "30m",
-          "channelCreatedAt": "2026-06-23 14:52:02 IST"
+          "channelCreatedAt": "2026-06-23 14:52:02 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473914880",
@@ -4961,7 +5268,8 @@
           "resolvedText": "CIC disengaged as the issue was confirmed a declared multi-customer incident (IR# 91970235) affecting Field Service Mobile globally, with Engineering having resolved the trigger and Trust page posted.",
           "oiDuration": "2h 35m",
           "channelCreatedAt": "2026-06-23 14:56:25 IST",
-          "bridgeCreatedAt": "2026-06-23 15:03:48 IST"
+          "bridgeCreatedAt": "2026-06-23 15:03:48 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473916031",
@@ -4978,7 +5286,8 @@
           "resolvedText": "CIC disengaged after support engineer began deep log analysis on the intermittent platform event failure in the Case Comment Translation flow, with hourly customer updates committed.",
           "oiDuration": "2h 34m",
           "channelCreatedAt": "2026-06-23 16:54:31 IST",
-          "bridgeCreatedAt": "2026-06-23 17:00:36 IST"
+          "bridgeCreatedAt": "2026-06-23 17:00:36 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473916467",
@@ -4995,7 +5304,19 @@
           "resolvedText": "CIC disengaged after customer was confirmed out of impact; case handed back to support after two CIC engagement cycles.",
           "oiDuration": "3h 24m",
           "channelCreatedAt": "2026-06-23 17:53:24 IST",
-          "bridgeCreatedAt": "2026-06-23 18:06:20 IST"
+          "bridgeCreatedAt": "2026-06-23 18:06:20 IST",
+          "execTagged": [
+            {
+              "name": "Gaston Caramuro",
+              "title": "Director, Customer Success Management",
+              "slackId": "WF9BBFXU4"
+            },
+            {
+              "name": "Arvid Bux",
+              "title": "Product Management Director",
+              "slackId": "U01GXUDHY9E"
+            }
+          ]
         },
         {
           "caseNum": "473916586",
@@ -5012,7 +5333,8 @@
           "resolvedText": "CIC disengaged after confirming the issue was limited to a single user and the support engineer had set up a meeting to investigate further.",
           "oiDuration": "40m",
           "channelCreatedAt": "2026-06-23 18:07:28 IST",
-          "bridgeCreatedAt": "2026-06-23 18:23:28 IST"
+          "bridgeCreatedAt": "2026-06-23 18:23:28 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473814386",
@@ -5028,7 +5350,14 @@
           "resolvedAt": null,
           "resolvedText": "Pre-existing re-alert (channel created 2026-06-15)",
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-15 IST"
+          "channelCreatedAt": "2026-06-15 IST",
+          "execTagged": [
+            {
+              "name": "Oscar Lopez",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U01G911DN9H"
+            }
+          ]
         },
         {
           "caseNum": "473839908",
@@ -5045,7 +5374,14 @@
           "resolvedText": "CIC disengaged after product team confirmed Outlook Integration failure was caused by third-party cookie policy and Inbox Terms of Use, with actionable guidance provided.",
           "oiDuration": "25h 52m",
           "channelCreatedAt": "2026-06-23 18:24:08 IST",
-          "bridgeCreatedAt": "2026-06-23 18:28:48 IST"
+          "bridgeCreatedAt": "2026-06-23 18:28:48 IST",
+          "execTagged": [
+            {
+              "name": "Byron Mo",
+              "title": "Director, Software Engineering",
+              "slackId": "WHHSEV89G"
+            }
+          ]
         },
         {
           "caseNum": "473916887",
@@ -5061,7 +5397,8 @@
           "resolvedAt": "2026-06-23 19:05:25 IST",
           "resolvedText": "CIC disengaged quickly after root cause identified as SSO JIT provisioning user deactivated via SailPoint, with fix guidance provided to the customer.",
           "oiDuration": "20m",
-          "channelCreatedAt": "2026-06-23 18:44:56 IST"
+          "channelCreatedAt": "2026-06-23 18:44:56 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473886349",
@@ -5078,7 +5415,64 @@
           "resolvedText": "CIC disengaged after engineering identified ~13% data volume increase breaching heap size limits as root cause of FSL Global Optimization failures; bug fix targeted for 262 patch 10 on July 1.",
           "oiDuration": "6d 22h 39m",
           "channelCreatedAt": "2026-06-23 19:24:29 IST",
-          "bridgeCreatedAt": "2026-06-23 19:27:32 IST"
+          "bridgeCreatedAt": "2026-06-23 19:27:32 IST",
+          "execTagged": [
+            {
+              "name": "Karen Nash-Marchand",
+              "title": "Director, Program/Project Management",
+              "slackId": "WJBE1828J"
+            },
+            {
+              "name": "Nir Sharon",
+              "title": "Senior Director, Software Engineering",
+              "slackId": "WSBUKM0FJ"
+            },
+            {
+              "name": "Dinesh Kumar",
+              "title": "Director, Technical Support Engineering",
+              "slackId": "WU36LAYLD"
+            },
+            {
+              "name": "Avi Inbar",
+              "title": "Director, Software Engineering",
+              "slackId": "WUJQR8XD0"
+            },
+            {
+              "name": "Mor Cohen",
+              "title": "Director, Software Engineering",
+              "slackId": "W0112RYJA5A"
+            },
+            {
+              "name": "Elhanan Rosental",
+              "title": "VP, Software Engineering",
+              "slackId": "W0115BQKLAK"
+            },
+            {
+              "name": "Nicole Miller",
+              "title": "RVP, Customer Success Management",
+              "slackId": "U01GCLS4PTL"
+            },
+            {
+              "name": "Tim Kiekow",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U01FU45KLKH"
+            },
+            {
+              "name": "Yaron Telem",
+              "title": "Senior Director, Product Management",
+              "slackId": "U086RFNE92T"
+            },
+            {
+              "name": "Rajashree Pimpalkhare",
+              "title": "SVP, Software Engineering, Field Service",
+              "slackId": "U08KMV5FCJZ"
+            },
+            {
+              "name": "Carly Carter",
+              "title": "Regional Sales Director",
+              "slackId": "U025M53P3PT"
+            }
+          ]
         }
       ]
     },
@@ -5105,7 +5499,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-24 14:42:59 IST"
+          "channelCreatedAt": "2026-06-24 14:42:59 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473925458",
@@ -5121,7 +5516,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-24 14:45:55 IST"
+          "channelCreatedAt": "2026-06-24 14:45:55 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473925809",
@@ -5137,7 +5533,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-24 15:24:39 IST"
+          "channelCreatedAt": "2026-06-24 15:24:39 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473695120",
@@ -5154,7 +5551,14 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-24 17:05:49 IST",
-          "bridgeCreatedAt": "2026-06-24 17:31:48 IST"
+          "bridgeCreatedAt": "2026-06-24 17:31:48 IST",
+          "execTagged": [
+            {
+              "name": "Ashish Verma",
+              "title": "Director, Customer Success Management",
+              "slackId": "U086ZBGCR4N"
+            }
+          ]
         },
         {
           "caseNum": "473835820",
@@ -5171,7 +5575,8 @@
           "resolvedText": "Pre-existing re-alert (channel created 2026-06-16)",
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-16 16:26:04 IST",
-          "bridgeCreatedAt": "2026-06-16 16:42:38 IST"
+          "bridgeCreatedAt": "2026-06-16 16:42:38 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473926795",
@@ -5187,7 +5592,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-24 17:25:59 IST"
+          "channelCreatedAt": "2026-06-24 17:25:59 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473738738",
@@ -5203,7 +5609,14 @@
           "resolvedAt": null,
           "resolvedText": "Pre-existing re-alert (channel created 2026-06-10)",
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-10 IST"
+          "channelCreatedAt": "2026-06-10 IST",
+          "execTagged": [
+            {
+              "name": "Jenna Ramsland",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U01FTPBRTAB"
+            }
+          ]
         },
         {
           "caseNum": "473896185",
@@ -5219,7 +5632,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-24 18:38:47 IST"
+          "channelCreatedAt": "2026-06-24 18:38:47 IST",
+          "execTagged": []
         }
       ]
     },
@@ -5247,7 +5661,8 @@
           "resolvedText": "CIC disengaged as the issue did not qualify as a true Sev1 \u2014 customer could not reproduce the error, could not join the bridge, and sandbox was working as expected.",
           "oiDuration": "1h 23m",
           "channelCreatedAt": "2026-06-25 13:05:03 IST",
-          "bridgeCreatedAt": "2026-06-25 13:18:31 IST"
+          "bridgeCreatedAt": "2026-06-25 13:18:31 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473936036",
@@ -5264,7 +5679,8 @@
           "resolvedText": "CIC disengaged as the active impact had already been resolved; remaining customer asks (RCA and event monitoring guidance) were consultative and post-resolution.",
           "oiDuration": "10m",
           "channelCreatedAt": "2026-06-25 14:15:34 IST",
-          "bridgeCreatedAt": "2026-06-25 14:33:10 IST"
+          "bridgeCreatedAt": "2026-06-25 14:33:10 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473937814",
@@ -5281,7 +5697,8 @@
           "resolvedText": "CIC disengaged because the customer could not be reached on the bridge; AWS was investigating the toll-free number outage and case was left with the support engineer.",
           "oiDuration": "24m",
           "channelCreatedAt": "2026-06-25 17:49:55 IST",
-          "bridgeCreatedAt": "2026-06-25 18:01:09 IST"
+          "bridgeCreatedAt": "2026-06-25 18:01:09 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473937925",
@@ -5298,7 +5715,8 @@
           "resolvedText": "CIC disengaged after the file upload vulnerability was determined to be WAD (Working As Designed); a custom Apex trigger workaround was provided to the customer.",
           "oiDuration": "2h 0m",
           "channelCreatedAt": "2026-06-25 18:03:53 IST",
-          "bridgeCreatedAt": "2026-06-25 18:09:49 IST"
+          "bridgeCreatedAt": "2026-06-25 18:09:49 IST",
+          "execTagged": []
         }
       ]
     },
@@ -5331,7 +5749,8 @@
           "resolvedText": "Customer identified a specific work rule in the scheduling policy causing the booking issue; with a viable workaround in place and no business-stopping impact, CIC disengaged.",
           "oiDuration": "8h 14m",
           "channelCreatedAt": "2026-06-26 12:44:29 IST",
-          "bridgeCreatedAt": "2026-06-26 12:49:27 IST"
+          "bridgeCreatedAt": "2026-06-26 12:49:27 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473939434",
@@ -5348,7 +5767,8 @@
           "resolvedText": "CIC disengaged pending additional customer information (affected user IDs and timestamps) needed to review logs for the Android SFS mobile app 262.1.31 pink error screen issue.",
           "oiDuration": "3h 9m",
           "channelCreatedAt": "2026-06-26 13:54:08 IST",
-          "bridgeCreatedAt": "2026-06-26 14:10:56 IST"
+          "bridgeCreatedAt": "2026-06-26 14:10:56 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473946273",
@@ -5365,7 +5785,29 @@
           "resolvedText": "Customer switched ISP routing at the VPN level restoring connectivity to Salesforce (USA688, Hyperforce); GNO confirmed packet loss at Bharti Airtel as the root cause with no Salesforce platform involvement.",
           "oiDuration": "5h 21m",
           "channelCreatedAt": "2026-06-26 14:14:33 IST",
-          "bridgeCreatedAt": "2026-06-26 15:23:12 IST"
+          "bridgeCreatedAt": "2026-06-26 15:23:12 IST",
+          "execTagged": [
+            {
+              "name": "Michael Lacey",
+              "title": "Senior Director, Network Engineering",
+              "slackId": "WARG8EUH3"
+            },
+            {
+              "name": "Tony Leahy",
+              "title": "Director, Network Engineering",
+              "slackId": "WF6KA3WJC"
+            },
+            {
+              "name": "Karen Nash-Marchand",
+              "title": "Director, Program/Project Management",
+              "slackId": "WJBE1828J"
+            },
+            {
+              "name": "Nigel Broghan",
+              "title": "Director, Network Engineering",
+              "slackId": "U02T4K20PJM"
+            }
+          ]
         },
         {
           "caseNum": "473579408",
@@ -5381,7 +5823,19 @@
           "resolvedAt": "2026-06-26 17:00:37 IST",
           "resolvedText": "CIC disengaged after determining the Edge Enablement LAP request did not warrant CIC-level intervention; customer's production environment remained operational.",
           "oiDuration": "2h 25m",
-          "channelCreatedAt": "2026-06-26 14:35:38 IST"
+          "channelCreatedAt": "2026-06-26 14:35:38 IST",
+          "execTagged": [
+            {
+              "name": "George Griffin",
+              "title": "Director, Customer Success Management",
+              "slackId": "U01G8EKKN9Y"
+            },
+            {
+              "name": "Piyush Jethwa",
+              "title": "Product Management Director",
+              "slackId": "U027X9D56CD"
+            }
+          ]
         },
         {
           "caseNum": "473944646",
@@ -5398,7 +5852,8 @@
           "resolvedText": "Enabling 'Enable Stricter Content Security Policy' in Production Session Settings immediately resolved LWC components being greyed out due to missing lightningCommunity__RelaxedCSP capability in Relaxed CSP mode.",
           "oiDuration": "2h 30m",
           "channelCreatedAt": "2026-06-26 14:36:45 IST",
-          "bridgeCreatedAt": "2026-06-26 14:46:11 IST"
+          "bridgeCreatedAt": "2026-06-26 14:46:11 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473946497",
@@ -5415,7 +5870,8 @@
           "resolvedText": "CDC subscription issue resolved by granting appropriate CDC permissions; the affected user was blocked from subscribing to OrderItemChangeEvent due to missing required permissions.",
           "oiDuration": "4h 32m",
           "channelCreatedAt": "2026-06-26 14:43:25 IST",
-          "bridgeCreatedAt": "2026-06-26 14:51:58 IST"
+          "bridgeCreatedAt": "2026-06-26 14:51:58 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473945583",
@@ -5431,7 +5887,8 @@
           "resolvedAt": "2026-06-26 16:30:27 IST",
           "resolvedText": "Case downgraded to Sev4 and CIC disengaged after investigation confirmed the milestone issue was not an MCI; customer in APAC timezone did not join the bridge call.",
           "oiDuration": "1h 20m",
-          "channelCreatedAt": "2026-06-26 15:09:44 IST"
+          "channelCreatedAt": "2026-06-26 15:09:44 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473947200",
@@ -5448,7 +5905,8 @@
           "resolvedText": "CIC disengaged after paging the CAPE team regarding app kpod reduction from 149 to 96 during peak traffic on IND132 causing CPU throttles, with investigation W-23191276 raised and case handed to the support team.",
           "oiDuration": "2h 6m",
           "channelCreatedAt": "2026-06-26 16:19:51 IST",
-          "bridgeCreatedAt": "2026-06-26 16:40:06 IST"
+          "bridgeCreatedAt": "2026-06-26 16:40:06 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473892789",
@@ -5464,7 +5922,14 @@
           "resolvedAt": "2026-06-26 17:01:20 IST",
           "resolvedText": "CIC disengaged citing this is a how-to query with no active business impact, returning ownership to the primary support team.",
           "oiDuration": "7m",
-          "channelCreatedAt": "2026-06-26 16:54:22 IST"
+          "channelCreatedAt": "2026-06-26 16:54:22 IST",
+          "execTagged": [
+            {
+              "name": "Nathalie Sautner",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U01GMDF1N3T"
+            }
+          ]
         },
         {
           "caseNum": "473947412",
@@ -5481,7 +5946,14 @@
           "resolvedText": "CIC disengaged after engineering triage of an orphaned custom domain issue caused by sandbox deletion; customer applied a temporary workaround and investigation was handed to GHO.",
           "oiDuration": "9h 45m",
           "channelCreatedAt": "2026-06-26 16:56:08 IST",
-          "bridgeCreatedAt": "2026-06-26 17:02:10 IST"
+          "bridgeCreatedAt": "2026-06-26 17:02:10 IST",
+          "execTagged": [
+            {
+              "name": "Karen Nash-Marchand",
+              "title": "Director, Program/Project Management",
+              "slackId": "WJBE1828J"
+            }
+          ]
         },
         {
           "caseNum": "473947519",
@@ -5498,7 +5970,8 @@
           "resolvedText": "CIC disengaged as the issue was confirmed post-mitigation and intermittent; root cause identified as STRING_TOO_LONG on EmailMessage.ToAddress field exceeding the 4,000-character limit.",
           "oiDuration": "36m",
           "channelCreatedAt": "2026-06-26 17:10:14 IST",
-          "bridgeCreatedAt": "2026-06-26 17:20:01 IST"
+          "bridgeCreatedAt": "2026-06-26 17:20:01 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473947659",
@@ -5515,7 +5988,54 @@
           "resolvedText": "CIC disengaged after MCI icc-92133150 resolved; Edge was disabled as a workaround for Delta's Omni-Channel disconnection issue caused by a faulty Edge software release.",
           "oiDuration": "20h 40m",
           "channelCreatedAt": "2026-06-26 17:34:59 IST",
-          "bridgeCreatedAt": "2026-06-26 17:46:35 IST"
+          "bridgeCreatedAt": "2026-06-26 17:46:35 IST",
+          "execTagged": [
+            {
+              "name": "Karen Nash-Marchand",
+              "title": "Director, Program/Project Management",
+              "slackId": "WJBE1828J"
+            },
+            {
+              "name": "Brad Davis",
+              "title": "Senior Director, Escalations",
+              "slackId": "WL4TPDF5G"
+            },
+            {
+              "name": "Bhuvneshwar Sharma",
+              "title": "Senior Director, Technical Support Engineering",
+              "slackId": "W01BYMHPHLG"
+            },
+            {
+              "name": "Christian Becker",
+              "title": "VP, Customer Success - Service Cloud",
+              "slackId": "U01HSMGL7EC"
+            },
+            {
+              "name": "Vrushali Khatav",
+              "title": "VP, Customer Success - Service Cloud",
+              "slackId": "U02BLU26ZDZ"
+            },
+            {
+              "name": "Jaime Davenport",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U01G8M8FEJF"
+            },
+            {
+              "name": "Shaifali Nagpal",
+              "title": "Senior Director, Technical Support Engineering",
+              "slackId": "U068GA4TN93"
+            },
+            {
+              "name": "John Wolfe",
+              "title": "VP, Customer Success - Escalations",
+              "slackId": "U072Q9JGSQY"
+            },
+            {
+              "name": "Manpreet Sareen",
+              "title": "Director CIC Escalations",
+              "slackId": "WHLUP6HAN"
+            }
+          ]
         },
         {
           "caseNum": "473947708",
@@ -5532,7 +6052,8 @@
           "resolvedText": "CIC disengaged after customer's custom Aura button issue was resolved on bridge by modifying a console log statement in the Aura component, fixing the client-side JavaScript error.",
           "oiDuration": "1h 7m",
           "channelCreatedAt": "2026-06-26 17:41:29 IST",
-          "bridgeCreatedAt": "2026-06-26 17:47:52 IST"
+          "bridgeCreatedAt": "2026-06-26 17:47:52 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473947753",
@@ -5548,7 +6069,8 @@
           "resolvedAt": "2026-06-26 18:51:01 IST",
           "resolvedText": "CIC disengaged as case is MCI-related; directed to icc-92133150 and Trust post for resolution.",
           "oiDuration": "1h 3m",
-          "channelCreatedAt": "2026-06-26 17:48:01 IST"
+          "channelCreatedAt": "2026-06-26 17:48:01 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473947766",
@@ -5564,7 +6086,14 @@
           "resolvedAt": "2026-06-26 18:42:03 IST",
           "resolvedText": "CIC disengaged; confirmed customer impacted by MCI icc-92133150, directed to attach IR to case.",
           "oiDuration": "53m",
-          "channelCreatedAt": "2026-06-26 17:49:01 IST"
+          "channelCreatedAt": "2026-06-26 17:49:01 IST",
+          "execTagged": [
+            {
+              "name": "Dana Drummond",
+              "title": "RVP, Sales",
+              "slackId": "U01GY0G1VS4"
+            }
+          ]
         },
         {
           "caseNum": "473947788",
@@ -5581,7 +6110,8 @@
           "resolvedText": "CIC disengaged as MCI-related (icc-92133150); exec/VP visibility noted post-disengagement by CSM.",
           "oiDuration": "1h 0m",
           "channelCreatedAt": "2026-06-26 17:52:12 IST",
-          "bridgeCreatedAt": "2026-06-26 18:18:13 IST"
+          "bridgeCreatedAt": "2026-06-26 18:18:13 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473947809",
@@ -5597,7 +6127,8 @@
           "resolvedAt": "2026-06-27 01:25:51 IST",
           "resolvedText": "CIC disengaged once MCI platform fix confirmed resolving; customer subsequently confirmed all sites clear.",
           "oiDuration": "7h 30m",
-          "channelCreatedAt": "2026-06-26 17:55:16 IST"
+          "channelCreatedAt": "2026-06-26 17:55:16 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473947827",
@@ -5614,7 +6145,8 @@
           "resolvedText": "CIC disengaged as MCI declared; resolution to be driven centrally via icc-92133150.",
           "oiDuration": "58m",
           "channelCreatedAt": "2026-06-26 17:57:22 IST",
-          "bridgeCreatedAt": "2026-06-26 18:17:34 IST"
+          "bridgeCreatedAt": "2026-06-26 18:17:34 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473947936",
@@ -5631,7 +6163,24 @@
           "resolvedText": "CIC disengaged once MCI formally declared; directed to icc-92133150 and Trust incident 20004168.",
           "oiDuration": "53m",
           "channelCreatedAt": "2026-06-26 18:08:31 IST",
-          "bridgeCreatedAt": "2026-06-26 18:43:23 IST"
+          "bridgeCreatedAt": "2026-06-26 18:43:23 IST",
+          "execTagged": [
+            {
+              "name": "LB Jourdain",
+              "title": "Director, Customer Success Management",
+              "slackId": "WASEZ3MTN"
+            },
+            {
+              "name": "Eric Djibedjian",
+              "title": "VP, Success Management - Portfolio Leader",
+              "slackId": "U01G52PA2SZ"
+            },
+            {
+              "name": "Stephane Bourgault",
+              "title": "Director, Customer Success Management",
+              "slackId": "U01G91Q3BHR"
+            }
+          ]
         },
         {
           "caseNum": "473518335",
@@ -5647,7 +6196,59 @@
           "resolvedAt": null,
           "resolvedText": "Pre-existing re-alert (channel created 2026-05-21)",
           "oiDuration": null,
-          "channelCreatedAt": "2026-05-21 IST"
+          "channelCreatedAt": "2026-05-21 IST",
+          "execTagged": [
+            {
+              "name": "Soumen Bandyopadhyay",
+              "title": "Senior Director, Software Engineering",
+              "slackId": "WAQM7CZKJ"
+            },
+            {
+              "name": "Srikanth Rajan",
+              "title": "Senior Director, Software Engineering",
+              "slackId": "WB27MP8R1"
+            },
+            {
+              "name": "Chockalingam Viswanathan",
+              "title": "Director, Software Engineering",
+              "slackId": "WEYE485T9"
+            },
+            {
+              "name": "Sana Jawad",
+              "title": "Senior Director, Software Engineering",
+              "slackId": "WF7BJJ1GS"
+            },
+            {
+              "name": "Vikram Nanduri",
+              "title": "Senior Director, Technical Support Engineering",
+              "slackId": "WLGAP8J4V"
+            },
+            {
+              "name": "Tyson Read",
+              "title": "Senior Director, Product Management",
+              "slackId": "WMRMK6HK6"
+            },
+            {
+              "name": "Bhuvneshwar Sharma",
+              "title": "Senior Director, Technical Support Engineering",
+              "slackId": "W01BYMHPHLG"
+            },
+            {
+              "name": "Marcelo Konatu",
+              "title": "RVP, Customer Success Management",
+              "slackId": "U01G1R8JH38"
+            },
+            {
+              "name": "Walter Cohen",
+              "title": "SVP, Success Management - Portfolio Leader",
+              "slackId": "U01G4SSPWGM"
+            },
+            {
+              "name": "Demetrio Ferreira Silva Junior",
+              "title": "Director, Customer Success Management",
+              "slackId": "U01GE9VEG9J"
+            }
+          ]
         },
         {
           "caseNum": "473947943",
@@ -5663,7 +6264,14 @@
           "resolvedAt": "2026-06-26 18:53:04 IST",
           "resolvedText": "CIC disengaged as MCI-related (icc-92133150); directed to Trust post for resolution.",
           "oiDuration": "44m",
-          "channelCreatedAt": "2026-06-26 18:09:16 IST"
+          "channelCreatedAt": "2026-06-26 18:09:16 IST",
+          "execTagged": [
+            {
+              "name": "Manpreet Sareen",
+              "title": "Director CIC Escalations",
+              "slackId": "WHLUP6HAN"
+            }
+          ]
         },
         {
           "caseNum": "473947976",
@@ -5680,7 +6288,8 @@
           "resolvedText": "CIC disengaged citing MCI icc-92133150 (SCRT2/MIAW degradation); case returned to support team aligned with Mirza for ongoing MCI monitoring.",
           "oiDuration": "44m",
           "channelCreatedAt": "2026-06-26 18:13:52 IST",
-          "bridgeCreatedAt": "2026-06-26 18:46:38 IST"
+          "bridgeCreatedAt": "2026-06-26 18:46:38 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473947991",
@@ -5696,7 +6305,8 @@
           "resolvedAt": "2026-06-26 19:00:30 IST",
           "resolvedText": "CIC disengaged after support confirmed issue linked to MCI icc-92133150 and case tagged to the incident record.",
           "oiDuration": "45m",
-          "channelCreatedAt": "2026-06-26 18:15:45 IST"
+          "channelCreatedAt": "2026-06-26 18:15:45 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473947993",
@@ -5713,7 +6323,8 @@
           "resolvedText": "CIC disengaged after confirming case is related to MCI icc-92133150; customer-facing impact had stabilized and case tagged to the incident.",
           "oiDuration": "1h 26m",
           "channelCreatedAt": "2026-06-26 18:15:51 IST",
-          "bridgeCreatedAt": "2026-06-26 18:23:32 IST"
+          "bridgeCreatedAt": "2026-06-26 18:23:32 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473948006",
@@ -5729,7 +6340,8 @@
           "resolvedAt": "2026-06-26 18:59:18 IST",
           "resolvedText": "CIC disengaged citing MCI icc-92133150; customer confirmed impact resolved by 13:04 GMT and case handed to support.",
           "oiDuration": "42m",
-          "channelCreatedAt": "2026-06-26 18:17:36 IST"
+          "channelCreatedAt": "2026-06-26 18:17:36 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473948046",
@@ -5746,7 +6358,64 @@
           "resolvedText": "CIC disengaged after extended investigation; WhatsApp/UCP EID-MID provisioning failure (not MCI-related) requiring Engineering/Blacktab, GUS W-23195178 raised.",
           "oiDuration": "7h 31m",
           "channelCreatedAt": "2026-06-26 18:21:57 IST",
-          "bridgeCreatedAt": "2026-06-26 19:37:37 IST"
+          "bridgeCreatedAt": "2026-06-26 19:37:37 IST",
+          "execTagged": [
+            {
+              "name": "Soumen Bandyopadhyay",
+              "title": "Senior Director, Software Engineering",
+              "slackId": "WAQM7CZKJ"
+            },
+            {
+              "name": "Srikanth Rajan",
+              "title": "Senior Director, Software Engineering",
+              "slackId": "WB27MP8R1"
+            },
+            {
+              "name": "Chockalingam Viswanathan",
+              "title": "Director, Software Engineering",
+              "slackId": "WEYE485T9"
+            },
+            {
+              "name": "Sana Jawad",
+              "title": "Senior Director, Software Engineering",
+              "slackId": "WF7BJJ1GS"
+            },
+            {
+              "name": "Vikram Nanduri",
+              "title": "Senior Director, Technical Support Engineering",
+              "slackId": "WLGAP8J4V"
+            },
+            {
+              "name": "Tyson Read",
+              "title": "Senior Director, Product Management",
+              "slackId": "WMRMK6HK6"
+            },
+            {
+              "name": "Bhuvneshwar Sharma",
+              "title": "Senior Director, Technical Support Engineering",
+              "slackId": "W01BYMHPHLG"
+            },
+            {
+              "name": "Marcelo Konatu",
+              "title": "RVP, Customer Success Management",
+              "slackId": "U01G1R8JH38"
+            },
+            {
+              "name": "Walter Cohen",
+              "title": "SVP, Success Management - Portfolio Leader",
+              "slackId": "U01G4SSPWGM"
+            },
+            {
+              "name": "Demetrio Ferreira Silva Junior",
+              "title": "Director, Customer Success Management",
+              "slackId": "U01GE9VEG9J"
+            },
+            {
+              "name": "Nameetha Krishnan",
+              "title": "Director, Technical Support Engineering",
+              "slackId": "U07GVN8QX4H"
+            }
+          ]
         },
         {
           "caseNum": "473948142",
@@ -5763,7 +6432,8 @@
           "resolvedText": "CIC disengaged after determining the 503 callout exception was potentially MCI icc-92133150 related; case referred to FSL team for continued investigation.",
           "oiDuration": "44m",
           "channelCreatedAt": "2026-06-26 18:31:23 IST",
-          "bridgeCreatedAt": "2026-06-26 19:01:18 IST"
+          "bridgeCreatedAt": "2026-06-26 19:01:18 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473948145",
@@ -5780,7 +6450,8 @@
           "resolvedText": "CIC disengaged after determining the performance issue was a network/Zscaler problem affecting only Noida-location users, not a Salesforce platform issue.",
           "oiDuration": "2h 7m",
           "channelCreatedAt": "2026-06-26 18:31:38 IST",
-          "bridgeCreatedAt": "2026-06-26 18:39:46 IST"
+          "bridgeCreatedAt": "2026-06-26 18:39:46 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473948237",
@@ -5796,7 +6467,8 @@
           "resolvedAt": "2026-06-26 19:03:51 IST",
           "resolvedText": "CIC disengaged citing MCI icc-92133150 (EDGE performance degradation); case handed to support aligned with Neha Mishra for MCI monitoring.",
           "oiDuration": "23m",
-          "channelCreatedAt": "2026-06-26 18:40:56 IST"
+          "channelCreatedAt": "2026-06-26 18:40:56 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473948252",
@@ -5813,7 +6485,8 @@
           "resolvedText": "CIC disengaged after confirming the issue was related to the active MCI icc-92133150 (Omnichannel/Digital Engagement outage) and directing the team to the MCI bridge.",
           "oiDuration": "1h 57m",
           "channelCreatedAt": "2026-06-26 19:01:37 IST",
-          "bridgeCreatedAt": "2026-06-26 19:04:16 IST"
+          "bridgeCreatedAt": "2026-06-26 19:04:16 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473910358",
@@ -5830,7 +6503,8 @@
           "resolvedText": "CIC disengaged after issue was resolved \u2014 a missing picklist value and access problem was identified and fixed with customer confirming resolution.",
           "oiDuration": "30m",
           "channelCreatedAt": "2026-06-26 19:08:23 IST",
-          "bridgeCreatedAt": "2026-06-26 19:10:02 IST"
+          "bridgeCreatedAt": "2026-06-26 19:10:02 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473948584",
@@ -5846,7 +6520,8 @@
           "resolvedAt": "2026-06-26 19:27:33 IST",
           "resolvedText": "CIC disengaged quickly after assessing the case did not warrant Sev1 \u2014 the customer was only seeking information, not experiencing a production outage.",
           "oiDuration": "11m",
-          "channelCreatedAt": "2026-06-26 19:16:39 IST"
+          "channelCreatedAt": "2026-06-26 19:16:39 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473948604",
@@ -5863,7 +6538,8 @@
           "resolvedText": "CIC disengaged after confirming API performance degradation was related to MCI icc-92133150 (Edge instability); customer confirmed performance returned to normal.",
           "oiDuration": "2h 21m",
           "channelCreatedAt": "2026-06-26 19:17:34 IST",
-          "bridgeCreatedAt": "2026-06-26 19:43:40 IST"
+          "bridgeCreatedAt": "2026-06-26 19:43:40 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473948630",
@@ -5879,7 +6555,8 @@
           "resolvedAt": "2026-06-26 19:26:07 IST",
           "resolvedText": "CIC disengaged promptly after identifying the issue as likely related to MCI icc-92133150 and directing support to validate against the ongoing incident.",
           "oiDuration": "6m",
-          "channelCreatedAt": "2026-06-26 19:20:00 IST"
+          "channelCreatedAt": "2026-06-26 19:20:00 IST",
+          "execTagged": []
         }
       ]
     },
@@ -5904,7 +6581,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": null
+          "channelCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473951395",
@@ -5920,7 +6598,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": null
+          "channelCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473951432",
@@ -5936,7 +6615,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": null
+          "channelCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473951440",
@@ -5952,7 +6632,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": null
+          "channelCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473941455",
@@ -5968,7 +6649,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": null
+          "channelCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473951983",
@@ -5984,7 +6666,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": null
+          "channelCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473945193",
@@ -6000,7 +6683,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": null
+          "channelCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473952480",
@@ -6016,7 +6700,24 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": null
+          "channelCreatedAt": null,
+          "execTagged": [
+            {
+              "name": "Amanda Elfstrum",
+              "title": "Director, Customer Success Management",
+              "slackId": "U01G1BLRJUE"
+            },
+            {
+              "name": "Dan Fowler",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U01GLPKCDBK"
+            },
+            {
+              "name": "Ravi Remani",
+              "title": "Director, Technical Consulting",
+              "slackId": "U01G5N9GRA9"
+            }
+          ]
         },
         {
           "caseNum": "473952718",
@@ -6032,7 +6733,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": null
+          "channelCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473952772",
@@ -6048,7 +6750,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": null
+          "channelCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473952858",
@@ -6064,7 +6767,14 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": null
+          "channelCreatedAt": null,
+          "execTagged": [
+            {
+              "name": "Sydney Bloom",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U01G249H2G6"
+            }
+          ]
         },
         {
           "caseNum": "473958645",
@@ -6080,7 +6790,14 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": null
+          "channelCreatedAt": null,
+          "execTagged": [
+            {
+              "name": "Patryk Peltonen",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U01G916MZM1"
+            }
+          ]
         },
         {
           "caseNum": "473958991",
@@ -6096,7 +6813,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": null
+          "channelCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473959006",
@@ -6112,7 +6830,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": null
+          "channelCreatedAt": null,
+          "execTagged": []
         },
         {
           "caseNum": "473959118",
@@ -6128,7 +6847,19 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": null
+          "channelCreatedAt": null,
+          "execTagged": [
+            {
+              "name": "Navin Shetty",
+              "title": "Director, Critical Incident Center",
+              "slackId": "WLG9ZQBR6"
+            },
+            {
+              "name": "Devin Thornburgh",
+              "title": "Director, Customer Success Management",
+              "slackId": "U01LLLNK5BM"
+            }
+          ]
         },
         {
           "caseNum": "473839848",
@@ -6144,7 +6875,8 @@
           "resolvedAt": null,
           "resolvedText": "Pre-existing re-alert (channel created 2026-05-27)",
           "oiDuration": null,
-          "channelCreatedAt": null
+          "channelCreatedAt": null,
+          "execTagged": []
         }
       ],
       "eodDone": false,
@@ -6172,7 +6904,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-28 00:26:56 IST"
+          "channelCreatedAt": "2026-06-28 00:26:56 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473741914",
@@ -6188,7 +6921,64 @@
           "resolvedAt": null,
           "resolvedText": "Pre-existing re-alert (channel created 2026-05-14)",
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-28 00:32:07 IST"
+          "channelCreatedAt": "2026-06-28 00:32:07 IST",
+          "execTagged": [
+            {
+              "name": "Navin Shetty",
+              "title": "Director, Critical Incident Center",
+              "slackId": "WLG9ZQBR6"
+            },
+            {
+              "name": "Jonathan Sun",
+              "title": "Senior Director, CIC/Critical Incidents Center",
+              "slackId": "WPKJH0B5L"
+            },
+            {
+              "name": "Mohana Priya",
+              "title": "Senior Director, Software Engineering",
+              "slackId": "WT1SKUA20"
+            },
+            {
+              "name": "Bhuvneshwar Sharma",
+              "title": "Senior Director, Technical Support Engineering",
+              "slackId": "W01BYMHPHLG"
+            },
+            {
+              "name": "Scott Gitters",
+              "title": "VP, Success Management - Portfolio Leader",
+              "slackId": "U01GMEB1PQR"
+            },
+            {
+              "name": "Alex Lersch",
+              "title": "RVP, Sales",
+              "slackId": "U01LLENMWTC"
+            },
+            {
+              "name": "Mayte Zavaleta",
+              "title": "Product Management Director",
+              "slackId": "W014EKS5KHS"
+            },
+            {
+              "name": "Meghan Ciacci",
+              "title": "Director, Customer Success Management",
+              "slackId": "U03FM45A78V"
+            },
+            {
+              "name": "Harish Batlapenumarthy",
+              "title": "VP, Product Management",
+              "slackId": "U06F6EDRP2M"
+            },
+            {
+              "name": "Abhinav Jhalani",
+              "title": "Director, Software Engineering",
+              "slackId": "U07V1MBB2LX"
+            },
+            {
+              "name": "Jason Nitschman",
+              "title": "RVP, Sales",
+              "slackId": "U0348HY1Z4K"
+            }
+          ]
         },
         {
           "caseNum": "473959296",
@@ -6204,7 +6994,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-28 03:27:13 IST"
+          "channelCreatedAt": "2026-06-28 03:27:13 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473959961",
@@ -6220,7 +7011,14 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-28 15:56:17 IST"
+          "channelCreatedAt": "2026-06-28 15:56:17 IST",
+          "execTagged": [
+            {
+              "name": "Rob Pal",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U01G91GFHA7"
+            }
+          ]
         }
       ],
       "eodDone": false,
@@ -6256,7 +7054,8 @@
           "resolvedText": "Fixed gap config with 0 min travel time; customer confirmed appointment scheduling resolved. Case closed with customer consent.",
           "oiDuration": "3h 45m",
           "channelCreatedAt": "2026-06-29 14:52:43 IST",
-          "bridgeCreatedAt": "2026-06-29 14:58:33 IST"
+          "bridgeCreatedAt": "2026-06-29 14:58:33 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473930412",
@@ -6273,7 +7072,8 @@
           "resolvedText": "Solutions provided for cross-domain session bridging (SSO/OAuth/frontdoor.jsp). CIC disengaged; re-engage if BI changes.",
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-29 18:15:00 IST",
-          "bridgeCreatedAt": "2026-06-29 21:34:07 IST"
+          "bridgeCreatedAt": "2026-06-29 21:34:07 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473965759",
@@ -6289,7 +7089,8 @@
           "resolvedAt": null,
           "resolvedText": "CIC disengaged \u2014 no active CIC engagement needed. Case handed to Baji Shaik (case owner).",
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-29 18:54:16 IST"
+          "channelCreatedAt": "2026-06-29 18:54:16 IST",
+          "execTagged": []
         }
       ]
     },
@@ -6317,7 +7118,8 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-06-30 13:06:14 IST",
-          "bridgeCreatedAt": "2026-06-30 13:14:42 IST"
+          "bridgeCreatedAt": "2026-06-30 13:14:42 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473973865",
@@ -6333,7 +7135,14 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-30"
+          "channelCreatedAt": "2026-06-30",
+          "execTagged": [
+            {
+              "name": "Felix Hummel",
+              "title": "Customer Success Manager, Senior Director",
+              "slackId": "U01G8BJG3CK"
+            }
+          ]
         },
         {
           "caseNum": "473974080",
@@ -6349,7 +7158,19 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-30"
+          "channelCreatedAt": "2026-06-30",
+          "execTagged": [
+            {
+              "name": "SunMi Kim",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U01FU3Y7Q31"
+            },
+            {
+              "name": "Jaeseok Song",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U02H3HDUTE1"
+            }
+          ]
         },
         {
           "caseNum": "473926163",
@@ -6365,7 +7186,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-30 14:36:18 IST"
+          "channelCreatedAt": "2026-06-30 14:36:18 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473974174",
@@ -6382,7 +7204,8 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-06-30 14:32:00 IST",
-          "bridgeCreatedAt": "2026-06-30 15:19:29 IST"
+          "bridgeCreatedAt": "2026-06-30 15:19:29 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473974668",
@@ -6399,7 +7222,8 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-06-30 15:27:32 IST",
-          "bridgeCreatedAt": "2026-06-30 15:32:32 IST"
+          "bridgeCreatedAt": "2026-06-30 15:32:32 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473975556",
@@ -6416,7 +7240,14 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-06-30 17:16:24 IST",
-          "bridgeCreatedAt": "2026-06-30 17:34:35 IST"
+          "bridgeCreatedAt": "2026-06-30 17:34:35 IST",
+          "execTagged": [
+            {
+              "name": "Jon Neustedter",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U01FTP4HE6B"
+            }
+          ]
         },
         {
           "caseNum": "473975565",
@@ -6433,7 +7264,14 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-06-30 17:17:35 IST",
-          "bridgeCreatedAt": "2026-06-30 17:32:12 IST"
+          "bridgeCreatedAt": "2026-06-30 17:32:12 IST",
+          "execTagged": [
+            {
+              "name": "Eric Larson",
+              "title": "Enterprise Account Director",
+              "slackId": "U053071BJ9J"
+            }
+          ]
         },
         {
           "caseNum": "473975709",
@@ -6450,7 +7288,8 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-06-30 17:35:23 IST",
-          "bridgeCreatedAt": "2026-06-30 17:45:31 IST"
+          "bridgeCreatedAt": "2026-06-30 17:45:31 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473976143",
@@ -6467,7 +7306,19 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-06-30 18:25:38 IST",
-          "bridgeCreatedAt": "2026-06-30 18:32:35 IST"
+          "bridgeCreatedAt": "2026-06-30 18:32:35 IST",
+          "execTagged": [
+            {
+              "name": "Anish Uppal",
+              "title": "Senior Director, Customer Success Management",
+              "slackId": "WF9EAGW8L"
+            },
+            {
+              "name": "Kushal Bhomick",
+              "title": "RVP, Sales",
+              "slackId": "U08HL2AS79U"
+            }
+          ]
         },
         {
           "caseNum": "473976189",
@@ -6484,7 +7335,14 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-06-30 18:31:20 IST",
-          "bridgeCreatedAt": "2026-06-30 18:46:18 IST"
+          "bridgeCreatedAt": "2026-06-30 18:46:18 IST",
+          "execTagged": [
+            {
+              "name": "Chris Szarski",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U02BF1U0V6X"
+            }
+          ]
         },
         {
           "caseNum": "473976297",
@@ -6501,7 +7359,8 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-06-30 18:41:38 IST",
-          "bridgeCreatedAt": "2026-06-30 19:07:54 IST"
+          "bridgeCreatedAt": "2026-06-30 19:07:54 IST",
+          "execTagged": []
         }
       ]
     },
@@ -6533,7 +7392,14 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-01 12:35:36 IST"
+          "channelCreatedAt": "2026-07-01 12:35:36 IST",
+          "execTagged": [
+            {
+              "name": "Shaifali Nagpal",
+              "title": "Senior Director, Technical Support Engineering",
+              "slackId": "U068GA4TN93"
+            }
+          ]
         },
         {
           "caseNum": "473907175",
@@ -6549,7 +7415,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-01 14:05:06 IST"
+          "channelCreatedAt": "2026-07-01 14:05:06 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473985557",
@@ -6565,7 +7432,14 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-01 14:37:19 IST"
+          "channelCreatedAt": "2026-07-01 14:37:19 IST",
+          "execTagged": [
+            {
+              "name": "Vincent Fournie",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U01G8U6KBLK"
+            }
+          ]
         },
         {
           "caseNum": "473980354",
@@ -6581,7 +7455,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-01 14:58:30 IST"
+          "channelCreatedAt": "2026-07-01 14:58:30 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473914810",
@@ -6598,7 +7473,8 @@
           "resolvedText": "Pre-existing re-alert (channel created 2026-06-23)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-23",
-          "bridgeCreatedAt": "2026-06-23 14:56:18 IST"
+          "bridgeCreatedAt": "2026-06-23 14:56:18 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473986781",
@@ -6614,7 +7490,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-01 17:18:11 IST"
+          "channelCreatedAt": "2026-07-01 17:18:11 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473987070",
@@ -6630,7 +7507,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-01 17:50:32 IST"
+          "channelCreatedAt": "2026-07-01 17:50:32 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473987105",
@@ -6646,7 +7524,14 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-01 17:55:15 IST"
+          "channelCreatedAt": "2026-07-01 17:55:15 IST",
+          "execTagged": [
+            {
+              "name": "Vinnie Sykes",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U031VK5MDNE"
+            }
+          ]
         },
         {
           "caseNum": "473987799",
@@ -6662,7 +7547,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-01 19:07:22 IST"
+          "channelCreatedAt": "2026-07-01 19:07:22 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473987822",
@@ -6678,7 +7564,69 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-01 19:09:04 IST"
+          "channelCreatedAt": "2026-07-01 19:09:04 IST",
+          "execTagged": [
+            {
+              "name": "Phani Krishna Kanchibhotla",
+              "title": "Forward Deployed Engineer Director",
+              "slackId": "WF9D46A6Q"
+            },
+            {
+              "name": "Avinash Naidu",
+              "title": "Director CIC Escalations",
+              "slackId": "WHGNP63TM"
+            },
+            {
+              "name": "Karen Nash-Marchand",
+              "title": "Director, Program/Project Management",
+              "slackId": "WJBE1828J"
+            },
+            {
+              "name": "Sushanth Kallem",
+              "title": "Director, Customer Success Management",
+              "slackId": "WM1BYHSFK"
+            },
+            {
+              "name": "Kishore Srirambhatla",
+              "title": "Director, Software Engineering",
+              "slackId": "W013BN34MFF"
+            },
+            {
+              "name": "Bhuvneshwar Sharma",
+              "title": "Senior Director, Technical Support Engineering",
+              "slackId": "W01BYMHPHLG"
+            },
+            {
+              "name": "William Shockley",
+              "title": "RVP, Customer Success Management",
+              "slackId": "U01G863H1SP"
+            },
+            {
+              "name": "Vrajesh Pothiwala",
+              "title": "Senior Director, Product Forward Deployed Engineering",
+              "slackId": "U01GLJEB02D"
+            },
+            {
+              "name": "Wattandeep Kingra",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U01GXQSCLMN"
+            },
+            {
+              "name": "Vrushali Khatav",
+              "title": "VP, Customer Success - Service Cloud",
+              "slackId": "U02BLU26ZDZ"
+            },
+            {
+              "name": "Kausthob Das",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U02MY6DPPT5"
+            },
+            {
+              "name": "Shaifali Nagpal",
+              "title": "Senior Director, Technical Support Engineering",
+              "slackId": "U068GA4TN93"
+            }
+          ]
         },
         {
           "caseNum": "473988020",
@@ -6694,7 +7642,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-01 19:28:21 IST"
+          "channelCreatedAt": "2026-07-01 19:28:21 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473938782",
@@ -6710,7 +7659,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-01 19:28:41 IST"
+          "channelCreatedAt": "2026-07-01 19:28:41 IST",
+          "execTagged": []
         }
       ]
     },
@@ -6738,7 +7688,8 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-02 12:32:53 IST",
-          "bridgeCreatedAt": "2026-07-02 13:04:12 IST"
+          "bridgeCreatedAt": "2026-07-02 13:04:12 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473994654",
@@ -6755,7 +7706,8 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-02 12:49:32 IST",
-          "bridgeCreatedAt": "2026-07-02 13:03:04 IST"
+          "bridgeCreatedAt": "2026-07-02 13:03:04 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473994485",
@@ -6771,7 +7723,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-02 13:44:30 IST"
+          "channelCreatedAt": "2026-07-02 13:44:30 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473995819",
@@ -6788,7 +7741,8 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-02 15:10:10 IST",
-          "bridgeCreatedAt": "2026-07-02 15:14:56 IST"
+          "bridgeCreatedAt": "2026-07-02 15:14:56 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473996209",
@@ -6805,7 +7759,8 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-02 15:52:53 IST",
-          "bridgeCreatedAt": "2026-07-02 16:52:34 IST"
+          "bridgeCreatedAt": "2026-07-02 16:52:34 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473996394",
@@ -6822,7 +7777,14 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-02 16:16:03 IST",
-          "bridgeCreatedAt": "2026-07-02 16:21:50 IST"
+          "bridgeCreatedAt": "2026-07-02 16:21:50 IST",
+          "execTagged": [
+            {
+              "name": "Alex Santiago",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U01G843TGP4"
+            }
+          ]
         },
         {
           "caseNum": "473996650",
@@ -6838,7 +7800,14 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-02 16:48:42 IST"
+          "channelCreatedAt": "2026-07-02 16:48:42 IST",
+          "execTagged": [
+            {
+              "name": "Alcione Sturmer",
+              "title": "Customer Success Manager, Senior Director",
+              "slackId": "U01G51KK4R3"
+            }
+          ]
         },
         {
           "caseNum": "473996849",
@@ -6855,7 +7824,14 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-02 17:18:22 IST",
-          "bridgeCreatedAt": "2026-07-02 18:08:53 IST"
+          "bridgeCreatedAt": "2026-07-02 18:08:53 IST",
+          "execTagged": [
+            {
+              "name": "Sydney Bloom",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U01G249H2G6"
+            }
+          ]
         },
         {
           "caseNum": "473996456",
@@ -6871,7 +7847,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-02 16:21:56 IST"
+          "channelCreatedAt": "2026-07-02 16:21:56 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473992401",
@@ -6887,7 +7864,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-02 18:50:10 IST"
+          "channelCreatedAt": "2026-07-02 18:50:10 IST",
+          "execTagged": []
         },
         {
           "caseNum": "473949965",
@@ -6903,7 +7881,14 @@
           "resolvedAt": null,
           "resolvedText": "Pre-existing re-alert (channel created 2026-06-26)",
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-26"
+          "channelCreatedAt": "2026-06-26",
+          "execTagged": [
+            {
+              "name": "Edelle Lorenzana",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U02EBH6JCQ5"
+            }
+          ]
         }
       ]
     },
@@ -6936,7 +7921,8 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-03T14:40:31+05:30",
-          "bridgeCreatedAt": "2026-07-03T14:45:36+05:30"
+          "bridgeCreatedAt": "2026-07-03T14:45:36+05:30",
+          "execTagged": []
         },
         {
           "caseNum": "474005907",
@@ -6953,7 +7939,8 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-03T15:48:00+05:30",
-          "bridgeCreatedAt": "2026-07-03T15:55:45+05:30"
+          "bridgeCreatedAt": "2026-07-03T15:55:45+05:30",
+          "execTagged": []
         },
         {
           "caseNum": "474006689",
@@ -6970,7 +7957,14 @@
           "resolvedText": null,
           "oiDuration": "15m",
           "channelCreatedAt": "2026-07-03T18:20:02+05:30",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "execTagged": [
+            {
+              "name": "Jeff Cook",
+              "title": "RVP, Sales",
+              "slackId": "U01G1NX4EHL"
+            }
+          ]
         },
         {
           "caseNum": "474000300",
@@ -6986,7 +7980,29 @@
           "resolvedAt": null,
           "resolvedText": "Pre-existing re-alert (channel created 2026-07-02)",
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-02T23:51:30+05:30"
+          "channelCreatedAt": "2026-07-02T23:51:30+05:30",
+          "execTagged": [
+            {
+              "name": "Niloufar Murhamer",
+              "title": "Director, Software Engineering",
+              "slackId": "WE507B6KW"
+            },
+            {
+              "name": "Bhuvneshwar Sharma",
+              "title": "Senior Director, Technical Support Engineering",
+              "slackId": "W01BYMHPHLG"
+            },
+            {
+              "name": "Vrushali Khatav",
+              "title": "VP, Customer Success - Service Cloud",
+              "slackId": "U02BLU26ZDZ"
+            },
+            {
+              "name": "Venkatesh Acharya",
+              "title": "Senior Director, Software Engineering",
+              "slackId": "U067APDA9KJ"
+            }
+          ]
         },
         {
           "caseNum": "474006837",
@@ -7003,7 +8019,8 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-03T19:24:52+05:30",
-          "bridgeCreatedAt": "2026-07-03T19:29:08+05:30"
+          "bridgeCreatedAt": "2026-07-03T19:29:08+05:30",
+          "execTagged": []
         }
       ]
     }

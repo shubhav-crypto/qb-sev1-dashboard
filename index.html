@@ -29,8 +29,8 @@
 
   .main{padding:28px 32px;max-width:1400px;margin:0 auto}
 
-  .kpi-bar{display:grid;grid-template-columns:repeat(7,1fr);gap:14px;margin-bottom:28px}
-  @media(max-width:1100px){.kpi-bar{grid-template-columns:repeat(3,1fr)}}
+  .kpi-bar{display:grid;grid-template-columns:repeat(8,1fr);gap:14px;margin-bottom:28px}
+  @media(max-width:1100px){.kpi-bar{grid-template-columns:repeat(4,1fr)}}
   @media(max-width:600px){.kpi-bar{grid-template-columns:repeat(2,1fr)}}
   .kpi{background:var(--surface);border:1px solid var(--border);border-radius:var(--card-radius);padding:18px 20px;position:relative;overflow:hidden}
   .kpi::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
@@ -39,12 +39,14 @@
   .kpi.teal::before{background:#14b8a6}
   .kpi.rose::before{background:#e11d48}
   .kpi.needs::before{background:var(--red)}
+  .kpi.amber::before{background:#f59e0b}
   .kpi-value{font-size:34px;font-weight:700;line-height:1;margin-bottom:4px}
   .kpi.blue .kpi-value{color:var(--accent)}.kpi.green .kpi-value{color:var(--green)}
   .kpi.yellow .kpi-value{color:var(--yellow)}.kpi.purple .kpi-value{color:var(--accent2)}
   .kpi.teal .kpi-value{color:#14b8a6}
   .kpi.rose .kpi-value{color:#e11d48}
   .kpi.needs .kpi-value{color:var(--red)}
+  .kpi.amber .kpi-value{color:#f59e0b}
   .kpi-label{font-size:12px;color:var(--text-muted);font-weight:500}
   .kpi-sub{font-size:11px;color:var(--text-muted);margin-top:6px}
 
@@ -178,6 +180,7 @@
     <div class="kpi purple"><div class="kpi-value" id="kpiWeekEngage" style="font-size:24px;">—</div><div class="kpi-label">This Week Avg Engage</div><div class="kpi-sub" id="kpiWeekEngageSub"></div></div>
     <div class="kpi rose"><div class="kpi-value" id="kpiBridgeAvg" style="font-size:24px;">—</div><div class="kpi-label">Bridge Creation Avg</div><div class="kpi-sub" id="kpiBridgeAvgSub"></div></div>
     <div class="kpi green"><div class="kpi-value" id="kpiEngageCompliance" style="font-size:30px;">—</div><div class="kpi-label">QB Engage Compliance</div><div class="kpi-sub" id="kpiEngageComplianceSub"></div><div class="kpi-sub" id="kpiEngageComplianceThrottle" style="margin-top:3px;font-size:10px;"></div></div>
+    <div class="kpi amber"><div class="kpi-value" id="kpiExecTagged">—</div><div class="kpi-label">Director+ Tagged</div><div class="kpi-sub" id="kpiExecTaggedSub"></div><div class="kpi-sub" id="kpiExecTaggedDetail" style="margin-top:3px;font-size:10px;"></div></div>
   </div>
 
   <div class="wow-engage-card">
@@ -726,6 +729,9 @@ function renderKPIs(){
     document.getElementById('kpiEngageCompliance').textContent='—';
     document.getElementById('kpiEngageComplianceSub').textContent='no data in range';
     const et=document.getElementById('kpiEngageComplianceThrottle');if(et)et.textContent='';
+    document.getElementById('kpiExecTagged').textContent='—';
+    document.getElementById('kpiExecTaggedSub').textContent='no data in range';
+    const etd=document.getElementById('kpiExecTaggedDetail');if(etd)etd.textContent='';
     updateKpiFilterLabel();
     return;
   }
@@ -826,6 +832,30 @@ function renderKPIs(){
   else if(engagePct>=80){engageKpi.className='kpi green';}
   else if(engagePct>=60){engageKpi.className='kpi yellow';}
   else{engageKpi.className='kpi needs';}
+
+  // Director+ Tagged KPI
+  const allCases=wdays.flatMap(function(d){return d.cases;});
+  const execTaggedCases=allCases.filter(function(c){return c.execTagged&&c.execTagged.length>0;});
+  const execTaggedCount=execTaggedCases.length;
+  const totalExecPeople=execTaggedCases.reduce(function(sum,c){return sum+(c.execTagged?c.execTagged.length:0);},0);
+  // Count by title tier
+  const svpCount=execTaggedCases.flatMap(function(c){return c.execTagged||[];}).filter(function(e){return /\bsvp\b/i.test(e.title)||/vice president/i.test(e.title);}).length;
+  const vpCount=execTaggedCases.flatMap(function(c){return c.execTagged||[];}).filter(function(e){return (/\bvp[,\s]/i.test(e.title)||/\brvp[,\s]/i.test(e.title))&&!/svp/i.test(e.title)&&!/vice president/i.test(e.title);}).length;
+  const sdirCount=execTaggedCases.flatMap(function(c){return c.execTagged||[];}).filter(function(e){return /senior director/i.test(e.title)&&!/vp/i.test(e.title);}).length;
+  const dirCount=execTaggedCases.flatMap(function(c){return c.execTagged||[];}).filter(function(e){return /\bdirector\b/i.test(e.title)&&!/senior director/i.test(e.title)&&!/vp/i.test(e.title);}).length;
+  const execEl=document.getElementById('kpiExecTagged');
+  const execSubEl=document.getElementById('kpiExecTaggedSub');
+  const execDetailEl=document.getElementById('kpiExecTaggedDetail');
+  execEl.textContent=execTaggedCount>0?execTaggedCount:'0';
+  execSubEl.textContent=execTaggedCount>0?execTaggedCount+' case'+(execTaggedCount!==1?'s':'')+', '+totalExecPeople+' executive'+(totalExecPeople!==1?'s':''):'no Director+ found yet';
+  if(execDetailEl){
+    const tp=[];
+    if(svpCount)tp.push(svpCount+' SVP/VP');
+    if(vpCount)tp.push(vpCount+' VP/RVP');
+    if(sdirCount)tp.push(sdirCount+' Sr Dir');
+    if(dirCount)tp.push(dirCount+' Dir');
+    execDetailEl.textContent=tp.length?tp.join(' · '):'';
+  }
 
   updateKpiFilterLabel();
 }
@@ -1273,6 +1303,7 @@ function buildDayPanel(day,container){
   html+='<th style="white-space:nowrap;cursor:help;" title="Account has a Red Account record in OrgCS">Red Acct</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Actual time from Sev1 channel creation to bridge start. Computed from bridgeCreatedAt−channelCreatedAt (or explicit bridgeTime). Green = within 15 min, Red = over 15 min. Dash = no timestamp data.">Bridge time</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Case notes or callout context">Notes</th>';
+  html+='<th style="white-space:nowrap;cursor:help;" title="Director, Senior Director, VP or SVP tagged in this Sev1 channel">Dir+</th>';
   html+='</tr></thead><tbody>';
   const mciSet=mciCases[day.date]||[];
   cases.forEach(function(c,i){
@@ -1325,11 +1356,21 @@ function buildDayPanel(day,container){
       ?'<td style="font-size:11px;color:#94a3b8;max-width:200px;white-space:normal;line-height:1.4;padding:8px 12px;">'+c.resolvedText+'</td>'
       :(c.callout?'<td style="font-size:11px;color:#b45309;max-width:200px;white-space:normal;line-height:1.4;padding:8px 12px;">'+c.callout+'</td>'
       :'<td style="color:#cbd5e1;font-size:11px;text-align:center;">—</td>');
+    let execCell;
+    if(c.execTagged&&c.execTagged.length>0){
+      const tipLines=c.execTagged.map(function(e){return e.name+' ('+e.title+')';}).join('\n');
+      const highestTier=c.execTagged.some(function(e){return /\bsvp\b|\bvice president\b/i.test(e.title);})?'SVP/VP'
+        :c.execTagged.some(function(e){return /\bvp[,\s]|\brvp[,\s]/i.test(e.title);})?'VP'
+        :c.execTagged.some(function(e){return /senior director/i.test(e.title);})?'Sr Dir':'Dir';
+      execCell='<td style="white-space:nowrap;font-size:11px;"><span style="background:rgba(245,158,11,.12);color:#d97706;border-radius:5px;padding:2px 7px;font-weight:600;cursor:default;border:1px solid rgba(245,158,11,.3);" title="'+tipLines+'">🏅 '+c.execTagged.length+' ('+highestTier+')</span></td>';
+    }else{
+      execCell='<td style="text-align:center;color:var(--text-muted);font-size:11px;">—</td>';
+    }
     html+='<tr><td class="case-num">'+(i+1)+'</td><td>'+c.caseNum+'</td>'
       +'<td class="account-name">'+mciTag+c.account+'</td><td class="product-cell">'+c.product+'</td>'
       +'<td class="time-cell">'+c.timeIST+'</td>'
       +'<td><span class="manager-chip '+chipCls+'">'+mgr+'</span></td>'
-      +rtCell(c.ack)+rtCell(c.resolve)+rtCell(c.channelEngage,true,true,c.caseNum,c.bridgeNA)+redCell+bridgeCell+notesCell+'</tr>';
+      +rtCell(c.ack)+rtCell(c.resolve)+rtCell(c.channelEngage,true,true,c.caseNum,c.bridgeNA)+redCell+bridgeCell+notesCell+execCell+'</tr>';
   });
   html+='</tbody></table></div>';
   container.innerHTML=html;
