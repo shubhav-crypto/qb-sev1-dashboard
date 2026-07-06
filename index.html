@@ -839,23 +839,12 @@ function renderKPIs(){
   const execTaggedCount=execTaggedCases.length;
   const totalExecPeople=execTaggedCases.reduce(function(sum,c){return sum+(c.execTagged?c.execTagged.length:0);},0);
   // Count by title tier
-  const svpCount=execTaggedCases.flatMap(function(c){return c.execTagged||[];}).filter(function(e){return /\bsvp\b/i.test(e.title)||/vice president/i.test(e.title);}).length;
-  const vpCount=execTaggedCases.flatMap(function(c){return c.execTagged||[];}).filter(function(e){return (/\bvp[,\s]/i.test(e.title)||/\brvp[,\s]/i.test(e.title))&&!/svp/i.test(e.title)&&!/vice president/i.test(e.title);}).length;
-  const sdirCount=execTaggedCases.flatMap(function(c){return c.execTagged||[];}).filter(function(e){return /senior director/i.test(e.title)&&!/vp/i.test(e.title);}).length;
-  const dirCount=execTaggedCases.flatMap(function(c){return c.execTagged||[];}).filter(function(e){return /\bdirector\b/i.test(e.title)&&!/senior director/i.test(e.title)&&!/vp/i.test(e.title);}).length;
   const execEl=document.getElementById('kpiExecTagged');
   const execSubEl=document.getElementById('kpiExecTaggedSub');
   const execDetailEl=document.getElementById('kpiExecTaggedDetail');
   execEl.textContent=execTaggedCount>0?execTaggedCount:'0';
-  execSubEl.textContent=execTaggedCount>0?execTaggedCount+' case'+(execTaggedCount!==1?'s':'')+', '+totalExecPeople+' executive'+(totalExecPeople!==1?'s':''):'no Director+ found yet';
-  if(execDetailEl){
-    const tp=[];
-    if(svpCount)tp.push(svpCount+' SVP/VP');
-    if(vpCount)tp.push(vpCount+' VP/RVP');
-    if(sdirCount)tp.push(sdirCount+' Sr Dir');
-    if(dirCount)tp.push(dirCount+' Dir');
-    execDetailEl.textContent=tp.length?tp.join(' · '):'';
-  }
+  execSubEl.textContent=execTaggedCount>0?execTaggedCount+' case'+(execTaggedCount!==1?'s':'')+', '+totalExecPeople+' exec'+(totalExecPeople!==1?'s':''):'no Director+ found yet';
+  if(execDetailEl){execDetailEl.textContent=execTaggedCount>0?'Director and above tagged':'';}
 
   updateKpiFilterLabel();
 }
@@ -1359,10 +1348,7 @@ function buildDayPanel(day,container){
     let execCell;
     if(c.execTagged&&c.execTagged.length>0){
       const tipLines=c.execTagged.map(function(e){return e.name+' ('+e.title+')';}).join('\n');
-      const highestTier=c.execTagged.some(function(e){return /\bsvp\b|\bvice president\b/i.test(e.title);})?'SVP/VP'
-        :c.execTagged.some(function(e){return /\bvp[,\s]|\brvp[,\s]/i.test(e.title);})?'VP'
-        :c.execTagged.some(function(e){return /senior director/i.test(e.title);})?'Sr Dir':'Dir';
-      execCell='<td style="white-space:nowrap;font-size:11px;"><span style="background:rgba(245,158,11,.12);color:#d97706;border-radius:5px;padding:2px 7px;font-weight:600;cursor:default;border:1px solid rgba(245,158,11,.3);" title="'+tipLines+'">🏅 '+c.execTagged.length+' ('+highestTier+')</span></td>';
+      execCell='<td style="white-space:nowrap;font-size:11px;"><span style="background:rgba(245,158,11,.12);color:#d97706;border-radius:5px;padding:2px 7px;font-weight:600;cursor:default;border:1px solid rgba(245,158,11,.3);" title="'+tipLines+'">🏅 '+c.execTagged.length+'</span></td>';
     }else{
       execCell='<td style="text-align:center;color:var(--text-muted);font-size:11px;">—</td>';
     }

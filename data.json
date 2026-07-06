@@ -4182,7 +4182,13 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18T18:19:27+05:30",
           "manager": "Jyothirmayee",
-          "execTagged": []
+          "execTagged": [
+            {
+              "name": "Kartikeya Pasumarti",
+              "title": "Customer Success Manager, Director",
+              "slackId": "WB8AB543W"
+            }
+          ]
         },
         {
           "caseNum": "473880936",
@@ -4200,7 +4206,13 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 18:20:28 IST",
           "manager": "Jyothirmayee",
-          "execTagged": []
+          "execTagged": [
+            {
+              "name": "Brandi Hubbard",
+              "title": "Customer Success Manager, Director",
+              "slackId": "WUKJKA5CL"
+            }
+          ]
         },
         {
           "caseNum": "473881015",
@@ -4237,7 +4249,13 @@
           "channelCreatedAt": "2026-06-18 18:33:52 IST",
           "manager": "Jyothirmayee",
           "bridgeCreatedAt": null,
-          "execTagged": []
+          "execTagged": [
+            {
+              "name": "Meghan Kennedy",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U02K6LB6HHN"
+            }
+          ]
         },
         {
           "caseNum": "473881209",
@@ -4256,7 +4274,18 @@
           "channelCreatedAt": "2026-06-18 18:42:55 IST",
           "manager": "Jyothirmayee",
           "bridgeCreatedAt": null,
-          "execTagged": []
+          "execTagged": [
+            {
+              "name": "Tony Ryan",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U01G5PESU2H"
+            },
+            {
+              "name": "Ryan Mughal",
+              "title": "RVP, Sales",
+              "slackId": "U01GR9KT76V"
+            }
+          ]
         },
         {
           "caseNum": "473881241",
@@ -4292,7 +4321,13 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 19:06:37 IST",
           "manager": "Jyothirmayee",
-          "execTagged": []
+          "execTagged": [
+            {
+              "name": "Aarti Jethwani",
+              "title": "RVP, Sales",
+              "slackId": "U04093RTA2F"
+            }
+          ]
         },
         {
           "caseNum": "473881358",
@@ -5063,7 +5098,18 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-22 14:09:06 IST",
           "bridgeCreatedAt": "2026-06-22 14:13:08 IST",
-          "execTagged": []
+          "execTagged": [
+            {
+              "name": "Marc Henderson",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U03BFG1RSNN"
+            },
+            {
+              "name": "Dana Drummond",
+              "title": "RVP, Sales",
+              "slackId": "U01GY0G1VS4"
+            }
+          ]
         },
         {
           "caseNum": "473905029",
@@ -5135,7 +5181,23 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-22 17:26:08 IST",
           "bridgeCreatedAt": "2026-06-22 19:05:14 IST",
-          "execTagged": []
+          "execTagged": [
+            {
+              "name": "Leahanne Merritt",
+              "title": "RVP, Customer Success Management",
+              "slackId": "U01FTQ9AQ15"
+            },
+            {
+              "name": "Cristina Schwartz",
+              "title": "Director, Customer Success Management",
+              "slackId": "U01G84T6YJW"
+            },
+            {
+              "name": "Payal Mahajan",
+              "title": "Director, Software Engineering",
+              "slackId": "U03A59ELV8C"
+            }
+          ]
         },
         {
           "caseNum": "473582644",
@@ -5152,7 +5214,23 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-22 18:15:51 IST",
-          "execTagged": []
+          "execTagged": [
+            {
+              "name": "Leahanne Merritt",
+              "title": "RVP, Customer Success Management",
+              "slackId": "U01FTQ9AQ15"
+            },
+            {
+              "name": "Cristina Schwartz",
+              "title": "Director, Customer Success Management",
+              "slackId": "U01G84T6YJW"
+            },
+            {
+              "name": "Payal Mahajan",
+              "title": "Director, Software Engineering",
+              "slackId": "U03A59ELV8C"
+            }
+          ]
         },
         {
           "caseNum": "473906098",
@@ -5170,7 +5248,13 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-22 18:23:11 IST",
           "bridgeCreatedAt": "2026-06-22 18:29:27 IST",
-          "execTagged": []
+          "execTagged": [
+            {
+              "name": "Anna Fitzgerald",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U01G840LSHY"
+            }
+          ]
         }
       ]
     },
@@ -6451,7 +6535,13 @@
           "oiDuration": "2h 7m",
           "channelCreatedAt": "2026-06-26 18:31:38 IST",
           "bridgeCreatedAt": "2026-06-26 18:39:46 IST",
-          "execTagged": []
+          "execTagged": [
+            {
+              "name": "Michael Dexter",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U01FTQPPDM5"
+            }
+          ]
         },
         {
           "caseNum": "473948237",
@@ -6539,7 +6629,18 @@
           "oiDuration": "2h 21m",
           "channelCreatedAt": "2026-06-26 19:17:34 IST",
           "bridgeCreatedAt": "2026-06-26 19:43:40 IST",
-          "execTagged": []
+          "execTagged": [
+            {
+              "name": "Edouard Petit",
+              "title": "RVP, Customer Success Management",
+              "slackId": "U01G85CQ37C"
+            },
+            {
+              "name": "Jean-Marc Bottin",
+              "title": "Customer Success Manager, Director",
+              "slackId": "U01GEKXGRPW"
+            }
+          ]
         },
         {
           "caseNum": "473948630",
@@ -6616,7 +6717,13 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": null,
-          "execTagged": []
+          "execTagged": [
+            {
+              "name": "Annie Yang",
+              "title": "Customer Success Manager, Senior Director",
+              "slackId": "U01G17Z2BFG"
+            }
+          ]
         },
         {
           "caseNum": "473951440",
@@ -6650,7 +6757,13 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": null,
-          "execTagged": []
+          "execTagged": [
+            {
+              "name": "Navin Shetty",
+              "title": "Director, Critical Incident Center",
+              "slackId": "WLG9ZQBR6"
+            }
+          ]
         },
         {
           "caseNum": "473951983",
@@ -6684,7 +6797,28 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": null,
-          "execTagged": []
+          "execTagged": [
+            {
+              "name": "Annie Yang",
+              "title": "Customer Success Manager, Senior Director",
+              "slackId": "U01G17Z2BFG"
+            },
+            {
+              "name": "Navin Shetty",
+              "title": "Director, Critical Incident Center",
+              "slackId": "WLG9ZQBR6"
+            },
+            {
+              "name": "Zach Abraham",
+              "title": "VP, Customer Success - Mulesoft",
+              "slackId": "U03E9G7B2FJ"
+            },
+            {
+              "name": "Royall Du",
+              "title": "Services Sales Solutions Director",
+              "slackId": "U033YQMNA4D"
+            }
+          ]
         },
         {
           "caseNum": "473952480",
