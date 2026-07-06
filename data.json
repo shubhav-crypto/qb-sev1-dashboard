@@ -1858,14 +1858,15 @@
           "manager": "Nikhil",
           "quality": "STRONG",
           "resolve": "24s",
-          "channelEngage": null,
+          "channelEngage": "No engagement",
           "isRed": true,
           "bridgeWithin15m": false,
           "resolvedAt": "2026-06-11 17:17:13 IST",
           "oiDuration": "1h 50m",
           "resolvedText": "Cx applied the workaround in production org and is out of impact for now.",
           "channelCreatedAt": "2026-06-11 15:26:50 IST",
-          "bridgeCreatedAt": "2026-06-11 15:44:26 IST"
+          "bridgeCreatedAt": "2026-06-11 15:44:26 IST",
+          "bridgeNA": "cic-disengaged"
         },
         {
           "caseNum": "473755111",
@@ -1917,7 +1918,8 @@
           "oiDuration": "1h 2m",
           "resolvedText": "External users confirmed issue no longer happening. Customer gave consent to close.",
           "channelCreatedAt": "2026-06-11 00:40:43 IST",
-          "bridgeCreatedAt": "2026-06-11 00:54:12 IST"
+          "bridgeCreatedAt": "2026-06-11 00:54:12 IST",
+          "bridgeNA": "mci"
         },
         {
           "caseNum": "473743597",
@@ -1934,7 +1936,8 @@
           "oiDuration": "3h 36m",
           "resolvedText": "incident has been resolved and the customer is out of impact",
           "channelCreatedAt": "2026-06-11 17:51:51 IST",
-          "bridgeCreatedAt": "2026-06-11 18:14:37 IST"
+          "bridgeCreatedAt": "2026-06-11 18:14:37 IST",
+          "bridgeNA": "mci"
         },
         {
           "caseNum": "473756525",
@@ -1968,7 +1971,8 @@
           "oiDuration": "2h 10m",
           "resolvedText": "Issue is resolved as per the bridge. Customer testing confirmed.",
           "channelCreatedAt": "2026-06-11 18:29:12 IST",
-          "bridgeCreatedAt": "2026-06-11 18:39:12 IST"
+          "bridgeCreatedAt": "2026-06-11 18:39:12 IST",
+          "bridgeNA": "mci"
         },
         {
           "caseNum": "473744459",
@@ -1985,7 +1989,8 @@
           "oiDuration": "50m",
           "resolvedText": "The customer is no longer impacted, agents able to connect with end users on chat",
           "channelCreatedAt": "2026-06-11 02:15:54 IST",
-          "bridgeCreatedAt": "2026-06-11 02:24:13 IST"
+          "bridgeCreatedAt": "2026-06-11 02:24:13 IST",
+          "bridgeNA": "mci"
         },
         {
           "caseNum": "473756810",
@@ -2003,7 +2008,8 @@
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-11 18:36:49 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-11 19:07:45 IST"
+          "bridgeCreatedAt": "2026-06-11 19:07:45 IST",
+          "bridgeNA": "mci"
         },
         {
           "caseNum": "473756818",
@@ -2022,7 +2028,8 @@
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-11 18:37:22 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": null
+          "bridgeCreatedAt": null,
+          "bridgeNA": "mci"
         },
         {
           "caseNum": "473757516",
@@ -3043,7 +3050,8 @@
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from Sev1 start time (OrgCS))",
           "channelCreatedAt": "2026-06-11 02:15:54 IST",
           "oiSource": "orgcs",
-          "bridgeCreatedAt": "2026-06-11 02:24:13 IST"
+          "bridgeCreatedAt": "2026-06-11 02:24:13 IST",
+          "bridgeNA": "mci"
         },
         {
           "caseNum": "473751670",
