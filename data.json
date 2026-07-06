@@ -6103,7 +6103,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-30"
+          "channelCreatedAt": "2026-06-30 13:06:14 IST",
+          "bridgeCreatedAt": "2026-06-30 13:14:42 IST"
         },
         {
           "caseNum": "473973865",
@@ -6151,7 +6152,7 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-30"
+          "channelCreatedAt": "2026-06-30 14:36:18 IST"
         },
         {
           "caseNum": "473974174",
@@ -6167,7 +6168,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-30"
+          "channelCreatedAt": "2026-06-30 14:32:00 IST",
+          "bridgeCreatedAt": "2026-06-30 15:19:29 IST"
         },
         {
           "caseNum": "473974668",
@@ -6183,7 +6185,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-30"
+          "channelCreatedAt": "2026-06-30 15:27:32 IST",
+          "bridgeCreatedAt": "2026-06-30 15:32:32 IST"
         },
         {
           "caseNum": "473975556",
@@ -6199,7 +6202,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-30"
+          "channelCreatedAt": "2026-06-30 17:16:24 IST",
+          "bridgeCreatedAt": "2026-06-30 17:34:35 IST"
         },
         {
           "caseNum": "473975565",
@@ -6215,7 +6219,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-30"
+          "channelCreatedAt": "2026-06-30 17:17:35 IST",
+          "bridgeCreatedAt": "2026-06-30 17:32:12 IST"
         },
         {
           "caseNum": "473975709",
@@ -6231,7 +6236,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-30"
+          "channelCreatedAt": "2026-06-30 17:35:23 IST",
+          "bridgeCreatedAt": "2026-06-30 17:45:31 IST"
         },
         {
           "caseNum": "473976143",
@@ -6247,7 +6253,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-30"
+          "channelCreatedAt": "2026-06-30 18:25:38 IST",
+          "bridgeCreatedAt": "2026-06-30 18:32:35 IST"
         },
         {
           "caseNum": "473976189",
@@ -6263,7 +6270,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-30"
+          "channelCreatedAt": "2026-06-30 18:31:20 IST",
+          "bridgeCreatedAt": "2026-06-30 18:46:18 IST"
         },
         {
           "caseNum": "473976297",
@@ -6279,7 +6287,8 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-30"
+          "channelCreatedAt": "2026-06-30 18:41:38 IST",
+          "bridgeCreatedAt": "2026-06-30 19:07:54 IST"
         }
       ]
     },
@@ -6311,8 +6320,7 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-01 11:47:18 IST",
-          "bridgeCreatedAt": "2026-07-01 12:16:03 IST"
+          "channelCreatedAt": "2026-07-01 12:35:36 IST"
         },
         {
           "caseNum": "473907175",
@@ -6360,8 +6368,7 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-01 14:58:30 IST",
-          "bridgeCreatedAt": "2026-07-01 15:09:37 IST"
+          "channelCreatedAt": "2026-07-01 14:58:30 IST"
         },
         {
           "caseNum": "473914810",
@@ -6393,8 +6400,7 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-01 17:18:11 IST",
-          "bridgeCreatedAt": "2026-07-01 17:24:54 IST"
+          "channelCreatedAt": "2026-07-01 17:18:11 IST"
         },
         {
           "caseNum": "473987070",
@@ -6410,8 +6416,7 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-01 17:50:32 IST",
-          "bridgeCreatedAt": "2026-07-01 18:01:42 IST"
+          "channelCreatedAt": "2026-07-01 17:50:32 IST"
         },
         {
           "caseNum": "473987105",
@@ -6443,8 +6448,7 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-01 19:07:22 IST",
-          "bridgeCreatedAt": "2026-07-01 19:18:57 IST"
+          "channelCreatedAt": "2026-07-01 19:07:22 IST"
         },
         {
           "caseNum": "473987822",
@@ -6460,8 +6464,7 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-01 19:09:04 IST",
-          "bridgeCreatedAt": "2026-07-01 19:16:07 IST"
+          "channelCreatedAt": "2026-07-01 19:09:04 IST"
         },
         {
           "caseNum": "473988020",
@@ -6477,8 +6480,7 @@
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
-          "channelCreatedAt": "2026-07-01 19:28:21 IST",
-          "bridgeCreatedAt": "2026-07-01 19:42:44 IST"
+          "channelCreatedAt": "2026-07-01 19:28:21 IST"
         },
         {
           "caseNum": "473938782",
