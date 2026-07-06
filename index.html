@@ -740,7 +740,7 @@ function renderKPIs(){
     .filter(function(v){return v!==null&&v>=0;});
   const bridgeAvgSecs=bridgeDeltas.length?Math.round(bridgeDeltas.reduce(function(a,b){return a+b;},0)/bridgeDeltas.length):null;
   document.getElementById('kpiBridgeAvg').textContent=bridgeAvgSecs!==null?fmtBridgeSecs(bridgeAvgSecs):'—';
-  document.getElementById('kpiBridgeAvgSub').textContent=bridgeDeltas.length?bridgeDeltas.length+' case'+(bridgeDeltas.length!==1?'s':'')+' with bridge data':'no bridge data yet';
+  document.getElementById('kpiBridgeAvgSub').textContent=bridgeDeltas.length?'channel creation → bridge start':'no bridge data yet';
 
   updateKpiFilterLabel();
 }
