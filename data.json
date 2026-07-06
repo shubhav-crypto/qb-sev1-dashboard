@@ -314,7 +314,7 @@
           "timeIST": "12:52 PM",
           "quality": "MODERATE",
           "resolve": "23s",
-          "channelEngage": null,
+          "channelEngage": "21m 10s",
           "isRed": true,
           "bridgeWithin15m": false,
           "resolvedAt": "2026-06-02 16:37:20 IST",
