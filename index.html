@@ -1293,7 +1293,7 @@ function buildDayPanel(day,container){
   html+='<th style="white-space:nowrap;cursor:help;" title="Account has a Red Account record in OrgCS">Red Acct</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Actual time from Sev1 channel creation to bridge start. Computed from bridgeCreatedAt−channelCreatedAt (or explicit bridgeTime). Green = within 15 min, Red = over 15 min. Dash = no timestamp data.">Bridge time</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Case notes or callout context">Notes</th>';
-  html+='<th style="white-space:nowrap;cursor:help;" title="Director, Senior Director, VP or SVP tagged in this Sev1 channel">Dir+</th>';
+  html+='<th style="white-space:nowrap;cursor:help;" title="Director and above tagged in this Sev1 channel">Director+ Tagged</th>';
   html+='</tr></thead><tbody>';
   const mciSet=mciCases[day.date]||[];
   cases.forEach(function(c,i){
@@ -1348,8 +1348,11 @@ function buildDayPanel(day,container){
       :'<td style="color:#cbd5e1;font-size:11px;text-align:center;">—</td>');
     let execCell;
     if(c.execTagged&&c.execTagged.length>0){
-      const tipLines=c.execTagged.map(function(e){return e.name+' ('+e.title+')';}).join('\n');
-      execCell='<td style="white-space:nowrap;font-size:11px;"><span style="background:rgba(245,158,11,.12);color:#d97706;border-radius:5px;padding:2px 7px;font-weight:600;cursor:default;border:1px solid rgba(245,158,11,.3);" title="'+tipLines+'">🏅 '+c.execTagged.length+'</span></td>';
+      const nameList=c.execTagged.map(function(e){
+        return '<div style="white-space:nowrap;margin-bottom:2px;"><span style="font-weight:600;color:#92400e;">'+e.name+'</span>'
+          +'<span style="color:#a16207;font-size:10px;"> · '+e.title+'</span></div>';
+      }).join('');
+      execCell='<td style="font-size:11px;padding:6px 10px;min-width:200px;max-width:280px;">'+nameList+'</td>';
     }else{
       execCell='<td style="text-align:center;color:var(--text-muted);font-size:11px;">—</td>';
     }
