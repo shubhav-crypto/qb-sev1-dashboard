@@ -478,6 +478,18 @@ function makeNoEngHtml(caseNum,bridgeNA){
   if(bridgeNA==='mci'){
     return`<td style="white-space:nowrap;font-size:12px;"><span class="no-eng-tip" data-reason="${safe}" style="background:rgba(124,77,255,.10);color:#a78bfa;border-radius:5px;padding:2px 7px;font-weight:600;cursor:default;border-bottom:1px dashed rgba(124,77,255,.4);">⚡ MCI</span></td>`;
   }
+  if(bridgeNA==='resolved'){
+    return`<td style="white-space:nowrap;font-size:12px;"><span class="no-eng-tip" data-reason="${safe}" style="background:rgba(22,163,74,.10);color:#16a34a;border-radius:5px;padding:2px 7px;font-weight:600;cursor:default;border-bottom:1px dashed rgba(22,163,74,.4);">✅ Resolved</span></td>`;
+  }
+  if(bridgeNA==='outside-window'){
+    return`<td style="white-space:nowrap;font-size:12px;"><span class="no-eng-tip" data-reason="${safe}" style="background:rgba(100,116,139,.10);color:#64748b;border-radius:5px;padding:2px 7px;font-weight:600;cursor:default;border-bottom:1px dashed rgba(100,116,139,.4);">🕐 Outside window</span></td>`;
+  }
+  if(bridgeNA==='no-channel'){
+    return`<td style="white-space:nowrap;font-size:12px;"><span class="no-eng-tip" data-reason="${safe}" style="background:rgba(100,116,139,.10);color:#64748b;border-radius:5px;padding:2px 7px;font-weight:600;cursor:default;border-bottom:1px dashed rgba(100,116,139,.4);">🔇 No channel</span></td>`;
+  }
+  if(bridgeNA==='other'){
+    return`<td style="white-space:nowrap;font-size:12px;"><span class="no-eng-tip" data-reason="${safe}" style="background:rgba(100,116,139,.10);color:#64748b;border-radius:5px;padding:2px 7px;font-weight:600;cursor:default;border-bottom:1px dashed rgba(100,116,139,.4);">📎 Other</span></td>`;
+  }
   return`<td style="white-space:nowrap;font-size:12px;"><span class="no-eng-tip" data-reason="${safe}" style="background:rgba(220,38,38,.12);color:#dc2626;border-radius:5px;padding:2px 7px;font-weight:600;cursor:default;border-bottom:1px dashed rgba(220,38,38,.5);">🔴 No engagement</span></td>`;
 }
 function rtCell(val,noColor,isEngage,caseNum,bridgeNA){
@@ -758,7 +770,9 @@ function renderKPIs(){
   document.getElementById('kpiBridgeAvg').textContent=bridgeAvgSecs!==null?fmtBridgeSecs(bridgeAvgSecs):'—';
   document.getElementById('kpiBridgeAvgSub').textContent=bridgeDeltas.length?'channel creation → bridge start':'no bridge data yet';
 
-  // QB Engage Compliance — new channels only, LAP & throttle excluded from denominator
+  // QB Engage Compliance — new channels only
+  // Excluded from denominator: lap, throttle, mci, resolved, outside-window, no-channel, other, howto, cic-disengaged(no-impact)
+  const EXCLUDED_CATEGORIES=['lap','throttle','mci','resolved','outside-window','no-channel','other','howto','cic-disengaged','sandbox','monitoring'];
   const allNewChannels=wdays.flatMap(function(d){
     return d.cases.filter(function(c){
       if(!c.channelCreatedAt)return false;
@@ -767,29 +781,32 @@ function renderKPIs(){
   });
   const lapExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='lap';}).length;
   const throttleExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='throttle';}).length;
-  const allCasesFlat=allNewChannels.filter(function(c){return c.bridgeNA!=='lap'&&c.bridgeNA!=='throttle';});
+  const mciExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='mci';}).length;
+  const resolvedExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='resolved';}).length;
+  const outsideExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='outside-window';}).length;
+  const nochanExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='no-channel';}).length;
+  const howtoExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='howto';}).length;
+  const otherExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='other';}).length;
+  const allCasesFlat=allNewChannels.filter(function(c){return !EXCLUDED_CATEGORIES.includes(c.bridgeNA);});
   const engagedCount=allCasesFlat.filter(function(c){return c.channelEngage&&c.channelEngage!=='No engagement';}).length;
   const engageTotal=allCasesFlat.length;
-  const notEngaged=allCasesFlat.filter(function(c){return !c.channelEngage||c.channelEngage==='No engagement';});
-  const howtoNoEngage=notEngaged.filter(function(c){return c.bridgeNA==='howto';}).length;
-  const mciNoEngage=notEngaged.filter(function(c){return c.bridgeNA==='mci';}).length;
-  const otherNoEngage=notEngaged.length-howtoNoEngage-mciNoEngage;
   const engagePct=engageTotal>0?Math.round(engagedCount/engageTotal*100):null;
   const engageEl=document.getElementById('kpiEngageCompliance');
   const engageSubEl=document.getElementById('kpiEngageComplianceSub');
   const engageThrottleEl=document.getElementById('kpiEngageComplianceThrottle');
   engageEl.textContent=engagePct!==null?engagePct+'%':'—';
-  engageSubEl.textContent=engagePct!==null?engagedCount+'/'+engageTotal+' cases (excl. '+lapExcluded+' LAP · '+throttleExcluded+' throttle)':'no data yet';
+  engageSubEl.textContent=engagePct!==null?engagedCount+'/'+engageTotal+' actionable cases':'no data yet';
   if(engageThrottleEl){
-    if(engagePct!==null&&notEngaged.length>0){
-      const parts=[];
-      if(howtoNoEngage)parts.push(howtoNoEngage+' how-to');
-      if(mciNoEngage)parts.push(mciNoEngage+' MCI');
-      if(otherNoEngage)parts.push(otherNoEngage+' other');
-      engageThrottleEl.textContent=parts.length?'not engaged: '+parts.join(' · '):'';
-    }else{
-      engageThrottleEl.textContent='';
-    }
+    const excParts=[];
+    if(lapExcluded)excParts.push(lapExcluded+' LAP');
+    if(throttleExcluded)excParts.push(throttleExcluded+' throttle');
+    if(mciExcluded)excParts.push(mciExcluded+' MCI');
+    if(resolvedExcluded)excParts.push(resolvedExcluded+' resolved');
+    if(outsideExcluded)excParts.push(outsideExcluded+' outside window');
+    if(howtoExcluded)excParts.push(howtoExcluded+' how-to');
+    if(nochanExcluded)excParts.push(nochanExcluded+' no channel');
+    if(otherExcluded)excParts.push(otherExcluded+' other');
+    engageThrottleEl.textContent=excParts.length?'excl: '+excParts.join(' · '):'';
   }
   const engageKpi=engageEl.closest('.kpi');
   if(engagePct===null){engageKpi.className='kpi green';}
