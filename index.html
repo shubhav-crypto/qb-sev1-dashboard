@@ -834,7 +834,8 @@ function renderKPIs(){
   else{engageKpi.className='kpi needs';}
 
   // Director+ Tagged KPI
-  const allCases=wdays.flatMap(function(d){return d.cases;});
+  // Director+ count uses ALL days (weekday + weekend) — exec presence tracked across full history
+  const allCases=DB.days.flatMap(function(d){return d.cases;});
   const execTaggedCases=allCases.filter(function(c){return c.execTagged&&c.execTagged.length>0;});
   const execTaggedCount=execTaggedCases.length;
   const totalExecPeople=execTaggedCases.reduce(function(sum,c){return sum+(c.execTagged?c.execTagged.length:0);},0);
@@ -843,8 +844,8 @@ function renderKPIs(){
   const execSubEl=document.getElementById('kpiExecTaggedSub');
   const execDetailEl=document.getElementById('kpiExecTaggedDetail');
   execEl.textContent=execTaggedCount>0?execTaggedCount:'0';
-  execSubEl.textContent=execTaggedCount>0?execTaggedCount+' case'+(execTaggedCount!==1?'s':'')+', '+totalExecPeople+' exec'+(totalExecPeople!==1?'s':''):'no Director+ found yet';
-  if(execDetailEl){execDetailEl.textContent=execTaggedCount>0?'Director and above tagged':'';}
+  execSubEl.textContent=execTaggedCount>0?'cases with Dir+ in channel':'no Director+ found yet';
+  if(execDetailEl){execDetailEl.textContent='';}
 
   updateKpiFilterLabel();
 }
