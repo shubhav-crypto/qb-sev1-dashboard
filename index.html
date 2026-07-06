@@ -1063,7 +1063,7 @@ function buildDayPanel(day,container){
   html+='<th style="white-space:nowrap;cursor:help;" title="Time from PD alert to QB Manager Resolved">Alert Resolve</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Time from Sev1 channel creation to QB Manager first text">Channel Engage</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Account has a Red Account record in OrgCS">Red Acct</th>';
-  html+='<th style="white-space:nowrap;cursor:help;" title="Time from Sev1 channel creation to bridge start. Computed from bridgeCreatedAt−channelCreatedAt when available; falls back to bridgeTime string or ≤15m/&gt;15m label. Green = within 15 min, Red = over 15 min.">Bridge ≤15m</th>';
+  html+='<th style="white-space:nowrap;cursor:help;" title="Actual time from Sev1 channel creation to bridge start. Computed from bridgeCreatedAt−channelCreatedAt (or explicit bridgeTime). Green = within 15 min, Red = over 15 min. Dash = no timestamp data.">Bridge time</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Case notes or callout context">Notes</th>';
   html+='</tr></thead><tbody>';
   const mciSet=mciCases[day.date]||[];
@@ -1087,7 +1087,7 @@ function buildDayPanel(day,container){
       const col=NA_TEXT[c.bridgeNA]||'#94a3b8';
       bridgeCell='<td style="white-space:nowrap;font-size:11px;"><span style="background:'+bg+';color:'+col+';border-radius:5px;padding:2px 7px;border:1px solid '+border+';" title="'+label+' case">'+label+'</span></td>';
     }else if(c.bridgeWithin15m===true||c.bridgeWithin15m===false){
-      // Prefer explicit bridgeTime string, then compute from bridgeCreatedAt-channelCreatedAt
+      // Compute actual time: prefer explicit bridgeTime string, then bridgeCreatedAt-channelCreatedAt
       const rawTime=c.bridgeTime||null;
       const deltaSecs=rawTime?parseSeconds(rawTime):bridgeDeltaSecs(c);
       const displayTime=rawTime||(deltaSecs!==null?fmtBridgeSecs(deltaSecs):null);
@@ -1096,12 +1096,8 @@ function buildDayPanel(day,container){
         const bColor=within?{bg:'rgba(22,163,74,.12)',color:'#16a34a',icon:'🟢'}:{bg:'rgba(220,38,38,.12)',color:'#dc2626',icon:'🔴'};
         bridgeCell='<td style="white-space:nowrap;font-size:12px;"><span style="background:'+bColor.bg+';color:'+bColor.color+';border-radius:5px;padding:2px 7px;font-weight:600;" title="Bridge created '+displayTime+' after channel creation">'+bColor.icon+' '+displayTime+'</span></td>';
       }else{
-        // No timestamp data — show ≤15m or >15m text badge (never bare true/false)
-        const within=c.bridgeWithin15m===true;
-        const bColor=within?{bg:'rgba(22,163,74,.12)',color:'#16a34a',icon:'🟢'}:{bg:'rgba(220,38,38,.12)',color:'#dc2626',icon:'🔴'};
-        const label=within?'≤15m':'>15m';
-        const tip=within?'Bridge initiated within 15 min of channel creation':'Bridge not initiated within 15 min of channel creation';
-        bridgeCell='<td style="white-space:nowrap;font-size:12px;"><span style="background:'+bColor.bg+';color:'+bColor.color+';border-radius:5px;padding:2px 7px;font-weight:600;" title="'+tip+'">'+bColor.icon+' '+label+'</span></td>';
+        // No timestamp data available — show dash
+        bridgeCell='<td style="text-align:center;color:#94a3b8;font-size:11px;">—</td>';
       }
     }else{
       // null — bridge data not captured; categorise by whether CIC engaged at all
