@@ -1935,7 +1935,8 @@
           "resolvedAt": "2026-06-11 03:06:36 IST",
           "oiDuration": "50m",
           "resolvedText": "The customer is no longer impacted, agents able to connect with end users on chat",
-          "channelCreatedAt": "2026-06-11 02:15:53 IST"
+          "channelCreatedAt": "2026-06-11 02:15:54 IST",
+          "bridgeCreatedAt": "2026-06-11 02:24:13 IST"
         },
         {
           "caseNum": "473756810",
@@ -2602,7 +2603,8 @@
           "resolvedAt": "2026-06-15 13:50:00 IST",
           "resolvedText": "issue in sandbox not production. please feel free to dis-engage",
           "oiDuration": "55m",
-          "channelCreatedAt": "2026-06-15 12:54:25 IST"
+          "channelCreatedAt": "2026-06-15 12:54:25 IST",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473787849",
@@ -2628,11 +2630,12 @@
           "resolve": "21s",
           "channelEngage": "22m 10s",
           "isRed": true,
-          "bridgeWithin15m": false,
+          "bridgeWithin15m": true,
           "resolvedAt": "2026-06-15 14:33:33 IST",
           "resolvedText": "This is not sev 1 lower down severity to 2 no help needed from cic",
           "oiDuration": "42m",
-          "channelCreatedAt": "2026-06-15 13:51:09 IST"
+          "channelCreatedAt": "2026-06-15 13:51:09 IST",
+          "bridgeCreatedAt": "2026-06-15 13:59:41 IST"
         },
         {
           "caseNum": "473813208",
@@ -2647,7 +2650,8 @@
           "resolvedAt": "2026-06-15 15:34:12 IST",
           "resolvedText": "As the issue is resolved and the customer is out of impact, CIC will disengage.",
           "oiDuration": "1h 43m",
-          "channelCreatedAt": "2026-06-15 13:51:00 IST"
+          "channelCreatedAt": "2026-06-15 13:51:56 IST",
+          "bridgeCreatedAt": "2026-06-15 14:09:08 IST"
         },
         {
           "caseNum": "473813340",
@@ -2662,7 +2666,8 @@
           "resolvedAt": "2026-06-15 15:28:09 IST",
           "resolvedText": "the issue is resolved using change sets.",
           "oiDuration": "1h 28m",
-          "channelCreatedAt": "2026-06-15 14:00:00 IST"
+          "channelCreatedAt": "2026-06-15 14:00:42 IST",
+          "bridgeCreatedAt": "2026-06-15 14:33:55 IST"
         },
         {
           "caseNum": "473813531",
@@ -2677,7 +2682,8 @@
           "resolvedAt": "2026-06-15 19:00:32 IST",
           "resolvedText": "It's ok now, thanks",
           "oiDuration": "4h 50m",
-          "channelCreatedAt": "2026-06-15 14:10:00 IST"
+          "channelCreatedAt": "2026-06-15 14:10:20 IST",
+          "bridgeCreatedAt": "2026-06-15 14:28:07 IST"
         },
         {
           "caseNum": "473813727",
@@ -2692,7 +2698,8 @@
           "resolvedAt": "2026-06-15 15:21:32 IST",
           "resolvedText": "Issue is not reproducible from cx end.",
           "oiDuration": "59m",
-          "channelCreatedAt": "2026-06-15 14:22:00 IST"
+          "channelCreatedAt": "2026-06-15 14:22:07 IST",
+          "bridgeCreatedAt": "2026-06-15 14:29:49 IST"
         },
         {
           "caseNum": "473814346",
@@ -2707,7 +2714,8 @@
           "resolvedAt": "2026-06-15 16:08:58 IST",
           "resolvedText": "The customer is seeing an improvement in the org's performance",
           "oiDuration": "1h 9m",
-          "channelCreatedAt": "2026-06-15 14:59:00 IST"
+          "channelCreatedAt": "2026-06-15 14:59:45 IST",
+          "bridgeCreatedAt": "2026-06-15 15:34:05 IST"
         },
         {
           "caseNum": "473814469",
@@ -2722,7 +2730,8 @@
           "resolvedAt": "2026-06-15 15:32:14 IST",
           "resolvedText": "AutoThrottle (EXPIRED)",
           "oiDuration": "25m",
-          "channelCreatedAt": "2026-06-15 15:07:00 IST"
+          "channelCreatedAt": "2026-06-15 15:07:03 IST",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473771164",
@@ -2751,8 +2760,9 @@
           "resolvedAt": null,
           "resolvedText": "Still open — no Sev1 end time recorded (Status: Working)",
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-15 16:13:33 IST",
-          "oiSource": "orgcs"
+          "channelCreatedAt": "2026-06-15 16:13:34 IST",
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": "2026-06-15 16:33:48 IST"
         },
         {
           "caseNum": "473815509",
@@ -2766,7 +2776,8 @@
           "resolvedAt": "2026-06-15 21:07:59 IST",
           "resolvedText": "Customer has stated that the issue is now resolved.",
           "oiDuration": "4h 50m",
-          "channelCreatedAt": "2026-06-15 16:17:00 IST"
+          "channelCreatedAt": "2026-06-15 16:15:15 IST",
+          "bridgeCreatedAt": "2026-06-15 17:07:35 IST"
         },
         {
           "caseNum": "473813759",
@@ -2776,11 +2787,12 @@
           "quality": "PENDING",
           "channelEngage": "2m 41s",
           "isRed": false,
-          "bridgeWithin15m": false,
+          "bridgeWithin15m": true,
           "resolvedAt": "2026-06-15 17:40:24 IST",
           "resolvedText": "The customer downgraded the severity.",
           "oiDuration": "31m",
-          "channelCreatedAt": "2026-06-15 17:09:00 IST"
+          "channelCreatedAt": "2026-06-15 17:09:43 IST",
+          "bridgeCreatedAt": "2026-06-15 17:22:17 IST"
         },
         {
           "caseNum": "473816757",
@@ -2794,8 +2806,9 @@
           "resolvedAt": "2026-06-16 05:41:21 IST",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Need More Information; measured from channel creation)",
           "oiDuration": "11h 55m",
-          "channelCreatedAt": "2026-06-15 17:46:06 IST",
-          "oiSource": "orgcs"
+          "channelCreatedAt": "2026-06-15 17:46:07 IST",
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": "2026-06-15 18:08:53 IST"
         },
         {
           "caseNum": "473816772",
@@ -2809,7 +2822,8 @@
           "resolvedAt": "2026-06-15 18:23:20 IST",
           "resolvedText": "customer confirmed no revenue loss or production outage",
           "oiDuration": "35m",
-          "channelCreatedAt": "2026-06-15 17:48:00 IST"
+          "channelCreatedAt": "2026-06-15 17:47:06 IST",
+          "bridgeCreatedAt": "2026-06-15 18:12:10 IST"
         },
         {
           "caseNum": "473771388",
@@ -2823,7 +2837,8 @@
           "resolvedAt": "2026-06-16 11:19:10 IST",
           "resolvedText": "no further reports of latency from their users since this morning",
           "oiDuration": "17h 28m",
-          "channelCreatedAt": "2026-06-15 17:51:00 IST"
+          "channelCreatedAt": "2026-06-15 17:50:27 IST",
+          "bridgeCreatedAt": "2026-06-15 18:16:56 IST"
         },
         {
           "caseNum": "473816943",
@@ -2837,7 +2852,8 @@
           "resolvedAt": "2026-06-15 19:20:12 IST",
           "resolvedText": "Issue is mitigated. Disabled the BT perm: Authentication: Disable OAuth",
           "oiDuration": "1h 23m",
-          "channelCreatedAt": "2026-06-15 17:57:00 IST"
+          "channelCreatedAt": "2026-06-15 17:57:32 IST",
+          "bridgeCreatedAt": "2026-06-15 18:14:19 IST"
         },
         {
           "caseNum": "473817788",
@@ -2851,8 +2867,9 @@
           "resolvedAt": "2026-06-15 22:40:42 IST",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Need More Information; measured from channel creation)",
           "oiDuration": "3h 48m",
-          "channelCreatedAt": "2026-06-15 18:52:37 IST",
-          "oiSource": "orgcs"
+          "channelCreatedAt": "2026-06-15 18:52:38 IST",
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473817800",
@@ -2862,11 +2879,12 @@
           "quality": "PENDING",
           "channelEngage": "10m 58s",
           "isRed": false,
-          "bridgeWithin15m": false,
+          "bridgeWithin15m": true,
           "resolvedAt": "2026-06-15 19:38:36 IST",
           "resolvedText": "There is no issue — they are receiving and able to send emails.",
           "oiDuration": "28m",
-          "channelCreatedAt": "2026-06-15 19:10:00 IST"
+          "channelCreatedAt": "2026-06-15 18:53:34 IST",
+          "bridgeCreatedAt": "2026-06-15 19:06:07 IST"
         },
         {
           "caseNum": "473817982",
@@ -2876,11 +2894,12 @@
           "quality": "PENDING",
           "channelEngage": "11m 10s",
           "isRed": false,
-          "bridgeWithin15m": false,
+          "bridgeWithin15m": true,
           "resolvedAt": "2026-06-16 03:43:23 IST",
           "resolvedText": "issue is resolved; now able to see all queue in transfer option",
           "oiDuration": "8h 15m",
-          "channelCreatedAt": "2026-06-15 19:28:00 IST"
+          "channelCreatedAt": "2026-06-15 19:04:24 IST",
+          "bridgeCreatedAt": "2026-06-15 19:16:22 IST"
         }
       ],
       "eodDone": true,
@@ -2907,11 +2926,12 @@
           "resolve": "16s",
           "channelEngage": "4m 34s",
           "isRed": false,
-          "bridgeWithin15m": true,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-16 13:12:13 IST",
           "resolvedText": "user confirmed New buttons now appearing correctly in Production",
           "oiDuration": "28m",
-          "channelCreatedAt": "2026-06-16 12:44:00 IST"
+          "channelCreatedAt": "2026-06-16 12:44:38 IST",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473833219",
@@ -2926,7 +2946,8 @@
           "resolvedAt": "2026-06-16 15:23:51 IST",
           "resolvedText": "they can login manually after session timeout — CIC disengaging",
           "oiDuration": "1h 40m",
-          "channelCreatedAt": "2026-06-16 13:43:00 IST"
+          "channelCreatedAt": "2026-06-16 13:43:35 IST",
+          "bridgeCreatedAt": "2026-06-16 13:49:07 IST"
         },
         {
           "caseNum": "473576862",
@@ -2957,8 +2978,9 @@
           "resolvedAt": "2026-06-16 20:06:13 IST",
           "oiDuration": "6h 8m",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from Sev1 start time (OrgCS))",
-          "channelCreatedAt": "2026-06-16 00:00:00 IST",
-          "oiSource": "orgcs"
+          "channelCreatedAt": "2026-06-11 02:15:54 IST",
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": "2026-06-11 02:24:13 IST"
         },
         {
           "caseNum": "473751670",
@@ -2969,11 +2991,12 @@
           "resolve": "14s",
           "channelEngage": "3m 48s",
           "isRed": false,
-          "bridgeWithin15m": true,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-16 17:57:59 IST",
           "resolvedText": "issue is intermittent — CIC can disengage for now",
           "oiDuration": "3h 42m",
-          "channelCreatedAt": "2026-06-16 14:15:00 IST"
+          "channelCreatedAt": "2026-06-16 14:15:02 IST",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473702574",
@@ -2988,7 +3011,8 @@
           "resolvedAt": "2026-06-16 23:35:09 IST",
           "oiDuration": "8h 29m",
           "resolvedText": "Chandralekha M marked this case as Sev1 Mitigated",
-          "channelCreatedAt": "2026-06-16 15:05:42 IST"
+          "channelCreatedAt": "2026-06-16 15:05:42 IST",
+          "bridgeCreatedAt": "2026-06-16 15:13:40 IST"
         },
         {
           "caseNum": "473834963",
@@ -2999,12 +3023,13 @@
           "resolve": "14s",
           "channelEngage": "1m 36s",
           "isRed": false,
-          "bridgeWithin15m": true,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-16 20:37:32 IST",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Need More Information; measured from channel creation)",
           "oiDuration": "5h 9m",
-          "channelCreatedAt": "2026-06-16 15:28:21 IST",
-          "oiSource": "orgcs"
+          "channelCreatedAt": "2026-06-16 15:28:22 IST",
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473835308",
@@ -3015,11 +3040,12 @@
           "resolve": "15s",
           "channelEngage": "5m",
           "isRed": false,
-          "bridgeWithin15m": true,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-16 20:35:18 IST",
           "resolvedText": "Yes. CIC can disengage. We will reengage again if necessary.",
           "oiDuration": "4h 44m",
-          "channelCreatedAt": "2026-06-16 15:50:33 IST"
+          "channelCreatedAt": "2026-06-16 15:50:34 IST",
+          "bridgeCreatedAt": "2026-06-16 16:12:51 IST"
         },
         {
           "caseNum": "473835820",
@@ -3030,12 +3056,13 @@
           "resolve": "31s",
           "channelEngage": "1m",
           "isRed": false,
-          "bridgeWithin15m": true,
+          "bridgeWithin15m": false,
           "resolvedAt": null,
           "resolvedText": "Still open — no Sev1 end time recorded (Status: Working)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 16:26:04 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": "2026-06-16 16:42:38 IST"
         },
         {
           "caseNum": "473836077",
@@ -3050,8 +3077,9 @@
           "resolvedAt": null,
           "resolvedText": "Still open — no Sev1 end time recorded (Status: Working)",
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-16 16:42:34 IST",
-          "oiSource": "orgcs"
+          "channelCreatedAt": "2026-06-16 16:42:35 IST",
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": "2026-06-16 16:53:21 IST"
         },
         {
           "caseNum": "473553588",
@@ -3062,11 +3090,12 @@
           "resolve": "9s",
           "channelEngage": "No engagement",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-17 13:16:06 IST",
           "oiDuration": "20h 29m",
           "resolvedText": "gate is disabled now since the issue is fixed...informed this to the customer",
-          "channelCreatedAt": "2026-06-16 16:46:18 IST"
+          "channelCreatedAt": "2026-06-16 16:46:19 IST",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473837041",
@@ -3077,12 +3106,13 @@
           "resolve": "17s",
           "channelEngage": "1m",
           "isRed": false,
-          "bridgeWithin15m": true,
+          "bridgeWithin15m": false,
           "resolvedAt": null,
           "resolvedText": "Still open — no Sev1 end time recorded (Status: Need More Information)",
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-16 17:49:40 IST",
-          "oiSource": "orgcs"
+          "channelCreatedAt": "2026-06-16 17:49:41 IST",
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473837116",
@@ -3093,11 +3123,12 @@
           "resolve": "18s",
           "channelEngage": "2m",
           "isRed": false,
-          "bridgeWithin15m": true,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-16 18:52:37 IST",
           "resolvedText": "As the issue has been resolved, CIC will disengage",
           "oiDuration": "58m",
-          "channelCreatedAt": "2026-06-16 17:54:00 IST"
+          "channelCreatedAt": "2026-06-16 17:54:41 IST",
+          "bridgeCreatedAt": "2026-06-16 18:11:22 IST"
         },
         {
           "caseNum": "473837684",
@@ -3112,8 +3143,9 @@
           "resolvedAt": null,
           "resolvedText": "Still open — no Sev1 end time recorded (Status: Need More Information)",
           "oiDuration": null,
-          "channelCreatedAt": "2026-06-16 18:29:21 IST",
-          "oiSource": "orgcs"
+          "channelCreatedAt": "2026-06-16 18:29:22 IST",
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": "2026-06-16 18:34:52 IST"
         },
         {
           "caseNum": "473838045",
@@ -3161,7 +3193,8 @@
           "resolvedAt": null,
           "resolvedText": "Single user issue with Tableau Desktop 2025.3.1; lower version workaround available. No business impact. Customer to schedule troubleshooting session.",
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-17 12:47:36 IST"
+          "channelCreatedAt": "2026-06-17 12:47:36 IST",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473854733",
@@ -3178,7 +3211,8 @@
           "resolvedText": "Unable to see reports for Einstein Conversation Insights; sandbox issue confirmed. CIC disengaged.",
           "oiDuration": "32m 8s",
           "channelCreatedAt": "2026-06-17 13:09:44 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": "2026-06-17 13:17:39 IST"
         },
         {
           "caseNum": "473856779",
@@ -3195,7 +3229,8 @@
           "resolvedText": "Certificate renewal blocked for services.jaguar.co.uk — domain configured on MRT not eCDN. Customer confirmed happy with existing approach; case mitigated.",
           "oiDuration": "39m 51s",
           "channelCreatedAt": "2026-06-17 14:56:29 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": "2026-06-17 15:01:17 IST"
         },
         {
           "caseNum": "473857756",
@@ -3211,7 +3246,8 @@
           "resolvedAt": null,
           "resolvedText": "Security incident: data breach via Klue Battlecards Salesforce integration. Redirected to Security Incident team via ask-scct.",
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-17 15:51:23 IST"
+          "channelCreatedAt": "2026-06-17 15:51:23 IST",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473858046",
@@ -3227,7 +3263,7 @@
           "resolvedAt": "2026-06-17 16:39:24 IST",
           "resolvedText": "Daily scheduled Apex job limit exhausted (100/day). LAP submitted to increase limit to 110 for 31 days. Mitigated.",
           "oiDuration": "32m 24s",
-          "channelCreatedAt": "2026-06-17 16:07:00 IST",
+          "channelCreatedAt": "2026-06-17 16:07:47 IST",
           "oiSource": "orgcs"
         },
         {
@@ -3258,13 +3294,14 @@
           "resolve": "45s",
           "channelEngage": "7m 6s",
           "isRed": false,
-          "bridgeWithin15m": true,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": "2026-06-17 20:44:16 IST",
           "resolvedText": "Issue resolved by giving appropriate access. CIC Benita Lennon engaged; bridge launched.",
           "oiDuration": "6h 54m",
           "channelCreatedAt": "2026-06-17 13:49:44 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": "2026-06-17 14:07:10 IST"
         },
         {
           "caseNum": "473855848",
@@ -3276,13 +3313,14 @@
           "resolve": "12s",
           "channelEngage": "6m 35s",
           "isRed": false,
-          "bridgeWithin15m": true,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": "2026-06-17 15:00:59 IST",
           "resolvedText": "CIC assessed as not a business-affecting Sev1 — LAP filings for MFA enforcement on test orgs, no production impact.",
           "oiDuration": "53m 19s",
           "channelCreatedAt": "2026-06-17 14:07:40 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473770521",
@@ -3311,12 +3349,13 @@
           "resolve": "60s",
           "channelEngage": "37s",
           "isRed": false,
-          "bridgeWithin15m": true,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": "Complex row lock investigation; Core DB SME Oleg Korotkov engaged; CIC Dominika Barrett disengaged with comprehensive CS/BI/NS summary.",
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-17 17:29:10 IST"
+          "channelCreatedAt": "2026-06-17 17:29:10 IST",
+          "bridgeCreatedAt": "2026-06-17 17:44:56 IST"
         },
         {
           "caseNum": "473859520",
@@ -3328,13 +3367,14 @@
           "resolve": "12s",
           "channelEngage": "4m 7s",
           "isRed": false,
-          "bridgeWithin15m": true,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": "2026-06-17 22:58:34 IST",
           "resolvedText": "NA237 performance degradation — trust incident #20004111 raised; linked to incident channel icc-91757097.",
           "oiDuration": "5h 27m",
           "channelCreatedAt": "2026-06-17 17:31:20 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473372581",
@@ -3346,12 +3386,13 @@
           "resolve": "22s",
           "channelEngage": "13s",
           "isRed": false,
-          "bridgeWithin15m": true,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": "Facebook messages not arriving; blocked on customer's Meta developer admin access. Management mediation by Shubha at 18:33.",
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-17 17:41:31 IST"
+          "channelCreatedAt": "2026-06-17 17:41:31 IST",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473860129",
@@ -3369,7 +3410,8 @@
           "resolvedText": "Root cause: external mail forwarding issue (not Salesforce-side). Victor Ashby posted full resolution summary; case closed.",
           "oiDuration": "1h 9m",
           "channelCreatedAt": "2026-06-17 18:07:34 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": "2026-06-17 18:20:40 IST"
         },
         {
           "caseNum": "473860190",
@@ -3387,7 +3429,8 @@
           "resolvedText": "Flow unable to set field to null — assessed non-critical, production fully operational. CIC Benita Lennon disengaged.",
           "oiDuration": "18h 41m",
           "channelCreatedAt": "2026-06-17 18:11:05 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": "2026-06-17 18:18:44 IST"
         },
         {
           "caseNum": "473860267",
@@ -3404,7 +3447,8 @@
           "resolvedAt": null,
           "resolvedText": "DevOps Center blocking deployment. CIC Kranti Bharath Tadipatri engaged; bridge launched.",
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-17 18:37:03 IST"
+          "channelCreatedAt": "2026-06-17 18:37:03 IST",
+          "bridgeCreatedAt": "2026-06-17 18:48:20 IST"
         }
       ],
       "canvasId": "F0BB2DYRMNF",
@@ -5030,12 +5074,13 @@
           "resolve": null,
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": "Pre-existing re-alert (channel created 2026-06-16)",
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-16 IST"
+          "channelCreatedAt": "2026-06-16 16:26:04 IST",
+          "bridgeCreatedAt": "2026-06-16 16:42:38 IST"
         },
         {
           "caseNum": "473926795",
