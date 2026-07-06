@@ -3568,13 +3568,14 @@
           "resolve": "40s",
           "channelEngage": "No engagement",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": null,
-          "manager": "Jyothirmayee"
+          "channelCreatedAt": "2026-06-18 17:25:17 IST",
+          "manager": "Jyothirmayee",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473878098",
@@ -3585,13 +3586,14 @@
           "resolve": "26s",
           "channelEngage": "No engagement",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": true,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": null,
-          "manager": "Jyothirmayee"
+          "channelCreatedAt": "2026-06-18 15:10:27 IST",
+          "manager": "Jyothirmayee",
+          "bridgeCreatedAt": "2026-06-18 15:19:09 IST"
         },
         {
           "caseNum": "473878190",
@@ -3619,13 +3621,14 @@
           "resolve": "1m 13s",
           "channelEngage": "No engagement",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": true,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": null,
-          "manager": "Jyothirmayee"
+          "channelCreatedAt": "2026-06-18 15:19:52 IST",
+          "manager": "Jyothirmayee",
+          "bridgeCreatedAt": "2026-06-18 15:25:26 IST"
         },
         {
           "caseNum": "473878466",
@@ -3636,13 +3639,14 @@
           "resolve": "14s",
           "channelEngage": "No engagement",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": null,
-          "manager": "Jyothirmayee"
+          "channelCreatedAt": "2026-06-18 15:44:35 IST",
+          "manager": "Jyothirmayee",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473878622",
@@ -3653,13 +3657,14 @@
           "resolve": "29s",
           "channelEngage": "No engagement",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": null,
-          "manager": "Jyothirmayee"
+          "channelCreatedAt": "2026-06-18 15:58:42 IST",
+          "manager": "Jyothirmayee",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473816898",
@@ -3687,13 +3692,14 @@
           "resolve": "2m 52s",
           "channelEngage": "No engagement",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": null,
-          "manager": "Jyothirmayee"
+          "channelCreatedAt": "2026-06-18 17:49:16 IST",
+          "manager": "Jyothirmayee",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473880652",
@@ -3704,13 +3710,14 @@
           "resolve": null,
           "channelEngage": "No engagement",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": null,
-          "manager": "Jyothirmayee"
+          "channelCreatedAt": "2026-06-18 17:54:07 IST",
+          "manager": "Jyothirmayee",
+          "bridgeCreatedAt": "2026-06-18 19:05:57 IST"
         },
         {
           "caseNum": "473880724",
@@ -3721,13 +3728,14 @@
           "resolve": "17s",
           "channelEngage": "No engagement",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": null,
-          "manager": "Jyothirmayee"
+          "channelCreatedAt": "2026-06-18 18:01:42 IST",
+          "manager": "Jyothirmayee",
+          "bridgeCreatedAt": "2026-06-18 18:55:12 IST"
         },
         {
           "caseNum": "473880830",
@@ -3738,13 +3746,14 @@
           "resolve": "23s",
           "channelEngage": "No engagement",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": null,
-          "manager": "Jyothirmayee"
+          "channelCreatedAt": "2026-06-18 18:11:11 IST",
+          "manager": "Jyothirmayee",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473880837",
@@ -3755,13 +3764,14 @@
           "resolve": "20s",
           "channelEngage": "No engagement",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": null,
-          "manager": "Jyothirmayee"
+          "channelCreatedAt": "2026-06-18 18:24:06 IST",
+          "manager": "Jyothirmayee",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473880914",
@@ -3840,13 +3850,14 @@
           "resolve": "21s",
           "channelEngage": "No engagement",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": null,
-          "manager": "Jyothirmayee"
+          "channelCreatedAt": "2026-06-18 18:33:52 IST",
+          "manager": "Jyothirmayee",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473881209",
@@ -3857,13 +3868,14 @@
           "resolve": "15s",
           "channelEngage": "No engagement",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": null,
-          "manager": "Jyothirmayee"
+          "channelCreatedAt": "2026-06-18 18:42:55 IST",
+          "manager": "Jyothirmayee",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473881241",
@@ -3908,13 +3920,14 @@
           "resolve": "34s",
           "channelEngage": "No engagement",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": null,
-          "manager": "Jyothirmayee"
+          "channelCreatedAt": "2026-06-18 18:52:54 IST",
+          "manager": "Jyothirmayee",
+          "bridgeCreatedAt": "2026-06-18 19:08:00 IST"
         },
         {
           "caseNum": "473881360",
@@ -3959,13 +3972,14 @@
           "resolve": "54s",
           "channelEngage": "No engagement",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": null,
-          "manager": "Jyothirmayee"
+          "channelCreatedAt": "2026-06-18 18:54:07 IST",
+          "manager": "Jyothirmayee",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473881430",
@@ -3976,13 +3990,14 @@
           "resolve": "34s",
           "channelEngage": "No engagement",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": null,
-          "manager": "Jyothirmayee"
+          "channelCreatedAt": "2026-06-18 18:57:16 IST",
+          "manager": "Jyothirmayee",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473881500",
@@ -3993,13 +4008,14 @@
           "resolve": "23s",
           "channelEngage": "No engagement",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 19:01:54 IST",
-          "manager": "Jyothirmayee"
+          "manager": "Jyothirmayee",
+          "bridgeCreatedAt": "2026-06-18 19:17:29 IST"
         },
         {
           "caseNum": "473881531",
@@ -4027,13 +4043,14 @@
           "resolve": "1m 59s",
           "channelEngage": "No engagement",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 19:27:43 IST",
-          "manager": "Jyothirmayee"
+          "manager": "Jyothirmayee",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473881543",
@@ -4044,13 +4061,14 @@
           "resolve": "2m 8s",
           "channelEngage": "No engagement",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 19:05:08 IST",
-          "manager": "Jyothirmayee"
+          "manager": "Jyothirmayee",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473881843",
@@ -4061,13 +4079,14 @@
           "resolve": "41s",
           "channelEngage": "No engagement",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": null,
-          "manager": "Jyothirmayee"
+          "channelCreatedAt": "2026-06-18 19:23:27 IST",
+          "manager": "Jyothirmayee",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473881886",
@@ -4095,13 +4114,14 @@
           "resolve": "2m 15s",
           "channelEngage": "No engagement",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": null,
-          "manager": "Jyothirmayee"
+          "channelCreatedAt": "2026-06-18 19:27:26 IST",
+          "manager": "Jyothirmayee",
+          "bridgeCreatedAt": null
         }
       ],
       "eodDone": true,
@@ -4148,12 +4168,13 @@
           "resolve": null,
           "channelEngage": "55s",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": true,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-19 12:55:12 IST"
+          "channelCreatedAt": "2026-06-19 12:55:12 IST",
+          "bridgeCreatedAt": "2026-06-19 13:03:51 IST"
         },
         {
           "caseNum": "473809862",
@@ -4164,12 +4185,13 @@
           "resolve": null,
           "channelEngage": "39s",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-19 13:01:45 IST"
+          "channelCreatedAt": "2026-06-19 13:01:45 IST",
+          "bridgeCreatedAt": "2026-06-19 13:49:02 IST"
         },
         {
           "caseNum": "473877651",
@@ -4180,12 +4202,13 @@
           "resolve": null,
           "channelEngage": "5m 55s",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-19 13:07:46 IST"
+          "channelCreatedAt": "2026-06-19 13:07:46 IST",
+          "bridgeCreatedAt": "2026-06-19 13:23:05 IST"
         },
         {
           "caseNum": "473890719",
@@ -4197,7 +4220,7 @@
           "channelEngage": "19s",
           "isRed": false,
           "bridgeWithin15m": null,
-          "bridgeNA": null,
+          "bridgeNA": "throttle",
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
@@ -4212,12 +4235,13 @@
           "resolve": null,
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-19 13:37:07 IST"
+          "channelCreatedAt": "2026-06-19 13:37:07 IST",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473890764",
@@ -4228,12 +4252,13 @@
           "resolve": null,
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-19 13:56:03 IST"
+          "channelCreatedAt": "2026-06-19 13:56:03 IST",
+          "bridgeCreatedAt": "2026-06-19 14:12:54 IST"
         },
         {
           "caseNum": "473890789",
@@ -4244,12 +4269,13 @@
           "resolve": null,
           "channelEngage": "31s",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": true,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-19 13:58:15 IST"
+          "channelCreatedAt": "2026-06-19 13:58:15 IST",
+          "bridgeCreatedAt": "2026-06-19 14:12:13 IST"
         },
         {
           "caseNum": "473884379",
@@ -4260,12 +4286,13 @@
           "resolve": null,
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": "Pre-existing re-alert. Original channel created 2026-06-18 21:59.",
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-18 21:59:00 IST"
+          "channelCreatedAt": "2026-06-18 21:59:00 IST",
+          "bridgeCreatedAt": "2026-06-18 22:15:21 IST"
         },
         {
           "caseNum": "473890903",
@@ -4292,12 +4319,13 @@
           "resolve": null,
           "channelEngage": "1m 27s",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": true,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-19 14:55:53 IST"
+          "channelCreatedAt": "2026-06-19 14:55:53 IST",
+          "bridgeCreatedAt": "2026-06-19 15:04:43 IST"
         },
         {
           "caseNum": "473890389",
@@ -4308,12 +4336,13 @@
           "resolve": null,
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-19 16:30:08 IST"
+          "channelCreatedAt": "2026-06-19 16:30:08 IST",
+          "bridgeCreatedAt": "2026-06-19 18:04:00 IST"
         },
         {
           "caseNum": "473892538",
@@ -4324,12 +4353,13 @@
           "resolve": null,
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-19 17:42:17 IST"
+          "channelCreatedAt": "2026-06-19 17:42:17 IST",
+          "bridgeCreatedAt": "2026-06-19 18:27:56 IST"
         },
         {
           "caseNum": "473892625",
@@ -4356,12 +4386,13 @@
           "resolve": null,
           "channelEngage": "1m 11s",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": true,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-19 18:27:08 IST"
+          "channelCreatedAt": "2026-06-19 18:27:08 IST",
+          "bridgeCreatedAt": "2026-06-19 18:38:48 IST"
         },
         {
           "caseNum": "473893099",
@@ -4372,12 +4403,13 @@
           "resolve": null,
           "channelEngage": "25s",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-19 18:49:04 IST"
+          "channelCreatedAt": "2026-06-19 18:49:04 IST",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473893432",
@@ -4388,12 +4420,13 @@
           "resolve": null,
           "channelEngage": "3m 38s",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-19 19:25:57 IST"
+          "channelCreatedAt": "2026-06-19 19:25:57 IST",
+          "bridgeCreatedAt": null
         }
       ],
       "eodDone": true,
@@ -4575,12 +4608,13 @@
           "resolve": null,
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": true,
           "bridgeNA": "howto",
           "resolvedAt": null,
           "resolvedText": "Pre-existing re-alert (channel created 2026-06-18)",
           "oiDuration": "Still open",
-          "channelCreatedAt": "2026-06-18 IST"
+          "channelCreatedAt": "2026-06-18 15:19:52 IST",
+          "bridgeCreatedAt": "2026-06-18 15:25:26 IST"
         },
         {
           "caseNum": "473903848",
