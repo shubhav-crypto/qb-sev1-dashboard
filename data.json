@@ -1595,7 +1595,8 @@
           "resolvedAt": "2026-06-10 17:54:45 IST",
           "resolvedText": "Shared analysis with Cx on bridge; planned resolution/bugfix",
           "oiDuration": "5h 21m",
-          "channelCreatedAt": "2026-06-10 12:33:00 IST"
+          "channelCreatedAt": "2026-06-10 12:33:03 IST",
+          "bridgeCreatedAt": "2026-06-10 12:48:19 IST"
         },
         {
           "caseNum": "473733059",
@@ -1611,7 +1612,8 @@
           "resolvedAt": "2026-06-10 14:42:39 IST",
           "resolvedText": "Should be good now. (Bandwidth limit increased to 100,000 MB)",
           "oiDuration": "51m",
-          "channelCreatedAt": "2026-06-10 13:51:00 IST"
+          "channelCreatedAt": "2026-06-10 13:51:43 IST",
+          "bridgeCreatedAt": "2026-06-10 14:08:41 IST"
         },
         {
           "caseNum": "473733080",
@@ -1623,11 +1625,12 @@
           "resolve": "1m 54s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-10 14:06:43 IST",
           "oiDuration": "14m",
           "resolvedText": "I could see the case was closed by the customer",
-          "channelCreatedAt": "2026-06-10 13:52:36 IST"
+          "channelCreatedAt": "2026-06-10 13:52:37 IST",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473733820",
@@ -1639,12 +1642,13 @@
           "resolve": "25s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin15m": true,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-16 14:24:57 IST",
           "oiDuration": "5d 23h",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
-          "channelCreatedAt": "2026-06-10 14:40:19 IST",
-          "oiSource": "orgcs"
+          "channelCreatedAt": "2026-06-10 14:40:20 IST",
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473729164",
@@ -1660,7 +1664,8 @@
           "resolvedAt": "2026-06-15 07:44:49 IST",
           "resolvedText": "yes, I close this morning.",
           "oiDuration": "4d 16h",
-          "channelCreatedAt": "2026-06-10 15:09:00 IST"
+          "channelCreatedAt": "2026-06-10 15:09:48 IST",
+          "bridgeCreatedAt": "2026-06-10 17:17:24 IST"
         },
         {
           "caseNum": "473734321",
@@ -1690,11 +1695,12 @@
           "resolve": "25s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin15m": true,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-10 16:34:02 IST",
           "oiDuration": "51m",
           "resolvedText": "LAP approved and communicated the same with customer.",
-          "channelCreatedAt": "2026-06-10 15:42:35 IST"
+          "channelCreatedAt": "2026-06-10 15:42:36 IST",
+          "bridgeCreatedAt": "2026-06-10 15:58:36 IST"
         },
         {
           "caseNum": "473731556",
@@ -1711,7 +1717,7 @@
           "resolvedAt": "2026-06-10 23:37:00 IST",
           "resolvedText": "Glad to hear the customer is out of impact in time for their Scale Testing.",
           "oiDuration": "4h 23m",
-          "channelCreatedAt": "2026-06-10 19:14:00 IST"
+          "channelCreatedAt": "2026-06-10 19:14:25 IST"
         },
         {
           "caseNum": "473738074",
@@ -1744,7 +1750,8 @@
           "resolvedAt": "2026-06-10 19:54:13 IST",
           "resolvedText": "no actions pending — their team had a confusion",
           "oiDuration": "31m",
-          "channelCreatedAt": "2026-06-10 19:23:00 IST"
+          "channelCreatedAt": "2026-06-10 19:23:12 IST",
+          "bridgeCreatedAt": null
         }
       ],
       "eodDone": false,
@@ -1801,11 +1808,12 @@
           "resolve": "22s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-12 12:33:23 IST",
           "oiDuration": "22h 19m",
           "resolvedText": "The change was done for the org...I would inform the customer and close this case out.",
-          "channelCreatedAt": "2026-06-11 14:14:06 IST"
+          "channelCreatedAt": "2026-06-11 14:14:06 IST",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473754009",
@@ -1817,11 +1825,12 @@
           "resolve": "24s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin15m": true,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-11 17:17:13 IST",
           "oiDuration": "1h 50m",
           "resolvedText": "Cx applied the workaround in production org and is out of impact for now.",
-          "channelCreatedAt": "2026-06-11 15:26:50 IST"
+          "channelCreatedAt": "2026-06-11 15:26:50 IST",
+          "bridgeCreatedAt": "2026-06-11 15:44:26 IST"
         },
         {
           "caseNum": "473755111",
@@ -1833,12 +1842,13 @@
           "resolve": "26s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-11 20:12:33 IST",
           "oiDuration": "3h 29m",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-11 16:43:21 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473755197",
@@ -1871,7 +1881,8 @@
           "resolvedAt": "2026-06-11 01:43:04 IST",
           "oiDuration": "1h 2m",
           "resolvedText": "External users confirmed issue no longer happening. Customer gave consent to close.",
-          "channelCreatedAt": "2026-06-11 00:40:43 IST"
+          "channelCreatedAt": "2026-06-11 00:40:43 IST",
+          "bridgeCreatedAt": "2026-06-11 00:54:12 IST"
         },
         {
           "caseNum": "473743597",
@@ -1883,11 +1894,12 @@
           "resolve": "22s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin15m": true,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-11 21:27:58 IST",
           "oiDuration": "3h 36m",
           "resolvedText": "incident has been resolved and the customer is out of impact",
-          "channelCreatedAt": "2026-06-11 17:51:51 IST"
+          "channelCreatedAt": "2026-06-11 17:51:51 IST",
+          "bridgeCreatedAt": "2026-06-11 18:14:37 IST"
         },
         {
           "caseNum": "473756525",
@@ -1903,7 +1915,8 @@
           "resolvedAt": "2026-06-11 19:10:23 IST",
           "oiDuration": "51m",
           "resolvedText": "Customer identified root cause, able to login successfully. Downgrade to Sev2.",
-          "channelCreatedAt": "2026-06-11 18:19:14 IST"
+          "channelCreatedAt": "2026-06-11 18:19:14 IST",
+          "bridgeCreatedAt": "2026-06-11 18:30:44 IST"
         },
         {
           "caseNum": "473744331",
@@ -1919,7 +1932,8 @@
           "resolvedAt": "2026-06-11 20:39:29 IST",
           "oiDuration": "2h 10m",
           "resolvedText": "Issue is resolved as per the bridge. Customer testing confirmed.",
-          "channelCreatedAt": "2026-06-11 18:29:12 IST"
+          "channelCreatedAt": "2026-06-11 18:29:12 IST",
+          "bridgeCreatedAt": "2026-06-11 18:39:12 IST"
         },
         {
           "caseNum": "473744459",
@@ -1948,12 +1962,13 @@
           "resolve": "45s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin15m": true,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-12 14:56:45 IST",
           "oiDuration": "20h 19m",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-11 18:36:49 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": "2026-06-11 19:07:45 IST"
         },
         {
           "caseNum": "473756818",
@@ -1966,12 +1981,13 @@
           "resolve": "2m 36s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin15m": true,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-11 18:40:22 IST",
           "oiDuration": "3m",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-11 18:37:22 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473757516",
@@ -2019,11 +2035,12 @@
           "resolve": "3m 17s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-12 11:04:43 IST",
           "oiDuration": "9h 13m",
           "resolvedText": "CIC Update :: Workaround has been shared to get the customer OOI",
-          "channelCreatedAt": "2026-06-12 01:51:24 IST"
+          "channelCreatedAt": "2026-06-12 01:51:24 IST",
+          "bridgeCreatedAt": "2026-06-12 02:12:55 IST"
         },
         {
           "caseNum": "473772063",
@@ -2034,12 +2051,13 @@
           "ack": "10s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin15m": true,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-12 18:56:08 IST",
           "oiDuration": "6h 11m",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-12 12:45:04 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": "2026-06-12 13:04:52 IST"
         },
         {
           "caseNum": "473772069",
@@ -2050,12 +2068,13 @@
           "ack": "1m 21s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin15m": true,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-12 19:22:00 IST",
           "oiDuration": "5h 12m",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-12 14:09:26 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": "2026-06-12 14:30:00 IST"
         },
         {
           "caseNum": "473774824",
@@ -2070,7 +2089,8 @@
           "resolvedAt": "2026-06-12 16:19:52 IST",
           "oiDuration": "21m",
           "resolvedText": "lower the case severity to 2 and reconnect on Monday",
-          "channelCreatedAt": "2026-06-12 15:58:18 IST"
+          "channelCreatedAt": "2026-06-12 15:58:18 IST",
+          "bridgeCreatedAt": "2026-06-12 16:09:50 IST"
         },
         {
           "caseNum": "473774927",
@@ -2086,7 +2106,8 @@
           "oiDuration": "12h 47m",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "channelCreatedAt": "2026-06-12 16:05:44 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": "2026-06-12 16:11:48 IST"
         },
         {
           "caseNum": "473775323",
@@ -2114,12 +2135,13 @@
           "resolve": "3m 21s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-16 20:22:50 IST",
           "oiDuration": "9h 42m",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Need More Information; measured from Sev1 start time (OrgCS))",
           "channelCreatedAt": "2026-06-12 17:22:33 IST",
-          "oiSource": "orgcs"
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": "2026-06-12 17:53:31 IST"
         },
         {
           "caseNum": "473698784",
@@ -2149,7 +2171,8 @@
           "resolvedAt": "2026-06-13 10:41:46 IST",
           "oiDuration": "17h 8m",
           "resolvedText": "CIC Update :: Issue has been mitigated - component switched V2→V1, resolved.",
-          "channelCreatedAt": "2026-06-12 17:33:22 IST"
+          "channelCreatedAt": "2026-06-12 17:33:22 IST",
+          "bridgeCreatedAt": "2026-06-13 09:39:54 IST"
         },
         {
           "caseNum": "473776048",
@@ -2160,11 +2183,12 @@
           "resolve": "3m 11s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": true,
           "resolvedAt": "2026-06-16 14:48:08 IST",
           "oiDuration": "3d 20h",
           "resolvedText": "we can close this down now at the customers request",
-          "channelCreatedAt": "2026-06-12 18:02:27 IST"
+          "channelCreatedAt": "2026-06-12 18:02:27 IST",
+          "bridgeCreatedAt": "2026-06-12 18:13:44 IST"
         },
         {
           "caseNum": "473739241",
@@ -2175,11 +2199,12 @@
           "resolve": "3m 13s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-12 21:22:19 IST",
           "oiDuration": "2h 39m",
           "resolvedText": "devops issue is not considered a blocker. (customer on manual deploy path)",
-          "channelCreatedAt": "2026-06-12 18:42:51 IST"
+          "channelCreatedAt": "2026-06-12 18:42:51 IST",
+          "bridgeCreatedAt": "2026-06-12 19:18:58 IST"
         },
         {
           "caseNum": "473775839",
@@ -2194,7 +2219,8 @@
           "resolvedAt": "2026-06-12 20:13:32 IST",
           "oiDuration": "52m",
           "resolvedText": "Customer confirmed the workaround worked in Postman.",
-          "channelCreatedAt": "2026-06-12 19:20:38 IST"
+          "channelCreatedAt": "2026-06-12 19:20:38 IST",
+          "bridgeCreatedAt": "2026-06-12 19:23:23 IST"
         },
         {
           "caseNum": "473756017",
@@ -2209,7 +2235,8 @@
           "resolvedAt": "2026-06-12 23:30:00 IST",
           "oiDuration": "4h 6m",
           "resolvedText": "Attack activity stopped around 1 PM ET",
-          "channelCreatedAt": "2026-06-12 19:24:00 IST"
+          "channelCreatedAt": "2026-06-12 19:24:00 IST",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473777807",
@@ -2236,11 +2263,12 @@
           "ack": "8s",
           "channelEngage": null,
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-13 00:22:14 IST",
           "oiDuration": "4h 53m",
           "resolvedText": "they are out of impact as they have aborted the culprit batch job",
-          "channelCreatedAt": "2026-06-12 19:28:40 IST"
+          "channelCreatedAt": "2026-06-12 19:28:40 IST",
+          "bridgeCreatedAt": null
         }
       ],
       "eodDone": true,
