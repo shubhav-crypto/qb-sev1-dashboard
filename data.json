@@ -936,7 +936,8 @@
           "resolvedAt": "2026-06-05 19:53:40 IST",
           "resolvedText": "customer confirmed 5 accounts were successfully processed",
           "oiDuration": "6h 44m",
-          "channelCreatedAt": "2026-06-05 13:09:00 IST"
+          "channelCreatedAt": "2026-06-05 12:38:40 IST",
+          "bridgeCreatedAt": "2026-06-05 13:12:49 IST"
         },
         {
           "caseNum": "473654353",
@@ -947,12 +948,13 @@
           "resolve": "3m 10s",
           "channelEngage": "10m 11s",
           "isRed": false,
-          "bridgeWithin15m": false,
+          "bridgeWithin15m": true,
           "resolvedAt": "2026-06-05 18:28:27 IST",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Need More Information; measured from channel creation)",
           "oiDuration": "4h 11m",
-          "channelCreatedAt": "2026-06-05 14:17:10 IST",
-          "oiSource": "orgcs"
+          "channelCreatedAt": "2026-06-05 14:17:11 IST",
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": "2026-06-05 14:18:06 IST"
         },
         {
           "caseNum": "473654956",
@@ -967,7 +969,8 @@
           "resolvedAt": "2026-06-05 15:13:06 IST",
           "resolvedText": "The issue customer facing is a Known issue from Salesforce.",
           "oiDuration": "21m",
-          "channelCreatedAt": "2026-06-05 14:52:00 IST"
+          "channelCreatedAt": "2026-06-05 14:33:33 IST",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473655407",
@@ -978,11 +981,12 @@
           "resolve": "3m 13s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-05 15:51:37 IST",
           "oiDuration": "43m",
           "resolvedText": "The limit increase should resolve the issue. No pending actions left.",
-          "channelCreatedAt": "2026-06-05 15:07:47 IST"
+          "channelCreatedAt": "2026-06-05 15:07:48 IST",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473643333",
@@ -997,8 +1001,9 @@
           "resolvedAt": "2026-06-09 12:21:24 IST",
           "oiDuration": "3d 20h",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from Sev1 start time (OrgCS))",
-          "channelCreatedAt": "2026-06-04 22:58:58 IST",
-          "oiSource": "orgcs"
+          "channelCreatedAt": "2026-06-04 22:58:59 IST",
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": "2026-06-04 23:02:34 IST"
         },
         {
           "caseNum": "473657275",
@@ -1013,7 +1018,8 @@
           "resolvedAt": "2026-06-12 12:29:33 IST",
           "resolvedText": "They are okay with solution we provided but not agreeing with RCA.",
           "oiDuration": "6d 18h",
-          "channelCreatedAt": "2026-06-05 17:34:00 IST"
+          "channelCreatedAt": "2026-06-05 17:34:15 IST",
+          "bridgeCreatedAt": "2026-06-05 17:51:05 IST"
         },
         {
           "caseNum": "473658432",
@@ -1028,7 +1034,8 @@
           "resolvedAt": "2026-06-08 15:26:09 IST",
           "resolvedText": "Work Order Creation for Today looks stable and normal",
           "oiDuration": "2d 20h",
-          "channelCreatedAt": "2026-06-05 18:55:28 IST"
+          "channelCreatedAt": "2026-06-05 18:55:05 IST",
+          "bridgeCreatedAt": "2026-06-05 18:59:42 IST"
         },
         {
           "caseNum": "473658708",
@@ -1191,8 +1198,9 @@
           "resolvedAt": "2026-06-08 17:06:17 IST",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "oiDuration": "4h 23m",
-          "channelCreatedAt": "2026-06-08 12:43:02 IST",
-          "oiSource": "orgcs"
+          "channelCreatedAt": "2026-06-08 12:43:03 IST",
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": "2026-06-08 13:06:45 IST"
         },
         {
           "caseNum": "473692644",
@@ -1208,8 +1216,9 @@
           "resolvedAt": "2026-06-08 18:31:02 IST",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "oiDuration": "5h 41m",
-          "channelCreatedAt": "2026-06-08 12:49:06 IST",
-          "oiSource": "orgcs"
+          "channelCreatedAt": "2026-06-08 12:49:07 IST",
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": "2026-06-08 13:22:23 IST"
         },
         {
           "caseNum": "473692840",
@@ -1225,7 +1234,8 @@
           "resolvedAt": "2026-06-09 06:49:28 IST",
           "oiDuration": "17h 49m",
           "resolvedText": "fix applied, issue no longer reproducible, CIC standing down",
-          "channelCreatedAt": "2026-06-08 13:00:27 IST"
+          "channelCreatedAt": "2026-06-08 13:00:28 IST",
+          "bridgeCreatedAt": "2026-06-08 13:21:22 IST"
         },
         {
           "caseNum": "473653702",
@@ -1237,11 +1247,12 @@
           "resolve": "32s",
           "channelEngage": "1m 38s",
           "isRed": true,
-          "bridgeWithin15m": true,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-09 18:06:45 IST",
           "resolvedText": "The incident is resolved, the changes Salesforce provided helped mitigate the issue.",
           "oiDuration": "1d 4h",
-          "channelCreatedAt": "2026-06-08 13:19:00 IST"
+          "channelCreatedAt": "2026-06-08 13:19:19 IST",
+          "bridgeCreatedAt": "2026-06-08 13:34:43 IST"
         },
         {
           "caseNum": "473693881",
@@ -1253,11 +1264,12 @@
           "resolve": "46s",
           "channelEngage": "6m 13s",
           "isRed": false,
-          "bridgeWithin15m": false,
+          "bridgeWithin15m": true,
           "resolvedAt": "2026-06-08 15:13:00 IST",
           "resolvedText": "It is not impacting them as of now",
           "oiDuration": "1h 11m",
-          "channelCreatedAt": "2026-06-08 14:02:00 IST"
+          "channelCreatedAt": "2026-06-08 14:02:13 IST",
+          "bridgeCreatedAt": "2026-06-08 14:14:26 IST"
         },
         {
           "caseNum": "473694062",
@@ -1322,11 +1334,12 @@
           "resolve": "1m 37s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-03 19:19:53 IST",
           "oiDuration": "8h 30m",
           "resolvedText": "Root cause identified; clear path to resolution confirmed; CIC can disengage",
-          "channelCreatedAt": "2026-06-03 10:49:43 IST"
+          "channelCreatedAt": "2026-06-03 10:49:43 IST",
+          "bridgeCreatedAt": "2026-06-03 11:24:12 IST"
         },
         {
           "caseNum": "473663111",
@@ -1342,7 +1355,8 @@
           "resolvedAt": "2026-06-10 23:06:00 IST",
           "resolvedText": "It worked - customer: \"Finally!!!! Agentforce Vibes is working now.\"",
           "oiDuration": "2d 6h",
-          "channelCreatedAt": "2026-06-08 16:16:02 IST"
+          "channelCreatedAt": "2026-06-08 16:16:02 IST",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473696005",
@@ -1358,7 +1372,8 @@
           "resolvedAt": "2026-06-08 18:05:19 IST",
           "resolvedText": "issue is no longer occurring, integration working as expected",
           "oiDuration": "1h 45m",
-          "channelCreatedAt": "2026-06-08 16:20:00 IST"
+          "channelCreatedAt": "2026-06-08 16:21:00 IST",
+          "bridgeCreatedAt": "2026-06-08 16:41:46 IST"
         },
         {
           "caseNum": "473697035",
@@ -1391,7 +1406,8 @@
           "resolvedAt": "2026-06-08 17:50:13 IST",
           "resolvedText": "Sev-1 Mitigated (SupportBot)",
           "oiDuration": "7m",
-          "channelCreatedAt": "2026-06-08 17:43:00 IST"
+          "channelCreatedAt": "2026-06-08 17:43:48 IST",
+          "bridgeCreatedAt": "2026-06-08 18:06:13 IST"
         },
         {
           "caseNum": "473697264",
@@ -1403,12 +1419,13 @@
           "resolve": "23s",
           "channelEngage": null,
           "isRed": true,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": false,
           "resolvedAt": "2026-06-09 00:09:15 IST",
           "oiDuration": "6h 14m",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
-          "channelCreatedAt": "2026-06-08 17:54:32 IST",
-          "oiSource": "orgcs"
+          "channelCreatedAt": "2026-06-08 17:54:33 IST",
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473697509",
@@ -1424,7 +1441,8 @@
           "resolvedAt": "2026-06-09 19:06:33 IST",
           "resolvedText": "The customer is out of impact",
           "oiDuration": "1d",
-          "channelCreatedAt": "2026-06-08 18:10:00 IST"
+          "channelCreatedAt": "2026-06-08 18:10:58 IST",
+          "bridgeCreatedAt": "2026-06-08 19:24:00 IST"
         },
         {
           "caseNum": "473697653",
@@ -1436,11 +1454,12 @@
           "resolve": "33s",
           "channelEngage": "6m 6s",
           "isRed": false,
-          "bridgeWithin15m": false,
+          "bridgeWithin15m": true,
           "resolvedAt": "2026-06-08 18:46:15 IST",
           "resolvedText": "user confirmed now able to login to all of their sites",
           "oiDuration": "26m",
-          "channelCreatedAt": "2026-06-08 18:19:39 IST"
+          "channelCreatedAt": "2026-06-08 18:19:26 IST",
+          "bridgeCreatedAt": "2026-06-08 18:29:41 IST"
         },
         {
           "caseNum": "473646616",
@@ -1457,8 +1476,9 @@
           "resolvedAt": "2026-06-17 00:41:21 IST",
           "resolvedText": "AX_Sev1_End_Time__c from OrgCS (Status: Closed; measured from channel creation)",
           "oiDuration": "8d 6h",
-          "channelCreatedAt": "2026-06-08 18:20:25 IST",
-          "oiSource": "orgcs"
+          "channelCreatedAt": "2026-06-08 18:20:26 IST",
+          "oiSource": "orgcs",
+          "bridgeCreatedAt": null
         },
         {
           "caseNum": "473697838",
@@ -1491,7 +1511,8 @@
           "resolvedAt": "2026-06-09 21:01:04 IST",
           "resolvedText": "user Sean can successfully deploy and the Cx is out of impact.",
           "oiDuration": "1d 2h",
-          "channelCreatedAt": "2026-06-08 18:39:00 IST"
+          "channelCreatedAt": "2026-06-08 18:39:11 IST",
+          "bridgeCreatedAt": null
         }
       ],
       "eodDone": false,
@@ -1536,7 +1557,8 @@
           "resolvedAt": "2026-06-11 07:51:01 IST",
           "resolvedText": "No issues in Salesforce; root cause was Kafka Connector",
           "oiDuration": "1d 17h",
-          "channelCreatedAt": "2026-06-09 14:32:00 IST"
+          "channelCreatedAt": "2026-06-09 14:31:48 IST",
+          "bridgeCreatedAt": "2026-06-09 14:50:15 IST"
         },
         {
           "caseNum": "473677970",
@@ -1553,7 +1575,8 @@
           "resolvedAt": "2026-06-09 15:24:52 IST",
           "resolvedText": "Clarified their doubts, they are good. CIC can be disengaged.",
           "oiDuration": "45m",
-          "channelCreatedAt": "2026-06-09 14:39:00 IST"
+          "channelCreatedAt": "2026-06-09 14:39:47 IST",
+          "bridgeCreatedAt": "2026-06-09 14:54:59 IST"
         },
         {
           "caseNum": "473697509",
@@ -1568,7 +1591,8 @@
           "resolvedAt": "2026-06-09 19:06:33 IST",
           "resolvedText": "The customer is out of impact",
           "oiDuration": "1d",
-          "channelCreatedAt": "2026-06-08 18:10:00 IST"
+          "channelCreatedAt": "2026-06-08 18:10:58 IST",
+          "bridgeCreatedAt": "2026-06-08 19:24:00 IST"
         }
       ],
       "eodDone": false,
