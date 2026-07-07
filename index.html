@@ -180,7 +180,7 @@
     <div class="kpi purple"><div class="kpi-value" id="kpiWeekEngage" style="font-size:24px;">—</div><div class="kpi-label">This Week Avg Engage</div><div class="kpi-sub" id="kpiWeekEngageSub"></div></div>
     <div class="kpi rose"><div class="kpi-value" id="kpiBridgeAvg" style="font-size:24px;">—</div><div class="kpi-label">Bridge Creation Avg</div><div class="kpi-sub" id="kpiBridgeAvgSub"></div></div>
     <div class="kpi green"><div class="kpi-value" id="kpiEngageCompliance" style="font-size:30px;">—</div><div class="kpi-label">QB Engage Compliance</div><div class="kpi-sub" id="kpiEngageComplianceSub"></div><div class="kpi-sub" id="kpiEngageComplianceThrottle" style="margin-top:3px;font-size:10px;"></div></div>
-    <div class="kpi amber"><div class="kpi-value" id="kpiExecTagged">—</div><div class="kpi-label">Director+ Tagged</div><div class="kpi-sub" id="kpiExecTaggedSub"></div><div class="kpi-sub" id="kpiExecTaggedDetail" style="margin-top:3px;font-size:10px;"></div></div>
+    <div class="kpi amber" title="Cases where Shaifali Nagpal, Bhuvneshwar Sharma, Vrushali Khatav, Christian Becker, David Sanders, or Leya Kurian was tagged in the channel"><div class="kpi-value" id="kpiExecTagged">—</div><div class="kpi-label">Director+ Tagged (Watchlist)</div><div class="kpi-sub" id="kpiExecTaggedSub"></div><div class="kpi-sub" id="kpiExecTaggedDetail" style="margin-top:3px;font-size:10px;"></div></div>
   </div>
 
   <div class="wow-engage-card">
@@ -835,16 +835,24 @@ function renderKPIs(){
 
   // Director+ Tagged KPI
   // Director+ count uses ALL days (weekday + weekend) — exec presence tracked across full history
+  // Restricted to a specific watchlist of Director+ names (case-insensitive match on execTagged.name)
+  const EXEC_WATCHLIST=['shaifali nagpal','bhuvneshwar sharma','vrushali khatav','christian becker','david sanders','leya kurian'];
   const allCases=DB.days.flatMap(function(d){return d.cases;});
-  const execTaggedCases=allCases.filter(function(c){return c.execTagged&&c.execTagged.length>0;});
+  const execTaggedCases=allCases.filter(function(c){
+    if(!c.execTagged||!c.execTagged.length)return false;
+    return c.execTagged.some(function(e){return EXEC_WATCHLIST.indexOf((e.name||'').trim().toLowerCase())!==-1;});
+  });
   const execTaggedCount=execTaggedCases.length;
-  const totalExecPeople=execTaggedCases.reduce(function(sum,c){return sum+(c.execTagged?c.execTagged.length:0);},0);
+  const totalExecPeople=execTaggedCases.reduce(function(sum,c){
+    const hits=(c.execTagged||[]).filter(function(e){return EXEC_WATCHLIST.indexOf((e.name||'').trim().toLowerCase())!==-1;});
+    return sum+hits.length;
+  },0);
   // Count by title tier
   const execEl=document.getElementById('kpiExecTagged');
   const execSubEl=document.getElementById('kpiExecTaggedSub');
   const execDetailEl=document.getElementById('kpiExecTaggedDetail');
   execEl.textContent=execTaggedCount>0?execTaggedCount:'0';
-  execSubEl.textContent=execTaggedCount>0?'cases with Dir+ in channel':'no Director+ found yet';
+  execSubEl.textContent=execTaggedCount>0?'cases with watchlist Dir+ in channel':'no watchlist Director+ found yet';
   if(execDetailEl){execDetailEl.textContent='';}
 
   updateKpiFilterLabel();
