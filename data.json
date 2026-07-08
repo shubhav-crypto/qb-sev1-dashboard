@@ -8221,7 +8221,7 @@
           "channelEngage": "4m 29s",
           "isRed": false,
           "bridgeWithin15m": null,
-          "bridgeNA": null,
+          "bridgeNA": "throttle",
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
