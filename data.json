@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated": "2026-07-07T21:00:00+05:30",
-    "totalCases": 399,
-    "daysTracked": 35
+    "generated": "2026-07-06T21:00:00+05:30",
+    "totalCases": 390,
+    "daysTracked": 34
   },
   "schedule": {
     "2026-06-01": {
@@ -122,10 +122,6 @@
       "managerId": "WN8LA3U5D"
     },
     "2026-07-06": {
-      "manager": "Mirza",
-      "managerId": "U04219TJTK5"
-    },
-    "2026-07-07": {
       "manager": "Mirza",
       "managerId": "U04219TJTK5"
     }
@@ -8248,178 +8244,6 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-07-06T16:41:00+05:30",
           "bridgeCreatedAt": "2026-07-06T16:43:45+05:30",
-          "execTagged": []
-        }
-      ]
-    },
-    {
-      "date": "2026-07-07",
-      "label": "Jul 7",
-      "manager": "Mirza",
-      "managerId": "U04219TJTK5",
-      "canvasId": null,
-      "eodDone": true,
-      "callouts": [
-        {
-          "type": "exec",
-          "text": "👁 Exec Visibility — Continue to monitor: HDFC Bank Ltd (Customer temp too hot, RCA requested by tomorrow)"
-        }
-      ],
-      "cases": [
-        {
-          "caseNum": "474022613",
-          "account": "Rockwell Automation (Parent)",
-          "product": "Service-Developer Support",
-          "timeIST": "12:53 PM",
-          "quality": "PENDING",
-          "resolve": null,
-          "channelEngage": "1m 9s",
-          "isRed": false,
-          "bridgeWithin15m": true,
-          "bridgeNA": null,
-          "resolvedAt": null,
-          "resolvedText": null,
-          "oiDuration": null,
-          "channelCreatedAt": "2026-07-07T12:53:43+05:30",
-          "bridgeCreatedAt": "2026-07-07T13:03:48+05:30",
-          "execTagged": []
-        },
-        {
-          "caseNum": "474022912",
-          "account": "Intelligent Platforms, LLC",
-          "product": "Commerce-B2B Classic",
-          "timeIST": "1:31 PM",
-          "quality": "PENDING",
-          "resolve": null,
-          "channelEngage": "No engagement",
-          "isRed": false,
-          "bridgeWithin15m": false,
-          "bridgeNA": null,
-          "resolvedAt": null,
-          "resolvedText": null,
-          "oiDuration": null,
-          "channelCreatedAt": "2026-07-07T13:31:01+05:30",
-          "bridgeCreatedAt": "2026-07-07T13:52:29+05:30",
-          "execTagged": []
-        },
-        {
-          "caseNum": "474023740",
-          "account": "easyJet Holidays Limited",
-          "product": "Service-Security & Activations",
-          "timeIST": "3:05 PM",
-          "quality": "PENDING",
-          "resolve": null,
-          "channelEngage": "23m 13s",
-          "isRed": false,
-          "bridgeWithin15m": true,
-          "bridgeNA": null,
-          "resolvedAt": null,
-          "resolvedText": null,
-          "oiDuration": null,
-          "channelCreatedAt": "2026-07-07T15:05:19+05:30",
-          "bridgeCreatedAt": "2026-07-07T15:11:28+05:30",
-          "execTagged": []
-        },
-        {
-          "caseNum": "474024441",
-          "account": "Mary Kay Inc. (Org 2 NA)",
-          "product": "Service-Developer Support",
-          "timeIST": "4:32 PM",
-          "quality": "PENDING",
-          "resolve": null,
-          "channelEngage": "No engagement",
-          "isRed": false,
-          "bridgeWithin15m": null,
-          "bridgeNA": "throttle",
-          "resolvedAt": null,
-          "resolvedText": null,
-          "oiDuration": null,
-          "channelCreatedAt": "2026-07-07T16:32:39+05:30",
-          "execTagged": []
-        },
-        {
-          "caseNum": "473525570",
-          "account": "Honeywell Building Technologies - GDM NEX",
-          "product": "Service-Developer Support",
-          "timeIST": "11:56 PM",
-          "quality": "PENDING",
-          "resolve": null,
-          "channelEngage": null,
-          "isRed": false,
-          "bridgeWithin15m": null,
-          "bridgeNA": null,
-          "resolvedAt": null,
-          "resolvedText": "Pre-existing re-alert (channel created 2026-05-21)",
-          "oiDuration": null,
-          "channelCreatedAt": "2026-05-21T23:56:09+05:30",
-          "execTagged": []
-        },
-        {
-          "caseNum": "474024879",
-          "account": "Juniper Networks, Inc.",
-          "product": "Service-Developer Support",
-          "timeIST": "5:30 PM",
-          "quality": "PENDING",
-          "resolve": null,
-          "channelEngage": "59s",
-          "isRed": false,
-          "bridgeWithin15m": null,
-          "bridgeNA": "cic-disengaged",
-          "resolvedAt": null,
-          "resolvedText": null,
-          "oiDuration": null,
-          "channelCreatedAt": "2026-07-07T17:30:20+05:30",
-          "execTagged": []
-        },
-        {
-          "caseNum": "474024436",
-          "account": "B2C (Premier / Community / Mortgage / PBWM)",
-          "product": "Service-Developer Support",
-          "timeIST": "6:52 PM",
-          "quality": "PENDING",
-          "resolve": null,
-          "channelEngage": null,
-          "isRed": false,
-          "bridgeWithin15m": null,
-          "bridgeNA": null,
-          "resolvedAt": null,
-          "resolvedText": "Pre-existing re-alert (original case pre-dates 2026-07-07)",
-          "oiDuration": null,
-          "channelCreatedAt": "2026-07-07T18:52:13+05:30",
-          "execTagged": []
-        },
-        {
-          "caseNum": "474025809",
-          "account": "American Diabetes Association",
-          "product": "Service-How-to, Setup, Configuration, Data Management",
-          "timeIST": "7:04 PM",
-          "quality": "PENDING",
-          "resolve": null,
-          "channelEngage": "39s",
-          "isRed": false,
-          "bridgeWithin15m": null,
-          "bridgeNA": "howto",
-          "resolvedAt": null,
-          "resolvedText": null,
-          "oiDuration": null,
-          "channelCreatedAt": "2026-07-07T19:04:44+05:30",
-          "execTagged": []
-        },
-        {
-          "caseNum": "473966134",
-          "account": "iFood.com Agencia de Restaurantes Online S.A.",
-          "product": "Service-Digital Engagement",
-          "timeIST": "7:20 PM",
-          "quality": "PENDING",
-          "resolve": null,
-          "channelEngage": null,
-          "isRed": false,
-          "bridgeWithin15m": null,
-          "bridgeNA": null,
-          "resolvedAt": null,
-          "resolvedText": "Pre-existing re-alert (channel created 2026-06-29)",
-          "oiDuration": null,
-          "channelCreatedAt": "2026-07-07T19:20:59+05:30",
           "execTagged": []
         }
       ]
