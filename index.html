@@ -604,6 +604,17 @@ function filteredWeekdays(){
   });
 }
 
+// Helper: ALL days (weekday + weekend) filtered to the same KPI date range.
+// Used by KPIs (e.g. Director+ Tagged) that intentionally span weekends too.
+function filteredAllDays(){
+  if(!kpiFilter.from&&!kpiFilter.to)return DB.days;
+  return DB.days.filter(function(d){
+    if(kpiFilter.from&&d.date<kpiFilter.from)return false;
+    if(kpiFilter.to&&d.date>kpiFilter.to)return false;
+    return true;
+  });
+}
+
 // ── KPI FILTER PRESET ────────────────────────────────────────────────────────
 function setKpiPreset(preset,btn){
   // Deactivate all preset buttons, activate clicked one
@@ -834,10 +845,10 @@ function renderKPIs(){
   else{engageKpi.className='kpi needs';}
 
   // Director+ Tagged KPI
-  // Director+ count uses ALL days (weekday + weekend) — exec presence tracked across full history
+  // Director+ count uses ALL days (weekday + weekend) within the selected KPI date range
   // Restricted to a specific watchlist of Director+ names (case-insensitive match on execTagged.name)
   const EXEC_WATCHLIST=['shaifali nagpal','bhuvneshwar sharma','vrushali khatav','christian becker','david sanders','leya kurian'];
-  const allCases=DB.days.flatMap(function(d){return d.cases;});
+  const allCases=filteredAllDays().flatMap(function(d){return d.cases;});
   const execTaggedCases=allCases.filter(function(c){
     if(!c.execTagged||!c.execTagged.length)return false;
     return c.execTagged.some(function(e){return EXEC_WATCHLIST.indexOf((e.name||'').trim().toLowerCase())!==-1;});
