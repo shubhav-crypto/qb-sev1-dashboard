@@ -803,8 +803,8 @@ function renderKPIs(){
   const within15AvgSecs=within15Deltas.length?Math.round(within15Deltas.reduce(function(a,b){return a+b;},0)/within15Deltas.length):null;
   const post15AvgSecs=post15Deltas.length?Math.round(post15Deltas.reduce(function(a,b){return a+b;},0)/post15Deltas.length):null;
   document.getElementById('kpiBridgeAvg').textContent=within15AvgSecs!==null?fmtBridgeSecs(within15AvgSecs):'—';
-  document.getElementById('kpiBridgeAvgSub').textContent=within15All.length?within15All.length+' case'+(within15All.length!==1?'s':'')+' within 15m SLA'+(within15Deltas.length!==within15All.length?' ('+within15Deltas.length+' timed)':''):'no cases within 15m SLA';
-  document.getElementById('kpiBridgePost15').textContent='Post-15m SLA avg: '+(post15AvgSecs!==null?fmtBridgeSecs(post15AvgSecs):'—')+' ('+post15All.length+(post15Deltas.length!==post15All.length?', '+post15Deltas.length+' timed':'')+')';
+  document.getElementById('kpiBridgeAvgSub').textContent=within15All.length?within15All.length+' case'+(within15All.length!==1?'s':'')+' within 15m SLA':'no cases within 15m SLA';
+  document.getElementById('kpiBridgePost15').textContent='Post-15m SLA avg: '+(post15AvgSecs!==null?fmtBridgeSecs(post15AvgSecs):'—')+' ('+post15All.length+')';
   document.getElementById('kpiBridgeNotReq').textContent='Bridge not required (all NA reasons): '+bridgeNotReqCount;
   document.getElementById('kpiBridgePending').textContent='No bridge data / pending: '+bridgePendingCount;
 
