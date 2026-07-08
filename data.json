@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated": "2026-07-03T21:00:00+05:30",
-    "totalCases": 386,
-    "daysTracked": 33
+    "generated": "2026-07-06T21:00:00+05:30",
+    "totalCases": 390,
+    "daysTracked": 34
   },
   "schedule": {
     "2026-06-01": {
@@ -120,6 +120,10 @@
     "2026-07-03": {
       "manager": "Jyothirmayee",
       "managerId": "WN8LA3U5D"
+    },
+    "2026-07-06": {
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5"
     }
   },
   "managerIds": {
@@ -8154,6 +8158,92 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-07-03T19:24:52+05:30",
           "bridgeCreatedAt": "2026-07-03T19:29:08+05:30",
+          "execTagged": []
+        }
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "label": "Jul 6",
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [
+        {
+          "type": "exec",
+          "text": "👁 Exec Visibility — HDFC Bank Ltd (EMEA Retained, next checkpoint with CSM tomorrow 2 PM IST)"
+        }
+      ],
+      "cases": [
+        {
+          "caseNum": "474013707",
+          "account": "Insulet Corporation",
+          "product": "Service-Developer Support",
+          "timeIST": "2:27 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "3m 1s",
+          "isRed": false,
+          "bridgeWithin15m": false,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-06T14:27:44+05:30",
+          "bridgeCreatedAt": "2026-07-06T14:51:10+05:30",
+          "execTagged": []
+        },
+        {
+          "caseNum": "473861771",
+          "account": "Manufacture Française des Pneumatiques Michelin (SELA)",
+          "product": "Service-Developer Support",
+          "timeIST": "2:52 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": null,
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": "Pre-existing re-alert (channel created 2026-06-17)",
+          "oiDuration": null,
+          "channelCreatedAt": "2026-06-17T19:28:25+05:30",
+          "execTagged": []
+        },
+        {
+          "caseNum": "474013978",
+          "account": "The Prudential Insurance Company of America",
+          "product": "Service-Developer Support",
+          "timeIST": "3:02 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "4m 29s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-06T15:02:40+05:30",
+          "execTagged": []
+        },
+        {
+          "caseNum": "474014694",
+          "account": "Bank of the Philippine Islands",
+          "product": "Service-Email Delivery & Desktop Integrations",
+          "timeIST": "4:41 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "44s",
+          "isRed": false,
+          "bridgeWithin15m": true,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-06T16:41:00+05:30",
+          "bridgeCreatedAt": "2026-07-06T16:43:45+05:30",
           "execTagged": []
         }
       ]
