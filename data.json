@@ -8311,12 +8311,13 @@
           "resolve": null,
           "channelEngage": "23m 13s",
           "isRed": false,
-          "bridgeWithin15m": null,
+          "bridgeWithin15m": true,
           "bridgeNA": null,
           "resolvedAt": null,
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-07T15:05:19+05:30",
+          "bridgeCreatedAt": "2026-07-07T15:11:28+05:30",
           "execTagged": []
         },
         {
