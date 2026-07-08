@@ -178,7 +178,7 @@
     <div class="kpi yellow"><div class="kpi-value" id="kpiAvgPerDay">—</div><div class="kpi-label">Avg Cases / Day</div><div class="kpi-sub" id="kpiAvgSub"></div></div>
     <div class="kpi green"><div class="kpi-value" id="kpiMonthEngage" style="font-size:24px;">—</div><div class="kpi-label">Monthly Avg Engage</div><div class="kpi-sub" id="kpiMonthEngageSub"></div></div>
     <div class="kpi purple"><div class="kpi-value" id="kpiWeekEngage" style="font-size:24px;">—</div><div class="kpi-label">This Week Avg Engage</div><div class="kpi-sub" id="kpiWeekEngageSub"></div></div>
-    <div class="kpi rose"><div class="kpi-value" id="kpiBridgeAvg" style="font-size:24px;">—</div><div class="kpi-label">Bridge Creation Avg</div><div class="kpi-sub" id="kpiBridgeAvgSub"></div></div>
+    <div class="kpi rose"><div class="kpi-value" id="kpiBridgeAvg" style="font-size:22px;">—</div><div class="kpi-label">Bridge Creation Avg (Within 15m)</div><div class="kpi-sub" id="kpiBridgeAvgSub"></div><div class="kpi-sub" id="kpiBridgePost15" style="margin-top:3px;font-size:10px;"></div><div class="kpi-sub" id="kpiBridgeNotReq" style="margin-top:3px;font-size:10px;"></div></div>
     <div class="kpi green"><div class="kpi-value" id="kpiEngageCompliance" style="font-size:30px;">—</div><div class="kpi-label">QB Engage Compliance</div><div class="kpi-sub" id="kpiEngageComplianceSub"></div><div class="kpi-sub" id="kpiEngageComplianceThrottle" style="margin-top:3px;font-size:10px;"></div></div>
     <div class="kpi amber" title="Cases where Shaifali Nagpal, Bhuvneshwar Sharma, Vrushali Khatav, Christian Becker, David Sanders, or Leya Kurian was tagged in the channel"><div class="kpi-value" id="kpiExecTagged">—</div><div class="kpi-label">Director+ Tagged (Watchlist)</div><div class="kpi-sub" id="kpiExecTaggedSub"></div><div class="kpi-sub" id="kpiExecTaggedDetail" style="margin-top:3px;font-size:10px;"></div></div>
   </div>
@@ -737,6 +737,8 @@ function renderKPIs(){
     document.getElementById('kpiWeekEngageSub').textContent='no data in range';
     document.getElementById('kpiBridgeAvg').textContent='—';
     document.getElementById('kpiBridgeAvgSub').textContent='no data in range';
+    document.getElementById('kpiBridgePost15').textContent='';
+    document.getElementById('kpiBridgeNotReq').textContent='';
     document.getElementById('kpiEngageCompliance').textContent='—';
     document.getElementById('kpiEngageComplianceSub').textContent='no data in range';
     const et=document.getElementById('kpiEngageComplianceThrottle');if(et)et.textContent='';
@@ -780,14 +782,24 @@ function renderKPIs(){
   document.getElementById('kpiWeekEngage').textContent=weekAvgEngage||'—';
   document.getElementById('kpiWeekEngageSub').textContent=weekAvgEngage?(wkLabel+', '+thisWeek.length+' days'):'no data yet';
 
-  // Bridge creation avg — mean of (bridgeCreatedAt − channelCreatedAt) for cases where both exist and bridgeWithin15m is not null
-  const bridgeDeltas=wdays.flatMap(function(d){return d.cases;})
-    .filter(function(c){return !c.bridgeNA&&c.bridgeCreatedAt&&c.channelCreatedAt;})
+  // Bridge creation avg — split into 3: within-15m SLA avg, post-15m SLA avg, and bridge-not-required count (LAP/Throttle/Resolved)
+  const bridgeCases=wdays.flatMap(function(d){return d.cases;});
+  const within15Deltas=bridgeCases
+    .filter(function(c){return !c.bridgeNA&&c.bridgeWithin15m===true&&c.bridgeCreatedAt&&c.channelCreatedAt;})
     .map(function(c){return bridgeDeltaSecs(c);})
     .filter(function(v){return v!==null&&v>=0;});
-  const bridgeAvgSecs=bridgeDeltas.length?Math.round(bridgeDeltas.reduce(function(a,b){return a+b;},0)/bridgeDeltas.length):null;
-  document.getElementById('kpiBridgeAvg').textContent=bridgeAvgSecs!==null?fmtBridgeSecs(bridgeAvgSecs):'—';
-  document.getElementById('kpiBridgeAvgSub').textContent=bridgeDeltas.length?'channel creation → bridge start':'no bridge data yet';
+  const post15Deltas=bridgeCases
+    .filter(function(c){return !c.bridgeNA&&c.bridgeWithin15m===false&&c.bridgeCreatedAt&&c.channelCreatedAt;})
+    .map(function(c){return bridgeDeltaSecs(c);})
+    .filter(function(v){return v!==null&&v>=0;});
+  const bridgeNotReqCount=bridgeCases
+    .filter(function(c){return ['lap','throttle','resolved'].indexOf(c.bridgeNA)!==-1;}).length;
+  const within15AvgSecs=within15Deltas.length?Math.round(within15Deltas.reduce(function(a,b){return a+b;},0)/within15Deltas.length):null;
+  const post15AvgSecs=post15Deltas.length?Math.round(post15Deltas.reduce(function(a,b){return a+b;},0)/post15Deltas.length):null;
+  document.getElementById('kpiBridgeAvg').textContent=within15AvgSecs!==null?fmtBridgeSecs(within15AvgSecs):'—';
+  document.getElementById('kpiBridgeAvgSub').textContent=within15Deltas.length?within15Deltas.length+' case'+(within15Deltas.length!==1?'s':'')+' within 15m SLA':'no cases within 15m SLA';
+  document.getElementById('kpiBridgePost15').textContent='Post-15m SLA avg: '+(post15AvgSecs!==null?fmtBridgeSecs(post15AvgSecs)+' ('+post15Deltas.length+')':'—');
+  document.getElementById('kpiBridgeNotReq').textContent='Bridge not required (LAP/Throttle/Resolved): '+bridgeNotReqCount;
 
   // QB Engage Compliance — new channels only
   // Excluded from denominator: lap, throttle, mci, resolved, outside-window, no-channel, howto, cic-disengaged(no-impact), monitoring
