@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated": "2026-07-13T00:00:00+05:30",
-    "totalCases": 407,
-    "daysTracked": 37
+    "generated": "2026-07-13T00:10:00+05:30",
+    "totalCases": 415,
+    "daysTracked": 38
   },
   "schedule": {
     "2026-06-01": {
@@ -126,6 +126,10 @@
       "managerId": "U04219TJTK5"
     },
     "2026-07-07": {
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5"
+    },
+    "2026-07-08": {
       "manager": "Mirza",
       "managerId": "U04219TJTK5"
     }
@@ -8590,6 +8594,158 @@
           "resolvedText": "Pre-existing re-alert (channel created 2026-06-29)",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-07T19:20:59+05:30",
+          "execTagged": []
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "label": "Jul 8",
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [
+        {
+          "type": "exec",
+          "text": "\ud83d\udc41 Exec Visibility \u2014 Leadership attention required (Potential Exec Visibility case): Citibank, N.A. (474033662)"
+        }
+      ],
+      "cases": [
+        {
+          "caseNum": "474033662",
+          "account": "Citibank, N.A..",
+          "product": "Service-Developer Support",
+          "timeIST": "12:46 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "30m 21s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-08T12:46:57+05:30",
+          "execTagged": []
+        },
+        {
+          "caseNum": "473997064",
+          "account": "Hamilton College - Advancement",
+          "product": "Service-Mobile apps",
+          "timeIST": "3:26 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "2m 32s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": "Root cause was customer-side (accidentally cancelled Mobile Publisher Beta app in Setup UI). CIC disengaged after confirming fix was entirely within customer's control.",
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-08T15:26:26+05:30",
+          "execTagged": []
+        },
+        {
+          "caseNum": "474035479",
+          "account": "Stellantis Financial Services Germany",
+          "product": "Service-How-to, Setup, Configuration, Data Management",
+          "timeIST": "4:06 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "5m 9s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": "howto",
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-08T16:06:38+05:30",
+          "execTagged": []
+        },
+        {
+          "caseNum": "474035529",
+          "account": "Trans Union LLC",
+          "product": "Service-Email Delivery & Desktop Integrations",
+          "timeIST": "4:13 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "7m 47s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-08T16:13:50+05:30",
+          "execTagged": []
+        },
+        {
+          "caseNum": "474035594",
+          "account": "Sunbelt Rentals Limited",
+          "product": "Service-Experience Builder and Content Management",
+          "timeIST": "4:24 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "15m 25s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-08T16:24:05+05:30",
+          "execTagged": []
+        },
+        {
+          "caseNum": "474035933",
+          "account": "Eagle One / UCRM (Barclays International Unified CRM)",
+          "product": "Service-Developer Support",
+          "timeIST": "5:14 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "7m 10s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": "throttle",
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-08T17:14:27+05:30",
+          "execTagged": []
+        },
+        {
+          "caseNum": "473537570",
+          "account": "Google LLC",
+          "product": "Service-Developer Support",
+          "timeIST": "6:20 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": null,
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": "Pre-existing re-alert (channel created 2026-05-22)",
+          "oiDuration": null,
+          "channelCreatedAt": "2026-05-22T23:06:58+05:30",
+          "execTagged": []
+        },
+        {
+          "caseNum": "474036537",
+          "account": "CONMED Corporation",
+          "product": "Service-Email Delivery & Desktop Integrations",
+          "timeIST": "6:36 PM",
+          "quality": "PENDING",
+          "resolve": null,
+          "channelEngage": "3m 46s",
+          "isRed": false,
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "resolvedAt": null,
+          "resolvedText": null,
+          "oiDuration": null,
+          "channelCreatedAt": "2026-07-08T18:36:57+05:30",
           "execTagged": []
         }
       ]
