@@ -188,7 +188,11 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
       </button>
       <div class="kpi-value" id="kpiExecTagged">—</div><div class="kpi-label">Director+ Tagged (Watchlist)</div><div class="kpi-sub" id="kpiExecTaggedSub"></div><div class="kpi-sub" id="kpiExecTaggedDetail" style="margin-top:3px;font-size:10px;"></div></div>
-    <div class="kpi rose" id="kpiMciTile" title="Distinct Major Contributing Incidents (MCIs) called out in day EOD summaries within the selected range"><div class="kpi-value" id="kpiMciCount">—</div><div class="kpi-label">MCIs Received</div><div class="kpi-sub" id="kpiMciSub"></div></div>
+    <div class="kpi rose" id="kpiMciTile" title="Distinct Major Contributing Incidents (MCIs) called out in day EOD summaries within the selected range">
+      <button id="mciDownloadBtn" class="kpi-download-btn" onclick="downloadMciCasesCSV(event)" title="Download MCI-clustered cases (CSV)" aria-label="Download MCI-clustered cases as CSV">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
+      </button>
+      <div class="kpi-value" id="kpiMciCount">—</div><div class="kpi-label">MCIs Received</div><div class="kpi-sub" id="kpiMciSub"></div></div>
   </div>
 
   <div class="wow-engage-card">
@@ -401,6 +405,58 @@ function downloadExecTaggedCSV(evt){
   a.click();
   document.body.removeChild(a);
   URL.revokeObjectURL(url);
+}
+
+function triggerCsvDownload(headers,rows,filenameBase){
+  const lines=[headers.join(',')];
+  rows.forEach(function(r){
+    lines.push(headers.map(function(h){return csvEscape(r[h]);}).join(','));
+  });
+  const csv=lines.join('\n');
+  const blob=new Blob([csv],{type:'text/csv;charset=utf-8;'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  const rangeSuffix=(kpiFilter.from||kpiFilter.to)?('_'+(kpiFilter.from||'start')+'_to_'+(kpiFilter.to||'end')):'_all';
+  a.href=url;
+  a.download=filenameBase+rangeSuffix+'.csv';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+// ── DOWNLOAD: MCI-clustered raw cases (CSV) ──────────────────────────────────
+function downloadMciCasesCSV(evt){
+  if(evt)evt.stopPropagation();
+  // Uses the same date-range filter currently applied to the KPI bar (ALL days,
+  // weekday + weekend — matches the "MCIs Received" KPI tile's scoping).
+  // Exports every individual Sev1 case rolled up under an MCI (bridgeNA==='mci'),
+  // annotated with that day's MCI callout text for context.
+  const rows=[];
+  filteredAllDays().forEach(function(d){
+    const mciCallout=(d.callouts||[]).find(function(co){return co.type==='mci';});
+    d.cases.forEach(function(c){
+      if(c.bridgeNA!=='mci')return;
+      rows.push({
+        date:d.date,
+        caseNum:c.caseNum,
+        account:c.account,
+        product:c.product,
+        timeIST:c.timeIST,
+        manager:d.manager,
+        mciCallout:mciCallout?mciCallout.text:'',
+        resolvedAt:c.resolvedAt||'',
+        oiDuration:c.oiDuration||'',
+        resolvedText:c.resolvedText||''
+      });
+    });
+  });
+  if(!rows.length){
+    alert('No MCI-clustered cases found in the current date range.');
+    return;
+  }
+  const headers=['date','caseNum','account','product','timeIST','manager','mciCallout','resolvedAt','oiDuration','resolvedText'];
+  triggerCsvDownload(headers,rows,'mci-clustered-cases');
 }
 
 // ── UTILS ────────────────────────────────────────────────────────────────────
