@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated": "2026-07-13T13:15:00+05:30",
-    "totalCases": 446,
+    "generated": "2026-07-13T13:30:00+05:30",
+    "totalCases": 445,
     "daysTracked": 40
   },
   "schedule": {
@@ -9226,23 +9226,6 @@
           "resolvedText": "AutoThrottle (memoryHost) triggered on sandbox org AUS36S due to heavy Apex usage; no critical business impact confirmed by customer; CIC disengaged citing throttle limited to sandbox with no active production impact.",
           "oiDuration": "54m",
           "channelCreatedAt": "2026-07-10T12:56:26+05:30",
-          "execTagged": []
-        },
-        {
-          "caseNum": "474055837",
-          "account": "McKinsey & Company, Inc. United States",
-          "product": "Service-Developer Support",
-          "timeIST": "2:15 PM",
-          "quality": "PENDING",
-          "resolve": null,
-          "channelEngage": "2m 8s",
-          "isRed": false,
-          "bridgeWithin15m": null,
-          "bridgeNA": null,
-          "resolvedAt": "2026-07-10 19:23:59 IST",
-          "resolvedText": "Customer needed the \"Create Connected App\" option enabled in sandbox and production ahead of migrating off the deprecated OAuth Username-Password flow to OAuth JWT Bearer; sandbox fixed via an approved internal permission change (GUS case 92707709), and customer confirmed the production option was visible; CIC disengaged.",
-          "oiDuration": "5h 8m",
-          "channelCreatedAt": "2026-07-10T14:15:20+05:30",
           "execTagged": []
         },
         {
