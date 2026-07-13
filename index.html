@@ -188,6 +188,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
       </button>
       <div class="kpi-value" id="kpiExecTagged">—</div><div class="kpi-label">Director+ Tagged (Watchlist)</div><div class="kpi-sub" id="kpiExecTaggedSub"></div><div class="kpi-sub" id="kpiExecTaggedDetail" style="margin-top:3px;font-size:10px;"></div></div>
+    <div class="kpi rose" id="kpiMciTile" title="Distinct Major Contributing Incidents (MCIs) called out in day EOD summaries within the selected range"><div class="kpi-value" id="kpiMciCount">—</div><div class="kpi-label">MCIs Received</div><div class="kpi-sub" id="kpiMciSub"></div></div>
   </div>
 
   <div class="wow-engage-card">
@@ -805,6 +806,8 @@ function renderKPIs(){
     document.getElementById('kpiExecTagged').textContent='—';
     document.getElementById('kpiExecTaggedSub').textContent='no data in range';
     const etd=document.getElementById('kpiExecTaggedDetail');if(etd)etd.textContent='';
+    document.getElementById('kpiMciCount').textContent='—';
+    document.getElementById('kpiMciSub').textContent='no data in range';
     updateKpiFilterLabel();
     return;
   }
@@ -917,6 +920,17 @@ function renderKPIs(){
   execEl.textContent=execTaggedCount>0?execTaggedCount:'0';
   execSubEl.textContent=execTaggedCount>0?'cases with watchlist Dir+ in channel':'no watchlist Director+ found yet';
   if(execDetailEl){execDetailEl.textContent='';}
+
+  // MCIs Received KPI — distinct Major Contributing Incidents called out in day EOD summaries
+  // (day.callouts entries with type==='mci'), within ALL days (weekday + weekend) in the selected range
+  const mciCallouts=filteredAllDays().flatMap(function(d){
+    return (d.callouts||[]).filter(function(co){return co.type==='mci';}).map(function(co){return{date:d.date,text:co.text};});
+  });
+  const mciCount=mciCallouts.length;
+  const mciEl=document.getElementById('kpiMciCount');
+  const mciSubEl=document.getElementById('kpiMciSub');
+  mciEl.textContent=mciCount>0?mciCount:'0';
+  mciSubEl.textContent=mciCount>0?mciCount+' MCI'+(mciCount!==1?'s':'')+' called out':'no MCIs in range';
 
   updateKpiFilterLabel();
 }
