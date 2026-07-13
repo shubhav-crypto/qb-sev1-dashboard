@@ -50,6 +50,10 @@
   .kpi-label{font-size:12px;color:var(--text-muted);font-weight:500}
   .kpi-sub{font-size:11px;color:var(--text-muted);margin-top:6px}
 
+  .kpi-download-btn{position:absolute;top:12px;right:12px;width:26px;height:26px;display:flex;align-items:center;justify-content:center;background:var(--surface2);border:1px solid var(--border);border-radius:6px;color:var(--text-muted);cursor:pointer;padding:0;transition:all .15s;z-index:2}
+  .kpi-download-btn:hover{background:#f59e0b;border-color:#f59e0b;color:#fff}
+  .kpi-download-btn:active{transform:scale(0.94)}
+
   .kpi-filter-bar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--border);border-radius:var(--card-radius);padding:10px 16px;margin-bottom:12px;}
   .kpi-preset{background:var(--surface2);border:1px solid var(--border);border-radius:20px;padding:4px 13px;font-size:12px;font-weight:500;cursor:pointer;color:var(--text-muted);transition:all .15s;line-height:1.5;}
   .kpi-preset:hover{background:#e2e8f0;color:var(--text);}
@@ -179,7 +183,11 @@
     <div class="kpi green"><div class="kpi-value" id="kpiMonthEngage" style="font-size:24px;">—</div><div class="kpi-label">Monthly Avg Engage</div><div class="kpi-sub" id="kpiMonthEngageSub"></div></div>
     <div class="kpi purple"><div class="kpi-value" id="kpiWeekEngage" style="font-size:24px;">—</div><div class="kpi-label">This Week Avg Engage</div><div class="kpi-sub" id="kpiWeekEngageSub"></div></div>
     <div class="kpi green"><div class="kpi-value" id="kpiEngageCompliance" style="font-size:30px;">—</div><div class="kpi-label">QB Engage Compliance</div><div class="kpi-sub" id="kpiEngageComplianceSub"></div><div class="kpi-sub" id="kpiEngageComplianceThrottle" style="margin-top:3px;font-size:10px;"></div></div>
-    <div class="kpi amber" title="Cases where Shaifali Nagpal, Bhuvneshwar Sharma, Vrushali Khatav, Christian Becker, David Sanders, or Leya Kurian was tagged in the channel"><div class="kpi-value" id="kpiExecTagged">—</div><div class="kpi-label">Director+ Tagged (Watchlist)</div><div class="kpi-sub" id="kpiExecTaggedSub"></div><div class="kpi-sub" id="kpiExecTaggedDetail" style="margin-top:3px;font-size:10px;"></div></div>
+    <div class="kpi amber" title="Cases where Shaifali Nagpal, Bhuvneshwar Sharma, Vrushali Khatav, Christian Becker, David Sanders, or Leya Kurian was tagged in the channel">
+      <button id="execDownloadBtn" class="kpi-download-btn" onclick="downloadExecTaggedCSV(event)" title="Download Director+ tagged cases (CSV)" aria-label="Download Director+ tagged cases as CSV">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
+      </button>
+      <div class="kpi-value" id="kpiExecTagged">—</div><div class="kpi-label">Director+ Tagged (Watchlist)</div><div class="kpi-sub" id="kpiExecTaggedSub"></div><div class="kpi-sub" id="kpiExecTaggedDetail" style="margin-top:3px;font-size:10px;"></div></div>
   </div>
 
   <div class="wow-engage-card">
@@ -339,6 +347,60 @@ const CHIP_BG = {Nikhil:'rgba(0,163,255,.08)',Jyothirmayee:'rgba(139,92,246,.1)'
 // (KPI tile, day detail table). Case-insensitive match against execTagged[].name.
 const EXEC_WATCHLIST=['shaifali nagpal','vrushali khatav','christian becker','leya kurian','bhuvneshwar sharma','david sanders'];
 function isWatchlistExec(name){return EXEC_WATCHLIST.indexOf((name||'').trim().toLowerCase())!==-1;}
+
+// ── DOWNLOAD: Director+ Tagged raw cases (CSV) ────────────────────────────────
+function csvEscape(val){
+  const s=(val===null||val===undefined)?'':String(val);
+  if(/[",\n]/.test(s))return '"'+s.replace(/"/g,'""')+'"';
+  return s;
+}
+function downloadExecTaggedCSV(evt){
+  if(evt)evt.stopPropagation();
+  // Uses the same date-range filter currently applied to the KPI bar, and the
+  // same Director+ watchlist match used by the "Director+ Tagged" KPI tile.
+  const rows=[];
+  filteredAllDays().forEach(function(d){
+    d.cases.forEach(function(c){
+      const hits=(c.execTagged||[]).filter(function(e){return isWatchlistExec(e.name);});
+      if(!hits.length)return;
+      rows.push({
+        date:d.date,
+        caseNum:c.caseNum,
+        account:c.account,
+        product:c.product,
+        timeIST:c.timeIST,
+        manager:d.manager,
+        execNames:hits.map(function(e){return e.name;}).join('; '),
+        execTitles:hits.map(function(e){return e.title||'';}).join('; '),
+        channelEngage:c.channelEngage||'',
+        bridgeWithin15m:c.bridgeWithin15m===null||c.bridgeWithin15m===undefined?'':c.bridgeWithin15m,
+        resolvedAt:c.resolvedAt||'',
+        oiDuration:c.oiDuration||'',
+        resolvedText:c.resolvedText||''
+      });
+    });
+  });
+  if(!rows.length){
+    alert('No Director+ tagged cases found in the current date range.');
+    return;
+  }
+  const headers=['date','caseNum','account','product','timeIST','manager','execNames','execTitles','channelEngage','bridgeWithin15m','resolvedAt','oiDuration','resolvedText'];
+  const lines=[headers.join(',')];
+  rows.forEach(function(r){
+    lines.push(headers.map(function(h){return csvEscape(r[h]);}).join(','));
+  });
+  const csv=lines.join('\n');
+  const blob=new Blob([csv],{type:'text/csv;charset=utf-8;'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  const rangeSuffix=(kpiFilter.from||kpiFilter.to)?('_'+(kpiFilter.from||'start')+'_to_'+(kpiFilter.to||'end')):'_all';
+  a.href=url;
+  a.download='director-plus-tagged-cases'+rangeSuffix+'.csv';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
 
 // ── UTILS ────────────────────────────────────────────────────────────────────
 function parseSeconds(s){
