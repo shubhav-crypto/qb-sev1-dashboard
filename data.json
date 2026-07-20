@@ -1,8 +1,8 @@
 {
   "meta": {
     "generated": "2026-07-20T00:00:00+05:30",
-    "totalCases": 487,
-    "daysTracked": 44
+    "totalCases": 500,
+    "daysTracked": 45
   },
   "schedule": {
     "2026-06-01": {
@@ -150,6 +150,10 @@
       "managerId": "U04219TJTK5"
     },
     "2026-07-16": {
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5"
+    },
+    "2026-07-17": {
       "manager": "Mirza",
       "managerId": "U04219TJTK5"
     }
@@ -9998,6 +10002,230 @@
           "bridgeNA": false,
           "channelCreatedAt": "2026-07-16T19:21:07+05:30",
           "bridgeCreatedAt": "2026-07-16 19:24:09 IST"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "label": "Jul 17",
+      "dayOfWeek": "Fri",
+      "isWeekend": false,
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [
+        {
+          "type": "exec",
+          "text": "\ud83d\udc41 Exec Visibility \u2014 Leadership attention required (Potential Exec Visibility case): Farmers Group, Inc. (474090360)"
+        },
+        {
+          "type": "exec",
+          "text": "\ud83d\udc41 Exec Visibility \u2014 Leadership attention required (Potential Exec Visibility case): IBM (474094588)"
+        },
+        {
+          "type": "exec",
+          "text": "\ud83d\udc41 Exec Visibility \u2014 Leadership attention required (Potential Exec Visibility case): ADP Inc (474090792) \u2014 GHO Warm Handover Request, excluded from case count/table per GHO exclusion rule; flagged for leadership visibility only."
+        },
+        {
+          "type": "exec",
+          "text": "\ud83d\udc41 Exec Visibility \u2014 Leadership attention required (Potential Exec Visibility case): Enel Global Services S.r.l. (Enel Chile) (474086376) \u2014 GHO Warm Handover Request, excluded from case count/table per GHO exclusion rule; flagged for leadership visibility only."
+        },
+        {
+          "type": "exec",
+          "text": "\ud83d\udc41 Exec Visibility \u2014 Leadership attention required (Potential Exec Visibility case): Pearson Education, Inc. One CRM (474111002) \u2014 AFV & Momentum customer"
+        }
+      ],
+      "cases": [
+        {
+          "caseNum": "474111002",
+          "account": "Pearson Education, Inc. One CRM",
+          "product": "Service Cloud Voice",
+          "timeIST": "12:15 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": "outside-window",
+          "resolvedText": "Channel created 12:15 PM IST \u2014 before the 12:30 PM QB window opened. CIC Case Commander (Vishnu Nambiar) engaged at 12:38 PM IST, 22m56s after creation, straddling the window boundary. Bug blocking Pearson's voice-agent go-live (LLM Gateway masking company/product names); GHO warm-handover to APAC at 8:26 PM IST; case remained open across CIC rotations through July 20 pending an engineering patch fix.",
+          "channelCreatedAt": "2026-07-17T12:15:44+05:30"
+        },
+        {
+          "caseNum": "474111668",
+          "account": "Sonos, Inc. (Primary)",
+          "product": "Service Cloud Voice",
+          "timeIST": "1:42 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "1m 59s",
+          "bridgeWithin15m": false,
+          "bridgeNA": false,
+          "resolvedText": "Alerted twice (1:42 PM and 5:07 PM IST) \u2014 same case/channel; issue reoccurred intermittently and was warm-handed-over to AMER at 9:22 PM IST for follow-the-sun coverage.",
+          "channelCreatedAt": "2026-07-17T13:42:06+05:30",
+          "bridgeCreatedAt": "2026-07-17 14:07:53 IST"
+        },
+        {
+          "caseNum": "474077818",
+          "account": "Bank of the Philippine Islands",
+          "product": "Developer Support",
+          "timeIST": "2:56 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "10m 6s",
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-07-17T14:56:43+05:30"
+        },
+        {
+          "caseNum": "474112387",
+          "account": "Marriott International Administrative Services Inc.",
+          "product": "Developer Support",
+          "timeIST": "3:15 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "7m 52s",
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "resolvedText": "Throttle traced to a sandbox with no critical business impact; CIC stood down same engagement.",
+          "channelCreatedAt": "2026-07-17T15:15:53+05:30"
+        },
+        {
+          "caseNum": "474090360",
+          "account": "Farmers Group, Inc.",
+          "product": "Developer Support",
+          "timeIST": "4:11 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "4m 25s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-07-17T16:11:26+05:30",
+          "bridgeCreatedAt": "2026-07-17 16:19:16 IST"
+        },
+        {
+          "caseNum": "474112881",
+          "account": "DexCom, Inc. (Service Org)",
+          "product": "Developer Support",
+          "timeIST": "4:19 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "1m 38s",
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-07-17T16:19:35+05:30"
+        },
+        {
+          "caseNum": "474094588",
+          "account": "IBM",
+          "product": "Developer Support",
+          "timeIST": "4:58 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "1m 2s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-07-17T16:58:05+05:30",
+          "bridgeCreatedAt": "2026-07-17 17:11:42 IST"
+        },
+        {
+          "caseNum": "474113382",
+          "account": "Enel Global Services S.r.l. (Enel Distribuzione)",
+          "product": "Developer Support",
+          "timeIST": "5:31 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "41m 53s",
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-07-17T17:31:14+05:30"
+        },
+        {
+          "caseNum": "474034385",
+          "account": "Palo Alto Networks, Inc.",
+          "product": "Developer Support",
+          "timeIST": "5:33 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "6m 10s",
+          "bridgeWithin15m": false,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-07-17T17:33:07+05:30",
+          "bridgeCreatedAt": "2026-07-17 17:49:53 IST"
+        },
+        {
+          "caseNum": "474113913",
+          "account": "The Prudential Insurance Company of America - P360",
+          "product": "Security & Activations",
+          "timeIST": "6:41 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "55s",
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-07-17T18:41:20+05:30"
+        },
+        {
+          "caseNum": "474069331",
+          "account": "LACOSTE OPERATIONS",
+          "product": "Experience Management and Workspaces",
+          "timeIST": "6:45 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": "resolved",
+          "resolvedText": "Pre-existing re-alert (Sev1 channel created 2026-07-13); case had already been resolved and CIC disengaged at 3:13 PM IST on 2026-07-13 before this 6:45 PM IST PD re-alert, which triggered only an automated checklist re-post and a channel join, with no substantive follow-up activity.",
+          "channelCreatedAt": "2026-07-13T14:42:37+05:30"
+        },
+        {
+          "caseNum": "474114132",
+          "account": "Deloitte Consulting LLP",
+          "product": "Developer Support",
+          "timeIST": "7:07 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "3m 43s",
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-07-17T19:07:06+05:30"
+        },
+        {
+          "caseNum": "474114168",
+          "account": "UMB Financial Corporation",
+          "product": "Security & Activations",
+          "timeIST": "7:09 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "1m 31s",
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-07-17T19:09:51+05:30"
         }
       ]
     }
