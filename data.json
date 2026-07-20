@@ -262,7 +262,7 @@
         },
         {
           "caseNum": "473604096",
-          "account": "bp International Ltd \u2013 Colleagues Org",
+          "account": "bp International Ltd – Colleagues Org",
           "product": "Digital Engagement",
           "timeIST": "5:24 PM",
           "quality": "STRONG",
@@ -429,7 +429,7 @@
         },
         {
           "caseNum": "473613541",
-          "account": "Cummins \u2013 Guidanz (Service Org)",
+          "account": "Cummins – Guidanz (Service Org)",
           "product": "Developer Support",
           "timeIST": "4:00 PM",
           "quality": "STRONG",
@@ -750,7 +750,7 @@
       "cases": [
         {
           "caseNum": "473633737",
-          "account": "Guardant Health \u2013 Screening Org",
+          "account": "Guardant Health – Screening Org",
           "product": "Digital Engagement",
           "timeIST": "1:12 PM",
           "quality": "STRONG",
@@ -860,7 +860,7 @@
           "isRed": false,
           "bridgeWithin15m": false,
           "resolvedAt": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Need More Information)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Need More Information)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-04 15:59:44 IST",
           "oiSource": "orgcs",
@@ -1011,7 +1011,7 @@
           "bridgeWithin15m": true,
           "resolvedAt": null,
           "oiDuration": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Solution Provided)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Solution Provided)",
           "channelCreatedAt": "2026-06-04 19:15:11 IST",
           "oiSource": "orgcs",
           "execTagged": []
@@ -1133,7 +1133,7 @@
         },
         {
           "caseNum": "473657275",
-          "account": "bp International Ltd \u2013 Colleagues Org",
+          "account": "bp International Ltd – Colleagues Org",
           "product": "Digital Engagement",
           "timeIST": "5:34 PM",
           "quality": "STRONG",
@@ -1508,7 +1508,7 @@
         {
           "caseNum": "473697035",
           "account": "Tata Consumer Products",
-          "product": "Agentforce \u2013 Service",
+          "product": "Agentforce – Service",
           "timeIST": "5:42 PM",
           "manager": "Jyothirmayee",
           "quality": "MODERATE",
@@ -1926,7 +1926,7 @@
           "isRed": false,
           "bridgeWithin15m": false,
           "resolvedAt": "2026-06-10 19:54:13 IST",
-          "resolvedText": "no actions pending \u2014 their team had a confusion",
+          "resolvedText": "no actions pending — their team had a confusion",
           "oiDuration": "31m",
           "channelCreatedAt": "2026-06-10 19:23:12 IST",
           "bridgeCreatedAt": null,
@@ -2213,11 +2213,11 @@
       "callouts": [
         {
           "type": "mci",
-          "text": "\u26a1 Active MCI: MCS Prod3 Availability Drop \u2014 CIR: #icc-91554592 \u00b7 Sev4 \u00b7 Team: Messaging Channels and Features"
+          "text": "⚡ Active MCI: MCS Prod3 Availability Drop — CIR: #icc-91554592 · Sev4 · Team: Messaging Channels and Features"
         },
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Continue to monitor: Maersk (Issue recurred, customer temp: HOT)"
+          "text": "👁 Exec Visibility — Continue to monitor: Maersk (Issue recurred, customer temp: HOT)"
         }
       ]
     },
@@ -2380,7 +2380,7 @@
           "bridgeWithin15m": false,
           "resolvedAt": "2026-06-13 10:41:46 IST",
           "oiDuration": "17h 8m",
-          "resolvedText": "CIC Update :: Issue has been mitigated - component switched V2\u2192V1, resolved.",
+          "resolvedText": "CIC Update :: Issue has been mitigated - component switched V2→V1, resolved.",
           "channelCreatedAt": "2026-06-12 17:33:22 IST",
           "bridgeCreatedAt": "2026-06-13 09:39:54 IST",
           "bridgeNA": "outside-window",
@@ -2496,7 +2496,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Continue to monitor: Claro S.A., The Reinalt-Thomas Corporation (customer temp: HOT)"
+          "text": "👁 Exec Visibility — Continue to monitor: Claro S.A., The Reinalt-Thomas Corporation (customer temp: HOT)"
         }
       ]
     },
@@ -2510,7 +2510,7 @@
       "callouts": [
         {
           "type": "warn",
-          "text": "\ud83d\udcc8 High volume: 17 Sev1s \u2014 highest weekend on record (CONA \u00d72, Cisco, Airbnb, JPMorgan, Robinhood, GM & more)"
+          "text": "📈 High volume: 17 Sev1s — highest weekend on record (CONA ×2, Cisco, Airbnb, JPMorgan, Robinhood, GM & more)"
         }
       ],
       "isWeekend": true,
@@ -3066,7 +3066,7 @@
           "isRed": true,
           "bridgeWithin15m": false,
           "resolvedAt": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Working)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Working)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-15 16:13:34 IST",
           "oiSource": "orgcs",
@@ -3197,7 +3197,7 @@
           "isRed": false,
           "bridgeWithin15m": true,
           "resolvedAt": "2026-06-15 19:38:36 IST",
-          "resolvedText": "There is no issue \u2014 they are receiving and able to send emails.",
+          "resolvedText": "There is no issue — they are receiving and able to send emails.",
           "oiDuration": "28m",
           "channelCreatedAt": "2026-06-15 18:53:34 IST",
           "bridgeCreatedAt": "2026-06-15 19:06:07 IST",
@@ -3224,7 +3224,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Continue to monitor: Claro S.A., The Reinalt-Thomas Corporation, Philip Morris International IT Service Center S\u00e0rl, Affirm (customer temp: Warm)"
+          "text": "👁 Exec Visibility — Continue to monitor: Claro S.A., The Reinalt-Thomas Corporation, Philip Morris International IT Service Center Sàrl, Affirm (customer temp: Warm)"
         }
       ]
     },
@@ -3263,7 +3263,7 @@
           "isRed": false,
           "bridgeWithin15m": true,
           "resolvedAt": "2026-06-16 15:23:51 IST",
-          "resolvedText": "they can login manually after session timeout \u2014 CIC disengaging",
+          "resolvedText": "they can login manually after session timeout — CIC disengaging",
           "oiDuration": "1h 40m",
           "channelCreatedAt": "2026-06-16 13:43:35 IST",
           "bridgeCreatedAt": "2026-06-16 13:49:07 IST",
@@ -3316,7 +3316,7 @@
           "isRed": false,
           "bridgeWithin15m": false,
           "resolvedAt": "2026-06-16 17:57:59 IST",
-          "resolvedText": "issue is intermittent \u2014 CIC can disengage for now",
+          "resolvedText": "issue is intermittent — CIC can disengage for now",
           "oiDuration": "3h 42m",
           "channelCreatedAt": "2026-06-16 14:15:02 IST",
           "bridgeCreatedAt": null,
@@ -3385,7 +3385,7 @@
           "isRed": false,
           "bridgeWithin15m": false,
           "resolvedAt": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Working)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Working)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 16:26:04 IST",
           "oiSource": "orgcs",
@@ -3403,7 +3403,7 @@
           "isRed": false,
           "bridgeWithin15m": true,
           "resolvedAt": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Working)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Working)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 16:42:35 IST",
           "oiSource": "orgcs",
@@ -3438,7 +3438,7 @@
           "isRed": false,
           "bridgeWithin15m": false,
           "resolvedAt": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Need More Information)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Need More Information)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 17:49:41 IST",
           "oiSource": "orgcs",
@@ -3473,7 +3473,7 @@
           "isRed": false,
           "bridgeWithin15m": true,
           "resolvedAt": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Need More Information)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Need More Information)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 18:29:22 IST",
           "oiSource": "orgcs",
@@ -3492,7 +3492,7 @@
           "bridgeWithin15m": true,
           "bridgeNA": "throttle",
           "resolvedAt": null,
-          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Solution Provided)",
+          "resolvedText": "Still open — no Sev1 end time recorded (Status: Solution Provided)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 18:49:27 IST",
           "oiSource": "orgcs",
@@ -3503,7 +3503,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Continue to monitor: Disney Streaming Services LLC, Avent-INC, Claro S.A., The Reinalt-Thomas Corporation, Philip Morris International IT Service Center S\u00e0rl"
+          "text": "👁 Exec Visibility — Continue to monitor: Disney Streaming Services LLC, Avent-INC, Claro S.A., The Reinalt-Thomas Corporation, Philip Morris International IT Service Center Sàrl"
         }
       ]
     },
@@ -3562,7 +3562,7 @@
           "bridgeWithin15m": true,
           "bridgeNA": null,
           "resolvedAt": "2026-06-17 15:36:20 IST",
-          "resolvedText": "Certificate renewal blocked for services.jaguar.co.uk \u2014 domain configured on MRT not eCDN. Customer confirmed happy with existing approach; case mitigated.",
+          "resolvedText": "Certificate renewal blocked for services.jaguar.co.uk — domain configured on MRT not eCDN. Customer confirmed happy with existing approach; case mitigated.",
           "oiDuration": "39m 51s",
           "channelCreatedAt": "2026-06-17 14:56:29 IST",
           "oiSource": "orgcs",
@@ -3657,7 +3657,7 @@
           "bridgeWithin15m": false,
           "bridgeNA": "lap",
           "resolvedAt": "2026-06-17 15:00:59 IST",
-          "resolvedText": "CIC assessed as not a business-affecting Sev1 \u2014 LAP filings for MFA enforcement on test orgs, no production impact.",
+          "resolvedText": "CIC assessed as not a business-affecting Sev1 — LAP filings for MFA enforcement on test orgs, no production impact.",
           "oiDuration": "53m 19s",
           "channelCreatedAt": "2026-06-17 14:07:40 IST",
           "oiSource": "orgcs",
@@ -3714,7 +3714,7 @@
           "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": "2026-06-17 22:58:34 IST",
-          "resolvedText": "NA237 performance degradation \u2014 trust incident #20004111 raised; linked to incident channel icc-91757097.",
+          "resolvedText": "NA237 performance degradation — trust incident #20004111 raised; linked to incident channel icc-91757097.",
           "oiDuration": "5h 27m",
           "channelCreatedAt": "2026-06-17 17:31:20 IST",
           "oiSource": "orgcs",
@@ -3773,7 +3773,7 @@
           "bridgeWithin15m": true,
           "bridgeNA": null,
           "resolvedAt": "2026-06-18 12:52:52 IST",
-          "resolvedText": "Flow unable to set field to null \u2014 assessed non-critical, production fully operational. CIC Benita Lennon disengaged.",
+          "resolvedText": "Flow unable to set field to null — assessed non-critical, production fully operational. CIC Benita Lennon disengaged.",
           "oiDuration": "18h 41m",
           "channelCreatedAt": "2026-06-17 18:11:05 IST",
           "oiSource": "orgcs",
@@ -3805,7 +3805,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Continue to monitor: Disney Streaming Services LLC, Pentagon Federal Credit Union"
+          "text": "👁 Exec Visibility — Continue to monitor: Disney Streaming Services LLC, Pentagon Federal Credit Union"
         }
       ]
     },
@@ -4516,7 +4516,7 @@
         },
         {
           "caseNum": "473881543",
-          "account": "CIELO S.A. \u2014 Instituicao de Pagamento",
+          "account": "CIELO S.A. — Instituicao de Pagamento",
           "product": "Service-Cases, Knowledge, Service Cloud Console, Work.com",
           "timeIST": "7:05 PM",
           "quality": "PENDING",
@@ -4594,11 +4594,11 @@
       "callouts": [
         {
           "type": "mci",
-          "text": "\u26a1 Active MCI: Lightning Record Page Error | $A.componentService.hasDefinition \u2014 CIR: #icc-91807036 \u00b7 GUS Bug (fix): W-22994699 \u00b7 SRE: W-23065279 \u00b7 PD: Q16E8V2F9NT71W"
+          "text": "⚡ Active MCI: Lightning Record Page Error | $A.componentService.hasDefinition — CIR: #icc-91807036 · GUS Bug (fix): W-22994699 · SRE: W-23065279 · PD: Q16E8V2F9NT71W"
         },
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Continue to monitor: lululemon athletica Canada, Inc."
+          "text": "👁 Exec Visibility — Continue to monitor: lululemon athletica Canada, Inc."
         }
       ]
     },
@@ -4926,7 +4926,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Continue to monitor: ADP INC"
+          "text": "👁 Exec Visibility — Continue to monitor: ADP INC"
         }
       ]
     },
@@ -5350,7 +5350,7 @@
           "bridgeWithin15m": true,
           "bridgeNA": null,
           "resolvedAt": "2026-06-23 16:45:33 IST",
-          "resolvedText": "CIC disengaged after root cause was confirmed as WAD \u2014 queue configuration changes must be made from the AWS Connect side, not within Salesforce setup.",
+          "resolvedText": "CIC disengaged after root cause was confirmed as WAD — queue configuration changes must be made from the AWS Connect side, not within Salesforce setup.",
           "oiDuration": "1h 55m",
           "channelCreatedAt": "2026-06-23 14:49:48 IST",
           "bridgeCreatedAt": "2026-06-23 14:56:18 IST",
@@ -5458,7 +5458,7 @@
         },
         {
           "caseNum": "473814386",
-          "account": "Stellantis Espa\u00f1a S.L.",
+          "account": "Stellantis España S.L.",
           "product": "Developer Support",
           "timeIST": "6:08 PM",
           "quality": "PENDING",
@@ -5778,7 +5778,7 @@
           "bridgeWithin15m": true,
           "bridgeNA": null,
           "resolvedAt": "2026-06-25 14:28:32 IST",
-          "resolvedText": "CIC disengaged as the issue did not qualify as a true Sev1 \u2014 customer could not reproduce the error, could not join the bridge, and sandbox was working as expected.",
+          "resolvedText": "CIC disengaged as the issue did not qualify as a true Sev1 — customer could not reproduce the error, could not join the bridge, and sandbox was working as expected.",
           "oiDuration": "1h 23m",
           "channelCreatedAt": "2026-06-25 13:05:03 IST",
           "bridgeCreatedAt": "2026-06-25 13:18:31 IST",
@@ -5850,7 +5850,7 @@
       "callouts": [
         {
           "type": "mci",
-          "text": "\u26a1 Active MCI: Omnichannel/Digital Engagement outage \u2014 icc-92133150 \u00b7 12+ customers affected from ~17:45 IST \u00b7 Resolved Jun 27 after fix deployed"
+          "text": "⚡ Active MCI: Omnichannel/Digital Engagement outage — icc-92133150 · 12+ customers affected from ~17:45 IST · Resolved Jun 27 after fix deployed"
         }
       ],
       "cases": [
@@ -5874,7 +5874,7 @@
         },
         {
           "caseNum": "473939434",
-          "account": "Bouygues Telecom IT R\u00e9seau",
+          "account": "Bouygues Telecom IT Réseau",
           "product": "Developer Support",
           "timeIST": "1:54 PM",
           "quality": "PENDING",
@@ -6252,7 +6252,7 @@
         },
         {
           "caseNum": "473947827",
-          "account": "El Corte Ingl\u00e9s S.A.",
+          "account": "El Corte Inglés S.A.",
           "product": "Digital Engagement",
           "timeIST": "5:57 PM",
           "quality": "PENDING",
@@ -6465,7 +6465,7 @@
         },
         {
           "caseNum": "473948046",
-          "account": "iFood.com Ag\u00eancia de Restaurantes Online S.A.",
+          "account": "iFood.com Agência de Restaurantes Online S.A.",
           "product": "Digital Engagement",
           "timeIST": "6:21 PM",
           "quality": "PENDING",
@@ -6626,7 +6626,7 @@
           "bridgeWithin15m": true,
           "bridgeNA": null,
           "resolvedAt": "2026-06-26 19:38:09 IST",
-          "resolvedText": "CIC disengaged after issue was resolved \u2014 a missing picklist value and access problem was identified and fixed with customer confirming resolution.",
+          "resolvedText": "CIC disengaged after issue was resolved — a missing picklist value and access problem was identified and fixed with customer confirming resolution.",
           "oiDuration": "30m",
           "channelCreatedAt": "2026-06-26 19:08:23 IST",
           "bridgeCreatedAt": "2026-06-26 19:10:02 IST",
@@ -6644,7 +6644,7 @@
           "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": "2026-06-26 19:27:33 IST",
-          "resolvedText": "CIC disengaged quickly after assessing the case did not warrant Sev1 \u2014 the customer was only seeking information, not experiencing a production outage.",
+          "resolvedText": "CIC disengaged quickly after assessing the case did not warrant Sev1 — the customer was only seeking information, not experiencing a production outage.",
           "oiDuration": "11m",
           "channelCreatedAt": "2026-06-26 19:16:39 IST",
           "execTagged": []
@@ -7205,7 +7205,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Continue to monitor: ADP Inc"
+          "text": "👁 Exec Visibility — Continue to monitor: ADP Inc"
         }
       ],
       "cases": [
@@ -7257,7 +7257,7 @@
           "bridgeWithin15m": false,
           "bridgeNA": null,
           "resolvedAt": null,
-          "resolvedText": "CIC disengaged \u2014 no active CIC engagement needed. Case handed to Baji Shaik (case owner).",
+          "resolvedText": "CIC disengaged — no active CIC engagement needed. Case handed to Baji Shaik (case owner).",
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-29 18:54:16 IST",
           "execTagged": []
@@ -7492,7 +7492,7 @@
         },
         {
           "caseNum": "473976189",
-          "account": "Nestl\u00e9 Operational Services Worldwide (NOSW) S.A.",
+          "account": "Nestlé Operational Services Worldwide (NOSW) S.A.",
           "product": "Service-Service Cloud Voice",
           "timeIST": "18:31",
           "quality": "PENDING",
@@ -7544,7 +7544,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 ADP Inc (case 473987822, MFA-related outage, bridge active)"
+          "text": "👁 Exec Visibility — ADP Inc (case 473987822, MFA-related outage, bridge active)"
         }
       ],
       "cases": [
@@ -7573,7 +7573,7 @@
         },
         {
           "caseNum": "473907175",
-          "account": "Deutsche B\u00f6rse AG",
+          "account": "Deutsche Börse AG",
           "product": "Developer Support",
           "timeIST": "2:05 PM",
           "quality": "PENDING",
@@ -7845,7 +7845,7 @@
       "cases": [
         {
           "caseNum": "473994518",
-          "account": "Stellantis Espa\u00f1a S.L.",
+          "account": "Stellantis España S.L.",
           "product": "Digital Engagement",
           "timeIST": "12:32 PM",
           "quality": "PENDING",
@@ -8072,7 +8072,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Continue to monitor: Macquarie Group"
+          "text": "👁 Exec Visibility — Continue to monitor: Macquarie Group"
         }
       ],
       "cases": [
@@ -8374,7 +8374,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 HDFC Bank Ltd (EMEA Retained, next checkpoint with CSM tomorrow 2 PM IST)"
+          "text": "👁 Exec Visibility — HDFC Bank Ltd (EMEA Retained, next checkpoint with CSM tomorrow 2 PM IST)"
         }
       ],
       "cases": [
@@ -8398,7 +8398,7 @@
         },
         {
           "caseNum": "473861771",
-          "account": "Manufacture Fran\u00e7aise des Pneumatiques Michelin (SELA)",
+          "account": "Manufacture Française des Pneumatiques Michelin (SELA)",
           "product": "Service-Developer Support",
           "timeIST": "2:52 PM",
           "quality": "PENDING",
@@ -8460,7 +8460,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Continue to monitor: HDFC Bank Ltd (Customer temp too hot, RCA requested by tomorrow)"
+          "text": "👁 Exec Visibility — Continue to monitor: HDFC Bank Ltd (Customer temp too hot, RCA requested by tomorrow)"
         }
       ],
       "cases": [
@@ -8632,7 +8632,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Leadership attention required (Potential Exec Visibility case): Citibank, N.A. (474033662)"
+          "text": "👁 Exec Visibility — Leadership attention required (Potential Exec Visibility case): Citibank, N.A. (474033662)"
         }
       ],
       "cases": [
@@ -8784,11 +8784,11 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Leadership attention required (Potential Exec Visibility case): Snap Inc (474040358) \u2014 excluded from case count/table per GHO Warm Handover exclusion rule; flagged for leadership visibility only."
+          "text": "👁 Exec Visibility — Leadership attention required (Potential Exec Visibility case): Snap Inc (474040358) — excluded from case count/table per GHO Warm Handover exclusion rule; flagged for leadership visibility only."
         },
         {
           "type": "mci",
-          "text": "\u26a1 MCI Resolved: PRMFA / Passkey Enforcement \u2014 IR #92650394 \u00b7 Duration: 5h 26m \u00b7 Trust Post: status.salesforce.com/incidents/20004252 \u00b7 GUS: W-23234584 \u00b7 Root cause behind ~10 of today's cases (MFA sandbox login exemptions)."
+          "text": "⚡ MCI Resolved: PRMFA / Passkey Enforcement — IR #92650394 · Duration: 5h 26m · Trust Post: status.salesforce.com/incidents/20004252 · GUS: W-23234584 · Root cause behind ~10 of today's cases (MFA sandbox login exemptions)."
         }
       ],
       "cases": [
@@ -8804,7 +8804,7 @@
           "bridgeWithin15m": null,
           "bridgeNA": null,
           "resolvedAt": null,
-          "resolvedText": "Case determined WAD (working as designed) \u2014 customer had no PRMFA exemption in place. CIC disengaged after confirming no further CIC involvement needed.",
+          "resolvedText": "Case determined WAD (working as designed) — customer had no PRMFA exemption in place. CIC disengaged after confirming no further CIC involvement needed.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-09T12:30:18+05:30",
           "execTagged": []
@@ -9116,7 +9116,7 @@
           "bridgeWithin15m": null,
           "bridgeNA": "lap",
           "resolvedAt": null,
-          "resolvedText": "Request to enable two pilot BT permissions in a Genesys-integrated Service Cloud Voice sandbox ahead of a scheduled test call \u2014 LAP is the resolution path, not a production outage.",
+          "resolvedText": "Request to enable two pilot BT permissions in a Genesys-integrated Service Cloud Voice sandbox ahead of a scheduled test call — LAP is the resolution path, not a production outage.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-09T18:20:29+05:30",
           "execTagged": []
@@ -9201,11 +9201,11 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Leadership attention required (Potential Exec Visibility case): Optus Systems Pty Ltd (474033297) \u2014 GHO Warm Handover Request to EMEA (pre-existing case, channel created 05:43 IST before QB window) \u2014 excluded from case count/table per GHO Warm Handover exclusion rule; flagged for leadership visibility only (CDP Data Cloud discrepancy blocking Monday Jul 14 go-live)."
+          "text": "👁 Exec Visibility — Leadership attention required (Potential Exec Visibility case): Optus Systems Pty Ltd (474033297) — GHO Warm Handover Request to EMEA (pre-existing case, channel created 05:43 IST before QB window) — excluded from case count/table per GHO Warm Handover exclusion rule; flagged for leadership visibility only (CDP Data Cloud discrepancy blocking Monday Jul 14 go-live)."
         },
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Leadership attention required (Potential Exec Visibility case): Aditya Birla Financial Shared Services Limited (474056461) \u2014 included in case count; multi-customer Amazon AppFlow OAuth refresh-token pattern (4 related cases) flagged for leadership visibility."
+          "text": "👁 Exec Visibility — Leadership attention required (Potential Exec Visibility case): Aditya Birla Financial Shared Services Limited (474056461) — included in case count; multi-customer Amazon AppFlow OAuth refresh-token pattern (4 related cases) flagged for leadership visibility."
         }
       ],
       "cases": [
@@ -9348,7 +9348,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 PANDORA A/S (474070788): Go Live scheduled on 15th July"
+          "text": "👁 Exec Visibility — PANDORA A/S (474070788): Go Live scheduled on 15th July"
         }
       ],
       "cases": [
@@ -9540,7 +9540,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "Exec Visibility \u2014 Mcafee-itsm-org-474077391 | Continue to monitor the Org"
+          "text": "Exec Visibility — Mcafee-itsm-org-474077391 | Continue to monitor the Org"
         }
       ],
       "cases": [
@@ -9840,7 +9840,7 @@
           "channelEngage": null,
           "bridgeWithin15m": null,
           "bridgeNA": "outside-window",
-          "resolvedText": "Channel created 11:43 AM IST \u2014 before the 12:30 PM QB window opened. CIC (Anjali Chanagonda) engaged at 11:49 AM IST, 5m42s after creation, entirely pre-window. Case remained open through the window with an EMEA ownership handover (Prakhar Singh) confirmed by QB manager Shubha at 1:16 PM IST; CIC disengaged at 2:43 PM IST. No bridge link was ever posted.",
+          "resolvedText": "Channel created 11:43 AM IST — before the 12:30 PM QB window opened. CIC (Anjali Chanagonda) engaged at 11:49 AM IST, 5m42s after creation, entirely pre-window. Case remained open through the window with an EMEA ownership handover (Prakhar Singh) confirmed by QB manager Shubha at 1:16 PM IST; CIC disengaged at 2:43 PM IST. No bridge link was ever posted.",
           "channelCreatedAt": "2026-07-16T11:43:40+05:30"
         },
         {
@@ -9855,7 +9855,7 @@
           "channelEngage": null,
           "bridgeWithin15m": true,
           "bridgeNA": "outside-window",
-          "resolvedText": "Channel created 11:57 AM IST \u2014 before the 12:30 PM QB window opened. CIC (Mallikarjuna Burra) engaged 1m25s after creation and fully disengaged by 12:49 PM IST, all essentially pre-window. The 1:19 PM Esc|Sev1 alert was a re-escalation of this already-resolved case; only a QB swarm-member join (Shubha) followed at 1:23 PM, with no further activity.",
+          "resolvedText": "Channel created 11:57 AM IST — before the 12:30 PM QB window opened. CIC (Mallikarjuna Burra) engaged 1m25s after creation and fully disengaged by 12:49 PM IST, all essentially pre-window. The 1:19 PM Esc|Sev1 alert was a re-escalation of this already-resolved case; only a QB swarm-member join (Shubha) followed at 1:23 PM, with no further activity.",
           "channelCreatedAt": "2026-07-16T11:57:39+05:30",
           "bridgeCreatedAt": "2026-07-16 12:00:38 IST"
         },
@@ -9918,7 +9918,7 @@
         },
         {
           "caseNum": "474102413",
-          "account": "Deutsche B\u00f6rse AG",
+          "account": "Deutsche Börse AG",
           "product": "Experience Builder and Content Management",
           "timeIST": "3:17 PM",
           "manager": "Mirza",
@@ -10017,23 +10017,23 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Leadership attention required (Potential Exec Visibility case): Farmers Group, Inc. (474090360)"
+          "text": "👁 Exec Visibility — Leadership attention required (Potential Exec Visibility case): Farmers Group, Inc. (474090360)"
         },
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Leadership attention required (Potential Exec Visibility case): IBM (474094588)"
+          "text": "👁 Exec Visibility — Leadership attention required (Potential Exec Visibility case): IBM (474094588)"
         },
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Leadership attention required (Potential Exec Visibility case): ADP Inc (474090792) \u2014 GHO Warm Handover Request, excluded from case count/table per GHO exclusion rule; flagged for leadership visibility only."
+          "text": "👁 Exec Visibility — Leadership attention required (Potential Exec Visibility case): ADP Inc (474090792) — GHO Warm Handover Request, excluded from case count/table per GHO exclusion rule; flagged for leadership visibility only."
         },
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Leadership attention required (Potential Exec Visibility case): Enel Global Services S.r.l. (Enel Chile) (474086376) \u2014 GHO Warm Handover Request, excluded from case count/table per GHO exclusion rule; flagged for leadership visibility only."
+          "text": "👁 Exec Visibility — Leadership attention required (Potential Exec Visibility case): Enel Global Services S.r.l. (Enel Chile) (474086376) — GHO Warm Handover Request, excluded from case count/table per GHO exclusion rule; flagged for leadership visibility only."
         },
         {
           "type": "exec",
-          "text": "\ud83d\udc41 Exec Visibility \u2014 Leadership attention required (Potential Exec Visibility case): Pearson Education, Inc. One CRM (474111002) \u2014 AFV & Momentum customer"
+          "text": "👁 Exec Visibility — Leadership attention required (Potential Exec Visibility case): Pearson Education, Inc. One CRM (474111002) — AFV & Momentum customer"
         }
       ],
       "cases": [
@@ -10049,7 +10049,7 @@
           "channelEngage": null,
           "bridgeWithin15m": null,
           "bridgeNA": "outside-window",
-          "resolvedText": "Channel created 12:15 PM IST \u2014 before the 12:30 PM QB window opened. CIC Case Commander (Vishnu Nambiar) engaged at 12:38 PM IST, 22m56s after creation, straddling the window boundary. Bug blocking Pearson's voice-agent go-live (LLM Gateway masking company/product names); GHO warm-handover to APAC at 8:26 PM IST; case remained open across CIC rotations through July 20 pending an engineering patch fix.",
+          "resolvedText": "Channel created 12:15 PM IST — before the 12:30 PM QB window opened. CIC Case Commander (Vishnu Nambiar) engaged at 12:38 PM IST, 22m56s after creation, straddling the window boundary. Bug blocking Pearson's voice-agent go-live (LLM Gateway masking company/product names); GHO warm-handover to APAC at 8:26 PM IST; case remained open across CIC rotations through July 20 pending an engineering patch fix.",
           "channelCreatedAt": "2026-07-17T12:15:44+05:30"
         },
         {
@@ -10064,7 +10064,7 @@
           "channelEngage": "1m 59s",
           "bridgeWithin15m": false,
           "bridgeNA": false,
-          "resolvedText": "Alerted twice (1:42 PM and 5:07 PM IST) \u2014 same case/channel; issue reoccurred intermittently and was warm-handed-over to AMER at 9:22 PM IST for follow-the-sun coverage.",
+          "resolvedText": "Alerted twice (1:42 PM and 5:07 PM IST) — same case/channel; issue reoccurred intermittently and was warm-handed-over to AMER at 9:22 PM IST for follow-the-sun coverage.",
           "channelCreatedAt": "2026-07-17T13:42:06+05:30",
           "bridgeCreatedAt": "2026-07-17 14:07:53 IST"
         },
@@ -10226,6 +10226,213 @@
           "bridgeWithin15m": null,
           "bridgeNA": false,
           "channelCreatedAt": "2026-07-17T19:09:51+05:30"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "label": "Jul 20",
+      "dayOfWeek": "Mon",
+      "isWeekend": false,
+      "manager": "Mirza",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "474122145",
+          "account": "BANYAN TREE HOTELS & RESORTS PTE. LTD.",
+          "product": "CRM Analytics",
+          "timeIST": "12:48 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "13s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474122302",
+          "account": "Bharti Airtel Limited",
+          "product": "Developer Support",
+          "timeIST": "1:14 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "13s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474048487",
+          "account": "UPM-Kymmene Oyj (UPM Adhesive Materials)",
+          "product": "Developer Support",
+          "timeIST": "2:37 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "16s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474122958",
+          "account": "Deloitte (00D7Q00000BUpk6)",
+          "product": "Security & Activations",
+          "timeIST": "2:51 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "30s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474100655",
+          "account": "PANDORA A/S",
+          "product": "Digital Engagement",
+          "timeIST": "3:06 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "13s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474123195",
+          "account": "NATURGY IBERIA SA",
+          "product": "AppExchange & Managed Packages",
+          "timeIST": "3:26 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "14s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474123561",
+          "account": "Illumina, Inc.",
+          "product": "Developer Support",
+          "timeIST": "4:15 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "23s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474123460",
+          "account": "THE SIAM COMMERCIAL BANK PUBLIC COMPANY LIMITED",
+          "product": "Security & Activations",
+          "timeIST": "4:41 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "12s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474123813",
+          "account": "Solenis LLC",
+          "product": "Field Service",
+          "timeIST": "4:50 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "17s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474114875",
+          "account": "Marriott International Administrative Services Inc.",
+          "product": "Developer Support",
+          "timeIST": "5:06 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "21s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474124190",
+          "account": "Florida Power & Light Company",
+          "product": "Digital Engagement",
+          "timeIST": "5:44 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "17s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474124305",
+          "account": "IndusInd Bank Limited.",
+          "product": "Digital Engagement",
+          "timeIST": "6:01 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "19s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474124775",
+          "account": "Genmab US, Inc",
+          "product": "Developer Support",
+          "timeIST": "6:56 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "29s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474124806",
+          "account": "ABB E-mobility Holding AG",
+          "product": "Field Service",
+          "timeIST": "6:59 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "14s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474124849",
+          "account": "MS Financing LLC",
+          "product": "Service Cloud Voice",
+          "timeIST": "7:06 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "25s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
         }
       ]
     }
