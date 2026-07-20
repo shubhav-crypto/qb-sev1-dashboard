@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated": "2026-07-13T13:30:00+05:30",
-    "totalCases": 445,
-    "daysTracked": 40
+    "generated": "2026-07-20T00:00:00+05:30",
+    "totalCases": 463,
+    "daysTracked": 42
   },
   "schedule": {
     "2026-06-01": {
@@ -138,6 +138,10 @@
       "managerId": "U04219TJTK5"
     },
     "2026-07-10": {
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5"
+    },
+    "2026-07-15": {
       "manager": "Mirza",
       "managerId": "U04219TJTK5"
     }
@@ -9503,6 +9507,81 @@
           "channelEngage": null,
           "bridgeWithin15m": null,
           "bridgeNA": false
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "label": "Jul 15",
+      "manager": "Mirza",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "474093903",
+          "account": "EPIC Hearing",
+          "product": "Developer Support",
+          "timeIST": "7:17 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "15s",
+          "channelEngage": "2m 44s",
+          "bridgeWithin15m": false,
+          "bridgeNA": null
+        },
+        {
+          "caseNum": "474091680",
+          "account": "Usha International Limited",
+          "product": "Mobile Apps",
+          "timeIST": "3:02 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "21s",
+          "channelEngage": "4m 2s",
+          "bridgeWithin15m": false,
+          "bridgeNA": null
+        },
+        {
+          "caseNum": "474046334",
+          "account": "The Financial Conduct Authority",
+          "product": "Security & Activations",
+          "timeIST": "2:42 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "21s",
+          "channelEngage": "4m 54s",
+          "bridgeWithin15m": true,
+          "bridgeNA": null
+        },
+        {
+          "caseNum": "474088361",
+          "account": "L'Oreal Singapore Pte. Ltd.",
+          "product": "Security & Activations",
+          "timeIST": "1:39 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "19s",
+          "channelEngage": "2m 44s",
+          "bridgeWithin15m": false,
+          "bridgeNA": null
+        },
+        {
+          "caseNum": "474090282",
+          "account": "Tata Consumer Products Ltd (DMS)",
+          "product": "Service Cloud Voice",
+          "timeIST": "1:06 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "29s",
+          "channelEngage": "38m 1s",
+          "bridgeWithin15m": false,
+          "bridgeNA": null
         }
       ]
     }
