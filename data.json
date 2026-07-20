@@ -1,8 +1,8 @@
 {
   "meta": {
     "generated": "2026-07-20T00:00:00+05:30",
-    "totalCases": 463,
-    "daysTracked": 42
+    "totalCases": 475,
+    "daysTracked": 43
   },
   "schedule": {
     "2026-06-01": {
@@ -142,6 +142,10 @@
       "managerId": "U04219TJTK5"
     },
     "2026-07-15": {
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5"
+    },
+    "2026-07-13": {
       "manager": "Mirza",
       "managerId": "U04219TJTK5"
     }
@@ -9321,6 +9325,199 @@
           "channelCreatedAt": "2026-07-10T19:14:27+05:30",
           "bridgeCreatedAt": "2026-07-10 19:18:01 IST",
           "execTagged": []
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "label": "Jul 13",
+      "dayOfWeek": "Mon",
+      "isWeekend": false,
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [
+        {
+          "type": "exec",
+          "text": "\ud83d\udc41 Exec Visibility \u2014 PANDORA A/S (474070788): Go Live scheduled on 15th July"
+        }
+      ],
+      "cases": [
+        {
+          "caseNum": "474068233",
+          "account": "Air India Limited",
+          "product": "Developer Support",
+          "timeIST": "12:54 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "1m 22s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-07-13T12:54:46+05:30",
+          "bridgeCreatedAt": "2026-07-13 13:00:10 IST"
+        },
+        {
+          "caseNum": "474069045",
+          "account": "Richemont International S.A",
+          "product": "Cases, Knowledge, Service Cloud Console, Work.com",
+          "timeIST": "2:15 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "3m 0s",
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-07-13T14:15:07+05:30"
+        },
+        {
+          "caseNum": "474069331",
+          "account": "LACOSTE OPERATIONS",
+          "product": "Experience Management and Workspaces",
+          "timeIST": "2:42 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "2m 17s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-07-13T14:42:37+05:30",
+          "bridgeCreatedAt": "2026-07-13 14:55:01 IST"
+        },
+        {
+          "caseNum": "474068383",
+          "account": "Vistaprint Limited",
+          "product": "Experience Management and Workspaces",
+          "timeIST": "2:45 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "6m 22s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-07-13T14:45:18+05:30",
+          "bridgeCreatedAt": "2026-07-13 14:56:13 IST"
+        },
+        {
+          "caseNum": "474045732",
+          "account": "Grabtaxi Holdings Pte Ltd",
+          "product": "Developer Support",
+          "timeIST": "3:59 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "2m 0s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-07-13T15:59:27+05:30",
+          "bridgeCreatedAt": "2026-07-13 16:08:29 IST"
+        },
+        {
+          "caseNum": "474043944",
+          "account": "IndusInd Bank Limited.",
+          "product": "Security & Activations",
+          "timeIST": "4:36 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": "resolved",
+          "resolvedText": "Pre-existing re-alert (Sev1 channel created 2026-07-09); case had already been resolved/disengaged (CIC disengaged 2026-07-09 14:19:26 IST, tied to MCI #icc-92650394) before the 2026-07-13 16:36 IST PD re-alert, which auto-resolved 18s later via PagerDuty with no follow-up activity in the case channel.",
+          "channelCreatedAt": "2026-07-09T12:32:21+05:30"
+        },
+        {
+          "caseNum": "474070484",
+          "account": "MUFG Bank, Ltd.",
+          "product": "Developer Support",
+          "timeIST": "4:39 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "6m 29s",
+          "bridgeWithin15m": false,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-07-13T16:39:19+05:30",
+          "bridgeCreatedAt": "2026-07-13 17:02:33 IST"
+        },
+        {
+          "caseNum": "474070487",
+          "account": "AXA Health UK",
+          "product": "Security & Activations",
+          "timeIST": "4:39 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "3m 18s",
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-07-13T16:39:22+05:30"
+        },
+        {
+          "caseNum": "474070869",
+          "account": "F5, Inc. (Old Org)",
+          "product": "Developer Support",
+          "timeIST": "5:25 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "2m 35s",
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-07-13T17:25:30+05:30"
+        },
+        {
+          "caseNum": "474071358",
+          "account": "Health Care Services Corp - HealthSpring Medicare Knowledge",
+          "product": "Developer Support",
+          "timeIST": "6:35 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "1m 15s",
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-07-13T18:45:22+05:30"
+        },
+        {
+          "caseNum": "474071989",
+          "account": "AXA Health UK",
+          "product": "Developer Support",
+          "timeIST": "7:23 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "28s",
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-07-13T19:23:25+05:30"
+        },
+        {
+          "caseNum": "474070788",
+          "account": "PANDORA A/S",
+          "product": "Developer Support",
+          "timeIST": "7:27 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "3m 5s",
+          "bridgeWithin15m": false,
+          "bridgeNA": false,
+          "channelCreatedAt": "2026-07-13T19:27:58+05:30",
+          "bridgeCreatedAt": "2026-07-13 20:01:40 IST"
         }
       ]
     },
