@@ -9528,8 +9528,9 @@
           "ack": null,
           "resolve": "15s",
           "channelEngage": "2m 44s",
-          "bridgeWithin15m": false,
-          "bridgeNA": null
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "channelCreatedAt": "2026-07-15T19:17:08+05:30"
         },
         {
           "caseNum": "474091680",
@@ -9541,8 +9542,9 @@
           "ack": null,
           "resolve": "21s",
           "channelEngage": "4m 2s",
-          "bridgeWithin15m": false,
-          "bridgeNA": null
+          "bridgeWithin15m": null,
+          "bridgeNA": null,
+          "channelCreatedAt": "2026-07-15T15:02:32+05:30"
         },
         {
           "caseNum": "474046334",
@@ -9555,7 +9557,9 @@
           "resolve": "21s",
           "channelEngage": "4m 54s",
           "bridgeWithin15m": true,
-          "bridgeNA": null
+          "bridgeNA": null,
+          "channelCreatedAt": "2026-07-15T14:42:40+05:30",
+          "bridgeCreatedAt": "2026-07-15 14:44:40 IST"
         },
         {
           "caseNum": "474088361",
@@ -9568,7 +9572,9 @@
           "resolve": "19s",
           "channelEngage": "2m 44s",
           "bridgeWithin15m": false,
-          "bridgeNA": null
+          "bridgeNA": null,
+          "channelCreatedAt": "2026-07-15T13:39:54+05:30",
+          "bridgeCreatedAt": "2026-07-15 13:56:22 IST"
         },
         {
           "caseNum": "474090282",
@@ -9581,7 +9587,9 @@
           "resolve": "29s",
           "channelEngage": "38m 1s",
           "bridgeWithin15m": false,
-          "bridgeNA": null
+          "bridgeNA": null,
+          "channelCreatedAt": "2026-07-15T12:19:27+05:30",
+          "bridgeCreatedAt": "2026-07-15 13:31:44 IST"
         }
       ]
     }
