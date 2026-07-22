@@ -9841,7 +9841,10 @@
           "bridgeWithin15m": null,
           "bridgeNA": "outside-window",
           "resolvedText": "Channel created 11:43 AM IST — before the 12:30 PM QB window opened. CIC (Anjali Chanagonda) engaged at 11:49 AM IST, 5m42s after creation, entirely pre-window. Case remained open through the window with an EMEA ownership handover (Prakhar Singh) confirmed by QB manager Shubha at 1:16 PM IST; CIC disengaged at 2:43 PM IST. No bridge link was ever posted.",
-          "channelCreatedAt": "2026-07-16T11:43:40+05:30"
+          "channelCreatedAt": "2026-07-16T11:43:40+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474100751",
@@ -9857,7 +9860,10 @@
           "bridgeNA": "outside-window",
           "resolvedText": "Channel created 11:57 AM IST — before the 12:30 PM QB window opened. CIC (Mallikarjuna Burra) engaged 1m25s after creation and fully disengaged by 12:49 PM IST, all essentially pre-window. The 1:19 PM Esc|Sev1 alert was a re-escalation of this already-resolved case; only a QB swarm-member join (Shubha) followed at 1:23 PM, with no further activity.",
           "channelCreatedAt": "2026-07-16T11:57:39+05:30",
-          "bridgeCreatedAt": "2026-07-16 12:00:38 IST"
+          "bridgeCreatedAt": "2026-07-16 12:00:38 IST",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "473986780",
@@ -9871,7 +9877,10 @@
           "channelEngage": "2m 18s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-16T13:31:15+05:30"
+          "channelCreatedAt": "2026-07-16T13:31:15+05:30",
+          "gusNumber": "W-23386340",
+          "gusCreatedAt": "2026-07-10T00:24:16+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "474101621",
@@ -9885,7 +9894,10 @@
           "channelEngage": "1m 1s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-16T13:52:11+05:30"
+          "channelCreatedAt": "2026-07-16T13:52:11+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474101743",
@@ -9899,7 +9911,10 @@
           "channelEngage": "1m 59s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-16T14:03:57+05:30"
+          "channelCreatedAt": "2026-07-16T14:03:57+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474101932",
@@ -9914,7 +9929,10 @@
           "bridgeWithin15m": false,
           "bridgeNA": false,
           "channelCreatedAt": "2026-07-16T14:23:19+05:30",
-          "bridgeCreatedAt": "2026-07-16 14:49:13 IST"
+          "bridgeCreatedAt": "2026-07-16 14:49:13 IST",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474102413",
@@ -9929,7 +9947,10 @@
           "bridgeWithin15m": false,
           "bridgeNA": false,
           "channelCreatedAt": "2026-07-16T15:17:57+05:30",
-          "bridgeCreatedAt": "2026-07-16 15:50:54 IST"
+          "bridgeCreatedAt": "2026-07-16 15:50:54 IST",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474103200",
@@ -9943,7 +9964,10 @@
           "channelEngage": "3m 31s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-16T16:50:26+05:30"
+          "channelCreatedAt": "2026-07-16T16:50:26+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474100633",
@@ -9958,7 +9982,10 @@
           "bridgeWithin15m": true,
           "bridgeNA": false,
           "channelCreatedAt": "2026-07-16T17:29:15+05:30",
-          "bridgeCreatedAt": "2026-07-16 17:32:15 IST"
+          "bridgeCreatedAt": "2026-07-16 17:32:15 IST",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474069931",
@@ -9972,7 +9999,10 @@
           "channelEngage": "5m 33s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-16T18:48:52+05:30"
+          "channelCreatedAt": "2026-07-16T18:48:52+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474104430",
@@ -9986,7 +10016,10 @@
           "channelEngage": "1m 49s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-16T19:09:33+05:30"
+          "channelCreatedAt": "2026-07-16T19:09:33+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474104228",
@@ -10001,7 +10034,10 @@
           "bridgeWithin15m": true,
           "bridgeNA": false,
           "channelCreatedAt": "2026-07-16T19:21:07+05:30",
-          "bridgeCreatedAt": "2026-07-16 19:24:09 IST"
+          "bridgeCreatedAt": "2026-07-16 19:24:09 IST",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         }
       ]
     },
