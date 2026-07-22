@@ -193,6 +193,8 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
       </button>
       <div class="kpi-value" id="kpiMciCount">—</div><div class="kpi-label">MCIs Received</div><div class="kpi-sub" id="kpiMciSub"></div></div>
+    <div class="kpi purple" id="kpiGusAvgTile" title="Average time from Sev1 channel creation to GUS investigation creation, across cases with a GUS investigation in the selected range. Excludes cases with no GUS and 'pre-existing GUS' cases (investigation predates the channel).">
+      <div class="kpi-value" id="kpiGusAvgValue" style="font-size:24px;">—</div><div class="kpi-label">Avg GUS Creation Time</div><div class="kpi-sub" id="kpiGusAvgSub"></div></div>
   </div>
 
   <div class="wow-engage-card">
@@ -880,6 +882,8 @@ function renderKPIs(){
     const etd=document.getElementById('kpiExecTaggedDetail');if(etd)etd.textContent='';
     document.getElementById('kpiMciCount').textContent='—';
     document.getElementById('kpiMciSub').textContent='no data in range';
+    document.getElementById('kpiGusAvgValue').textContent='—';
+    document.getElementById('kpiGusAvgSub').textContent='no data in range';
     updateKpiFilterLabel();
     return;
   }
@@ -1003,6 +1007,18 @@ function renderKPIs(){
   const mciSubEl=document.getElementById('kpiMciSub');
   mciEl.textContent=mciCount>0?mciCount:'0';
   mciSubEl.textContent=mciCount>0?mciCount+' MCI'+(mciCount!==1?'s':'')+' called out':'no MCIs in range';
+
+  // Avg GUS Creation Time KPI — mean of (gusCreatedAt − channelCreatedAt) across cases with a
+  // real GUS investigation in range. Excludes cases with no GUS and 'pre-existing GUS' cases
+  // (investigation predates the channel, so a duration isn't meaningful — same convention as the
+  // per-case table badge).
+  const gusCasesAll=filteredAllDays().flatMap(function(d){return d.cases;}).filter(function(c){return c.gusNumber&&!c.gusPreExisting;});
+  const gusSecsArr=gusCasesAll.map(function(c){return gusDeltaSecs(c);}).filter(function(v){return v!==null;});
+  const gusAvgSecs=gusSecsArr.length?Math.round(gusSecsArr.reduce(function(a,b){return a+b;},0)/gusSecsArr.length):null;
+  const gusAvgEl=document.getElementById('kpiGusAvgValue');
+  const gusAvgSubEl=document.getElementById('kpiGusAvgSub');
+  gusAvgEl.textContent=gusAvgSecs!==null?fmtGusSecs(gusAvgSecs):'—';
+  gusAvgSubEl.textContent=gusSecsArr.length?'avg over '+gusSecsArr.length+' GUS'+(gusSecsArr.length!==1?'s':'')+' created':'no GUS in range';
 
   updateKpiFilterLabel();
 }
