@@ -7569,7 +7569,10 @@
               "title": "Senior Director, Technical Support Engineering",
               "slackId": "U068GA4TN93"
             }
-          ]
+          ],
+          "gusNumber": "W-23271169",
+          "gusCreatedAt": "2026-07-01T20:19:05+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473907175",
@@ -7586,7 +7589,10 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-01 14:05:06 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "473985557",
@@ -7609,7 +7615,10 @@
               "title": "Customer Success Manager, Director",
               "slackId": "U01G8U6KBLK"
             }
-          ]
+          ],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "473980354",
@@ -7626,7 +7635,10 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-01 14:58:30 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "473914810",
@@ -7644,7 +7656,10 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-06-23",
           "bridgeCreatedAt": "2026-06-23 14:56:18 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "473986781",
@@ -7661,7 +7676,10 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-01 17:18:11 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "473987070",
@@ -7678,7 +7696,10 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-01 17:50:32 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23455567",
+          "gusCreatedAt": "2026-07-15T15:44:52+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473987105",
@@ -7701,7 +7722,10 @@
               "title": "Customer Success Manager, Director",
               "slackId": "U031VK5MDNE"
             }
-          ]
+          ],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "473987799",
@@ -7718,7 +7742,10 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-01 19:07:22 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "473987822",
@@ -7796,7 +7823,10 @@
               "title": "Senior Director, Technical Support Engineering",
               "slackId": "U068GA4TN93"
             }
-          ]
+          ],
+          "gusNumber": "W-23271018",
+          "gusCreatedAt": "2026-07-01T20:08:03+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473988020",
@@ -7813,7 +7843,10 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-01 19:28:21 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "473938782",
@@ -7830,7 +7863,10 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-01 19:28:41 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         }
       ]
     },
@@ -7859,7 +7895,10 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-07-02 12:32:53 IST",
           "bridgeCreatedAt": "2026-07-02 13:04:12 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "473994654",
@@ -7877,7 +7916,10 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-07-02 12:49:32 IST",
           "bridgeCreatedAt": "2026-07-02 13:03:04 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23281447",
+          "gusCreatedAt": "2026-07-02T08:30:39+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "473994485",
@@ -7894,7 +7936,10 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-02 13:44:30 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "473995819",
@@ -7912,7 +7957,10 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-07-02 15:10:10 IST",
           "bridgeCreatedAt": "2026-07-02 15:14:56 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "473996209",
@@ -7930,7 +7978,10 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-07-02 15:52:53 IST",
           "bridgeCreatedAt": "2026-07-02 16:52:34 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "473996394",
@@ -7954,7 +8005,10 @@
               "title": "Customer Success Manager, Director",
               "slackId": "U01G843TGP4"
             }
-          ]
+          ],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "473996650",
@@ -7977,7 +8031,10 @@
               "title": "Customer Success Manager, Senior Director",
               "slackId": "U01G51KK4R3"
             }
-          ]
+          ],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "473996849",
@@ -8001,7 +8058,10 @@
               "title": "Customer Success Manager, Director",
               "slackId": "U01G249H2G6"
             }
-          ]
+          ],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "473996456",
@@ -8018,7 +8078,10 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-02 16:21:56 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "473992401",
@@ -8035,7 +8098,10 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-02 18:50:10 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "473949965",
@@ -8058,7 +8124,10 @@
               "title": "Customer Success Manager, Director",
               "slackId": "U02EBH6JCQ5"
             }
-          ]
+          ],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         }
       ]
     },
@@ -8092,7 +8161,10 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-07-03T14:40:31+05:30",
           "bridgeCreatedAt": "2026-07-03T14:45:36+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474005907",
@@ -8110,7 +8182,10 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-07-03T15:48:00+05:30",
           "bridgeCreatedAt": "2026-07-03T15:55:45+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474006689",
@@ -8134,7 +8209,10 @@
               "title": "RVP, Sales",
               "slackId": "U01G1NX4EHL"
             }
-          ]
+          ],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474000300",
@@ -8172,7 +8250,10 @@
               "title": "Senior Director, Software Engineering",
               "slackId": "U067APDA9KJ"
             }
-          ]
+          ],
+          "gusNumber": "W-23305901",
+          "gusCreatedAt": "2026-07-03T19:58:40+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "474006837",
@@ -8190,7 +8271,10 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-07-03T19:24:52+05:30",
           "bridgeCreatedAt": "2026-07-03T19:29:08+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         }
       ]
     },
@@ -8221,7 +8305,10 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-07-04T01:05:16+05:30",
           "bridgeCreatedAt": null,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474008475",
@@ -8239,7 +8326,10 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-07-04T02:46:43+05:30",
           "bridgeCreatedAt": null,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474008543",
@@ -8257,7 +8347,10 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-07-04T03:22:44+05:30",
           "bridgeCreatedAt": null,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474009367",
@@ -8275,7 +8368,10 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-07-04T18:30:44+05:30",
           "bridgeCreatedAt": null,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474009556",
@@ -8293,7 +8389,10 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-07-04T22:26:33+05:30",
           "bridgeCreatedAt": null,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         }
       ]
     },
@@ -8324,7 +8423,10 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-07-05T08:28:28+05:30",
           "bridgeCreatedAt": null,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474010358",
@@ -8342,7 +8444,10 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-07-05T14:48:41+05:30",
           "bridgeCreatedAt": "2026-07-05T14:52:38+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23318235",
+          "gusCreatedAt": "2026-07-05T15:39:40+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "474010021",
@@ -8360,7 +8465,10 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-07-05T17:48:55+05:30",
           "bridgeCreatedAt": "2026-07-05T17:55:12+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         }
       ]
     },
@@ -8394,7 +8502,10 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-07-06T14:27:44+05:30",
           "bridgeCreatedAt": "2026-07-06T14:51:10+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "473861771",
@@ -8411,7 +8522,10 @@
           "resolvedText": "Pre-existing re-alert (channel created 2026-06-17)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-17T19:28:25+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474013978",
@@ -8428,7 +8542,10 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-06T15:02:40+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474014694",
@@ -8446,7 +8563,10 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-07-06T16:41:00+05:30",
           "bridgeCreatedAt": "2026-07-06T16:43:45+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23330202",
+          "gusCreatedAt": "2026-07-06T20:30:37+05:30",
+          "gusPreExisting": false
         }
       ]
     },
@@ -8480,7 +8600,10 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-07-07T12:53:43+05:30",
           "bridgeCreatedAt": "2026-07-07T13:03:48+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474022912",
@@ -8498,7 +8621,10 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-07-07T13:31:01+05:30",
           "bridgeCreatedAt": "2026-07-07T13:52:29+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474023740",
@@ -8516,7 +8642,10 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-07-07T15:05:19+05:30",
           "bridgeCreatedAt": "2026-07-07T15:11:28+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474024441",
@@ -8533,7 +8662,10 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-07T16:32:39+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "473525570",
@@ -8550,7 +8682,10 @@
           "resolvedText": "Pre-existing re-alert (channel created 2026-05-21)",
           "oiDuration": null,
           "channelCreatedAt": "2026-05-21T23:56:09+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22710516",
+          "gusCreatedAt": "2026-05-28T21:27:41+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "474024879",
@@ -8567,7 +8702,10 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-07T17:30:20+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23399770",
+          "gusCreatedAt": "2026-07-10T19:06:28+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "474024436",
@@ -8584,7 +8722,10 @@
           "resolvedText": "Pre-existing re-alert (original case pre-dates 2026-07-07)",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-07T18:52:13+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23354913",
+          "gusCreatedAt": "2026-07-08T02:13:04+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "474025809",
@@ -8601,7 +8742,10 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-07T19:04:44+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "473966134",
@@ -8618,7 +8762,10 @@
           "resolvedText": "Pre-existing re-alert (channel created 2026-06-29)",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-07T19:20:59+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23277727",
+          "gusCreatedAt": "2026-07-02T02:52:40+05:30",
+          "gusPreExisting": true
         }
       ]
     },
@@ -8651,7 +8798,10 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-08T12:46:57+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "473997064",
@@ -8668,7 +8818,10 @@
           "resolvedText": "Root cause was customer-side (accidentally cancelled Mobile Publisher Beta app in Setup UI). CIC disengaged after confirming fix was entirely within customer's control.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-08T15:26:26+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23362940",
+          "gusCreatedAt": "2026-07-08T15:33:01+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "474035479",
@@ -8685,7 +8838,10 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-08T16:06:38+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474035529",
@@ -8702,7 +8858,10 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-08T16:13:50+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474035594",
@@ -8719,7 +8878,10 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-08T16:24:05+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474035933",
@@ -8736,7 +8898,10 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-08T17:14:27+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "473537570",
@@ -8753,7 +8918,10 @@
           "resolvedText": "Pre-existing re-alert (channel created 2026-05-22)",
           "oiDuration": null,
           "channelCreatedAt": "2026-05-22T23:06:58+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474036537",
@@ -8770,7 +8938,10 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-07-08T18:36:57+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         }
       ]
     },
@@ -8807,7 +8978,10 @@
           "resolvedText": "Case determined WAD (working as designed) — customer had no PRMFA exemption in place. CIC disengaged after confirming no further CIC involvement needed.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-09T12:30:18+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23378249",
+          "gusCreatedAt": "2026-07-09T12:14:54+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "474043944",
@@ -8824,7 +8998,10 @@
           "resolvedText": "Tied to MCI IR #92650394 (PRMFA/Passkey exemption rollout). CIC disengaged, redirected to #icc-92650394 and Trust post.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-09T12:32:21+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23378249",
+          "gusCreatedAt": "2026-07-09T12:14:54+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "474035075",
@@ -8841,7 +9018,10 @@
           "resolvedText": "LAP (PRMFA exemption) raised and approved; owner awaiting execution before reconnecting with customer.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-09T12:35:55+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23378249",
+          "gusCreatedAt": "2026-07-09T12:14:54+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "474044436",
@@ -8858,7 +9038,10 @@
           "resolvedText": "Confirmed related to Passkey/PRMFA exemption MCI (IR #92650394). CIC stood down, redirected engineer to IR channel.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-09T13:14:00+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474043029",
@@ -8875,7 +9058,10 @@
           "resolvedText": "Related to MCI IR #92650394/W-23378249 (PRMFA sandbox login disruption). CIC disengaged, tagged to #icc-92650394.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-09T13:17:10+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23378249",
+          "gusCreatedAt": "2026-07-09T12:14:54+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "474044295",
@@ -8892,7 +9078,10 @@
           "resolvedText": "Related to MCI IR #92650394. MCI resolved after gate-change rollback; RCA pending.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-09T13:28:31+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23378249",
+          "gusCreatedAt": "2026-07-09T12:14:54+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "474044442",
@@ -8909,7 +9098,10 @@
           "resolvedText": "Suspected relation to MCI IR #92650394, unconfirmed pending customer call. CIC disengaged pending confirmation.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-09T13:28:51+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23378249",
+          "gusCreatedAt": "2026-07-09T12:14:54+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "474044626",
@@ -8926,7 +9118,10 @@
           "resolvedText": "No MFA exemption existed for either customer org; engineer raised exemption request. Tagged to ongoing MCI IR #92650394.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-09T13:33:16+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23378249",
+          "gusCreatedAt": "2026-07-09T12:14:54+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "474044569",
@@ -8943,7 +9138,10 @@
           "resolvedText": "Login issue limited to one sandbox lacking PRMFA exemption; exemption request raised, pending approval.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-09T13:33:47+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23378249",
+          "gusCreatedAt": "2026-07-09T12:14:54+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "474044775",
@@ -8960,7 +9158,10 @@
           "resolvedText": "Confirmed related to MCI IR #92650394. CIC disengaged, directed to #icc-92650394 and Trust page.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-09T13:50:54+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23378249",
+          "gusCreatedAt": "2026-07-09T12:14:54+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "474044844",
@@ -8977,7 +9178,10 @@
           "resolvedText": "Confirmed tied to MCI IR #92650394. Follow-up confirmed ABForce instance was within the MCI's impacted-instances scope.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-09T13:57:26+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23378249",
+          "gusCreatedAt": "2026-07-09T12:14:54+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "474044858",
@@ -8994,7 +9198,10 @@
           "resolvedText": "Root cause: MIAW/Omni-Channel routing broke after deployment (messaging queue supported multiple object types against best practice). Dedicated single-object queue created; customer validated fix, case closed.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-09T13:58:16+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474045520",
@@ -9011,7 +9218,10 @@
           "resolvedText": "Tied to active MCI (#icc-92650394, Gater rollback). Customer confirmed re-login worked once MCI rollback completed.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-09T14:52:53+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474046283",
@@ -9028,7 +9238,10 @@
           "resolvedText": "Follow-up to prior Sev1 case 473941455 (Omni-channel ownership/ACW/skill-routing); customer felt prior case closed prematurely. GUS investigation opened, EST follow-up scheduled.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-09T15:58:31+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474035342",
@@ -9051,7 +9264,10 @@
               "title": "Senior Director, Technical Support Engineering",
               "slackId": "U068GA4TN93"
             }
-          ]
+          ],
+          "gusNumber": "W-23371307",
+          "gusCreatedAt": "2026-07-09T00:25:40+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "473995886",
@@ -9068,7 +9284,10 @@
           "resolvedText": "Pre-existing re-alert (channel created 2026-07-02)",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-02T15:16:35+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474047256",
@@ -9085,7 +9304,10 @@
           "resolvedText": "Gantt view failed to load in Field Service console for 5 territories in 3-day view. CIC set up customer bridge but customer never joined; disengaged citing no response.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-09T17:58:05+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23430060",
+          "gusCreatedAt": "2026-07-14T01:38:19+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "474047304",
@@ -9102,7 +9324,10 @@
           "resolvedText": "Service Cloud Voice/Email Delivery integration issue. Customer confirmed resolution on their end shortly after channel creation via self-service bridge.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-09T18:03:57+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474047439",
@@ -9119,7 +9344,10 @@
           "resolvedText": "Request to enable two pilot BT permissions in a Genesys-integrated Service Cloud Voice sandbox ahead of a scheduled test call — LAP is the resolution path, not a production outage.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-09T18:20:29+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474033715",
@@ -9136,7 +9364,10 @@
           "resolvedText": "Android users of a custom LWC could not use Live Capture (camera) via mobile browser ahead of a same-day production deployment. Camera access officially supported only via the Salesforce mobile app since Mobile Web Experience retirement.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-09T18:47:23+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474048170",
@@ -9153,7 +9384,10 @@
           "resolvedText": "Customer hit Bulk API v2 batch-job limit during an 80M-record migration ahead of a go-live. LAP raised to increase limit; customer confirmed batches restarted, case closed same night.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-09T19:28:37+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474043815",
@@ -9170,7 +9404,10 @@
           "resolvedText": "PRMFA blocking sandbox access across 18 sandbox orgs; PRMFA bypass/extension LAPs submitted per-org.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-09T12:16:47+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474043862",
@@ -9187,7 +9424,10 @@
           "resolvedText": "Confirmed MCI impacting sandboxes only (PRMFA enforcement rollback). Case handed to APAC for follow-up; customer confirmed resolution same day.",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-09T12:24:21+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23378249",
+          "gusCreatedAt": "2026-07-09T12:14:54+05:30",
+          "gusPreExisting": true
         }
       ]
     },
@@ -9225,7 +9465,10 @@
           "oiDuration": "2h 11m",
           "channelCreatedAt": "2026-07-10T12:52:56+05:30",
           "bridgeCreatedAt": "2026-07-10 13:07:14 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474055167",
@@ -9242,7 +9485,10 @@
           "resolvedText": "AutoThrottle (memoryHost) triggered on sandbox org AUS36S due to heavy Apex usage; no critical business impact confirmed by customer; CIC disengaged citing throttle limited to sandbox with no active production impact.",
           "oiDuration": "54m",
           "channelCreatedAt": "2026-07-10T12:56:26+05:30",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474055856",
@@ -9260,7 +9506,10 @@
           "oiDuration": "5h 7m",
           "channelCreatedAt": "2026-07-10T15:07:42+05:30",
           "bridgeCreatedAt": "2026-07-10 15:24:21 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474056461",
@@ -9278,7 +9527,10 @@
           "oiDuration": "5h 39m",
           "channelCreatedAt": "2026-07-10T15:32:06+05:30",
           "bridgeCreatedAt": "2026-07-10 15:59:38 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474033461",
@@ -9296,7 +9548,10 @@
           "oiDuration": "34m",
           "channelCreatedAt": "2026-07-10T17:34:10+05:30",
           "bridgeCreatedAt": "2026-07-10 17:46:44 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474057598",
@@ -9314,7 +9569,10 @@
           "oiDuration": "48m",
           "channelCreatedAt": "2026-07-10T18:30:55+05:30",
           "bridgeCreatedAt": "2026-07-10 18:54:18 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474057958",
@@ -9332,7 +9590,10 @@
           "oiDuration": "6h 56m",
           "channelCreatedAt": "2026-07-10T19:14:27+05:30",
           "bridgeCreatedAt": "2026-07-10 19:18:01 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         }
       ]
     },
@@ -9365,7 +9626,10 @@
           "bridgeWithin15m": true,
           "bridgeNA": false,
           "channelCreatedAt": "2026-07-13T12:54:46+05:30",
-          "bridgeCreatedAt": "2026-07-13 13:00:10 IST"
+          "bridgeCreatedAt": "2026-07-13 13:00:10 IST",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474069045",
@@ -9379,7 +9643,10 @@
           "channelEngage": "3m 0s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-13T14:15:07+05:30"
+          "channelCreatedAt": "2026-07-13T14:15:07+05:30",
+          "gusNumber": "W-23431163",
+          "gusCreatedAt": "2026-07-14T02:24:07+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "474069331",
@@ -9394,7 +9661,10 @@
           "bridgeWithin15m": true,
           "bridgeNA": false,
           "channelCreatedAt": "2026-07-13T14:42:37+05:30",
-          "bridgeCreatedAt": "2026-07-13 14:55:01 IST"
+          "bridgeCreatedAt": "2026-07-13 14:55:01 IST",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474068383",
@@ -9409,7 +9679,10 @@
           "bridgeWithin15m": true,
           "bridgeNA": false,
           "channelCreatedAt": "2026-07-13T14:45:18+05:30",
-          "bridgeCreatedAt": "2026-07-13 14:56:13 IST"
+          "bridgeCreatedAt": "2026-07-13 14:56:13 IST",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474045732",
@@ -9424,7 +9697,10 @@
           "bridgeWithin15m": true,
           "bridgeNA": false,
           "channelCreatedAt": "2026-07-13T15:59:27+05:30",
-          "bridgeCreatedAt": "2026-07-13 16:08:29 IST"
+          "bridgeCreatedAt": "2026-07-13 16:08:29 IST",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474043944",
@@ -9439,7 +9715,10 @@
           "bridgeWithin15m": null,
           "bridgeNA": "resolved",
           "resolvedText": "Pre-existing re-alert (Sev1 channel created 2026-07-09); case had already been resolved/disengaged (CIC disengaged 2026-07-09 14:19:26 IST, tied to MCI #icc-92650394) before the 2026-07-13 16:36 IST PD re-alert, which auto-resolved 18s later via PagerDuty with no follow-up activity in the case channel.",
-          "channelCreatedAt": "2026-07-09T12:32:21+05:30"
+          "channelCreatedAt": "2026-07-09T12:32:21+05:30",
+          "gusNumber": "W-23378249",
+          "gusCreatedAt": "2026-07-09T12:14:54+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "474070484",
@@ -9454,7 +9733,10 @@
           "bridgeWithin15m": false,
           "bridgeNA": false,
           "channelCreatedAt": "2026-07-13T16:39:19+05:30",
-          "bridgeCreatedAt": "2026-07-13 17:02:33 IST"
+          "bridgeCreatedAt": "2026-07-13 17:02:33 IST",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474070487",
@@ -9468,7 +9750,10 @@
           "channelEngage": "3m 18s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-13T16:39:22+05:30"
+          "channelCreatedAt": "2026-07-13T16:39:22+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474070869",
@@ -9482,7 +9767,10 @@
           "channelEngage": "2m 35s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-13T17:25:30+05:30"
+          "channelCreatedAt": "2026-07-13T17:25:30+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474071358",
@@ -9496,7 +9784,10 @@
           "channelEngage": "1m 15s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-13T18:45:22+05:30"
+          "channelCreatedAt": "2026-07-13T18:45:22+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474071989",
@@ -9510,7 +9801,10 @@
           "channelEngage": "28s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-13T19:23:25+05:30"
+          "channelCreatedAt": "2026-07-13T19:23:25+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474070788",
@@ -9525,7 +9819,10 @@
           "bridgeWithin15m": false,
           "bridgeNA": false,
           "channelCreatedAt": "2026-07-13T19:27:58+05:30",
-          "bridgeCreatedAt": "2026-07-13 20:01:40 IST"
+          "bridgeCreatedAt": "2026-07-13 20:01:40 IST",
+          "gusNumber": "W-23425222",
+          "gusCreatedAt": "2026-07-13T20:00:04+05:30",
+          "gusPreExisting": false
         }
       ]
     },
@@ -9557,7 +9854,10 @@
           "bridgeWithin15m": false,
           "bridgeNA": false,
           "channelCreatedAt": "2026-07-14T12:40:52+05:30",
-          "bridgeCreatedAt": "2026-07-14 13:38:49 IST"
+          "bridgeCreatedAt": "2026-07-14 13:38:49 IST",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474080372",
@@ -9571,7 +9871,10 @@
           "channelEngage": "6m 34s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-14T14:21:21+05:30"
+          "channelCreatedAt": "2026-07-14T14:21:21+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474080519",
@@ -9586,7 +9889,10 @@
           "bridgeWithin15m": false,
           "bridgeNA": false,
           "channelCreatedAt": "2026-07-14T14:37:36+05:30",
-          "bridgeCreatedAt": "2026-07-14 14:57:39 IST"
+          "bridgeCreatedAt": "2026-07-14 14:57:39 IST",
+          "gusNumber": "W-23441524",
+          "gusCreatedAt": "2026-07-14T18:00:16+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473996313",
@@ -9600,7 +9906,10 @@
           "channelEngage": "57s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-14T14:48:07+05:30"
+          "channelCreatedAt": "2026-07-14T14:48:07+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474080726",
@@ -9614,7 +9923,10 @@
           "channelEngage": "10m 22s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-14T15:00:10+05:30"
+          "channelCreatedAt": "2026-07-14T15:00:10+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474079951",
@@ -9628,7 +9940,10 @@
           "channelEngage": "3m 33s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-14T13:32:31+05:30"
+          "channelCreatedAt": "2026-07-14T13:32:31+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474080152",
@@ -9643,7 +9958,10 @@
           "bridgeWithin15m": true,
           "bridgeNA": false,
           "channelCreatedAt": "2026-07-14T15:30:38+05:30",
-          "bridgeCreatedAt": "2026-07-14 15:33:33 IST"
+          "bridgeCreatedAt": "2026-07-14 15:33:33 IST",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474081547",
@@ -9657,7 +9975,10 @@
           "channelEngage": "8m 27s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-14T16:27:43+05:30"
+          "channelCreatedAt": "2026-07-14T16:27:43+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474081940",
@@ -9671,7 +9992,10 @@
           "channelEngage": "9m 31s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-14T17:17:27+05:30"
+          "channelCreatedAt": "2026-07-14T17:17:27+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474081959",
@@ -9685,7 +10009,10 @@
           "channelEngage": "6m 1s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-14T17:20:27+05:30"
+          "channelCreatedAt": "2026-07-14T17:20:27+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474082275",
@@ -9700,7 +10027,10 @@
           "bridgeWithin15m": false,
           "bridgeNA": false,
           "channelCreatedAt": "2026-07-14T18:02:43+05:30",
-          "bridgeCreatedAt": "2026-07-14 18:18:38 IST"
+          "bridgeCreatedAt": "2026-07-14 18:18:38 IST",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474082649",
@@ -9715,7 +10045,10 @@
           "bridgeWithin15m": true,
           "bridgeNA": false,
           "channelCreatedAt": "2026-07-14T18:45:20+05:30",
-          "bridgeCreatedAt": "2026-07-14 18:57:43 IST"
+          "bridgeCreatedAt": "2026-07-14 18:57:43 IST",
+          "gusNumber": "W-23457709",
+          "gusCreatedAt": "2026-07-15T19:34:18+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "474061297",
@@ -9730,7 +10063,10 @@
           "bridgeWithin15m": false,
           "bridgeNA": false,
           "channelCreatedAt": "2026-07-14T19:05:05+05:30",
-          "bridgeCreatedAt": "2026-07-14 19:37:39 IST"
+          "bridgeCreatedAt": "2026-07-14 19:37:39 IST",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         }
       ]
     },
