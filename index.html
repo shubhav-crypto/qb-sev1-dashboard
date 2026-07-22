@@ -484,6 +484,22 @@ function bridgeDeltaSecs(c){
   const diff=Math.round((br-ch)/1000);
   return diff>=0?diff:null;
 }
+// Returns elapsed seconds from channelCreatedAt → gusCreatedAt, or null
+function gusDeltaSecs(c){
+  if(!c.gusCreatedAt||!c.channelCreatedAt)return null;
+  const ch=parseISTTimestamp(c.channelCreatedAt);
+  const gu=parseISTTimestamp(c.gusCreatedAt);
+  if(!ch||!gu)return null;
+  const diff=Math.round((gu-ch)/1000);
+  return diff>=0?diff:null;
+}
+// Format seconds into "Xd Yh Zm" (days-aware, for longer GUS creation gaps)
+function fmtGusSecs(secs){
+  if(secs===null)return null;
+  const d=Math.floor(secs/86400),h=Math.floor((secs%86400)/3600),m=Math.floor((secs%3600)/60);
+  const p=[];if(d)p.push(d+'d');if(h||d)p.push(h+'h');p.push(m+'m');
+  return p.join(' ');
+}
 // Format seconds into "Xh Ym Zs" (omits leading zero units)
 function fmtBridgeSecs(secs){
   if(secs===null)return null;
@@ -1418,6 +1434,7 @@ function buildDayPanel(day,container){
   html+='<th style="white-space:nowrap;cursor:help;" title="Time from Sev1 channel creation to QB Manager first text">Channel Engage</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Account has a Red Account record in OrgCS">Red Acct</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Actual time from Sev1 channel creation to bridge start. Computed from bridgeCreatedAt−channelCreatedAt (or explicit bridgeTime). Green = within 15 min, Red = over 15 min. Dash = no timestamp data.">Bridge time</th>';
+  html+='<th style="white-space:nowrap;cursor:help;" title="Time from Sev1 channel creation to GUS investigation creation. Computed from gusCreatedAt−channelCreatedAt. Dash = no GUS investigation created for this case.">GUS Creation Time</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Case notes or callout context">Notes</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Director and above tagged in this Sev1 channel">Director+ Tagged</th>';
   html+='</tr></thead><tbody>';
@@ -1468,6 +1485,18 @@ function buildDayPanel(day,container){
         bridgeCell='<td style="white-space:nowrap;font-size:11px;"><span style="background:rgba(148,163,184,.1);color:#94a3b8;border-radius:5px;padding:2px 7px;border:1px solid rgba(148,163,184,.25);" title="No CIC engagement in QB window — bridge not applicable">⛔ No CIC engage</span></td>';
       }
     }
+    let gusCell;
+    if(c.gusNumber&&c.gusCreatedAt){
+      const gSecs=gusDeltaSecs(c);
+      const gDisplay=gSecs!==null?fmtGusSecs(gSecs):null;
+      if(gDisplay!==null){
+        gusCell='<td style="white-space:nowrap;font-size:12px;"><span style="background:rgba(124,77,255,.1);color:#7c4dff;border-radius:5px;padding:2px 7px;font-weight:600;" title="'+c.gusNumber+' created '+gDisplay+' after Sev1 channel creation">🐛 '+gDisplay+'</span></td>';
+      }else{
+        gusCell='<td style="white-space:nowrap;font-size:11px;color:#94a3b8;" title="'+c.gusNumber+' — timestamp unavailable">'+c.gusNumber+'</td>';
+      }
+    }else{
+      gusCell='<td style="text-align:center;color:var(--text-muted);font-size:11px;" title="No GUS investigation created for this case">—</td>';
+    }
     const notesCell=c.resolvedText
       ?'<td style="font-size:11px;color:#94a3b8;max-width:200px;white-space:normal;line-height:1.4;padding:8px 12px;">'+c.resolvedText+'</td>'
       :(c.callout?'<td style="font-size:11px;color:#b45309;max-width:200px;white-space:normal;line-height:1.4;padding:8px 12px;">'+c.callout+'</td>'
@@ -1487,7 +1516,7 @@ function buildDayPanel(day,container){
       +'<td class="account-name">'+mciTag+c.account+'</td><td class="product-cell">'+c.product+'</td>'
       +'<td class="time-cell">'+c.timeIST+'</td>'
       +'<td><span class="manager-chip '+chipCls+'">'+mgr+'</span></td>'
-      +rtCell(c.ack)+rtCell(c.resolve)+rtCell(c.channelEngage,true,true,c.caseNum,c.bridgeNA)+redCell+bridgeCell+notesCell+execCell+'</tr>';
+      +rtCell(c.ack)+rtCell(c.resolve)+rtCell(c.channelEngage,true,true,c.caseNum,c.bridgeNA)+redCell+bridgeCell+gusCell+notesCell+execCell+'</tr>';
   });
   html+='</tbody></table></div>';
   container.innerHTML=html;

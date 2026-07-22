@@ -10256,7 +10256,9 @@
           "bridgeCreatedAt": "2026-07-20T12:54:14+05:30",
           "bridgeWithin15m": true,
           "bridgeNA": false,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null
         },
         {
           "caseNum": "474122302",
@@ -10275,7 +10277,9 @@
           "bridgeCreatedAt": "2026-07-20T13:19:46+05:30",
           "bridgeWithin15m": true,
           "bridgeNA": false,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null
         },
         {
           "caseNum": "474048487",
@@ -10294,7 +10298,9 @@
           "bridgeCreatedAt": "2026-07-20T14:55:20+05:30",
           "bridgeWithin15m": false,
           "bridgeNA": false,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null
         },
         {
           "caseNum": "474122958",
@@ -10313,7 +10319,9 @@
           "bridgeCreatedAt": "2026-07-20T15:04:03+05:30",
           "bridgeWithin15m": true,
           "bridgeNA": false,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null
         },
         {
           "caseNum": "474100655",
@@ -10332,7 +10340,9 @@
           "bridgeCreatedAt": null,
           "bridgeWithin15m": null,
           "bridgeNA": "other",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null
         },
         {
           "caseNum": "474123195",
@@ -10351,7 +10361,9 @@
           "bridgeCreatedAt": "2026-07-20T15:36:24+05:30",
           "bridgeWithin15m": true,
           "bridgeNA": false,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null
         },
         {
           "caseNum": "474123561",
@@ -10370,7 +10382,9 @@
           "bridgeCreatedAt": "2026-07-20T16:27:38+05:30",
           "bridgeWithin15m": true,
           "bridgeNA": false,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null
         },
         {
           "caseNum": "474123460",
@@ -10389,7 +10403,9 @@
           "bridgeCreatedAt": "2026-07-20T16:43:40+05:30",
           "bridgeWithin15m": true,
           "bridgeNA": false,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null
         },
         {
           "caseNum": "474123813",
@@ -10408,7 +10424,9 @@
           "bridgeCreatedAt": "2026-07-20T16:55:39+05:30",
           "bridgeWithin15m": true,
           "bridgeNA": false,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null
         },
         {
           "caseNum": "474114875",
@@ -10427,7 +10445,9 @@
           "bridgeCreatedAt": "2026-07-20T17:13:02+05:30",
           "bridgeWithin15m": true,
           "bridgeNA": false,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23527918",
+          "gusCreatedAt": "2026-07-21T21:12:40+05:30"
         },
         {
           "caseNum": "474124190",
@@ -10446,7 +10466,9 @@
           "bridgeCreatedAt": "2026-07-20T18:00:12+05:30",
           "bridgeWithin15m": false,
           "bridgeNA": false,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null
         },
         {
           "caseNum": "474124305",
@@ -10465,7 +10487,9 @@
           "bridgeCreatedAt": "2026-07-20T18:14:36+05:30",
           "bridgeWithin15m": true,
           "bridgeNA": false,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null
         },
         {
           "caseNum": "474124775",
@@ -10484,7 +10508,9 @@
           "bridgeCreatedAt": "2026-07-20T19:12:19+05:30",
           "bridgeWithin15m": false,
           "bridgeNA": false,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null
         },
         {
           "caseNum": "474124806",
@@ -10503,7 +10529,9 @@
           "bridgeCreatedAt": "2026-07-20T19:04:59+05:30",
           "bridgeWithin15m": true,
           "bridgeNA": false,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null
         },
         {
           "caseNum": "474124849",
@@ -10522,7 +10550,9 @@
           "bridgeCreatedAt": "2026-07-20T19:19:30+05:30",
           "bridgeWithin15m": true,
           "bridgeNA": false,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": null,
+          "gusCreatedAt": null
         }
       ],
       "managerId": "U04219TJTK5"
