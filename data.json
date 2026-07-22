@@ -9754,7 +9754,10 @@
           "channelEngage": "2m 44s",
           "bridgeWithin15m": null,
           "bridgeNA": null,
-          "channelCreatedAt": "2026-07-15T19:17:08+05:30"
+          "channelCreatedAt": "2026-07-15T19:17:08+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474091680",
@@ -9768,7 +9771,10 @@
           "channelEngage": "4m 2s",
           "bridgeWithin15m": null,
           "bridgeNA": null,
-          "channelCreatedAt": "2026-07-15T15:02:32+05:30"
+          "channelCreatedAt": "2026-07-15T15:02:32+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474046334",
@@ -9783,7 +9789,10 @@
           "bridgeWithin15m": true,
           "bridgeNA": null,
           "channelCreatedAt": "2026-07-15T14:42:40+05:30",
-          "bridgeCreatedAt": "2026-07-15 14:44:40 IST"
+          "bridgeCreatedAt": "2026-07-15 14:44:40 IST",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474088361",
@@ -9798,7 +9807,10 @@
           "bridgeWithin15m": false,
           "bridgeNA": null,
           "channelCreatedAt": "2026-07-15T13:39:54+05:30",
-          "bridgeCreatedAt": "2026-07-15 13:56:22 IST"
+          "bridgeCreatedAt": "2026-07-15 13:56:22 IST",
+          "gusNumber": "W-23458310",
+          "gusCreatedAt": "2026-07-15T20:19:52+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "474090282",
@@ -9813,7 +9825,10 @@
           "bridgeWithin15m": false,
           "bridgeNA": null,
           "channelCreatedAt": "2026-07-15T12:19:27+05:30",
-          "bridgeCreatedAt": "2026-07-15 13:31:44 IST"
+          "bridgeCreatedAt": "2026-07-15 13:31:44 IST",
+          "gusNumber": "W-23456161",
+          "gusCreatedAt": "2026-07-15T17:15:32+05:30",
+          "gusPreExisting": false
         }
       ]
     },
