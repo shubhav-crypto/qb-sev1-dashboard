@@ -1434,7 +1434,7 @@ function buildDayPanel(day,container){
   html+='<th style="white-space:nowrap;cursor:help;" title="Time from Sev1 channel creation to QB Manager first text">Channel Engage</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Account has a Red Account record in OrgCS">Red Acct</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Actual time from Sev1 channel creation to bridge start. Computed from bridgeCreatedAt−channelCreatedAt (or explicit bridgeTime). Green = within 15 min, Red = over 15 min. Dash = no timestamp data.">Bridge time</th>';
-  html+='<th style="white-space:nowrap;cursor:help;" title="Time from Sev1 channel creation to GUS investigation creation. Computed from gusCreatedAt−channelCreatedAt. Dash = no GUS investigation created for this case.">GUS Creation Time</th>';
+  html+='<th style="white-space:nowrap;cursor:help;" title="Time from Sev1 channel creation to GUS investigation creation. Computed from gusCreatedAt−channelCreatedAt. \'Pre-existing GUS\' = investigation already existed before this channel (known/recurring issue). Dash = no GUS investigation created for this case.">GUS Creation Time</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Case notes or callout context">Notes</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Director and above tagged in this Sev1 channel">Director+ Tagged</th>';
   html+='</tr></thead><tbody>';
@@ -1486,7 +1486,11 @@ function buildDayPanel(day,container){
       }
     }
     let gusCell;
-    if(c.gusNumber&&c.gusCreatedAt){
+    if(c.gusNumber&&c.gusPreExisting){
+      // GUS investigation predates this case's Sev1 channel — likely a known/recurring
+      // bug linked to this occurrence. A "since channel creation" duration isn't meaningful here.
+      gusCell='<td style="white-space:nowrap;font-size:11px;"><span style="background:rgba(20,184,166,.1);color:#0d9488;border-radius:5px;padding:2px 7px;border:1px solid rgba(20,184,166,.3);" title="'+c.gusNumber+' already existed before this Sev1 channel was created — linked to a known/recurring issue">🔗 Pre-existing GUS</span></td>';
+    }else if(c.gusNumber&&c.gusCreatedAt){
       const gSecs=gusDeltaSecs(c);
       const gDisplay=gSecs!==null?fmtGusSecs(gSecs):null;
       if(gDisplay!==null){

@@ -10050,7 +10050,10 @@
           "bridgeWithin15m": null,
           "bridgeNA": "outside-window",
           "resolvedText": "Channel created 12:15 PM IST — before the 12:30 PM QB window opened. CIC Case Commander (Vishnu Nambiar) engaged at 12:38 PM IST, 22m56s after creation, straddling the window boundary. Bug blocking Pearson's voice-agent go-live (LLM Gateway masking company/product names); GHO warm-handover to APAC at 8:26 PM IST; case remained open across CIC rotations through July 20 pending an engineering patch fix.",
-          "channelCreatedAt": "2026-07-17T12:15:44+05:30"
+          "channelCreatedAt": "2026-07-17T12:15:44+05:30",
+          "gusNumber": "W-23476626",
+          "gusCreatedAt": "2026-07-16T20:53:40+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "474111668",
@@ -10066,7 +10069,10 @@
           "bridgeNA": false,
           "resolvedText": "Alerted twice (1:42 PM and 5:07 PM IST) — same case/channel; issue reoccurred intermittently and was warm-handed-over to AMER at 9:22 PM IST for follow-the-sun coverage.",
           "channelCreatedAt": "2026-07-17T13:42:06+05:30",
-          "bridgeCreatedAt": "2026-07-17 14:07:53 IST"
+          "bridgeCreatedAt": "2026-07-17 14:07:53 IST",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474077818",
@@ -10080,7 +10086,10 @@
           "channelEngage": "10m 6s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-17T14:56:43+05:30"
+          "channelCreatedAt": "2026-07-17T14:56:43+05:30",
+          "gusNumber": "W-23489848",
+          "gusCreatedAt": "2026-07-17T18:54:16+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "474112387",
@@ -10095,7 +10104,10 @@
           "bridgeWithin15m": null,
           "bridgeNA": false,
           "resolvedText": "Throttle traced to a sandbox with no critical business impact; CIC stood down same engagement.",
-          "channelCreatedAt": "2026-07-17T15:15:53+05:30"
+          "channelCreatedAt": "2026-07-17T15:15:53+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474090360",
@@ -10110,7 +10122,10 @@
           "bridgeWithin15m": true,
           "bridgeNA": false,
           "channelCreatedAt": "2026-07-17T16:11:26+05:30",
-          "bridgeCreatedAt": "2026-07-17 16:19:16 IST"
+          "bridgeCreatedAt": "2026-07-17 16:19:16 IST",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474112881",
@@ -10124,7 +10139,10 @@
           "channelEngage": "1m 38s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-17T16:19:35+05:30"
+          "channelCreatedAt": "2026-07-17T16:19:35+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474094588",
@@ -10139,7 +10157,10 @@
           "bridgeWithin15m": true,
           "bridgeNA": false,
           "channelCreatedAt": "2026-07-17T16:58:05+05:30",
-          "bridgeCreatedAt": "2026-07-17 17:11:42 IST"
+          "bridgeCreatedAt": "2026-07-17 17:11:42 IST",
+          "gusNumber": "W-23490550",
+          "gusCreatedAt": "2026-07-17T20:21:40+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "474113382",
@@ -10153,7 +10174,10 @@
           "channelEngage": "41m 53s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-17T17:31:14+05:30"
+          "channelCreatedAt": "2026-07-17T17:31:14+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474034385",
@@ -10168,7 +10192,10 @@
           "bridgeWithin15m": false,
           "bridgeNA": false,
           "channelCreatedAt": "2026-07-17T17:33:07+05:30",
-          "bridgeCreatedAt": "2026-07-17 17:49:53 IST"
+          "bridgeCreatedAt": "2026-07-17 17:49:53 IST",
+          "gusNumber": "W-23488847",
+          "gusCreatedAt": "2026-07-17T16:51:52+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "474113913",
@@ -10182,7 +10209,10 @@
           "channelEngage": "55s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-17T18:41:20+05:30"
+          "channelCreatedAt": "2026-07-17T18:41:20+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474069331",
@@ -10197,7 +10227,10 @@
           "bridgeWithin15m": null,
           "bridgeNA": "resolved",
           "resolvedText": "Pre-existing re-alert (Sev1 channel created 2026-07-13); case had already been resolved and CIC disengaged at 3:13 PM IST on 2026-07-13 before this 6:45 PM IST PD re-alert, which triggered only an automated checklist re-post and a channel join, with no substantive follow-up activity.",
-          "channelCreatedAt": "2026-07-13T14:42:37+05:30"
+          "channelCreatedAt": "2026-07-13T14:42:37+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474114132",
@@ -10211,7 +10244,10 @@
           "channelEngage": "3m 43s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-17T19:07:06+05:30"
+          "channelCreatedAt": "2026-07-17T19:07:06+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         },
         {
           "caseNum": "474114168",
@@ -10225,7 +10261,10 @@
           "channelEngage": "1m 31s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "channelCreatedAt": "2026-07-17T19:09:51+05:30"
+          "channelCreatedAt": "2026-07-17T19:09:51+05:30",
+          "gusNumber": null,
+          "gusCreatedAt": null,
+          "gusPreExisting": null
         }
       ]
     },
