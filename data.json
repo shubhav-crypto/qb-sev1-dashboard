@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated": "2026-07-28T21:00:00+05:30",
-    "totalCases": 579,
-    "daysTracked": 51
+    "generated": "2026-07-29T21:00:00+05:30",
+    "totalCases": 607,
+    "daysTracked": 52
   },
   "schedule": {
     "2026-06-01": {
@@ -12554,6 +12554,103 @@
           "gusNumber": null,
           "gusCreatedAt": null,
           "gusPreExisting": false
+        }
+      ]
+    },
+    {
+      "date": "2026-07-29",
+      "label": "Jul 29",
+      "dayOfWeek": "Wed",
+      "isWeekend": false,
+      "manager": "Mirza",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [],
+      "managerId": "U04219TJTK5",
+      "cases": [
+        {
+          "caseNum": "474199625", "account": "Lowe's Companies, Inc.", "product": "Security & Activations", "timeIST": "1:02 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": null, "resolvedAt": null, "resolvedText": null, "oiDuration": null, "channelCreatedAt": "2026-07-29T13:02:40+05:30", "resolve": null, "bridgeCreatedAt": null, "bridgeWithin15m": null, "bridgeNA": null, "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474178495", "account": "Philips Electronics Nederland B.V", "product": "Security & Activations", "timeIST": "1:12 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": "3m 39s", "resolvedAt": null, "resolvedText": "Existing case linked to a broader multi-customer incident; Shubha joined from support management and Engineering investigation W-23605719 was already open.", "oiDuration": null, "channelCreatedAt": "2026-07-29T13:12:29+05:30", "resolve": null, "bridgeCreatedAt": null, "bridgeWithin15m": null, "bridgeNA": "mci", "execTagged": [], "gusNumber": "W-23605719", "gusCreatedAt": null, "gusPreExisting": true
+        },
+        {
+          "caseNum": "474199732", "account": "Bajaj Finserv Limited (B2C Org)", "product": "Developer Support", "timeIST": "1:14 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": "8m 46s", "resolvedAt": null, "resolvedText": "A full-copy sandbox was proactively auto-throttled for database CPU. The throttle expired with no critical production impact.", "oiDuration": null, "channelCreatedAt": "2026-07-29T13:14:28+05:30", "resolve": null, "bridgeCreatedAt": null, "bridgeWithin15m": null, "bridgeNA": "throttle", "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474199869", "account": "United Airlines, Inc.", "product": "Cases, Knowledge, Service Cloud Console, Work.com", "timeIST": "1:29 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": null, "resolvedAt": null, "resolvedText": null, "oiDuration": null, "channelCreatedAt": "2026-07-29T13:29:22+05:30", "resolve": null, "bridgeCreatedAt": null, "bridgeWithin15m": null, "bridgeNA": null, "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474200051", "account": "Progress Residential", "product": "Developer Support", "timeIST": "1:53 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": null, "resolvedAt": null, "resolvedText": "Sandbox throttle case.", "oiDuration": null, "channelCreatedAt": "2026-07-29T13:53:05+05:30", "resolve": null, "bridgeCreatedAt": null, "bridgeWithin15m": null, "bridgeNA": "throttle", "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474144144", "account": "United Utilities WATER Limited", "product": "Developer Support", "timeIST": "2:02 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": null, "resolvedAt": null, "resolvedText": "Pre-existing case re-alert. Sev1 channel automation was delayed; Shubha requested channel creation and CIC engagement at 2:08 PM.", "oiDuration": null, "channelCreatedAt": "2026-07-29T14:18:00+05:30", "resolve": null, "bridgeCreatedAt": null, "bridgeWithin15m": null, "bridgeNA": "other", "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474200289", "account": "Enel Global Services S.r.l. (ENEL Italy Free Market)", "product": "Developer Support", "timeIST": "2:17 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": null, "resolvedAt": null, "resolvedText": "Async Apex limits blocked roughly 20–30K contract flows. A LAP temporarily increased capacity; the customer deployed a fix and consumption declined.", "oiDuration": null, "channelCreatedAt": "2026-07-29T14:17:33+05:30", "resolve": null, "bridgeCreatedAt": null, "bridgeWithin15m": null, "bridgeNA": "lap", "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474200409", "account": "Dell - Content Management", "product": "Security & Activations", "timeIST": "2:31 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": null, "resolvedAt": null, "resolvedText": "An MFA exemption was applied and users confirmed they were out of impact.", "oiDuration": null, "channelCreatedAt": "2026-07-29T14:31:25+05:30", "resolve": null, "bridgeCreatedAt": null, "bridgeWithin15m": null, "bridgeNA": "resolved", "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474132870", "account": "Iren NDS", "product": "CRM Analytics", "timeIST": "2:42 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": null, "resolvedAt": null, "resolvedText": "Pre-existing case opened July 21. Event Monitoring upload jobs intermittently missed schedules, causing security-data gaps; monitoring continued.", "oiDuration": null, "channelCreatedAt": "2026-07-29T14:42:15+05:30", "resolve": null, "bridgeCreatedAt": null, "bridgeWithin15m": null, "bridgeNA": "monitoring", "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": true
+        },
+        {
+          "caseNum": "474200319", "account": "Crocs, Inc. (Consumer Org)", "product": "Security & Activations", "timeIST": "2:43 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": null, "resolvedAt": null, "resolvedText": "Same-day duplicate PagerDuty alert at 3:14 PM was deduplicated into this case.", "oiDuration": null, "channelCreatedAt": "2026-07-29T14:43:13+05:30", "resolve": null, "bridgeCreatedAt": null, "bridgeWithin15m": null, "bridgeNA": null, "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474200757", "account": "AGCO Corporation NA", "product": "Email Delivery & Desktop Integrations", "timeIST": "3:01 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": "38m 8s", "resolvedAt": null, "resolvedText": "Email reply issue. The customer did not join the bridge and remained unresponsive, so CIC disengaged.", "oiDuration": null, "channelCreatedAt": "2026-07-29T15:01:32+05:30", "resolve": null, "bridgeCreatedAt": "2026-07-29T15:30:02+05:30", "bridgeWithin15m": false, "bridgeNA": null, "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474200819", "account": "TDC Erhverv", "product": "Digital Engagement", "timeIST": "3:08 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": "1m 14s", "resolvedAt": null, "resolvedText": "Omni-Channel flow did not open multiple matched Accounts as separate subtabs. Record Collection screen-pop guidance was provided for retesting.", "oiDuration": null, "channelCreatedAt": "2026-07-29T15:08:15+05:30", "resolve": null, "bridgeCreatedAt": null, "bridgeWithin15m": null, "bridgeNA": null, "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474201048", "account": "Illumina, Inc.", "product": "Security & Activations", "timeIST": "3:31 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": "2m 20s", "resolvedAt": null, "resolvedText": "MFA/passkey enforcement blocked automation. A temporary exemption was applied and the customer later requested it be reverted.", "oiDuration": null, "channelCreatedAt": "2026-07-29T15:31:15+05:30", "resolve": null, "bridgeCreatedAt": "2026-07-29T15:46:46+05:30", "bridgeWithin15m": false, "bridgeNA": null, "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474201115", "account": "Nestlé Operational Services Worldwide (NOSW) S.A.", "product": "Developer Support", "timeIST": "3:38 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": "1m 27s", "resolvedAt": null, "resolvedText": "A Connected App integration user had not approved access. Root cause guidance was shared and the case awaited customer confirmation.", "oiDuration": null, "channelCreatedAt": "2026-07-29T15:38:11+05:30", "resolve": null, "bridgeCreatedAt": "2026-07-29T15:46:00+05:30", "bridgeWithin15m": true, "bridgeNA": null, "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474201323", "account": "Johnson and Johnson Services, Inc.", "product": "Security & Activations", "timeIST": "4:02 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": "1m 37s", "resolvedAt": null, "resolvedText": "Repeated mobile MFA/device activation was explained as expected cookie and device-activation behavior. The customer considered an extended exemption.", "oiDuration": null, "channelCreatedAt": "2026-07-29T16:03:05+05:30", "resolve": null, "bridgeCreatedAt": "2026-07-29T16:19:10+05:30", "bridgeWithin15m": false, "bridgeNA": null, "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474113639", "account": "Baxter - Hillrom", "product": "Developer Support", "timeIST": "4:30 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": null, "resolvedAt": null, "resolvedText": "Pre-existing case opened July 17. Browser softphone calls failed because the CTI provider denied microphone permission; the case was downgraded to Sev2.", "oiDuration": null, "channelCreatedAt": "2026-07-29T16:30:31+05:30", "resolve": null, "bridgeCreatedAt": null, "bridgeWithin15m": null, "bridgeNA": "other", "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474201613", "account": "Dell - Service", "product": "Developer Support", "timeIST": "4:38 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": "9m", "resolvedAt": null, "resolvedText": "An automatic throttle had already expired with no active impact, so CIC disengaged.", "oiDuration": null, "channelCreatedAt": "2026-07-29T16:38:31+05:30", "resolve": null, "bridgeCreatedAt": null, "bridgeWithin15m": null, "bridgeNA": "throttle", "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474201801", "account": "Mahindra & Mahindra Ltd.", "product": "Cases, Knowledge, Service Cloud Console, Work.com", "timeIST": "5:03 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": "1m 58s", "resolvedAt": null, "resolvedText": "Sandbox jobs failed ahead of production activity planned in one week. A pre-existing Sev2 investigation remained in progress.", "oiDuration": null, "channelCreatedAt": "2026-07-29T17:03:13+05:30", "resolve": null, "bridgeCreatedAt": "2026-07-29T17:21:21+05:30", "bridgeWithin15m": false, "bridgeNA": null, "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": true
+        },
+        {
+          "caseNum": "474201265", "account": "Energieversorgung Oberhausen Aktiengesellschaft", "product": "Experience Management and Workspaces", "timeIST": "5:27 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": null, "resolvedAt": null, "resolvedText": "Case was manually upgraded to Sev1 shortly before the alert.", "oiDuration": null, "channelCreatedAt": "2026-07-29T17:27:14+05:30", "resolve": null, "bridgeCreatedAt": null, "bridgeWithin15m": null, "bridgeNA": null, "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474201988", "account": "Airbnb, Inc", "product": "Developer Support", "timeIST": "5:30 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": null, "resolvedAt": null, "resolvedText": null, "oiDuration": null, "channelCreatedAt": "2026-07-29T17:30:30+05:30", "resolve": null, "bridgeCreatedAt": null, "bridgeWithin15m": null, "bridgeNA": null, "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474202023", "account": "United Site Services, Inc.", "product": "Field Service", "timeIST": "5:36 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": null, "resolvedAt": null, "resolvedText": "New case requested escalation of older case 474147587 and was rerouted from Developer/How-to to Field Service.", "oiDuration": null, "channelCreatedAt": "2026-07-29T17:35:03+05:30", "resolve": null, "bridgeCreatedAt": null, "bridgeWithin15m": null, "bridgeNA": "other", "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474202053", "account": "TATA CAPITAL LIMITED", "product": "Developer Support", "timeIST": "5:40 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": null, "resolvedAt": null, "resolvedText": null, "oiDuration": null, "channelCreatedAt": "2026-07-29T17:40:45+05:30", "resolve": null, "bridgeCreatedAt": null, "bridgeWithin15m": null, "bridgeNA": null, "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474202057", "account": "Dunelm (Soft Furnishings) Ltd.", "product": "Developer Support", "timeIST": "5:41 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": null, "resolvedAt": null, "resolvedText": null, "oiDuration": null, "channelCreatedAt": "2026-07-29T17:41:23+05:30", "resolve": null, "bridgeCreatedAt": null, "bridgeWithin15m": null, "bridgeNA": null, "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474202086", "account": "BOTICARIO PRODUTOS DE BELEZA LTDA", "product": "Reports and Dashboards", "timeIST": "5:44 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": null, "resolvedAt": null, "resolvedText": "Report export verification was inconsistent: some users received email codes while others received failing Microsoft Authenticator prompts.", "oiDuration": null, "channelCreatedAt": "2026-07-29T17:44:38+05:30", "resolve": null, "bridgeCreatedAt": "2026-07-29T18:19:36+05:30", "bridgeWithin15m": false, "bridgeNA": null, "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474147587", "account": "United Site Services, Inc.", "product": "Security & Activations", "timeIST": "6:06 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": null, "resolvedAt": null, "resolvedText": "Pre-existing closed Field Service case was reopened and upgraded because MFA enforcement affected SSO login.", "oiDuration": null, "channelCreatedAt": "2026-07-29T18:06:49+05:30", "resolve": null, "bridgeCreatedAt": null, "bridgeWithin15m": null, "bridgeNA": "other", "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474202420", "account": "PANDORA A/S", "product": "Developer Support", "timeIST": "6:21 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": null, "resolvedAt": null, "resolvedText": "Priority customer MFA issue; Shubha assigned priority ownership shortly after channel creation.", "oiDuration": null, "channelCreatedAt": "2026-07-29T18:21:34+05:30", "resolve": null, "bridgeCreatedAt": null, "bridgeWithin15m": null, "bridgeNA": null, "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474202875", "account": "Usha International Limited", "product": "Field Service", "timeIST": "7:03 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": null, "resolvedAt": null, "resolvedText": "Dedicated Sev1 channel details were not available during collection.", "oiDuration": null, "channelCreatedAt": "2026-07-29T19:03:52+05:30", "resolve": null, "bridgeCreatedAt": null, "bridgeWithin15m": null, "bridgeNA": "no-channel", "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
+        },
+        {
+          "caseNum": "474203082", "account": "BMC Helix, Inc.", "product": "Security & Activations", "timeIST": "7:22 PM", "manager": "Mirza", "isRed": false, "ack": null, "channelEngage": null, "resolvedAt": null, "resolvedText": "Dedicated Sev1 channel details were not available during collection.", "oiDuration": null, "channelCreatedAt": "2026-07-29T19:22:59+05:30", "resolve": null, "bridgeCreatedAt": null, "bridgeWithin15m": null, "bridgeNA": "no-channel", "execTagged": [], "gusNumber": null, "gusCreatedAt": null, "gusPreExisting": false
         }
       ]
     }
