@@ -1,8 +1,8 @@
 {
   "meta": {
     "generated": "2026-08-08T21:52:37.383198+05:30",
-    "totalCases": 663,
-    "daysTracked": 57
+    "totalCases": 687,
+    "daysTracked": 60
   },
   "schedule": {
     "2026-06-01": {
@@ -168,6 +168,18 @@
     "2026-07-31": {
       "manager": "Rohit",
       "managerId": "U01G5N5SZC5"
+    },
+    "2026-08-05": {
+      "manager": "Nikhil",
+      "managerId": "U01FU2F5RN3"
+    },
+    "2026-08-06": {
+      "manager": "Jyothirmayee",
+      "managerId": "WN8LA3U5D"
+    },
+    "2026-08-07": {
+      "manager": "Shubha",
+      "managerId": "U04999GSQ13"
     }
   },
   "managerIds": {
@@ -14094,6 +14106,69 @@
           "bridgeWithin15m": true,
           "bridgeNA": false
         }
+      ]
+    },
+    {
+      "date": "2026-08-05",
+      "label": "Aug 5",
+      "dayOfWeek": "Wed",
+      "isWeekend": false,
+      "manager": "Nikhil",
+      "managerId": "U01FU2F5RN3",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [],
+      "cases": [
+        {"caseNum":"474218503","account":"Google LLC","product":"Developer Support","timeIST":"1:52 PM","manager":"Nikhil","quality":"PENDING","resolve":null,"channelEngage":null,"isRed":false,"nonActionable":true,"nonActionableReason":"pre-existing","directorTagged":[],"resolvedAt":null,"resolvedText":"Pre-existing re-alert (channel created 2026-07-31)","oiDuration":null,"channelCreatedAt":"2026-07-31 02:42:01 IST"},
+        {"caseNum":"474155059","account":"Hewlett Packard Enterprise Company","product":"Developer Support","timeIST":"2:37 PM","manager":"Nikhil","quality":"PENDING","resolve":null,"channelEngage":"4m 37s","isRed":false,"nonActionable":false,"nonActionableReason":null,"directorTagged":[],"resolvedAt":null,"resolvedText":null,"oiDuration":null,"channelCreatedAt":"2026-08-05 14:41:33 IST"},
+        {"caseNum":"474224688","account":"Deel Inc.","product":"Digital Engagement","timeIST":"2:48 PM","manager":"Nikhil","quality":"PENDING","resolve":null,"channelEngage":null,"isRed":false,"nonActionable":false,"nonActionableReason":null,"directorTagged":[],"resolvedAt":null,"resolvedText":null,"oiDuration":null,"channelCreatedAt":"2026-08-05 14:59:18 IST"},
+        {"caseNum":"474178669","account":"Stellantis España S.L.","product":"Digital Engagement","timeIST":"3:16 PM","manager":"Nikhil","quality":"PENDING","resolve":null,"channelEngage":"3m 34s","isRed":false,"nonActionable":true,"nonActionableReason":"sandbox","directorTagged":[],"resolvedAt":null,"resolvedText":"Sandbox/POC deployment; no production outage confirmed","oiDuration":null,"channelCreatedAt":"2026-08-05 15:18:54 IST"},
+        {"caseNum":"474257653","account":"BANK RAKYAT INDONESIA (PERSERO), PT TBK","product":"Email Delivery & Desktop Integrations","timeIST":"3:47 PM","manager":"Nikhil","quality":"PENDING","resolve":null,"channelEngage":null,"isRed":false,"nonActionable":true,"nonActionableReason":"howto","directorTagged":[],"resolvedAt":null,"resolvedText":"Email Relay configuration request; no customer impact confirmed","oiDuration":null,"channelCreatedAt":"2026-08-05 09:28:22 IST"},
+        {"caseNum":"474260890","account":"Endesa Medios y Sistemas S.L. (Endesa Distribucion)","product":"Developer Support","timeIST":"5:03 PM","manager":"Nikhil","quality":"PENDING","resolve":null,"channelEngage":"6m 22s","isRed":false,"nonActionable":false,"nonActionableReason":null,"directorTagged":[],"resolvedAt":null,"resolvedText":null,"oiDuration":null,"channelCreatedAt":"2026-08-05 17:03:18 IST"},
+        {"caseNum":"474261013","account":"Randstad R-One Northern European org","product":"Developer Support","timeIST":"5:21 PM","manager":"Nikhil","quality":"PENDING","resolve":null,"channelEngage":null,"isRed":false,"nonActionable":true,"nonActionableReason":"throttle","directorTagged":[],"resolvedAt":null,"resolvedText":"Sandbox database CPU throttle; CIC disengaged","oiDuration":null,"channelCreatedAt":"2026-08-05 17:21:58 IST"},
+        {"caseNum":"474259070","account":"Williams-Sonoma, Inc.","product":"Digital Engagement","timeIST":"6:24 PM","manager":"Nikhil","quality":"PENDING","resolve":null,"channelEngage":null,"isRed":false,"nonActionable":true,"nonActionableReason":"pre-existing","directorTagged":[],"resolvedAt":null,"resolvedText":"Pre-existing re-alert (channel created 2026-08-05 13:25)","oiDuration":null,"channelCreatedAt":"2026-08-05 13:25:06 IST"},
+        {"caseNum":"474149607","account":"The Huntington National Bank","product":"Developer Support","timeIST":"6:51 PM","manager":"Nikhil","quality":"PENDING","resolve":null,"channelEngage":null,"isRed":false,"nonActionable":false,"nonActionableReason":null,"directorTagged":[],"resolvedAt":null,"resolvedText":"Dedicated Sev1 channel not located","oiDuration":null,"channelCreatedAt":null},
+        {"caseNum":"474262217","account":"SharkNinja Operating LLC","product":"Developer Support","timeIST":"7:26 PM","manager":"Nikhil","quality":"PENDING","resolve":null,"channelEngage":"1m 28s","isRed":false,"nonActionable":false,"nonActionableReason":null,"directorTagged":[],"resolvedAt":null,"resolvedText":null,"oiDuration":null,"channelCreatedAt":"2026-08-05 19:26:05 IST"}
+      ]
+    },
+    {
+      "date": "2026-08-06",
+      "label": "Aug 6",
+      "dayOfWeek": "Thu",
+      "isWeekend": false,
+      "manager": "Jyothirmayee",
+      "managerId": "WN8LA3U5D",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [],
+      "cases": [
+        {"caseNum":"474269269","account":"ERM EUROPE LTD","product":"Cases, Knowledge, Service Cloud Console, Work.com","timeIST":"12:43 PM","manager":"Jyothirmayee","quality":"PENDING","resolve":null,"channelEngage":"1m 34s","isRed":false,"nonActionable":true,"nonActionableReason":"sandbox","directorTagged":[],"resolvedAt":null,"resolvedText":"Sandbox case; issue resolved during customer call","oiDuration":null,"channelCreatedAt":"2026-08-06 12:43:04 IST"},
+        {"caseNum":"474269878","account":"Bajaj Finserv Health Limited","product":"Developer Support","timeIST":"1:59 PM","manager":"Jyothirmayee","quality":"PENDING","resolve":null,"channelEngage":null,"isRed":false,"nonActionable":false,"nonActionableReason":null,"directorTagged":[],"resolvedAt":null,"resolvedText":"Dedicated Sev1 channel not located","oiDuration":null,"channelCreatedAt":null},
+        {"caseNum":"474269892","account":"Singapore Life Ltd. (formerly known as Aviva Ltd)","product":"Cases, Knowledge, Service Cloud Console, Work.com","timeIST":"2:00 PM","manager":"Jyothirmayee","quality":"PENDING","resolve":null,"channelEngage":"35s","isRed":false,"nonActionable":true,"nonActionableReason":"howto","directorTagged":[],"resolvedAt":null,"resolvedText":"How-to request with no identified business impact","oiDuration":null,"channelCreatedAt":"2026-08-06 14:00:20 IST"},
+        {"caseNum":"474269900","account":"Google LLC","product":"Developer Support","timeIST":"2:01 PM","manager":"Jyothirmayee","quality":"PENDING","resolve":null,"channelEngage":"59s","isRed":false,"nonActionable":true,"nonActionableReason":"sandbox","directorTagged":[],"resolvedAt":null,"resolvedText":"Single sandbox user; resolved through authentication reset","oiDuration":null,"channelCreatedAt":"2026-08-06 14:01:03 IST"},
+        {"caseNum":"474269982","account":"Airwair International Ltd","product":"Service Cloud Voice","timeIST":"2:10 PM","manager":"Jyothirmayee","quality":"PENDING","resolve":null,"channelEngage":"54s","isRed":false,"nonActionable":false,"nonActionableReason":null,"directorTagged":[],"resolvedAt":null,"resolvedText":null,"oiDuration":null,"channelCreatedAt":"2026-08-06 14:10:59 IST"},
+        {"caseNum":"474270393","account":"ADITYA BIRLA FINANCIAL SHARED SERVICES LIMITED","product":"Developer Support","timeIST":"3:00 PM","manager":"Jyothirmayee","quality":"PENDING","resolve":null,"channelEngage":"41s","isRed":false,"nonActionable":true,"nonActionableReason":"already-resolved","directorTagged":[],"resolvedAt":null,"resolvedText":"No business-stopping impact; customer did not respond","oiDuration":null,"channelCreatedAt":"2026-08-06 15:00:23 IST"},
+        {"caseNum":"474269269","account":"ERM EUROPE LTD","product":"Cases, Knowledge, Service Cloud Console, Work.com","timeIST":"3:47 PM","manager":"Jyothirmayee","quality":"PENDING","resolve":null,"channelEngage":null,"isRed":false,"nonActionable":true,"nonActionableReason":"pre-existing","directorTagged":[],"resolvedAt":null,"resolvedText":"Pre-existing re-alert (channel created 2026-08-06 12:43)","oiDuration":null,"channelCreatedAt":"2026-08-06 12:43:04 IST"},
+        {"caseNum":"474271261","account":"Resideo LLC","product":"Email Delivery & Desktop Integrations","timeIST":"4:53 PM","manager":"Jyothirmayee","quality":"PENDING","resolve":null,"channelEngage":"1m 4s","isRed":false,"nonActionable":false,"nonActionableReason":null,"directorTagged":[],"resolvedAt":null,"resolvedText":null,"oiDuration":null,"channelCreatedAt":"2026-08-06 16:53:01 IST"}
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "label": "Aug 7",
+      "dayOfWeek": "Fri",
+      "isWeekend": false,
+      "manager": "Shubha",
+      "managerId": "U04999GSQ13",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [],
+      "cases": [
+        {"caseNum":"474280124","account":"ERM EUROPE LTD","product":"Cases, Knowledge, Service Cloud Console, Work.com","timeIST":"2:15 PM","manager":"Shubha","quality":"PENDING","resolve":null,"channelEngage":"35s","isRed":false,"nonActionable":true,"nonActionableReason":"already-resolved","directorTagged":[],"resolvedAt":null,"resolvedText":"Closed with guidance; CIC disengaged","oiDuration":null,"channelCreatedAt":"2026-08-07 14:15:15 IST"},
+        {"caseNum":"474280349","account":"Granicus, Inc. (2nd Org)","product":"Cases, Knowledge, Service Cloud Console, Work.com","timeIST":"2:47 PM","manager":"Shubha","quality":"PENDING","resolve":null,"channelEngage":"2m 19s","isRed":false,"nonActionable":true,"nonActionableReason":"howto","directorTagged":[],"resolvedAt":null,"resolvedText":"How-to/survey feedback case; subsequently closed","oiDuration":null,"channelCreatedAt":"2026-08-07 14:47:38 IST"},
+        {"caseNum":"474280691","account":"McKesson Corporation","product":"Service Cloud Voice","timeIST":"3:36 PM","manager":"Shubha","quality":"PENDING","resolve":null,"channelEngage":"1m 17s","isRed":false,"nonActionable":false,"nonActionableReason":null,"directorTagged":[],"resolvedAt":null,"resolvedText":"Genesys external routing issue redirected to partner","oiDuration":null,"channelCreatedAt":"2026-08-07 15:36:29 IST"},
+        {"caseNum":"474280696","account":"Intuit Inc.","product":"Developer Support","timeIST":"3:37 PM","manager":"Shubha","quality":"PENDING","resolve":null,"channelEngage":"3m 27s","isRed":false,"nonActionable":false,"nonActionableReason":null,"directorTagged":[],"resolvedAt":null,"resolvedText":"Qualtrics endpoint failure; no active Salesforce action","oiDuration":null,"channelCreatedAt":"2026-08-07 15:37:14 IST"},
+        {"caseNum":"474281347","account":"AT&T Services, Inc.","product":"Developer Support","timeIST":"5:27 PM","manager":"Shubha","quality":"PENDING","resolve":null,"channelEngage":"37s","isRed":false,"nonActionable":true,"nonActionableReason":"already-resolved","directorTagged":[],"resolvedAt":null,"resolvedText":"Compiling all classes restored service after customer deployment","oiDuration":null,"channelCreatedAt":"2026-08-07 17:27:59 IST"},
+        {"caseNum":"474281516","account":"Google LLC","product":"Developer Support","timeIST":"5:57 PM","manager":"Shubha","quality":"PENDING","resolve":null,"channelEngage":"46s","isRed":false,"nonActionable":false,"nonActionableReason":null,"directorTagged":[],"resolvedAt":null,"resolvedText":null,"oiDuration":null,"channelCreatedAt":"2026-08-07 17:57:13 IST"}
       ]
     },
     {
