@@ -485,6 +485,17 @@ function fmtISTTimestamp(s){
     hour:'numeric',minute:'2-digit',hour12:true
   }).format(d)+' IST';
 }
+function caseChannelCreatedAt(c,day){
+  if(c.channelCreatedAt)return c.channelCreatedAt;
+  if(!day||!day.date||!c.timeIST)return null;
+  const match=c.timeIST.trim().match(/^(\d{1,2}):(\d{2})(?:\s*(AM|PM))?$/i);
+  if(!match)return null;
+  let hour=parseInt(match[1],10);
+  const minute=match[2],meridiem=(match[3]||'').toUpperCase();
+  if(meridiem==='PM'&&hour!==12)hour+=12;
+  if(meridiem==='AM'&&hour===12)hour=0;
+  return day.date+'T'+String(hour).padStart(2,'0')+':'+minute+':00+05:30';
+}
 // Returns elapsed seconds from channelCreatedAt → bridgeCreatedAt, or null
 function bridgeDeltaSecs(c){
   if(!c.bridgeCreatedAt||!c.channelCreatedAt)return null;
@@ -1510,9 +1521,10 @@ function buildDayPanel(day,container){
       }
     }
     let gusCell;
-    if(c.gusCreatedAt&&c.channelCreatedAt){
+    const channelCreatedAt=caseChannelCreatedAt(c,day);
+    if(c.gusCreatedAt&&channelCreatedAt){
       const gusDate=parseISTTimestamp(c.gusCreatedAt);
-      const channelDate=parseISTTimestamp(c.channelCreatedAt);
+      const channelDate=parseISTTimestamp(channelCreatedAt);
       const rawSecs=gusDate&&channelDate?Math.round((gusDate-channelDate)/1000):null;
       const before=rawSecs!==null&&rawSecs<0;
       const gDisplay=rawSecs!==null?fmtGusSecs(Math.abs(rawSecs)):null;
