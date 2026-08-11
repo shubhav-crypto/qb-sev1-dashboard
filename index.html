@@ -140,9 +140,7 @@
 
   <div class="refresh-bar">
     <span class="live-dot"></span>
-    <span id="lastUpdated">Loading data…</span>
     <button class="refresh-btn" onclick="loadData(true)">↻ Refresh</button>
-    <span style="margin-left:auto;font-size:11px;">Auto-refreshes every 5 min during QB hours</span>
   </div>
 
   <!-- ── Page-level tab bar ── -->
@@ -851,7 +849,7 @@ async function loadData(force){
     DB=await r.json();
     renderAll();
   }catch(e){
-    document.getElementById('lastUpdated').textContent='Error loading: '+e.message;
+    console.error('Error loading dashboard data:',e);
   }
 }
 
@@ -863,9 +861,6 @@ function renderAll(){
 
 // ── HEADER ───────────────────────────────────────────────────────────────────
 function renderHeader(){
-  const dt=new Date(DB.meta.generated);
-  const fmt=dt.toLocaleString('en-IN',{timeZone:'Asia/Kolkata',day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'})+' IST';
-  document.getElementById('lastUpdated').innerHTML=`<strong>Last updated:</strong> ${fmt}`;
   const wdCases=weekdays().reduce(function(s,d){return s+d.cases.length;},0);
   const weCases=DB.days.filter(function(d){return d.isWeekend;}).reduce(function(s,d){return s+d.cases.length;},0);
   document.getElementById('headerBadge').innerHTML=`<span class="live-dot"></span>Live · <span>${wdCases} weekday</span> · <span>${weCases} weekend</span>`;
