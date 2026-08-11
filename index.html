@@ -1458,7 +1458,7 @@ function buildDayPanel(day,container){
   html+='<th style="white-space:nowrap;cursor:help;" title="Time from Sev1 channel creation to QB Manager first text">Channel Engage</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Account has a Red Account record in OrgCS">Red Acct</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Actual time from Sev1 channel creation to bridge start. Computed from bridgeCreatedAt−channelCreatedAt (or explicit bridgeTime). Green = within 15 min, Red = over 15 min. Dash = no timestamp data.">Bridge time</th>';
-  html+='<th style="white-space:nowrap;cursor:help;" title="Date and time when the GUS investigation was created. Dash = no GUS investigation found for this case.">GUS Created</th>';
+  html+='<th style="white-space:nowrap;cursor:help;" title="Elapsed time from Sev1 channel creation to GUS investigation creation. A value marked before means the investigation predates the channel. Dash = no matching GUS investigation.">GUS Creation Time</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Case notes or callout context">Notes</th>';
   html+='<th style="white-space:nowrap;cursor:help;" title="Director and above tagged in this Sev1 channel">Director+ Tagged</th>';
   html+='</tr></thead><tbody>';
@@ -1510,10 +1510,20 @@ function buildDayPanel(day,container){
       }
     }
     let gusCell;
-    if(c.gusCreatedAt){
-      const gDisplay=fmtISTTimestamp(c.gusCreatedAt);
-      const preExisting=c.gusPreExisting?' · Pre-existing GUS':'';
-      gusCell='<td style="white-space:nowrap;font-size:12px;"><span style="background:rgba(124,77,255,.1);color:#7c4dff;border-radius:5px;padding:2px 7px;font-weight:600;" title="'+(c.gusNumber||'GUS investigation')+preExisting+'">'+gDisplay+'</span></td>';
+    if(c.gusCreatedAt&&c.channelCreatedAt){
+      const gusDate=parseISTTimestamp(c.gusCreatedAt);
+      const channelDate=parseISTTimestamp(c.channelCreatedAt);
+      const rawSecs=gusDate&&channelDate?Math.round((gusDate-channelDate)/1000):null;
+      const before=rawSecs!==null&&rawSecs<0;
+      const gDisplay=rawSecs!==null?fmtGusSecs(Math.abs(rawSecs)):null;
+      if(gDisplay!==null){
+        const label=before?gDisplay+' before':gDisplay;
+        const color=before?'#0d9488':'#7c4dff';
+        const bg=before?'rgba(20,184,166,.1)':'rgba(124,77,255,.1)';
+        gusCell='<td style="white-space:nowrap;font-size:12px;"><span style="background:'+bg+';color:'+color+';border-radius:5px;padding:2px 7px;font-weight:600;" title="'+(c.gusNumber||'GUS investigation')+' created '+label+' channel creation">'+label+'</span></td>';
+      }else{
+        gusCell='<td style="text-align:center;color:var(--text-muted);font-size:11px;" title="GUS or channel timestamp unavailable">—</td>';
+      }
     }else{
       gusCell='<td style="text-align:center;color:var(--text-muted);font-size:11px;" title="No GUS investigation created for this case">—</td>';
     }
