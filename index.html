@@ -1145,8 +1145,22 @@ function renderWeekCards(){
   const monthCanvas=document.getElementById('momEngageChart');
   if(!monthCanvas)return;
   if(momEngageChart){momEngageChart.destroy();momEngageChart=null;}
+  const monthEngageLabelsPlugin={id:'monthEngageLabels',afterDatasetsDraw:function(chart){
+    const ctx=chart.ctx;
+    const meta=chart.getDatasetMeta(0);
+    ctx.save();
+    ctx.font='600 11px -apple-system,BlinkMacSystemFont,sans-serif';
+    ctx.fillStyle=textColor;
+    ctx.textAlign='center';
+    ctx.textBaseline='bottom';
+    meta.data.forEach(function(point,i){
+      if(monthData[i]!==null)ctx.fillText(fmtSecs(monthData[i]),point.x,point.y-10);
+    });
+    ctx.restore();
+  }};
   momEngageChart=new Chart(monthCanvas,{
     type:'line',
+    plugins:[monthEngageLabelsPlugin],
     data:{
       labels:monthLabels,
       datasets:[{
@@ -1166,6 +1180,7 @@ function renderWeekCards(){
     },
     options:{
       responsive:true,
+      layout:{padding:{top:18}},
       plugins:{
         legend:{display:false},
         tooltip:{callbacks:{label:function(ctx){
