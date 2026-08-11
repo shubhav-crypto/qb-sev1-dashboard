@@ -200,6 +200,11 @@
     <canvas id="wowEngageChart" height="90"></canvas>
   </div>
 
+  <div class="wow-engage-card">
+    <div class="wow-engage-title">Month-on-Month · Avg Channel Engage Time</div>
+    <canvas id="momEngageChart" height="90"></canvas>
+  </div>
+
   <div class="section-header" style="margin-top:4px;">
     <span>Daily Summary</span>
     <div style="display:flex;align-items:center;gap:10px;margin:0 0 0 auto;font-size:13px;">
@@ -1030,6 +1035,7 @@ function renderKPIs(){
 
 // ── WOW ENGAGE CHART ─────────────────────────────────────────────────────────
 let wowEngageChart=null;
+let momEngageChart=null;
 function renderWeekCards(){
   const weeks=groupByWeek(weekdays());
   // Build label: "Wk1 Jun 1–5", "Wk2 Jun 8–12", etc.
@@ -1107,6 +1113,72 @@ function renderWeekCards(){
             font:{size:11},
             callback:function(v){return fmtSecs(v);}
           },
+          suggestedMin:0,
+          title:{display:true,text:'Avg Engage Time',color:textColor,font:{size:11}}
+        }
+      }
+    }
+  });
+
+  const byMonth={};
+  weekdays().forEach(function(d){
+    const key=d.date.slice(0,7);
+    if(!byMonth[key])byMonth[key]=[];
+    byMonth[key].push(d);
+  });
+  const months=Object.keys(byMonth).sort();
+  const monthLabels=months.map(function(ym){
+    return new Date(ym+'-01T00:00:00').toLocaleString('en-US',{month:'short',year:'numeric'});
+  });
+  const monthData=months.map(function(ym){
+    const secs=byMonth[ym].flatMap(function(d){
+      return d.cases.map(function(c){return parseSeconds(c.channelEngage);}).filter(function(v){return v!==null;});
+    });
+    return secs.length?Math.round(secs.reduce(function(a,b){return a+b;},0)/secs.length):null;
+  });
+  const monthPointColors=monthData.map(function(v){
+    if(v===null)return '#94a3b8';
+    if(v<=300)return '#22c55e';
+    if(v<=600)return '#f59e0b';
+    return '#ef4444';
+  });
+  const monthCanvas=document.getElementById('momEngageChart');
+  if(!monthCanvas)return;
+  if(momEngageChart){momEngageChart.destroy();momEngageChart=null;}
+  momEngageChart=new Chart(monthCanvas,{
+    type:'line',
+    data:{
+      labels:monthLabels,
+      datasets:[{
+        label:'Avg Channel Engage',
+        data:monthData,
+        borderColor:'#60c8ff',
+        borderWidth:2.5,
+        pointBackgroundColor:monthPointColors,
+        pointBorderColor:monthPointColors,
+        pointRadius:6,
+        pointHoverRadius:8,
+        tension:0.35,
+        fill:true,
+        backgroundColor:'rgba(96,200,255,.08)',
+        spanGaps:true
+      }]
+    },
+    options:{
+      responsive:true,
+      plugins:{
+        legend:{display:false},
+        tooltip:{callbacks:{label:function(ctx){
+          const v=ctx.parsed.y;
+          if(v===null)return 'No data';
+          return 'Avg engage: '+fmtSecs(v)+(v<=300?' ✅ STRONG':v<=600?' ⚡ MODERATE':' 🔴 SLOW');
+        }}}
+      },
+      scales:{
+        x:{grid:{color:gridColor},ticks:{color:textColor,font:{size:11}}},
+        y:{
+          grid:{color:gridColor},
+          ticks:{color:textColor,font:{size:11},callback:function(v){return fmtSecs(v);}},
           suggestedMin:0,
           title:{display:true,text:'Avg Engage Time',color:textColor,font:{size:11}}
         }
