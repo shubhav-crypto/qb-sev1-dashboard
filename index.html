@@ -1068,8 +1068,22 @@ function renderWeekCards(){
   const isDark=document.documentElement.getAttribute('data-theme')==='dark';
   const gridColor=isDark?'rgba(255,255,255,.07)':'rgba(0,0,0,.06)';
   const textColor=isDark?'#94a3b8':'#64748b';
+  const weekEngageLabelsPlugin={id:'weekEngageLabels',afterDatasetsDraw:function(chart){
+    const ctx=chart.ctx;
+    const meta=chart.getDatasetMeta(0);
+    ctx.save();
+    ctx.font='600 11px -apple-system,BlinkMacSystemFont,sans-serif';
+    ctx.fillStyle=textColor;
+    ctx.textAlign='center';
+    ctx.textBaseline='bottom';
+    meta.data.forEach(function(point,i){
+      if(data[i]!==null)ctx.fillText(fmtSecs(data[i]),point.x,point.y-10);
+    });
+    ctx.restore();
+  }};
   wowEngageChart=new Chart(canvas,{
     type:'line',
+    plugins:[weekEngageLabelsPlugin],
     data:{
       labels:labels,
       datasets:[{
@@ -1089,6 +1103,7 @@ function renderWeekCards(){
     },
     options:{
       responsive:true,
+      layout:{padding:{top:18}},
       plugins:{
         legend:{display:false},
         tooltip:{
