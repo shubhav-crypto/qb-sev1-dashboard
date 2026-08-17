@@ -14664,7 +14664,149 @@
           "bridgeNA": false
         }
       ]
+    },
+    {
+      "date": "2026-08-17",
+      "label": "Aug 17",
+      "dayOfWeek": "Mon",
+      "isWeekend": false,
+      "manager": "Sai Vikram",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "474389197",
+          "account": "Cisco Systems Inc.",
+          "product": "Developer Support",
+          "timeIST": "12:52 PM",
+          "manager": "Sai Vikram",
+          "isRed": true,
+          "ack": "1m 1s",
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474389324",
+          "account": "Kone Oyj",
+          "product": "Digital Engagement",
+          "timeIST": "1:09 PM",
+          "manager": "Sai Vikram",
+          "isRed": true,
+          "ack": "2m 40s",
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474389778",
+          "account": "Anglian Water Services Limited",
+          "product": "Developer Support",
+          "timeIST": "2:30 PM",
+          "manager": "Sai Vikram",
+          "isRed": true,
+          "ack": "55s",
+          "resolve": null,
+          "channelEngage": "38s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474390077",
+          "account": "United Utilities WATER Limited",
+          "product": "Developer Support",
+          "timeIST": "2:39 PM",
+          "manager": "Sai Vikram",
+          "isRed": true,
+          "ack": "18s",
+          "resolve": null,
+          "channelEngage": "4m 22s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474390909",
+          "account": "Intelligent Platforms, LLC",
+          "product": "Developer Support",
+          "timeIST": "4:27 PM",
+          "manager": "Sai Vikram",
+          "isRed": true,
+          "ack": "2m 14s",
+          "resolve": null,
+          "channelEngage": "29s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474391153",
+          "account": "Thomson Reuters Holdings Inc. (GSI Org)",
+          "product": "Developer Support",
+          "timeIST": "5:00 PM",
+          "manager": "Sai Vikram",
+          "isRed": false,
+          "ack": null,
+          "resolve": "3m 20s",
+          "channelEngage": "23s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474391909",
+          "account": "Solenis LLC",
+          "product": "Field Service",
+          "timeIST": "6:39 PM",
+          "manager": "Sai Vikram",
+          "isRed": true,
+          "ack": "38s",
+          "resolve": null,
+          "channelEngage": "14m 57s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474391912",
+          "account": "Federal Express Corporation",
+          "product": "Developer Support",
+          "timeIST": "6:40 PM",
+          "manager": "Sai Vikram",
+          "isRed": true,
+          "ack": "27s",
+          "resolve": null,
+          "channelEngage": "13m 40s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474392007",
+          "account": "Google LLC",
+          "product": "Email Delivery & Desktop Integrations",
+          "timeIST": "6:49 PM",
+          "manager": "Sai Vikram",
+          "isRed": true,
+          "ack": "59s",
+          "resolve": null,
+          "channelEngage": "3m 23s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474392022",
+          "account": "Vanguard Charitable",
+          "product": "Experience Builder and Content Management",
+          "timeIST": "6:50 PM",
+          "manager": "Sai Vikram",
+          "isRed": false,
+          "ack": null,
+          "resolve": "3m 27s",
+          "channelEngage": "1m 54s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        }
+      ]
     }
   ],
-  "generated": "2026-08-12T21:06:32.280145+05:30"
+  "generated": "2026-08-17"
 }
