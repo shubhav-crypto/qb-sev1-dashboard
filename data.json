@@ -15497,6 +15497,161 @@
           "bridgeNA": false
         }
       ]
+    },
+    {
+      "date": "2026-08-27",
+      "label": "Aug 27",
+      "dayOfWeek": "Thu",
+      "isWeekend": false,
+      "manager": "Rohit",
+      "canvasId": null,
+      "eodDone": false,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "474453828",
+          "account": "Prudential Hong Kong Limited",
+          "product": "Cases, Knowledge, Service Cloud Console, Work.com",
+          "timeIST": "6:56 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": "19s",
+          "channelEngage": "41s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474472916",
+          "account": "Prudential Hong Kong Limited",
+          "product": "Email Delivery & Desktop Integrations",
+          "timeIST": "5:46 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": "18s",
+          "channelEngage": "9m 7s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474472757",
+          "account": "ORANGE BELGIUM NV/SA",
+          "product": "Developer Support",
+          "timeIST": "5:22 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": "35s",
+          "resolve": "47s",
+          "channelEngage": "12s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474472599",
+          "account": "Haier US Appliance Solutions, Inc. DBA GE Appliances",
+          "product": "Developer Support",
+          "timeIST": "4:56 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": "30s",
+          "channelEngage": "26s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474452021",
+          "account": "Sodexo SA",
+          "product": "Field Service",
+          "timeIST": "4:44 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": "26s",
+          "channelEngage": "33s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474472382",
+          "account": "Refinitiv Ltd",
+          "product": "Digital Engagement",
+          "timeIST": "4:23 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": "2m 14s",
+          "channelEngage": "2m 17s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474472377",
+          "account": "The Reinalt-Thomas Corporation",
+          "product": "Developer Support",
+          "timeIST": "4:22 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": "27s",
+          "channelEngage": "2m 33s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474472115",
+          "account": "Tnt Transport Limited",
+          "product": "How-to, Setup, Configuration, Data Management",
+          "timeIST": "3:40 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": "21s",
+          "channelEngage": "37s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474471124",
+          "account": "IDFC FIRST Bank Limited (CRM)",
+          "product": "Digital Engagement",
+          "timeIST": "3:09 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": "32s",
+          "resolve": "38s",
+          "channelEngage": "37s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474471599",
+          "account": "ABB E-mobility Holding AG",
+          "product": "Experience Management and Workspaces",
+          "timeIST": "2:46 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": "25s",
+          "channelEngage": "4m 42s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474470931",
+          "account": "Autodesk, Inc.",
+          "product": "Developer Support",
+          "timeIST": "1:04 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": "13s",
+          "channelEngage": "1m 52s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        }
+      ]
     }
   ],
   "generated": "2026-08-17"
