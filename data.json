@@ -15652,6 +15652,161 @@
           "bridgeNA": false
         }
       ]
+    },
+    {
+      "date": "2026-08-28",
+      "label": "Aug 28",
+      "dayOfWeek": "Fri",
+      "isWeekend": false,
+      "manager": "Shubha",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "474480070",
+          "account": "YADA Energia Srl",
+          "product": "Digital Engagement",
+          "timeIST": "1:49 PM",
+          "manager": "Shubha",
+          "isRed": false,
+          "ack": "15s",
+          "resolve": "16s",
+          "channelEngage": "58s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474476265",
+          "account": "United Utilities WATER Limited",
+          "product": "Network Infrastructure and Core Maintenance",
+          "timeIST": "1:55 PM",
+          "manager": "Shubha",
+          "isRed": false,
+          "ack": null,
+          "resolve": "1m 19s",
+          "channelEngage": "46s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474480164",
+          "account": "Syneos Health Commercial Services, LLC",
+          "product": "Email Delivery & Desktop Integrations",
+          "timeIST": "2:05 PM",
+          "manager": "Shubha",
+          "isRed": false,
+          "ack": "23s",
+          "resolve": "25s",
+          "channelEngage": "19s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474480166",
+          "account": "Vanquis Bank Limited",
+          "product": "Developer Support",
+          "timeIST": "2:06 PM",
+          "manager": "Shubha",
+          "isRed": false,
+          "ack": "33s",
+          "resolve": "38s",
+          "channelEngage": "25s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474408556",
+          "account": "AGL Energy Limited",
+          "product": "Digital Engagement",
+          "timeIST": "2:23 PM",
+          "manager": "Shubha",
+          "isRed": false,
+          "ack": "32s",
+          "resolve": "34s",
+          "channelEngage": "19s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474464530",
+          "account": "NiSource Corporate Services Company",
+          "product": "Developer Support",
+          "timeIST": "5:39 PM",
+          "manager": "Shubha",
+          "isRed": false,
+          "ack": "20s",
+          "resolve": "23s",
+          "channelEngage": "1m 20s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474481410",
+          "account": "Dynatrace",
+          "product": "Email Delivery & Desktop Integrations",
+          "timeIST": "6:13 PM",
+          "manager": "Shubha",
+          "isRed": false,
+          "ack": "33s",
+          "resolve": "34s",
+          "channelEngage": "17s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474476820",
+          "account": "Aetna Life Insurance Company",
+          "product": "Developer Support",
+          "timeIST": "6:16 PM",
+          "manager": "Shubha",
+          "isRed": false,
+          "ack": "1m 1s",
+          "resolve": "1m 10s",
+          "channelEngage": "2m 51s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474481444",
+          "account": "Vistaprint Limited",
+          "product": "Service Cloud Voice",
+          "timeIST": "6:18 PM",
+          "manager": "Shubha",
+          "isRed": false,
+          "ack": "14s",
+          "resolve": "16s",
+          "channelEngage": "3m 34s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474481462",
+          "account": "TDC Erhverv",
+          "product": "Developer Support",
+          "timeIST": "6:21 PM",
+          "manager": "Shubha",
+          "isRed": false,
+          "ack": "16s",
+          "resolve": "17s",
+          "channelEngage": "17s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474481666",
+          "account": "ABB E-mobility Holding AG",
+          "product": "Developer Support",
+          "timeIST": "6:42 PM",
+          "manager": "Shubha",
+          "isRed": false,
+          "ack": "38s",
+          "resolve": "39s",
+          "channelEngage": "8m 43s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        }
+      ]
     }
   ],
   "generated": "2026-08-17"
