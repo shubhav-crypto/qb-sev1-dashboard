@@ -938,7 +938,11 @@ function renderKPIs(){
     });
   }).length;
   const allNewChannels=wdays.flatMap(function(d){
+    const hasChannelTimestamps=d.cases.some(function(c){return !!c.channelCreatedAt;});
     return d.cases.filter(function(c){
+      // Newer daily feeds omit channelCreatedAt while retaining engagement data.
+      // Treat those day-scoped records as new channels rather than dropping the whole day.
+      if(!hasChannelTimestamps)return true;
       if(!c.channelCreatedAt)return false;
       return c.channelCreatedAt.slice(0,10)===d.date;
     });
