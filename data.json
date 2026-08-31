@@ -15807,6 +15807,57 @@
           "bridgeNA": false
         }
       ]
+    },
+    {
+      "date": "2026-08-30",
+      "label": "Aug 30",
+      "dayOfWeek": "Sun",
+      "isWeekend": true,
+      "manager": null,
+      "canvasId": null,
+      "eodDone": false,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "474487998",
+          "account": "Sodexo SA",
+          "product": "Field Service",
+          "timeIST": "1:59 PM",
+          "manager": null,
+          "isRed": false,
+          "ack": "8s",
+          "resolve": "45m 24s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474488063",
+          "account": "Woolworths Group Limited",
+          "product": "Developer Support",
+          "timeIST": "3:22 PM",
+          "manager": null,
+          "isRed": false,
+          "ack": "11s",
+          "resolve": "13m 6s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474488209",
+          "account": "Webster Bank, N.A. (FSC Org)",
+          "product": "Service Cloud Voice",
+          "timeIST": "6:24 PM",
+          "manager": null,
+          "isRed": false,
+          "ack": "1m 42s",
+          "resolve": "20m 24s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        }
+      ]
     }
   ],
   "generated": "2026-08-17"
