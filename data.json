@@ -1,8 +1,8 @@
 {
   "meta": {
     "generated": "2026-08-08T21:52:37.383198+05:30",
-    "totalCases": 862,
-    "daysTracked": 76
+    "totalCases": 879,
+    "daysTracked": 78
   },
   "schedule": {
     "2026-06-01": {
@@ -188,6 +188,14 @@
     "2026-08-19": {
       "manager": "Jyothirmayee",
       "managerId": "WN8LA3U5D"
+    },
+    "2026-08-21": {
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5"
+    },
+    "2026-08-24": {
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5"
     }
   },
   "managerIds": {
@@ -16264,6 +16272,280 @@
           "channelEngage": null,
           "bridgeWithin15m": null,
           "bridgeNA": false
+        }
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "label": "Aug 21",
+      "dayOfWeek": "Fri",
+      "isWeekend": false,
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [
+        {
+          "type": "exec",
+          "text": "Potential Exec Visibility \u2014 AGL Energy Limited (474408556) and One New Zealand Group Limited (474313812 / 474387895)"
+        }
+      ],
+      "cases": [
+        {
+          "caseNum": "474430458",
+          "account": "AbbVie",
+          "product": "Security & Activations",
+          "timeIST": "2:09 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "2m 21s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474430527",
+          "account": "Mahindra & Mahindra Ltd.",
+          "product": "CRM Analytics",
+          "timeIST": "2:16 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "2m 49s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474430941",
+          "account": "Google LLC",
+          "product": "Service Cloud Voice",
+          "timeIST": "3:14 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "24s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474431344",
+          "account": "Sunbelt Rentals Limited",
+          "product": "Service Cloud Voice",
+          "timeIST": "4:27 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "36s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474431346",
+          "account": "The Depository Trust & Clearing Corporation",
+          "product": "Email Delivery & Desktop Integrations",
+          "timeIST": "4:27 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "57s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474431797",
+          "account": "L'Oreal USA S/D, Inc.",
+          "product": "Digital Engagement",
+          "timeIST": "5:26 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "1m 21s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474432452",
+          "account": "American Eagle Outfitters, Inc (AEO)",
+          "product": "Digital Engagement",
+          "timeIST": "7:03 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "24m",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474432475",
+          "account": "ICE Mortgage Technology, Inc.",
+          "product": "Developer Support",
+          "timeIST": "7:05 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "22m 49s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474432652",
+          "account": "Thomson Reuters Holdings Inc. (GSI Org)",
+          "product": "Developer Support",
+          "timeIST": "7:28 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "32s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        }
+      ]
+    },
+    {
+      "date": "2026-08-24",
+      "label": "Aug 24",
+      "dayOfWeek": "Mon",
+      "isWeekend": false,
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [
+        {
+          "type": "exec",
+          "text": "Potential Exec Visibility \u2014 Pearson Education, Inc. One CRM and Google LLC"
+        }
+      ],
+      "cases": [
+        {
+          "caseNum": "474441335",
+          "account": "Usha International Limited",
+          "product": "Digital Engagement",
+          "timeIST": "12:51 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "45s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474441740",
+          "account": "Pearson Education, Inc. One CRM",
+          "product": "Service Cloud Voice",
+          "timeIST": "1:39 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "19s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474441859",
+          "account": "Prudential Hong Kong Limited",
+          "product": "Developer Support",
+          "timeIST": "1:53 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "15s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474441860",
+          "account": "HammondCare",
+          "product": "Service Cloud Voice",
+          "timeIST": "1:53 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "25s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474316802",
+          "account": "Minist\u00e8re de l'\u00c9ducation nationale et de la Jeunesse et des sports",
+          "product": "Security & Activations",
+          "timeIST": "2:04 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "13s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474442379",
+          "account": "Liberty Group Limited",
+          "product": "Experience Management and Workspaces",
+          "timeIST": "2:56 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "18s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474442601",
+          "account": "Bumrungrad Hospital Public Co Ltd",
+          "product": "Digital Engagement",
+          "timeIST": "3:22 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "31s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474444628",
+          "account": "Kone Oyj",
+          "product": "Field Service",
+          "timeIST": "7:21 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "43s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
         }
       ]
     },
