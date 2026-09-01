@@ -13803,7 +13803,7 @@
           "resolve": "15s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "474239184",
@@ -13949,7 +13949,7 @@
           "isRed": false,
           "ack": null,
           "resolve": "3m 13s",
-          "channelEngage": null,
+          "channelEngage": "8m 27s",
           "bridgeWithin15m": null,
           "bridgeNA": false
         },
@@ -14027,7 +14027,7 @@
           "isRed": false,
           "ack": null,
           "resolve": "3m 9s",
-          "channelEngage": null,
+          "channelEngage": "4m 30s",
           "bridgeWithin15m": null,
           "bridgeNA": false
         },
@@ -14040,7 +14040,7 @@
           "isRed": false,
           "ack": null,
           "resolve": "3m 13s",
-          "channelEngage": null,
+          "channelEngage": "6m 17s",
           "bridgeWithin15m": null,
           "bridgeNA": false
         },
@@ -14053,7 +14053,7 @@
           "isRed": true,
           "ack": "1m 35s",
           "resolve": null,
-          "channelEngage": null,
+          "channelEngage": "6m 21s",
           "bridgeWithin15m": null,
           "bridgeNA": false
         },

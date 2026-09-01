@@ -930,7 +930,7 @@ function renderKPIs(){
 
   // QB Engage Compliance — new channels only
   // Excluded from denominator: handovers and operationally non-actionable categories.
-  const EXCLUDED_CATEGORIES=['gho','lap','throttle','mci','resolved','outside-window','no-channel','howto','cic-disengaged','monitoring'];
+  const EXCLUDED_CATEGORIES=['gho','pre-existing','lap','throttle','mci','resolved','outside-window','no-channel','howto','cic-disengaged','monitoring'];
   const isGhoCase=function(c){return c.bridgeNA==='gho'||/GHO Warm Handover/i.test(c.account||'')||!(c.account||'').trim();};
   const preExistingExcluded=wdays.flatMap(function(d){
     return d.cases.filter(function(c){
@@ -959,6 +959,7 @@ function renderKPIs(){
   const monitoringExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='monitoring';}).length;
   const otherExcluded=0;// 'other' is included in denominator
   const ghoExcluded=allNewChannels.filter(isGhoCase).length;
+  const explicitPreExistingExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='pre-existing';}).length;
   const allCasesFlat=allNewChannels.filter(function(c){return !isGhoCase(c)&&!EXCLUDED_CATEGORIES.includes(c.bridgeNA);});
   const engagedCount=allCasesFlat.filter(function(c){return c.channelEngage&&c.channelEngage!=='No engagement';}).length;
   const engageTotal=allCasesFlat.length;
@@ -971,6 +972,7 @@ function renderKPIs(){
   if(engageThrottleEl){
     const excParts=[];
     if(preExistingExcluded)excParts.push(preExistingExcluded+' pre-existing');
+    if(explicitPreExistingExcluded)excParts.push(explicitPreExistingExcluded+' pre-existing (tagged)');
     if(ghoExcluded)excParts.push(ghoExcluded+' GHO');
     if(lapExcluded)excParts.push(lapExcluded+' LAP');
     if(throttleExcluded)excParts.push(throttleExcluded+' throttle');
