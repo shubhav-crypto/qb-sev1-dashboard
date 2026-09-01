@@ -14540,7 +14540,7 @@
           "manager": "Jyothirmayee",
           "quality": "PENDING",
           "resolve": null,
-          "channelEngage": null,
+          "channelEngage": "2m 19s",
           "isRed": false,
           "nonActionable": true,
           "nonActionableReason": "pre-existing",
@@ -14996,7 +14996,7 @@
           "isRed": false,
           "ack": null,
           "resolve": "20s",
-          "channelEngage": null,
+          "channelEngage": "21m 50s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
           "execTagged": []
@@ -15314,7 +15314,7 @@
           "resolve": "16s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false,
+          "bridgeNA": "slack-channel-not-created",
           "execTagged": []
         },
         {
@@ -15340,7 +15340,7 @@
           "isRed": false,
           "ack": null,
           "resolve": "16s",
-          "channelEngage": null,
+          "channelEngage": "13h 38m 31s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
           "execTagged": []
@@ -15370,7 +15370,7 @@
           "resolve": "15s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false,
+          "bridgeNA": "pre-existing",
           "execTagged": []
         },
         {
@@ -15646,7 +15646,7 @@
           "isRed": true,
           "ack": "1m 1s",
           "resolve": null,
-          "channelEngage": null,
+          "channelEngage": "1m 42s",
           "bridgeWithin15m": null,
           "bridgeNA": false
         },
@@ -15659,7 +15659,7 @@
           "isRed": true,
           "ack": "2m 40s",
           "resolve": null,
-          "channelEngage": null,
+          "channelEngage": "3m 26s",
           "bridgeWithin15m": null,
           "bridgeNA": false
         },
@@ -15852,7 +15852,7 @@
           "resolve": "36s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false,
+          "bridgeNA": "pre-existing",
           "execTagged": []
         },
         {
@@ -15968,7 +15968,7 @@
           "resolve": "25s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false,
+          "bridgeNA": "pre-existing",
           "execTagged": []
         },
         {
@@ -16460,7 +16460,7 @@
           "resolve": "19s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false,
+          "bridgeNA": "pre-existing",
           "execTagged": []
         },
         {
@@ -16502,7 +16502,7 @@
           "resolve": "13s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false,
+          "bridgeNA": "pre-existing",
           "execTagged": []
         },
         {
@@ -16516,7 +16516,7 @@
           "resolve": "18s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false,
+          "bridgeNA": "pre-existing",
           "execTagged": []
         },
         {
@@ -16977,7 +16977,7 @@
           "resolve": "1m 29s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "474461577",
@@ -16990,7 +16990,7 @@
           "resolve": "18s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         }
       ]
     },
@@ -17493,7 +17493,7 @@
           "resolve": "2m 8s",
           "channelEngage": "13m 29s",
           "bridgeWithin15m": true,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "474491521",

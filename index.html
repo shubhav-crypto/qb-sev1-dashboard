@@ -930,7 +930,7 @@ function renderKPIs(){
 
   // QB Engage Compliance — new channels only
   // Excluded from denominator: handovers and operationally non-actionable categories.
-  const EXCLUDED_CATEGORIES=['gho','pre-existing','lap','throttle','mci','resolved','outside-window','no-channel','howto','cic-disengaged','monitoring'];
+  const EXCLUDED_CATEGORIES=['gho','pre-existing','lap','throttle','mci','resolved','outside-window','no-channel','slack-channel-not-created','howto','cic-disengaged','monitoring'];
   const isGhoCase=function(c){return c.bridgeNA==='gho'||/GHO Warm Handover/i.test(c.account||'')||!(c.account||'').trim();};
   const preExistingExcluded=wdays.flatMap(function(d){
     return d.cases.filter(function(c){
@@ -954,6 +954,7 @@ function renderKPIs(){
   const resolvedExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='resolved';}).length;
   const outsideExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='outside-window';}).length;
   const nochanExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='no-channel';}).length;
+  const slackChannelNotCreatedExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='slack-channel-not-created';}).length;
   const howtoExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='howto';}).length;
   const cicDisengagedExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='cic-disengaged';}).length;
   const monitoringExcluded=allNewChannels.filter(function(c){return c.bridgeNA==='monitoring';}).length;
@@ -981,6 +982,7 @@ function renderKPIs(){
     if(outsideExcluded)excParts.push(outsideExcluded+' outside window');
     if(howtoExcluded)excParts.push(howtoExcluded+' how-to');
     if(nochanExcluded)excParts.push(nochanExcluded+' no channel');
+    if(slackChannelNotCreatedExcluded)excParts.push(slackChannelNotCreatedExcluded+' Slack channel not created');
     if(cicDisengagedExcluded)excParts.push(cicDisengagedExcluded+' CIC disengaged');
     if(monitoringExcluded)excParts.push(monitoringExcluded+' monitoring');
     if(otherExcluded)excParts.push(otherExcluded+' other');
