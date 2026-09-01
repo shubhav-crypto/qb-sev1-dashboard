@@ -15340,9 +15340,9 @@
           "isRed": false,
           "ack": null,
           "resolve": "16s",
-          "channelEngage": "13h 38m 31s",
+          "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false,
+          "bridgeNA": "pre-existing",
           "execTagged": []
         },
         {
@@ -15554,9 +15554,9 @@
           "isRed": false,
           "ack": "15s",
           "resolve": "16s",
-          "channelEngage": "53m 49s",
-          "bridgeWithin15m": false,
-          "bridgeNA": false
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "474380565",
@@ -15567,7 +15567,7 @@
           "isRed": false,
           "ack": "10s",
           "resolve": "11s",
-          "channelEngage": "39m 25s",
+          "channelEngage": "1m",
           "bridgeWithin15m": false,
           "bridgeNA": false
         },
@@ -15580,9 +15580,9 @@
           "isRed": false,
           "ack": null,
           "resolve": "1m 15s",
-          "channelEngage": "30m 16s",
-          "bridgeWithin15m": false,
-          "bridgeNA": false
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": "pre-existing"
         }
       ]
     },
