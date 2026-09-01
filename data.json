@@ -1,8 +1,8 @@
 {
   "meta": {
     "generated": "2026-08-08T21:52:37.383198+05:30",
-    "totalCases": 846,
-    "daysTracked": 74
+    "totalCases": 862,
+    "daysTracked": 76
   },
   "schedule": {
     "2026-06-01": {
@@ -180,6 +180,14 @@
     "2026-08-15": {
       "manager": null,
       "managerId": null
+    },
+    "2026-08-18": {
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5"
+    },
+    "2026-08-19": {
+      "manager": "Jyothirmayee",
+      "managerId": "WN8LA3U5D"
     }
   },
   "managerIds": {
@@ -15750,6 +15758,266 @@
           "channelEngage": "1m 54s",
           "bridgeWithin15m": true,
           "bridgeNA": false
+        }
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "label": "Aug 18",
+      "dayOfWeek": "Tue",
+      "isWeekend": false,
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [
+        {
+          "type": "exec",
+          "text": "Potential Exec Visibility \u2014 Claro S.A. case 474393450"
+        }
+      ],
+      "cases": [
+        {
+          "caseNum": "474400079",
+          "account": "Schneider Electric Industries SAS.",
+          "product": "Developer Support",
+          "timeIST": "1:27 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "20s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474400323",
+          "account": "Endesa Medios y Sistemas S.L. (Endesa Distribucion)",
+          "product": "Mobile Apps",
+          "timeIST": "1:33 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "23s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474400585",
+          "account": "Telstra Limited",
+          "product": "Developer Support",
+          "timeIST": "2:06 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "2m 41s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474400617",
+          "account": "Deutsche B\u00f6rse AG",
+          "product": "Developer Support",
+          "timeIST": "2:14 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "56s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474282770",
+          "account": "GE Precision Healthcare LLC",
+          "product": "Developer Support",
+          "timeIST": "3:02 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "36s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474382183",
+          "account": "PayPal Xoom",
+          "product": "Developer Support",
+          "timeIST": "3:26 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "26s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474238365",
+          "account": "Paymentsense Limited (t/a Dojo)",
+          "product": "Service Cloud Voice",
+          "timeIST": "4:09 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "24s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474402170",
+          "account": "RTL Nederland B.V.",
+          "product": "Digital Engagement",
+          "timeIST": "5:25 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "2m 37s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474402191",
+          "account": "Deloitte Consulting LLP",
+          "product": "Developer Support",
+          "timeIST": "5:28 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "6m",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474402740",
+          "account": "Hewlett Packard Enterprise Company",
+          "product": "Developer Support",
+          "timeIST": "6:37 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "38s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        }
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "label": "Aug 19",
+      "dayOfWeek": "Wed",
+      "isWeekend": false,
+      "manager": "Jyothirmayee",
+      "managerId": "WN8LA3U5D",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [
+        {
+          "type": "exec",
+          "text": "Potential Exec Visibility \u2014 One New Zealand Group Limited case 474313812"
+        }
+      ],
+      "cases": [
+        {
+          "caseNum": "474410382",
+          "account": "Jaquar and Company Private Limited",
+          "product": "Developer Support",
+          "timeIST": "1:19 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": "25s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474407021",
+          "account": "NextEra Energy Resources, LLC",
+          "product": "Mandatory Security Controls",
+          "timeIST": "3:01 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": "25s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474411385",
+          "account": "American Eagle Outfitters, Inc (AEO)",
+          "product": "Digital Engagement",
+          "timeIST": "3:29 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": "47s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474411504",
+          "account": "Elevance Health - Commercial 2.0",
+          "product": "Developer Support",
+          "timeIST": "3:44 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": "1m 3s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474412080",
+          "account": "AGL Energy Limited",
+          "product": "Developer Support",
+          "timeIST": "5:12 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": "19m 58s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474411511",
+          "account": "Zurich Employment Services Limited",
+          "product": "Security & Activations",
+          "timeIST": "6:51 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": "5m 40s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
         }
       ]
     },
