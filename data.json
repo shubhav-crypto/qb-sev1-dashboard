@@ -1,8 +1,8 @@
 {
   "meta": {
     "generated": "2026-08-08T21:52:37.383198+05:30",
-    "totalCases": 826,
-    "daysTracked": 71
+    "totalCases": 846,
+    "daysTracked": 74
   },
   "schedule": {
     "2026-06-01": {
@@ -168,6 +168,18 @@
     "2026-07-31": {
       "manager": "Rohit",
       "managerId": "U01G5N5SZC5"
+    },
+    "2026-08-11": {
+      "manager": "Rohit",
+      "managerId": "U01G5N5SZC5"
+    },
+    "2026-08-13": {
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5"
+    },
+    "2026-08-15": {
+      "manager": null,
+      "managerId": null
     }
   },
   "managerIds": {
@@ -14893,6 +14905,145 @@
       ]
     },
     {
+      "date": "2026-08-11",
+      "label": "Aug 11",
+      "dayOfWeek": "Tue",
+      "isWeekend": false,
+      "manager": "Rohit",
+      "managerId": "U01G5N5SZC5",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "474299163",
+          "account": "Google LLC",
+          "product": "Experience Management and Workspaces",
+          "timeIST": "1:00 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": "22s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474299610",
+          "account": "YADA Energia Srl",
+          "product": "Service Cloud Voice",
+          "timeIST": "1:45 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": "20s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474300069",
+          "account": "Minist\u00e8re de l'\u00c9ducation nationale et de la Jeunesse et des sports",
+          "product": "Security & Activations",
+          "timeIST": "2:37 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": "21s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474299069",
+          "account": "Amazon Marketplace - IN (B2B)",
+          "product": "Developer Support",
+          "timeIST": "4:04 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": "29s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474301411",
+          "account": "Stellantis Financial Services Germany",
+          "product": "Mobile Apps",
+          "timeIST": "5:46 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": "20s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474296721",
+          "account": "GLOBO COMUNICACAO E PARTICIPACOES S/A - B2B - Org 3 - ID 359813",
+          "product": "Digital Engagement",
+          "timeIST": "6:12 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": "19s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474301952",
+          "account": "Sapphire Retail Limited",
+          "product": "Security & Activations",
+          "timeIST": "6:32 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": "27s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474302083",
+          "account": "DaVita Inc.",
+          "product": "Developer Support",
+          "timeIST": "6:45 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": "21s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474302126",
+          "account": "Pentagon Federal Credit Union",
+          "product": "Mandatory Security Controls",
+          "timeIST": "6:50 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": "34s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        }
+      ]
+    },
+    {
       "date": "2026-08-12",
       "label": "Aug 12",
       "dayOfWeek": "Wed",
@@ -15126,6 +15277,145 @@
       ]
     },
     {
+      "date": "2026-08-13",
+      "label": "Aug 13",
+      "dayOfWeek": "Thu",
+      "isWeekend": false,
+      "manager": "Mirza",
+      "managerId": "U04219TJTK5",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "474368679",
+          "account": "Autodesk, Inc.",
+          "product": "Developer Support",
+          "timeIST": "1:30 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "16s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474369255",
+          "account": "American Eagle Outfitters, Inc (AEO)",
+          "product": "Digital Engagement",
+          "timeIST": "2:39 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "2m 45s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474365171",
+          "account": "Staples Canada ULC (Staples Professional)",
+          "product": "Service Cloud Voice",
+          "timeIST": "2:47 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "16s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474369517",
+          "account": "American Eagle Outfitters, Inc (AEO)",
+          "product": "Digital Engagement",
+          "timeIST": "3:13 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "14s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474315022",
+          "account": "Ocean Network Express Pte. Ltd.",
+          "product": "Developer Support",
+          "timeIST": "3:31 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "15s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474370383",
+          "account": "GE Vernova International LLC",
+          "product": "Developer Support",
+          "timeIST": "5:15 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "13s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474370602",
+          "account": "Kogan Australia Pty Ltd",
+          "product": "Security & Activations",
+          "timeIST": "5:47 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "13s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474370748",
+          "account": "VHI Member Engagement Platform",
+          "product": "Security & Activations",
+          "timeIST": "6:05 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "20s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474371268",
+          "account": "Truist Bank",
+          "product": "Mandatory Security Controls",
+          "timeIST": "7:00 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "18s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        }
+      ]
+    },
+    {
       "date": "2026-08-14",
       "label": "Aug 14",
       "dayOfWeek": "Fri",
@@ -15277,6 +15567,47 @@
           "channelEngage": "30m 16s",
           "bridgeWithin15m": false,
           "bridgeNA": false
+        }
+      ]
+    },
+    {
+      "date": "2026-08-15",
+      "label": "Aug 15",
+      "dayOfWeek": "Saturday",
+      "isWeekend": true,
+      "manager": null,
+      "managerId": null,
+      "canvasId": null,
+      "eodDone": false,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "474385120",
+          "account": "Western Union Financial Services, Inc.",
+          "product": "Security & Activations",
+          "timeIST": "1:17 PM",
+          "manager": null,
+          "isRed": false,
+          "ack": "9s",
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false,
+          "execTagged": []
+        },
+        {
+          "caseNum": "474286585",
+          "account": "Schneider Electric Industries SAS.",
+          "product": "How-to, Setup, Configuration, Data Management",
+          "timeIST": "3:48 PM",
+          "manager": null,
+          "isRed": false,
+          "ack": "1m 15s",
+          "resolve": "10m 11s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": "howto",
+          "execTagged": []
         }
       ]
     },
