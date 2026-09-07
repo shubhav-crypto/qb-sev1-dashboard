@@ -17567,11 +17567,103 @@
       "label": "Sep 7",
       "dayOfWeek": "Mon",
       "isWeekend": false,
-      "manager": null,
+      "manager": "Jyothirmayee",
       "canvasId": null,
-      "eodDone": false,
+      "eodDone": true,
       "callouts": [],
-      "cases": []
+      "cases": [
+        {
+          "caseNum": "474542968",
+          "account": "GHO Warm Handover",
+          "product": "Developer Support",
+          "timeIST": "1:02 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": "18s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474544962",
+          "account": "LEGRAND SNC (Europe)",
+          "product": "Network Infrastructure and Core Maintenance",
+          "timeIST": "2:20 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": "30s",
+          "channelEngage": "1m 28s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474545491",
+          "account": "American Express Travel Related Services Company, Inc.",
+          "product": "Developer Support",
+          "timeIST": "3:24 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": "32s",
+          "channelEngage": "30s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474528714",
+          "account": "gsk",
+          "product": "Developer Support",
+          "timeIST": "3:26 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": "30s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474545564",
+          "account": "Iron Mountain Information Management LLC",
+          "product": "Email Delivery & Desktop Integrations",
+          "timeIST": "3:34 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": "24s",
+          "channelEngage": "2h 43m",
+          "bridgeWithin15m": false,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474546495",
+          "account": "TDC Erhverv",
+          "product": "Reports and Dashboards",
+          "timeIST": "5:59 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": "21s",
+          "channelEngage": "19m 14s",
+          "bridgeWithin15m": false,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474241503",
+          "account": "St. James's Place Management Services Limited",
+          "product": "Mobile apps",
+          "timeIST": "7:16 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": "15s",
+          "channelEngage": "8m 25s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        }
+      ]
     }
   ],
   "generated": "2026-09-07"
