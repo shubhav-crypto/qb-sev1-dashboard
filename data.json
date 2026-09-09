@@ -17664,6 +17664,109 @@
           "bridgeNA": false
         }
       ]
+    },
+    {
+      "date": "2026-09-09",
+      "label": "Sep 9",
+      "dayOfWeek": "Wed",
+      "isWeekend": false,
+      "manager": "Rohit",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "474560016",
+          "account": "Kotak Mahindra Bank Ltd.(Customer Service Org)",
+          "product": "Developer Support",
+          "timeIST": "12:50 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": "40s",
+          "resolve": "2m 20s",
+          "channelEngage": "52s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474560874",
+          "account": "M Group Yorkshire Water - MWorks",
+          "product": "Developer Support",
+          "timeIST": "2:39 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": "22s",
+          "channelEngage": "22s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474561543",
+          "account": "Solenis LLC",
+          "product": "Field Service",
+          "timeIST": "4:06 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": "29s",
+          "channelEngage": "18s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474561978",
+          "account": "American Eagle Outfitters, Inc (AEO)",
+          "product": "Digital Engagement",
+          "timeIST": "5:09 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": "27s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474561982",
+          "account": "Kotak Mahindra Bank Ltd. (PL Org).",
+          "product": "Developer Support",
+          "timeIST": "5:10 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": "1m 43s",
+          "resolve": "1m 48s",
+          "channelEngage": "21s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474562026",
+          "account": "Syngenta Crop Protection AG",
+          "product": "Service Cloud Voice",
+          "timeIST": "5:26 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": "21s",
+          "channelEngage": "17s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474562535",
+          "account": "NTT DATA Americas, Inc.",
+          "product": "Developer Support",
+          "timeIST": "6:32 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": "23s",
+          "channelEngage": "3m 45s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        }
+      ]
     }
   ],
   "generated": "2026-09-07"
