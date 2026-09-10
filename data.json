@@ -17767,7 +17767,175 @@
           "bridgeNA": false
         }
       ]
+    },
+    {
+      "date": "2026-09-10",
+      "label": "Sep 10",
+      "dayOfWeek": "Thu",
+      "isWeekend": false,
+      "manager": "Mirza",
+      "canvasId": null,
+      "eodDone": false,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "474569257",
+          "account": "Autodesk, Inc.",
+          "product": "Developer Support",
+          "timeIST": "12:45 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "19s",
+          "channelEngage": "48s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474569317",
+          "account": "AGED CARE & HOUSING GROUP INC",
+          "product": "Digital Engagement",
+          "timeIST": "12:56 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "33s",
+          "channelEngage": "26s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474569062",
+          "account": "LIVPURE PRIVATE LIMITED",
+          "product": "Digital Engagement",
+          "timeIST": "2:32 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "32s",
+          "channelEngage": "2m 57s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474568287",
+          "account": "The Manufacturers Life Insurance Company",
+          "product": "Developer Support",
+          "timeIST": "3:13 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "18s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474570398",
+          "account": "WorkSafe Victoria",
+          "product": "Mandatory Security Controls",
+          "timeIST": "3:15 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "14s",
+          "channelEngage": "3m 19s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474570478",
+          "account": "The Manufacturers Life Insurance Company",
+          "product": "Developer Support",
+          "timeIST": "3:26 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "14s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474570485",
+          "account": "PepsiCo, Inc.",
+          "product": "Agentforce Contact Center",
+          "timeIST": "3:27 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "10s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474570665",
+          "account": "Otis Elevator Company",
+          "product": "Field Service",
+          "timeIST": "4:16 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "20s",
+          "channelEngage": "4m 29s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474571041",
+          "account": "WithSecure Oy (Multi-Org)",
+          "product": "Experience Builder and Content Management",
+          "timeIST": "4:51 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "14s",
+          "channelEngage": "53s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474412961",
+          "account": "Florida Power & Light Company",
+          "product": "Developer Support",
+          "timeIST": "6:31 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "31s",
+          "channelEngage": "51s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474428785",
+          "account": "Caterpillar Financial Services Corporation",
+          "product": "Service Cloud Voice",
+          "timeIST": "6:52 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "13s",
+          "channelEngage": "23s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474571966",
+          "account": "Google LLC",
+          "product": "Developer Support",
+          "timeIST": "6:55 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "13s",
+          "channelEngage": "27s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        }
+      ]
     }
   ],
-  "generated": "2026-09-07"
+  "generated": "2026-09-10"
 }
