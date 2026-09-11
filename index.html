@@ -200,6 +200,17 @@
     <canvas id="momEngageChart" height="90"></canvas>
   </div>
 
+  <div class="wow-engage-card">
+    <div class="wow-engage-title">Month-on-Month · Avg Time to GUS</div>
+    <div class="chart-wrap"><canvas id="momGusChart" role="img" aria-label="Line chart of average Time to GUS by Sev1 channel creation month"></canvas></div>
+    <div style="overflow-x:auto;margin-top:14px;">
+      <table class="case-table">
+        <thead><tr><th>Channel Creation Month</th><th style="text-align:center;">Avg Time to GUS</th><th style="text-align:center;">Cases</th></tr></thead>
+        <tbody id="momGusBody"></tbody>
+      </table>
+    </div>
+  </div>
+
   <div class="section-header" style="margin-top:4px;">
     <span>Daily Summary</span>
     <div style="display:flex;align-items:center;gap:10px;margin:0 0 0 auto;font-size:13px;">
@@ -1026,6 +1037,7 @@ function renderKPIs(){
 // ── WOW ENGAGE CHART ─────────────────────────────────────────────────────────
 let wowEngageChart=null;
 let momEngageChart=null;
+let momGusChart=null;
 function renderWeekCards(){
   const weeks=groupByWeek(weekdays());
   // Build label: "Wk1 Jun 1–5", "Wk2 Jun 8–12", etc.
@@ -1203,6 +1215,49 @@ function renderWeekCards(){
           title:{display:true,text:'Avg Engage Time',color:textColor,font:{size:11}}
         }
       }
+    }
+  });
+
+  renderMomGusChart(textColor,gridColor);
+}
+
+function renderMomGusChart(textColor,gridColor){
+  const byMonth={};
+  DB.days.forEach(function(day){
+    day.cases.forEach(function(c){
+      const secs=gusDeltaSecs(c);
+      const created=parseISTTimestamp(c.channelCreatedAt);
+      if(secs===null||!created)return;
+      const key=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Kolkata',year:'numeric',month:'2-digit'}).format(created);
+      if(!byMonth[key])byMonth[key]=[];
+      byMonth[key].push(secs);
+    });
+  });
+  const months=Object.keys(byMonth).sort();
+  const labels=months.map(function(ym){
+    return new Date(ym+'-01T00:00:00').toLocaleString('en-US',{month:'short',year:'numeric'});
+  });
+  const averages=months.map(function(ym){
+    return Math.round(byMonth[ym].reduce(function(a,b){return a+b;},0)/byMonth[ym].length);
+  });
+  const body=document.getElementById('momGusBody');
+  body.innerHTML=months.map(function(ym,i){
+    return '<tr><td>'+labels[i]+'</td><td style="text-align:center;font-weight:600;">'+fmtGusSecs(averages[i])+'</td><td style="text-align:center;">'+byMonth[ym].length+'</td></tr>';
+  }).join('');
+  const canvas=document.getElementById('momGusChart');
+  if(momGusChart)momGusChart.destroy();
+  momGusChart=new Chart(canvas,{
+    type:'line',
+    data:{labels:labels,datasets:[{
+      label:'Avg Time to GUS',data:averages,borderColor:'#7c3aed',borderWidth:2.5,
+      pointBackgroundColor:'#7c3aed',pointBorderColor:'#7c3aed',pointRadius:6,pointHoverRadius:8,
+      tension:0.25,fill:true,backgroundColor:'rgba(124,58,237,.08)'
+    }]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){
+        return 'Avg Time to GUS: '+fmtGusSecs(ctx.parsed.y)+' ('+byMonth[months[ctx.dataIndex]].length+' cases)';
+      }}}},
+      scales:{x:{grid:{color:gridColor},ticks:{color:textColor}},y:{beginAtZero:true,grid:{color:gridColor},ticks:{color:textColor,callback:function(v){return fmtGusSecs(v);}},title:{display:true,text:'Avg Time to GUS',color:textColor}}}
     }
   });
 }
