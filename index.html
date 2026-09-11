@@ -211,6 +211,17 @@
     </div>
   </div>
 
+  <div class="wow-engage-card">
+    <div class="wow-engage-title">Month-on-Month · Director+ Tagged Sev1s</div>
+    <div class="chart-wrap"><canvas id="momExecChart" role="img" aria-label="Line chart of monthly Director+ tagged Sev1 cases and tagging rate"></canvas></div>
+    <div style="overflow-x:auto;margin-top:14px;">
+      <table class="case-table">
+        <thead><tr><th>Month</th><th style="text-align:center;">Tagged Cases</th><th style="text-align:center;">Total Sev1s</th><th style="text-align:center;">Tagging Rate</th></tr></thead>
+        <tbody id="momExecBody"></tbody>
+      </table>
+    </div>
+  </div>
+
   <div class="section-header" style="margin-top:4px;">
     <span>Daily Summary</span>
     <div style="display:flex;align-items:center;gap:10px;margin:0 0 0 auto;font-size:13px;">
@@ -1038,6 +1049,7 @@ function renderKPIs(){
 let wowEngageChart=null;
 let momEngageChart=null;
 let momGusChart=null;
+let momExecChart=null;
 function renderWeekCards(){
   const weeks=groupByWeek(weekdays());
   // Build label: "Wk1 Jun 1–5", "Wk2 Jun 8–12", etc.
@@ -1219,6 +1231,7 @@ function renderWeekCards(){
   });
 
   renderMomGusChart(textColor,gridColor);
+  renderMomExecChart(textColor,gridColor);
 }
 
 function renderMomGusChart(textColor,gridColor){
@@ -1258,6 +1271,37 @@ function renderMomGusChart(textColor,gridColor){
         return 'Avg Time to GUS: '+fmtGusSecs(ctx.parsed.y)+' ('+byMonth[months[ctx.dataIndex]].length+' cases)';
       }}}},
       scales:{x:{grid:{color:gridColor},ticks:{color:textColor}},y:{beginAtZero:true,grid:{color:gridColor},ticks:{color:textColor,callback:function(v){return fmtGusSecs(v);}},title:{display:true,text:'Avg Time to GUS',color:textColor}}}
+    }
+  });
+}
+
+function renderMomExecChart(textColor,gridColor){
+  const byMonth={};
+  DB.days.forEach(function(day){
+    const key=day.date.slice(0,7);
+    if(!byMonth[key])byMonth[key]={total:0,tagged:0};
+    day.cases.forEach(function(c){
+      byMonth[key].total+=1;
+      if(c.execTagged&&c.execTagged.length)byMonth[key].tagged+=1;
+    });
+  });
+  const months=Object.keys(byMonth).sort();
+  const labels=months.map(function(ym){return new Date(ym+'-01T00:00:00').toLocaleString('en-US',{month:'short',year:'numeric'});});
+  const tagged=months.map(function(ym){return byMonth[ym].tagged;});
+  const rates=months.map(function(ym){return byMonth[ym].total?Math.round(byMonth[ym].tagged/byMonth[ym].total*1000)/10:0;});
+  document.getElementById('momExecBody').innerHTML=months.map(function(ym,i){
+    return '<tr><td>'+labels[i]+'</td><td style="text-align:center;font-weight:600;">'+tagged[i]+'</td><td style="text-align:center;">'+byMonth[ym].total+'</td><td style="text-align:center;font-weight:600;">'+rates[i].toFixed(1)+'%</td></tr>';
+  }).join('');
+  if(momExecChart)momExecChart.destroy();
+  momExecChart=new Chart(document.getElementById('momExecChart'),{
+    type:'line',
+    data:{labels:labels,datasets:[
+      {label:'Tagged Cases',data:tagged,yAxisID:'yCount',borderColor:'#d97706',backgroundColor:'rgba(217,119,6,.08)',pointBackgroundColor:'#d97706',pointRadius:6,borderWidth:2.5,tension:0.25,fill:true},
+      {label:'Tagging Rate',data:rates,yAxisID:'yRate',borderColor:'#7c3aed',pointBackgroundColor:'#7c3aed',pointRadius:5,borderWidth:2.5,tension:0.25}
+    ]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:true,labels:{color:textColor}},tooltip:{callbacks:{label:function(ctx){return ctx.datasetIndex===0?'Tagged cases: '+ctx.parsed.y:'Tagging rate: '+ctx.parsed.y.toFixed(1)+'%';}}}},
+      scales:{x:{grid:{color:gridColor},ticks:{color:textColor}},yCount:{beginAtZero:true,position:'left',grid:{color:gridColor},ticks:{color:textColor,precision:0},title:{display:true,text:'Tagged Cases',color:textColor}},yRate:{beginAtZero:true,position:'right',grid:{drawOnChartArea:false},ticks:{color:textColor,callback:function(v){return v+'%';}},title:{display:true,text:'Tagging Rate',color:textColor}}}
     }
   });
 }
