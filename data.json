@@ -229,7 +229,10 @@
           "channelCreatedAt": "2026-06-01 13:09:16 IST",
           "oiSource": "orgcs",
           "bridgeCreatedAt": null,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22767431",
+          "gusCreatedAt": "2026-06-01T15:23:13+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473600625",
@@ -315,7 +318,10 @@
           "oiDuration": "1d 7h",
           "channelCreatedAt": "2026-06-01 17:24:35 IST",
           "bridgeCreatedAt": "2026-06-01 17:32:19 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22896287",
+          "gusCreatedAt": "2026-06-08T18:45:26+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473604164",
@@ -447,7 +453,10 @@
           "oiDuration": "23h 26m",
           "channelCreatedAt": "2026-06-02 14:44:03 IST",
           "bridgeCreatedAt": "2026-06-02 20:05:15 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22795618",
+          "gusCreatedAt": "2026-06-02T20:01:47+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473613430",
@@ -535,7 +544,10 @@
           "channelCreatedAt": "2026-06-02 17:08:11 IST",
           "oiSource": "orgcs",
           "bridgeCreatedAt": null,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22766687",
+          "gusCreatedAt": "2026-06-01T14:50:16+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "473614090",
@@ -587,7 +599,10 @@
           "oiDuration": "1d 16h",
           "channelCreatedAt": "2026-06-02 18:49:02 IST",
           "bridgeCreatedAt": null,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22798997",
+          "gusCreatedAt": "2026-06-02T23:10:15+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473615041",
@@ -920,7 +935,10 @@
           "resolvedText": "reduced the severity to Sev-2 (not production impact, sandbox testing)",
           "oiDuration": "3h 39m",
           "channelCreatedAt": "2026-06-04 16:08:00 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22952182",
+          "gusCreatedAt": "2026-06-12T00:02:00+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473637157",
@@ -971,7 +989,10 @@
           "oiDuration": "4h 34m",
           "resolvedText": "Domain is now provisioned, please let customer know.",
           "channelCreatedAt": "2026-06-04 17:22:31 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22839216",
+          "gusCreatedAt": "2026-06-04T17:06:27+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "473612144",
@@ -1004,7 +1025,10 @@
           "oiDuration": "1d 4h",
           "resolvedText": "Customer will complete metadata updates; testing one rule showed positive results",
           "channelCreatedAt": "2026-04-15 04:40:42 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22052651",
+          "gusCreatedAt": "2026-04-16T05:20:09+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473638777",
@@ -1037,7 +1061,10 @@
           "oiDuration": "10h 40m",
           "resolvedText": "The certificate issue is resolved, This is more of monitoring the case.",
           "channelCreatedAt": "2026-05-26 19:45:45 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22648687",
+          "gusCreatedAt": "2026-05-24T23:47:34+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "473639607",
@@ -1054,7 +1081,10 @@
           "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Solution Provided)",
           "channelCreatedAt": "2026-06-04 19:15:11 IST",
           "oiSource": "orgcs",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22928308",
+          "gusCreatedAt": "2026-06-10T18:46:29+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473638243",
@@ -1414,7 +1444,10 @@
           "channelCreatedAt": "2026-06-08 13:00:28 IST",
           "bridgeCreatedAt": "2026-06-08 13:21:22 IST",
           "bridgeNA": "throttle",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22894049",
+          "gusCreatedAt": "2026-06-08T14:45:52+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473653702",
@@ -1616,7 +1649,10 @@
           "oiDuration": "1d",
           "channelCreatedAt": "2026-06-08 18:10:58 IST",
           "bridgeCreatedAt": "2026-06-08 19:24:00 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22899220",
+          "gusCreatedAt": "2026-06-08T22:18:36+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473697653",
@@ -1690,7 +1726,10 @@
           "oiDuration": "1d 2h",
           "channelCreatedAt": "2026-06-08 18:39:11 IST",
           "bridgeCreatedAt": null,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23088841",
+          "gusCreatedAt": "2026-06-19T19:55:50+05:30",
+          "gusPreExisting": false
         }
       ],
       "eodDone": false,
@@ -1774,7 +1813,10 @@
           "oiDuration": "1d",
           "channelCreatedAt": "2026-06-08 18:10:58 IST",
           "bridgeCreatedAt": "2026-06-08 19:24:00 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22899220",
+          "gusCreatedAt": "2026-06-08T22:18:36+05:30",
+          "gusPreExisting": false
         }
       ],
       "eodDone": false,
@@ -1803,7 +1845,10 @@
           "oiDuration": "5h 21m",
           "channelCreatedAt": "2026-06-10 12:33:03 IST",
           "bridgeCreatedAt": "2026-06-10 12:48:19 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22927355",
+          "gusCreatedAt": "2026-06-10T16:45:05+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473733059",
@@ -2111,7 +2156,10 @@
           "channelCreatedAt": "2026-06-11 00:40:43 IST",
           "bridgeCreatedAt": "2026-06-11 00:54:12 IST",
           "bridgeNA": "outside-window",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22945456",
+          "gusCreatedAt": "2026-06-11T18:48:35+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473743597",
@@ -2406,7 +2454,10 @@
           "oiDuration": "6h 45m",
           "resolvedText": "set Manage MFA in User Interface to none, no error for last 1 hr",
           "channelCreatedAt": "2026-06-08 20:48:25 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22900144",
+          "gusCreatedAt": "2026-06-08T23:02:06+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473776135",
@@ -2424,7 +2475,10 @@
           "channelCreatedAt": "2026-06-12 17:33:22 IST",
           "bridgeCreatedAt": "2026-06-13 09:39:54 IST",
           "bridgeNA": "outside-window",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22971843",
+          "gusCreatedAt": "2026-06-13T02:45:28+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473776048",
@@ -2458,7 +2512,10 @@
           "resolvedText": "devops issue is not considered a blocker. (customer on manual deploy path)",
           "channelCreatedAt": "2026-06-12 18:42:51 IST",
           "bridgeCreatedAt": "2026-06-12 19:18:58 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22967107",
+          "gusCreatedAt": "2026-06-12T21:15:56+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473775839",
@@ -2494,7 +2551,10 @@
           "channelCreatedAt": "2026-06-12 19:24:00 IST",
           "bridgeCreatedAt": null,
           "bridgeNA": "other",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22966723",
+          "gusCreatedAt": "2026-06-12T20:48:11+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473777807",
@@ -2733,7 +2793,10 @@
               "title": "Customer Success Manager, Director",
               "slackId": "U01FTPBRTAB"
             }
-          ]
+          ],
+          "gusNumber": "W-22980598",
+          "gusCreatedAt": "2026-06-14T05:18:18+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473728576",
@@ -2750,7 +2813,10 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-06-13",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22979671",
+          "gusCreatedAt": "2026-06-14T01:10:56+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473758348",
@@ -2818,7 +2884,10 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": "2026-06-13",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22978810",
+          "gusCreatedAt": "2026-06-13T21:19:08+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473634175",
@@ -3111,7 +3180,10 @@
           "channelCreatedAt": "2026-06-15 16:13:34 IST",
           "oiSource": "orgcs",
           "bridgeCreatedAt": "2026-06-15 16:33:48 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23022264",
+          "gusCreatedAt": "2026-06-16T17:51:00+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473815509",
@@ -3208,7 +3280,10 @@
           "oiDuration": "1h 23m",
           "channelCreatedAt": "2026-06-15 17:57:32 IST",
           "bridgeCreatedAt": "2026-06-15 18:14:19 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22998953",
+          "gusCreatedAt": "2026-06-15T20:37:50+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473817788",
@@ -3257,7 +3332,10 @@
           "oiDuration": "8h 15m",
           "channelCreatedAt": "2026-06-15 19:04:24 IST",
           "bridgeCreatedAt": "2026-06-15 19:16:22 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22998837",
+          "gusCreatedAt": "2026-06-15T20:31:47+05:30",
+          "gusPreExisting": false
         }
       ],
       "eodDone": true,
@@ -3360,7 +3438,10 @@
           "oiDuration": "3h 42m",
           "channelCreatedAt": "2026-06-16 14:15:02 IST",
           "bridgeCreatedAt": null,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23049409",
+          "gusCreatedAt": "2026-06-17T21:05:48+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473702574",
@@ -3377,7 +3458,10 @@
           "resolvedText": "Chandralekha M marked this case as Sev1 Mitigated",
           "channelCreatedAt": "2026-06-16 15:05:42 IST",
           "bridgeCreatedAt": "2026-06-16 15:13:40 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23023326",
+          "gusCreatedAt": "2026-06-16T18:29:35+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473834963",
@@ -3430,7 +3514,10 @@
           "channelCreatedAt": "2026-06-16 16:26:04 IST",
           "oiSource": "orgcs",
           "bridgeCreatedAt": "2026-06-16 16:42:38 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23089437",
+          "gusCreatedAt": "2026-06-19T20:51:46+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473836077",
@@ -3739,7 +3826,10 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-17 17:29:10 IST",
           "bridgeCreatedAt": "2026-06-17 17:44:56 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23043963",
+          "gusCreatedAt": "2026-06-17T17:22:12+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "473859520",
@@ -3778,7 +3868,10 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-17 17:41:31 IST",
           "bridgeCreatedAt": null,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22591138",
+          "gusCreatedAt": "2026-05-21T04:39:07+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "473860129",
@@ -3837,7 +3930,10 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-17 18:37:03 IST",
           "bridgeCreatedAt": "2026-06-17 18:48:20 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23153956",
+          "gusCreatedAt": "2026-06-24T14:40:12+05:30",
+          "gusPreExisting": false
         }
       ],
       "canvasId": "F0BB2DYRMNF",
@@ -3872,7 +3968,10 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-18 14:36:49 IST",
           "manager": "Jyothirmayee",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23066512",
+          "gusCreatedAt": "2026-06-18T17:07:22+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473876597",
@@ -4664,7 +4763,10 @@
           "resolvedText": "Pre-existing re-alert. Original channel created 2026-05-07.",
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-05-07 00:00:00 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-22436200",
+          "gusCreatedAt": "2026-05-11T21:36:04+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473890235",
@@ -4842,7 +4944,10 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-19 14:55:53 IST",
           "bridgeCreatedAt": "2026-06-19 15:04:43 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23326271",
+          "gusCreatedAt": "2026-07-06T14:10:52+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473890389",
@@ -4923,7 +5028,10 @@
               "title": "Director, Software Engineering",
               "slackId": "U084H9JC9M5"
             }
-          ]
+          ],
+          "gusNumber": "W-23114729",
+          "gusCreatedAt": "2026-06-22T08:28:13+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473893099",
@@ -5043,7 +5151,10 @@
           "resolvedText": null,
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-20 17:05:05 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23101405",
+          "gusCreatedAt": "2026-06-20T17:40:50+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473898096",
@@ -5306,7 +5417,10 @@
               "title": "Director, Software Engineering",
               "slackId": "U03A59ELV8C"
             }
-          ]
+          ],
+          "gusNumber": "W-22901530",
+          "gusCreatedAt": "2026-06-09T00:28:55+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "473906098",
@@ -5376,7 +5490,10 @@
           "oiDuration": "27h 4m",
           "channelCreatedAt": "2026-06-23 14:29:10 IST",
           "bridgeCreatedAt": "2026-06-23 14:36:31 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23138035",
+          "gusCreatedAt": "2026-06-23T17:58:11+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473914810",
@@ -5476,7 +5593,10 @@
               "title": "Product Management Director",
               "slackId": "U01GXUDHY9E"
             }
-          ]
+          ],
+          "gusNumber": "W-23139937",
+          "gusCreatedAt": "2026-06-23T20:35:48+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473916586",
@@ -5541,7 +5661,10 @@
               "title": "Director, Software Engineering",
               "slackId": "WHHSEV89G"
             }
-          ]
+          ],
+          "gusNumber": "W-23153771",
+          "gusCreatedAt": "2026-06-24T14:19:21+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473916887",
@@ -5632,7 +5755,10 @@
               "title": "Regional Sales Director",
               "slackId": "U025M53P3PT"
             }
-          ]
+          ],
+          "gusNumber": "W-23163059",
+          "gusCreatedAt": "2026-06-25T02:08:12+05:30",
+          "gusPreExisting": false
         }
       ]
     },
@@ -5718,7 +5844,10 @@
               "title": "Director, Customer Success Management",
               "slackId": "U086ZBGCR4N"
             }
-          ]
+          ],
+          "gusNumber": "W-23155246",
+          "gusCreatedAt": "2026-06-24T17:04:23+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "473835820",
@@ -5736,7 +5865,10 @@
           "oiDuration": "Still open",
           "channelCreatedAt": "2026-06-16 16:26:04 IST",
           "bridgeCreatedAt": "2026-06-16 16:42:38 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23089437",
+          "gusCreatedAt": "2026-06-19T20:51:46+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473926795",
@@ -5967,7 +6099,10 @@
               "title": "Director, Network Engineering",
               "slackId": "U02T4K20PJM"
             }
-          ]
+          ],
+          "gusNumber": "W-23191276",
+          "gusCreatedAt": "2026-06-26T15:25:30+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473579408",
@@ -6066,7 +6201,10 @@
           "oiDuration": "2h 6m",
           "channelCreatedAt": "2026-06-26 16:19:51 IST",
           "bridgeCreatedAt": "2026-06-26 16:40:06 IST",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23192354",
+          "gusCreatedAt": "2026-06-26T17:28:20+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473892789",
@@ -6089,7 +6227,10 @@
               "title": "Customer Success Manager, Director",
               "slackId": "U01GMDF1N3T"
             }
-          ]
+          ],
+          "gusNumber": "W-23192352",
+          "gusCreatedAt": "2026-06-26T17:28:05+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473947412",
@@ -6113,7 +6254,10 @@
               "title": "Director, Program/Project Management",
               "slackId": "WJBE1828J"
             }
-          ]
+          ],
+          "gusNumber": "W-23194823",
+          "gusCreatedAt": "2026-06-26T19:00:35+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473947519",
@@ -6195,7 +6339,10 @@
               "title": "Director CIC Escalations",
               "slackId": "WHLUP6HAN"
             }
-          ]
+          ],
+          "gusNumber": "W-23192704",
+          "gusCreatedAt": "2026-06-26T18:14:45+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473947708",
@@ -6408,7 +6555,10 @@
               "title": "Director, Customer Success Management",
               "slackId": "U01GE9VEG9J"
             }
-          ]
+          ],
+          "gusNumber": "W-22601495",
+          "gusCreatedAt": "2026-05-21T22:05:46+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473947943",
@@ -6575,7 +6725,10 @@
               "title": "Director, Technical Support Engineering",
               "slackId": "U07GVN8QX4H"
             }
-          ]
+          ],
+          "gusNumber": "W-23195178",
+          "gusCreatedAt": "2026-06-26T19:37:19+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "473948142",
@@ -6944,7 +7097,10 @@
           "resolvedText": null,
           "oiDuration": null,
           "channelCreatedAt": null,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23206231",
+          "gusCreatedAt": "2026-06-27T07:18:01+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "473952772",
@@ -7188,7 +7344,10 @@
               "title": "RVP, Sales",
               "slackId": "U0348HY1Z4K"
             }
-          ]
+          ],
+          "gusNumber": "W-23025090",
+          "gusCreatedAt": "2026-06-16T19:58:06+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "473959296",
@@ -11467,8 +11626,8 @@
           "bridgeWithin15m": false,
           "bridgeNA": "sandbox",
           "execTagged": [],
-          "gusNumber": null,
-          "gusCreatedAt": null,
+          "gusNumber": "W-23569336",
+          "gusCreatedAt": "2026-07-24T14:50:45+05:30",
           "gusPreExisting": false
         },
         {
@@ -11490,8 +11649,8 @@
           "bridgeNA": false,
           "execTagged": [],
           "gusNumber": "W-23542914",
-          "gusCreatedAt": null,
-          "gusPreExisting": false
+          "gusCreatedAt": "2026-07-22T20:11:49+05:30",
+          "gusPreExisting": true
         },
         {
           "caseNum": "474153305",
@@ -11533,8 +11692,8 @@
           "bridgeWithin15m": false,
           "bridgeNA": "sandbox",
           "execTagged": [],
-          "gusNumber": null,
-          "gusCreatedAt": null,
+          "gusNumber": "W-23616422",
+          "gusCreatedAt": "2026-07-29T00:57:42+05:30",
           "gusPreExisting": false
         },
         {
@@ -11644,7 +11803,7 @@
           "directorTagged": [],
           "execTagged": [],
           "gusNumber": "W-23417716",
-          "gusCreatedAt": null,
+          "gusCreatedAt": "2026-07-13T07:24:02+05:30",
           "gusPreExisting": true
         },
         {
@@ -11851,8 +12010,8 @@
           "nonActionableReason": null,
           "directorTagged": [],
           "execTagged": [],
-          "gusNumber": null,
-          "gusCreatedAt": null,
+          "gusNumber": "W-23573499",
+          "gusCreatedAt": "2026-07-24T21:30:06+05:30",
           "gusPreExisting": false
         },
         {
@@ -11981,8 +12140,8 @@
           "nonActionableReason": "lap",
           "directorTagged": [],
           "execTagged": [],
-          "gusNumber": null,
-          "gusCreatedAt": null,
+          "gusNumber": "W-23575629",
+          "gusCreatedAt": "2026-07-25T00:41:41+05:30",
           "gusPreExisting": false
         }
       ]
@@ -12068,9 +12227,9 @@
           "bridgeWithin15m": true,
           "bridgeNA": null,
           "execTagged": [],
-          "gusNumber": "W-23577753",
-          "gusCreatedAt": null,
-          "gusPreExisting": true
+          "gusNumber": "W-23602423",
+          "gusCreatedAt": "2026-07-28T01:33:14+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "474180168",
@@ -12160,9 +12319,9 @@
           "bridgeWithin15m": false,
           "bridgeNA": null,
           "execTagged": [],
-          "gusNumber": "W-23320369",
-          "gusCreatedAt": null,
-          "gusPreExisting": true
+          "gusNumber": "W-23608171",
+          "gusCreatedAt": "2026-07-28T12:23:55+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "474181542",
@@ -12243,7 +12402,7 @@
           "bridgeNA": "outside-window",
           "execTagged": [],
           "gusNumber": "W-23566895",
-          "gusCreatedAt": null,
+          "gusCreatedAt": "2026-07-24T09:27:47+05:30",
           "gusPreExisting": true
         },
         {
@@ -12381,7 +12540,7 @@
           "bridgeNA": null,
           "execTagged": [],
           "gusNumber": "W-23564063",
-          "gusCreatedAt": null,
+          "gusCreatedAt": "2026-07-24T02:22:27+05:30",
           "gusPreExisting": true
         },
         {
@@ -12587,8 +12746,8 @@
           "bridgeWithin15m": true,
           "bridgeNA": null,
           "execTagged": [],
-          "gusNumber": null,
-          "gusCreatedAt": null,
+          "gusNumber": "W-23616906",
+          "gusCreatedAt": "2026-07-29T01:37:29+05:30",
           "gusPreExisting": false
         }
       ]
@@ -12646,7 +12805,7 @@
           "bridgeNA": "mci",
           "execTagged": [],
           "gusNumber": "W-23605719",
-          "gusCreatedAt": null,
+          "gusCreatedAt": "2026-07-28T07:29:22+05:30",
           "gusPreExisting": true
         },
         {
@@ -13045,7 +13204,7 @@
           "nonActionableReason": null,
           "directorTagged": [],
           "gusNumber": "W-23449050",
-          "gusCreatedAt": null,
+          "gusCreatedAt": "2026-07-15T03:08:21+05:30",
           "gusPreExisting": true
         },
         {
@@ -13283,7 +13442,10 @@
           "channelCreatedAt": "2026-07-30T13:36:40+05:30",
           "bridgeCreatedAt": "2026-07-30T14:15:32+05:30",
           "bridgeWithin15m": false,
-          "bridgeNA": null
+          "bridgeNA": null,
+          "gusNumber": "W-23659626",
+          "gusCreatedAt": "2026-07-31T14:29:50+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "474210973",
@@ -13451,7 +13613,10 @@
           "channelCreatedAt": "2026-07-30T15:32:40+05:30",
           "bridgeCreatedAt": "2026-07-30T18:05:09+05:30",
           "bridgeWithin15m": false,
-          "bridgeNA": null
+          "bridgeNA": null,
+          "gusNumber": "W-23667128",
+          "gusCreatedAt": "2026-08-01T03:32:23+05:30",
+          "gusPreExisting": false
         },
         {
           "caseNum": "474211853",
@@ -13681,7 +13846,10 @@
           "resolve": "19s",
           "channelEngage": "29s",
           "bridgeWithin15m": true,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-23707489",
+          "gusCreatedAt": "2026-08-04T18:25:28+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474159185",
@@ -13733,7 +13901,10 @@
           "resolve": "20s",
           "channelEngage": "27m 54s",
           "bridgeWithin15m": false,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-23705931",
+          "gusCreatedAt": "2026-08-04T15:41:03+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474224853",
@@ -13912,7 +14083,10 @@
           "resolve": null,
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-23592405",
+          "gusCreatedAt": "2026-07-27T13:52:44+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474226369",
@@ -13925,7 +14099,10 @@
           "resolve": null,
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-23665577",
+          "gusCreatedAt": "2026-08-01T00:46:52+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474212972",
@@ -13964,7 +14141,10 @@
           "resolve": "3m 14s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-23695990",
+          "gusCreatedAt": "2026-08-04T04:28:57+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474243982",
@@ -14704,14 +14884,14 @@
           "bridgeCreatedAt": "2026-08-07 17:32:47 IST",
           "bridgeWithin15m": true,
           "bridgeNA": false,
-          "gusCreatedAt": null,
+          "gusCreatedAt": "2026-09-04T20:53:52+05:30",
           "execTagged": [],
           "resolvedAt": "2026-08-07 18:54:26 IST",
           "resolvedText": "Issue resolved by compiling all classes; customer confirmed",
           "oiDuration": "1h 26m",
           "channelCreatedAt": "2026-08-07 17:27:59 IST",
-          "gusNumber": null,
-          "gusPreExisting": null
+          "gusNumber": "W-24100688",
+          "gusPreExisting": false
         },
         {
           "caseNum": "474281516",
@@ -14786,7 +14966,10 @@
           "resolve": null,
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-23795890",
+          "gusCreatedAt": "2026-08-10T20:02:37+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474279357",
@@ -14877,7 +15060,10 @@
           "resolve": "3m 15s",
           "channelEngage": "5m 34s",
           "bridgeWithin15m": true,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-24100688",
+          "gusCreatedAt": "2026-09-04T20:53:52+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474291730",
@@ -14890,7 +15076,10 @@
           "resolve": null,
           "channelEngage": "44s",
           "bridgeWithin15m": true,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-23794348",
+          "gusCreatedAt": "2026-08-10T18:11:19+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474292314",
@@ -15329,7 +15518,10 @@
           "channelEngage": "3m 55s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23998631",
+          "gusCreatedAt": "2026-08-26T21:15:20+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474365171",
@@ -15371,7 +15563,10 @@
           "channelEngage": null,
           "bridgeWithin15m": null,
           "bridgeNA": "pre-existing",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23829498",
+          "gusCreatedAt": "2026-08-12T18:57:02+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474370383",
@@ -15569,7 +15764,10 @@
           "resolve": "11s",
           "channelEngage": "1m",
           "bridgeWithin15m": false,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-23864306",
+          "gusCreatedAt": "2026-08-14T23:15:55+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474284926",
@@ -15623,7 +15821,10 @@
           "channelEngage": null,
           "bridgeWithin15m": null,
           "bridgeNA": "howto",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23959613",
+          "gusCreatedAt": "2026-08-23T03:43:15+05:30",
+          "gusPreExisting": null
         }
       ]
     },
@@ -15853,7 +16054,10 @@
           "channelEngage": null,
           "bridgeWithin15m": null,
           "bridgeNA": "pre-existing",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23773525",
+          "gusCreatedAt": "2026-08-08T02:41:04+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474382183",
@@ -15881,7 +16085,10 @@
           "channelEngage": null,
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23862847",
+          "gusCreatedAt": "2026-08-14T21:11:36+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474402170",
@@ -15895,7 +16102,10 @@
           "channelEngage": "3m 24s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23915368",
+          "gusCreatedAt": "2026-08-19T05:00:24+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474402191",
@@ -15969,7 +16179,10 @@
           "channelEngage": null,
           "bridgeWithin15m": null,
           "bridgeNA": "pre-existing",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23973378",
+          "gusCreatedAt": "2026-08-24T23:46:50+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474411385",
@@ -16050,7 +16263,10 @@
           "resolve": "28s",
           "channelEngage": "58s",
           "bridgeWithin15m": true,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-23941244",
+          "gusCreatedAt": "2026-08-21T01:09:03+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474422042",
@@ -16102,7 +16318,10 @@
           "resolve": "18s",
           "channelEngage": "25s",
           "bridgeWithin15m": true,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-24011090",
+          "gusCreatedAt": "2026-08-27T21:10:43+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474421267",
@@ -16128,7 +16347,10 @@
           "resolve": "17s",
           "channelEngage": "53s",
           "bridgeWithin15m": true,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-23936650",
+          "gusCreatedAt": "2026-08-20T18:01:52+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474420402",
@@ -16193,7 +16415,10 @@
           "resolve": "21s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-23947183",
+          "gusCreatedAt": "2026-08-21T12:54:40+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474413978",
@@ -16219,7 +16444,10 @@
           "resolve": "30s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-23912295",
+          "gusCreatedAt": "2026-08-18T23:59:33+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474273192",
@@ -16245,7 +16473,10 @@
           "resolve": "1m 33s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-23893837",
+          "gusCreatedAt": "2026-08-17T21:33:46+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474383355",
@@ -16258,7 +16489,10 @@
           "resolve": "1m 12s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-23917475",
+          "gusCreatedAt": "2026-08-19T09:51:11+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474252990",
@@ -16331,7 +16565,10 @@
           "channelEngage": "2m 59s",
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23966978",
+          "gusCreatedAt": "2026-08-24T13:55:03+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474431344",
@@ -16447,7 +16684,10 @@
           "channelEngage": null,
           "bridgeWithin15m": null,
           "bridgeNA": false,
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-24008972",
+          "gusCreatedAt": "2026-08-27T16:51:42+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474441740",
@@ -16461,7 +16701,10 @@
           "channelEngage": null,
           "bridgeWithin15m": null,
           "bridgeNA": "pre-existing",
-          "execTagged": []
+          "execTagged": [],
+          "gusNumber": "W-23966991",
+          "gusCreatedAt": "2026-08-24T13:57:59+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474441859",
@@ -16570,7 +16813,10 @@
           "resolve": "24s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-23980881",
+          "gusCreatedAt": "2026-08-25T14:10:53+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474452034",
@@ -16622,7 +16868,10 @@
           "resolve": "20s",
           "channelEngage": "23s",
           "bridgeWithin15m": true,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-23995271",
+          "gusCreatedAt": "2026-08-26T15:01:10+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474440680",
@@ -16860,7 +17109,10 @@
           "resolve": null,
           "channelEngage": "15s",
           "bridgeWithin15m": true,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-23998908",
+          "gusCreatedAt": "2026-08-26T21:44:48+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474463859",
@@ -16873,7 +17125,10 @@
           "resolve": "20s",
           "channelEngage": "1m 58s",
           "bridgeWithin15m": true,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-24002517",
+          "gusCreatedAt": "2026-08-27T01:18:10+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474463482",
@@ -16886,7 +17141,10 @@
           "resolve": "20s",
           "channelEngage": "1m 19s",
           "bridgeWithin15m": true,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-24139674",
+          "gusCreatedAt": "2026-09-09T19:40:34+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474463368",
@@ -17170,7 +17428,10 @@
           "resolve": "16s",
           "channelEngage": "58s",
           "bridgeWithin15m": true,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-24031827",
+          "gusCreatedAt": "2026-08-30T09:06:03+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474476265",
@@ -17222,7 +17483,10 @@
           "resolve": "34s",
           "channelEngage": "19s",
           "bridgeWithin15m": true,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-23945311",
+          "gusCreatedAt": "2026-08-21T09:27:01+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474464530",
@@ -17274,7 +17538,10 @@
           "resolve": "16s",
           "channelEngage": "3m 34s",
           "bridgeWithin15m": true,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-24071665",
+          "gusCreatedAt": "2026-09-02T15:46:33+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474481462",
@@ -17480,7 +17747,10 @@
           "resolve": "33s",
           "channelEngage": "1m 55s",
           "bridgeWithin15m": true,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-23543242",
+          "gusCreatedAt": "2026-07-22T20:44:58+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474451570",
@@ -17493,7 +17763,10 @@
           "resolve": "2m 8s",
           "channelEngage": "13m 29s",
           "bridgeWithin15m": true,
-          "bridgeNA": "pre-existing"
+          "bridgeNA": "pre-existing",
+          "gusNumber": "W-23980881",
+          "gusCreatedAt": "2026-08-25T14:10:53+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474491521",
@@ -17558,7 +17831,10 @@
           "resolve": "25s",
           "channelEngage": "19s",
           "bridgeWithin15m": true,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-24011090",
+          "gusCreatedAt": "2026-08-27T21:10:43+05:30",
+          "gusPreExisting": null
         }
       ]
     },
@@ -17635,7 +17911,10 @@
           "resolve": "24s",
           "channelEngage": "2h 43m",
           "bridgeWithin15m": false,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-24122550",
+          "gusCreatedAt": "2026-09-08T14:52:33+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474546495",
@@ -17661,7 +17940,10 @@
           "resolve": "15s",
           "channelEngage": "8m 25s",
           "bridgeWithin15m": true,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-23969938",
+          "gusCreatedAt": "2026-08-24T20:04:00+05:30",
+          "gusPreExisting": null
         }
       ]
     },
@@ -17751,7 +18033,10 @@
           "resolve": "21s",
           "channelEngage": "17s",
           "bridgeWithin15m": true,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-24139923",
+          "gusCreatedAt": "2026-09-09T20:02:11+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474562535",
@@ -17919,7 +18204,10 @@
           "resolve": "13s",
           "channelEngage": "23s",
           "bridgeWithin15m": true,
-          "bridgeNA": false
+          "bridgeNA": false,
+          "gusNumber": "W-24155187",
+          "gusCreatedAt": "2026-09-10T23:54:02+05:30",
+          "gusPreExisting": null
         },
         {
           "caseNum": "474571966",

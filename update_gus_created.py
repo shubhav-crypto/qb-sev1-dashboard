@@ -25,11 +25,15 @@ def case_number_from_subject(subject, case_numbers):
     return matches.pop() if len(matches) == 1 else None
 
 
-def query_gus_records():
+def query_gus_records(gus_numbers):
+    number_filter = ""
+    if gus_numbers:
+        quoted_numbers = ", ".join(f"'{number}'" for number in sorted(gus_numbers))
+        number_filter = f" OR Name IN ({quoted_numbers})"
     query = (
         "SELECT Name, Subject__c, CreatedDate FROM ADM_Work__c "
-        "WHERE CreatedDate >= 2026-04-01T00:00:00Z "
-        "AND Subject__c LIKE '%47%'"
+        "WHERE (CreatedDate >= 2026-04-01T00:00:00Z "
+        f"AND Subject__c LIKE '%47%'){number_filter}"
     )
     result = subprocess.run(
         [
@@ -54,8 +58,16 @@ def main():
     case_numbers = {
         case["caseNum"] for day in data["days"] for case in day["cases"]
     }
+    gus_numbers = {
+        case["gusNumber"]
+        for day in data["days"]
+        for case in day["cases"]
+        if case.get("gusNumber") and not case.get("gusCreatedAt")
+    }
     matches = {}
-    for record in query_gus_records():
+    records_by_number = {}
+    for record in query_gus_records(gus_numbers):
+        records_by_number[record["Name"]] = record
         case_number = case_number_from_subject(record.get("Subject__c"), case_numbers)
         if case_number:
             matches.setdefault(case_number, []).append(record)
@@ -63,34 +75,36 @@ def main():
     populated = 0
     for day in data["days"]:
         for case in day["cases"]:
+            if case.get("gusCreatedAt"):
+                continue
+
             records = sorted(
                 matches.get(case["caseNum"], []), key=lambda item: item["CreatedDate"]
             )
             existing_number = case.get("gusNumber") or case.get("gusInvestigation")
-            record = next(
+            record = records_by_number.get(existing_number) or next(
                 (item for item in records if item["Name"] == existing_number), None
             )
             if record is None and records:
                 record = records[0]
 
-            case["gusNumber"] = record["Name"] if record else None
-            case["gusCreatedAt"] = (
-                parse_timestamp(record["CreatedDate"])
-                .astimezone(IST)
-                .isoformat(timespec="seconds")
-                if record
-                else None
-            )
+            if record is None:
+                continue
+
+            case["gusNumber"] = record["Name"]
+            case["gusCreatedAt"] = parse_timestamp(record["CreatedDate"]).astimezone(
+                IST
+            ).isoformat(timespec="seconds")
             channel_created = parse_timestamp(case.get("channelCreatedAt"))
             gus_created = parse_timestamp(case["gusCreatedAt"])
             case["gusPreExisting"] = (
                 gus_created < channel_created if gus_created and channel_created else None
             )
             case.pop("gusInvestigation", None)
-            populated += record is not None
+            populated += 1
 
-    DATA_PATH.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
-    print(f"Updated {populated} of {len(case_numbers)} unique case numbers")
+    DATA_PATH.write_text(json.dumps(data, indent=2) + "\n")
+    print(f"Populated {populated} missing GUS creation times")
 
 
 if __name__ == "__main__":
