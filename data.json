@@ -232,7 +232,10 @@
           "execTagged": [],
           "gusNumber": "W-22767431",
           "gusCreatedAt": "2026-06-01T15:23:13+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-06-05T20:52:55+05:30",
+          "gusTtrSeconds": 365382
         },
         {
           "caseNum": "473600625",
@@ -321,7 +324,10 @@
           "execTagged": [],
           "gusNumber": "W-22896287",
           "gusCreatedAt": "2026-06-08T18:45:26+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-06-12T22:18:58+05:30",
+          "gusTtrSeconds": 358412
         },
         {
           "caseNum": "473604164",
@@ -456,7 +462,10 @@
           "execTagged": [],
           "gusNumber": "W-22795618",
           "gusCreatedAt": "2026-06-02T20:01:47+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - No Fix - Will Not Fix",
+          "gusResolvedAt": "2026-06-05T02:34:03+05:30",
+          "gusTtrSeconds": 196336
         },
         {
           "caseNum": "473613430",
@@ -547,7 +556,10 @@
           "execTagged": [],
           "gusNumber": "W-22766687",
           "gusCreatedAt": "2026-06-01T14:50:16+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - Resolved With Internal Tools",
+          "gusResolvedAt": "2026-06-05T20:59:29+05:30",
+          "gusTtrSeconds": 367753
         },
         {
           "caseNum": "473614090",
@@ -602,7 +614,10 @@
           "execTagged": [],
           "gusNumber": "W-22798997",
           "gusCreatedAt": "2026-06-02T23:10:15+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-06-10T12:47:39+05:30",
+          "gusTtrSeconds": 653844
         },
         {
           "caseNum": "473615041",
@@ -938,7 +953,10 @@
           "execTagged": [],
           "gusNumber": "W-22952182",
           "gusCreatedAt": "2026-06-12T00:02:00+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-06-30T21:22:26+05:30",
+          "gusTtrSeconds": 1632026
         },
         {
           "caseNum": "473637157",
@@ -992,7 +1010,10 @@
           "execTagged": [],
           "gusNumber": "W-22839216",
           "gusCreatedAt": "2026-06-04T17:06:27+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - Resolved With Internal Tools",
+          "gusResolvedAt": "2026-06-05T11:39:14+05:30",
+          "gusTtrSeconds": 66767
         },
         {
           "caseNum": "473612144",
@@ -1028,7 +1049,10 @@
           "execTagged": [],
           "gusNumber": "W-22052651",
           "gusCreatedAt": "2026-04-16T05:20:09+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Resolved Without Code Change",
+          "gusResolvedAt": "2026-04-17T04:24:15+05:30",
+          "gusTtrSeconds": 83046
         },
         {
           "caseNum": "473638777",
@@ -1064,7 +1088,10 @@
           "execTagged": [],
           "gusNumber": "W-22648687",
           "gusCreatedAt": "2026-05-24T23:47:34+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - Resolved Without Code Change",
+          "gusResolvedAt": "2026-06-01T11:19:59+05:30",
+          "gusTtrSeconds": 646345
         },
         {
           "caseNum": "473639607",
@@ -1084,7 +1111,10 @@
           "execTagged": [],
           "gusNumber": "W-22928308",
           "gusCreatedAt": "2026-06-10T18:46:29+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-06-15T11:51:43+05:30",
+          "gusTtrSeconds": 407114
         },
         {
           "caseNum": "473638243",
@@ -1447,7 +1477,10 @@
           "execTagged": [],
           "gusNumber": "W-22894049",
           "gusCreatedAt": "2026-06-08T14:45:52+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Known Bug Exists",
+          "gusResolvedAt": "2026-06-12T15:56:02+05:30",
+          "gusTtrSeconds": 349810
         },
         {
           "caseNum": "473653702",
@@ -1652,7 +1685,10 @@
           "execTagged": [],
           "gusNumber": "W-22899220",
           "gusCreatedAt": "2026-06-08T22:18:36+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-06-11T11:34:28+05:30",
+          "gusTtrSeconds": 220552
         },
         {
           "caseNum": "473697653",
@@ -1729,7 +1765,10 @@
           "execTagged": [],
           "gusNumber": "W-23088841",
           "gusCreatedAt": "2026-06-19T19:55:50+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Resolved Without Code Change",
+          "gusResolvedAt": "2026-06-24T15:10:34+05:30",
+          "gusTtrSeconds": 414884
         }
       ],
       "eodDone": false,
@@ -1816,7 +1855,10 @@
           "execTagged": [],
           "gusNumber": "W-22899220",
           "gusCreatedAt": "2026-06-08T22:18:36+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-06-11T11:34:28+05:30",
+          "gusTtrSeconds": 220552
         }
       ],
       "eodDone": false,
@@ -1848,7 +1890,10 @@
           "execTagged": [],
           "gusNumber": "W-22927355",
           "gusCreatedAt": "2026-06-10T16:45:05+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-06-12T02:36:06+05:30",
+          "gusTtrSeconds": 121861
         },
         {
           "caseNum": "473733059",
@@ -2159,7 +2204,10 @@
           "execTagged": [],
           "gusNumber": "W-22945456",
           "gusCreatedAt": "2026-06-11T18:48:35+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Resolved With Internal Tools",
+          "gusResolvedAt": "2026-06-12T21:27:44+05:30",
+          "gusTtrSeconds": 95949
         },
         {
           "caseNum": "473743597",
@@ -2457,7 +2505,10 @@
           "execTagged": [],
           "gusNumber": "W-22900144",
           "gusCreatedAt": "2026-06-08T23:02:06+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-06-09T23:01:56+05:30",
+          "gusTtrSeconds": 86390
         },
         {
           "caseNum": "473776135",
@@ -2478,7 +2529,10 @@
           "execTagged": [],
           "gusNumber": "W-22971843",
           "gusCreatedAt": "2026-06-13T02:45:28+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Resolved With Internal Tools",
+          "gusResolvedAt": "2026-06-18T07:39:50+05:30",
+          "gusTtrSeconds": 449662
         },
         {
           "caseNum": "473776048",
@@ -2515,7 +2569,10 @@
           "execTagged": [],
           "gusNumber": "W-22967107",
           "gusCreatedAt": "2026-06-12T21:15:56+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Doc/Usability",
+          "gusResolvedAt": "2026-06-16T13:12:09+05:30",
+          "gusTtrSeconds": 316573
         },
         {
           "caseNum": "473775839",
@@ -2554,7 +2611,10 @@
           "execTagged": [],
           "gusNumber": "W-22966723",
           "gusCreatedAt": "2026-06-12T20:48:11+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Resolved Without Code Change",
+          "gusResolvedAt": "2026-06-13T03:59:06+05:30",
+          "gusTtrSeconds": 25855
         },
         {
           "caseNum": "473777807",
@@ -2796,7 +2856,10 @@
           ],
           "gusNumber": "W-22980598",
           "gusCreatedAt": "2026-06-14T05:18:18+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Resolved Without Code Change",
+          "gusResolvedAt": "2026-06-15T03:45:04+05:30",
+          "gusTtrSeconds": 80806
         },
         {
           "caseNum": "473728576",
@@ -2816,7 +2879,10 @@
           "execTagged": [],
           "gusNumber": "W-22979671",
           "gusCreatedAt": "2026-06-14T01:10:56+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-06-15T02:45:16+05:30",
+          "gusTtrSeconds": 92060
         },
         {
           "caseNum": "473758348",
@@ -2887,7 +2953,10 @@
           "execTagged": [],
           "gusNumber": "W-22978810",
           "gusCreatedAt": "2026-06-13T21:19:08+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-06-14T00:45:30+05:30",
+          "gusTtrSeconds": 12382
         },
         {
           "caseNum": "473634175",
@@ -3183,7 +3252,10 @@
           "execTagged": [],
           "gusNumber": "W-23022264",
           "gusCreatedAt": "2026-06-16T17:51:00+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Defunct",
+          "gusResolvedAt": "2026-06-19T13:36:48+05:30",
+          "gusTtrSeconds": 243948
         },
         {
           "caseNum": "473815509",
@@ -3283,7 +3355,10 @@
           "execTagged": [],
           "gusNumber": "W-22998953",
           "gusCreatedAt": "2026-06-15T20:37:50+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-07-21T02:03:34+05:30",
+          "gusTtrSeconds": 3043544
         },
         {
           "caseNum": "473817788",
@@ -3335,7 +3410,10 @@
           "execTagged": [],
           "gusNumber": "W-22998837",
           "gusCreatedAt": "2026-06-15T20:31:47+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Resolved With Internal Tools",
+          "gusResolvedAt": "2026-06-18T01:13:05+05:30",
+          "gusTtrSeconds": 189678
         }
       ],
       "eodDone": true,
@@ -3441,7 +3519,10 @@
           "execTagged": [],
           "gusNumber": "W-23049409",
           "gusCreatedAt": "2026-06-17T21:05:48+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Resolved Without Code Change",
+          "gusResolvedAt": "2026-06-22T22:09:19+05:30",
+          "gusTtrSeconds": 435811
         },
         {
           "caseNum": "473702574",
@@ -3461,7 +3542,10 @@
           "execTagged": [],
           "gusNumber": "W-23023326",
           "gusCreatedAt": "2026-06-16T18:29:35+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Transitioned to Incident",
+          "gusResolvedAt": "2026-06-16T20:51:01+05:30",
+          "gusTtrSeconds": 8486
         },
         {
           "caseNum": "473834963",
@@ -3517,7 +3601,10 @@
           "execTagged": [],
           "gusNumber": "W-23089437",
           "gusCreatedAt": "2026-06-19T20:51:46+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-06-27T03:07:42+05:30",
+          "gusTtrSeconds": 627356
         },
         {
           "caseNum": "473836077",
@@ -3829,7 +3916,10 @@
           "execTagged": [],
           "gusNumber": "W-23043963",
           "gusCreatedAt": "2026-06-17T17:22:12+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - Defunct",
+          "gusResolvedAt": "2026-06-17T19:23:37+05:30",
+          "gusTtrSeconds": 7285
         },
         {
           "caseNum": "473859520",
@@ -3871,7 +3961,10 @@
           "execTagged": [],
           "gusNumber": "W-22591138",
           "gusCreatedAt": "2026-05-21T04:39:07+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - Resolved by 3rd Party",
+          "gusResolvedAt": "2026-06-25T10:32:01+05:30",
+          "gusTtrSeconds": 3045174
         },
         {
           "caseNum": "473860129",
@@ -3933,7 +4026,10 @@
           "execTagged": [],
           "gusNumber": "W-23153956",
           "gusCreatedAt": "2026-06-24T14:40:12+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Resolved Without Code Change",
+          "gusResolvedAt": "2026-06-29T16:29:53+05:30",
+          "gusTtrSeconds": 438581
         }
       ],
       "canvasId": "F0BB2DYRMNF",
@@ -3971,7 +4067,10 @@
           "execTagged": [],
           "gusNumber": "W-23066512",
           "gusCreatedAt": "2026-06-18T17:07:22+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Resolved Without Code Change",
+          "gusResolvedAt": "2026-06-18T20:27:39+05:30",
+          "gusTtrSeconds": 12017
         },
         {
           "caseNum": "473876597",
@@ -4766,7 +4865,10 @@
           "execTagged": [],
           "gusNumber": "W-22436200",
           "gusCreatedAt": "2026-05-11T21:36:04+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Resolved by 3rd Party",
+          "gusResolvedAt": "2026-05-13T21:25:58+05:30",
+          "gusTtrSeconds": 172194
         },
         {
           "caseNum": "473890235",
@@ -4947,7 +5049,10 @@
           "execTagged": [],
           "gusNumber": "W-23326271",
           "gusCreatedAt": "2026-07-06T14:10:52+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Known Bug Exists",
+          "gusResolvedAt": "2026-07-10T13:37:34+05:30",
+          "gusTtrSeconds": 343602
         },
         {
           "caseNum": "473890389",
@@ -5031,7 +5136,10 @@
           ],
           "gusNumber": "W-23114729",
           "gusCreatedAt": "2026-06-22T08:28:13+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Known Bug Exists",
+          "gusResolvedAt": "2026-07-01T19:14:18+05:30",
+          "gusTtrSeconds": 816365
         },
         {
           "caseNum": "473893099",
@@ -5154,7 +5262,10 @@
           "execTagged": [],
           "gusNumber": "W-23101405",
           "gusCreatedAt": "2026-06-20T17:40:50+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-06-22T19:37:49+05:30",
+          "gusTtrSeconds": 179819
         },
         {
           "caseNum": "473898096",
@@ -5420,7 +5531,10 @@
           ],
           "gusNumber": "W-22901530",
           "gusCreatedAt": "2026-06-09T00:28:55+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-07-01T06:31:58+05:30",
+          "gusTtrSeconds": 1922583
         },
         {
           "caseNum": "473906098",
@@ -5493,7 +5607,10 @@
           "execTagged": [],
           "gusNumber": "W-23138035",
           "gusCreatedAt": "2026-06-23T17:58:11+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-06-24T23:20:45+05:30",
+          "gusTtrSeconds": 105754
         },
         {
           "caseNum": "473914810",
@@ -5596,7 +5713,10 @@
           ],
           "gusNumber": "W-23139937",
           "gusCreatedAt": "2026-06-23T20:35:48+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-17T20:00:33+05:30",
+          "gusTtrSeconds": 2071485
         },
         {
           "caseNum": "473916586",
@@ -5664,7 +5784,10 @@
           ],
           "gusNumber": "W-23153771",
           "gusCreatedAt": "2026-06-24T14:19:21+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-01T17:11:11+05:30",
+          "gusTtrSeconds": 615110
         },
         {
           "caseNum": "473916887",
@@ -5758,7 +5881,10 @@
           ],
           "gusNumber": "W-23163059",
           "gusCreatedAt": "2026-06-25T02:08:12+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-07-24T17:30:07+05:30",
+          "gusTtrSeconds": 2560915
         }
       ]
     },
@@ -5847,7 +5973,10 @@
           ],
           "gusNumber": "W-23155246",
           "gusCreatedAt": "2026-06-24T17:04:23+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - Resolved Without Code Change",
+          "gusResolvedAt": "2026-06-26T05:23:27+05:30",
+          "gusTtrSeconds": 130744
         },
         {
           "caseNum": "473835820",
@@ -5868,7 +5997,10 @@
           "execTagged": [],
           "gusNumber": "W-23089437",
           "gusCreatedAt": "2026-06-19T20:51:46+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-06-27T03:07:42+05:30",
+          "gusTtrSeconds": 627356
         },
         {
           "caseNum": "473926795",
@@ -6102,7 +6234,10 @@
           ],
           "gusNumber": "W-23191276",
           "gusCreatedAt": "2026-06-26T15:25:30+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Resolved Without Code Change",
+          "gusResolvedAt": "2026-06-29T07:15:24+05:30",
+          "gusTtrSeconds": 229794
         },
         {
           "caseNum": "473579408",
@@ -6204,7 +6339,10 @@
           "execTagged": [],
           "gusNumber": "W-23192354",
           "gusCreatedAt": "2026-06-26T17:28:20+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Resolved With Internal Tools",
+          "gusResolvedAt": "2026-06-30T23:40:53+05:30",
+          "gusTtrSeconds": 367953
         },
         {
           "caseNum": "473892789",
@@ -6230,7 +6368,10 @@
           ],
           "gusNumber": "W-23192352",
           "gusCreatedAt": "2026-06-26T17:28:05+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-06-28T10:04:08+05:30",
+          "gusTtrSeconds": 146163
         },
         {
           "caseNum": "473947412",
@@ -6257,7 +6398,10 @@
           ],
           "gusNumber": "W-23194823",
           "gusCreatedAt": "2026-06-26T19:00:35+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-02T10:40:42+05:30",
+          "gusTtrSeconds": 488407
         },
         {
           "caseNum": "473947519",
@@ -6342,7 +6486,10 @@
           ],
           "gusNumber": "W-23192704",
           "gusCreatedAt": "2026-06-26T18:14:45+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Transitioned to Incident",
+          "gusResolvedAt": "2026-06-29T19:35:16+05:30",
+          "gusTtrSeconds": 264031
         },
         {
           "caseNum": "473947708",
@@ -6558,7 +6705,10 @@
           ],
           "gusNumber": "W-22601495",
           "gusCreatedAt": "2026-05-21T22:05:46+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Duplicate",
+          "gusResolvedAt": "2026-05-26T22:38:27+05:30",
+          "gusTtrSeconds": 433961
         },
         {
           "caseNum": "473947943",
@@ -6728,7 +6878,10 @@
           ],
           "gusNumber": "W-23195178",
           "gusCreatedAt": "2026-06-26T19:37:19+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Resolved With Internal Tools",
+          "gusResolvedAt": "2026-07-04T01:35:13+05:30",
+          "gusTtrSeconds": 626274
         },
         {
           "caseNum": "473948142",
@@ -7100,7 +7253,10 @@
           "execTagged": [],
           "gusNumber": "W-23206231",
           "gusCreatedAt": "2026-06-27T07:18:01+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Defunct",
+          "gusResolvedAt": "2026-06-27T11:59:54+05:30",
+          "gusTtrSeconds": 16913
         },
         {
           "caseNum": "473952772",
@@ -7347,7 +7503,10 @@
           ],
           "gusNumber": "W-23025090",
           "gusCreatedAt": "2026-06-16T19:58:06+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - Defunct",
+          "gusResolvedAt": "2026-06-26T17:30:02+05:30",
+          "gusTtrSeconds": 855116
         },
         {
           "caseNum": "473959296",
@@ -7771,7 +7930,10 @@
           ],
           "gusNumber": "W-23271169",
           "gusCreatedAt": "2026-07-01T20:19:05+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Resolved Without Code Change",
+          "gusResolvedAt": "2026-07-03T23:19:10+05:30",
+          "gusTtrSeconds": 183618
         },
         {
           "caseNum": "473907175",
@@ -7898,7 +8060,10 @@
           "execTagged": [],
           "gusNumber": "W-23455567",
           "gusCreatedAt": "2026-07-15T15:44:52+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-20T15:34:01+05:30",
+          "gusTtrSeconds": 431352
         },
         {
           "caseNum": "473987105",
@@ -8025,7 +8190,10 @@
           ],
           "gusNumber": "W-23271018",
           "gusCreatedAt": "2026-07-01T20:08:03+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-01T21:32:51+05:30",
+          "gusTtrSeconds": 5102
         },
         {
           "caseNum": "473988020",
@@ -8118,7 +8286,10 @@
           "execTagged": [],
           "gusNumber": "W-23281447",
           "gusCreatedAt": "2026-07-02T08:30:39+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - Resolved With Internal Tools",
+          "gusResolvedAt": "2026-07-02T21:28:57+05:30",
+          "gusTtrSeconds": 46717
         },
         {
           "caseNum": "473994485",
@@ -8452,7 +8623,10 @@
           ],
           "gusNumber": "W-23305901",
           "gusCreatedAt": "2026-07-03T19:58:40+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-06T12:54:55+05:30",
+          "gusTtrSeconds": 233784
         },
         {
           "caseNum": "474006837",
@@ -8646,7 +8820,10 @@
           "execTagged": [],
           "gusNumber": "W-23318235",
           "gusCreatedAt": "2026-07-05T15:39:40+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Known Bug Exists",
+          "gusResolvedAt": "2026-07-06T23:18:25+05:30",
+          "gusTtrSeconds": 113931
         },
         {
           "caseNum": "474010021",
@@ -8765,7 +8942,10 @@
           "execTagged": [],
           "gusNumber": "W-23330202",
           "gusCreatedAt": "2026-07-06T20:30:37+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-07T20:52:45+05:30",
+          "gusTtrSeconds": 87733
         }
       ]
     },
@@ -8884,7 +9064,10 @@
           "execTagged": [],
           "gusNumber": "W-22710516",
           "gusCreatedAt": "2026-05-28T21:27:41+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-06-12T00:26:17+05:30",
+          "gusTtrSeconds": 1220321
         },
         {
           "caseNum": "474024879",
@@ -8904,7 +9087,10 @@
           "execTagged": [],
           "gusNumber": "W-23399770",
           "gusCreatedAt": "2026-07-10T19:06:28+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-07-29T00:37:35+05:30",
+          "gusTtrSeconds": 1575077
         },
         {
           "caseNum": "474024436",
@@ -8924,7 +9110,10 @@
           "execTagged": [],
           "gusNumber": "W-23354913",
           "gusCreatedAt": "2026-07-08T02:13:04+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Resolved With Internal Tools",
+          "gusResolvedAt": "2026-07-15T19:42:31+05:30",
+          "gusTtrSeconds": 667778
         },
         {
           "caseNum": "474025809",
@@ -8964,7 +9153,10 @@
           "execTagged": [],
           "gusNumber": "W-23277727",
           "gusCreatedAt": "2026-07-02T02:52:40+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-07-07T01:45:59+05:30",
+          "gusTtrSeconds": 428011
         }
       ]
     },
@@ -9020,7 +9212,10 @@
           "execTagged": [],
           "gusNumber": "W-23362940",
           "gusCreatedAt": "2026-07-08T15:33:01+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-08T18:55:08+05:30",
+          "gusTtrSeconds": 12132
         },
         {
           "caseNum": "474035479",
@@ -9180,7 +9375,10 @@
           "execTagged": [],
           "gusNumber": "W-23378249",
           "gusCreatedAt": "2026-07-09T12:14:54+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-10T04:24:10+05:30",
+          "gusTtrSeconds": 58169
         },
         {
           "caseNum": "474043944",
@@ -9200,7 +9398,10 @@
           "execTagged": [],
           "gusNumber": "W-23378249",
           "gusCreatedAt": "2026-07-09T12:14:54+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-10T04:24:10+05:30",
+          "gusTtrSeconds": 58169
         },
         {
           "caseNum": "474035075",
@@ -9220,7 +9421,10 @@
           "execTagged": [],
           "gusNumber": "W-23378249",
           "gusCreatedAt": "2026-07-09T12:14:54+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-10T04:24:10+05:30",
+          "gusTtrSeconds": 58169
         },
         {
           "caseNum": "474044436",
@@ -9260,7 +9464,10 @@
           "execTagged": [],
           "gusNumber": "W-23378249",
           "gusCreatedAt": "2026-07-09T12:14:54+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-10T04:24:10+05:30",
+          "gusTtrSeconds": 58169
         },
         {
           "caseNum": "474044295",
@@ -9280,7 +9487,10 @@
           "execTagged": [],
           "gusNumber": "W-23378249",
           "gusCreatedAt": "2026-07-09T12:14:54+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-10T04:24:10+05:30",
+          "gusTtrSeconds": 58169
         },
         {
           "caseNum": "474044442",
@@ -9300,7 +9510,10 @@
           "execTagged": [],
           "gusNumber": "W-23378249",
           "gusCreatedAt": "2026-07-09T12:14:54+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-10T04:24:10+05:30",
+          "gusTtrSeconds": 58169
         },
         {
           "caseNum": "474044626",
@@ -9320,7 +9533,10 @@
           "execTagged": [],
           "gusNumber": "W-23378249",
           "gusCreatedAt": "2026-07-09T12:14:54+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-10T04:24:10+05:30",
+          "gusTtrSeconds": 58169
         },
         {
           "caseNum": "474044569",
@@ -9340,7 +9556,10 @@
           "execTagged": [],
           "gusNumber": "W-23378249",
           "gusCreatedAt": "2026-07-09T12:14:54+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-10T04:24:10+05:30",
+          "gusTtrSeconds": 58169
         },
         {
           "caseNum": "474044775",
@@ -9360,7 +9579,10 @@
           "execTagged": [],
           "gusNumber": "W-23378249",
           "gusCreatedAt": "2026-07-09T12:14:54+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-10T04:24:10+05:30",
+          "gusTtrSeconds": 58169
         },
         {
           "caseNum": "474044844",
@@ -9380,7 +9602,10 @@
           "execTagged": [],
           "gusNumber": "W-23378249",
           "gusCreatedAt": "2026-07-09T12:14:54+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-10T04:24:10+05:30",
+          "gusTtrSeconds": 58169
         },
         {
           "caseNum": "474044858",
@@ -9466,7 +9691,10 @@
           ],
           "gusNumber": "W-23371307",
           "gusCreatedAt": "2026-07-09T00:25:40+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Rejected",
+          "gusResolvedAt": "2026-07-09T20:07:00+05:30",
+          "gusTtrSeconds": 70886
         },
         {
           "caseNum": "473995886",
@@ -9506,7 +9734,10 @@
           "execTagged": [],
           "gusNumber": "W-23430060",
           "gusCreatedAt": "2026-07-14T01:38:19+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-07-16T16:04:02+05:30",
+          "gusTtrSeconds": 224747
         },
         {
           "caseNum": "474047304",
@@ -9626,7 +9857,10 @@
           "execTagged": [],
           "gusNumber": "W-23378249",
           "gusCreatedAt": "2026-07-09T12:14:54+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-10T04:24:10+05:30",
+          "gusTtrSeconds": 58169
         }
       ]
     },
@@ -9845,7 +10079,10 @@
           "channelCreatedAt": "2026-07-13T14:15:07+05:30",
           "gusNumber": "W-23431163",
           "gusCreatedAt": "2026-07-14T02:24:07+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Resolved Without Code Change",
+          "gusResolvedAt": "2026-07-23T17:15:56+05:30",
+          "gusTtrSeconds": 831118
         },
         {
           "caseNum": "474069331",
@@ -9917,7 +10154,10 @@
           "channelCreatedAt": "2026-07-09T12:32:21+05:30",
           "gusNumber": "W-23378249",
           "gusCreatedAt": "2026-07-09T12:14:54+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-10T04:24:10+05:30",
+          "gusTtrSeconds": 58169
         },
         {
           "caseNum": "474070484",
@@ -10021,7 +10261,10 @@
           "bridgeCreatedAt": "2026-07-13 20:01:40 IST",
           "gusNumber": "W-23425222",
           "gusCreatedAt": "2026-07-13T20:00:04+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-07-14T05:04:10+05:30",
+          "gusTtrSeconds": 32658
         }
       ]
     },
@@ -10091,7 +10334,10 @@
           "bridgeCreatedAt": "2026-07-14 14:57:39 IST",
           "gusNumber": "W-23441524",
           "gusCreatedAt": "2026-07-14T18:00:16+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-07-16T23:26:11+05:30",
+          "gusTtrSeconds": 192358
         },
         {
           "caseNum": "473996313",
@@ -10247,7 +10493,10 @@
           "bridgeCreatedAt": "2026-07-14 18:57:43 IST",
           "gusNumber": "W-23457709",
           "gusCreatedAt": "2026-07-15T19:34:18+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-18T06:27:57+05:30",
+          "gusTtrSeconds": 212029
         },
         {
           "caseNum": "474061297",
@@ -10345,7 +10594,10 @@
           "bridgeCreatedAt": "2026-07-15 13:56:22 IST",
           "gusNumber": "W-23458310",
           "gusCreatedAt": "2026-07-15T20:19:52+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-07-21T03:53:14+05:30",
+          "gusTtrSeconds": 459210
         },
         {
           "caseNum": "474090282",
@@ -10363,7 +10615,10 @@
           "bridgeCreatedAt": "2026-07-15 13:31:44 IST",
           "gusNumber": "W-23456161",
           "gusCreatedAt": "2026-07-15T17:15:32+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - No Fix - Feature Request",
+          "gusResolvedAt": "2026-07-18T03:27:37+05:30",
+          "gusTtrSeconds": 209532
         }
       ]
     },
@@ -10430,7 +10685,10 @@
           "channelCreatedAt": "2026-07-16T13:31:15+05:30",
           "gusNumber": "W-23386340",
           "gusCreatedAt": "2026-07-10T00:24:16+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-07-16T17:53:10+05:30",
+          "gusTtrSeconds": 581342
         },
         {
           "caseNum": "474101621",
@@ -10639,7 +10897,10 @@
           "channelCreatedAt": "2026-07-17T12:15:44+05:30",
           "gusNumber": "W-23476626",
           "gusCreatedAt": "2026-07-16T20:53:40+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-07-23T20:17:48+05:30",
+          "gusTtrSeconds": 602656
         },
         {
           "caseNum": "474111668",
@@ -10675,7 +10936,10 @@
           "channelCreatedAt": "2026-07-17T14:56:43+05:30",
           "gusNumber": "W-23489848",
           "gusCreatedAt": "2026-07-17T18:54:16+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Resolved Without Code Change",
+          "gusResolvedAt": "2026-07-23T19:57:22+05:30",
+          "gusTtrSeconds": 522191
         },
         {
           "caseNum": "474112387",
@@ -10746,7 +11010,10 @@
           "bridgeCreatedAt": "2026-07-17 17:11:42 IST",
           "gusNumber": "W-23490550",
           "gusCreatedAt": "2026-07-17T20:21:40+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-07-18T00:39:52+05:30",
+          "gusTtrSeconds": 15503
         },
         {
           "caseNum": "474113382",
@@ -10781,7 +11048,10 @@
           "bridgeCreatedAt": "2026-07-17 17:49:53 IST",
           "gusNumber": "W-23488847",
           "gusCreatedAt": "2026-07-17T16:51:52+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-22T12:54:04+05:30",
+          "gusTtrSeconds": 417739
         },
         {
           "caseNum": "474113913",
@@ -11072,7 +11342,11 @@
           "bridgeNA": false,
           "execTagged": [],
           "gusNumber": "W-23527918",
-          "gusCreatedAt": "2026-07-21T21:12:40+05:30"
+          "gusCreatedAt": "2026-07-21T21:12:40+05:30",
+          "gusStatus": "Closed - Defunct",
+          "gusResolvedAt": "2026-07-28T21:20:06+05:30",
+          "gusTtrSeconds": 605251,
+          "gusPreExisting": false
         },
         {
           "caseNum": "474124190",
@@ -11323,7 +11597,10 @@
           "execTagged": [],
           "gusNumber": "W-23531359",
           "gusCreatedAt": "2026-07-22T01:41:04+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-29T17:50:28+05:30",
+          "gusTtrSeconds": 662968
         },
         {
           "caseNum": "474132787",
@@ -11395,7 +11672,10 @@
           ],
           "gusNumber": "W-23538315",
           "gusCreatedAt": "2026-07-22T13:46:52+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Resolved Without Code Change",
+          "gusResolvedAt": "2026-07-23T21:26:01+05:30",
+          "gusTtrSeconds": 113954
         },
         {
           "caseNum": "474133446",
@@ -11628,7 +11908,10 @@
           "execTagged": [],
           "gusNumber": "W-23569336",
           "gusCreatedAt": "2026-07-24T14:50:45+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Defunct",
+          "gusResolvedAt": "2026-07-29T17:30:03+05:30",
+          "gusTtrSeconds": 441558
         },
         {
           "caseNum": "474100161",
@@ -11650,7 +11933,10 @@
           "execTagged": [],
           "gusNumber": "W-23542914",
           "gusCreatedAt": "2026-07-22T20:11:49+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-07-30T23:44:35+05:30",
+          "gusTtrSeconds": 703966
         },
         {
           "caseNum": "474153305",
@@ -11694,7 +11980,10 @@
           "execTagged": [],
           "gusNumber": "W-23616422",
           "gusCreatedAt": "2026-07-29T00:57:42+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-30T19:48:24+05:30",
+          "gusTtrSeconds": 154242
         },
         {
           "caseNum": "474154505",
@@ -11804,7 +12093,10 @@
           "execTagged": [],
           "gusNumber": "W-23417716",
           "gusCreatedAt": "2026-07-13T07:24:02+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - Resolved With Internal Tools",
+          "gusResolvedAt": "2026-08-03T19:37:32+05:30",
+          "gusTtrSeconds": 1858410
         },
         {
           "caseNum": "474110277",
@@ -12012,7 +12304,10 @@
           "execTagged": [],
           "gusNumber": "W-23573499",
           "gusCreatedAt": "2026-07-24T21:30:06+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Defunct",
+          "gusResolvedAt": "2026-08-03T19:21:22+05:30",
+          "gusTtrSeconds": 856276
         },
         {
           "caseNum": "474163984",
@@ -12142,7 +12437,10 @@
           "execTagged": [],
           "gusNumber": "W-23575629",
           "gusCreatedAt": "2026-07-25T00:41:41+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Resolved Without Code Change",
+          "gusResolvedAt": "2026-07-30T04:00:31+05:30",
+          "gusTtrSeconds": 443930
         }
       ]
     },
@@ -12229,7 +12527,10 @@
           "execTagged": [],
           "gusNumber": "W-23602423",
           "gusCreatedAt": "2026-07-28T01:33:14+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-07-30T03:30:15+05:30",
+          "gusTtrSeconds": 179821
         },
         {
           "caseNum": "474180168",
@@ -12321,7 +12622,10 @@
           "execTagged": [],
           "gusNumber": "W-23608171",
           "gusCreatedAt": "2026-07-28T12:23:55+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-07-30T03:32:28+05:30",
+          "gusTtrSeconds": 140913
         },
         {
           "caseNum": "474181542",
@@ -12403,7 +12707,10 @@
           "execTagged": [],
           "gusNumber": "W-23566895",
           "gusCreatedAt": "2026-07-24T09:27:47+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed",
+          "gusResolvedAt": "2026-08-04T07:46:09+05:30",
+          "gusTtrSeconds": 944302
         },
         {
           "caseNum": "474188685",
@@ -12495,7 +12802,10 @@
           "execTagged": [],
           "gusNumber": "W-23609365",
           "gusCreatedAt": "2026-07-28T15:14:07+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-28T20:11:29+05:30",
+          "gusTtrSeconds": 19012
         },
         {
           "caseNum": "474189090",
@@ -12541,7 +12851,10 @@
           "execTagged": [],
           "gusNumber": "W-23564063",
           "gusCreatedAt": "2026-07-24T02:22:27+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - Known Bug Exists",
+          "gusResolvedAt": "2026-07-29T21:04:06+05:30",
+          "gusTtrSeconds": 499299
         },
         {
           "caseNum": "474188907",
@@ -12748,7 +13061,10 @@
           "execTagged": [],
           "gusNumber": "W-23616906",
           "gusCreatedAt": "2026-07-29T01:37:29+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Defunct",
+          "gusResolvedAt": "2026-08-03T15:03:13+05:30",
+          "gusTtrSeconds": 480344
         }
       ]
     },
@@ -12806,7 +13122,10 @@
           "execTagged": [],
           "gusNumber": "W-23605719",
           "gusCreatedAt": "2026-07-28T07:29:22+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-07-31T10:32:40+05:30",
+          "gusTtrSeconds": 270198
         },
         {
           "caseNum": "474199732",
@@ -12962,7 +13281,10 @@
           "directorTagged": [],
           "gusNumber": "W-23629826",
           "gusCreatedAt": "2026-07-29T20:21:04+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Known Bug Exists",
+          "gusResolvedAt": "2026-08-24T09:02:47+05:30",
+          "gusTtrSeconds": 2205809
         },
         {
           "caseNum": "474200319",
@@ -13205,7 +13527,10 @@
           "directorTagged": [],
           "gusNumber": "W-23449050",
           "gusCreatedAt": "2026-07-15T03:08:21+05:30",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-07-17T19:20:21+05:30",
+          "gusTtrSeconds": 231120
         },
         {
           "caseNum": "474202023",
@@ -13445,7 +13770,10 @@
           "bridgeNA": null,
           "gusNumber": "W-23659626",
           "gusCreatedAt": "2026-07-31T14:29:50+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Resolved Without Code Change",
+          "gusResolvedAt": "2026-08-06T06:34:09+05:30",
+          "gusTtrSeconds": 489859
         },
         {
           "caseNum": "474210973",
@@ -13616,7 +13944,10 @@
           "bridgeNA": null,
           "gusNumber": "W-23667128",
           "gusCreatedAt": "2026-08-01T03:32:23+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Defunct",
+          "gusResolvedAt": "2026-08-07T17:30:03+05:30",
+          "gusTtrSeconds": 568660
         },
         {
           "caseNum": "474211853",
@@ -13661,7 +13992,10 @@
           "bridgeNA": "other",
           "gusNumber": "W-23648029",
           "gusCreatedAt": "2026-07-30T20:38:24+05:30",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Defunct",
+          "gusResolvedAt": "2026-08-06T07:54:36+05:30",
+          "gusTtrSeconds": 559053
         },
         {
           "caseNum": "474212259",
@@ -13849,7 +14183,10 @@
           "bridgeNA": false,
           "gusNumber": "W-23707489",
           "gusCreatedAt": "2026-08-04T18:25:28+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Defunct",
+          "gusResolvedAt": "2026-08-09T17:30:02+05:30",
+          "gusTtrSeconds": 428674
         },
         {
           "caseNum": "474159185",
@@ -13904,7 +14241,10 @@
           "bridgeNA": false,
           "gusNumber": "W-23705931",
           "gusCreatedAt": "2026-08-04T15:41:03+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Known Bug Exists",
+          "gusResolvedAt": "2026-08-06T16:39:51+05:30",
+          "gusTtrSeconds": 176328
         },
         {
           "caseNum": "474224853",
@@ -14086,7 +14426,10 @@
           "bridgeNA": false,
           "gusNumber": "W-23592405",
           "gusCreatedAt": "2026-07-27T13:52:44+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Resolved Without Code Change",
+          "gusResolvedAt": "2026-08-11T06:24:40+05:30",
+          "gusTtrSeconds": 1269116
         },
         {
           "caseNum": "474226369",
@@ -14102,7 +14445,10 @@
           "bridgeNA": false,
           "gusNumber": "W-23665577",
           "gusCreatedAt": "2026-08-01T00:46:52+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Transitioned to Incident",
+          "gusResolvedAt": "2026-08-04T01:34:28+05:30",
+          "gusTtrSeconds": 262056
         },
         {
           "caseNum": "474212972",
@@ -14144,7 +14490,10 @@
           "bridgeNA": false,
           "gusNumber": "W-23695990",
           "gusCreatedAt": "2026-08-04T04:28:57+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-08-04T14:25:54+05:30",
+          "gusTtrSeconds": 35817
         },
         {
           "caseNum": "474243982",
@@ -14361,7 +14710,10 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-08-05 14:41:33 IST",
           "gusNumber": "W-23595532",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - Resolved Without Code Change",
+          "gusResolvedAt": "2026-08-07T21:29:30+05:30",
+          "gusTtrSeconds": 962312
         },
         {
           "caseNum": "474224688",
@@ -14409,7 +14761,10 @@
           "oiDuration": "4h 43m",
           "channelCreatedAt": "2026-08-05 15:18:54 IST",
           "gusNumber": "W-23629416",
-          "gusPreExisting": true
+          "gusPreExisting": true,
+          "gusStatus": "Closed - Resolved With Internal Tools",
+          "gusResolvedAt": "2026-08-05T20:42:48+05:30",
+          "gusTtrSeconds": 608693
         },
         {
           "caseNum": "474257653",
@@ -14505,7 +14860,10 @@
           "oiDuration": null,
           "channelCreatedAt": "2026-08-05 18:24:51 IST",
           "gusNumber": "W-23742207",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-08-14T00:35:21+05:30",
+          "gusTtrSeconds": 653603
         },
         {
           "caseNum": "474149607",
@@ -14529,7 +14887,10 @@
           "oiDuration": "1d 2h 55m",
           "channelCreatedAt": "2026-08-05 18:51:23 IST",
           "gusNumber": "W-23733096",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Resolved With Internal Tools",
+          "gusResolvedAt": "2026-08-07T02:59:35+05:30",
+          "gusTtrSeconds": 97337
         },
         {
           "caseNum": "474262217",
@@ -14891,7 +15252,10 @@
           "oiDuration": "1h 26m",
           "channelCreatedAt": "2026-08-07 17:27:59 IST",
           "gusNumber": "W-24100688",
-          "gusPreExisting": false
+          "gusPreExisting": false,
+          "gusStatus": "Closed - Defunct",
+          "gusResolvedAt": "2026-09-09T02:56:00+05:30",
+          "gusTtrSeconds": 367328
         },
         {
           "caseNum": "474281516",
@@ -14969,7 +15333,10 @@
           "bridgeNA": false,
           "gusNumber": "W-23795890",
           "gusCreatedAt": "2026-08-10T20:02:37+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-08-14T14:59:48+05:30",
+          "gusTtrSeconds": 327431
         },
         {
           "caseNum": "474279357",
@@ -15063,7 +15430,10 @@
           "bridgeNA": false,
           "gusNumber": "W-24100688",
           "gusCreatedAt": "2026-09-04T20:53:52+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Defunct",
+          "gusResolvedAt": "2026-09-09T02:56:00+05:30",
+          "gusTtrSeconds": 367328
         },
         {
           "caseNum": "474291730",
@@ -15079,7 +15449,10 @@
           "bridgeNA": false,
           "gusNumber": "W-23794348",
           "gusCreatedAt": "2026-08-10T18:11:19+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Resolved With Internal Tools",
+          "gusResolvedAt": "2026-08-11T12:40:51+05:30",
+          "gusTtrSeconds": 66572
         },
         {
           "caseNum": "474292314",
@@ -15521,7 +15894,10 @@
           "execTagged": [],
           "gusNumber": "W-23998631",
           "gusCreatedAt": "2026-08-26T21:15:20+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-08-27T21:06:28+05:30",
+          "gusTtrSeconds": 85868
         },
         {
           "caseNum": "474365171",
@@ -15566,7 +15942,10 @@
           "execTagged": [],
           "gusNumber": "W-23829498",
           "gusCreatedAt": "2026-08-12T18:57:02+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Resolved Without Code Change",
+          "gusResolvedAt": "2026-08-20T14:15:42+05:30",
+          "gusTtrSeconds": 674320
         },
         {
           "caseNum": "474370383",
@@ -15767,7 +16146,10 @@
           "bridgeNA": false,
           "gusNumber": "W-23864306",
           "gusCreatedAt": "2026-08-14T23:15:55+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Resolved With Internal Tools",
+          "gusResolvedAt": "2026-08-18T03:50:49+05:30",
+          "gusTtrSeconds": 275694
         },
         {
           "caseNum": "474284926",
@@ -15824,7 +16206,10 @@
           "execTagged": [],
           "gusNumber": "W-23959613",
           "gusCreatedAt": "2026-08-23T03:43:15+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Known Bug Exists",
+          "gusResolvedAt": "2026-08-27T21:32:25+05:30",
+          "gusTtrSeconds": 409750
         }
       ]
     },
@@ -16057,7 +16442,10 @@
           "execTagged": [],
           "gusNumber": "W-23773525",
           "gusCreatedAt": "2026-08-08T02:41:04+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-08-12T23:33:40+05:30",
+          "gusTtrSeconds": 420756
         },
         {
           "caseNum": "474382183",
@@ -16088,7 +16476,10 @@
           "execTagged": [],
           "gusNumber": "W-23862847",
           "gusCreatedAt": "2026-08-14T21:11:36+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Defunct",
+          "gusResolvedAt": "2026-08-24T17:30:31+05:30",
+          "gusTtrSeconds": 850735
         },
         {
           "caseNum": "474402170",
@@ -16105,7 +16496,10 @@
           "execTagged": [],
           "gusNumber": "W-23915368",
           "gusCreatedAt": "2026-08-19T05:00:24+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-09-09T00:35:51+05:30",
+          "gusTtrSeconds": 1798527
         },
         {
           "caseNum": "474402191",
@@ -16182,7 +16576,10 @@
           "execTagged": [],
           "gusNumber": "W-23973378",
           "gusCreatedAt": "2026-08-24T23:46:50+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - No Fix - Feature Request",
+          "gusResolvedAt": "2026-09-01T09:54:40+05:30",
+          "gusTtrSeconds": 641270
         },
         {
           "caseNum": "474411385",
@@ -16266,7 +16663,10 @@
           "bridgeNA": false,
           "gusNumber": "W-23941244",
           "gusCreatedAt": "2026-08-21T01:09:03+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Resolved Without Code Change",
+          "gusResolvedAt": "2026-08-31T06:51:09+05:30",
+          "gusTtrSeconds": 884526
         },
         {
           "caseNum": "474422042",
@@ -16321,7 +16721,10 @@
           "bridgeNA": false,
           "gusNumber": "W-24011090",
           "gusCreatedAt": "2026-08-27T21:10:43+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Defunct",
+          "gusResolvedAt": "2026-09-10T17:17:36+05:30",
+          "gusTtrSeconds": 1195613
         },
         {
           "caseNum": "474421267",
@@ -16350,7 +16753,10 @@
           "bridgeNA": false,
           "gusNumber": "W-23936650",
           "gusCreatedAt": "2026-08-20T18:01:52+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Investigating",
+          "gusResolvedAt": null,
+          "gusTtrSeconds": null
         },
         {
           "caseNum": "474420402",
@@ -16418,7 +16824,10 @@
           "bridgeNA": false,
           "gusNumber": "W-23947183",
           "gusCreatedAt": "2026-08-21T12:54:40+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-09-02T09:57:36+05:30",
+          "gusTtrSeconds": 1026176
         },
         {
           "caseNum": "474413978",
@@ -16447,7 +16856,10 @@
           "bridgeNA": false,
           "gusNumber": "W-23912295",
           "gusCreatedAt": "2026-08-18T23:59:33+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Resolved Without Code Change",
+          "gusResolvedAt": "2026-08-25T07:59:57+05:30",
+          "gusTtrSeconds": 547224
         },
         {
           "caseNum": "474273192",
@@ -16483,7 +16895,10 @@
           ],
           "gusNumber": "W-23893837",
           "gusCreatedAt": "2026-08-17T21:33:46+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Resolved Without Code Change",
+          "gusResolvedAt": "2026-08-19T01:21:48+05:30",
+          "gusTtrSeconds": 100082
         },
         {
           "caseNum": "474383355",
@@ -16499,7 +16914,10 @@
           "bridgeNA": false,
           "gusNumber": "W-23917475",
           "gusCreatedAt": "2026-08-19T09:51:11+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Acknowledged",
+          "gusResolvedAt": null,
+          "gusTtrSeconds": null
         },
         {
           "caseNum": "474252990",
@@ -16575,7 +16993,10 @@
           "execTagged": [],
           "gusNumber": "W-23966978",
           "gusCreatedAt": "2026-08-24T13:55:03+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Defunct",
+          "gusResolvedAt": "2026-09-02T14:18:29+05:30",
+          "gusTtrSeconds": 779006
         },
         {
           "caseNum": "474431344",
@@ -16694,7 +17115,10 @@
           "execTagged": [],
           "gusNumber": "W-24008972",
           "gusCreatedAt": "2026-08-27T16:51:42+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Resolved by 3rd Party",
+          "gusResolvedAt": "2026-09-03T13:50:29+05:30",
+          "gusTtrSeconds": 593927
         },
         {
           "caseNum": "474441740",
@@ -16722,7 +17146,10 @@
           ],
           "gusNumber": "W-23966991",
           "gusCreatedAt": "2026-08-24T13:57:59+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Resolved With Internal Tools",
+          "gusResolvedAt": "2026-08-26T22:51:24+05:30",
+          "gusTtrSeconds": 204805
         },
         {
           "caseNum": "474441859",
@@ -16834,7 +17261,10 @@
           "bridgeNA": false,
           "gusNumber": "W-23980881",
           "gusCreatedAt": "2026-08-25T14:10:53+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Defunct",
+          "gusResolvedAt": "2026-08-27T21:41:57+05:30",
+          "gusTtrSeconds": 199864
         },
         {
           "caseNum": "474452034",
@@ -16889,7 +17319,10 @@
           "bridgeNA": false,
           "gusNumber": "W-23995271",
           "gusCreatedAt": "2026-08-26T15:01:10+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Defunct",
+          "gusResolvedAt": "2026-09-04T19:11:44+05:30",
+          "gusTtrSeconds": 792634
         },
         {
           "caseNum": "474440680",
@@ -17130,7 +17563,10 @@
           "bridgeNA": false,
           "gusNumber": "W-23998908",
           "gusCreatedAt": "2026-08-26T21:44:48+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Defunct",
+          "gusResolvedAt": "2026-09-03T17:30:02+05:30",
+          "gusTtrSeconds": 675914
         },
         {
           "caseNum": "474463859",
@@ -17146,7 +17582,10 @@
           "bridgeNA": false,
           "gusNumber": "W-24002517",
           "gusCreatedAt": "2026-08-27T01:18:10+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Resolved With Internal Tools",
+          "gusResolvedAt": "2026-08-28T23:10:50+05:30",
+          "gusTtrSeconds": 165160
         },
         {
           "caseNum": "474463482",
@@ -17162,7 +17601,10 @@
           "bridgeNA": false,
           "gusNumber": "W-24139674",
           "gusCreatedAt": "2026-09-09T19:40:34+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "More Info Reqd from Support",
+          "gusResolvedAt": null,
+          "gusTtrSeconds": null
         },
         {
           "caseNum": "474463368",
@@ -17449,7 +17891,10 @@
           "bridgeNA": false,
           "gusNumber": "W-24031827",
           "gusCreatedAt": "2026-08-30T09:06:03+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Resolved With Internal Tools",
+          "gusResolvedAt": "2026-09-01T13:39:23+05:30",
+          "gusTtrSeconds": 189200
         },
         {
           "caseNum": "474476265",
@@ -17511,7 +17956,10 @@
           ],
           "gusNumber": "W-23945311",
           "gusCreatedAt": "2026-08-21T09:27:01+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Rejected",
+          "gusResolvedAt": "2026-08-23T10:16:49+05:30",
+          "gusTtrSeconds": 175788
         },
         {
           "caseNum": "474464530",
@@ -17566,7 +18014,10 @@
           "bridgeNA": false,
           "gusNumber": "W-24071665",
           "gusCreatedAt": "2026-09-02T15:46:33+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Known Bug Exists",
+          "gusResolvedAt": "2026-09-07T20:31:05+05:30",
+          "gusTtrSeconds": 449072
         },
         {
           "caseNum": "474481462",
@@ -17775,7 +18226,10 @@
           "bridgeNA": false,
           "gusNumber": "W-23543242",
           "gusCreatedAt": "2026-07-22T20:44:58+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - No Fix - Working as Documented",
+          "gusResolvedAt": "2026-07-23T01:55:05+05:30",
+          "gusTtrSeconds": 18607
         },
         {
           "caseNum": "474451570",
@@ -17791,7 +18245,10 @@
           "bridgeNA": "pre-existing",
           "gusNumber": "W-23980881",
           "gusCreatedAt": "2026-08-25T14:10:53+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Defunct",
+          "gusResolvedAt": "2026-08-27T21:41:57+05:30",
+          "gusTtrSeconds": 199864
         },
         {
           "caseNum": "474491521",
@@ -17859,7 +18316,10 @@
           "bridgeNA": false,
           "gusNumber": "W-24011090",
           "gusCreatedAt": "2026-08-27T21:10:43+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Defunct",
+          "gusResolvedAt": "2026-09-10T17:17:36+05:30",
+          "gusTtrSeconds": 1195613
         }
       ]
     },
@@ -17939,7 +18399,10 @@
           "bridgeNA": false,
           "gusNumber": "W-24122550",
           "gusCreatedAt": "2026-09-08T14:52:33+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - Duplicate",
+          "gusResolvedAt": "2026-09-08T18:32:52+05:30",
+          "gusTtrSeconds": 13219
         },
         {
           "caseNum": "474546495",
@@ -17968,7 +18431,10 @@
           "bridgeNA": false,
           "gusNumber": "W-23969938",
           "gusCreatedAt": "2026-08-24T20:04:00+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Closed - New Bug Logged",
+          "gusResolvedAt": "2026-08-31T21:45:09+05:30",
+          "gusTtrSeconds": 610869
         }
       ]
     },
@@ -18061,7 +18527,10 @@
           "bridgeNA": false,
           "gusNumber": "W-24139923",
           "gusCreatedAt": "2026-09-09T20:02:11+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Investigating",
+          "gusResolvedAt": null,
+          "gusTtrSeconds": null
         },
         {
           "caseNum": "474562535",
@@ -18232,7 +18701,10 @@
           "bridgeNA": false,
           "gusNumber": "W-24155187",
           "gusCreatedAt": "2026-09-10T23:54:02+05:30",
-          "gusPreExisting": null
+          "gusPreExisting": null,
+          "gusStatus": "Waiting On Customer",
+          "gusResolvedAt": null,
+          "gusTtrSeconds": null
         },
         {
           "caseNum": "474571966",

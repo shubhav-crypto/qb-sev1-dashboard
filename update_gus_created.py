@@ -31,7 +31,8 @@ def query_gus_records(gus_numbers):
         quoted_numbers = ", ".join(f"'{number}'" for number in sorted(gus_numbers))
         number_filter = f" OR Name IN ({quoted_numbers})"
     query = (
-        "SELECT Name, Subject__c, CreatedDate FROM ADM_Work__c "
+        "SELECT Name, Subject__c, CreatedDate, Status__c, Resolved_On__c, Closed_On__c "
+        "FROM ADM_Work__c "
         "WHERE (CreatedDate >= 2026-04-01T00:00:00Z "
         f"AND Subject__c LIKE '%47%'){number_filter}"
     )
@@ -62,7 +63,7 @@ def main():
         case["gusNumber"]
         for day in data["days"]
         for case in day["cases"]
-        if case.get("gusNumber") and not case.get("gusCreatedAt")
+        if case.get("gusNumber")
     }
     matches = {}
     records_by_number = {}
@@ -75,9 +76,6 @@ def main():
     populated = 0
     for day in data["days"]:
         for case in day["cases"]:
-            if case.get("gusCreatedAt"):
-                continue
-
             records = sorted(
                 matches.get(case["caseNum"], []), key=lambda item: item["CreatedDate"]
             )
@@ -91,20 +89,39 @@ def main():
             if record is None:
                 continue
 
-            case["gusNumber"] = record["Name"]
-            case["gusCreatedAt"] = parse_timestamp(record["CreatedDate"]).astimezone(
-                IST
-            ).isoformat(timespec="seconds")
+            if not case.get("gusCreatedAt"):
+                case["gusNumber"] = record["Name"]
+                case["gusCreatedAt"] = parse_timestamp(record["CreatedDate"]).astimezone(
+                    IST
+                ).isoformat(timespec="seconds")
+                populated += 1
+
+            resolved_at = record.get("Resolved_On__c") or record.get("Closed_On__c")
+            case["gusStatus"] = record.get("Status__c")
+            case["gusResolvedAt"] = (
+                parse_timestamp(resolved_at).astimezone(IST).isoformat(timespec="seconds")
+                if resolved_at
+                else None
+            )
+            case["gusTtrSeconds"] = (
+                round(
+                    (
+                        parse_timestamp(resolved_at)
+                        - parse_timestamp(record["CreatedDate"])
+                    ).total_seconds()
+                )
+                if resolved_at
+                else None
+            )
             channel_created = parse_timestamp(case.get("channelCreatedAt"))
             gus_created = parse_timestamp(case["gusCreatedAt"])
             case["gusPreExisting"] = (
                 gus_created < channel_created if gus_created and channel_created else None
             )
             case.pop("gusInvestigation", None)
-            populated += 1
 
     DATA_PATH.write_text(json.dumps(data, indent=2) + "\n")
-    print(f"Populated {populated} missing GUS creation times")
+    print(f"Populated {populated} missing creation times and refreshed GUS TTR")
 
 
 if __name__ == "__main__":
