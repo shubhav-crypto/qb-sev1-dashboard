@@ -16474,6 +16474,13 @@
           "channelEngage": null,
           "bridgeWithin15m": null,
           "bridgeNA": false,
+          "execTagged": [
+            {
+              "name": "Vrushali Khatav",
+              "title": "VP, Customer Success - Service Cloud",
+              "slackId": "U02BLU26ZDZ"
+            }
+          ],
           "gusNumber": "W-23893837",
           "gusCreatedAt": "2026-08-17T21:33:46+05:30",
           "gusPreExisting": null
@@ -16701,7 +16708,18 @@
           "channelEngage": null,
           "bridgeWithin15m": null,
           "bridgeNA": "pre-existing",
-          "execTagged": [],
+          "execTagged": [
+            {
+              "name": "Vrushali Khatav",
+              "title": "VP, Customer Success - Service Cloud",
+              "slackId": "U02BLU26ZDZ"
+            },
+            {
+              "name": "Shaifali Nagpal",
+              "title": "Senior Director, Technical Support Engineering",
+              "slackId": "U068GA4TN93"
+            }
+          ],
           "gusNumber": "W-23966991",
           "gusCreatedAt": "2026-08-24T13:57:59+05:30",
           "gusPreExisting": null
@@ -17484,6 +17502,13 @@
           "channelEngage": "19s",
           "bridgeWithin15m": true,
           "bridgeNA": false,
+          "execTagged": [
+            {
+              "name": "David Sanders",
+              "title": "Senior Director, Technical Support Engineering",
+              "slackId": "U01G52KMVJR"
+            }
+          ],
           "gusNumber": "W-23945311",
           "gusCreatedAt": "2026-08-21T09:27:01+05:30",
           "gusPreExisting": null
