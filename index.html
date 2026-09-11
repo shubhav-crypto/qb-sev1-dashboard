@@ -212,6 +212,17 @@
   </div>
 
   <div class="wow-engage-card">
+    <div class="wow-engage-title">Month-on-Month · Avg GUS TTR</div>
+    <div class="chart-wrap"><canvas id="momGusTtrChart" role="img" aria-label="Line chart of average GUS resolution time grouped by GUS creation month"></canvas></div>
+    <div style="overflow-x:auto;margin-top:14px;">
+      <table class="case-table">
+        <thead><tr><th>GUS Creation Month</th><th style="text-align:center;">Avg GUS TTR</th><th style="text-align:center;">Resolved</th><th style="text-align:center;">Open</th></tr></thead>
+        <tbody id="momGusTtrBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="wow-engage-card">
     <div class="wow-engage-title">Month-on-Month · Director+ Tagged Sev1s</div>
     <div class="chart-wrap"><canvas id="momExecChart" role="img" aria-label="Line chart of monthly Director+ tagged Sev1 cases and tagging rate"></canvas></div>
     <div style="overflow-x:auto;margin-top:14px;">
@@ -1049,6 +1060,7 @@ function renderKPIs(){
 let wowEngageChart=null;
 let momEngageChart=null;
 let momGusChart=null;
+let momGusTtrChart=null;
 let momExecChart=null;
 function renderWeekCards(){
   const weeks=groupByWeek(weekdays());
@@ -1231,6 +1243,7 @@ function renderWeekCards(){
   });
 
   renderMomGusChart(textColor,gridColor);
+  renderMomGusTtrChart(textColor,gridColor);
   renderMomExecChart(textColor,gridColor);
 }
 
@@ -1272,6 +1285,33 @@ function renderMomGusChart(textColor,gridColor){
       }}}},
       scales:{x:{grid:{color:gridColor},ticks:{color:textColor}},y:{beginAtZero:true,grid:{color:gridColor},ticks:{color:textColor,callback:function(v){return fmtGusSecs(v);}},title:{display:true,text:'Avg Time to GUS',color:textColor}}}
     }
+  });
+}
+
+function renderMomGusTtrChart(textColor,gridColor){
+  const byMonth={};
+  DB.days.forEach(function(day){
+    day.cases.forEach(function(c){
+      if(!c.gusCreatedAt)return;
+      const key=c.gusCreatedAt.slice(0,7);
+      if(!byMonth[key])byMonth[key]={resolved:[],open:0};
+      if(c.gusTtrSeconds!==null&&c.gusTtrSeconds!==undefined)byMonth[key].resolved.push(c.gusTtrSeconds);
+      else byMonth[key].open+=1;
+    });
+  });
+  const months=Object.keys(byMonth).sort();
+  const labels=months.map(function(ym){return new Date(ym+'-01T00:00:00').toLocaleString('en-US',{month:'short',year:'numeric'});});
+  const averages=months.map(function(ym){
+    const values=byMonth[ym].resolved;
+    return values.length?Math.round(values.reduce(function(a,b){return a+b;},0)/values.length):null;
+  });
+  document.getElementById('momGusTtrBody').innerHTML=months.map(function(ym,i){
+    return '<tr><td>'+labels[i]+'</td><td style="text-align:center;font-weight:600;">'+fmtGusSecs(averages[i])+'</td><td style="text-align:center;">'+byMonth[ym].resolved.length+'</td><td style="text-align:center;">'+byMonth[ym].open+'</td></tr>';
+  }).join('');
+  if(momGusTtrChart)momGusTtrChart.destroy();
+  momGusTtrChart=new Chart(document.getElementById('momGusTtrChart'),{
+    type:'line',data:{labels:labels,datasets:[{label:'Avg GUS TTR',data:averages,borderColor:'#0d9488',backgroundColor:'rgba(13,148,136,.08)',pointBackgroundColor:'#0d9488',pointRadius:6,pointHoverRadius:8,borderWidth:2.5,tension:0.25,fill:true,spanGaps:true}]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){return 'Avg GUS TTR: '+fmtGusSecs(ctx.parsed.y)+' ('+byMonth[months[ctx.dataIndex]].resolved.length+' resolved)';}}}},scales:{x:{grid:{color:gridColor},ticks:{color:textColor}},y:{beginAtZero:true,grid:{color:gridColor},ticks:{color:textColor,callback:function(v){return fmtGusSecs(v);}},title:{display:true,text:'Avg GUS TTR',color:textColor}}}}
   });
 }
 
