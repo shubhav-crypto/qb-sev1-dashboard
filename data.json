@@ -18051,7 +18051,29 @@
           "bridgeNA": false
         }
       ]
+    },
+    {
+      "date": "2026-09-12",
+      "label": "Sep 12",
+      "dayOfWeek": "Sat",
+      "isWeekend": true,
+      "manager": null,
+      "canvasId": null,
+      "eodDone": false,
+      "callouts": [],
+      "cases": []
+    },
+    {
+      "date": "2026-09-13",
+      "label": "Sep 13",
+      "dayOfWeek": "Sun",
+      "isWeekend": true,
+      "manager": null,
+      "canvasId": null,
+      "eodDone": false,
+      "callouts": [],
+      "cases": []
     }
   ],
-  "generated": "2026-09-11"
+  "generated": "2026-09-13"
 }
