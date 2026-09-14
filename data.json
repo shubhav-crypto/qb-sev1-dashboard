@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated": "2026-09-11T00:00:00+05:30",
-    "totalCases": 879,
+    "generated": "2026-09-14T00:00:00+05:30",
+    "totalCases": 921,
     "daysTracked": 78
   },
   "schedule": {
@@ -18079,12 +18079,122 @@
       "label": "Sep 14",
       "dayOfWeek": "Mon",
       "isWeekend": false,
-      "manager": null,
+      "manager": "Mirza",
       "canvasId": null,
-      "eodDone": false,
-      "callouts": [],
-      "cases": []
+      "eodDone": true,
+      "callouts": [
+        {
+          "type": "exec",
+          "text": "\ud83d\udc41 Exec Visibility \u2014 Banco & General Motors"
+        }
+      ],
+      "cases": [
+        {
+          "caseNum": "474588464",
+          "account": "Spectrum Community",
+          "product": "Developer Support",
+          "timeIST": "1:04 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "17s",
+          "channelEngage": "59s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474588585",
+          "account": "Bank of the Philippine Islands",
+          "product": "Developer Support",
+          "timeIST": "1:22 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "40s",
+          "channelEngage": "2m 29s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474589101",
+          "account": "Prudential BSN Takaful Berhad (Active org)",
+          "product": "Digital Engagement",
+          "timeIST": "2:48 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "14s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474587310",
+          "account": "Oncourse",
+          "product": "Service Cloud Voice",
+          "timeIST": "3:57 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "26s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474589473",
+          "account": "Adidas AG",
+          "product": "Digital Engagement",
+          "timeIST": "3:58 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "11s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474516718",
+          "account": "Bayer AG",
+          "product": "Email Delivery & Desktop Integrations",
+          "timeIST": "6:23 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "16s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474581952",
+          "account": "Regeneron Healthcare Solutions",
+          "product": "Security & Activations",
+          "timeIST": "7:02 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "15s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474590651",
+          "account": "INFORMA GROUP LIMITED",
+          "product": "How-to, Setup, Configuration, Data Management",
+          "timeIST": "7:23 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "28s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        }
+      ]
     }
   ],
-  "generated": "2026-09-14T19:30:00+05:30"
+  "generated": "2026-09-14T00:00:00+05:30"
 }
