@@ -17,10 +17,6 @@
       --ink: #181818;
       --muted: #5c6670;
       --line: #d8dde6;
-      --green: #177448;
-      --green-soft: #dff3e8;
-      --amber: #8a4b08;
-      --amber-soft: #fff0da;
       --shadow: 0 20px 60px rgba(3, 45, 96, .12);
     }
 
@@ -37,14 +33,16 @@
     .date { margin-left: auto; color: #d8e8f8; font-size: 14px; }
     .label { padding: 7px 12px; border: 1px solid #78bdf5; border-radius: 999px; font-size: 11px; font-weight: 800; letter-spacing: .08em; }
 
-    .section-nav { position: sticky; top: 72px; z-index: 15; display: flex; gap: 4px; overflow-x: auto; padding: 0 clamp(14px, 4vw, 64px); background: var(--white); border-bottom: 1px solid var(--line); scrollbar-width: thin; }
-    .section-nav a { flex: 0 0 auto; padding: 13px 14px 10px; color: var(--muted); border-bottom: 3px solid transparent; font-size: 13px; font-weight: 700; text-decoration: none; }
-    .section-nav a:hover, .section-nav a:focus-visible, .section-nav a[aria-selected="true"] { color: var(--blue); border-color: var(--bright-blue); outline: none; }
-    .section-nav a[aria-selected="true"] span { background: var(--blue); color: var(--white); }
+    .section-nav { position: sticky; top: 72px; z-index: 15; display: flex; gap: 6px; overflow-x: auto; padding: 10px clamp(14px, 4vw, 64px) 0; background: var(--cream); border-bottom: 1px solid var(--line); scrollbar-width: thin; }
+    .section-nav a { flex: 0 0 auto; padding: 11px 16px 12px; color: var(--muted); border: 1px solid transparent; border-bottom: 0; border-radius: 10px 10px 0 0; font-size: 13px; font-weight: 700; text-decoration: none; }
+    .section-nav a:hover, .section-nav a:focus-visible { color: var(--navy); background: #edf1f5; outline: none; }
+    .section-nav a[aria-selected="true"] { position: relative; color: var(--navy); background: var(--white); border-color: var(--line); }
+    .section-nav a[aria-selected="true"]::after { content: ""; position: absolute; right: 0; bottom: -1px; left: 0; height: 2px; background: var(--white); }
+    .section-nav a[aria-selected="true"] span { background: var(--navy); color: var(--white); }
     .section-nav span { display: inline-grid; place-items: center; width: 22px; height: 22px; margin-right: 5px; border-radius: 50%; background: #eef4fa; font-size: 11px; }
 
-    main { overflow: hidden; }
-    .section { position: relative; display: none; max-width: 1240px; min-height: calc(100vh - 122px); margin: 0 auto; padding: clamp(70px, 9vw, 120px) clamp(20px, 5vw, 72px); }
+    main { min-height: calc(100vh - 123px); overflow: hidden; background: var(--white); }
+    .section { position: relative; display: none; max-width: 1240px; min-height: calc(100vh - 123px); margin: 0 auto; padding: clamp(54px, 7vw, 92px) clamp(20px, 5vw, 72px); background: var(--white); }
     .section.active { display: block; }
     .section.hero.active, .section.closing.active { display: grid; }
     .eyebrow { margin: 0 0 12px; color: var(--blue); font-size: 12px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
@@ -71,8 +69,7 @@
     td:first-child { background: var(--white); color: var(--navy); font-weight: 700; }
     tbody tr:last-child td { border-bottom: 0; }
     tbody tr:hover td { background: #f6f9fc; }
-    .up { color: var(--green); font-weight: 800; }
-    .watch { color: var(--amber); font-weight: 800; }
+    .metric-emphasis { color: inherit; font-weight: inherit; }
 
     .focus-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 36px; }
     .focus-card { min-height: 190px; padding: 28px; border-radius: 18px; background: var(--white); border: 1px solid var(--line); }
@@ -152,21 +149,21 @@
     <section class="section" id="core" role="tabpanel" aria-labelledby="tab-core" hidden>
       <div class="section-head"><div><p class="eyebrow">Business performance</p><h2>Core Metrics</h2><p class="lede">Weekly, month-to-date, and quarter-to-date support health.</p></div><div class="section-index" aria-hidden="true">02</div></div>
       <div class="table-shell"><table><caption style="position:absolute;clip:rect(0 0 0 0);clip-path:inset(50%);width:1px;height:1px;overflow:hidden">Core metrics for the week ending 19 September 2026</caption><thead><tr><th scope="col">KPI</th><th scope="col">WE 19 Sep</th><th scope="col">WE 12 Sep</th><th scope="col">Sep '26</th><th scope="col">Q3 FY27</th></tr></thead><tbody>
-        <tr><td>Inflow</td><td>841</td><td>609</td><td>2,021</td><td>4,337</td></tr><tr><td>Closures</td><td class="up">845</td><td>619</td><td>1,942</td><td>4,267</td></tr><tr><td>CSAT</td><td class="up">4.81</td><td>4.75</td><td>4.83</td><td>4.84</td></tr><tr><td>TTR</td><td class="up">5.5</td><td>6.0</td><td>5.9</td><td>6.3</td></tr><tr><td>Escalation %</td><td>0.6%</td><td>0.3%</td><td>0.7%</td><td>0.6%</td></tr><tr><td>Closure Productivity</td><td class="up">155%</td><td>111%</td><td>159%</td><td>115%</td></tr><tr><td>SLA Miss %</td><td class="watch">0.36%</td><td>0%</td><td>0.15%</td><td>0.07%</td></tr><tr><td>WFM Prod Adherence</td><td class="watch">87.5%</td><td>91%</td><td>90%</td><td>90%</td></tr>
+        <tr><td>Inflow</td><td>841</td><td>609</td><td>2,021</td><td>4,337</td></tr><tr><td>Closures</td><td>845</td><td>619</td><td>1,942</td><td>4,267</td></tr><tr><td>CSAT</td><td>4.81</td><td>4.75</td><td>4.83</td><td>4.84</td></tr><tr><td>TTR</td><td>5.5</td><td>6.0</td><td>5.9</td><td>6.3</td></tr><tr><td>Escalation %</td><td>0.6%</td><td>0.3%</td><td>0.7%</td><td>0.6%</td></tr><tr><td>Closure Productivity</td><td>155%</td><td>111%</td><td>159%</td><td>115%</td></tr><tr><td>SLA Miss %</td><td>0.36%</td><td>0%</td><td>0.15%</td><td>0.07%</td></tr><tr><td>WFM Prod Adherence</td><td>87.5%</td><td>91%</td><td>90%</td><td>90%</td></tr>
       </tbody></table></div>
     </section>
 
     <section class="section" id="chat" role="tabpanel" aria-labelledby="tab-chat" hidden>
       <div class="section-head"><div><p class="eyebrow">Digital support</p><h2>Chat Lead Metrics</h2><p class="lede">Resolution, responsiveness, and customer experience across chat.</p></div><div class="section-index" aria-hidden="true">03</div></div>
       <div class="table-shell"><table><caption style="position:absolute;clip:rect(0 0 0 0);clip-path:inset(50%);width:1px;height:1px;overflow:hidden">Chat lead metrics for the week ending 19 September 2026</caption><thead><tr><th scope="col">KPI</th><th scope="col">WE 19 Sep</th><th scope="col">WE 12 Sep</th><th scope="col">Sep '26</th><th scope="col">Q3 FY27</th></tr></thead><tbody>
-        <tr><td>Inflow</td><td>39</td><td>45</td><td>117</td><td>329</td></tr><tr><td>Resolution %</td><td class="up">80%</td><td>75%</td><td>80%</td><td>82%</td></tr><tr><td>Avg Wait Time</td><td class="watch">33 sec</td><td>13 sec</td><td>20 sec</td><td>19 sec</td></tr><tr><td>CSAT</td><td>4.82</td><td>5.00</td><td>4.87</td><td>4.82</td></tr><tr><td>Chat Waiting &gt;30 sec</td><td>6</td><td>5</td><td>16</td><td>50</td></tr><tr><td>ACT</td><td>42 min</td><td>37 min</td><td>39 min</td><td>39 min</td></tr>
+        <tr><td>Inflow</td><td>39</td><td>45</td><td>117</td><td>329</td></tr><tr><td>Resolution %</td><td>80%</td><td>75%</td><td>80%</td><td>82%</td></tr><tr><td>Avg Wait Time</td><td>33 sec</td><td>13 sec</td><td>20 sec</td><td>19 sec</td></tr><tr><td>CSAT</td><td>4.82</td><td>5.00</td><td>4.87</td><td>4.82</td></tr><tr><td>Chat Waiting &gt;30 sec</td><td>6</td><td>5</td><td>16</td><td>50</td></tr><tr><td>ACT</td><td>42 min</td><td>37 min</td><td>39 min</td><td>39 min</td></tr>
       </tbody></table></div>
     </section>
 
     <section class="section" id="sev1" role="tabpanel" aria-labelledby="tab-sev1" hidden>
       <div class="section-head"><div><p class="eyebrow">Critical support</p><h2>Sev 1 Summary</h2><p class="lede">Volume, recovery, and experience for business-critical incidents.</p></div><div class="section-index" aria-hidden="true">04</div></div>
       <div class="table-shell"><table><caption style="position:absolute;clip:rect(0 0 0 0);clip-path:inset(50%);width:1px;height:1px;overflow:hidden">Severity 1 metrics for the week ending 19 September 2026</caption><thead><tr><th scope="col">KPI</th><th scope="col">WE 19 Sep</th><th scope="col">WE 12 Sep</th><th scope="col">Sep '26</th><th scope="col">Q3 FY27</th></tr></thead><tbody>
-        <tr><td>Inflow</td><td>311</td><td>21</td><td>395</td><td>597</td></tr><tr><td>Closures</td><td>253</td><td>40</td><td>344</td><td>570</td></tr><tr><td>CSAT</td><td>4.75</td><td>4.75</td><td>4.78</td><td>4.73</td></tr><tr><td>TTR</td><td class="up">2.0</td><td>5.6</td><td>3.0</td><td>4.2</td></tr><tr><td>SLA Miss %</td><td class="watch">0.98%</td><td>0%</td><td>0.78%</td><td>0.52%</td></tr><tr><td>Escalation %</td><td>1.3%</td><td>0%</td><td>1.5%</td><td>2.2%</td></tr>
+        <tr><td>Inflow</td><td>311</td><td>21</td><td>395</td><td>597</td></tr><tr><td>Closures</td><td>253</td><td>40</td><td>344</td><td>570</td></tr><tr><td>CSAT</td><td>4.75</td><td>4.75</td><td>4.78</td><td>4.73</td></tr><tr><td>TTR</td><td>2.0</td><td>5.6</td><td>3.0</td><td>4.2</td></tr><tr><td>SLA Miss %</td><td>0.98%</td><td>0%</td><td>0.78%</td><td>0.52%</td></tr><tr><td>Escalation %</td><td>1.3%</td><td>0%</td><td>1.5%</td><td>2.2%</td></tr>
       </tbody></table></div>
     </section>
 
