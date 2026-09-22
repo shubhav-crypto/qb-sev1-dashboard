@@ -43,6 +43,7 @@
 
     main { min-height: calc(100vh - 123px); overflow: hidden; background: var(--white); }
     .section { position: relative; display: none; max-width: 1240px; min-height: calc(100vh - 123px); margin: 0 auto; padding: clamp(54px, 7vw, 92px) clamp(20px, 5vw, 72px); background: var(--white); }
+    .section[hidden] { display: none !important; }
     .section.active { display: block; }
     .section.hero.active, .section.closing.active { display: grid; }
     .eyebrow { margin: 0 0 12px; color: var(--blue); font-size: 12px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
