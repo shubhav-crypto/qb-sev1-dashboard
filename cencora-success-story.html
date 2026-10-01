@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cencora | Signature Support Success Story</title>
+  <style>
+    :root {
+      --ink: #091a2d;
+      --navy: #102f48;
+      --teal: #007f82;
+      --aqua: #18b7ad;
+      --mint: #c9f0e7;
+      --gold: #f2b64a;
+      --coral: #e86659;
+      --paper: #f4f7f6;
+      --white: #fff;
+      --muted: #526473;
+      --line: #dbe5e5;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 24px;
+      background:
+        radial-gradient(circle at 10% 10%, rgb(24 183 173 / 18%), transparent 26%),
+        radial-gradient(circle at 90% 90%, rgb(242 182 74 / 16%), transparent 28%),
+        #dfe8e8;
+      color: var(--ink);
+      font-family: Inter, Aptos, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      display: grid;
+      place-items: center;
+    }
+
+    .slide {
+      width: min(1440px, 100%);
+      min-height: 810px;
+      aspect-ratio: 16 / 9;
+      background: var(--paper);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 28px 80px rgb(9 26 45 / 25%);
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      position: relative;
+    }
+
+    .slide::after {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      right: -120px;
+      top: -130px;
+      border: 42px solid rgb(201 240 231 / 9%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    header {
+      padding: 27px 42px 24px;
+      color: var(--white);
+      background: linear-gradient(110deg, var(--ink) 0%, var(--navy) 63%, #075f65 100%);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 30px;
+      border-bottom: 5px solid var(--aqua);
+    }
+
+    .eyebrow, .section-label {
+      margin: 0;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow { color: var(--mint); margin-bottom: 7px; }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 3vw, 46px);
+      line-height: 1.02;
+      letter-spacing: -.038em;
+    }
+
+    .promise {
+      max-width: 340px;
+      padding: 13px 17px;
+      border: 1px solid rgb(255 255 255 / 24%);
+      border-radius: 10px;
+      background: rgb(255 255 255 / 8%);
+      color: var(--mint);
+      text-align: right;
+      font-size: 13px;
+      font-weight: 750;
+      line-height: 1.35;
+    }
+
+    .scoreboard {
+      padding: 18px 42px;
+      background: var(--white);
+      border-bottom: 1px solid var(--line);
+      display: grid;
+      grid-template-columns: 1.4fr repeat(4, 1fr);
+      gap: 14px;
+      align-items: stretch;
+    }
+
+    .score-intro { padding: 7px 18px 5px 0; }
+    .score-intro .section-label { color: var(--teal); margin-bottom: 7px; }
+    .score-intro strong { display: block; color: var(--navy); font-size: 18px; line-height: 1.15; }
+
+    .metric {
+      border-left: 1px solid var(--line);
+      padding: 4px 12px 4px 18px;
+    }
+
+    .metric b {
+      display: block;
+      color: var(--teal);
+      font-size: 29px;
+      line-height: 1;
+      letter-spacing: -.04em;
+    }
+
+    .metric:nth-child(3) b { color: var(--coral); }
+    .metric:nth-child(5) b { color: #b27a15; }
+    .metric span { display: block; margin-top: 7px; color: var(--muted); font-size: 11px; line-height: 1.25; font-weight: 700; }
+
+    main {
+      padding: 22px 42px 20px;
+      display: grid;
+      grid-template-columns: .94fr 1.32fr 1fr;
+      gap: 18px;
+    }
+
+    .panel {
+      min-width: 0;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgb(9 26 45 / 5%);
+    }
+
+    .panel .section-label { color: var(--teal); margin-bottom: 8px; }
+
+    h2 {
+      margin: 0 0 12px;
+      color: var(--navy);
+      font-size: 20px;
+      line-height: 1.1;
+      letter-spacing: -.025em;
+    }
+
+    .problem-note {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 12.5px;
+      line-height: 1.42;
+    }
+
+    .routing {
+      border-radius: 10px;
+      padding: 14px;
+      background: #f7f9f8;
+      border: 1px solid var(--line);
+    }
+
+    .routing-row {
+      display: grid;
+      grid-template-columns: 1fr 25px 1.25fr;
+      align-items: center;
+      margin-bottom: 7px;
+      gap: 5px;
+      font-size: 10px;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .routing-row:last-child { margin-bottom: 0; }
+    .object, .queue { padding: 7px 5px; border-radius: 6px; }
+    .object { background: #e8eff2; color: var(--navy); }
+    .queue.bad { color: white; background: var(--coral); }
+    .queue.good { color: white; background: var(--teal); }
+    .arrow { color: var(--teal); font-size: 15px; }
+
+    .fix-label {
+      margin: 12px 0 7px;
+      color: var(--teal);
+      font-size: 10px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .11em;
+    }
+
+    .timeline { position: relative; padding-left: 25px; }
+    .timeline::before { content: ""; position: absolute; left: 7px; top: 7px; bottom: 7px; width: 2px; background: linear-gradient(var(--aqua), var(--gold)); }
+
+    .step { position: relative; margin-bottom: 11px; padding: 0 0 10px 10px; border-bottom: 1px solid #edf1f1; }
+    .step:last-child { margin-bottom: 0; border: 0; padding-bottom: 0; }
+    .step::before { content: attr(data-step); position: absolute; left: -27px; top: -2px; width: 20px; height: 20px; border-radius: 50%; background: var(--navy); color: white; display: grid; place-items: center; font-size: 9px; font-weight: 900; }
+    .step strong { display: block; margin-bottom: 3px; color: var(--navy); font-size: 12px; }
+    .step p { margin: 0; color: var(--muted); font-size: 10.5px; line-height: 1.35; }
+
+    .outcome-list { display: grid; gap: 10px; }
+    .outcome {
+      position: relative;
+      padding: 11px 11px 11px 39px;
+      border-radius: 8px;
+      background: #f7faf9;
+      border: 1px solid #e4eceb;
+    }
+    .outcome::before { content: "✓"; position: absolute; left: 12px; top: 11px; width: 18px; height: 18px; border-radius: 50%; background: var(--mint); color: var(--teal); display: grid; place-items: center; font-size: 11px; font-weight: 900; }
+    .outcome strong { display: block; color: var(--navy); font-size: 11.5px; margin-bottom: 3px; }
+    .outcome span { display: block; color: var(--muted); font-size: 10px; line-height: 1.3; }
+
+    .bottom-line {
+      margin: 0 42px 19px;
+      padding: 14px 19px;
+      border-radius: 10px;
+      color: white;
+      background: linear-gradient(90deg, var(--navy), var(--teal));
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: 18px;
+    }
+    .bottom-line .section-label { color: var(--gold); white-space: nowrap; }
+    .bottom-line strong { font-size: 13px; line-height: 1.35; font-weight: 750; }
+
+    footer {
+      position: absolute;
+      right: 44px;
+      bottom: 5px;
+      color: #71808a;
+      font-size: 8px;
+    }
+
+    @media (max-width: 920px) {
+      body { padding: 0; place-items: start; }
+      .slide { min-height: 100vh; aspect-ratio: auto; border-radius: 0; }
+      header { grid-template-columns: 1fr; padding: 26px 24px; }
+      .promise { text-align: left; }
+      .scoreboard { grid-template-columns: 1fr 1fr; padding: 20px 24px; }
+      .score-intro { grid-column: 1 / -1; }
+      main { grid-template-columns: 1fr; padding: 20px 24px; }
+      .bottom-line { margin: 0 24px 25px; grid-template-columns: 1fr; }
+      footer { display: none; }
+    }
+
+    @media print {
+      @page { size: landscape; margin: 0; }
+      body { padding: 0; background: white; }
+      .slide { width: 100vw; height: 100vh; min-height: 0; border-radius: 0; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <article class="slide" aria-labelledby="page-title">
+    <header>
+      <div>
+        <p class="eyebrow">Cencora · Signature Support Success Story</p>
+        <h1 id="page-title">From recurring escalation<br>to structural stability</h1>
+      </div>
+      <div class="promise">Support moved beyond closing individual cases to resolve the account's underlying Omnichannel/MIAW architecture.</div>
+    </header>
+
+    <section class="scoreboard" aria-label="Success measures">
+      <div class="score-intro">
+        <p class="section-label">The transformation</p>
+        <strong>A fragmented support pattern became one coordinated recovery motion.</strong>
+      </div>
+      <div class="metric"><b>8+</b><span>reopens of the same recurring routing issue</span></div>
+      <div class="metric"><b>8 mo.</b><span>without a durable architectural resolution</span></div>
+      <div class="metric"><b>1</b><span>dedicated Support-Success accountability channel</span></div>
+      <div class="metric"><b>0</b><span>open Omnichannel/MIAW issues in later cadences</span></div>
+    </section>
+
+    <main>
+      <section class="panel">
+        <p class="section-label">01 · Root cause</p>
+        <h2>The failure was architectural, not episodic</h2>
+        <p class="problem-note">A full-history audit revealed that chats, cases, and leads were routed through one Omni-Channel queue, an unsupported design. A separate Case Step routing rule was also scoped outside its intended queue.</p>
+
+        <div class="routing" aria-label="Routing architecture before and after">
+          <div class="routing-row">
+            <span class="object">Chats</span><span class="arrow">→</span><span class="queue bad">Shared queue</span>
+          </div>
+          <div class="routing-row">
+            <span class="object">Cases</span><span class="arrow">→</span><span class="queue bad">Shared queue</span>
+          </div>
+          <div class="routing-row">
+            <span class="object">Leads</span><span class="arrow">→</span><span class="queue bad">Shared queue</span>
+          </div>
+          <p class="fix-label">Structural correction</p>
+          <div class="routing-row">
+            <span class="object">Each object</span><span class="arrow">→</span><span class="queue good">Dedicated queue</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <p class="section-label">02 · Coordinated response</p>
+        <h2>Support-led, not support-reactive</h2>
+        <div class="timeline">
+          <div class="step" data-step="1">
+            <strong>Unified ownership</strong>
+            <p>Established a dedicated Support-Success channel, replacing fragmented case-by-case handling with one accountable operating rhythm.</p>
+          </div>
+          <div class="step" data-step="2">
+            <strong>Diagnosed the pattern</strong>
+            <p>Audited the complete case history, isolated the unsupported queue design, and separated the routing defect from the scoping error.</p>
+          </div>
+          <div class="step" data-step="3">
+            <strong>Implemented a durable fix</strong>
+            <p>Prescribed per-object queues aligned with documented routing architecture and corrected the Case Step configuration.</p>
+          </div>
+          <div class="step" data-step="4">
+            <strong>Protected customer trust</strong>
+            <p>Corrected a dismissive support interaction and maintained precise Sev1 status: customer action versus engineering action.</p>
+          </div>
+          <div class="step" data-step="5">
+            <strong>Strengthened the Product signal</strong>
+            <p>Validated the account's 18-month pattern analysis, added missing cases, and converted customer concerns into technically reviewed evidence.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <p class="section-label">03 · Business outcome</p>
+        <h2>Stability restored. Churn risk reduced.</h2>
+        <div class="outcome-list">
+          <div class="outcome"><strong>Recurring failure stopped</strong><span>The 8+ reopen pattern ended after the architecture-level correction.</span></div>
+          <div class="outcome"><strong>Cadences changed character</strong><span>Calls shifted from chasing incidents to confirming zero open Omni/MIAW cases, with some check-ins cancelled.</span></div>
+          <div class="outcome"><strong>Relationship risk contained</strong><span>A deteriorating customer interaction was corrected before it could compound.</span></div>
+          <div class="outcome"><strong>Business status stayed clear</strong><span>The account team entered every customer cadence with an accurate view of ownership and next action.</span></div>
+          <div class="outcome"><strong>Product received evidence</strong><span>Roadmap concerns reached Product as a technically validated account pattern, not a collection of raw complaints.</span></div>
+        </div>
+      </section>
+    </main>
+
+    <section class="bottom-line">
+      <p class="section-label">Why this matters</p>
+      <strong>A Signature customer considering alternative platforms is now reporting no open Omnichannel/MIAW issues because Support fixed the system, protected the relationship, and improved the Product signal.</strong>
+    </section>
+
+    <footer>Source: Account-team success narrative · Internal use</footer>
+  </article>
+</body>
+</html>
