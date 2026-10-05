@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EMEA Escalations — Omni-Channel (1-slide)</title>
+  <style>
+    :root {
+      --sf-blue: #0B5CAB;
+      --sf-navy: #032D60;
+      --sf-sky: #1B96FF;
+      --ink: #181818;
+      --muted: #5C5C5C;
+      --line: #D8DDE6;
+      --bg: #F4F6F9;
+      --card: #FFFFFF;
+      --red: #BA0517;
+      --amber: #DD7A01;
+      --green: #2E844A;
+      --purple: #5A1BA9;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { background: #1a1d23; }
+    body {
+      font-family: "Salesforce Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      display: flex;
+      justify-content: center;
+      padding: 24px 16px 40px;
+    }
+    .slide {
+      width: min(1440px, 100%);
+      background: var(--bg);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 16px 48px rgba(0,0,0,.35);
+    }
+    header {
+      background: linear-gradient(90deg, var(--sf-navy) 0%, var(--sf-blue) 70%, var(--sf-sky) 100%);
+      color: #fff;
+      padding: 16px 22px 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 16px;
+    }
+    header h1 { font-size: 22px; font-weight: 700; letter-spacing: -.02em; line-height: 1.2; }
+    header p { font-size: 12px; opacity: .88; margin-top: 4px; }
+    header .meta { text-align: right; font-size: 11px; opacity: .9; line-height: 1.45; white-space: nowrap; }
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 8px;
+      padding: 10px 16px 8px;
+    }
+    .kpi {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 8px 10px;
+    }
+    .kpi .n { font-size: 22px; font-weight: 750; color: var(--sf-navy); line-height: 1; }
+    .kpi .l { font-size: 10px; color: var(--muted); margin-top: 3px; font-weight: 600; text-transform: uppercase; letter-spacing: .03em; }
+    .kpi.warn .n { color: var(--amber); }
+    .kpi.bad .n { color: var(--red); }
+    .kpi.ok .n { color: var(--green); }
+    .kpi.purple .n { color: var(--purple); }
+    .body {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 10px;
+      padding: 0 16px 12px;
+    }
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+    .panel h2 {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--sf-blue);
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 11px; }
+    th {
+      text-align: left;
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      color: var(--muted);
+      border-bottom: 1px solid var(--line);
+      padding: 0 6px 5px 0;
+      font-weight: 700;
+    }
+    td { padding: 5px 6px 5px 0; border-bottom: 1px solid #EEF1F5; vertical-align: top; line-height: 1.3; }
+    tr:last-child td { border-bottom: 0; }
+    .case { font-weight: 700; color: var(--sf-navy); white-space: nowrap; }
+    .tag {
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 700;
+      padding: 1px 5px;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+    .t-comm { background: #FEF1EE; color: var(--red); }
+    .t-mgmt { background: #EEF4FF; color: var(--sf-blue); }
+    .t-dead { background: #FFF1E0; color: #8C4B02; }
+    .t-none { background: #F3F3F3; color: #444; }
+    .t-closed { background: #EAF5EE; color: var(--green); }
+    .t-open { background: #FEF1EE; color: var(--red); }
+    .t-gap { background: #F9E8FD; color: var(--purple); }
+    .right { display: flex; flex-direction: column; gap: 10px; }
+    .reasons { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+    .rbox { background: #F7F9FC; border-radius: 6px; padding: 8px; border: 1px solid var(--line); }
+    .rbox .n { font-size: 20px; font-weight: 750; }
+    .rbox .l { font-size: 10px; color: var(--muted); font-weight: 600; margin-top: 2px; }
+    ul.bul { font-size: 11.5px; line-height: 1.45; padding-left: 16px; color: #222; }
+    ul.bul li { margin-bottom: 4px; }
+    footer {
+      padding: 8px 16px 12px;
+      font-size: 10px;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    a { color: var(--sf-blue); }
+    @media (max-width: 1100px) {
+      .kpis { grid-template-columns: repeat(3, 1fr); }
+      .body { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <article class="slide">
+    <header>
+      <div>
+        <h1>EMEA Escalations — Omni-Channel cases</h1>
+        <p>Source: EMEA Escalations last week · 157 unique OrgCS cases · Omni = Omni-Channel (not OmniStudio)</p>
+      </div>
+      <div class="meta">
+        13 Omni cases · 14 escalation rows<br>
+        GUS checked 5 Oct 2026
+      </div>
+    </header>
+
+    <section class="kpis">
+      <div class="kpi"><div class="n">13 / 157</div><div class="l">Omni cases (8%)</div></div>
+      <div class="kpi warn"><div class="n">8</div><div class="l">Escalated for no response</div></div>
+      <div class="kpi"><div class="n">4</div><div class="l">Management request</div></div>
+      <div class="kpi"><div class="n">2</div><div class="l">Deadline / brand impact</div></div>
+      <div class="kpi ok"><div class="n">5</div><div class="l">Have GUS investigations</div></div>
+      <div class="kpi bad"><div class="n">1 open bug</div><div class="l">8 cases have no WI</div></div>
+    </section>
+
+    <section class="body">
+      <div class="panel">
+        <h2>Why they were escalated · GUS attached?</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Case</th>
+              <th>Issue</th>
+              <th>Escalation reason</th>
+              <th>GUS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="case">472754334</td>
+              <td>Omni Flow test coverage blocking Copado deploy</td>
+              <td><span class="tag t-mgmt">Mgmt · deploy tomorrow</span></td>
+              <td><span class="tag t-none">None</span></td>
+            </tr>
+            <tr>
+              <td class="case">473093078</td>
+              <td>SCV Omni presence drops after 30 min idle</td>
+              <td><span class="tag t-mgmt">Mgmt · need IST call</span></td>
+              <td><span class="tag t-none">None</span></td>
+            </tr>
+            <tr>
+              <td class="case">473093336</td>
+              <td>Route Work breaks until variables re-selected</td>
+              <td><span class="tag t-comm">No update on HP case</span></td>
+              <td><span class="tag t-none">None</span></td>
+            </tr>
+            <tr>
+              <td class="case">473135964</td>
+              <td>Omni-Channel login</td>
+              <td><span class="tag t-mgmt">Mgmt · UAT waiting</span></td>
+              <td><span class="tag t-none">None</span></td>
+            </tr>
+            <tr>
+              <td class="case">473359488</td>
+              <td>Intermittent missing Accept/Decline (~30% agents)</td>
+              <td><span class="tag t-comm">Need more support</span></td>
+              <td><span class="tag t-closed">W-22614154 Defunct</span></td>
+            </tr>
+            <tr>
+              <td class="case">473458817</td>
+              <td>Canon Omni Flow returns 1 skill instead of many</td>
+              <td><span class="tag t-dead">AE · UAT/SIT deadline</span></td>
+              <td><span class="tag t-none">None</span></td>
+            </tr>
+            <tr>
+              <td class="case">473744459</td>
+              <td>Omni-chat down again · can't end sessions</td>
+              <td><span class="tag t-mgmt">Mgmt · prod outage</span></td>
+              <td><span class="tag t-closed">W-22945456 + 2 RCA bugs</span></td>
+            </tr>
+            <tr>
+              <td class="case">473948146</td>
+              <td>All agents: Omni login failed after mid-chat error</td>
+              <td><span class="tag t-dead">AE · brand impact</span></td>
+              <td><span class="tag t-closed">W-23192704 → Incident</span></td>
+            </tr>
+            <tr>
+              <td class="case">473987438</td>
+              <td>Omni Flow not handing chat to live agent</td>
+              <td><span class="tag t-comm">Demos today · speed</span></td>
+              <td><span class="tag t-closed">W-23303912 no code chg</span></td>
+            </tr>
+            <tr>
+              <td class="case">474070004</td>
+              <td>Sev1 Agentforce live-chat transfer / Route Work</td>
+              <td><span class="tag t-comm">No follow-up · 2× esc</span></td>
+              <td><span class="tag t-gap">No WI — gap</span></td>
+            </tr>
+            <tr>
+              <td class="case">474212972</td>
+              <td>Agent Transfer ends MessagingSession (API client)</td>
+              <td><span class="tag t-comm">No live RCA call</span></td>
+              <td><span class="tag t-gap">No WI — gap</span></td>
+            </tr>
+            <tr>
+              <td class="case">474424588</td>
+              <td>Route Work / PSR fail on Genesys external routing</td>
+              <td><span class="tag t-comm">Fix failed · no meeting</span></td>
+              <td><span class="tag t-gap">No WI — gap</span></td>
+            </tr>
+            <tr>
+              <td class="case">474617087</td>
+              <td>Most Available ignored · uneven chat load</td>
+              <td><span class="tag t-comm">No SF response</span></td>
+              <td><span class="tag t-open">W-24227448 + W-24300351 NEW</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="right">
+        <div class="panel">
+          <h2>Escalation mix</h2>
+          <div class="reasons">
+            <div class="rbox"><div class="n" style="color:#BA0517">8</div><div class="l">Lack of support response</div></div>
+            <div class="rbox"><div class="n" style="color:#0B5CAB">4</div><div class="l">Management request</div></div>
+            <div class="rbox"><div class="n" style="color:#DD7A01">2</div><div class="l">Deadline / brand impact</div></div>
+          </div>
+        </div>
+        <div class="panel">
+          <h2>Takeaways</h2>
+          <ul class="bul">
+            <li>Most Omni escalations are <b>support process</b> (silence, no IST call, no bridge) — not new product findings.</li>
+            <li>Impact-driven only: <b>473744459</b> (chat down) and <b>473948146</b> (all agents locked out).</li>
+            <li>5 investigations, all closed. Only open product bug: <b>W-24300351</b> SCRT2-RC broker reinit (Macquarie Most Available).</li>
+            <li>Three product-looking Sev/escalated cases never got a WI: <b>474070004</b>, <b>474212972</b>, <b>474424588</b>.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>Open follow-up</h2>
+          <ul class="bul">
+            <li><b>W-24300351</b> — New · Omni-Channel Scrum Team · parent W-24227448.</li>
+            <li>Decide whether to file investigations on the 3 WI gaps above.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>GUS: AX_OrgCS_Case__c + ADM_Work__c by case number · 473744459 / 473948146 linked via sibling MCI investigations</span>
+      <span>Not OmniStudio · Messaging-only cases excluded</span>
+    </footer>
+  </article>
+</body>
+</html>
