@@ -1,8 +1,8 @@
 {
   "meta": {
     "generated": "2026-09-14T00:00:00+05:30",
-    "totalCases": 921,
-    "daysTracked": 78
+    "totalCases": 963,
+    "daysTracked": 90
   },
   "schedule": {
     "2026-06-01": {
@@ -18719,6 +18719,83 @@
           "resolve": "20s",
           "channelEngage": null,
           "bridgeWithin15m": null,
+          "bridgeNA": false
+        }
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "label": "Oct 15",
+      "dayOfWeek": "Thu",
+      "isWeekend": false,
+      "manager": "Mirza",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "475419553",
+          "account": "Hewlett Packard Enterprise Company",
+          "product": "Developer Support",
+          "timeIST": "12:53 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "24s",
+          "channelEngage": "39s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "475421081",
+          "account": "Johnson Controls- 00D1t000000tCEN",
+          "product": "AppExchange, AgentExchange & Managed Packages",
+          "timeIST": "1:39 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "16s",
+          "channelEngage": "3m 4s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "475424645",
+          "account": "Gartner, Inc.",
+          "product": "Email Delivery & Desktop Integrations",
+          "timeIST": "3:24 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "15s",
+          "channelEngage": "1m 40s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "475425898",
+          "account": "Seven Network (Operations) Limited",
+          "product": "Developer Support",
+          "timeIST": "3:58 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "21s",
+          "channelEngage": "3m 26s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "475426729",
+          "account": "Activision Publishing, Inc.",
+          "product": "Developer Support",
+          "timeIST": "4:21 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "30s",
+          "channelEngage": "17m 23s",
+          "bridgeWithin15m": false,
           "bridgeNA": false
         }
       ]
