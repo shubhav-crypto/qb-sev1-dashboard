@@ -18799,6 +18799,44 @@
           "bridgeNA": false
         }
       ]
+    },
+    {
+      "date": "2026-10-25",
+      "label": "Oct 25",
+      "dayOfWeek": "Sun",
+      "isWeekend": true,
+      "manager": null,
+      "canvasId": null,
+      "eodDone": false,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "476180316",
+          "account": "The Goodyear Tire & Rubber Company",
+          "product": "Developer Support",
+          "timeIST": "4:15 PM",
+          "manager": null,
+          "isRed": false,
+          "ack": "10s",
+          "resolve": "1m 20s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "476179931",
+          "account": "Zerto, Inc.",
+          "product": "Security & Activations",
+          "timeIST": "2:52 PM",
+          "manager": null,
+          "isRed": false,
+          "ack": "1m 5s",
+          "resolve": "5m 46s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        }
+      ]
     }
   ],
   "generated": "2026-09-14T00:00:00+05:30"
