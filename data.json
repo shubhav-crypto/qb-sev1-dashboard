@@ -1,8 +1,10 @@
 {
   "meta": {
-    "generated": "2026-09-14T00:00:00+05:30",
-    "totalCases": 963,
-    "daysTracked": 90
+    "generated": "2026-11-02T15:16:59+05:30",
+    "totalCases": 1034,
+    "daysTracked": 80,
+    "rangeStart": "2026-06-01",
+    "rangeEnd": "2026-10-29"
   },
   "schedule": {
     "2026-06-01": {
@@ -196,6 +198,10 @@
     "2026-08-24": {
       "manager": "Mirza",
       "managerId": "U04219TJTK5"
+    },
+    "2026-10-01": {
+      "manager": "Jyothirmayee",
+      "managerId": "WN8LA3U5D"
     }
   },
   "managerIds": {
@@ -18724,6 +18730,239 @@
       ]
     },
     {
+      "date": "2026-10-01",
+      "label": "Oct 1",
+      "dayOfWeek": "Thu",
+      "isWeekend": false,
+      "manager": "Jyothirmayee",
+      "canvasId": null,
+      "eodDone": false,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "474718290",
+          "account": "NDIS Quality and Safeguards Commission",
+          "product": "Experience Management and Workspaces",
+          "timeIST": "12:57 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": "pre-existing"
+        },
+        {
+          "caseNum": "474738403",
+          "account": "Autodesk, Inc.",
+          "product": "Developer Support",
+          "timeIST": "1:40 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "10m 27s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474739055",
+          "account": "Wolverine World Wide Inc. **",
+          "product": "Digital Engagement",
+          "timeIST": "2:31 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "8m 49s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474666553",
+          "account": "Johnson & Johnson Services, Inc.",
+          "product": "Developer Support",
+          "timeIST": "2:35 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "15m 32s",
+          "bridgeWithin15m": false,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474739441",
+          "account": "Prudential BSN Takaful Berhad (Active org)",
+          "product": "Digital Engagement",
+          "timeIST": "3:06 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": "no-channel"
+        },
+        {
+          "caseNum": "474739501",
+          "account": "L'Oreal USA S/D, Inc.",
+          "product": "Digital Engagement",
+          "timeIST": "3:11 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "8m 38s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474740508",
+          "account": "Philip Morris Products S.A., OC Division ***",
+          "product": "Developer Support",
+          "timeIST": "4:43 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "1m 34s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474740875",
+          "account": "Banco BPI SA",
+          "product": "Developer Support",
+          "timeIST": "5:16 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "30m 54s",
+          "bridgeWithin15m": false,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474727998",
+          "account": "Dell - Service",
+          "product": "Developer Support",
+          "timeIST": "5:27 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": "no-channel"
+        },
+        {
+          "caseNum": "474741571",
+          "account": "Bayer AG",
+          "product": "Field Service",
+          "timeIST": "6:30 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": "howto"
+        },
+        {
+          "caseNum": "474741750",
+          "account": "Soci\u00e9t\u00e9 des Loteries du Qu\u00e9bec, La",
+          "product": "Developer Support",
+          "timeIST": "6:31 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474742326",
+          "account": "First Command Financial Services Inc.",
+          "product": "Developer Support",
+          "timeIST": "7:12 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474741965",
+          "account": "Georgia-Pacific LLC Building Products",
+          "product": "Email Delivery & Desktop Integrations",
+          "timeIST": "7:16 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "9m 3s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474681474",
+          "account": "Honda Canada Inc.",
+          "product": "Cases, Knowledge, Service Cloud Console, Work.com",
+          "timeIST": "7:38 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": "pre-existing"
+        },
+        {
+          "caseNum": "474742954",
+          "account": "Abbott Laboratories",
+          "product": "Developer Support",
+          "timeIST": "7:48 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "3m 8s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474648523",
+          "account": "Cigna European Services (UK) Ltd. 00D20000000Cn9E",
+          "product": "Digital Engagement",
+          "timeIST": "8:17 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": "no-channel"
+        },
+        {
+          "caseNum": "474744648",
+          "account": "Schneider Electric Industries SAS.",
+          "product": "Developer Support",
+          "timeIST": "9:19 PM",
+          "manager": "Jyothirmayee",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": "no-channel"
+        }
+      ]
+    },
+    {
       "date": "2026-10-15",
       "label": "Oct 15",
       "dayOfWeek": "Thu",
@@ -19563,5 +19802,5 @@
       ]
     }
   ],
-  "generated": "2026-09-14T00:00:00+05:30"
+  "generated": "2026-11-02T15:16:59+05:30"
 }
