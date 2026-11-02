@@ -1,7 +1,7 @@
 {
   "meta": {
     "generated": "2026-11-02T16:39:03+05:30",
-    "totalCases": 1092,
+    "totalCases": 1095,
     "daysTracked": 102
   },
   "schedule": {
@@ -20630,6 +20630,45 @@
           "isRed": false,
           "ack": null,
           "resolve": "14s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "479310106",
+          "account": "LogicMonitor Inc.",
+          "product": "Developer Support",
+          "timeIST": "4:38 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "35s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "477802303",
+          "account": "Bank of America, N.A.",
+          "product": "Prompt Builder",
+          "timeIST": "4:46 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "16s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "479321317",
+          "account": "Akamai Technologies, Inc.",
+          "product": "Digital Engagement",
+          "timeIST": "5:08 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "13s",
           "channelEngage": null,
           "bridgeWithin15m": null,
           "bridgeNA": false
