@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated": "2026-11-02T16:27:08+05:30",
-    "totalCases": 1058,
+    "generated": "2026-11-02T16:34:00+05:30",
+    "totalCases": 1057,
     "daysTracked": 82,
     "rangeStart": "2026-06-01",
     "rangeEnd": "2026-10-29"
@@ -18821,7 +18821,7 @@
           "isRed": false,
           "ack": null,
           "resolve": null,
-          "channelEngage": "8m 38s",
+          "channelEngage": "8m",
           "bridgeWithin15m": true,
           "bridgeNA": false
         },
@@ -18953,7 +18953,7 @@
           "resolve": null,
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": "no-channel"
+          "bridgeNA": false
         },
         {
           "caseNum": "474744648",
@@ -18989,9 +18989,9 @@
           "isRed": false,
           "ack": null,
           "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
-          "bridgeNA": "no-channel"
+          "channelEngage": "8m",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
         },
         {
           "caseNum": "474770780",
@@ -19067,9 +19067,9 @@
           "isRed": false,
           "ack": null,
           "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
-          "bridgeNA": "no-channel"
+          "channelEngage": "5m",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
         },
         {
           "caseNum": "474774405",
@@ -19144,9 +19144,9 @@
           "isRed": false,
           "ack": null,
           "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
-          "bridgeNA": "no-channel"
+          "channelEngage": "5m",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
         },
         {
           "caseNum": "474739501",
@@ -19170,8 +19170,8 @@
           "isRed": false,
           "ack": null,
           "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "13m",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -19214,19 +19214,6 @@
           "bridgeNA": "pre-existing"
         },
         {
-          "caseNum": "474881143",
-          "account": "MS Financing LLC",
-          "product": "Digital Engagement",
-          "timeIST": "7:50 PM",
-          "manager": "Rohit",
-          "isRed": false,
-          "ack": null,
-          "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
-          "bridgeNA": false
-        },
-        {
           "caseNum": "474879614",
           "account": "Regeneron Healthcare Solutions, Inc.",
           "product": "Developer Support",
@@ -19235,9 +19222,9 @@
           "isRed": false,
           "ack": null,
           "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
-          "bridgeNA": "no-channel"
+          "channelEngage": "4m",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
         },
         {
           "caseNum": "474880156",
@@ -19250,7 +19237,7 @@
           "resolve": null,
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": "no-channel"
+          "bridgeNA": false
         },
         {
           "caseNum": "474880031",
@@ -20146,5 +20133,5 @@
       ]
     }
   ],
-  "generated": "2026-11-02T16:27:08+05:30"
+  "generated": "2026-11-02T16:34:00+05:30"
 }
