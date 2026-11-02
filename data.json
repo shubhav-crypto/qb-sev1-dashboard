@@ -20672,6 +20672,32 @@
           "channelEngage": null,
           "bridgeWithin15m": null,
           "bridgeNA": false
+        },
+        {
+          "caseNum": "479348553",
+          "account": "LIVPURE PRIVATE LIMITED",
+          "product": "How-to, Setup, Configuration, Data Management",
+          "timeIST": "6:21 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "31s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "476107835",
+          "account": "Google LLC",
+          "product": "Developer Support",
+          "timeIST": "6:29 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "12s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
         }
       ]
     }
