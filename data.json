@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated": "2026-11-02T15:16:59+05:30",
-    "totalCases": 1034,
-    "daysTracked": 80,
+    "generated": "2026-11-02T15:48:49+05:30",
+    "totalCases": 1044,
+    "daysTracked": 81,
     "rangeStart": "2026-06-01",
     "rangeEnd": "2026-10-29"
   },
@@ -202,6 +202,10 @@
     "2026-10-01": {
       "manager": "Jyothirmayee",
       "managerId": "WN8LA3U5D"
+    },
+    "2026-10-02": {
+      "manager": "Rohit",
+      "managerId": "U01G5N5SZC5"
     }
   },
   "managerIds": {
@@ -18963,6 +18967,148 @@
       ]
     },
     {
+      "date": "2026-10-02",
+      "label": "Oct 2",
+      "dayOfWeek": "Fri",
+      "isWeekend": false,
+      "manager": "Rohit",
+      "canvasId": null,
+      "eodDone": false,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "474769481",
+          "account": "ADITYA BIRLA FINANCIAL SHARED SERVICES LIMITED",
+          "product": "How-to, Setup, Configuration, Data Management",
+          "timeIST": "3:16 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": "no-channel"
+        },
+        {
+          "caseNum": "474770780",
+          "account": "S&P Global, Inc.",
+          "product": "Mandatory Security Controls",
+          "timeIST": "4:09 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "12m 32s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474393670",
+          "account": "Scotia Gas Networks Limited",
+          "product": "Developer Support",
+          "timeIST": "4:02 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "12m 41s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474777043",
+          "account": "Johnson & Johnson Services, Inc.",
+          "product": "How-to, Setup, Configuration, Data Management",
+          "timeIST": "7:58 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474776181",
+          "account": "United Service Organizations-CRM",
+          "product": "Email Delivery & Desktop Integrations",
+          "timeIST": "7:39 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474776098",
+          "account": "MS Financing LLC",
+          "product": "Digital Engagement",
+          "timeIST": "7:37 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474763263",
+          "account": "The Manufacturers Life Insurance Company",
+          "product": "Email Delivery & Desktop Integrations",
+          "timeIST": "7:01 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": "no-channel"
+        },
+        {
+          "caseNum": "474774405",
+          "account": "Adidas AG",
+          "product": "Digital Engagement",
+          "timeIST": "6:38 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "1h 13m 39s",
+          "bridgeWithin15m": false,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474772617",
+          "account": "Humana Marketpoint Sales",
+          "product": "Service Cloud Voice",
+          "timeIST": "6:31 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "1h 28m 16s",
+          "bridgeWithin15m": false,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474778115",
+          "account": "MetLife Services and Solutions, LLC",
+          "product": "Service Cloud Voice",
+          "timeIST": "8:31 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        }
+      ]
+    },
+    {
       "date": "2026-10-15",
       "label": "Oct 15",
       "dayOfWeek": "Thu",
@@ -19802,5 +19948,5 @@
       ]
     }
   ],
-  "generated": "2026-11-02T15:16:59+05:30"
+  "generated": "2026-11-02T15:48:49+05:30"
 }
