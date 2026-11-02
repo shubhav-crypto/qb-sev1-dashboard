@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated": "2026-11-02T15:48:49+05:30",
-    "totalCases": 1044,
-    "daysTracked": 81,
+    "generated": "2026-11-02T15:54:43+05:30",
+    "totalCases": 1058,
+    "daysTracked": 82,
     "rangeStart": "2026-06-01",
     "rangeEnd": "2026-10-29"
   },
@@ -204,6 +204,10 @@
       "managerId": "WN8LA3U5D"
     },
     "2026-10-02": {
+      "manager": "Rohit",
+      "managerId": "U01G5N5SZC5"
+    },
+    "2026-10-05": {
       "manager": "Rohit",
       "managerId": "U01G5N5SZC5"
     }
@@ -19109,6 +19113,200 @@
       ]
     },
     {
+      "date": "2026-10-05",
+      "label": "Oct 5",
+      "dayOfWeek": "Mon",
+      "isWeekend": false,
+      "manager": "Rohit",
+      "canvasId": null,
+      "eodDone": false,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "474872811",
+          "account": "Xerox Corporation",
+          "product": "Developer Support",
+          "timeIST": "2:55 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "3m 56s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474872193",
+          "account": "PepsiCo, Inc.",
+          "product": "Developer Support",
+          "timeIST": "2:24 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": "no-channel"
+        },
+        {
+          "caseNum": "474739501",
+          "account": "L'Oreal USA S/D, Inc.",
+          "product": "Digital Engagement",
+          "timeIST": "2:16 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": "pre-existing"
+        },
+        {
+          "caseNum": "474875014",
+          "account": "CONSIP MEPA",
+          "product": "Developer Support",
+          "timeIST": "4:20 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474666553",
+          "account": "Johnson & Johnson Services, Inc.",
+          "product": "Developer Support",
+          "timeIST": "5:56 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": "pre-existing"
+        },
+        {
+          "caseNum": "474877091",
+          "account": "Activision Publishing, Inc.*",
+          "product": "Developer Support",
+          "timeIST": "5:38 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": "3m 18s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474551147",
+          "account": "Intel - SMG ISvC (SELA2)",
+          "product": "Digital Engagement",
+          "timeIST": "5:18 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": "pre-existing"
+        },
+        {
+          "caseNum": "474881143",
+          "account": "MS Financing LLC",
+          "product": "Digital Engagement",
+          "timeIST": "7:50 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474879614",
+          "account": "Regeneron Healthcare Solutions, Inc.",
+          "product": "Developer Support",
+          "timeIST": "7:37 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": "no-channel"
+        },
+        {
+          "caseNum": "474880156",
+          "account": "Ferrari SpA",
+          "product": "Developer Support",
+          "timeIST": "7:29 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": "no-channel"
+        },
+        {
+          "caseNum": "474880031",
+          "account": "Ferrari SpA",
+          "product": "Developer Support",
+          "timeIST": "7:27 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474880058",
+          "account": "The Home Depot U.S.A., Inc.",
+          "product": "Developer Support",
+          "timeIST": "7:16 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474871125",
+          "account": "Dell - Content Management",
+          "product": "Developer Support",
+          "timeIST": "7:01 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "474878154",
+          "account": "AXA Assistance",
+          "product": "Field Service",
+          "timeIST": "6:53 PM",
+          "manager": "Rohit",
+          "isRed": false,
+          "ack": null,
+          "resolve": null,
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        }
+      ]
+    },
+    {
       "date": "2026-10-15",
       "label": "Oct 15",
       "dayOfWeek": "Thu",
@@ -19948,5 +20146,5 @@
       ]
     }
   ],
-  "generated": "2026-11-02T15:48:49+05:30"
+  "generated": "2026-11-02T15:54:43+05:30"
 }
