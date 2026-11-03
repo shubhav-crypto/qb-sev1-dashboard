@@ -17361,7 +17361,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "474500006",
@@ -17465,7 +17465,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "474500403",
@@ -17789,7 +17789,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "474507883",
@@ -17854,7 +17854,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "474286585",
@@ -17919,7 +17919,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "474451174",
@@ -18074,7 +18074,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "474404760",
@@ -18087,7 +18087,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "474523666",
@@ -18139,7 +18139,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "474523844",
@@ -18385,7 +18385,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "474510421",
@@ -18437,7 +18437,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "474530597",
@@ -18773,7 +18773,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "474549682",
@@ -18812,7 +18812,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "474551532",
@@ -18864,7 +18864,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "474550829",
@@ -19394,7 +19394,7 @@
           "resolve": "16s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "474581952",
@@ -20943,7 +20943,7 @@
           "resolve": "20s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "474617862",
@@ -20982,7 +20982,7 @@
           "resolve": "21s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "474618487",
@@ -21072,7 +21072,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "474574461",
@@ -21085,7 +21085,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "474625461",
@@ -23958,7 +23958,7 @@
           "bridgeWithin15m": null,
           "manager": "Jyothirmayee",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "474902292",
@@ -26704,7 +26704,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "475873194",
@@ -27559,7 +27559,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "476107767",
@@ -27804,7 +27804,7 @@
           "resolve": "28s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "476034128",
@@ -27817,7 +27817,7 @@
           "resolve": "45s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "476181729",
@@ -27830,7 +27830,7 @@
           "resolve": "34s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "475043958",
@@ -28321,7 +28321,7 @@
           "resolve": null,
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "475901041",
@@ -28334,7 +28334,7 @@
           "resolve": "15s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "pre-existing"
         },
         {
           "caseNum": "477086506",
