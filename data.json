@@ -2537,7 +2537,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "473788512",
@@ -2550,7 +2550,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "473789358",
@@ -13677,7 +13677,7 @@
           "resolve": null,
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474226369",
@@ -13690,7 +13690,7 @@
           "resolve": null,
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474212972",
@@ -13703,7 +13703,7 @@
           "resolve": null,
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474248151",
@@ -13729,7 +13729,7 @@
           "resolve": "3m 14s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474243982",
@@ -13742,7 +13742,7 @@
           "resolve": "30s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474209995",
@@ -13755,7 +13755,7 @@
           "resolve": "3m 14s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474248317",
@@ -13781,7 +13781,7 @@
           "resolve": "3m 24s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474248663",
@@ -14551,7 +14551,7 @@
           "resolve": null,
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474279357",
@@ -14564,7 +14564,7 @@
           "resolve": null,
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474201323",
@@ -14603,7 +14603,7 @@
           "resolve": "3m 11s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474112391",
@@ -17348,7 +17348,7 @@
           "resolve": "18s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474544962",
@@ -18328,7 +18328,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474616013",
@@ -18341,7 +18341,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474565435",
@@ -18354,7 +18354,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474639679",
@@ -18367,7 +18367,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474644051",
@@ -18393,7 +18393,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474605944",
@@ -18613,7 +18613,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474494942",
@@ -18626,7 +18626,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474643094",
@@ -18639,7 +18639,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474602543",
@@ -18652,7 +18652,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474653160",
@@ -18665,7 +18665,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474653856",
@@ -18678,7 +18678,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474646723",
@@ -18691,7 +18691,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474653650",
@@ -18704,7 +18704,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474595841",
@@ -18717,7 +18717,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474645598",
@@ -18743,7 +18743,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474645566",
@@ -18756,7 +18756,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474604039",
@@ -19184,7 +19184,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474645127",
@@ -19197,7 +19197,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474657983",
@@ -19210,7 +19210,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474653809",
@@ -19223,7 +19223,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474663887",
@@ -19249,7 +19249,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474657892",
@@ -19262,7 +19262,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474646723",
@@ -19585,7 +19585,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474637580",
@@ -19598,7 +19598,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474683724",
@@ -19624,7 +19624,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474683807",
@@ -19818,7 +19818,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474567092",
@@ -19831,7 +19831,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474663188",
@@ -19844,7 +19844,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474661461",
@@ -19857,7 +19857,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474691346",
@@ -19870,7 +19870,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474704393",
@@ -19883,7 +19883,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474706564",
@@ -19909,7 +19909,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474537126",
@@ -20090,7 +20090,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474724532",
@@ -20142,7 +20142,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474653650",
@@ -20155,7 +20155,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474629094",
@@ -20168,7 +20168,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474467404",
@@ -20181,7 +20181,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474714369",
@@ -20194,7 +20194,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474723642",
@@ -20207,7 +20207,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474725383",
@@ -20233,7 +20233,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474726050",
@@ -20315,7 +20315,7 @@
           "resolve": "19s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474714197",
@@ -20328,7 +20328,7 @@
           "resolve": "13s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474582781",
@@ -20341,7 +20341,7 @@
           "resolve": "16s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474737100",
@@ -20354,7 +20354,7 @@
           "resolve": "11s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474718290",
@@ -20380,7 +20380,7 @@
           "resolve": "1m 18s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474735864",
@@ -20393,7 +20393,7 @@
           "resolve": "12s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474738403",
@@ -20579,7 +20579,7 @@
           "resolve": "25s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474730813",
@@ -20592,7 +20592,7 @@
           "resolve": "47s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474582781",
@@ -20605,7 +20605,7 @@
           "resolve": "23s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474769481",
@@ -20970,7 +20970,7 @@
           "bridgeWithin15m": null,
           "manager": "Jyothirmayee",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474683724",
@@ -20996,7 +20996,7 @@
           "bridgeWithin15m": null,
           "manager": "Jyothirmayee",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474903024",
@@ -21009,7 +21009,7 @@
           "bridgeWithin15m": null,
           "manager": "Jyothirmayee",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474582781",
@@ -21022,7 +21022,7 @@
           "bridgeWithin15m": null,
           "manager": "Jyothirmayee",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474901116",
@@ -21035,7 +21035,7 @@
           "bridgeWithin15m": null,
           "manager": "Jyothirmayee",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474903887",
@@ -21048,7 +21048,7 @@
           "bridgeWithin15m": null,
           "manager": "Jyothirmayee",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474710944",
@@ -21061,7 +21061,7 @@
           "bridgeWithin15m": null,
           "manager": "Jyothirmayee",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474905404",
@@ -21139,7 +21139,7 @@
           "bridgeWithin15m": null,
           "manager": "Jyothirmayee",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474241503",
@@ -21255,7 +21255,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474904137",
@@ -21268,7 +21268,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474903024",
@@ -21281,7 +21281,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474906823",
@@ -21294,7 +21294,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474946122",
@@ -21320,7 +21320,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474947916",
@@ -21449,7 +21449,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474912702",
@@ -21475,7 +21475,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474750696",
@@ -21488,7 +21488,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474982634",
@@ -21501,7 +21501,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474903024",
@@ -21514,7 +21514,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474985867",
@@ -21540,7 +21540,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474985927",
@@ -21721,7 +21721,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474988797",
@@ -21734,7 +21734,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474618212",
@@ -21747,7 +21747,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474970662",
@@ -21760,7 +21760,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474616013",
@@ -21773,7 +21773,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474903024",
@@ -21786,7 +21786,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475029735",
@@ -21812,7 +21812,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475030459",
@@ -21903,7 +21903,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475034096",
@@ -22071,7 +22071,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475211405",
@@ -22097,7 +22097,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475078065",
@@ -22110,7 +22110,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475213968",
@@ -22369,7 +22369,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475235225",
@@ -22382,7 +22382,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475267758",
@@ -22395,7 +22395,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474735413",
@@ -22408,7 +22408,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475207623",
@@ -22421,7 +22421,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475281071",
@@ -22434,7 +22434,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474658887",
@@ -22447,7 +22447,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475144531",
@@ -22460,7 +22460,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475078065",
@@ -22473,7 +22473,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474747278",
@@ -22486,7 +22486,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475289571",
@@ -22641,7 +22641,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475353744",
@@ -22654,7 +22654,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475365225",
@@ -22667,7 +22667,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475344275",
@@ -22680,7 +22680,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474578608",
@@ -22693,7 +22693,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475337793",
@@ -22706,7 +22706,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475240260",
@@ -22719,7 +22719,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474934866",
@@ -22732,7 +22732,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475315939",
@@ -22745,7 +22745,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475353627",
@@ -22758,7 +22758,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475372920",
@@ -22784,7 +22784,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474681851",
@@ -22797,7 +22797,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475362753",
@@ -22810,7 +22810,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474653650",
@@ -22823,7 +22823,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474658887",
@@ -22836,7 +22836,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475356625",
@@ -22849,7 +22849,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475380952",
@@ -23068,7 +23068,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475416460",
@@ -23081,7 +23081,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474934866",
@@ -23094,7 +23094,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475261896",
@@ -23107,7 +23107,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475043958",
@@ -23120,7 +23120,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475440229",
@@ -23133,7 +23133,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475484342",
@@ -23159,7 +23159,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475486714",
@@ -23314,7 +23314,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475503890",
@@ -23327,7 +23327,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475261896",
@@ -23340,7 +23340,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474578608",
@@ -23353,7 +23353,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475409803",
@@ -23366,7 +23366,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475418194",
@@ -23379,7 +23379,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475757504",
@@ -23405,7 +23405,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475758331",
@@ -23599,7 +23599,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475763911",
@@ -23612,7 +23612,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475609645",
@@ -23625,7 +23625,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475033926",
@@ -23638,7 +23638,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475864065",
@@ -23664,7 +23664,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475864552",
@@ -23690,7 +23690,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475779936",
@@ -23703,7 +23703,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475822228",
@@ -23716,7 +23716,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474906702",
@@ -23819,7 +23819,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475918440",
@@ -23845,7 +23845,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475418238",
@@ -23858,7 +23858,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475440229",
@@ -23871,7 +23871,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475763911",
@@ -23884,7 +23884,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475889191",
@@ -23897,7 +23897,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475920221",
@@ -24091,7 +24091,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475773987",
@@ -24104,7 +24104,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475941100",
@@ -24117,7 +24117,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475965288",
@@ -24130,7 +24130,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475889191",
@@ -24143,7 +24143,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475763911",
@@ -24156,7 +24156,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475965293",
@@ -24169,7 +24169,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475418238",
@@ -24182,7 +24182,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474747278",
@@ -24195,7 +24195,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475999937",
@@ -24221,7 +24221,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475440229",
@@ -24234,7 +24234,7 @@
           "bridgeWithin15m": null,
           "manager": null,
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "476000959",
@@ -24402,7 +24402,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "476094112",
@@ -24415,7 +24415,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475386399",
@@ -24428,7 +24428,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "476078671",
@@ -24441,7 +24441,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "476073560",
@@ -24454,7 +24454,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475418238",
@@ -24467,7 +24467,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474604973",
@@ -24480,7 +24480,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "476098246",
@@ -24506,7 +24506,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475558775",
@@ -24519,7 +24519,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "474747278",
@@ -24532,7 +24532,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "476068242",
@@ -24545,7 +24545,7 @@
           "bridgeWithin15m": null,
           "manager": "Sai Vikram",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "476101422",
@@ -25553,7 +25553,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "477266571",
@@ -25566,7 +25566,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "477368578",
@@ -25579,7 +25579,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "477609680",
@@ -25605,7 +25605,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "475901041",
@@ -25618,7 +25618,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "477619753",
@@ -25644,7 +25644,7 @@
           "bridgeWithin15m": null,
           "manager": "Mirza",
           "isRed": false,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "477637761",
@@ -25838,7 +25838,7 @@
           "resolve": "16s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "477677677",
@@ -25864,7 +25864,7 @@
           "resolve": "16s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "477677677",
@@ -25890,7 +25890,7 @@
           "resolve": "11s",
           "channelEngage": null,
           "bridgeWithin15m": null,
-          "bridgeNA": false
+          "bridgeNA": "gho"
         },
         {
           "caseNum": "479251998",
