@@ -20719,8 +20719,8 @@
           "isRed": false,
           "ack": "1m 35s",
           "resolve": "2m 33s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "57s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -21523,8 +21523,8 @@
           "timeIST": "12:52 PM",
           "ack": "2m 59s",
           "resolve": "3m 12s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "8s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
@@ -21692,8 +21692,8 @@
           "timeIST": "7:16 PM",
           "ack": null,
           "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "36s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
@@ -21795,8 +21795,8 @@
           "timeIST": "12:53 PM",
           "ack": null,
           "resolve": "12s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "30s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
@@ -21821,8 +21821,8 @@
           "timeIST": "1:17 PM",
           "ack": null,
           "resolve": "18s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "27s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
@@ -21990,8 +21990,8 @@
           "timeIST": "5:25 PM",
           "ack": null,
           "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "40s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
@@ -22054,8 +22054,8 @@
           "timeIST": "12:46 PM",
           "ack": null,
           "resolve": "24s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "52s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
@@ -22080,8 +22080,8 @@
           "timeIST": "1:01 PM",
           "ack": null,
           "resolve": "44s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "50s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
@@ -22573,8 +22573,8 @@
           "timeIST": "6:04 PM",
           "ack": null,
           "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "49s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
@@ -22599,8 +22599,8 @@
           "timeIST": "7:10 PM",
           "ack": null,
           "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "30s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
@@ -22767,8 +22767,8 @@
           "timeIST": "1:05 PM",
           "ack": "12s",
           "resolve": "14s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "59s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
@@ -22962,8 +22962,8 @@
           "timeIST": "7:16 PM",
           "ack": "1m 52s",
           "resolve": "1m 53s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "26s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
@@ -23168,8 +23168,8 @@
           "timeIST": "2:27 PM",
           "ack": null,
           "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "7s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
@@ -23194,8 +23194,8 @@
           "timeIST": "3:35 PM",
           "ack": null,
           "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "10s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
@@ -23233,8 +23233,8 @@
           "timeIST": "5:21 PM",
           "ack": null,
           "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "32s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
@@ -23259,8 +23259,8 @@
           "timeIST": "6:46 PM",
           "ack": null,
           "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "20s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
@@ -23647,8 +23647,8 @@
           "timeIST": "1:25 PM",
           "ack": "11s",
           "resolve": "24h",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "28s",
+          "bridgeWithin15m": true,
           "manager": "Sai Vikram",
           "isRed": false,
           "bridgeNA": false
@@ -23802,8 +23802,8 @@
           "timeIST": "12:30 PM",
           "ack": null,
           "resolve": "24s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "26s",
+          "bridgeWithin15m": true,
           "manager": null,
           "isRed": false,
           "bridgeNA": false
@@ -23828,8 +23828,8 @@
           "timeIST": "12:42 PM",
           "ack": "8s",
           "resolve": "14s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "0s",
+          "bridgeWithin15m": true,
           "manager": null,
           "isRed": false,
           "bridgeNA": false
@@ -24061,8 +24061,8 @@
           "timeIST": "12:37 PM",
           "ack": null,
           "resolve": "27s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "17s",
+          "bridgeWithin15m": true,
           "manager": null,
           "isRed": false,
           "bridgeNA": false
@@ -24074,8 +24074,8 @@
           "timeIST": "12:37 PM",
           "ack": null,
           "resolve": "2m 35s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "37s",
+          "bridgeWithin15m": true,
           "manager": null,
           "isRed": false,
           "bridgeNA": false
@@ -24204,8 +24204,8 @@
           "timeIST": "1:23 PM",
           "ack": null,
           "resolve": "1m 26s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "34s",
+          "bridgeWithin15m": true,
           "manager": null,
           "isRed": false,
           "bridgeNA": false
@@ -24554,8 +24554,8 @@
           "timeIST": "1:41 PM",
           "ack": null,
           "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "54s",
+          "bridgeWithin15m": true,
           "manager": "Sai Vikram",
           "isRed": false,
           "bridgeNA": false
@@ -24606,8 +24606,8 @@
           "timeIST": "3:07 PM",
           "ack": null,
           "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "1m 1s",
+          "bridgeWithin15m": true,
           "manager": "Sai Vikram",
           "isRed": false,
           "bridgeNA": false
@@ -24697,8 +24697,8 @@
           "timeIST": "6:55 PM",
           "ack": null,
           "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "14s",
+          "bridgeWithin15m": true,
           "manager": "Sai Vikram",
           "isRed": false,
           "bridgeNA": false
@@ -24723,8 +24723,8 @@
           "timeIST": "6:56 PM",
           "ack": null,
           "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "20s",
+          "bridgeWithin15m": true,
           "manager": "Sai Vikram",
           "isRed": false,
           "bridgeNA": false
@@ -24762,8 +24762,8 @@
           "timeIST": "7:26 PM",
           "ack": null,
           "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "48s",
+          "bridgeWithin15m": true,
           "manager": "Sai Vikram",
           "isRed": false,
           "bridgeNA": false
@@ -24802,8 +24802,8 @@
           "isRed": false,
           "ack": "1m 5s",
           "resolve": "5m 46s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "53s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         }
       ]
@@ -25008,8 +25008,8 @@
           "isRed": false,
           "ack": null,
           "resolve": "29s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "44s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -25021,8 +25021,8 @@
           "isRed": false,
           "ack": "8s",
           "resolve": "20s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "35s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -25034,8 +25034,8 @@
           "isRed": false,
           "ack": "14s",
           "resolve": "19s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "44s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -25060,8 +25060,8 @@
           "isRed": false,
           "ack": "59s",
           "resolve": "1m 6s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "19s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -25254,8 +25254,8 @@
           "isRed": false,
           "ack": null,
           "resolve": "16s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "41s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -25267,8 +25267,8 @@
           "isRed": false,
           "ack": "51s",
           "resolve": "54s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "23s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -25280,8 +25280,8 @@
           "isRed": false,
           "ack": "29s",
           "resolve": "31s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "24s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -25293,8 +25293,8 @@
           "isRed": false,
           "ack": "35s",
           "resolve": "39s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "36s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -25306,8 +25306,8 @@
           "isRed": false,
           "ack": null,
           "resolve": "1m 13s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "28s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -25319,8 +25319,8 @@
           "isRed": false,
           "ack": "13s",
           "resolve": "15s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "55s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         }
       ]
@@ -25588,8 +25588,8 @@
           "timeIST": "1:22 PM",
           "ack": null,
           "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "33s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
@@ -25653,8 +25653,8 @@
           "timeIST": "2:37 PM",
           "ack": null,
           "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "14s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
@@ -25666,8 +25666,8 @@
           "timeIST": "2:38 PM",
           "ack": "5s",
           "resolve": "24h",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "18s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
@@ -25705,8 +25705,8 @@
           "timeIST": "3:51 PM",
           "ack": null,
           "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "38s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
@@ -25731,8 +25731,8 @@
           "timeIST": "4:45 PM",
           "ack": null,
           "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "15s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
@@ -25757,8 +25757,8 @@
           "timeIST": "5:57 PM",
           "ack": null,
           "resolve": null,
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "1m",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
