@@ -1633,7 +1633,9 @@ function stepDay(dir){
 
 function buildDayPanel(day,container){
   // All data originates from the page-owner's own data.json — treated as trusted.
-  const cases=day.cases;
+  // GHO warm handovers are operational transfers, not new Sev1s, so they are
+  // kept out of the day view entirely.
+  const cases=day.cases.filter(function(c){return c.bridgeNA!=='gho';});
   const byMgr={};
   cases.forEach(function(c){const m=c.manager||day.manager;if(!byMgr[m])byMgr[m]=[];byMgr[m].push(c);});
   let html='';
