@@ -17488,8 +17488,8 @@
           "isRed": false,
           "ack": null,
           "resolve": "27s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "33s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -17630,8 +17630,8 @@
           "isRed": false,
           "ack": null,
           "resolve": "10s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "11s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -17746,8 +17746,8 @@
           "isRed": false,
           "ack": "36s",
           "resolve": "38s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "14s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -17785,8 +17785,8 @@
           "isRed": false,
           "ack": "50s",
           "resolve": "52s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "54s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -17889,8 +17889,8 @@
           "isRed": false,
           "ack": null,
           "resolve": "14s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "54s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -17915,8 +17915,8 @@
           "isRed": false,
           "ack": null,
           "resolve": "11s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "3s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -17941,8 +17941,8 @@
           "isRed": false,
           "ack": null,
           "resolve": "15s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "6s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -17954,8 +17954,8 @@
           "isRed": false,
           "ack": null,
           "resolve": "28s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "57s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         }
       ]
@@ -17979,8 +17979,8 @@
           "isRed": false,
           "ack": null,
           "resolve": "17s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "49s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -17992,8 +17992,8 @@
           "isRed": false,
           "ack": null,
           "resolve": "17s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "50s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -18005,8 +18005,8 @@
           "isRed": false,
           "ack": null,
           "resolve": "15s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "26s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -18057,8 +18057,8 @@
           "isRed": false,
           "ack": null,
           "resolve": "32s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "21s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -18070,8 +18070,8 @@
           "isRed": false,
           "ack": null,
           "resolve": "32s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "55s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -18083,8 +18083,8 @@
           "isRed": false,
           "ack": null,
           "resolve": "18s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "12s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -18173,8 +18173,8 @@
           "isRed": false,
           "ack": "12s",
           "resolve": "15s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "13s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -18199,8 +18199,8 @@
           "isRed": false,
           "ack": "11s",
           "resolve": "13s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "25s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -18212,8 +18212,8 @@
           "isRed": false,
           "ack": "21s",
           "resolve": "23s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "31s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -18251,8 +18251,8 @@
           "isRed": false,
           "ack": "45s",
           "resolve": "46s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "49s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -18277,8 +18277,8 @@
           "isRed": false,
           "ack": "30s",
           "resolve": "32s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "55s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -18290,8 +18290,8 @@
           "isRed": false,
           "ack": "49s",
           "resolve": "50s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "13s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         }
       ]
@@ -18726,8 +18726,8 @@
           "timeIST": "12:54 PM",
           "ack": null,
           "resolve": "10s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "44s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
@@ -19090,8 +19090,8 @@
           "timeIST": "4:59 PM",
           "ack": null,
           "resolve": "24s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "35s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
@@ -19336,8 +19336,8 @@
           "timeIST": "5:40 PM",
           "ack": "3m 2s",
           "resolve": "3m 18s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "34s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
@@ -19545,8 +19545,8 @@
           "isRed": false,
           "ack": null,
           "resolve": "1m 28s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "58s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         },
         {
@@ -19558,8 +19558,8 @@
           "isRed": false,
           "ack": null,
           "resolve": "20s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "37s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         }
       ]
@@ -19776,8 +19776,8 @@
           "timeIST": "7:12 PM",
           "ack": null,
           "resolve": "1m 35s",
-          "channelEngage": null,
-          "bridgeWithin15m": null,
+          "channelEngage": "50s",
+          "bridgeWithin15m": true,
           "manager": "Mirza",
           "isRed": false,
           "bridgeNA": false
