@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated": "2026-11-03T21:12:38+05:30",
-    "totalCases": 1969,
-    "daysTracked": 129
+    "generated": "2026-11-04T19:30:00+05:30",
+    "totalCases": 1985,
+    "daysTracked": 130
   },
   "schedule": {
     "2026-06-01": {
@@ -28329,6 +28329,226 @@
           "resolve": "22s",
           "channelEngage": null,
           "bridgeWithin15m": null,
+          "bridgeNA": false
+        }
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "label": "Nov 4",
+      "dayOfWeek": "Tue",
+      "isWeekend": false,
+      "manager": "Mirza",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [],
+      "cases": [
+        {
+          "caseNum": "476196155",
+          "account": "CVS Call Center Virtual Assistant (CCVA)",
+          "product": "Service Cloud Voice",
+          "timeIST": "7:11 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": "1m 22s",
+          "resolve": "1m 29s",
+          "channelEngage": "20s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "480454055",
+          "account": "Intuit Inc. - CXM org",
+          "product": "Developer Support",
+          "timeIST": "7:10 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "18s",
+          "channelEngage": "39m 33s",
+          "bridgeWithin15m": false,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "480445853",
+          "account": "Hewlett Packard Enterprise Company",
+          "product": "Developer Support",
+          "timeIST": "6:49 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "24s",
+          "channelEngage": "28s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "480411794",
+          "account": "PepsiCo, Inc. Service Cloud",
+          "product": "Email Delivery & Desktop Integrations",
+          "timeIST": "5:21 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "18s",
+          "channelEngage": "1m 2s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "480400142",
+          "account": "Student Loans Company UK - LLE",
+          "product": "Digital Engagement",
+          "timeIST": "4:50 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "17s",
+          "channelEngage": "18s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "480396757",
+          "account": "Vistaprint Limited",
+          "product": "Network Infrastructure and Core Maintenance",
+          "timeIST": "4:42 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "1m 57s",
+          "channelEngage": "22s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "479320753",
+          "account": "Marriott International Administrative Services Inc.",
+          "product": "Prompt Builder",
+          "timeIST": "4:38 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": "1m 18s",
+          "resolve": "2m 51s",
+          "channelEngage": "3m 21s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "480395400",
+          "account": "Beren Therapeutics, P.B.C.",
+          "product": "Developer Support",
+          "timeIST": "4:38 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "21s",
+          "channelEngage": "3m",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "480389147",
+          "account": "Au Small Finance Bank Ltd.",
+          "product": "Developer Support",
+          "timeIST": "4:22 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "13s",
+          "channelEngage": "16s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "480362419",
+          "account": "Alcon Vision LLC (Org ID: 00DG0000000gc7V)",
+          "product": "Developer Support",
+          "timeIST": "3:12 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "18s",
+          "channelEngage": "1m 32s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "479795953",
+          "account": "Nestlé Operational Services Worldwide (NOSW) S.A.",
+          "product": "Digital Engagement",
+          "timeIST": "2:08 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "21s",
+          "channelEngage": "2m 12s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "480318926",
+          "account": "VHI Member Engagement Platform",
+          "product": "Developer Support",
+          "timeIST": "1:33 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "27s",
+          "channelEngage": "53s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "480320716",
+          "account": "VHI Member Engagement Platform",
+          "product": "Cases, Knowledge, Service Cloud Console, Work.com",
+          "timeIST": "1:22 PM",
+          "manager": "Mirza",
+          "isRed": true,
+          "ack": "1m 9s",
+          "resolve": null,
+          "channelEngage": "29s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "479385937",
+          "account": "VHI Member Engagement Platform",
+          "product": "How-to, Setup, Configuration, Data Management",
+          "timeIST": "1:12 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "13s",
+          "channelEngage": "33s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "480303610",
+          "account": "Illumina, Inc.",
+          "product": "Service Cloud Voice",
+          "timeIST": "1:08 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "17s",
+          "channelEngage": "35s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "480307522",
+          "account": "GODREJ AND BOYCE MANUFACTURING COMPANY LIMITED",
+          "product": "Developer Support",
+          "timeIST": "12:47 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "13s",
+          "channelEngage": "20s",
+          "bridgeWithin15m": true,
           "bridgeNA": false
         }
       ]
