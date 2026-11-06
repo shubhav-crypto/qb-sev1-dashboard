@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated": "2026-11-04T19:30:00+05:30",
-    "totalCases": 1985,
-    "daysTracked": 130
+    "generated": "2026-11-06T19:30:00+05:30",
+    "totalCases": 2007,
+    "daysTracked": 131
   },
   "schedule": {
     "2026-06-01": {
@@ -302,7 +302,7 @@
         },
         {
           "caseNum": "473604096",
-          "account": "bp International Ltd – Colleagues Org",
+          "account": "bp International Ltd \u2013 Colleagues Org",
           "product": "Digital Engagement",
           "timeIST": "5:24 PM",
           "quality": "STRONG",
@@ -469,7 +469,7 @@
         },
         {
           "caseNum": "473613541",
-          "account": "Cummins – Guidanz (Service Org)",
+          "account": "Cummins \u2013 Guidanz (Service Org)",
           "product": "Developer Support",
           "timeIST": "4:00 PM",
           "quality": "STRONG",
@@ -790,7 +790,7 @@
       "cases": [
         {
           "caseNum": "473633737",
-          "account": "Guardant Health – Screening Org",
+          "account": "Guardant Health \u2013 Screening Org",
           "product": "Digital Engagement",
           "timeIST": "1:12 PM",
           "quality": "STRONG",
@@ -900,7 +900,7 @@
           "isRed": false,
           "bridgeWithin15m": false,
           "resolvedAt": null,
-          "resolvedText": "Still open — no Sev1 end time recorded (Status: Need More Information)",
+          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Need More Information)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-04 15:59:44 IST",
           "oiSource": "orgcs",
@@ -1051,7 +1051,7 @@
           "bridgeWithin15m": true,
           "resolvedAt": null,
           "oiDuration": null,
-          "resolvedText": "Still open — no Sev1 end time recorded (Status: Solution Provided)",
+          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Solution Provided)",
           "channelCreatedAt": "2026-06-04 19:15:11 IST",
           "oiSource": "orgcs",
           "execTagged": []
@@ -1173,7 +1173,7 @@
         },
         {
           "caseNum": "473657275",
-          "account": "bp International Ltd – Colleagues Org",
+          "account": "bp International Ltd \u2013 Colleagues Org",
           "product": "Digital Engagement",
           "timeIST": "5:34 PM",
           "quality": "STRONG",
@@ -1524,7 +1524,7 @@
         {
           "caseNum": "473697035",
           "account": "Tata Consumer Products",
-          "product": "Agentforce – Service",
+          "product": "Agentforce \u2013 Service",
           "timeIST": "5:42 PM",
           "manager": "Jyothirmayee",
           "quality": "MODERATE",
@@ -2039,7 +2039,7 @@
           "isRed": false,
           "bridgeWithin15m": false,
           "resolvedAt": "2026-06-10 19:54:13 IST",
-          "resolvedText": "no actions pending — their team had a confusion",
+          "resolvedText": "no actions pending \u2014 their team had a confusion",
           "oiDuration": "31m",
           "channelCreatedAt": "2026-06-10 19:23:12 IST",
           "bridgeCreatedAt": null,
@@ -2326,11 +2326,11 @@
       "callouts": [
         {
           "type": "mci",
-          "text": "⚡ Active MCI: MCS Prod3 Availability Drop — CIR: #icc-91554592 · Sev4 · Team: Messaging Channels and Features"
+          "text": "\u26a1 Active MCI: MCS Prod3 Availability Drop \u2014 CIR: #icc-91554592 \u00b7 Sev4 \u00b7 Team: Messaging Channels and Features"
         },
         {
           "type": "exec",
-          "text": "👁 Exec Visibility — Continue to monitor: Maersk (Issue recurred, customer temp: HOT)"
+          "text": "\ud83d\udc41 Exec Visibility \u2014 Continue to monitor: Maersk (Issue recurred, customer temp: HOT)"
         }
       ]
     },
@@ -2493,7 +2493,7 @@
           "bridgeWithin15m": false,
           "resolvedAt": "2026-06-13 10:41:46 IST",
           "oiDuration": "17h 8m",
-          "resolvedText": "CIC Update :: Issue has been mitigated - component switched V2→V1, resolved.",
+          "resolvedText": "CIC Update :: Issue has been mitigated - component switched V2\u2192V1, resolved.",
           "channelCreatedAt": "2026-06-12 17:33:22 IST",
           "bridgeCreatedAt": "2026-06-13 09:39:54 IST",
           "bridgeNA": "outside-window",
@@ -2609,7 +2609,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "👁 Exec Visibility — Continue to monitor: Claro S.A., The Reinalt-Thomas Corporation (customer temp: HOT)"
+          "text": "\ud83d\udc41 Exec Visibility \u2014 Continue to monitor: Claro S.A., The Reinalt-Thomas Corporation (customer temp: HOT)"
         }
       ]
     },
@@ -3321,7 +3321,7 @@
           "isRed": false,
           "bridgeWithin15m": true,
           "resolvedAt": "2026-06-16 15:23:51 IST",
-          "resolvedText": "they can login manually after session timeout — CIC disengaging",
+          "resolvedText": "they can login manually after session timeout \u2014 CIC disengaging",
           "oiDuration": "1h 40m",
           "channelCreatedAt": "2026-06-16 13:43:35 IST",
           "bridgeCreatedAt": "2026-06-16 13:49:07 IST",
@@ -3374,7 +3374,7 @@
           "isRed": false,
           "bridgeWithin15m": false,
           "resolvedAt": "2026-06-16 17:57:59 IST",
-          "resolvedText": "issue is intermittent — CIC can disengage for now",
+          "resolvedText": "issue is intermittent \u2014 CIC can disengage for now",
           "oiDuration": "3h 42m",
           "channelCreatedAt": "2026-06-16 14:15:02 IST",
           "bridgeCreatedAt": null,
@@ -3443,7 +3443,7 @@
           "isRed": false,
           "bridgeWithin15m": false,
           "resolvedAt": null,
-          "resolvedText": "Still open — no Sev1 end time recorded (Status: Working)",
+          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Working)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 16:26:04 IST",
           "oiSource": "orgcs",
@@ -3461,7 +3461,7 @@
           "isRed": false,
           "bridgeWithin15m": true,
           "resolvedAt": null,
-          "resolvedText": "Still open — no Sev1 end time recorded (Status: Working)",
+          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Working)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 16:42:35 IST",
           "oiSource": "orgcs",
@@ -3496,7 +3496,7 @@
           "isRed": false,
           "bridgeWithin15m": false,
           "resolvedAt": null,
-          "resolvedText": "Still open — no Sev1 end time recorded (Status: Need More Information)",
+          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Need More Information)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 17:49:41 IST",
           "oiSource": "orgcs",
@@ -3531,7 +3531,7 @@
           "isRed": false,
           "bridgeWithin15m": true,
           "resolvedAt": null,
-          "resolvedText": "Still open — no Sev1 end time recorded (Status: Need More Information)",
+          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Need More Information)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 18:29:22 IST",
           "oiSource": "orgcs",
@@ -3550,7 +3550,7 @@
           "bridgeWithin15m": true,
           "bridgeNA": "throttle",
           "resolvedAt": null,
-          "resolvedText": "Still open — no Sev1 end time recorded (Status: Solution Provided)",
+          "resolvedText": "Still open \u2014 no Sev1 end time recorded (Status: Solution Provided)",
           "oiDuration": null,
           "channelCreatedAt": "2026-06-16 18:49:27 IST",
           "oiSource": "orgcs",
@@ -3561,7 +3561,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "👁 Exec Visibility — Continue to monitor: Disney Streaming Services LLC, Avent-INC, Claro S.A., The Reinalt-Thomas Corporation, Philip Morris International IT Service Center Sàrl"
+          "text": "\ud83d\udc41 Exec Visibility \u2014 Continue to monitor: Disney Streaming Services LLC, Avent-INC, Claro S.A., The Reinalt-Thomas Corporation, Philip Morris International IT Service Center S\u00e0rl"
         }
       ]
     },
@@ -3846,7 +3846,7 @@
         },
         {
           "caseNum": "473861771",
-          "account": "Manufacture Française des Pneumatiques Michelin (SELA)",
+          "account": "Manufacture Fran\u00e7aise des Pneumatiques Michelin (SELA)",
           "product": "Developer Support",
           "timeIST": "7:28 PM",
           "ack": "1m 6s",
@@ -5292,7 +5292,7 @@
         },
         {
           "caseNum": "473814386",
-          "account": "Stellantis España S.L.",
+          "account": "Stellantis Espa\u00f1a S.L.",
           "product": "Developer Support",
           "timeIST": "6:08 PM",
           "ack": null,
@@ -5825,7 +5825,7 @@
         },
         {
           "caseNum": "473939434",
-          "account": "Bouygues Telecom - IT Réseau",
+          "account": "Bouygues Telecom - IT R\u00e9seau",
           "product": "Field Service",
           "timeIST": "1:54 PM",
           "ack": "19s",
@@ -6046,7 +6046,7 @@
         },
         {
           "caseNum": "473947827",
-          "account": "El Corte Inglés SA",
+          "account": "El Corte Ingl\u00e9s SA",
           "product": "Digital Engagement",
           "timeIST": "5:57 PM",
           "ack": "25s",
@@ -6072,7 +6072,7 @@
         },
         {
           "caseNum": "473518335",
-          "account": "iFood.com Agência de Restaurantes Online S.A (New Org)",
+          "account": "iFood.com Ag\u00eancia de Restaurantes Online S.A (New Org)",
           "product": "Network Infrastructure and Core Maintenance",
           "timeIST": "6:08 PM",
           "ack": null,
@@ -6709,7 +6709,7 @@
         },
         {
           "caseNum": "473976189",
-          "account": "Nestlé Operational Services Worldwide (NOSW) S.A.",
+          "account": "Nestl\u00e9 Operational Services Worldwide (NOSW) S.A.",
           "product": "Service Cloud Voice",
           "timeIST": "6:31 PM",
           "ack": null,
@@ -6852,7 +6852,7 @@
         },
         {
           "caseNum": "473907175",
-          "account": "Deutsche Börse AG",
+          "account": "Deutsche B\u00f6rse AG",
           "product": "Developer Support",
           "timeIST": "2:05 PM",
           "ack": null,
@@ -6995,7 +6995,7 @@
       "cases": [
         {
           "caseNum": "473994518",
-          "account": "Stellantis España S.L.",
+          "account": "Stellantis Espa\u00f1a S.L.",
           "product": "Digital Engagement",
           "timeIST": "12:32 PM",
           "ack": null,
@@ -7528,7 +7528,7 @@
         },
         {
           "caseNum": "473861771",
-          "account": "Manufacture Française des Pneumatiques Michelin (SELA)",
+          "account": "Manufacture Fran\u00e7aise des Pneumatiques Michelin (SELA)",
           "product": "Developer Support",
           "timeIST": "2:52 PM",
           "ack": null,
@@ -8854,7 +8854,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "Exec Visibility — Mcafee-itsm-org-474077391 | Continue to monitor the Org"
+          "text": "Exec Visibility \u2014 Mcafee-itsm-org-474077391 | Continue to monitor the Org"
         }
       ],
       "cases": [
@@ -9458,7 +9458,7 @@
         },
         {
           "caseNum": "474102413",
-          "account": "Deutsche Börse AG",
+          "account": "Deutsche B\u00f6rse AG",
           "product": "Experience Builder and Content Management",
           "timeIST": "3:32 PM",
           "ack": "36s",
@@ -9871,7 +9871,7 @@
           "ack": null,
           "channelEngage": "3m 14s",
           "resolvedAt": null,
-          "resolvedText": "Channel created 2:37:05 PM IST. Mirza (EMEA QB Manager) engaged at 2:40:19 PM IST (3m 14s), assigning Surendra Reddy Satti as EMEA case owner after customer raised severity and requested a meeting. Customer bridge started by Surendra at 2:55:20 PM IST (18m 15s after channel creation — over the 15 min threshold).",
+          "resolvedText": "Channel created 2:37:05 PM IST. Mirza (EMEA QB Manager) engaged at 2:40:19 PM IST (3m 14s), assigning Surendra Reddy Satti as EMEA case owner after customer raised severity and requested a meeting. Customer bridge started by Surendra at 2:55:20 PM IST (18m 15s after channel creation \u2014 over the 15 min threshold).",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-20T14:37:05+05:30",
           "resolve": "16s",
@@ -10039,7 +10039,7 @@
           "ack": null,
           "channelEngage": "57s",
           "resolvedAt": null,
-          "resolvedText": "Channel created 5:44:39 PM IST. Mirza (EMEA QB Manager) engaged at 5:45:37 PM IST (57s), noting an EMEA case owner would be looped in shortly. Aditi Dey (case owner) initiated a customer bridge at 6:00:12 PM IST (15m 33s after channel creation — just over the 15 min threshold).",
+          "resolvedText": "Channel created 5:44:39 PM IST. Mirza (EMEA QB Manager) engaged at 5:45:37 PM IST (57s), noting an EMEA case owner would be looped in shortly. Aditi Dey (case owner) initiated a customer bridge at 6:00:12 PM IST (15m 33s after channel creation \u2014 just over the 15 min threshold).",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-20T17:44:39+05:30",
           "resolve": "17s",
@@ -10081,7 +10081,7 @@
           "ack": null,
           "channelEngage": "2m 23s",
           "resolvedAt": null,
-          "resolvedText": "Channel created 6:56:53 PM IST. Mirza (EMEA QB Manager) engaged at 6:59:17 PM IST (2m 23s), assigning Siddharth Parmar as case owner. Issue concerned a weak self-signed certificate notification from Trust360; resolved via customer guidance with no Salesforce action needed. Siddharth Parmar initiated a Gmeet bridge at 7:12:19 PM IST (15m 26s after channel creation — just over the 15 min threshold).",
+          "resolvedText": "Channel created 6:56:53 PM IST. Mirza (EMEA QB Manager) engaged at 6:59:17 PM IST (2m 23s), assigning Siddharth Parmar as case owner. Issue concerned a weak self-signed certificate notification from Trust360; resolved via customer guidance with no Salesforce action needed. Siddharth Parmar initiated a Gmeet bridge at 7:12:19 PM IST (15m 26s after channel creation \u2014 just over the 15 min threshold).",
           "oiDuration": null,
           "channelCreatedAt": "2026-07-20T18:56:53+05:30",
           "resolve": "29s",
@@ -11762,7 +11762,7 @@
         },
         {
           "caseNum": "474201115",
-          "account": "Nestlé Operational Services Worldwide (NOSW) S.A.",
+          "account": "Nestl\u00e9 Operational Services Worldwide (NOSW) S.A.",
           "product": "Developer Support",
           "timeIST": "3:38 PM",
           "ack": "43s",
@@ -12230,7 +12230,7 @@
         },
         {
           "caseNum": "474211660",
-          "account": "El Corte Inglés SA",
+          "account": "El Corte Ingl\u00e9s SA",
           "product": "Network Infrastructure and Core Maintenance",
           "timeIST": "3:14 PM",
           "ack": null,
@@ -12334,7 +12334,7 @@
         },
         {
           "caseNum": "474212259",
-          "account": "Prodesp - Empresa de TI do Estado de São Paulo_PPT",
+          "account": "Prodesp - Empresa de TI do Estado de S\u00e3o Paulo_PPT",
           "product": "Digital Engagement",
           "timeIST": "4:16 PM",
           "ack": null,
@@ -12723,7 +12723,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "👁 Exec Visibility — MetLife Services and Solutions, LLC"
+          "text": "\ud83d\udc41 Exec Visibility \u2014 MetLife Services and Solutions, LLC"
         }
       ],
       "cases": [
@@ -12858,7 +12858,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "👁 Exec Visibility — MetLife Services and Solutions, LLC"
+          "text": "\ud83d\udc41 Exec Visibility \u2014 MetLife Services and Solutions, LLC"
         }
       ],
       "cases": [
@@ -13215,7 +13215,7 @@
         },
         {
           "caseNum": "474178669",
-          "account": "Stellantis España S.L.",
+          "account": "Stellantis Espa\u00f1a S.L.",
           "product": "Digital Engagement",
           "timeIST": "3:16 PM",
           "ack": null,
@@ -13853,7 +13853,7 @@
         },
         {
           "caseNum": "474300069",
-          "account": "Ministère de l'Éducation nationale et de la Jeunesse et des sports",
+          "account": "Minist\u00e8re de l'\u00c9ducation nationale et de la Jeunesse et des sports",
           "product": "Security & Activations",
           "timeIST": "2:37 PM",
           "manager": "Rohit",
@@ -14080,7 +14080,7 @@
         },
         {
           "caseNum": "474316802",
-          "account": "Ministère de l'Éducation nationale et de la Jeunesse et des sports",
+          "account": "Minist\u00e8re de l'\u00c9ducation nationale et de la Jeunesse et des sports",
           "product": "Security & Activations",
           "timeIST": "4:50 PM",
           "manager": "Jyothirmayee",
@@ -14673,7 +14673,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "Potential Exec Visibility — Claro S.A. case 474393450"
+          "text": "Potential Exec Visibility \u2014 Claro S.A. case 474393450"
         }
       ],
       "cases": [
@@ -14721,7 +14721,7 @@
         },
         {
           "caseNum": "474400617",
-          "account": "Deutsche Börse AG",
+          "account": "Deutsche B\u00f6rse AG",
           "product": "Developer Support",
           "timeIST": "2:14 PM",
           "manager": "Mirza",
@@ -14831,7 +14831,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "Potential Exec Visibility — One New Zealand Group Limited case 474313812"
+          "text": "Potential Exec Visibility \u2014 One New Zealand Group Limited case 474313812"
         }
       ],
       "cases": [
@@ -15179,7 +15179,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "Potential Exec Visibility — AGL Energy Limited (474408556) and One New Zealand Group Limited (474313812 / 474387895)"
+          "text": "Potential Exec Visibility \u2014 AGL Energy Limited (474408556) and One New Zealand Group Limited (474313812 / 474387895)"
         }
       ],
       "cases": [
@@ -15323,7 +15323,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "Potential Exec Visibility — Pearson Education, Inc. One CRM and Google LLC"
+          "text": "Potential Exec Visibility \u2014 Pearson Education, Inc. One CRM and Google LLC"
         }
       ],
       "cases": [
@@ -15385,7 +15385,7 @@
         },
         {
           "caseNum": "474316802",
-          "account": "Ministère de l'Éducation nationale et de la Jeunesse et des sports",
+          "account": "Minist\u00e8re de l'\u00c9ducation nationale et de la Jeunesse et des sports",
           "product": "Security & Activations",
           "timeIST": "2:04 PM",
           "manager": "Mirza",
@@ -15570,7 +15570,7 @@
         },
         {
           "caseNum": "474453784",
-          "account": "Brau Union Österreich Aktiengesellschaft",
+          "account": "Brau Union \u00d6sterreich Aktiengesellschaft",
           "product": "Developer Support",
           "timeIST": "5:38 PM",
           "manager": "Shubha",
@@ -17478,7 +17478,7 @@
         },
         {
           "caseNum": "474526159",
-          "account": "Manufacture Française des Pneumatiques Michelin (SELA)",
+          "account": "Manufacture Fran\u00e7aise des Pneumatiques Michelin (SELA)",
           "product": "Service Cloud Voice",
           "timeIST": "7:20 PM",
           "ack": null,
@@ -18441,7 +18441,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "👁 Exec Visibility — Banco & General Motors"
+          "text": "\ud83d\udc41 Exec Visibility \u2014 Banco & General Motors"
         }
       ],
       "cases": [
@@ -18602,7 +18602,7 @@
         },
         {
           "caseNum": "474590144",
-          "account": "Itaú Seguros (Manufatura)",
+          "account": "Ita\u00fa Seguros (Manufatura)",
           "product": "How-to, Setup, Configuration, Data Management",
           "timeIST": "3:59 PM",
           "manager": "Mirza",
@@ -18680,7 +18680,7 @@
         },
         {
           "caseNum": "474598888",
-          "account": "Stellantis España S.L.",
+          "account": "Stellantis Espa\u00f1a S.L.",
           "product": "Digital Engagement",
           "timeIST": "6:31 PM",
           "manager": "Mirza",
@@ -18717,7 +18717,7 @@
       "callouts": [
         {
           "type": "mci",
-          "text": "Active MCI — 16 Sep: 98 Sev1 alerts across many accounts in one QB window"
+          "text": "Active MCI \u2014 16 Sep: 98 Sev1 alerts across many accounts in one QB window"
         }
       ],
       "cases": [
@@ -18840,7 +18840,7 @@
         },
         {
           "caseNum": "474609153",
-          "account": "iFood.com Agência de Restaurantes Online S.A (New Org)",
+          "account": "iFood.com Ag\u00eancia de Restaurantes Online S.A (New Org)",
           "product": "Network Infrastructure and Core Maintenance",
           "timeIST": "4:54 PM",
           "ack": "1m",
@@ -18866,7 +18866,7 @@
         },
         {
           "caseNum": "474609246",
-          "account": "Bouygues Telecom - IT Réseau",
+          "account": "Bouygues Telecom - IT R\u00e9seau",
           "product": "Field Service",
           "timeIST": "5:03 PM",
           "ack": null,
@@ -20294,7 +20294,7 @@
         },
         {
           "caseNum": "474626490",
-          "account": "Iberia Lineas Aereas de España Sociedad Anonima Operadora",
+          "account": "Iberia Lineas Aereas de Espa\u00f1a Sociedad Anonima Operadora",
           "product": "Digital Engagement",
           "timeIST": "2:50 PM",
           "ack": "12s",
@@ -21213,7 +21213,7 @@
         },
         {
           "caseNum": "474656638",
-          "account": "Manufacture Française des Pneumatiques Michelin (SELA)",
+          "account": "Manufacture Fran\u00e7aise des Pneumatiques Michelin (SELA)",
           "product": "Developer Support",
           "timeIST": "6:25 PM",
           "ack": null,
@@ -21821,7 +21821,7 @@
         },
         {
           "caseNum": "474685216",
-          "account": "Stellantis España S.L.",
+          "account": "Stellantis Espa\u00f1a S.L.",
           "product": "Digital Engagement",
           "timeIST": "4:17 PM",
           "ack": "11s",
@@ -22209,7 +22209,7 @@
         },
         {
           "caseNum": "474724619",
-          "account": "Stellantis España S.L.",
+          "account": "Stellantis Espa\u00f1a S.L.",
           "product": "Digital Engagement",
           "timeIST": "12:51 PM",
           "ack": "20s",
@@ -22402,7 +22402,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "👁 Exec Visibility — None"
+          "text": "\ud83d\udc41 Exec Visibility \u2014 None"
         }
       ],
       "cases": [
@@ -22616,7 +22616,7 @@
         },
         {
           "caseNum": "474741750",
-          "account": "Société des Loteries du Québec, La",
+          "account": "Soci\u00e9t\u00e9 des Loteries du Qu\u00e9bec, La",
           "product": "Developer Support",
           "timeIST": "6:31 PM",
           "manager": "Mirza",
@@ -22666,7 +22666,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "👁 Exec Visibility — None"
+          "text": "\ud83d\udc41 Exec Visibility \u2014 None"
         }
       ],
       "cases": [
@@ -22889,7 +22889,7 @@
       "callouts": [
         {
           "type": "exec",
-          "text": "👁 Exec Visibility — None"
+          "text": "\ud83d\udc41 Exec Visibility \u2014 None"
         }
       ],
       "cases": [
@@ -23206,7 +23206,7 @@
         },
         {
           "caseNum": "474905784",
-          "account": "Pathé Cinemas Services",
+          "account": "Path\u00e9 Cinemas Services",
           "product": "Service Cloud Voice",
           "timeIST": "1:56 PM",
           "ack": null,
@@ -24048,7 +24048,7 @@
         },
         {
           "caseNum": "474988983",
-          "account": "Electricité de France SA",
+          "account": "Electricit\u00e9 de France SA",
           "product": "Developer Support",
           "timeIST": "4:00 PM",
           "ack": null,
@@ -25770,7 +25770,7 @@
         },
         {
           "caseNum": "475864552",
-          "account": "El Corte Inglés SA",
+          "account": "El Corte Ingl\u00e9s SA",
           "product": "Developer Support",
           "timeIST": "1:35 PM",
           "ack": "7s",
@@ -26742,7 +26742,7 @@
         },
         {
           "caseNum": "476145668",
-          "account": "Iberia Lineas Aereas de España Sociedad Anonima Operadora",
+          "account": "Iberia Lineas Aereas de Espa\u00f1a Sociedad Anonima Operadora",
           "product": "Email Delivery & Desktop Integrations",
           "timeIST": "4:46 PM",
           "ack": "6s",
@@ -27854,7 +27854,7 @@
         },
         {
           "caseNum": "477712104",
-          "account": "Stellantis España S.L.",
+          "account": "Stellantis Espa\u00f1a S.L.",
           "product": "Service Cloud Voice",
           "timeIST": "5:57 PM",
           "ack": "3m 1s",
@@ -27880,7 +27880,7 @@
         },
         {
           "caseNum": "477727022",
-          "account": "Bord Gáis Energy Limited",
+          "account": "Bord G\u00e1is Energy Limited",
           "product": "Prompt Builder",
           "timeIST": "6:37 PM",
           "ack": "2m 10s",
@@ -28475,7 +28475,7 @@
         },
         {
           "caseNum": "479795953",
-          "account": "Nestlé Operational Services Worldwide (NOSW) S.A.",
+          "account": "Nestl\u00e9 Operational Services Worldwide (NOSW) S.A.",
           "product": "Digital Engagement",
           "timeIST": "2:08 PM",
           "manager": "Mirza",
@@ -28549,6 +28549,309 @@
           "resolve": "13s",
           "channelEngage": "20s",
           "bridgeWithin15m": true,
+          "bridgeNA": false
+        }
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "label": "Nov 6",
+      "dayOfWeek": "Fri",
+      "isWeekend": false,
+      "manager": "Mirza",
+      "canvasId": null,
+      "eodDone": true,
+      "callouts": [
+        {
+          "type": "exec",
+          "text": "\ud83d\udc41 Exec Visibility \u2014 475999830 || Woolworths-group-limited"
+        }
+      ],
+      "cases": [
+        {
+          "caseNum": "481501892",
+          "account": "Black Duck Software, Inc. new org",
+          "product": "Experience Management and Workspaces",
+          "timeIST": "6:48 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": "28s",
+          "resolve": "31s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "481492164",
+          "account": "Daikin Comfort Technologies North America, Inc",
+          "product": "Service Cloud Voice",
+          "timeIST": "6:05 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": "26s",
+          "resolve": "28s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "481479170",
+          "account": "F. Hoffmann-La Roche AG",
+          "product": "Developer Support",
+          "timeIST": "5:34 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "1m 13s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "481473222",
+          "account": "Sunny Benefits, Inc.",
+          "product": "Digital Engagement",
+          "timeIST": "4:40 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": "16s",
+          "resolve": "18s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "481472369",
+          "account": "Vistaprint Limited",
+          "product": "Mandatory Security Controls",
+          "timeIST": "4:36 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": "17s",
+          "resolve": "20s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "481471701",
+          "account": "Jaguar Land Rover Limited",
+          "product": "Service Cloud Voice",
+          "timeIST": "4:33 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": "24s",
+          "resolve": "26s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "481461650",
+          "account": "Vantive US Healthcare, LLC",
+          "product": "Developer Support",
+          "timeIST": "3:46 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": "21s",
+          "resolve": "23s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "481461102",
+          "account": "Airbnb, Inc.",
+          "product": "Developer Support",
+          "timeIST": "3:44 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "32s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "481452563",
+          "account": "Boots UK Limited",
+          "product": "Mandatory Security Controls",
+          "timeIST": "3:18 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": "54s",
+          "resolve": "56s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "481453216",
+          "account": "British American Shared Services (GSD) Limited",
+          "product": "Digital Engagement",
+          "timeIST": "3:08 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": "22s",
+          "resolve": "24s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "477003517",
+          "account": "Mahindra & Mahindra Ltd.",
+          "product": "CRM Analytics",
+          "timeIST": "3:04 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "1m 35s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "481406110",
+          "account": "Commonwealth Bank of Australia",
+          "product": "Developer Support",
+          "timeIST": "2:53 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": "15s",
+          "resolve": "17s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "481445749",
+          "account": "Telstra Limited",
+          "product": "Developer Support",
+          "timeIST": "2:35 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": "18s",
+          "resolve": "21s",
+          "channelEngage": "2m 14s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "480937087",
+          "account": "IDFC FIRST Bank Limited (CRM)",
+          "product": "Developer Support",
+          "timeIST": "1:39 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": "27s",
+          "resolve": "30s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "481418689",
+          "account": "Schneider Electric Industries SAS",
+          "product": "Developer Support",
+          "timeIST": "12:59 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "34s",
+          "channelEngage": "1m 14s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "481413294",
+          "account": "PepsiCo, Inc. Service Cloud",
+          "product": "Email Delivery & Desktop Integrations",
+          "timeIST": "12:44 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "34s",
+          "channelEngage": "1m 18s",
+          "bridgeWithin15m": true,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "481092889",
+          "account": "GHO",
+          "product": "Service Cloud Voice",
+          "timeIST": "2:01 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": "22s",
+          "resolve": "23s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "481076661",
+          "account": "GHO",
+          "product": "Security",
+          "timeIST": "1:45 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": "29s",
+          "resolve": "32s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "480564763",
+          "account": "GHO",
+          "product": "Developer Support",
+          "timeIST": "1:40 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": "37s",
+          "resolve": "39s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "475999830",
+          "account": "GHO",
+          "product": "Developer Support",
+          "timeIST": "1:33 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": "45s",
+          "resolve": "47s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "480898086",
+          "account": "GHO",
+          "product": "Cases/Knowledge/Service Cloud Console",
+          "timeIST": "1:26 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": "21s",
+          "resolve": "1m 17s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
+          "bridgeNA": false
+        },
+        {
+          "caseNum": "477638138",
+          "account": "GHO",
+          "product": "Service Cloud Voice",
+          "timeIST": "1:24 PM",
+          "manager": "Mirza",
+          "isRed": false,
+          "ack": null,
+          "resolve": "31s",
+          "channelEngage": null,
+          "bridgeWithin15m": null,
           "bridgeNA": false
         }
       ]
