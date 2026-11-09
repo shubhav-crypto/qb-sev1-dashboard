@@ -69,6 +69,17 @@ jobs:
               )
               return resp.json().get("messages", [])
 
+          # Debug: test auth first
+          r = requests.get("https://slack.com/api/auth.test", headers=headers)
+          print("Auth test:", r.json().get("ok"), r.json().get("user"), r.json().get("error"))
+
+          # Debug: try wider window for today
+          r2 = requests.get("https://slack.com/api/conversations.history",
+              headers=headers,
+              params={"channel": "C02K54WLXM2", "oldest": "1794153600", "latest": "1794239999", "limit": "5"})
+          d2 = r2.json()
+          print(f"Wide window test: ok={d2.get('ok')}, msgs={len(d2.get('messages', []))}, error={d2.get('error')}")
+
           alerts = fetch_channel("C02K54WLXM2", oldest, latest)
           print(f"Alerts: {len(alerts)} messages")
 
