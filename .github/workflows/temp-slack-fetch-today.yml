@@ -1,0 +1,108 @@
+name: Temp Slack Fetch Today
+
+on:
+  workflow_dispatch:
+    inputs:
+      oldest:
+        required: true
+      latest:
+        required: true
+      eod_oldest:
+        required: true
+      eod_latest:
+        required: true
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch Slack data
+        run: |
+          python3 << 'PYEOF'
+          import requests, json
+
+          token = "${{ secrets.SLACK_USER_TOKEN }}"
+          oldest = "${{ github.event.inputs.oldest }}"
+          latest = "${{ github.event.inputs.latest }}"
+          eod_oldest = "${{ github.event.inputs.eod_oldest }}"
+          eod_latest = "${{ github.event.inputs.eod_latest }}"
+          
+          headers = {"Authorization": f"Bearer {token}"}
+          
+          def fetch_channel(channel, oldest, latest, limit=100):
+              all_messages = []
+              cursor = None
+              while True:
+                  params = {
+                      "channel": channel,
+                      "oldest": oldest,
+                      "latest": latest,
+                      "limit": min(limit, 200),
+                      "inclusive": "true"
+                  }
+                  if cursor:
+                      params["cursor"] = cursor
+                  resp = requests.get(
+                      "https://slack.com/api/conversations.history",
+                      headers=headers,
+                      params=params
+                  )
+                  data = resp.json()
+                  all_messages.extend(data.get("messages", []))
+                  meta = data.get("response_metadata", {})
+                  cursor = meta.get("next_cursor", "")
+                  if not cursor or len(all_messages) >= limit:
+                      break
+              return all_messages
+
+          def fetch_thread(channel, thread_ts):
+              resp = requests.get(
+                  "https://slack.com/api/conversations.replies",
+                  headers=headers,
+                  params={"channel": channel, "ts": thread_ts, "limit": 50}
+              )
+              return resp.json().get("messages", [])
+
+          # Fetch alerts channel
+          alerts = fetch_channel("C02K54WLXM2", oldest, latest)
+          print(f"Alerts: {len(alerts)} messages")
+          
+          # Find case numbers and fetch threads
+          import re
+          threads = {}
+          case_msgs = []
+          for msg in alerts:
+              text = msg.get("text", "")
+              # Look for 9-digit case numbers
+              cases = re.findall(r'\b4[67]\d{7}\b', text)
+              if cases:
+                  case_msgs.append(msg)
+                  ts = msg.get("ts")
+                  if ts:
+                      replies = fetch_thread("C02K54WLXM2", ts)
+                      threads[ts] = replies
+                      print(f"  Case {cases[0]}: {len(replies)} thread replies")
+          
+          print(f"PD alert messages: {len(case_msgs)}")
+          
+          # Fetch EOD channel
+          eod_msgs = fetch_channel("C079QNQQTFC", eod_oldest, eod_latest, limit=20)
+          print(f"EOD: {len(eod_msgs)} messages")
+          
+          # Save all data
+          output = {
+              "alerts": alerts,
+              "alert_threads": threads,
+              "eod_messages": eod_msgs
+          }
+          with open("slack_data.json", "w") as f:
+              json.dump(output, f, indent=2)
+          print("Saved slack_data.json")
+          PYEOF
+
+      - name: Upload Slack data
+        uses: actions/upload-artifact@v4
+        with:
+          name: slack-data-today
+          path: slack_data.json
+          retention-days: 1
