@@ -28,13 +28,10 @@
   html { scroll-behavior: smooth; }
   body {
     margin: 0;
-    color: #e8eef8;
+    color: #032d60;
     font-family: "Salesforce Sans", Inter, Aptos, system-ui, -apple-system, "Segoe UI", sans-serif;
     line-height: 1.45;
-    background:
-      radial-gradient(900px 480px at 80% -10%, rgba(27,150,255,.28), transparent 60%),
-      radial-gradient(700px 420px at 0% 20%, rgba(11,92,171,.35), transparent 55%),
-      linear-gradient(180deg, #041633 0%, #062454 42%, #0a3f86 100%);
+    background: #eef3f8;
     min-height: 100vh;
   }
   a { color: var(--blue); }
@@ -74,7 +71,7 @@
   nav.tabs span { display: inline-grid; place-items: center; width: 18px; height: 18px; margin-right: 6px; border-radius: 50%; background: rgba(255,255,255,.15); font-size: 11px; }
   nav.tabs a[aria-selected="true"] span { background: var(--navy); color: #fff; }
 
-  main { max-width: 1240px; margin: 0 auto; padding: 28px clamp(16px, 3vw, 36px) 80px; }
+  main { max-width: 1440px; margin: 0 auto; padding: 28px clamp(16px, 3vw, 36px) 80px; }
   .panel { display: none; }
   .panel.active { display: block; }
 
@@ -88,15 +85,16 @@
   h1 em { font-style: normal; color: #5dffe0; }
   .sub { margin: 16px 0 0; font-size: 18px; opacity: .9; }
 
-  h2 { margin: 28px 0 6px; color: #fff; font-size: clamp(26px, 3vw, 34px); letter-spacing: -.02em; }
-  .lede { margin: 0 0 16px; color: #b7c6da; }
+  h2 { margin: 28px 0 6px; color: #032d60; font-size: clamp(26px, 3vw, 34px); letter-spacing: -.02em; }
+  .lede { margin: 0 0 16px; color: #3e4c5e; }
   .bar { display: flex; align-items: baseline; gap: 12px; }
   .bar::before { content: ""; width: 4px; height: 22px; border-radius: 4px; background: #7ec8ff; align-self: center; }
   .bar h2 { margin: 22px 0 8px; }
 
   .grid4 { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 14px; }
   .grid3 { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
-  .grid2 { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; }
+  .grid2 { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; align-items: start; }
+  .ops-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 14px; align-items: start; }
   .card { background: var(--card); border-radius: 16px; padding: 18px 18px 16px; box-shadow: var(--shadow); border-top: 4px solid var(--bright); }
   .card.t2 { border-top-color: #9050e9; }
   .card.t3 { border-top-color: var(--mint); }
@@ -116,20 +114,21 @@
   .kpi .d.flat { color: var(--muted); }
   .kpi .base { color: #8a97a6; font-size: 12px; font-weight: 600; }
 
-  .shell { overflow-x: auto; background: #fff; border-radius: 16px; box-shadow: var(--shadow); }
-  table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; min-width: 640px; }
-  th, td { padding: 12px 14px; text-align: right; border-bottom: 1px solid var(--line); }
+  .shell { background: #fff; border-radius: 16px; box-shadow: var(--shadow); }
+  table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; table-layout: auto; }
+  th, td { padding: 12px 14px; text-align: right; border-bottom: 1px solid var(--line); color: #032d60; white-space: normal; }
   th { background: #1b6ec2; color: #fff; font-size: 12px; letter-spacing: .04em; text-transform: uppercase; font-weight: 700; }
-  th:first-child, td:first-child { text-align: left; font-weight: 700; color: var(--ink); }
+  th:first-child, td:first-child { text-align: left; font-weight: 700; color: #032d60; }
   td:first-child { background: #f3f8fd; }
   tbody tr:last-child td { border-bottom: 0; }
-  caption { caption-side: bottom; text-align: left; color: var(--muted); font-size: 12px; padding: 8px 4px 0; }
+  caption { caption-side: bottom; text-align: left; color: #3e4c5e; font-size: 12px; padding: 8px 14px 12px; }
 
-  .hc { display: grid; grid-template-columns: 1.1fr 1fr 1fr .9fr; gap: 14px; }
-  .stat { background: #fff; border-radius: 16px; padding: 16px 18px; box-shadow: var(--shadow); }
-  .stat .big { font-size: 40px; font-weight: 800; color: var(--blue); line-height: 1; }
-  .stat .lbl { color: #8a3a4a; font-weight: 700; font-size: 13px; margin-top: 2px; }
-  .stat .row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid var(--line); }
+  .hc { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; align-items: stretch; }
+  .stat { background: #fff; border-radius: 16px; padding: 16px 18px; box-shadow: var(--shadow); color: #032d60; }
+  .stat .big { font-size: 40px; font-weight: 800; color: #0176d3; line-height: 1; }
+  .stat .lbl { color: #8a3a4a; font-weight: 700; font-size: 13px; margin: 6px 0 8px; }
+  .stat .row { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; border-bottom: 1px solid var(--line); color: #032d60; }
+  .stat .row b { color: #032d60; }
   .stat .row:last-child { border-bottom: 0; }
   .gap { background: linear-gradient(160deg, #1b6ec2, #0b5cab); color: #fff; border-radius: 16px; padding: 16px; display: grid; place-items: center; text-align: center; box-shadow: var(--shadow); }
   .gap .ring { width: 150px; height: 150px; border-radius: 50%; background: #d7ecff; color: var(--ink); display: grid; place-items: center; font-size: 48px; font-weight: 800; }
@@ -140,7 +139,7 @@
   .quote p { margin: 0 0 8px; font-size: 14px; }
   .quote .who { font-size: 12px; opacity: .8; }
   .timeline { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; margin-top: 8px; }
-  .tl { background: #fff; border-radius: 12px; padding: 10px; border-top: 3px solid var(--blue); font-size: 12px; }
+  .tl { background: #fff; color: #032d60; border-radius: 12px; padding: 10px; border-top: 3px solid var(--blue); font-size: 12px; }
   .tl b { display: block; color: var(--blue); margin-bottom: 4px; }
   .metrics3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
   .metrics3 div { background: #eaf3ff; border-radius: 14px; padding: 14px; text-align: center; }
@@ -155,11 +154,11 @@
   .dot.g { background: #2e844a; }
   .dot.a { background: #dd7a01; }
 
-  footer { color: #9fb2cc; text-align: center; padding: 28px 18px 22px; font-size: 12px; }
+  footer { color: #3e4c5e; text-align: center; padding: 28px 18px 22px; font-size: 12px; }
 
   :focus-visible { outline: 3px solid var(--bright); outline-offset: 2px; }
   @media (max-width: 980px) {
-    .grid4, .hc, .timeline { grid-template-columns: 1fr 1fr; }
+    .grid4, .hc, .timeline, .ops-grid { grid-template-columns: 1fr 1fr; }
     .grid3, .metrics3 { grid-template-columns: 1fr; }
   }
   @media (max-width: 640px) {
@@ -222,7 +221,7 @@
   </section>
 
   <section class="panel" id="team" role="tabpanel" aria-labelledby="tab-team" hidden>
-    <p class="eyebrow" style="color:#7ec8ff">Business overview</p>
+    <p class="eyebrow" style="color:#0176d3">Business overview</p>
     <h2 style="margin-top:0">EMEA Team Landscape</h2>
     <p class="lede">India and Dublin headcount, span of control, and attrition for October.</p>
     <div class="hc">
@@ -269,10 +268,10 @@
   </section>
 
   <section class="panel" id="ops" role="tabpanel" aria-labelledby="tab-ops" hidden>
-    <p class="eyebrow" style="color:#7ec8ff">Run the business</p>
+    <p class="eyebrow" style="color:#0176d3">Run the business</p>
     <h2 style="margin-top:0">Operational Metrics — Case and Chat</h2>
     <p class="lede">Dashboards: Chat Dashboard · KPI Dashboard (OrgCS)</p>
-    <div class="grid2">
+    <div class="ops-grid">
       <div class="shell">
         <table>
           <caption>Case metrics, MTD October vs MTD September 2026</caption>
@@ -314,7 +313,7 @@
   </section>
 
   <section class="panel" id="sev1" role="tabpanel" aria-labelledby="tab-sev1" hidden>
-    <p class="eyebrow" style="color:#7ec8ff">Critical support</p>
+    <p class="eyebrow" style="color:#0176d3">Critical support</p>
     <h2 style="margin-top:0">Sev 1 Experience</h2>
     <p class="lede">Four-month view through October 2026.</p>
     <div class="shell">
@@ -339,7 +338,7 @@
   </section>
 
   <section class="panel" id="invest" role="tabpanel" aria-labelledby="tab-invest" hidden>
-    <p class="eyebrow" style="color:#7ec8ff">Quality</p>
+    <p class="eyebrow" style="color:#0176d3">Quality</p>
     <h2 style="margin-top:0">Investigation Metrics — Monthly Scorecard</h2>
     <p class="lede">September closing actions reviewed in the October MBR. 68 of 102 completed, 34 pending review.</p>
     <div class="grid3">
@@ -403,7 +402,7 @@
   </section>
 
   <section class="panel" id="knowledge" role="tabpanel" aria-labelledby="tab-knowledge" hidden>
-    <p class="eyebrow" style="color:#7ec8ff">Knowledge</p>
+    <p class="eyebrow" style="color:#0176d3">Knowledge</p>
     <h2 style="margin-top:0">Knowledge Performance &amp; Insights</h2>
     <p class="lede">Resolution rate by cloud, February through September.</p>
     <div class="shell">
@@ -488,7 +487,7 @@
   </section>
 
   <section class="panel" id="enable" role="tabpanel" aria-labelledby="tab-enable" hidden>
-    <p class="eyebrow" style="color:#7ec8ff">People</p>
+    <p class="eyebrow" style="color:#0176d3">People</p>
     <h2 style="margin-top:0">Training and Enablement Update</h2>
     <div class="shell">
       <table>
