@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="EMEA Service Cloud Support Monthly Business Review — October 2026. Internal only.">
+<title>EMEA Service Cloud MBR | October 2026</title>
+<style>
+  :root {
+    --navy: #032d60;
+    --navy-2: #0b1f44;
+    --ink: #032d60;
+    --blue: #0176d3;
+    --bright: #1b96ff;
+    --teal: #0d9dda;
+    --mint: #06a59a;
+    --green: #2e844a;
+    --red: #ba0517;
+    --amber: #dd7a01;
+    --paper: #f4f7fb;
+    --white: #fff;
+    --muted: #5c6b7a;
+    --line: #e4e9f0;
+    --card: #ffffff;
+    --shadow: 0 10px 30px rgba(3, 45, 96, .08);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--paper); color: #1b2430; font-family: "Salesforce Sans", Inter, Aptos, system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.45; }
+  a { color: var(--blue); }
+  .skip { position: fixed; top: 8px; left: 8px; z-index: 100; padding: 10px 14px; background: #fff; transform: translateY(-160%); }
+  .skip:focus { transform: none; }
+
+  header.top {
+    position: sticky; top: 0; z-index: 30;
+    display: flex; align-items: center; gap: 14px;
+    min-height: 64px; padding: 0 clamp(16px, 3vw, 40px);
+    background: linear-gradient(90deg, #021a3a, #032d60 40%, #0b4f9c);
+    color: #fff;
+  }
+  .mark { width: 28px; height: 28px; border-radius: 8px; background: #e3066a; display: grid; place-items: center; font-size: 14px; }
+  .brand { font-weight: 700; letter-spacing: .01em; }
+  .brand small { display: block; font-weight: 500; opacity: .75; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+  .spacer { margin-left: auto; display: flex; align-items: center; gap: 12px; }
+  .when { opacity: .85; font-size: 14px; }
+  .pill { border: 1px solid rgba(255,255,255,.35); border-radius: 999px; padding: 6px 12px; font-size: 11px; font-weight: 800; letter-spacing: .08em; }
+
+  nav.tabs {
+    position: sticky; top: 64px; z-index: 25;
+    display: flex; gap: 4px; overflow-x: auto;
+    padding: 8px clamp(12px, 3vw, 36px);
+    background: #021833; border-bottom: 1px solid rgba(255,255,255,.08);
+  }
+  nav.tabs a {
+    flex: 0 0 auto; color: #c5d4e8; text-decoration: none;
+    padding: 8px 12px; border-radius: 8px; font-size: 13px; font-weight: 650;
+  }
+  nav.tabs a:hover { background: rgba(255,255,255,.08); color: #fff; }
+  nav.tabs a[aria-selected="true"] { background: #fff; color: var(--navy); }
+  nav.tabs span { display: inline-grid; place-items: center; width: 18px; height: 18px; margin-right: 6px; border-radius: 50%; background: rgba(255,255,255,.15); font-size: 11px; }
+  nav.tabs a[aria-selected="true"] span { background: var(--navy); color: #fff; }
+
+  main { max-width: 1240px; margin: 0 auto; padding: 28px clamp(16px, 3vw, 36px) 80px; }
+  .panel { display: none; }
+  .panel.active { display: block; }
+
+  .hero {
+    background: linear-gradient(120deg, #032d60 0%, #0b5cab 55%, #1b96ff 100%);
+    color: #fff; border-radius: 22px; padding: clamp(36px, 6vw, 72px) clamp(28px, 5vw, 64px);
+    box-shadow: var(--shadow); position: relative; overflow: hidden;
+  }
+  .hero::after { content: ""; position: absolute; right: -80px; top: -80px; width: 320px; height: 320px; border-radius: 50%; background: rgba(255,255,255,.08); }
+  .eyebrow { margin: 0 0 10px; letter-spacing: .16em; font-size: 12px; font-weight: 800; text-transform: uppercase; opacity: .85; }
+  h1 { margin: 0; font-size: clamp(42px, 6vw, 72px); line-height: .98; letter-spacing: -.03em; }
+  h1 em { font-style: normal; color: #7dffa1; }
+  .sub { margin: 16px 0 0; font-size: 18px; opacity: .9; }
+
+  h2 { margin: 28px 0 6px; color: var(--ink); font-size: clamp(26px, 3vw, 34px); letter-spacing: -.02em; }
+  .lede { margin: 0 0 16px; color: var(--muted); }
+  .bar { display: flex; align-items: baseline; gap: 12px; }
+  .bar::before { content: ""; width: 4px; height: 22px; border-radius: 4px; background: var(--bright); align-self: center; }
+
+  .grid4 { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 14px; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
+  .grid2 { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; }
+  .card { background: var(--card); border-radius: 16px; padding: 18px 18px 16px; box-shadow: var(--shadow); border-top: 4px solid var(--bright); }
+  .card.t2 { border-top-color: #9050e9; }
+  .card.t3 { border-top-color: var(--mint); }
+  .card.t4 { border-top-color: #ff9a3c; }
+  .num { font-size: 34px; font-weight: 800; color: #8fb4ff; line-height: 1; }
+  .card h3 { margin: 8px 0 8px; color: var(--ink); font-size: 16px; }
+  .card ul { margin: 0; padding-left: 16px; color: #3e4c5e; }
+  .card li { margin: 3px 0; }
+
+  .kpi { background: #fff; border-radius: 16px; padding: 16px 18px 14px; box-shadow: var(--shadow); }
+  .kpi .k { font-size: 11px; letter-spacing: .1em; font-weight: 800; color: var(--muted); text-transform: uppercase; }
+  .kpi .v { font-size: 34px; font-weight: 800; color: var(--ink); line-height: 1.1; margin-top: 4px; }
+  .kpi .d { margin-top: 6px; font-size: 13px; font-weight: 700; }
+  .kpi .d.up { color: var(--green); }
+  .kpi .d.down { color: var(--red); }
+  .kpi .d.flat { color: var(--muted); }
+  .kpi .base { color: #8a97a6; font-size: 12px; font-weight: 600; }
+
+  .shell { overflow-x: auto; background: #fff; border-radius: 16px; box-shadow: var(--shadow); }
+  table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; min-width: 640px; }
+  th, td { padding: 12px 14px; text-align: right; border-bottom: 1px solid var(--line); }
+  th { background: #1b6ec2; color: #fff; font-size: 12px; letter-spacing: .04em; text-transform: uppercase; font-weight: 700; }
+  th:first-child, td:first-child { text-align: left; font-weight: 700; color: var(--ink); }
+  td:first-child { background: #f3f8fd; }
+  tbody tr:last-child td { border-bottom: 0; }
+  caption { caption-side: bottom; text-align: left; color: var(--muted); font-size: 12px; padding: 8px 4px 0; }
+
+  .hc { display: grid; grid-template-columns: 1.1fr 1fr 1fr .9fr; gap: 14px; }
+  .stat { background: #fff; border-radius: 16px; padding: 16px 18px; box-shadow: var(--shadow); }
+  .stat .big { font-size: 40px; font-weight: 800; color: var(--blue); line-height: 1; }
+  .stat .lbl { color: #8a3a4a; font-weight: 700; font-size: 13px; margin-top: 2px; }
+  .stat .row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid var(--line); }
+  .stat .row:last-child { border-bottom: 0; }
+  .gap { background: linear-gradient(160deg, #1b6ec2, #0b5cab); color: #fff; border-radius: 16px; padding: 16px; display: grid; place-items: center; text-align: center; box-shadow: var(--shadow); }
+  .gap .ring { width: 150px; height: 150px; border-radius: 50%; background: #d7ecff; color: var(--ink); display: grid; place-items: center; font-size: 48px; font-weight: 800; }
+  .pills { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
+  .pills span { background: #032d60; color: #fff; border-radius: 10px; padding: 6px 10px; font-size: 13px; display: flex; justify-content: space-between; }
+
+  .quote { background: #032d60; color: #fff; border-radius: 16px; padding: 16px 18px; }
+  .quote p { margin: 0 0 8px; font-size: 14px; }
+  .quote .who { font-size: 12px; opacity: .8; }
+  .timeline { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; margin-top: 8px; }
+  .tl { background: #fff; border-radius: 12px; padding: 10px; border-top: 3px solid var(--blue); font-size: 12px; }
+  .tl b { display: block; color: var(--blue); margin-bottom: 4px; }
+  .metrics3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .metrics3 div { background: #eaf3ff; border-radius: 14px; padding: 14px; text-align: center; }
+  .metrics3 strong { display: block; font-size: 28px; color: var(--blue); }
+  .metrics3 span { font-size: 11px; letter-spacing: .08em; color: var(--muted); font-weight: 800; }
+
+  .check li { list-style: none; margin: 8px 0; padding-left: 0; }
+  .check { padding-left: 0; }
+  .check li::before { content: "✓ "; color: var(--mint); font-weight: 800; }
+
+  .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; }
+  .dot.g { background: #2e844a; }
+  .dot.a { background: #dd7a01; }
+
+  footer { background: var(--navy); color: #c5d4e8; text-align: center; padding: 18px; font-size: 12px; }
+
+  :focus-visible { outline: 3px solid var(--bright); outline-offset: 2px; }
+  @media (max-width: 980px) {
+    .grid4, .hc, .timeline { grid-template-columns: 1fr 1fr; }
+    .grid3, .metrics3 { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px) {
+    .grid4, .grid2, .hc, .timeline { grid-template-columns: 1fr; }
+    .when { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="mark" aria-hidden="true">♥</div>
+  <div class="brand">EMEA Service Cloud Support<small>Monthly Business Review</small></div>
+  <div class="spacer">
+    <div class="when">October 2026</div>
+    <div class="pill">INTERNAL ONLY</div>
+  </div>
+</header>
+<nav class="tabs" role="tablist" aria-label="MBR sections">
+  <a id="tab-overview" role="tab" aria-controls="overview" aria-selected="true" tabindex="0" href="#overview"><span>1</span>Overview</a>
+  <a id="tab-team" role="tab" aria-controls="team" aria-selected="false" tabindex="-1" href="#team"><span>2</span>Team Landscape</a>
+  <a id="tab-ops" role="tab" aria-controls="ops" aria-selected="false" tabindex="-1" href="#ops"><span>3</span>Operational Metrics</a>
+  <a id="tab-sev1" role="tab" aria-controls="sev1" aria-selected="false" tabindex="-1" href="#sev1"><span>4</span>Sev 1 Experience</a>
+  <a id="tab-invest" role="tab" aria-controls="invest" aria-selected="false" tabindex="-1" href="#invest"><span>5</span>Investigation Metrics</a>
+  <a id="tab-knowledge" role="tab" aria-controls="knowledge" aria-selected="false" tabindex="-1" href="#knowledge"><span>6</span>Knowledge</a>
+  <a id="tab-story" role="tab" aria-controls="story" aria-selected="false" tabindex="-1" href="#story"><span>7</span>Success Story</a>
+  <a id="tab-trust" role="tab" aria-controls="trust" aria-selected="false" tabindex="-1" href="#trust"><span>8</span>Trust &amp; AI</a>
+  <a id="tab-enable" role="tab" aria-controls="enable" aria-selected="false" tabindex="-1" href="#enable"><span>9</span>Training &amp; Onboarding</a>
+  <a id="tab-close" role="tab" aria-controls="close" aria-selected="false" tabindex="-1" href="#close"><span>10</span>Close</a>
+</nav>
+
+<main id="main">
+  <section class="panel active" id="overview" role="tabpanel" aria-labelledby="tab-overview">
+    <div class="hero">
+      <p class="eyebrow">Service Cloud EMEA · FY27 Q3</p>
+      <h1>Monthly<br><em>Business Review</em></h1>
+      <p class="sub">October 2026 Performance</p>
+    </div>
+
+    <div class="bar"><h2>Agenda</h2><span class="lede">October 2026 MBR</span></div>
+    <div class="grid4">
+      <article class="card"><div class="num">01</div><h3>Welcome &amp; Business Overview</h3><ul><li>KPIs</li><li>Sev 1 Experience</li><li>Exec Escalation</li><li>Red Accounts</li><li>WFM &amp; Assembled</li></ul></article>
+      <article class="card t2"><div class="num">02</div><h3>Maintaining Trust in an Era of Rapid Innovation</h3><ul><li>AI Adoption</li><li>Innovation</li></ul></article>
+      <article class="card t3"><div class="num">03</div><h3>Scaling Proactive Customer Engagement &amp; Adoption</h3><ul><li>Support / CSM</li><li>Support / Architect</li><li>Success Story</li><li>New NPIs</li></ul></article>
+      <article class="card t4"><div class="num">04</div><h3>Key Asks &amp; Next Steps</h3><ul><li>LOB Updates</li><li>Training &amp; Enablement</li><li>Certification</li></ul></article>
+    </div>
+
+    <div class="bar"><h2>October 2026 — At a Glance</h2><span class="lede">MTD Oct ’26 vs MTD Sep ’26</span></div>
+    <div class="grid4">
+      <article class="kpi"><div class="k">Case inflow</div><div class="v">10,103</div><div class="d down">▼ −175 vs Sep</div><div class="base">MTD Sep: 10,278</div></article>
+      <article class="kpi"><div class="k">Closures</div><div class="v">10,108</div><div class="d down">▼ −36 vs Sep</div><div class="base">MTD Sep: 10,144</div></article>
+      <article class="kpi"><div class="k">CSAT</div><div class="v">4.69</div><div class="d down">▼ −0.04 vs Sep</div><div class="base">MTD Sep: 4.73</div></article>
+      <article class="kpi"><div class="k">Productivity</div><div class="v">107% / 99%</div><div class="d up">▲ from 106%</div><div class="base">MTD Sep: 106%</div></article>
+      <article class="kpi"><div class="k">SLO miss %</div><div class="v">0.04%</div><div class="d down">▲ from 0.02%</div><div class="base">MTD Sep: 0.02%</div></article>
+      <article class="kpi"><div class="k">TTR (days)</div><div class="v">5.9</div><div class="d down">▲ +0.2 vs Sep</div><div class="base">MTD Sep: 5.7</div></article>
+      <article class="kpi"><div class="k">Escalation %</div><div class="v">1.2%</div><div class="d flat">— Same as Sep</div><div class="base">MTD Sep: 1.2%</div></article>
+      <article class="kpi"><div class="k">WFM adherence</div><div class="v">87%</div><div class="d down">▼ from 89%</div><div class="base">MTD Sep: 89%</div></article>
+    </div>
+  </section>
+
+  <section class="panel" id="team" role="tabpanel" aria-labelledby="tab-team" hidden>
+    <p class="eyebrow" style="color:var(--blue)">Business overview</p>
+    <h2 style="margin-top:0">EMEA Team Landscape</h2>
+    <p class="lede">India and Dublin headcount, span of control, and attrition for October.</p>
+    <div class="hc">
+      <article class="stat">
+        <div class="big">244</div>
+        <div class="lbl">Overall HC — EMEA (India + Dublin)</div>
+        <div class="row"><span>India</span><b>213</b></div>
+        <div class="row"><span>Dublin</span><b>32</b></div>
+        <div class="row"><span>Managers</span><b>18 (15 India, 3 Dub)</b></div>
+        <div class="row"><span>SLs</span><b>19 (15 India, 4 Dub)</b></div>
+      </article>
+      <article class="stat">
+        <div class="big">1:13.3</div>
+        <div class="lbl">Manager span of control</div>
+        <div class="row"><span>India</span><b>1:13</b></div>
+        <div class="row"><span>Sig</span><b>1:14</b></div>
+        <div class="row"><span>HC</span><b>1:14</b></div>
+        <div class="row"><span>Core</span><b>1:12</b></div>
+        <div class="row"><span>Dublin</span><b>1:11</b></div>
+      </article>
+      <article class="stat">
+        <div class="big">1:13.3</div>
+        <div class="lbl">SL span of control</div>
+        <div class="row"><span>India</span><b>1:15</b></div>
+        <div class="row"><span>Sig</span><b>1:14</b></div>
+        <div class="row"><span>HC</span><b>1:13</b></div>
+        <div class="row"><span>Core</span><b>1:19</b></div>
+        <div class="row"><span>Dublin</span><b>1:8</b></div>
+      </article>
+      <article class="gap">
+        <div>Headcount gap</div>
+        <div class="ring">25</div>
+        <div class="pills">
+          <span>HC <b>0</b></span>
+          <span>Core <b>−13</b></span>
+          <span>Sig <b>−12</b></span>
+        </div>
+      </article>
+    </div>
+    <h2>Attrition / Redeployment: 1</h2>
+    <div class="grid2">
+      <article class="stat"><div class="row"><span>India</span><b>1 (Sig 1, HC 0)</b></div><div class="row"><span>Dublin</span><b>1</b></div></article>
+    </div>
+  </section>
+
+  <section class="panel" id="ops" role="tabpanel" aria-labelledby="tab-ops" hidden>
+    <p class="eyebrow" style="color:var(--blue)">Run the business</p>
+    <h2 style="margin-top:0">Operational Metrics — Case and Chat</h2>
+    <p class="lede">Dashboards: Chat Dashboard · KPI Dashboard (OrgCS)</p>
+    <div class="grid2">
+      <div class="shell">
+        <table>
+          <caption>Case metrics, MTD October vs MTD September 2026</caption>
+          <thead><tr><th scope="col">Case</th><th scope="col">MTD Oct 26</th><th scope="col">MTD Sep 26</th></tr></thead>
+          <tbody>
+            <tr><td>Inflow</td><td>10,103</td><td>10,278</td></tr>
+            <tr><td>Closure</td><td>10,108</td><td>10,144</td></tr>
+            <tr><td>CSAT</td><td>4.69</td><td>4.73</td></tr>
+            <tr><td>TTR</td><td>5.9</td><td>5.7</td></tr>
+            <tr><td>Esc %</td><td>1.2%</td><td>1.2%</td></tr>
+            <tr><td>Productivity %</td><td>107% / 99%</td><td>106%</td></tr>
+            <tr><td>SLO Miss %</td><td>0.04%</td><td>0.02%</td></tr>
+            <tr><td>Throughput</td><td>2.4</td><td>2.3</td></tr>
+            <tr><td>WFM Adherence</td><td>87%</td><td>89%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="shell">
+        <table>
+          <caption>Chat metrics, MTD October vs MTD September 2026</caption>
+          <thead><tr><th scope="col">Chat</th><th scope="col">MTD Oct 26</th><th scope="col">MTD Sep 26</th></tr></thead>
+          <tbody>
+            <tr><td>Inflow</td><td>2,194</td><td>1,749</td></tr>
+            <tr><td>Resolution %</td><td>78.30%</td><td>79.02%</td></tr>
+            <tr><td>AWT (secs)</td><td>26.62</td><td>124.3</td></tr>
+            <tr><td>CSAT</td><td>4.65 (100)</td><td>4.79 (165)</td></tr>
+            <tr><td>Timeout chats (&gt;60 sec)</td><td>269</td><td>232</td></tr>
+            <tr><td>AHT (mins)</td><td>33.0</td><td>36.0</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <h2>Chat Wait Time</h2>
+    <div class="grid2">
+      <article class="card"><h3>What changed</h3><ul><li>Volume increase in the How-to space</li><li>30% of chats are coming through Fin</li></ul></article>
+      <article class="card t4"><h3>Key issues with Fin</h3><ul><li>No surveys triggered (survey return rate 0%)</li><li>Difference in user experience on chat handoff summary</li><li>End Chat button not visible to customers</li></ul></article>
+    </div>
+  </section>
+
+  <section class="panel" id="sev1" role="tabpanel" aria-labelledby="tab-sev1" hidden>
+    <p class="eyebrow" style="color:var(--blue)">Critical support</p>
+    <h2 style="margin-top:0">Sev 1 Experience</h2>
+    <p class="lede">Four-month view through October 2026.</p>
+    <div class="shell">
+      <table>
+        <caption>Severity 1 KPIs, July through October 2026</caption>
+        <thead><tr><th scope="col">KPI</th><th scope="col">MTD Oct 26</th><th scope="col">MTD Sep 26</th><th scope="col">MTD Aug 26</th><th scope="col">MTD Jul 26</th></tr></thead>
+        <tbody>
+          <tr><td>Inflow</td><td>991</td><td>1,376</td><td>929</td><td>1,189</td></tr>
+          <tr><td>Closure</td><td>1,011</td><td>1,386</td><td>1,007</td><td>1,186</td></tr>
+          <tr><td>CSAT</td><td>4.67</td><td>4.86</td><td>4.74</td><td>4.72</td></tr>
+          <tr><td>TTR</td><td>6.70</td><td>5.24</td><td>6.46</td><td>6.02</td></tr>
+          <tr><td>SLA Miss %</td><td>0%</td><td>0.1%</td><td>0%</td><td>0%</td></tr>
+          <tr><td>ESC %</td><td>3.53%</td><td>1.6%</td><td>3.77%</td><td>2.35%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2>Callouts</h2>
+    <div class="grid2">
+      <article class="kpi"><div class="k">CSAT</div><div class="v">4.67</div><div class="base">Down from 4.86 in September</div></article>
+      <article class="kpi"><div class="k">Escalations</div><div class="v">3.53%</div><div class="base">Up from 1.6% in September; August was 3.77%</div></article>
+    </div>
+  </section>
+
+  <section class="panel" id="invest" role="tabpanel" aria-labelledby="tab-invest" hidden>
+    <p class="eyebrow" style="color:var(--blue)">Quality</p>
+    <h2 style="margin-top:0">Investigation Metrics — Monthly Scorecard</h2>
+    <p class="lede">September closing actions reviewed in the October MBR. 68 of 102 completed, 34 pending review.</p>
+    <div class="grid3">
+      <article class="kpi"><div class="k">Investigation vs case inflow</div><div class="v">3.21%</div></article>
+      <article class="kpi"><div class="k">Investigation vs Sev 1</div><div class="v">8.78%</div></article>
+      <article class="kpi"><div class="k">Bug rate vs GUS inflow</div><div class="v">5.08%</div></article>
+      <article class="kpi"><div class="k">Time to escalate to TMP</div><div class="v">4.86</div><div class="base">days</div></article>
+      <article class="kpi"><div class="k">Time to GUS for Sev 1s</div><div class="v">3.04</div><div class="base">days</div></article>
+      <article class="kpi"><div class="k">Closing actions (Sep)</div><div class="v">68 / 102</div><div class="base">34 pending review</div></article>
+    </div>
+    <h2>GUS investigation monthly volume</h2>
+    <div class="shell">
+      <table>
+        <caption>GUS investigations by month, June through October 2026</caption>
+        <thead><tr><th scope="col">Month</th><th scope="col">Jun 26</th><th scope="col">Jul 26</th><th scope="col">Aug 26</th><th scope="col">Sep 26</th><th scope="col">Oct 26</th></tr></thead>
+        <tbody><tr><td>Investigations</td><td>480</td><td>505</td><td>446</td><td>487</td><td>540</td></tr></tbody>
+      </table>
+    </div>
+    <div class="grid2" style="margin-top:16px">
+      <div>
+        <h2>GUS investigation % by P&amp;T</h2>
+        <div class="shell">
+          <table>
+            <caption>Share of GUS investigations by product and technology</caption>
+            <thead><tr><th scope="col">P&amp;T</th><th scope="col">Share</th></tr></thead>
+            <tbody>
+              <tr><td>Developer Support Service</td><td>43.7%</td></tr>
+              <tr><td>Digital Engagement</td><td>13.6%</td></tr>
+              <tr><td>Service Cloud Voice</td><td>12.6%</td></tr>
+              <tr><td>Email Delivery &amp; Desktop</td><td>11.7%</td></tr>
+              <tr><td>Cases, Knowledge, Service</td><td>4.9%</td></tr>
+              <tr><td>Prompt Builder</td><td>2.9%</td></tr>
+              <tr><td>Experience Management</td><td>1.9%</td></tr>
+              <tr><td>CRM Analytics</td><td>1.9%</td></tr>
+              <tr><td>Slack for Service, Feedback</td><td>1.0%</td></tr>
+              <tr><td>Security &amp; Activations</td><td>1.0%</td></tr>
+              <tr><td>How-to, Setup, Configuration</td><td>1.0%</td></tr>
+              <tr><td>AppExchange, AgentExchange</td><td>1.0%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h2>Closing action themes</h2>
+        <div class="shell">
+          <table>
+            <caption>September closing-action themes</caption>
+            <thead><tr><th scope="col">Theme</th><th scope="col">Count</th></tr></thead>
+            <tbody>
+              <tr><td>Not actionable by Support — others</td><td>23</td></tr>
+              <tr><td>Not actionable — complex implementation / configuration</td><td>11</td></tr>
+              <tr><td>Request T&amp;P for training and tooling</td><td>5</td></tr>
+              <tr><td>Create / update knowledge article or known issue</td><td>12</td></tr>
+              <tr><td>Not actionable — customer did not respond</td><td>11</td></tr>
+              <tr><td>Train / retrain engineers and swarm leads; enable cross-skill</td><td>6</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" id="knowledge" role="tabpanel" aria-labelledby="tab-knowledge" hidden>
+    <p class="eyebrow" style="color:var(--blue)">Knowledge</p>
+    <h2 style="margin-top:0">Knowledge Performance &amp; Insights</h2>
+    <p class="lede">Resolution rate by cloud, February through September.</p>
+    <div class="shell">
+      <table>
+        <caption>Knowledge resolution rate by cloud, February to September 2026</caption>
+        <thead><tr><th scope="col">Months</th><th>Feb</th><th>Mar</th><th>Apr</th><th>May</th><th>Jun</th><th>Jul</th><th>Aug</th><th>Sep</th></tr></thead>
+        <tbody>
+          <tr><td>Service Cloud overall</td><td>63%</td><td>67%</td><td>73%</td><td>72%</td><td>72%</td><td>73%</td><td>73%</td><td>73%</td></tr>
+          <tr><td>High Complexity</td><td>53%</td><td>64%</td><td>67%</td><td>68%</td><td>67%</td><td>67%</td><td>68%</td><td>71%</td></tr>
+          <tr><td>Digital Engagement</td><td>56%</td><td>60%</td><td>79%</td><td>70%</td><td>68%</td><td>69%</td><td>68%</td><td>68%</td></tr>
+          <tr><td>Voice</td><td>39%</td><td>45%</td><td>48%</td><td>52%</td><td>48%</td><td>49%</td><td>51%</td><td>55%</td></tr>
+          <tr><td>Experience</td><td>60%</td><td>56%</td><td>62%</td><td>66%</td><td>66%</td><td>65%</td><td>66%</td><td>69%</td></tr>
+          <tr><td>Field Service</td><td>58%</td><td>60%</td><td>64%</td><td>65%</td><td>65%</td><td>65%</td><td>67%</td><td>69%</td></tr>
+          <tr><td>SubScale</td><td>50%</td><td>48%</td><td>50%</td><td>57%</td><td>65%</td><td>58%</td><td>54%</td><td>53%</td></tr>
+          <tr><td>Core</td><td>86%</td><td>88%</td><td>89%</td><td>89%</td><td>90%</td><td>90%</td><td>90%</td><td>90%</td></tr>
+          <tr><td>Agentforce</td><td>57%</td><td>55%</td><td>58%</td><td>60%</td><td>56%</td><td>49%</td><td>53%</td><td>51%</td></tr>
+          <tr><td>ITSM</td><td>29%</td><td>17%</td><td>27%</td><td>44%</td><td>36%</td><td>59%</td><td>63%</td><td>59%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grid2" style="margin-top:16px">
+      <div class="shell">
+        <table>
+          <caption>Non-escalated conversations and articles cited</caption>
+          <thead><tr><th scope="col">Year</th><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
+          <tbody>
+            <tr><td>FY26</td><td>Non-escalated conv</td><td>50,060</td></tr>
+            <tr><td>FY26</td><td>Articles created</td><td>563</td></tr>
+            <tr><td>FY26</td><td>Conv cited</td><td>8,432 (17%)</td></tr>
+            <tr><td>FY27</td><td>Non-escalated conv</td><td>47,395</td></tr>
+            <tr><td>FY27</td><td>Articles created</td><td>451</td></tr>
+            <tr><td>FY27</td><td>Conv cited</td><td>6,426 (14%)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <article class="card"><h3>In focus</h3><ul><li>KB plugin adoption</li><li>Claude governance</li><li>Product feedback</li><li>Cluster analysis</li><li>Prompt Builder and Knowledge Similarity check — GA</li></ul></article>
+    </div>
+  </section>
+
+  <section class="panel" id="story" role="tabpanel" aria-labelledby="tab-story" hidden>
+    <div class="hero" style="padding:36px 40px">
+      <p class="eyebrow">EMEA Support — Success Story</p>
+      <h1 style="font-size:clamp(32px,4vw,48px)">INPS Survey Go-Live: Protecting a $5M+ Renewal</h1>
+      <p class="sub">3 Sev 1 · Red Account</p>
+    </div>
+    <div class="grid4" style="margin-top:16px">
+      <article class="kpi"><div class="k">Account</div><div class="v" style="font-size:22px">INPS (Sedi)</div><div class="base">Italy’s national agency</div></article>
+      <article class="kpi"><div class="k">Focus</div><div class="v" style="font-size:18px">National citizen survey go-live</div><div class="base">Feedback Management</div></article>
+      <article class="kpi"><div class="k">Impact</div><div class="v" style="font-size:20px">~$1.16M attrition risk</div><div class="base">on a $5M+ ACV renewal</div></article>
+      <article class="kpi"><div class="k">Timeline</div><div class="v" style="font-size:20px">16 Sep → 21 Oct</div><div class="base">Survey launched</div></article>
+    </div>
+    <div class="grid2" style="margin-top:16px">
+      <article class="card">
+        <h3>What was delivered</h3>
+        <ul class="check">
+          <li>Early escalation — known issues linked to business risk; Red Account opened 24 Sep.</li>
+          <li>Same-day investigations — each new Sev 1 investigated within hours; demo-org repros and customer calls.</li>
+          <li>One source of truth — a single status recap and one channel for Support, Product, Engineering, Release, and Account Team.</li>
+          <li>Fixes under pressure — emergency ERR release 18 Oct; regression fixed on a midnight-IST call 19 Oct.</li>
+        </ul>
+      </article>
+      <div>
+        <article class="quote"><p>“On behalf of INPS and the entire account team, I want to express our sincere gratitude for your extraordinary support.”</p><div class="who">Saverio Petrungaro · Named Account Executive · 19 Oct</div></article>
+        <article class="quote" style="margin-top:10px"><p>“A huge thank you to everyone who made this happen across Product, Engineering, Support and Release teams! Great teamwork, let’s enjoy the go-live!”</p><div class="who">David Coneri · Named Account Executive · 19 Oct</div></article>
+        <article class="quote" style="margin-top:10px"><p>“Coordination across Product, Engineering, Support and Release was excellent.”</p><div class="who">Fabrizio Da Ronch · Red Account lead · 19 Oct</div></article>
+      </div>
+    </div>
+    <div class="metrics3" style="margin-top:16px">
+      <div><strong>3 of 3</strong><span>SEV 1 CASES CLOSED</span></div>
+      <div><strong>21 Oct</strong><span>SURVEY LIVE</span></div>
+      <div><strong>~$1.16M</strong><span>ATTRITION REMOVED</span></div>
+    </div>
+    <h2>From first case to rollout</h2>
+    <div class="timeline">
+      <div class="tl"><b>16 Sep</b>First Sev 1: matrix answers lost</div>
+      <div class="tl"><b>30 Sep</b>2 fixes confirmed for patch 264.7</div>
+      <div class="tl"><b>9 Oct</b>INPS confirms the fixes</div>
+      <div class="tl"><b>14 Oct</b>One recap of all 3 cases</div>
+      <div class="tl"><b>18 Oct</b>Emergency release for the blocker</div>
+      <div class="tl"><b>19 Oct</b>Fix confirmed live; rollout planned 21 Oct</div>
+    </div>
+  </section>
+
+  <section class="panel" id="trust" role="tabpanel" aria-labelledby="tab-trust" hidden>
+    <p class="eyebrow" style="color:var(--blue)">Innovation</p>
+    <h2 style="margin-top:0">Maintaining Trust in an Era of Rapid Innovation</h2>
+    <div class="hero" style="margin-top:8px">
+      <p class="eyebrow">EMEA Service Cloud — AI Innovations</p>
+      <h1 style="font-size:clamp(32px,4vw,52px)">Built by Engineers.<br><em>Powered by AI.</em></h1>
+      <p class="sub">Designed to save time. Production tools transforming support operations.</p>
+    </div>
+    <h2>Business impact</h2>
+    <div class="grid3">
+      <article class="card"><h3>10–30 minutes</h3><p>Saved per case on routine tasks.</p></article>
+      <article class="card t3"><h3>Standardized workflows</h3><p>Fewer errors and better handover quality.</p></article>
+      <article class="card t2"><h3>Live data</h3><p>Integration removes context switching.</p></article>
+    </div>
+    <p class="lede" style="margin-top:16px">These tools are live and delivering value daily across EMEA Service Cloud.</p>
+  </section>
+
+  <section class="panel" id="enable" role="tabpanel" aria-labelledby="tab-enable" hidden>
+    <p class="eyebrow" style="color:var(--blue)">People</p>
+    <h2 style="margin-top:0">Training and Enablement Update</h2>
+    <div class="shell">
+      <table>
+        <caption>Assigned training and completion as of the October MBR</caption>
+        <thead><tr><th scope="col">Training</th><th scope="col">Category</th><th scope="col">Due date</th><th scope="col">Status</th><th scope="col">Completion</th></tr></thead>
+        <tbody>
+          <tr><td>Customer Discovery Conversations</td><td>Trailhead Module</td><td>16 Oct</td><td><span class="dot g" aria-hidden="true"></span>In progress</td><td>99.3%</td></tr>
+          <tr><td>Annual Compliance Training</td><td>Trailhead Module</td><td>16 Oct</td><td><span class="dot g" aria-hidden="true"></span>In progress</td><td>99.3%</td></tr>
+          <tr><td>Privacy Data Handler Training 2026–2027</td><td>Trailhead Module</td><td>16 Oct</td><td><span class="dot g" aria-hidden="true"></span>In progress</td><td>99.3%</td></tr>
+          <tr><td>Anti-Harassment Training 2026–2028</td><td>Trailhead Module</td><td>16 Oct</td><td><span class="dot g" aria-hidden="true"></span>In progress</td><td>99.7%</td></tr>
+          <tr><td>Support Accreditation — Sep 2026 — All Clouds</td><td>Astro Course</td><td>30 Nov</td><td><span class="dot a" aria-hidden="true"></span>In progress</td><td>38.4%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2>Onboarding Update</h2>
+    <article class="kpi" style="margin-bottom:14px"><div class="k">FY27 onboarding</div><div class="v">22%</div></article>
+    <div class="grid3">
+      <article class="card"><h3>Aligned with Proactive</h3><p>The team is now aligned with the larger Proactive team under Nick, building a new SOP and restructuring AE conversation tracking.</p></article>
+      <article class="card t3"><h3>PS assignment resolved</h3><p>Earlier challenges assigning PS accounts, caused by a shortage of certified engineers, are now resolved.</p></article>
+      <article class="card t2"><h3>Trusted Service</h3><p>Realigned internally on how Trusted Service accounts are handled, and those accounts are assigned to the team.</p></article>
+    </div>
+  </section>
+
+  <section class="panel" id="close" role="tabpanel" aria-labelledby="tab-close" hidden>
+    <div class="hero" style="min-height:360px;display:grid;align-content:center">
+      <p class="eyebrow">EMEA Service Cloud Support</p>
+      <h1>Thank you</h1>
+      <p class="sub">Questions and decisions · October 2026</p>
+    </div>
+  </section>
+</main>
+<footer>EMEA Service Cloud Support · Monthly Business Review · October 2026 · Confidential &amp; Internal</footer>
+<script>
+  const tabs = [...document.querySelectorAll('[role="tab"]')];
+  const panels = [...document.querySelectorAll('[role="tabpanel"]')];
+  function selectTab(tab, updateHash = true) {
+    tabs.forEach(item => {
+      const selected = item === tab;
+      item.setAttribute('aria-selected', selected);
+      item.tabIndex = selected ? 0 : -1;
+    });
+    panels.forEach(panel => {
+      const selected = panel.id === tab.getAttribute('aria-controls');
+      panel.classList.toggle('active', selected);
+      panel.hidden = !selected;
+    });
+    if (updateHash) history.replaceState(null, '', '#' + tab.getAttribute('aria-controls'));
+    window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
+  }
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', event => { event.preventDefault(); selectTab(tab); });
+    tab.addEventListener('keydown', event => {
+      let next;
+      if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+      if (event.key === 'ArrowLeft') next = (index - 1 + tabs.length) % tabs.length;
+      if (event.key === 'Home') next = 0;
+      if (event.key === 'End') next = tabs.length - 1;
+      if (next !== undefined) { event.preventDefault(); selectTab(tabs[next]); tabs[next].focus(); }
+    });
+  });
+  const initial = tabs.find(tab => tab.getAttribute('aria-controls') === location.hash.slice(1)) || tabs[0];
+  selectTab(initial, false);
+</script>
+</body>
+</html>
