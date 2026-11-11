@@ -26,16 +26,18 @@
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
+  html, body { min-height: 100%; background: #041633; }
   body {
     margin: 0;
     color: #032d60;
     font-family: "Salesforce Sans", Inter, Aptos, system-ui, -apple-system, "Segoe UI", sans-serif;
     line-height: 1.45;
-    background:
-      radial-gradient(900px 480px at 80% -10%, rgba(27,150,255,.28), transparent 60%),
-      radial-gradient(700px 420px at 0% 20%, rgba(11,92,171,.35), transparent 55%),
+    background-color: #041633;
+    background-image:
+      radial-gradient(900px 480px at 80% -10%, rgba(27,150,255,.35), transparent 60%),
+      radial-gradient(700px 420px at 0% 20%, rgba(11,92,171,.45), transparent 55%),
       linear-gradient(180deg, #041633 0%, #062454 42%, #0a3f86 100%);
-    min-height: 100vh;
+    background-attachment: fixed;
   }
   a { color: var(--blue); }
   .skip { position: fixed; top: 8px; left: 8px; z-index: 100; padding: 10px 14px; background: #fff; transform: translateY(-160%); }
