@@ -26,7 +26,17 @@
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  body { margin: 0; background: var(--paper); color: #1b2430; font-family: "Salesforce Sans", Inter, Aptos, system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.45; }
+  body {
+    margin: 0;
+    color: #e8eef8;
+    font-family: "Salesforce Sans", Inter, Aptos, system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.45;
+    background:
+      radial-gradient(900px 480px at 80% -10%, rgba(27,150,255,.28), transparent 60%),
+      radial-gradient(700px 420px at 0% 20%, rgba(11,92,171,.35), transparent 55%),
+      linear-gradient(180deg, #041633 0%, #062454 42%, #0a3f86 100%);
+    min-height: 100vh;
+  }
   a { color: var(--blue); }
   .skip { position: fixed; top: 8px; left: 8px; z-index: 100; padding: 10px 14px; background: #fff; transform: translateY(-160%); }
   .skip:focus { transform: none; }
@@ -35,21 +45,25 @@
     position: sticky; top: 0; z-index: 30;
     display: flex; align-items: center; gap: 14px;
     min-height: 64px; padding: 0 clamp(16px, 3vw, 40px);
-    background: linear-gradient(90deg, #021a3a, #032d60 40%, #0b4f9c);
+    background: #021433;
     color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,.06);
   }
-  .mark { width: 28px; height: 28px; border-radius: 8px; background: #e3066a; display: grid; place-items: center; font-size: 14px; }
+  .cloud { width: 26px; height: 18px; background: #1b96ff; border-radius: 12px; position: relative; }
+  .cloud::before, .cloud::after { content: ""; position: absolute; background: #1b96ff; border-radius: 50%; }
+  .cloud::before { width: 12px; height: 12px; left: 4px; top: -6px; }
+  .cloud::after { width: 16px; height: 16px; right: 2px; top: -8px; }
+  .heart { width: 28px; height: 28px; border-radius: 8px; background: #7b1e4b; display: grid; place-items: center; color: #ff6b9a; font-size: 15px; }
   .brand { font-weight: 700; letter-spacing: .01em; }
-  .brand small { display: block; font-weight: 500; opacity: .75; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
-  .spacer { margin-left: auto; display: flex; align-items: center; gap: 12px; }
-  .when { opacity: .85; font-size: 14px; }
-  .pill { border: 1px solid rgba(255,255,255,.35); border-radius: 999px; padding: 6px 12px; font-size: 11px; font-weight: 800; letter-spacing: .08em; }
+  .spacer { margin-left: auto; display: flex; align-items: center; gap: 14px; }
+  .when { opacity: .8; font-size: 14px; }
+  .pill { background: #163e78; border: 1px solid rgba(140,190,255,.45); border-radius: 999px; padding: 7px 14px; font-size: 11px; font-weight: 800; letter-spacing: .08em; }
 
   nav.tabs {
     position: sticky; top: 64px; z-index: 25;
     display: flex; gap: 4px; overflow-x: auto;
     padding: 8px clamp(12px, 3vw, 36px);
-    background: #021833; border-bottom: 1px solid rgba(255,255,255,.08);
+    background: #031a40; border-bottom: 1px solid rgba(255,255,255,.06);
   }
   nav.tabs a {
     flex: 0 0 auto; color: #c5d4e8; text-decoration: none;
@@ -65,20 +79,20 @@
   .panel.active { display: block; }
 
   .hero {
-    background: linear-gradient(120deg, #032d60 0%, #0b5cab 55%, #1b96ff 100%);
-    color: #fff; border-radius: 22px; padding: clamp(36px, 6vw, 72px) clamp(28px, 5vw, 64px);
-    box-shadow: var(--shadow); position: relative; overflow: hidden;
+    background: linear-gradient(115deg, #0a4ea8 0%, #1a7de0 48%, #49b0ff 100%);
+    color: #fff; border-radius: 18px; padding: clamp(32px, 5vw, 56px) clamp(28px, 5vw, 56px);
+    box-shadow: 0 18px 40px rgba(2, 20, 51, .28); position: relative; overflow: hidden;
   }
-  .hero::after { content: ""; position: absolute; right: -80px; top: -80px; width: 320px; height: 320px; border-radius: 50%; background: rgba(255,255,255,.08); }
   .eyebrow { margin: 0 0 10px; letter-spacing: .16em; font-size: 12px; font-weight: 800; text-transform: uppercase; opacity: .85; }
-  h1 { margin: 0; font-size: clamp(42px, 6vw, 72px); line-height: .98; letter-spacing: -.03em; }
-  h1 em { font-style: normal; color: #7dffa1; }
+  h1 { margin: 0; font-size: clamp(42px, 6vw, 68px); line-height: .98; letter-spacing: -.03em; }
+  h1 em { font-style: normal; color: #5dffe0; }
   .sub { margin: 16px 0 0; font-size: 18px; opacity: .9; }
 
-  h2 { margin: 28px 0 6px; color: var(--ink); font-size: clamp(26px, 3vw, 34px); letter-spacing: -.02em; }
-  .lede { margin: 0 0 16px; color: var(--muted); }
+  h2 { margin: 28px 0 6px; color: #fff; font-size: clamp(26px, 3vw, 34px); letter-spacing: -.02em; }
+  .lede { margin: 0 0 16px; color: #b7c6da; }
   .bar { display: flex; align-items: baseline; gap: 12px; }
-  .bar::before { content: ""; width: 4px; height: 22px; border-radius: 4px; background: var(--bright); align-self: center; }
+  .bar::before { content: ""; width: 4px; height: 22px; border-radius: 4px; background: #7ec8ff; align-self: center; }
+  .bar h2 { margin: 22px 0 8px; }
 
   .grid4 { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 14px; }
   .grid3 { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
@@ -89,6 +103,7 @@
   .card.t4 { border-top-color: #ff9a3c; }
   .num { font-size: 34px; font-weight: 800; color: #8fb4ff; line-height: 1; }
   .card h3 { margin: 8px 0 8px; color: var(--ink); font-size: 16px; }
+  .card p { margin: 0; color: #3e4c5e; }
   .card ul { margin: 0; padding-left: 16px; color: #3e4c5e; }
   .card li { margin: 3px 0; }
 
@@ -140,7 +155,7 @@
   .dot.g { background: #2e844a; }
   .dot.a { background: #dd7a01; }
 
-  footer { background: var(--navy); color: #c5d4e8; text-align: center; padding: 18px; font-size: 12px; }
+  footer { color: #9fb2cc; text-align: center; padding: 28px 18px 22px; font-size: 12px; }
 
   :focus-visible { outline: 3px solid var(--bright); outline-offset: 2px; }
   @media (max-width: 980px) {
@@ -157,11 +172,12 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="top">
-  <div class="mark" aria-hidden="true">♥</div>
-  <div class="brand">EMEA Service Cloud Support<small>Monthly Business Review</small></div>
+  <div class="cloud" aria-hidden="true"></div>
+  <div class="heart" aria-hidden="true">♥</div>
+  <div class="brand">EMEA Service Cloud Support</div>
   <div class="spacer">
     <div class="when">October 2026</div>
-    <div class="pill">INTERNAL ONLY</div>
+    <div class="pill">MONTHLY BUSINESS REVIEW</div>
   </div>
 </header>
 <nav class="tabs" role="tablist" aria-label="MBR sections">
@@ -172,9 +188,8 @@
   <a id="tab-invest" role="tab" aria-controls="invest" aria-selected="false" tabindex="-1" href="#invest"><span>5</span>Investigation Metrics</a>
   <a id="tab-knowledge" role="tab" aria-controls="knowledge" aria-selected="false" tabindex="-1" href="#knowledge"><span>6</span>Knowledge</a>
   <a id="tab-story" role="tab" aria-controls="story" aria-selected="false" tabindex="-1" href="#story"><span>7</span>Success Story</a>
-  <a id="tab-trust" role="tab" aria-controls="trust" aria-selected="false" tabindex="-1" href="#trust"><span>8</span>Trust &amp; AI</a>
-  <a id="tab-enable" role="tab" aria-controls="enable" aria-selected="false" tabindex="-1" href="#enable"><span>9</span>Training &amp; Onboarding</a>
-  <a id="tab-close" role="tab" aria-controls="close" aria-selected="false" tabindex="-1" href="#close"><span>10</span>Close</a>
+  <a id="tab-enable" role="tab" aria-controls="enable" aria-selected="false" tabindex="-1" href="#enable"><span>8</span>Training &amp; Onboarding</a>
+  <a id="tab-close" role="tab" aria-controls="close" aria-selected="false" tabindex="-1" href="#close"><span>9</span>Close</a>
 </nav>
 
 <main id="main">
@@ -188,7 +203,7 @@
     <div class="bar"><h2>Agenda</h2><span class="lede">October 2026 MBR</span></div>
     <div class="grid4">
       <article class="card"><div class="num">01</div><h3>Welcome &amp; Business Overview</h3><ul><li>KPIs</li><li>Sev 1 Experience</li><li>Exec Escalation</li><li>Red Accounts</li><li>WFM &amp; Assembled</li></ul></article>
-      <article class="card t2"><div class="num">02</div><h3>Maintaining Trust in an Era of Rapid Innovation</h3><ul><li>AI Adoption</li><li>Innovation</li></ul></article>
+      <article class="card t2"><div class="num">02</div><h3>Maintaining Trust in an Era of Rapid Innovation</h3><ul><li>Innovation</li></ul></article>
       <article class="card t3"><div class="num">03</div><h3>Scaling Proactive Customer Engagement &amp; Adoption</h3><ul><li>Support / CSM</li><li>Support / Architect</li><li>Success Story</li><li>New NPIs</li></ul></article>
       <article class="card t4"><div class="num">04</div><h3>Key Asks &amp; Next Steps</h3><ul><li>LOB Updates</li><li>Training &amp; Enablement</li><li>Certification</li></ul></article>
     </div>
@@ -207,7 +222,7 @@
   </section>
 
   <section class="panel" id="team" role="tabpanel" aria-labelledby="tab-team" hidden>
-    <p class="eyebrow" style="color:var(--blue)">Business overview</p>
+    <p class="eyebrow" style="color:#7ec8ff">Business overview</p>
     <h2 style="margin-top:0">EMEA Team Landscape</h2>
     <p class="lede">India and Dublin headcount, span of control, and attrition for October.</p>
     <div class="hc">
@@ -254,7 +269,7 @@
   </section>
 
   <section class="panel" id="ops" role="tabpanel" aria-labelledby="tab-ops" hidden>
-    <p class="eyebrow" style="color:var(--blue)">Run the business</p>
+    <p class="eyebrow" style="color:#7ec8ff">Run the business</p>
     <h2 style="margin-top:0">Operational Metrics — Case and Chat</h2>
     <p class="lede">Dashboards: Chat Dashboard · KPI Dashboard (OrgCS)</p>
     <div class="grid2">
@@ -299,7 +314,7 @@
   </section>
 
   <section class="panel" id="sev1" role="tabpanel" aria-labelledby="tab-sev1" hidden>
-    <p class="eyebrow" style="color:var(--blue)">Critical support</p>
+    <p class="eyebrow" style="color:#7ec8ff">Critical support</p>
     <h2 style="margin-top:0">Sev 1 Experience</h2>
     <p class="lede">Four-month view through October 2026.</p>
     <div class="shell">
@@ -324,7 +339,7 @@
   </section>
 
   <section class="panel" id="invest" role="tabpanel" aria-labelledby="tab-invest" hidden>
-    <p class="eyebrow" style="color:var(--blue)">Quality</p>
+    <p class="eyebrow" style="color:#7ec8ff">Quality</p>
     <h2 style="margin-top:0">Investigation Metrics — Monthly Scorecard</h2>
     <p class="lede">September closing actions reviewed in the October MBR. 68 of 102 completed, 34 pending review.</p>
     <div class="grid3">
@@ -388,7 +403,7 @@
   </section>
 
   <section class="panel" id="knowledge" role="tabpanel" aria-labelledby="tab-knowledge" hidden>
-    <p class="eyebrow" style="color:var(--blue)">Knowledge</p>
+    <p class="eyebrow" style="color:#7ec8ff">Knowledge</p>
     <h2 style="margin-top:0">Knowledge Performance &amp; Insights</h2>
     <p class="lede">Resolution rate by cloud, February through September.</p>
     <div class="shell">
@@ -472,25 +487,8 @@
     </div>
   </section>
 
-  <section class="panel" id="trust" role="tabpanel" aria-labelledby="tab-trust" hidden>
-    <p class="eyebrow" style="color:var(--blue)">Innovation</p>
-    <h2 style="margin-top:0">Maintaining Trust in an Era of Rapid Innovation</h2>
-    <div class="hero" style="margin-top:8px">
-      <p class="eyebrow">EMEA Service Cloud — AI Innovations</p>
-      <h1 style="font-size:clamp(32px,4vw,52px)">Built by Engineers.<br><em>Powered by AI.</em></h1>
-      <p class="sub">Designed to save time. Production tools transforming support operations.</p>
-    </div>
-    <h2>Business impact</h2>
-    <div class="grid3">
-      <article class="card"><h3>10–30 minutes</h3><p>Saved per case on routine tasks.</p></article>
-      <article class="card t3"><h3>Standardized workflows</h3><p>Fewer errors and better handover quality.</p></article>
-      <article class="card t2"><h3>Live data</h3><p>Integration removes context switching.</p></article>
-    </div>
-    <p class="lede" style="margin-top:16px">These tools are live and delivering value daily across EMEA Service Cloud.</p>
-  </section>
-
   <section class="panel" id="enable" role="tabpanel" aria-labelledby="tab-enable" hidden>
-    <p class="eyebrow" style="color:var(--blue)">People</p>
+    <p class="eyebrow" style="color:#7ec8ff">People</p>
     <h2 style="margin-top:0">Training and Enablement Update</h2>
     <div class="shell">
       <table>
