@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>TTR by team, and SCV case age</title>
+<title>TTR by team, and case age</title>
 <style>
   :root { --navy:#0b1f3a; --ink:#0b1f3a; --muted:#64748b; --line:#e2e8f0; --amber:#b45309; }
   * { box-sizing: border-box; }
@@ -11,7 +11,8 @@
   header { background:var(--navy); color:#fff; padding:22px 36px 18px; }
   header h1 { margin:0; font-size:28px; font-weight:700; }
   header p { margin:6px 0 0; color:#cbd5e1; font-size:15px; }
-  main { max-width:1280px; margin:0 auto; padding:24px 28px 48px; display:grid; grid-template-columns: 1.05fr .95fr; gap:28px; align-items:start; }
+  main { max-width:1280px; margin:0 auto; padding:24px 28px 48px; display:grid; grid-template-columns: 1fr; gap:28px; align-items:start; }
+  .tables { display:grid; grid-template-columns: 1fr 1fr; gap:28px; }
   h2 { margin:0 0 4px; font-size:18px; }
   .sub { margin:0 0 12px; color:var(--muted); font-size:13px; }
   .card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 16px 8px; }
@@ -28,13 +29,13 @@
   .legend { display:flex; gap:16px; justify-content:center; font-size:13px; margin:4px 0 8px; }
   .legend i { display:inline-block; width:18px; height:3px; margin-right:6px; vertical-align:middle; }
   footer { color:var(--muted); font-size:12px; padding:0 36px 24px; }
-  @media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+  @media (max-width: 900px) { .tables { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
 <header>
-  <h1>TTR by team, and SCV case age</h1>
-  <p>DE split still to come</p>
+  <h1>TTR by team, and case age</h1>
+  <p>DE and SCV case splits</p>
 </header>
 <main>
   <section>
@@ -103,6 +104,7 @@
     <b style="color:#0f766e">SCV</b> 11.57 → 11.12. Highest. Down in Aug, back up.<br>
     <b style="color:#b45309">Dev</b> 7.03 → 7.57. Lowest and steadiest.</p>
   </section>
+  <div class="tables">
   <section>
     <h2>SCV · age by case type</h2>
     <p class="sub">Top number is days. Bottom number is share of cases.</p>
@@ -123,6 +125,27 @@
     </table>
     <p class="take">Overall age is flat: ~82% of cases have no bug and no investigation (9.6 → 10.2 days). Bugs that never went to investigation are the exception: 6.2 → 13.9 days, and 1.5% → 4.1% of cases.</p>
   </section>
+  <section>
+    <h2>DE · age by case type</h2>
+    <p class="sub">Top number is days. Bottom number is share of cases.</p>
+    <table>
+      <thead>
+        <tr><th>Case type</th><th>Jul</th><th>Aug</th><th>Sep</th><th>Oct</th></tr>
+      </thead>
+      <tbody>
+        <tr class="days bug"><td>Bug w/o Inv</td><td>10.5 days</td><td>7.3 days</td><td>8.8 days</td><td class="hot">15.4 days</td></tr>
+        <tr class="share bug"><td></td><td>(3.19%)</td><td>(1.56%)</td><td>(3.83%)</td><td>(3.29%)</td></tr>
+        <tr class="days"><td>Inv w/ Bug</td><td>21.5 days</td><td>27.9 days</td><td>17.3 days</td><td class="hot">27.7 days</td></tr>
+        <tr class="share"><td></td><td>(3.48%)</td><td>(3.11%)</td><td>(3.73%)</td><td>(3.72%)</td></tr>
+        <tr class="days"><td>Inv with No Bug</td><td>20.1 days</td><td>17.1 days</td><td>16.8 days</td><td>17.5 days</td></tr>
+        <tr class="share"><td></td><td>(5.12%)</td><td>(5.39%)</td><td>(6.28%)</td><td>(5.59%)</td></tr>
+        <tr class="days"><td>No Bug No Inv</td><td>6.8 days</td><td>6.3 days</td><td>6.5 days</td><td>7 days</td></tr>
+        <tr class="share"><td></td><td>(90.53%)</td><td>(84.44%)</td><td>(93.92%)</td><td>(87.62%)</td></tr>
+      </tbody>
+    </table>
+    <p class="take">Same pattern, sharper in October. No-bug cases stay near 7 days and are ~88% of volume. Bugs without investigation jump to 15.4 days. Investigations that found a bug jump to 27.7 days.</p>
+  </section>
+  </div>
 </main>
 </body>
 </html>
