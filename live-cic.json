@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-18T13:34:12+00:00",
+  "generated": "2026-11-18T13:45:10+00:00",
   "intervalMin": 10,
   "refreshedBy": "shubhav-crypto",
   "totalCic": 9,
@@ -36,8 +36,8 @@
     "cicJoinedAt": "2026-11-18T12:12:12Z",
     "lastHumanTs": "2026-11-18T13:05:45Z",
     "lastCicTs": "2026-11-18T12:50:59Z",
-    "humanMsgLast30m": 1,
-    "humanMsgLast60m": 7,
+    "humanMsgLast30m": 0,
+    "humanMsgLast60m": 6,
     "humanMsgLast24h": 12,
     "participants": [
      "Gianlucantonio Mastrogiacomo",
@@ -82,8 +82,8 @@
   {
    "caseNum": "485013416",
    "subject": "Urgent: CMC 1.0 Production \u2013 ExternalCMCId__c Unique Indexing Job Still Running",
-   "status": "Working",
-   "subStatus": "In Progress",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
    "account": "Bank of America, N.A.",
    "owner": "Manikanta Mullaguru",
    "manager": "Mirza",
@@ -91,8 +91,8 @@
    "sev1Start": "2026-11-18T12:10:52.000+0000",
    "cicFlag": true,
    "cicSubstatus": "Initial Impact Assessment",
-   "lastPublicActivity": "2026-11-18T12:48:06.000+0000",
-   "lastModified": "2026-11-18T12:48:09.000+0000",
+   "lastPublicActivity": "2026-11-18T13:41:58.000+0000",
+   "lastModified": "2026-11-18T13:42:01.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
@@ -230,13 +230,13 @@
    "sev1Start": "2026-11-18T07:45:39.000+0000",
    "cicFlag": true,
    "cicSubstatus": "Customer - Active Troubleshooting",
-   "lastPublicActivity": "2026-11-18T12:51:58.000+0000",
-   "lastModified": "2026-11-18T13:33:28.000+0000",
+   "lastPublicActivity": "2026-11-18T13:35:38.000+0000",
+   "lastModified": "2026-11-18T13:35:41.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.24,
+   "ageDays": 0.25,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -298,8 +298,8 @@
    "sev1Start": "2026-11-17T18:30:02.000+0000",
    "cicFlag": true,
    "cicSubstatus": null,
-   "lastPublicActivity": "2026-11-18T12:07:38.000+0000",
-   "lastModified": "2026-11-18T12:19:11.000+0000",
+   "lastPublicActivity": "2026-11-18T13:40:47.000+0000",
+   "lastModified": "2026-11-18T13:40:51.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
@@ -368,12 +368,12 @@
    "cicFlag": true,
    "cicSubstatus": "Customer - Active Troubleshooting",
    "lastPublicActivity": "2026-11-18T12:25:09.000+0000",
-   "lastModified": "2026-11-18T13:32:29.000+0000",
+   "lastModified": "2026-11-18T13:35:45.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": true,
    "serviceRestored": false,
-   "ageDays": 8.87,
+   "ageDays": 8.88,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -439,12 +439,12 @@
    "cicFlag": true,
    "cicSubstatus": "Support - Internal Troubleshooting",
    "lastPublicActivity": "2026-11-18T10:21:35.000+0000",
-   "lastModified": "2026-11-18T12:23:46.000+0000",
+   "lastModified": "2026-11-18T13:40:10.000+0000",
    "activeSwarm": true,
    "isEscalated": true,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 14.01,
+   "ageDays": 14.02,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -576,7 +576,7 @@
    "isEscalated": false,
    "redAccount": true,
    "serviceRestored": false,
-   "ageDays": 1.01,
+   "ageDays": 1.02,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -585,11 +585,11 @@
     "channelCreated": "2026-11-17T13:20:54Z",
     "cicCommander": "Myles Slevin",
     "cicJoinedAt": "2026-11-18T09:57:22Z",
-    "lastHumanTs": "2026-11-18T13:18:41Z",
+    "lastHumanTs": "2026-11-18T13:39:01Z",
     "lastCicTs": "2026-11-18T13:16:42Z",
-    "humanMsgLast30m": 2,
-    "humanMsgLast60m": 4,
-    "humanMsgLast24h": 23,
+    "humanMsgLast30m": 5,
+    "humanMsgLast60m": 7,
+    "humanMsgLast24h": 26,
     "participants": [
      "Pavan Kumar Boya",
      "Myles Slevin",
@@ -597,7 +597,8 @@
      "Arvind Kumar Attri",
      "Rohit Kala",
      "Naveen Salutagi",
-     "Sai Vikram Kinnera"
+     "Sai Vikram Kinnera",
+     "Sakshi Raghuvanshi"
     ],
     "bridgeMentioned": true,
     "lastBridgeTs": "2026-11-18T13:16:42Z",
@@ -607,80 +608,27 @@
     "backlineEngaged": null,
     "recent": [
      {
-      "ts": "2026-11-18T13:18:41Z",
+      "ts": "2026-11-18T13:39:01Z",
       "author": "Pavan Kumar Boya",
       "text": ""
      },
      {
-      "ts": "2026-11-18T13:16:42Z",
-      "author": "Myles Slevin",
+      "ts": "2026-11-18T13:38:12Z",
+      "author": "Sakshi Raghuvanshi",
       "text": ""
      },
      {
-      "ts": "2026-11-18T12:57:09Z",
-      "author": "Myles Slevin",
+      "ts": "2026-11-18T13:37:20Z",
+      "author": "Sakshi Raghuvanshi",
       "text": ""
      }
     ],
-    "summary": "CIC commander started a bridge and asked the customer's team to join; the owner found a similar earlier case with the same permissions enabled for the org.",
+    "summary": "A colleague explained the Partner Enablement permissions are provisioned org perms owned by another product team; the owner plans to raise an investigation with that team.",
     "error": null
    }
   }
  ],
  "history": [
-  {
-   "ts": "2026-11-18T12:02:30+00:00",
-   "cases": {
-    "484988675": {
-     "m60": 0,
-     "m30": 0,
-     "lastHuman": "2026-11-18T10:11:29Z",
-     "status": "Need More Information"
-    },
-    "484979598": {
-     "m60": 3,
-     "m30": 2,
-     "lastHuman": "2026-11-18T11:54:27Z",
-     "status": "Need More Information"
-    },
-    "484960341": {
-     "m60": 1,
-     "m30": 0,
-     "lastHuman": "2026-11-18T11:17:31Z",
-     "status": "Working"
-    },
-    "484669121": {
-     "m60": 0,
-     "m30": 0,
-     "lastHuman": "2026-11-18T09:05:56Z",
-     "status": "Working"
-    },
-    "482442680": {
-     "m60": 4,
-     "m30": 2,
-     "lastHuman": "2026-11-18T11:57:31Z",
-     "status": "Need More Information"
-    },
-    "480445853": {
-     "m60": 1,
-     "m30": 1,
-     "lastHuman": "2026-11-18T11:51:05Z",
-     "status": "Working"
-    },
-    "480436048": {
-     "m60": 8,
-     "m30": 0,
-     "lastHuman": "2026-11-18T11:27:47Z",
-     "status": "Working"
-    },
-    "484740694": {
-     "m60": 3,
-     "m30": 2,
-     "lastHuman": "2026-11-18T11:40:37Z",
-     "status": "Working"
-    }
-   }
-  },
   {
    "ts": "2026-11-18T12:04:10+00:00",
    "cases": {
@@ -1332,6 +1280,65 @@
      "m60": 4,
      "m30": 2,
      "lastHuman": "2026-11-18T13:18:41Z",
+     "status": "Working"
+    }
+   }
+  },
+  {
+   "ts": "2026-11-18T13:45:10+00:00",
+   "cases": {
+    "485013520": {
+     "m60": 6,
+     "m30": 0,
+     "lastHuman": "2026-11-18T13:05:45Z",
+     "status": "Working"
+    },
+    "485013416": {
+     "m60": 3,
+     "m30": 1,
+     "lastHuman": "2026-11-18T13:27:32Z",
+     "status": "Need More Information"
+    },
+    "484979598": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T12:04:16Z",
+     "status": "Need More Information"
+    },
+    "484960341": {
+     "m60": 1,
+     "m30": 1,
+     "lastHuman": "2026-11-18T13:31:23Z",
+     "status": "Working"
+    },
+    "484669121": {
+     "m60": 1,
+     "m30": 1,
+     "lastHuman": "2026-11-18T13:30:21Z",
+     "status": "Working"
+    },
+    "482442680": {
+     "m60": 1,
+     "m30": 1,
+     "lastHuman": "2026-11-18T13:28:11Z",
+     "status": "Need More Information"
+    },
+    "480445853": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T12:23:54Z",
+     "status": "Working"
+    },
+    "480436048": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T11:27:47Z",
+     "status": "Working"
+    },
+    "484740694": {
+     "m60": 7,
+     "m30": 5,
+     "lastHuman": "2026-11-18T13:39:01Z",
      "status": "Working"
     }
    }
