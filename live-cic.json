@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-18T11:47:18+00:00",
+  "generated": "2026-11-18T12:02:30+00:00",
   "intervalMin": 10,
   "refreshedBy": "shubhav-crypto",
   "totalCic": 8,
@@ -10,8 +10,8 @@
   {
    "caseNum": "484988675",
    "subject": "Delay in Inbound Email Processing",
-   "status": "Working",
-   "subStatus": "In Progress",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
    "account": "IDFC First Ltd (Bancassurance)",
    "owner": "Sahithi Dhanekula",
    "manager": "Shubha",
@@ -20,12 +20,12 @@
    "cicFlag": true,
    "cicSubstatus": "Initial Impact Assessment",
    "lastPublicActivity": "2026-11-18T11:09:33.000+0000",
-   "lastModified": "2026-11-18T11:31:10.000+0000",
+   "lastModified": "2026-11-18T11:57:00.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.07,
+   "ageDays": 0.08,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -88,12 +88,12 @@
    "cicFlag": true,
    "cicSubstatus": null,
    "lastPublicActivity": null,
-   "lastModified": "2026-11-18T11:37:46.000+0000",
+   "lastModified": "2026-11-18T11:50:17.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.1,
+   "ageDays": 0.11,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -102,11 +102,11 @@
     "channelCreated": "2026-11-18T09:21:44Z",
     "cicCommander": "Gianlucantonio Mastrogiacomo",
     "cicJoinedAt": "2026-11-18T09:22:06Z",
-    "lastHumanTs": "2026-11-18T11:31:09Z",
+    "lastHumanTs": "2026-11-18T11:54:27Z",
     "lastCicTs": "2026-11-18T09:24:07Z",
-    "humanMsgLast30m": 1,
-    "humanMsgLast60m": 1,
-    "humanMsgLast24h": 7,
+    "humanMsgLast30m": 2,
+    "humanMsgLast60m": 3,
+    "humanMsgLast24h": 9,
     "participants": [
      "Gianlucantonio Mastrogiacomo",
      "Adeline Gaudefroy",
@@ -121,17 +121,22 @@
     "backlineEngaged": null,
     "recent": [
      {
-      "ts": "2026-11-18T11:31:09Z",
+      "ts": "2026-11-18T11:54:27Z",
       "author": "Adeline Gaudefroy",
       "text": ""
      },
      {
-      "ts": "2026-11-18T10:20:50Z",
-      "author": "Gianlucantonio Mastrogiacomo",
+      "ts": "2026-11-18T11:53:10Z",
+      "author": "Sai Vikram Kinnera",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T11:31:09Z",
+      "author": "Adeline Gaudefroy",
       "text": ""
      }
     ],
-    "summary": "A participant added meeting notes and related documentation; waiting on the customer.",
+    "summary": "Support shared findings and next steps with the customer by email; waiting on the customer's reply to confirm whether the deleted certificate is the cause.",
     "error": null
    }
   },
@@ -148,12 +153,12 @@
    "cicFlag": true,
    "cicSubstatus": "Customer - Active Troubleshooting",
    "lastPublicActivity": "2026-11-18T07:48:00.000+0000",
-   "lastModified": "2026-11-18T11:16:13.000+0000",
+   "lastModified": "2026-11-18T12:00:39.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.17,
+   "ageDays": 0.18,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -164,7 +169,7 @@
     "cicJoinedAt": "2026-11-18T07:47:27Z",
     "lastHumanTs": "2026-11-18T11:17:31Z",
     "lastCicTs": "2026-11-18T09:57:45Z",
-    "humanMsgLast30m": 1,
+    "humanMsgLast30m": 0,
     "humanMsgLast60m": 1,
     "humanMsgLast24h": 16,
     "participants": [
@@ -216,7 +221,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 1.18,
+   "ageDays": 1.19,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -275,12 +280,12 @@
    "cicFlag": true,
    "cicSubstatus": "T&P - Waiting for Resolution",
    "lastPublicActivity": "2026-11-18T07:14:09.000+0000",
-   "lastModified": "2026-11-18T11:25:32.000+0000",
+   "lastModified": "2026-11-18T12:00:39.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": true,
    "serviceRestored": false,
-   "ageDays": 8.79,
+   "ageDays": 8.81,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -289,11 +294,11 @@
     "channelCreated": "2026-11-18T06:45:56Z",
     "cicCommander": "Vishnu Nambiar",
     "cicJoinedAt": "2026-11-18T06:54:34Z",
-    "lastHumanTs": "2026-11-18T11:28:03Z",
-    "lastCicTs": "2026-11-18T11:24:17Z",
+    "lastHumanTs": "2026-11-18T11:57:31Z",
+    "lastCicTs": "2026-11-18T11:55:30Z",
     "humanMsgLast30m": 2,
-    "humanMsgLast60m": 3,
-    "humanMsgLast24h": 49,
+    "humanMsgLast60m": 4,
+    "humanMsgLast24h": 51,
     "participants": [
      "Vishnu Nambiar",
      "Ravindra Ejjada",
@@ -312,22 +317,22 @@
     "backlineEngaged": true,
     "recent": [
      {
-      "ts": "2026-11-18T11:28:03Z",
-      "author": "Ravindra Ejjada",
+      "ts": "2026-11-18T11:57:31Z",
+      "author": "Vinay Pratap Singh",
       "text": ""
      },
      {
-      "ts": "2026-11-18T11:24:17Z",
+      "ts": "2026-11-18T11:55:30Z",
       "author": "Vishnu Nambiar",
       "text": ""
      },
      {
-      "ts": "2026-11-18T10:53:42Z",
-      "author": "Sai Vikram Kinnera",
+      "ts": "2026-11-18T11:28:03Z",
+      "author": "Ravindra Ejjada",
       "text": ""
      }
     ],
-    "summary": "Root cause traced to a database connection drop tied to a pod version update; the customer is asking for confirmation that a retry is safe, and the question is escalated to the product team.",
+    "summary": "CIC update posted: a database connection drop was tied to a core version update during the deployment; customer to retry in validation mode, pending Release Management confirmation of no releases in the retry window.",
     "error": null
    }
   },
@@ -344,12 +349,12 @@
    "cicFlag": true,
    "cicSubstatus": null,
    "lastPublicActivity": "2026-11-17T15:41:14.000+0000",
-   "lastModified": "2026-11-18T11:44:19.000+0000",
+   "lastModified": "2026-11-18T11:56:52.000+0000",
    "activeSwarm": true,
    "isEscalated": true,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 13.93,
+   "ageDays": 13.95,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -358,11 +363,11 @@
     "channelCreated": "2026-11-04T13:19:18Z",
     "cicCommander": "Raj Lakshman",
     "cicJoinedAt": "2026-11-18T10:22:37Z",
-    "lastHumanTs": "2026-11-18T10:29:27Z",
+    "lastHumanTs": "2026-11-18T11:51:05Z",
     "lastCicTs": "2026-11-18T10:24:03Z",
-    "humanMsgLast30m": 0,
-    "humanMsgLast60m": 0,
-    "humanMsgLast24h": 7,
+    "humanMsgLast30m": 1,
+    "humanMsgLast60m": 1,
+    "humanMsgLast24h": 8,
     "participants": [
      "Neha Mishra",
      "Nimit Vikrama",
@@ -379,18 +384,13 @@
     "backlineEngaged": null,
     "recent": [
      {
-      "ts": "2026-11-18T10:29:27Z",
+      "ts": "2026-11-18T11:51:05Z",
       "author": "Neha Mishra",
       "text": ""
      },
      {
-      "ts": "2026-11-18T10:25:44Z",
-      "author": "Sai Vikram Kinnera",
-      "text": ""
-     },
-     {
-      "ts": "2026-11-18T10:24:03Z",
-      "author": "Raj Lakshman",
+      "ts": "2026-11-18T10:29:27Z",
+      "author": "Neha Mishra",
       "text": ""
      }
     ],
@@ -416,7 +416,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 13.95,
+   "ageDays": 13.96,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -427,7 +427,7 @@
     "cicJoinedAt": "2026-11-18T09:28:42Z",
     "lastHumanTs": "2026-11-18T11:27:47Z",
     "lastCicTs": "2026-11-18T11:13:09Z",
-    "humanMsgLast30m": 1,
+    "humanMsgLast30m": 0,
     "humanMsgLast60m": 8,
     "humanMsgLast24h": 28,
     "participants": [
@@ -486,7 +486,7 @@
    "isEscalated": false,
    "redAccount": true,
    "serviceRestored": false,
-   "ageDays": 0.93,
+   "ageDays": 0.95,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -497,7 +497,7 @@
     "cicJoinedAt": "2026-11-18T09:57:22Z",
     "lastHumanTs": "2026-11-18T11:40:37Z",
     "lastCicTs": "2026-11-18T10:30:41Z",
-    "humanMsgLast30m": 3,
+    "humanMsgLast30m": 2,
     "humanMsgLast60m": 3,
     "humanMsgLast24h": 18,
     "participants": [
@@ -538,41 +538,6 @@
   }
  ],
  "history": [
-  {
-   "ts": "2026-11-18T09:44:34+00:00",
-   "cases": {
-    "484981986": {
-     "m60": 1,
-     "m30": 1,
-     "lastHuman": "2026-11-18T09:42:09Z",
-     "status": "New"
-    },
-    "484979598": {
-     "m60": 5,
-     "m30": 5,
-     "lastHuman": "2026-11-18T09:42:44Z",
-     "status": "Working"
-    },
-    "484960341": {
-     "m60": 3,
-     "m30": 0,
-     "lastHuman": "2026-11-18T09:10:07Z",
-     "status": "Working"
-    },
-    "484669121": {
-     "m60": 1,
-     "m30": 0,
-     "lastHuman": "2026-11-18T09:05:56Z",
-     "status": "Working"
-    },
-    "482442680": {
-     "m60": 1,
-     "m30": 1,
-     "lastHuman": "2026-11-18T09:41:26Z",
-     "status": "Need More Information"
-    }
-   }
-  },
   {
    "ts": "2026-11-18T09:54:11+00:00",
    "cases": {
@@ -1067,6 +1032,59 @@
     "484740694": {
      "m60": 3,
      "m30": 3,
+     "lastHuman": "2026-11-18T11:40:37Z",
+     "status": "Working"
+    }
+   }
+  },
+  {
+   "ts": "2026-11-18T12:02:30+00:00",
+   "cases": {
+    "484988675": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T10:11:29Z",
+     "status": "Need More Information"
+    },
+    "484979598": {
+     "m60": 3,
+     "m30": 2,
+     "lastHuman": "2026-11-18T11:54:27Z",
+     "status": "Need More Information"
+    },
+    "484960341": {
+     "m60": 1,
+     "m30": 0,
+     "lastHuman": "2026-11-18T11:17:31Z",
+     "status": "Working"
+    },
+    "484669121": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T09:05:56Z",
+     "status": "Working"
+    },
+    "482442680": {
+     "m60": 4,
+     "m30": 2,
+     "lastHuman": "2026-11-18T11:57:31Z",
+     "status": "Need More Information"
+    },
+    "480445853": {
+     "m60": 1,
+     "m30": 1,
+     "lastHuman": "2026-11-18T11:51:05Z",
+     "status": "Working"
+    },
+    "480436048": {
+     "m60": 8,
+     "m30": 0,
+     "lastHuman": "2026-11-18T11:27:47Z",
+     "status": "Working"
+    },
+    "484740694": {
+     "m60": 3,
+     "m30": 2,
      "lastHuman": "2026-11-18T11:40:37Z",
      "status": "Working"
     }
