@@ -823,9 +823,11 @@ function lvFlags(c){
     if(sh!=null&&sh<warnH&&r.nextStepOrEtaStated===false&&r.customerUpdateGiven===false)f.push({k:'No next step / ETA',sev:'warn',tip:'Channel is active but no next action, ETA or customer update is visible in the last 72h'});
   }
   const oh=lvHrs(c.lastPublicActivity||c.created);
-  if(oh!=null&&age!=null&&age>=warnH){
-    if(oh>=critH)f.push({k:'OrgCS no update '+lvFmtAge(oh),sev:'crit',tip:'No public case activity'});
-    else if(oh>=warnH)f.push({k:'OrgCS update due '+lvFmtAge(oh),sev:'warn',tip:'No public case activity'});
+  // CIC-engaged cases must have a public OrgCS update every 1-2h; others use the 24h/48h roster limits
+  const oW=c.cicFlag?CIC.ORGCS_WARN_H:warnH,oC=c.cicFlag?CIC.ORGCS_CRIT_H:critH;
+  if(oh!=null&&age!=null&&age>=oW){
+    if(oh>=oC)f.push({k:'OrgCS no update '+lvFmtAge(oh),sev:'crit',tip:c.cicFlag?'CIC-engaged case: public OrgCS update expected every '+CIC.ORGCS_WARN_H+'-'+CIC.ORGCS_CRIT_H+'h':'No public case activity'});
+    else if(oh>=oW)f.push({k:'OrgCS update due '+lvFmtAge(oh),sev:'warn',tip:c.cicFlag?'CIC-engaged case: public OrgCS update expected every '+CIC.ORGCS_WARN_H+'-'+CIC.ORGCS_CRIT_H+'h':'No public case activity'});
   }
   if(c.cicFlag){
     if(s.found&&r.cicEngaged===false)f.push({k:'CIC flagged, not in channel',sev:'crit',tip:'Escalate to CIC is set in OrgCS but no CIC activity is visible in Slack'});
@@ -972,7 +974,7 @@ function renderLive(){
   });
   document.getElementById('ptab-live-badge').textContent=all.length?String(all.filter(function(c){return c._health==='crit';}).length||''):'';
   document.getElementById('lvRules').innerHTML=
-    '<div><b>CIC engaged</b> (Escalate to CIC set in OrgCS): Slack and OrgCS are both judged. <span class="lv-flag crit">Needs action</span> no Slack channel after '+LV.NO_CHANNEL_GRACE_H+'h · no human Slack message for <code>'+LV.SILENT_CRIT_H+'h</code> · no public OrgCS update for <code>'+LV.SILENT_CRIT_H+'h</code> · CIC flagged but no CIC activity in the channel. <span class="lv-flag warn">Watch</span> quiet for <code>'+LV.SILENT_WARN_H+'h</code> · active channel with no next step, ETA or customer update in 72h · CIC unverified. The CIC live monitor above uses tighter limits.</div>'+
+    '<div><b>CIC engaged</b> (Escalate to CIC set in OrgCS): Slack and OrgCS are both judged. <span class="lv-flag crit">Needs action</span> no Slack channel after '+LV.NO_CHANNEL_GRACE_H+'h · no human Slack message for <code>'+LV.SILENT_CRIT_H+'h</code> · no public OrgCS update for <code>'+CIC.ORGCS_CRIT_H+'h</code> (CIC cases need an OrgCS update every '+CIC.ORGCS_WARN_H+'-'+CIC.ORGCS_CRIT_H+'h) · CIC flagged but no CIC activity in the channel. <span class="lv-flag warn">Watch</span> OrgCS update older than <code>'+CIC.ORGCS_WARN_H+'h</code> · Slack quiet for <code>'+LV.SILENT_WARN_H+'h</code> · active channel with no next step, ETA or customer update in 72h · CIC unverified. The CIC live monitor above uses tighter limits.</div>'+
     '<div><b>CIC not engaged</b>: only OrgCS is judged (no public update for <code>'+LV.SILENT_WARN_H+'h</code> = Watch, <code>'+LV.SILENT_CRIT_H+'h</code> = Needs action). Slack silence or a missing channel is not flagged.</div>'+
     '<div>Cases in <code>Need More Information</code> are waiting on the customer, so thresholds stretch to '+LV.WAIT_CUSTOMER_H+'h / '+(LV.WAIT_CUSTOMER_H*2)+'h. Trend (CIC cases only) compares the last 24h of channel messages with the daily average of the 48h before.</div>'+
     '<div>Open cases are Severity Level 1 – Critical cases owned by engineers who report to the six managers. Ages are computed live in your browser; data comes from the last snapshot.</div>';
@@ -980,7 +982,7 @@ function renderLive(){
 // ── CIC LIVE MONITOR ─────────────────────────────────────────────────────────
 // live-cic.json is refreshed every ~10 min by the live-sev1 skill (CIC-engaged = Escalate_to_CIC__c).
 // Tighter thresholds than the full roster because CIC cases are actively worked.
-const CIC={SLACK_WARN_M:30,SLACK_CRIT_M:60,CIC_WARN_M:60,CIC_CRIT_M:120,ORGCS_WARN_H:2,ORGCS_CRIT_H:4,BRIDGE_AFTER_M:60,STALE_WARN_M:25,POLL_MS:2*60*1000};
+const CIC={SLACK_WARN_M:30,SLACK_CRIT_M:60,CIC_WARN_M:60,CIC_CRIT_M:120,ORGCS_WARN_H:1,ORGCS_CRIT_H:2,BRIDGE_AFTER_M:60,STALE_WARN_M:25,POLL_MS:2*60*1000};
 let CICDATA=null;
 function cicMins(ts){const h=lvHrs(ts);return h==null?null:h*60;}
 function cicFmt(m){if(m==null)return '—';if(m<1)return '<1m';if(m<90)return Math.round(m)+'m';if(m<48*60)return (m/60).toFixed(m<600?1:0)+'h';return Math.round(m/1440)+'d';}
