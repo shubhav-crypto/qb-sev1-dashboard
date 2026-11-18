@@ -1,25 +1,25 @@
 {
  "meta": {
-  "generated": "2026-11-18T09:35:09+00:00",
+  "generated": "2026-11-18T09:44:34+00:00",
   "intervalMin": 10,
-  "totalCic": 4,
+  "totalCic": 5,
   "source": "OrgCS Case (open, Level 1 - Critical, Escalate_to_CIC__c = true) + Slack sev1 channels"
  },
  "cases": [
   {
-   "caseNum": "484979598",
-   "subject": "Restore Deleted Certificate",
+   "caseNum": "484981986",
+   "subject": "Issue with code validation status",
    "status": "New",
    "subStatus": "New",
-   "account": "JEUNE AFRIQUE MEDIA GROUP",
+   "account": "ADP, Inc.",
    "owner": "Prudhvi Donempudi",
    "manager": "Rohit",
-   "created": "2026-11-18T09:21:38.000+0000",
-   "sev1Start": "2026-11-18T09:21:40.000+0000",
+   "created": "2026-11-18T09:33:42.000+0000",
+   "sev1Start": "2026-11-18T09:33:44.000+0000",
    "cicFlag": true,
    "cicSubstatus": null,
-   "lastPublicActivity": null,
-   "lastModified": "2026-11-18T09:23:37.000+0000",
+   "lastPublicActivity": "2026-11-18T09:39:29.000+0000",
+   "lastModified": "2026-11-18T09:41:13.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
@@ -28,39 +28,98 @@
    "hasBridge": false,
    "slack": {
     "found": true,
+    "channelId": "C0CJRBNMEK0",
+    "channelName": "sev1-484981986-adp-inc-sig",
+    "channelCreated": "2026-11-18T09:33:48Z",
+    "cicCommander": "Alisha Dias",
+    "cicJoinedAt": "2026-11-18T09:34:33Z",
+    "lastHumanTs": "2026-11-18T09:42:09Z",
+    "lastCicTs": null,
+    "humanMsgLast30m": 1,
+    "humanMsgLast60m": 1,
+    "humanMsgLast24h": 1,
+    "participants": [
+     "Sai Vikram Kinnera"
+    ],
+    "bridgeMentioned": false,
+    "lastBridgeTs": null,
+    "customerUpdateGiven": false,
+    "nextStepOrEtaStated": null,
+    "csmPresent": true,
+    "backlineEngaged": null,
+    "recent": [
+     {
+      "ts": "2026-11-18T09:42:09Z",
+      "author": "Sai Vikram Kinnera",
+      "text": ""
+     }
+    ],
+    "summary": "New Sev1: code validation status. CIC commander joined within a minute; manager said an engineer will be engaged shortly. No CIC post or customer update yet.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "484979598",
+   "subject": "Restore Deleted Certificate",
+   "status": "Working",
+   "subStatus": "In Progress",
+   "account": "JEUNE AFRIQUE MEDIA GROUP",
+   "owner": "Sai Sankar Padamata Padamata",
+   "manager": "Shubha",
+   "created": "2026-11-18T09:21:38.000+0000",
+   "sev1Start": "2026-11-18T09:21:40.000+0000",
+   "cicFlag": true,
+   "cicSubstatus": null,
+   "lastPublicActivity": null,
+   "lastModified": "2026-11-18T09:43:54.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 0.02,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
     "channelId": "C0CJV3C1ANM",
     "channelName": "sev1-484979598-jeune-afrique-media-group-sig",
     "channelCreated": "2026-11-18T09:21:44Z",
     "cicCommander": "Gianlucantonio Mastrogiacomo",
     "cicJoinedAt": "2026-11-18T09:22:06Z",
-    "lastHumanTs": "2026-11-18T09:30:38Z",
+    "lastHumanTs": "2026-11-18T09:42:44Z",
     "lastCicTs": "2026-11-18T09:24:07Z",
-    "humanMsgLast30m": 2,
-    "humanMsgLast60m": 2,
-    "humanMsgLast24h": 2,
+    "humanMsgLast30m": 5,
+    "humanMsgLast60m": 5,
+    "humanMsgLast24h": 5,
     "participants": [
      "Gianlucantonio Mastrogiacomo",
-     "Adeline Gaudefroy"
+     "Adeline Gaudefroy",
+     "Sai Vikram Kinnera",
+     "Sai Sankar Padamata"
     ],
-    "bridgeMentioned": false,
-    "lastBridgeTs": null,
+    "bridgeMentioned": true,
+    "lastBridgeTs": "2026-11-18T09:42:44Z",
     "customerUpdateGiven": null,
     "nextStepOrEtaStated": false,
     "csmPresent": true,
     "backlineEngaged": null,
     "recent": [
      {
-      "ts": "2026-11-18T09:30:38Z",
-      "author": "Adeline Gaudefroy",
+      "ts": "2026-11-18T09:42:44Z",
+      "author": "Sai Sankar Padamata",
       "text": ""
      },
      {
-      "ts": "2026-11-18T09:24:07Z",
-      "author": "Gianlucantonio Mastrogiacomo",
+      "ts": "2026-11-18T09:42:21Z",
+      "author": "Sai Vikram Kinnera",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T09:30:38Z",
+      "author": "Adeline Gaudefroy",
       "text": ""
      }
     ],
-    "summary": "New Sev1: restore a deleted certificate. CIC commander joined within minutes and requested impact and status; CSM replied with impact assessment (none reported) and asked engineering to confirm what the certificate is tied to.",
+    "summary": "Restore a deleted certificate. CSM supplied impact assessment (none) and asked engineering to confirm what the certificate is tied to. Owner reassigned to Sai Sankar at 15:13 IST and bridge details shared.",
     "error": null
    }
   },
@@ -93,8 +152,8 @@
     "cicJoinedAt": "2026-11-18T07:47:27Z",
     "lastHumanTs": "2026-11-18T09:10:07Z",
     "lastCicTs": "2026-11-18T09:10:07Z",
-    "humanMsgLast30m": 2,
-    "humanMsgLast60m": 4,
+    "humanMsgLast30m": 0,
+    "humanMsgLast60m": 3,
     "humanMsgLast24h": 12,
     "participants": [
      "Vishnu Nambiar",
@@ -160,7 +219,7 @@
     "cicJoinedAt": "2026-11-18T01:07:39Z",
     "lastHumanTs": "2026-11-18T09:05:56Z",
     "lastCicTs": "2026-11-18T09:05:56Z",
-    "humanMsgLast30m": 1,
+    "humanMsgLast30m": 0,
     "humanMsgLast60m": 1,
     "humanMsgLast24h": 32,
     "participants": [
@@ -197,17 +256,17 @@
   {
    "caseNum": "482442680",
    "subject": "SalesForce - KEM (Deployment Monitoring) - Production Deployment Readiness 2026-NOV-17, 12:00AM ET to 2026-NOV-20, 06:00PM ET <November 17, 2026, 10:30 AM IST to November 21, 2026, 04:30 AM IST - APAC>",
-   "status": "Working",
-   "subStatus": "In Progress",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
    "account": "General Motors Holdings, LLC.",
-   "owner": "Manikanta Mullaguru",
+   "owner": "Vinay Pratap Singh",
    "manager": "Mirza",
    "created": "2026-11-09T16:41:41.000+0000",
    "sev1Start": "2026-11-18T06:45:51.000+0000",
    "cicFlag": true,
    "cicSubstatus": null,
    "lastPublicActivity": "2026-11-18T07:14:09.000+0000",
-   "lastModified": "2026-11-18T09:24:43.000+0000",
+   "lastModified": "2026-11-18T09:37:04.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": true,
@@ -221,11 +280,11 @@
     "channelCreated": "2026-11-18T06:45:56Z",
     "cicCommander": "Vishnu Nambiar",
     "cicJoinedAt": "2026-11-18T06:54:34Z",
-    "lastHumanTs": "2026-11-18T08:41:04Z",
-    "lastCicTs": "2026-11-18T08:25:08Z",
-    "humanMsgLast30m": 0,
-    "humanMsgLast60m": 2,
-    "humanMsgLast24h": 39,
+    "lastHumanTs": "2026-11-18T09:41:26Z",
+    "lastCicTs": "2026-11-18T09:41:26Z",
+    "humanMsgLast30m": 1,
+    "humanMsgLast60m": 1,
+    "humanMsgLast24h": 40,
     "participants": [
      "Vishnu Nambiar",
      "Ravindra Ejjada",
@@ -242,6 +301,11 @@
     "backlineEngaged": null,
     "recent": [
      {
+      "ts": "2026-11-18T09:41:26Z",
+      "author": "Vishnu Nambiar",
+      "text": ""
+     },
+     {
       "ts": "2026-11-18T08:41:04Z",
       "author": "Manikanta Mullaguru",
       "text": ""
@@ -250,14 +314,9 @@
       "ts": "2026-11-18T08:35:51Z",
       "author": "Sai Vikram Kinnera",
       "text": ""
-     },
-     {
-      "ts": "2026-11-18T08:25:08Z",
-      "author": "Vishnu Nambiar",
-      "text": ""
      }
     ],
-    "summary": "Deployment readiness monitoring; deployment hit a fatal error, customer plans retry tomorrow and wants root cause. Case handed to EMEA owner, bridge requested at 14:11 IST; channel quiet since.",
+    "summary": "Deployment readiness monitoring; deployment hit a fatal error and customer wants root cause before retrying tomorrow. Owner changed to Vinay Pratap Singh at 15:05 IST; CIC asked at 15:11 IST whether the GUS investigation is with the right team.",
     "error": null
    }
   }
@@ -340,6 +399,41 @@
      "m30": 0,
      "lastHuman": "2026-11-18T08:41:04Z",
      "status": "Working"
+    }
+   }
+  },
+  {
+   "ts": "2026-11-18T09:44:34+00:00",
+   "cases": {
+    "484981986": {
+     "m60": 1,
+     "m30": 1,
+     "lastHuman": "2026-11-18T09:42:09Z",
+     "status": "New"
+    },
+    "484979598": {
+     "m60": 5,
+     "m30": 5,
+     "lastHuman": "2026-11-18T09:42:44Z",
+     "status": "Working"
+    },
+    "484960341": {
+     "m60": 3,
+     "m30": 0,
+     "lastHuman": "2026-11-18T09:10:07Z",
+     "status": "Working"
+    },
+    "484669121": {
+     "m60": 1,
+     "m30": 0,
+     "lastHuman": "2026-11-18T09:05:56Z",
+     "status": "Working"
+    },
+    "482442680": {
+     "m60": 1,
+     "m30": 1,
+     "lastHuman": "2026-11-18T09:41:26Z",
+     "status": "Need More Information"
     }
    }
   }
