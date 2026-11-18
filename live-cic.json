@@ -1,11 +1,69 @@
 {
  "meta": {
-  "generated": "2026-11-18T09:23:26+00:00",
+  "generated": "2026-11-18T09:35:09+00:00",
   "intervalMin": 10,
-  "totalCic": 2,
+  "totalCic": 4,
   "source": "OrgCS Case (open, Level 1 - Critical, Escalate_to_CIC__c = true) + Slack sev1 channels"
  },
  "cases": [
+  {
+   "caseNum": "484979598",
+   "subject": "Restore Deleted Certificate",
+   "status": "New",
+   "subStatus": "New",
+   "account": "JEUNE AFRIQUE MEDIA GROUP",
+   "owner": "Prudhvi Donempudi",
+   "manager": "Rohit",
+   "created": "2026-11-18T09:21:38.000+0000",
+   "sev1Start": "2026-11-18T09:21:40.000+0000",
+   "cicFlag": true,
+   "cicSubstatus": null,
+   "lastPublicActivity": null,
+   "lastModified": "2026-11-18T09:23:37.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 0.01,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CJV3C1ANM",
+    "channelName": "sev1-484979598-jeune-afrique-media-group-sig",
+    "channelCreated": "2026-11-18T09:21:44Z",
+    "cicCommander": "Gianlucantonio Mastrogiacomo",
+    "cicJoinedAt": "2026-11-18T09:22:06Z",
+    "lastHumanTs": "2026-11-18T09:30:38Z",
+    "lastCicTs": "2026-11-18T09:24:07Z",
+    "humanMsgLast30m": 2,
+    "humanMsgLast60m": 2,
+    "humanMsgLast24h": 2,
+    "participants": [
+     "Gianlucantonio Mastrogiacomo",
+     "Adeline Gaudefroy"
+    ],
+    "bridgeMentioned": false,
+    "lastBridgeTs": null,
+    "customerUpdateGiven": null,
+    "nextStepOrEtaStated": false,
+    "csmPresent": true,
+    "backlineEngaged": null,
+    "recent": [
+     {
+      "ts": "2026-11-18T09:30:38Z",
+      "author": "Adeline Gaudefroy",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T09:24:07Z",
+      "author": "Gianlucantonio Mastrogiacomo",
+      "text": ""
+     }
+    ],
+    "summary": "New Sev1: restore a deleted certificate. CIC commander joined within minutes and requested impact and status; CSM replied with impact assessment (none reported) and asked engineering to confirm what the certificate is tied to.",
+    "error": null
+   }
+  },
   {
    "caseNum": "484960341",
    "subject": "Issue with flow execution",
@@ -19,31 +77,32 @@
    "cicFlag": true,
    "cicSubstatus": null,
    "lastPublicActivity": "2026-11-18T07:48:00.000+0000",
-   "lastModified": "2026-11-18T09:03:16.000+0000",
+   "lastModified": "2026-11-18T09:10:03.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.06,
+   "ageDays": 0.08,
    "hasBridge": false,
    "slack": {
     "found": true,
     "channelId": "C0CJLSV75U5",
     "channelName": "sev1-484960341-williams-sonoma-inc-sig",
     "channelCreated": "2026-11-18T07:45:44Z",
-    "cicCommander": "Vishnu Nambiar (CIC EMEA)",
+    "cicCommander": "Vishnu Nambiar",
     "cicJoinedAt": "2026-11-18T07:47:27Z",
     "lastHumanTs": "2026-11-18T09:10:07Z",
     "lastCicTs": "2026-11-18T09:10:07Z",
-    "humanMsgLast30m": 3,
-    "humanMsgLast60m": 7,
+    "humanMsgLast30m": 2,
+    "humanMsgLast60m": 4,
     "humanMsgLast24h": 12,
     "participants": [
+     "Vishnu Nambiar",
      "Gaurang Joshi",
      "Rahul Tiwari",
      "Sai Vikram Kinnera",
      "Vamsi Krishna Settipalli",
-     "Vishnu Nambiar"
+     "Fernanda Granado"
     ],
     "bridgeMentioned": true,
     "lastBridgeTs": "2026-11-18T08:21:36Z",
@@ -53,22 +112,85 @@
     "backlineEngaged": null,
     "recent": [
      {
+      "ts": "2026-11-18T09:10:07Z",
+      "author": "Vishnu Nambiar",
+      "text": ""
+     },
+     {
       "ts": "2026-11-18T09:06:24Z",
       "author": "Gaurang Joshi",
       "text": ""
      },
      {
       "ts": "2026-11-18T08:55:37Z",
-      "author": "Vishnu Nambiar (CIC)",
-      "text": ""
-     },
-     {
-      "ts": "2026-11-18T08:45:22Z",
-      "author": "Vishnu Nambiar (CIC)",
+      "author": "Vishnu Nambiar",
       "text": ""
      }
     ],
-    "summary": "New Sev1 today: Voice record-triggered flow not populating call summaries after calls end; all voice calls impacted. CIC commander engaged, EMEA owner assigned, bridge held at 2 PM IST. Now troubleshooting CallEndTime logic and waiting on customer debug logs.",
+    "summary": "Voice call-end flow not populating summary fields. Owner posted troubleshooting plus next steps (call end-time logic, flow re-run, customer debug logs); CIC actively asking questions; swarm member added.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "484669121",
+   "subject": "Urgent: SMS Spam Flagging Preventing All Agents from Sending Automatic Renewal Consent",
+   "status": "Working",
+   "subStatus": "In Progress",
+   "account": "Auto Club Group",
+   "owner": "Ali Arquam Ansari",
+   "manager": "Mirza",
+   "created": "2026-11-17T07:25:08.000+0000",
+   "sev1Start": "2026-11-17T18:30:02.000+0000",
+   "cicFlag": true,
+   "cicSubstatus": null,
+   "lastPublicActivity": "2026-11-17T20:27:30.000+0000",
+   "lastModified": "2026-11-18T09:12:29.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 1.09,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CJHRVKS3Y",
+    "channelName": "sev1-484669121-auto-club-group-sig",
+    "channelCreated": "2026-11-17T18:30:08Z",
+    "cicCommander": "Sonia Notani",
+    "cicJoinedAt": "2026-11-18T01:07:39Z",
+    "lastHumanTs": "2026-11-18T09:05:56Z",
+    "lastCicTs": "2026-11-18T09:05:56Z",
+    "humanMsgLast30m": 1,
+    "humanMsgLast60m": 1,
+    "humanMsgLast24h": 32,
+    "participants": [
+     "Sonia Notani",
+     "Kaya Cook",
+     "Arvind Kumar Attri",
+     "Parthivi Srivastava",
+     "Faizan Ahmed",
+     "Matt Samela",
+     "Brad Davis"
+    ],
+    "bridgeMentioned": true,
+    "lastBridgeTs": "2026-11-17T23:02:00Z",
+    "customerUpdateGiven": true,
+    "nextStepOrEtaStated": true,
+    "csmPresent": null,
+    "backlineEngaged": null,
+    "recent": [
+     {
+      "ts": "2026-11-18T09:05:56Z",
+      "author": "Sonia Notani",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T01:19:10Z",
+      "author": "Kaya Cook",
+      "text": ""
+     }
+    ],
+    "summary": "SMS spam flagging. New campaign approved overnight; CIC commander handed over to EMEA at 14:35 IST and case owner changed at 14:42 IST. Channel quiet since the handover post.",
     "error": null
    }
   },
@@ -85,38 +207,39 @@
    "cicFlag": true,
    "cicSubstatus": null,
    "lastPublicActivity": "2026-11-18T07:14:09.000+0000",
-   "lastModified": "2026-11-18T09:03:16.000+0000",
+   "lastModified": "2026-11-18T09:24:43.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": true,
    "serviceRestored": false,
-   "ageDays": 8.69,
+   "ageDays": 8.7,
    "hasBridge": false,
    "slack": {
     "found": true,
     "channelId": "C0CJTDZUWUR",
     "channelName": "sev1-482442680-general-motors-holdings-llc-sig",
     "channelCreated": "2026-11-18T06:45:56Z",
-    "cicCommander": "Vishnu Nambiar (CIC)",
-    "cicJoinedAt": null,
+    "cicCommander": "Vishnu Nambiar",
+    "cicJoinedAt": "2026-11-18T06:54:34Z",
     "lastHumanTs": "2026-11-18T08:41:04Z",
     "lastCicTs": "2026-11-18T08:25:08Z",
     "humanMsgLast30m": 0,
-    "humanMsgLast60m": 3,
-    "humanMsgLast24h": 40,
+    "humanMsgLast60m": 2,
+    "humanMsgLast24h": 39,
     "participants": [
-     "Manikanta Mullaguru",
+     "Vishnu Nambiar",
      "Ravindra Ejjada",
      "Ritika Das",
+     "Manikanta Mullaguru",
      "Sai Vikram Kinnera",
-     "Vishnu Nambiar"
+     "Rohit Kala"
     ],
     "bridgeMentioned": true,
     "lastBridgeTs": "2026-11-18T08:41:04Z",
     "customerUpdateGiven": true,
     "nextStepOrEtaStated": true,
-    "csmPresent": false,
-    "backlineEngaged": true,
+    "csmPresent": null,
+    "backlineEngaged": null,
     "recent": [
      {
       "ts": "2026-11-18T08:41:04Z",
@@ -129,12 +252,12 @@
       "text": ""
      },
      {
-      "ts": "2026-11-18T08:15:14Z",
-      "author": "Ritika Das",
+      "ts": "2026-11-18T08:25:08Z",
+      "author": "Vishnu Nambiar",
       "text": ""
      }
     ],
-    "summary": "Production metadata deployment stuck at 501/547 components; backline found errors and a structured investigation was filed. Customer redeploys tomorrow 11pm EST and wants root cause first. Ownership moved to EMEA (Manikanta); bridge requested 14:11 IST.",
+    "summary": "Deployment readiness monitoring; deployment hit a fatal error, customer plans retry tomorrow and wants root cause. Case handed to EMEA owner, bridge requested at 14:11 IST; channel quiet since.",
     "error": null
    }
   }
@@ -185,6 +308,35 @@
     },
     "482442680": {
      "m60": 3,
+     "m30": 0,
+     "lastHuman": "2026-11-18T08:41:04Z",
+     "status": "Working"
+    }
+   }
+  },
+  {
+   "ts": "2026-11-18T09:35:09+00:00",
+   "cases": {
+    "484979598": {
+     "m60": 2,
+     "m30": 2,
+     "lastHuman": "2026-11-18T09:30:38Z",
+     "status": "New"
+    },
+    "484960341": {
+     "m60": 4,
+     "m30": 2,
+     "lastHuman": "2026-11-18T09:10:07Z",
+     "status": "Working"
+    },
+    "484669121": {
+     "m60": 1,
+     "m30": 1,
+     "lastHuman": "2026-11-18T09:05:56Z",
+     "status": "Working"
+    },
+    "482442680": {
+     "m60": 2,
      "m30": 0,
      "lastHuman": "2026-11-18T08:41:04Z",
      "status": "Working"
