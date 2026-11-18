@@ -1,12 +1,83 @@
 {
  "meta": {
-  "generated": "2026-11-18T12:54:16+00:00",
+  "generated": "2026-11-18T13:04:37+00:00",
   "intervalMin": 10,
   "refreshedBy": "shubhav-crypto",
-  "totalCic": 9,
+  "totalCic": 10,
   "source": "OrgCS Case (open, Level 1 - Critical, Escalate_to_CIC__c = true) + Slack sev1 channels"
  },
  "cases": [
+  {
+   "caseNum": "485013520",
+   "subject": "Spike in API Calls to DCS",
+   "status": "Working",
+   "subStatus": "In Progress",
+   "account": "Philip Morris Products S.A., OC Division ***",
+   "owner": "Vinay Pratap Singh",
+   "manager": "Mirza",
+   "created": "2026-11-18T12:11:20.000+0000",
+   "sev1Start": "2026-11-18T12:11:22.000+0000",
+   "cicFlag": true,
+   "cicSubstatus": null,
+   "lastPublicActivity": "2026-11-18T12:45:50.000+0000",
+   "lastModified": "2026-11-18T13:00:25.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 0.04,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CJDK9FT6K",
+    "channelName": "sev1-485013520-philip-morris-products-sa-oc-division--sig",
+    "channelCreated": "2026-11-18T12:11:28Z",
+    "cicCommander": "Gianlucantonio Mastrogiacomo",
+    "cicJoinedAt": "2026-11-18T12:12:12Z",
+    "lastHumanTs": "2026-11-18T12:56:28Z",
+    "lastCicTs": "2026-11-18T12:50:59Z",
+    "humanMsgLast30m": 6,
+    "humanMsgLast60m": 11,
+    "humanMsgLast24h": 11,
+    "participants": [
+     "Gianlucantonio Mastrogiacomo",
+     "Sai Sri Ganapathineedi",
+     "Issac Ananda Pal C",
+     "Venkata Ravi Teja Sunkara",
+     "Vinay Pratap Singh",
+     "Sai Vikram Kinnera",
+     "Shreya Loni",
+     "Pierre Michon",
+     "Aditi Sharma",
+     "Hugo Vezin"
+    ],
+    "bridgeMentioned": true,
+    "lastBridgeTs": "2026-11-18T12:16:32Z",
+    "customerUpdateGiven": true,
+    "nextStepOrEtaStated": true,
+    "csmPresent": true,
+    "backlineEngaged": null,
+    "recent": [
+     {
+      "ts": "2026-11-18T12:56:28Z",
+      "author": "Sai Vikram Kinnera",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T12:54:58Z",
+      "author": "Sai Vikram Kinnera",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T12:51:47Z",
+      "author": "Sai Sri Ganapathineedi",
+      "text": ""
+     }
+    ],
+    "summary": "Excessive API callouts from experience sites are blocking the customer's new account creation. The CIC commander disengaged because the impact is limited, and the owner has told the customer a call invite will follow. The case owner was then changed.",
+    "error": null
+   }
+  },
   {
    "caseNum": "485013416",
    "subject": "Urgent: CMC 1.0 Production \u2013 ExternalCMCId__c Unique Indexing Job Still Running",
@@ -25,7 +96,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.03,
+   "ageDays": 0.04,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -34,11 +105,11 @@
     "channelCreated": "2026-11-18T12:10:58Z",
     "cicCommander": "Dorin Fazli",
     "cicJoinedAt": "2026-11-18T12:11:25Z",
-    "lastHumanTs": "2026-11-18T12:53:54Z",
+    "lastHumanTs": "2026-11-18T12:57:32Z",
     "lastCicTs": "2026-11-18T12:23:03Z",
     "humanMsgLast30m": 2,
-    "humanMsgLast60m": 5,
-    "humanMsgLast24h": 5,
+    "humanMsgLast60m": 6,
+    "humanMsgLast24h": 6,
     "participants": [
      "Dorin Fazli",
      "Venkata Ravi Teja Sunkara",
@@ -53,12 +124,17 @@
      "David Meyer"
     ],
     "bridgeMentioned": true,
-    "lastBridgeTs": "2026-11-18T12:53:54Z",
+    "lastBridgeTs": "2026-11-18T12:57:32Z",
     "customerUpdateGiven": false,
     "nextStepOrEtaStated": false,
     "csmPresent": true,
     "backlineEngaged": null,
     "recent": [
+     {
+      "ts": "2026-11-18T12:57:32Z",
+      "author": "Manikanta Mullaguru",
+      "text": ""
+     },
      {
       "ts": "2026-11-18T12:53:54Z",
       "author": "Manikanta Mullaguru",
@@ -68,14 +144,9 @@
       "ts": "2026-11-18T12:30:51Z",
       "author": "Sai Vikram Kinnera",
       "text": ""
-     },
-     {
-      "ts": "2026-11-18T12:23:03Z",
-      "author": "Dorin Fazli",
-      "text": ""
      }
     ],
-    "summary": "Owner finally replied by starting a bridge; CIC commander and manager are still waiting on business impact and customer-success next steps.",
+    "summary": "Owner started a bridge and shared the customer's Teams meeting; the CIC commander's request for business impact and customer-success next steps is still open.",
     "error": null
    }
   },
@@ -109,7 +180,7 @@
     "lastHumanTs": "2026-11-18T12:03:07Z",
     "lastCicTs": "2026-11-18T10:10:45Z",
     "humanMsgLast30m": 0,
-    "humanMsgLast60m": 1,
+    "humanMsgLast60m": 0,
     "humanMsgLast24h": 6,
     "participants": [
      "Sai Vikram Kinnera",
@@ -177,7 +248,7 @@
     "lastHumanTs": "2026-11-18T12:04:16Z",
     "lastCicTs": "2026-11-18T09:24:07Z",
     "humanMsgLast30m": 0,
-    "humanMsgLast60m": 2,
+    "humanMsgLast60m": 0,
     "humanMsgLast24h": 10,
     "participants": [
      "Gianlucantonio Mastrogiacomo",
@@ -230,7 +301,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.21,
+   "ageDays": 0.22,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -293,7 +364,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 1.23,
+   "ageDays": 1.24,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -362,7 +433,7 @@
    "isEscalated": false,
    "redAccount": true,
    "serviceRestored": false,
-   "ageDays": 8.84,
+   "ageDays": 8.85,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -374,7 +445,7 @@
     "lastHumanTs": "2026-11-18T12:18:34Z",
     "lastCicTs": "2026-11-18T11:55:30Z",
     "humanMsgLast30m": 0,
-    "humanMsgLast60m": 4,
+    "humanMsgLast60m": 2,
     "humanMsgLast24h": 53,
     "participants": [
      "Vishnu Nambiar",
@@ -433,7 +504,7 @@
    "isEscalated": true,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 13.98,
+   "ageDays": 13.99,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -495,7 +566,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 14,
+   "ageDays": 14.01,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -565,7 +636,7 @@
    "isEscalated": false,
    "redAccount": true,
    "serviceRestored": false,
-   "ageDays": 0.98,
+   "ageDays": 0.99,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -574,11 +645,11 @@
     "channelCreated": "2026-11-17T13:20:54Z",
     "cicCommander": "Myles Slevin",
     "cicJoinedAt": "2026-11-18T09:57:22Z",
-    "lastHumanTs": "2026-11-18T12:52:56Z",
-    "lastCicTs": "2026-11-18T12:52:56Z",
+    "lastHumanTs": "2026-11-18T12:57:09Z",
+    "lastCicTs": "2026-11-18T12:57:09Z",
     "humanMsgLast30m": 2,
-    "humanMsgLast60m": 2,
-    "humanMsgLast24h": 20,
+    "humanMsgLast60m": 3,
+    "humanMsgLast24h": 21,
     "participants": [
      "Pavan Kumar Boya",
      "Myles Slevin",
@@ -596,6 +667,11 @@
     "backlineEngaged": null,
     "recent": [
      {
+      "ts": "2026-11-18T12:57:09Z",
+      "author": "Myles Slevin",
+      "text": ""
+     },
+     {
       "ts": "2026-11-18T12:52:56Z",
       "author": "Myles Slevin",
       "text": ""
@@ -604,66 +680,14 @@
       "ts": "2026-11-18T12:25:22Z",
       "author": "Pavan Kumar Boya",
       "text": ""
-     },
-     {
-      "ts": "2026-11-18T11:40:37Z",
-      "author": "Pavan Kumar Boya",
-      "text": ""
      }
     ],
-    "summary": "CIC commander asked the owner and the account team to join a quick meeting; the owner is waiting on the account team to confirm whether Partner Enablement was provisioned on 28 Oct.",
+    "summary": "CIC commander asked the owner to join a quick meeting and whether he still needs a follow-up on the partner support query; the owner is waiting on the account team about Partner Enablement provisioning.",
     "error": null
    }
   }
  ],
  "history": [
-  {
-   "ts": "2026-11-18T11:04:38+00:00",
-   "cases": {
-    "484988675": {
-     "m60": 5,
-     "m30": 0,
-     "lastHuman": "2026-11-18T10:11:29Z",
-     "status": "Need More Information"
-    },
-    "484979598": {
-     "m60": 6,
-     "m30": 0,
-     "lastHuman": "2026-11-18T10:20:50Z",
-     "status": "Need More Information"
-    },
-    "484960341": {
-     "m60": 1,
-     "m30": 0,
-     "lastHuman": "2026-11-18T10:42:20Z",
-     "status": "Working"
-    },
-    "484669121": {
-     "m60": 0,
-     "m30": 0,
-     "lastHuman": "2026-11-18T09:05:56Z",
-     "status": "Working"
-    },
-    "482442680": {
-     "m60": 4,
-     "m30": 2,
-     "lastHuman": "2026-11-18T10:53:42Z",
-     "status": "Need More Information"
-    },
-    "480445853": {
-     "m60": 7,
-     "m30": 0,
-     "lastHuman": "2026-11-18T10:29:27Z",
-     "status": "Working"
-    },
-    "480436048": {
-     "m60": 2,
-     "m30": 0,
-     "lastHuman": "2026-11-18T10:10:34Z",
-     "status": "Working"
-    }
-   }
-  },
   {
    "ts": "2026-11-18T11:14:27+00:00",
    "cases": {
@@ -1273,6 +1297,71 @@
      "m60": 2,
      "m30": 2,
      "lastHuman": "2026-11-18T12:52:56Z",
+     "status": "Working"
+    }
+   }
+  },
+  {
+   "ts": "2026-11-18T13:04:37+00:00",
+   "cases": {
+    "485013520": {
+     "m60": 11,
+     "m30": 6,
+     "lastHuman": "2026-11-18T12:56:28Z",
+     "status": "Working"
+    },
+    "485013416": {
+     "m60": 6,
+     "m30": 2,
+     "lastHuman": "2026-11-18T12:57:32Z",
+     "status": "Working"
+    },
+    "484988675": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T12:03:07Z",
+     "status": "Need More Information"
+    },
+    "484979598": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T12:04:16Z",
+     "status": "Need More Information"
+    },
+    "484960341": {
+     "m60": 1,
+     "m30": 0,
+     "lastHuman": "2026-11-18T12:21:17Z",
+     "status": "Working"
+    },
+    "484669121": {
+     "m60": 1,
+     "m30": 0,
+     "lastHuman": "2026-11-18T12:12:04Z",
+     "status": "Working"
+    },
+    "482442680": {
+     "m60": 2,
+     "m30": 0,
+     "lastHuman": "2026-11-18T12:18:34Z",
+     "status": "Need More Information"
+    },
+    "480445853": {
+     "m60": 1,
+     "m30": 0,
+     "lastHuman": "2026-11-18T12:23:54Z",
+     "status": "Working"
+    },
+    "480436048": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T11:27:47Z",
+     "status": "Working"
+    },
+    "484740694": {
+     "m60": 3,
+     "m30": 2,
+     "lastHuman": "2026-11-18T12:57:09Z",
      "status": "Working"
     }
    }
