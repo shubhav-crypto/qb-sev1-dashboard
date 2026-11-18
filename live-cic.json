@@ -1,0 +1,195 @@
+{
+ "meta": {
+  "generated": "2026-11-18T09:23:26+00:00",
+  "intervalMin": 10,
+  "totalCic": 2,
+  "source": "OrgCS Case (open, Level 1 - Critical, Escalate_to_CIC__c = true) + Slack sev1 channels"
+ },
+ "cases": [
+  {
+   "caseNum": "484960341",
+   "subject": "Issue with flow execution",
+   "status": "Working",
+   "subStatus": "In Progress",
+   "account": "Williams-Sonoma, Inc.",
+   "owner": "Gaurang Joshi",
+   "manager": "Sai Vikram",
+   "created": "2026-11-18T07:45:37.000+0000",
+   "sev1Start": "2026-11-18T07:45:39.000+0000",
+   "cicFlag": true,
+   "cicSubstatus": null,
+   "lastPublicActivity": "2026-11-18T07:48:00.000+0000",
+   "lastModified": "2026-11-18T09:03:16.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 0.06,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CJLSV75U5",
+    "channelName": "sev1-484960341-williams-sonoma-inc-sig",
+    "channelCreated": "2026-11-18T07:45:44Z",
+    "cicCommander": "Vishnu Nambiar (CIC EMEA)",
+    "cicJoinedAt": "2026-11-18T07:47:27Z",
+    "lastHumanTs": "2026-11-18T09:10:07Z",
+    "lastCicTs": "2026-11-18T09:10:07Z",
+    "humanMsgLast30m": 3,
+    "humanMsgLast60m": 7,
+    "humanMsgLast24h": 12,
+    "participants": [
+     "Gaurang Joshi",
+     "Rahul Tiwari",
+     "Sai Vikram Kinnera",
+     "Vamsi Krishna Settipalli",
+     "Vishnu Nambiar"
+    ],
+    "bridgeMentioned": true,
+    "lastBridgeTs": "2026-11-18T08:21:36Z",
+    "customerUpdateGiven": null,
+    "nextStepOrEtaStated": true,
+    "csmPresent": true,
+    "backlineEngaged": null,
+    "recent": [
+     {
+      "ts": "2026-11-18T09:06:24Z",
+      "author": "Gaurang Joshi",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T08:55:37Z",
+      "author": "Vishnu Nambiar (CIC)",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T08:45:22Z",
+      "author": "Vishnu Nambiar (CIC)",
+      "text": ""
+     }
+    ],
+    "summary": "New Sev1 today: Voice record-triggered flow not populating call summaries after calls end; all voice calls impacted. CIC commander engaged, EMEA owner assigned, bridge held at 2 PM IST. Now troubleshooting CallEndTime logic and waiting on customer debug logs.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "482442680",
+   "subject": "SalesForce - KEM (Deployment Monitoring) - Production Deployment Readiness 2026-NOV-17, 12:00AM ET to 2026-NOV-20, 06:00PM ET <November 17, 2026, 10:30 AM IST to November 21, 2026, 04:30 AM IST - APAC>",
+   "status": "Working",
+   "subStatus": "In Progress",
+   "account": "General Motors Holdings, LLC.",
+   "owner": "Manikanta Mullaguru",
+   "manager": "Mirza",
+   "created": "2026-11-09T16:41:41.000+0000",
+   "sev1Start": "2026-11-18T06:45:51.000+0000",
+   "cicFlag": true,
+   "cicSubstatus": null,
+   "lastPublicActivity": "2026-11-18T07:14:09.000+0000",
+   "lastModified": "2026-11-18T09:03:16.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": true,
+   "serviceRestored": false,
+   "ageDays": 8.69,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CJTDZUWUR",
+    "channelName": "sev1-482442680-general-motors-holdings-llc-sig",
+    "channelCreated": "2026-11-18T06:45:56Z",
+    "cicCommander": "Vishnu Nambiar (CIC)",
+    "cicJoinedAt": null,
+    "lastHumanTs": "2026-11-18T08:41:04Z",
+    "lastCicTs": "2026-11-18T08:25:08Z",
+    "humanMsgLast30m": 0,
+    "humanMsgLast60m": 3,
+    "humanMsgLast24h": 40,
+    "participants": [
+     "Manikanta Mullaguru",
+     "Ravindra Ejjada",
+     "Ritika Das",
+     "Sai Vikram Kinnera",
+     "Vishnu Nambiar"
+    ],
+    "bridgeMentioned": true,
+    "lastBridgeTs": "2026-11-18T08:41:04Z",
+    "customerUpdateGiven": true,
+    "nextStepOrEtaStated": true,
+    "csmPresent": false,
+    "backlineEngaged": true,
+    "recent": [
+     {
+      "ts": "2026-11-18T08:41:04Z",
+      "author": "Manikanta Mullaguru",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T08:35:51Z",
+      "author": "Sai Vikram Kinnera",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T08:15:14Z",
+      "author": "Ritika Das",
+      "text": ""
+     }
+    ],
+    "summary": "Production metadata deployment stuck at 501/547 components; backline found errors and a structured investigation was filed. Customer redeploys tomorrow 11pm EST and wants root cause first. Ownership moved to EMEA (Manikanta); bridge requested 14:11 IST.",
+    "error": null
+   }
+  }
+ ],
+ "history": [
+  {
+   "ts": "2026-11-18T09:17:34+00:00",
+   "cases": {
+    "484960341": {
+     "m60": 7,
+     "m30": 3,
+     "lastHuman": "2026-11-18T09:10:07Z",
+     "status": "Working"
+    },
+    "482442680": {
+     "m60": 3,
+     "m30": 0,
+     "lastHuman": "2026-11-18T08:41:04Z",
+     "status": "Working"
+    }
+   }
+  },
+  {
+   "ts": "2026-11-18T09:23:06+00:00",
+   "cases": {
+    "484960341": {
+     "m60": 7,
+     "m30": 3,
+     "lastHuman": "2026-11-18T09:10:07Z",
+     "status": "Working"
+    },
+    "482442680": {
+     "m60": 3,
+     "m30": 0,
+     "lastHuman": "2026-11-18T08:41:04Z",
+     "status": "Working"
+    }
+   }
+  },
+  {
+   "ts": "2026-11-18T09:23:26+00:00",
+   "cases": {
+    "484960341": {
+     "m60": 7,
+     "m30": 3,
+     "lastHuman": "2026-11-18T09:10:07Z",
+     "status": "Working"
+    },
+    "482442680": {
+     "m60": 3,
+     "m30": 0,
+     "lastHuman": "2026-11-18T08:41:04Z",
+     "status": "Working"
+    }
+   }
+  }
+ ]
+}

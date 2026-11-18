@@ -1,0 +1,3391 @@
+{
+ "meta": {
+  "generated": "2026-11-18T09:23:26+00:00",
+  "source": "OrgCS (Case, Severity_Level__c = Level 1 - Critical, open) + Slack sev1 channels",
+  "managers": [
+   "Nikhil",
+   "Jyothirmayee",
+   "Shubha",
+   "Mirza",
+   "Sai Vikram",
+   "Rohit"
+  ],
+  "totalOpen": 46,
+  "slackChannelsFound": 46,
+  "byManager": {
+   "Nikhil": 0,
+   "Jyothirmayee": 3,
+   "Shubha": 6,
+   "Mirza": 10,
+   "Sai Vikram": 16,
+   "Rohit": 11
+  }
+ },
+ "cases": [
+  {
+   "caseNum": "484960341",
+   "subject": "Issue with flow execution",
+   "status": "Working",
+   "subStatus": "In Progress",
+   "account": "Williams-Sonoma, Inc.",
+   "owner": "Gaurang Joshi",
+   "manager": "Sai Vikram",
+   "created": "2026-11-18T07:45:37.000+0000",
+   "sev1Start": "2026-11-18T07:45:39.000+0000",
+   "cicFlag": true,
+   "cicSubstatus": null,
+   "lastPublicActivity": "2026-11-18T07:48:00.000+0000",
+   "lastModified": "2026-11-18T09:03:16.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 0.06,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CJLSV75U5",
+    "channelName": "sev1-484960341-williams-sonoma-inc-sig",
+    "channelCreated": "2026-11-18T07:45:45Z",
+    "archived": false,
+    "msgTotal": 43,
+    "msg24h": 43,
+    "msg72h": 43,
+    "lastMessageTs": "2026-11-18T09:10:07Z",
+    "lastHumanMessageTs": "2026-11-18T09:10:07Z",
+    "participants": [
+     "Gaurang Joshi",
+     "Rahul Tiwari",
+     "Sai Vikram Kinnera",
+     "Vamsi Krishna Settipalli",
+     "Vishnu Nambiar"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": null,
+     "csmOrTamPresent": true,
+     "engineeringOrBacklineEngaged": null,
+     "nextStepOrEtaStated": true
+    },
+    "recent": [
+     {
+      "ts": "2026-11-18T08:21:36Z",
+      "author": "Gaurang Joshi",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T08:45:22Z",
+      "author": "Vishnu Nambiar",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T08:55:37Z",
+      "author": "Vishnu Nambiar",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T09:06:24Z",
+      "author": "Gaurang Joshi",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T09:10:07Z",
+      "author": "Vishnu Nambiar",
+      "text": ""
+     }
+    ],
+    "summary": "New Sev1; CIC EMEA engaged and first customer bridge missed; call rescheduled 2 PM IST; troubleshooting and next steps (CallEndTime logic, customer debug logs) posted 09:06Z. Actively progressing.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "484884227",
+   "subject": "Dashboard Latency occurred in Production(00D41000000eSS3) and UAT(00DOx00000NzgwL)",
+   "status": "Working",
+   "subStatus": "In Progress",
+   "account": "Pacific Gas & Electric Company",
+   "owner": "Pavan Kumar Boya",
+   "manager": "Rohit",
+   "created": "2026-11-18T01:24:10.000+0000",
+   "sev1Start": "2026-11-18T01:24:11.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "No Active Critical Business Impact/RCA request",
+   "lastPublicActivity": null,
+   "lastModified": "2026-11-18T08:54:42.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 0.32,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CJH7C8E8K",
+    "channelName": "sev1-484884227-pacific-gas--electric-company-sig",
+    "channelCreated": "2026-11-18T01:24:16Z",
+    "archived": false,
+    "msgTotal": 41,
+    "msg24h": 41,
+    "msg72h": 41,
+    "lastMessageTs": "2026-11-18T08:54:23Z",
+    "lastHumanMessageTs": "2026-11-18T01:57:30Z",
+    "participants": [
+     "Anjali Chanagonda",
+     "Naveen Salutagi",
+     "Vamsi Krishna Settipalli"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": false,
+     "customerUpdateGiven": null,
+     "csmOrTamPresent": false,
+     "engineeringOrBacklineEngaged": false,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [
+     {
+      "ts": "2026-11-18T01:57:30Z",
+      "author": "Anjali Chanagonda",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T01:56:34Z",
+      "author": "Vamsi Krishna Settipalli",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T01:56:21Z",
+      "author": "Naveen Salutagi",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T01:54:35Z",
+      "author": "Vamsi Krishna Settipalli",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T01:50:42Z",
+      "author": "Anjali Chanagonda",
+      "text": ""
+     }
+    ],
+    "summary": "Sev1 opened Nov 18 as an RCA request split from case 484815190 (earlier 403 issue resolved; this one concerns a Platform Event latency window with no current impact). APAC CIC joined, asked to disengage, and the CIC bot disengaged at 02:17Z; a new case owner was added at 08:54Z. Little active work visible; no human posts since the CIC disengagement, so low-urgency/quiet rather than actively progressing.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "484780599",
+   "subject": "Lifecycle Center: Unable to add components to new work item after migration from DevOps Center",
+   "status": "Call/Meeting Scheduled",
+   "subStatus": "Manually Scheduled",
+   "account": "FFF Enterprises, Inc.",
+   "owner": "Vinay Talapalle",
+   "manager": "Sai Vikram",
+   "created": "2026-11-17T16:41:54.000+0000",
+   "sev1Start": "2026-11-17T16:41:56.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": null,
+   "lastPublicActivity": "2026-11-17T17:49:06.000+0000",
+   "lastModified": "2026-11-18T08:41:51.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 0.68,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CJD8XDUVB",
+    "channelName": "sev1-484780599-fff-enterprises-inc-prem",
+    "channelCreated": "2026-11-17T16:42:03Z",
+    "archived": false,
+    "msgTotal": 20,
+    "msg24h": 20,
+    "msg72h": 20,
+    "lastMessageTs": "2026-11-18T08:38:09Z",
+    "lastHumanMessageTs": null,
+    "participants": [],
+    "roles": {
+     "cicEngaged": false,
+     "cicDisengaged": null,
+     "bridgeMentioned": false,
+     "customerUpdateGiven": null,
+     "csmOrTamPresent": false,
+     "engineeringOrBacklineEngaged": false,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [],
+    "summary": "Channel created 2026-11-17 by the Communication Console bot with a Sev1 swarm request and several case-owner changes (latest Vinay Talapalle, 2026-11-18 08:38Z). No human has posted any message; no bridge, CIC, update or next step is visible, so engagement is not visible in Slack.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "484746982",
+   "subject": "emails triggered by unverified partner",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "Akamai Technologies, Inc.",
+   "owner": "Sinet Chowdhury",
+   "manager": "Rohit",
+   "created": "2026-11-17T13:52:30.000+0000",
+   "sev1Start": "2026-11-17T13:52:31.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Resolved",
+   "lastPublicActivity": null,
+   "lastModified": "2026-11-18T08:57:10.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": true,
+   "ageDays": 0.8,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CJB7NPQE9",
+    "channelName": "sev1-484746982-akamai-technologies-inc-sig",
+    "channelCreated": "2026-11-17T13:52:37Z",
+    "archived": false,
+    "msgTotal": 42,
+    "msg24h": 42,
+    "msg72h": 42,
+    "lastMessageTs": "2026-11-18T08:32:12Z",
+    "lastHumanMessageTs": "2026-11-17T19:09:19Z",
+    "participants": [
+     "Kranti Bharath Tadipatri",
+     "Lakshmana Rao Chintala",
+     "Rohit Kala",
+     "Hari Pathak"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": true,
+     "csmOrTamPresent": false,
+     "engineeringOrBacklineEngaged": null,
+     "nextStepOrEtaStated": true
+    },
+    "recent": [
+     {
+      "ts": "2026-11-17T19:09:19Z",
+      "author": "Kranti Bharath Tadipatri",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T19:00:51Z",
+      "author": "Kranti Bharath Tadipatri",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T16:40:22Z",
+      "author": "Hari Pathak",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T16:11:19Z",
+      "author": "Lakshmana Rao Chintala",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T15:14:12Z",
+      "author": "Rohit Kala",
+      "text": ""
+     }
+    ],
+    "summary": "CIC (Kranti Bharath Tadipatri) engaged 11-17, a customer bridge was run, Support posted a root-cause summary (legacy email verification exception expired; production config extended) and CIC posted a Final SCP, then CIC disengaged. Open item is customer end-to-end validation with a partner user; channel quiet since 11-17T19:09Z.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "484733906",
+   "subject": "Indexing fields for query optimization",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "DPS Holdings, Inc.",
+   "owner": "Gaurang Joshi",
+   "manager": "Sai Vikram",
+   "created": "2026-11-17T12:47:43.000+0000",
+   "sev1Start": "2026-11-17T12:47:45.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "No Active Critical Business Impact/RCA request",
+   "lastPublicActivity": null,
+   "lastModified": "2026-11-18T08:11:18.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": true,
+   "serviceRestored": true,
+   "ageDays": 0.85,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CKA9AEQBA",
+    "channelName": "sev1-484733906-dps-holdings-inc-sig",
+    "channelCreated": "2026-11-17T12:47:50Z",
+    "archived": false,
+    "msgTotal": 40,
+    "msg24h": 40,
+    "msg72h": 40,
+    "lastMessageTs": "2026-11-17T14:02:05Z",
+    "lastHumanMessageTs": "2026-11-17T13:27:27Z",
+    "participants": [
+     "Gaurang Joshi",
+     "Lisa Haley",
+     "Rohit Kala",
+     "Tanu Agarwal"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": null,
+     "csmOrTamPresent": true,
+     "engineeringOrBacklineEngaged": false,
+     "nextStepOrEtaStated": true
+    },
+    "recent": [
+     {
+      "ts": "2026-11-17T12:53:56Z",
+      "author": "Gaurang Joshi",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T13:00:33Z",
+      "author": "Gaurang Joshi",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T13:07:53Z",
+      "author": "Gaurang Joshi",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T13:21:02Z",
+      "author": "Tanu Agarwal",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T13:27:27Z",
+      "author": "Lisa Haley",
+      "text": ""
+     }
+    ],
+    "summary": "CIC EMEA joined 11-17 but customer would not join the bridge and said they would reply by email; CSM Lisa Haley questioned whether this is truly Sev1 and proposed a Sev2 downgrade; CIC disengaged 14:02Z. No channel posts since 13:27Z on 11-17 (a 6-reply thread was not read); looks stalled and de-escalating.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "484725560",
+   "subject": "Restrict Download Access for PDF and Video Files in Salesforce Knowledge Base",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "Usha International LIMITED",
+   "owner": "Manikanta Mullaguru",
+   "manager": "Mirza",
+   "created": "2026-11-17T12:06:40.000+0000",
+   "sev1Start": "2026-11-17T12:06:41.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "CIC no longer needed",
+   "lastPublicActivity": null,
+   "lastModified": "2026-11-18T08:54:13.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": true,
+   "ageDays": 0.88,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CJ9B0JLE7",
+    "channelName": "sev1-484725560-usha-international-limited-sig",
+    "channelCreated": "2026-11-17T12:06:47Z",
+    "archived": false,
+    "msgTotal": 35,
+    "msg24h": 35,
+    "msg72h": 35,
+    "lastMessageTs": "2026-11-17T15:00:06Z",
+    "lastHumanMessageTs": "2026-11-17T14:59:31Z",
+    "participants": [
+     "Dominika Barrett",
+     "Manikanta Mullaguru",
+     "Rohit Kala"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": null,
+     "csmOrTamPresent": false,
+     "engineeringOrBacklineEngaged": false,
+     "nextStepOrEtaStated": true
+    },
+    "recent": [
+     {
+      "ts": "2026-11-17T14:59:31Z",
+      "author": "Dominika Barrett",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T13:57:02Z",
+      "author": "Dominika Barrett",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T13:42:23Z",
+      "author": "Dominika Barrett",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T12:32:37Z",
+      "author": "Dominika Barrett",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T12:17:57Z",
+      "author": "Rohit Kala",
+      "text": ""
+     }
+    ],
+    "summary": "Assessed as not a true Sev1 (product question already answered, no production impact). CIC (EMEA) joined, chased the owner for a customer call/link, then disengaged at 15:00Z Nov 17 with action items: hold the customer call after 7 pm IST to confirm impact/deadline and re-engage CIC if impact is found. No posts since; outcome of the customer call is not visible, so status is awaiting follow-up.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "484705708",
+   "subject": "SSO login error on salesforce mobile app",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "Kotak Mahindra Bank Ltd. (811 Org)",
+   "owner": "Vinay Talapalle",
+   "manager": "Sai Vikram",
+   "created": "2026-11-17T10:28:36.000+0000",
+   "sev1Start": "2026-11-17T10:28:38.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": null,
+   "lastPublicActivity": "2026-11-18T08:20:29.000+0000",
+   "lastModified": "2026-11-18T08:25:48.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 0.94,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CJ9EJTLBF",
+    "channelName": "sev1-484705708-kotak-mahindra-bank-ltd-811-org-prem",
+    "channelCreated": "2026-11-17T10:28:43Z",
+    "archived": false,
+    "msgTotal": 12,
+    "msg24h": 12,
+    "msg72h": 12,
+    "lastMessageTs": "2026-11-17T10:30:56Z",
+    "lastHumanMessageTs": null,
+    "participants": [],
+    "roles": {
+     "cicEngaged": false,
+     "cicDisengaged": null,
+     "bridgeMentioned": false,
+     "customerUpdateGiven": null,
+     "csmOrTamPresent": false,
+     "engineeringOrBacklineEngaged": false,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [],
+    "summary": "Channel created 2026-11-17 with swarm request and case-owner assignment only. No human posts; no bridge, CIC, customer update or next step visible in Slack.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "484603630",
+   "subject": "Agentforce Voice disabled on UAT sandbox possibly after sandbox license match: inbound SIP calls failing with SIP 480",
+   "status": "Working",
+   "subStatus": "Waiting on Internal",
+   "account": "Massachusetts Mutual Life Insurance Company",
+   "owner": "Akhila Kandangath",
+   "manager": "Rohit",
+   "created": "2026-11-17T01:55:58.000+0000",
+   "sev1Start": "2026-11-17T01:56:00.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Account team/Sales-Ops engaged",
+   "lastPublicActivity": null,
+   "lastModified": "2026-11-18T08:49:29.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 1.3,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CHVDVNT0F",
+    "channelName": "sev1-484603630-massachusetts-mutual-life-insurance-company-sig",
+    "channelCreated": "2026-11-17T01:56:04Z",
+    "archived": false,
+    "msgTotal": 99,
+    "msg24h": 39,
+    "msg72h": 99,
+    "lastMessageTs": "2026-11-18T08:43:34Z",
+    "lastHumanMessageTs": "2026-11-17T23:13:52Z",
+    "participants": [
+     "Steve Newton",
+     "Gopalakrishnareddy Avuthu",
+     "Arun Balasubramanian",
+     "Justin Woods",
+     "Daniel Matica",
+     "Praveen Kumar Thaduri",
+     "Deirdre Collins",
+     "Akhila Kandangath",
+     "Ruben Alvarez",
+     "Bobby White",
+     "Yariv Raz"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": false,
+     "customerUpdateGiven": null,
+     "csmOrTamPresent": true,
+     "engineeringOrBacklineEngaged": null,
+     "nextStepOrEtaStated": true
+    },
+    "recent": [
+     {
+      "ts": "2026-11-17T23:13:52Z",
+      "author": "Deirdre Collins",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T22:28:30Z",
+      "author": "Daniel Matica",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T21:47:42Z",
+      "author": "Yariv Raz",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T21:07:43Z",
+      "author": "Yariv Raz",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T21:07:07Z",
+      "author": "Deirdre Collins",
+      "text": ""
+     }
+    ],
+    "summary": "Expired Agentforce Voice licences in prod caused the UAT/sandbox issue; CIC (Praveen Kumar Thaduri) engaged then disengaged 11-17. Account team, deal desk and sales-ops are working a $0 order form / provisioning request; as of 11-17T23:13Z the provisioning case is still not picked up by the provisioning team, so work is slow and blocked on SOPS and customer signature.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "484499067",
+   "subject": "Critical alert for your Org 00D20000000Cy4O",
+   "status": "Working",
+   "subStatus": "In Progress",
+   "account": "Bank Leumi le-Israel B.M.",
+   "owner": "Komal Chimanka",
+   "manager": "Jyothirmayee",
+   "created": "2026-11-16T16:57:50.000+0000",
+   "sev1Start": "2026-11-16T16:57:52.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Resolved",
+   "lastPublicActivity": "2026-11-18T08:02:11.000+0000",
+   "lastModified": "2026-11-18T08:33:17.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": true,
+   "serviceRestored": true,
+   "ageDays": 1.67,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CK0G4SVC0",
+    "channelName": "sev1-484499067-bank-leumi-le-israel-bm-sig",
+    "channelCreated": "2026-11-16T16:57:59Z",
+    "archived": false,
+    "msgTotal": 76,
+    "msg24h": 7,
+    "msg72h": 76,
+    "lastMessageTs": "2026-11-18T08:15:41Z",
+    "lastHumanMessageTs": "2026-11-17T14:33:40Z",
+    "participants": [
+     "Dhiraj Ratawa",
+     "Harpreet Singh",
+     "Karin Kraus",
+     "Rohit Mahla"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": true,
+     "csmOrTamPresent": true,
+     "engineeringOrBacklineEngaged": null,
+     "nextStepOrEtaStated": true
+    },
+    "recent": [
+     {
+      "ts": "2026-11-16T23:26:34Z",
+      "author": "Rohit Mahla",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T23:36:26Z",
+      "author": "Harpreet Singh",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T06:15:12Z",
+      "author": "Karin Kraus",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T12:57:49Z",
+      "author": "Karin Kraus",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T14:33:40Z",
+      "author": "Karin Kraus",
+      "text": ""
+     }
+    ],
+    "summary": "Async Apex limit breach; org limit raised 1,424,200 to 1,924,200 on 11-16 and CIC disengaged 23:36Z. CSM Karin Kraus has since asked for usage updates (11-17, threads not read) with no new channel posts after 11-17 14:33Z; in monitoring, low momentum.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "484458815",
+   "subject": "SSO Disablement & Direct Password Reset Tokens (21 Sandboxes)",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "Google LLC",
+   "owner": "Sakshi Srivastav",
+   "manager": "Sai Vikram",
+   "created": "2026-11-16T13:32:04.000+0000",
+   "sev1Start": "2026-11-16T13:32:06.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Sandbox issue with go-live >1 week",
+   "lastPublicActivity": "2026-11-18T04:33:40.000+0000",
+   "lastModified": "2026-11-18T09:02:52.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": true,
+   "ageDays": 1.82,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CHYHGJQR3",
+    "channelName": "sev1-484458815-google-llc-sig",
+    "channelCreated": "2026-11-16T13:32:12Z",
+    "archived": false,
+    "msgTotal": 60,
+    "msg24h": 6,
+    "msg72h": 60,
+    "lastMessageTs": "2026-11-18T08:59:55Z",
+    "lastHumanMessageTs": "2026-11-16T14:23:19Z",
+    "participants": [
+     "Fernanda Granado",
+     "Mirza Ameer Ali Baig",
+     "Saurabh Khandagale"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": true,
+     "csmOrTamPresent": false,
+     "engineeringOrBacklineEngaged": false,
+     "nextStepOrEtaStated": true
+    },
+    "recent": [
+     {
+      "ts": "2026-11-16T14:23:19Z",
+      "author": "Fernanda Granado",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T14:15:32Z",
+      "author": "Fernanda Granado",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T14:13:44Z",
+      "author": "Fernanda Granado",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T14:03:09Z",
+      "author": "Saurabh Khandagale",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T13:39:11Z",
+      "author": "Saurabh Khandagale",
+      "text": ""
+     }
+    ],
+    "summary": "Customer login problem in refreshed sandbox orgs, noted as a likely duplicate of Sev3 case 484431751. CIC (EMEA) joined and disengaged within about an hour because it is sandbox-only with no near-term go-live; action item is to confirm to the customer once an SSO restriction change is verified. Case owner reassigned repeatedly via bot (latest 08:59Z Nov 18) but no human posts since 14:23Z Nov 16, so quiet/awaiting customer response.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "484443964",
+   "subject": "The ONZ_ProcessActivityLogBatch self-chaining job is not getting scheduled again and appears to be stuck.",
+   "status": "Working",
+   "subStatus": "In Progress",
+   "account": "One New Zealand Group Limited",
+   "owner": "Vinay Pratap Singh",
+   "manager": "Mirza",
+   "created": "2026-11-16T12:18:59.000+0000",
+   "sev1Start": "2026-11-16T12:19:01.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Root cause/Resolution/Workaround provided",
+   "lastPublicActivity": "2026-11-16T12:53:18.000+0000",
+   "lastModified": "2026-11-18T09:00:05.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": true,
+   "serviceRestored": false,
+   "ageDays": 1.87,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CJ32G776E",
+    "channelName": "sev1-484443964-one-new-zealand-group-limited-sig",
+    "channelCreated": "2026-11-16T12:19:06Z",
+    "archived": false,
+    "msgTotal": 53,
+    "msg24h": 3,
+    "msg72h": 53,
+    "lastMessageTs": "2026-11-17T11:24:49Z",
+    "lastHumanMessageTs": "2026-11-17T11:24:30Z",
+    "participants": [
+     "Mirza Ameer Ali Baig",
+     "Uthej Gattu",
+     "Vinay Pratap Singh",
+     "Srinivas Vully"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "cicDisengaged": null,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": null,
+     "csmOrTamPresent": null,
+     "engineeringOrBacklineEngaged": null,
+     "nextStepOrEtaStated": null
+    },
+    "recent": [
+     {
+      "ts": "2026-11-17T11:24:30Z",
+      "author": "Uthej Gattu",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T14:37:38Z",
+      "author": "Vinay Pratap Singh",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T14:09:51Z",
+      "author": "Vinay Pratap Singh",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T14:06:01Z",
+      "author": "Mirza Ameer Ali Baig",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T12:59:05Z",
+      "author": "Srinivas Vully",
+      "text": ""
+     }
+    ],
+    "summary": "Sev1 about a connection-pool/sync-job failure on AUS80S (case owner Vinay Pratap Singh). CIC joined 2026-11-16, a bridge was held, and CIC proposed disengaging as customer is out of impact. Case owner posted a pool-exhaustion analysis (org was a bystander) and on 2026-11-17 Uthej Gattu asked for status and an RCA ETA for open customer questions; investigation is active but the RCA ETA is outstanding.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "484408957",
+   "subject": "Need help in MFA Phishing Resistant",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "TDC Brands",
+   "owner": "Manikanta Mullaguru",
+   "manager": "Mirza",
+   "created": "2026-11-16T09:25:43.000+0000",
+   "sev1Start": "2026-11-16T09:25:45.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Disengagement requested/Unscoped",
+   "lastPublicActivity": "2026-11-17T10:26:36.000+0000",
+   "lastModified": "2026-11-18T08:54:13.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 1.99,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CHLE7U52T",
+    "channelName": "sev1-484408957-tdc-brands-sig",
+    "channelCreated": "2026-11-16T09:25:51Z",
+    "archived": false,
+    "msgTotal": 33,
+    "msg24h": 3,
+    "msg72h": 33,
+    "lastMessageTs": "2026-11-17T13:21:33Z",
+    "lastHumanMessageTs": "2026-11-17T13:21:33Z",
+    "participants": [
+     "Mirza Ameer Ali Baig",
+     "Sonia Notani Notani",
+     "Charlotte Kristina Brix",
+     "Manikanta Mullaguru"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": false,
+     "customerUpdateGiven": null,
+     "csmOrTamPresent": true,
+     "engineeringOrBacklineEngaged": null,
+     "nextStepOrEtaStated": true
+    },
+    "recent": [
+     {
+      "ts": "2026-11-17T13:21:33Z",
+      "author": "Manikanta Mullaguru",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T11:17:14Z",
+      "author": "Charlotte Kristina Brix",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T11:08:45Z",
+      "author": "Mirza Ameer Ali Baig",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T11:07:26Z",
+      "author": "Charlotte Kristina Brix",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T10:41:34Z",
+      "author": "Mirza Ameer Ali Baig",
+      "text": ""
+     }
+    ],
+    "summary": "CIC Sev1 manager (Sonia Notani) joined 11-16, questioned whether the case qualified as Sev1, then CIC disengaged. CSM said this stakeholder raises many non-qualifying Sev1s and will escalate with customer management; on 11-17 an enforcement for the sandbox org was provided. Appears essentially resolved/winding down, no open ETA.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "484397302",
+   "subject": "Your Org (00DiH0000000qt3) on Instance USA1214S has been throttled",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "Autodesk, Inc.",
+   "owner": "Sai Sankar Padamata Padamata",
+   "manager": "Shubha",
+   "created": "2026-11-16T08:27:32.000+0000",
+   "sev1Start": "2026-11-16T08:27:33.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Throttle didn\u2019t reoccur",
+   "lastPublicActivity": null,
+   "lastModified": "2026-11-18T08:23:05.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": true,
+   "serviceRestored": false,
+   "ageDays": 2.03,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CHW1LKLVB",
+    "channelName": "sev1-484397302-autodesk-inc-sig",
+    "channelCreated": "2026-11-16T08:27:38Z",
+    "archived": false,
+    "msgTotal": 37,
+    "msg24h": 0,
+    "msg72h": 37,
+    "lastMessageTs": "2026-11-16T10:16:59Z",
+    "lastHumanMessageTs": "2026-11-16T10:16:48Z",
+    "participants": [
+     "Gianlucantonio Mastrogiacomo",
+     "Sai Kiran Aravelly"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": false,
+     "customerUpdateGiven": false,
+     "csmOrTamPresent": false,
+     "engineeringOrBacklineEngaged": false,
+     "nextStepOrEtaStated": true
+    },
+    "recent": [
+     {
+      "ts": "2026-11-16T08:52:32Z",
+      "author": "Gianlucantonio Mastrogiacomo",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T08:53:12Z",
+      "author": "Sai Kiran Aravelly",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T08:54:40Z",
+      "author": "Sai Kiran Aravelly",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T08:54:49Z",
+      "author": "Gianlucantonio Mastrogiacomo",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T10:16:48Z",
+      "author": "Gianlucantonio Mastrogiacomo",
+      "text": ""
+     }
+    ],
+    "summary": "AutoThrottle alert for Autodesk (dbcpu) had already expired by the time it was discussed; CIC disengaged 11-16 10:16Z. No activity since; effectively idle or resolved.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "484081500",
+   "subject": "Unable to access Access Prepaid Australia - Error- \"Your organization has been disabled\"",
+   "status": "Working",
+   "subStatus": "Waiting on Internal",
+   "account": "Mastercard Technologies, LLC",
+   "owner": "Komal Chimanka",
+   "manager": "Jyothirmayee",
+   "created": "2026-11-15T05:51:44.000+0000",
+   "sev1Start": "2026-11-15T05:51:45.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Root cause/Resolution/Workaround provided",
+   "lastPublicActivity": "2026-11-16T09:08:19.000+0000",
+   "lastModified": "2026-11-18T09:04:16.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 3.14,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CHYJWFMN0",
+    "channelName": "sev1-484081500-mastercard-technologies-llc-sig",
+    "channelCreated": "2026-11-15T05:51:50Z",
+    "archived": false,
+    "msgTotal": 60,
+    "msg24h": 0,
+    "msg72h": 14,
+    "lastMessageTs": "2026-11-16T09:51:11Z",
+    "lastHumanMessageTs": "2026-11-15T15:38:55Z",
+    "participants": [
+     "Isha Chakraborty",
+     "James Cross",
+     "Jonathan Taylor",
+     "RajaShekhar Rao Velagaleti",
+     "Sheeldarshi Shakya",
+     "Snehal Nerkar"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": true,
+     "csmOrTamPresent": true,
+     "engineeringOrBacklineEngaged": false,
+     "nextStepOrEtaStated": true
+    },
+    "recent": [
+     {
+      "ts": "2026-11-15T15:38:55Z",
+      "author": "Snehal Nerkar",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-15T15:38:30Z",
+      "author": "Jonathan Taylor",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-15T15:30:41Z",
+      "author": "James Cross",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-15T15:04:53Z",
+      "author": "Snehal Nerkar",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-15T15:02:32Z",
+      "author": "James Cross",
+      "text": ""
+     }
+    ],
+    "summary": "Customer org was locked after a contract expiry (recurrence of an earlier case); this is a commercial/accounts action, not a support fix. The accounts team reinstated trial status on Nov 15 and is working a courtesy license order that needs customer signature, with a separate case for a quoting issue on a phased-out SKU. CIC (weekend/EMEA) disengaged Nov 15 12:41Z; last human post Nov 15 15:38Z, customer temperature described as negative. Progressing slowly on commercial steps with no ETA.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "483903384",
+   "subject": "Issue with Dealer Name Not Displaying While Creating Event Plan Through Community Portal",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "TATA MOTORS LIMITED - Org 1",
+   "owner": "Vineeth Patil",
+   "manager": "Shubha",
+   "created": "2026-11-14T15:05:30.000+0000",
+   "sev1Start": "2026-11-14T15:05:31.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Root cause/Resolution/Workaround provided",
+   "lastPublicActivity": "2026-11-14T16:29:34.000+0000",
+   "lastModified": "2026-11-18T08:06:32.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": true,
+   "ageDays": 3.75,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CHLV9U8J1",
+    "channelName": "sev1-483903384-tata-motors-limited-org-1-sig",
+    "channelCreated": "2026-11-14T15:05:36Z",
+    "archived": false,
+    "msgTotal": 68,
+    "msg24h": 0,
+    "msg72h": 10,
+    "lastMessageTs": "2026-11-16T10:00:51Z",
+    "lastHumanMessageTs": "2026-11-15T22:07:42Z",
+    "participants": [
+     "RajaShekhar Rao Velagaleti",
+     "Saurabh Khandagale",
+     "Navin Shetty",
+     "Rikin Shah",
+     "Sunil Pal",
+     "Salim Basha Shaik",
+     "Reetoban Chakraborty"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "cicDisengaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": true,
+     "csmOrTamPresent": true,
+     "engineeringOrBacklineEngaged": null,
+     "nextStepOrEtaStated": true
+    },
+    "recent": [
+     {
+      "ts": "2026-11-15T22:07:42Z",
+      "author": "Navin Shetty",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-15T16:06:19Z",
+      "author": "Navin Shetty",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-15T13:37:12Z",
+      "author": "Reetoban Chakraborty",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-15T09:51:26Z",
+      "author": "Rikin Shah",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-15T09:06:06Z",
+      "author": "Reetoban Chakraborty",
+      "text": ""
+     }
+    ],
+    "summary": "Production issue where newly enabled partner users cannot see dealer data; support narrowed the cause to a record-sharing gap rather than the flow. CIC handed command to Support on 2026-11-16 03:37 IST with action items pending on the customer (alternate contact, confirmation before Monday go-live). CIC disengagement confirmed by bot post 2026-11-15 22:08Z; case owner changed twice via bot on 2026-11-16 (Deepanshi Munjal, Vineeth Patil). No human posts since then (about 2.5 days), so it looks stalled waiting on customer.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "483604157",
+   "subject": "Analise de Erro no roteamento",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "Banco BTG Pactual S.A.",
+   "owner": "Sagar Mehta",
+   "manager": "Mirza",
+   "created": "2026-11-13T13:59:02.000+0000",
+   "sev1Start": null,
+   "cicFlag": false,
+   "cicSubstatus": "CIC no longer needed",
+   "lastPublicActivity": "2026-11-16T13:10:09.000+0000",
+   "lastModified": "2026-11-18T08:13:40.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 4.8,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CHBBNKLRZ",
+    "channelName": "sev1-483604157-banco-btg-pactual-sa-sig",
+    "channelCreated": "2026-11-13T13:59:08Z",
+    "archived": false,
+    "msgTotal": 100,
+    "msg24h": 6,
+    "msg72h": 9,
+    "lastMessageTs": "2026-11-18T08:03:59Z",
+    "lastHumanMessageTs": "2026-11-17T19:00:13Z",
+    "participants": [
+     "Maria Guimar\u00e3es",
+     "Dhiraj Ratawa",
+     "Shubha Vijayaraghavan",
+     "David Ryan",
+     "Sagar Mehta",
+     "Rahul Chauhan",
+     "Aasis Kumar Singh"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": true,
+     "csmOrTamPresent": true,
+     "engineeringOrBacklineEngaged": null,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [
+     {
+      "ts": "2026-11-17T19:00:13Z",
+      "author": "Maria Guimar\u00e3es",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T18:58:34Z",
+      "author": "Dhiraj Ratawa",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T18:50:52Z",
+      "author": "Maria Guimar\u00e3es",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-14T00:36:45Z",
+      "author": "Aasis Kumar Singh",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-14T00:12:24Z",
+      "author": "Aasis Kumar Singh",
+      "text": ""
+     }
+    ],
+    "summary": "Einstein bot/messaging sessions falling to fallback queue; CIC (David Ryan, Rahul Chauhan) engaged 11-13 then disengaged, support found bot runtime/flow issues and opened an investigation. Since 11-14 the case owner rotates via bot and on 11-17 the CSM chased and was told the case is pending on customer; no ETA stated. Stalled pending customer.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "483561824",
+   "subject": "Increase transient time for Emails to 96 hours",
+   "status": "Working",
+   "subStatus": "Waiting on Internal",
+   "account": "Singapore Airlines Ltd",
+   "owner": "Sakshi Srivastav",
+   "manager": "Sai Vikram",
+   "created": "2026-11-13T10:34:22.000+0000",
+   "sev1Start": "2026-11-13T10:34:24.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Root cause/Resolution/Workaround provided",
+   "lastPublicActivity": "2026-11-13T13:07:57.000+0000",
+   "lastModified": "2026-11-18T07:26:15.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": true,
+   "serviceRestored": false,
+   "ageDays": 4.94,
+   "hasBridge": true,
+   "slack": {
+    "found": true,
+    "channelId": "C0CH0K86RGF",
+    "channelName": "sev1-483561824-singapore-airlines-ltd-sig",
+    "channelCreated": "2026-11-13",
+    "archived": false,
+    "msgTotal": 100,
+    "msg24h": 3,
+    "msg72h": 12,
+    "lastMessageTs": "2026-11-17T23:46:53Z",
+    "lastHumanMessageTs": "2026-11-17T10:13:34Z",
+    "participants": [
+     "Ajith Babu",
+     "Bharath Kumar Reddy Gunna",
+     "Gianlucantonio Mastrogiacomo",
+     "Kirtivardhan Singh",
+     "Navin Shetty",
+     "Nishith Ranjan Mishra",
+     "Ron Kimble",
+     "Sakshi Srivastav",
+     "Seth Cheong",
+     "Sheeldarshi Shakya",
+     "Snehal Nerkar",
+     "Sudhakara Reddy Peddi"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": true,
+     "csmOrTamPresent": null,
+     "engineeringOrBacklineEngaged": true,
+     "nextStepOrEtaStated": true
+    },
+    "recent": [
+     {
+      "ts": "2026-11-15T17:08:02Z",
+      "author": "Navin Shetty",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-15T23:10:25Z",
+      "author": "Navin Shetty",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T14:26:43Z",
+      "author": "Sakshi Srivastav",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T10:09:38Z",
+      "author": "Sakshi Srivastav",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T10:13:34Z",
+      "author": "Seth Cheong",
+      "text": ""
+     }
+    ],
+    "summary": "Email delivery impact from a Microsoft outage; mitigated 11-13, CIC disengaged then re-engaged 11-14 and handed command back to Support 11-15. Residual follow-ups continue (answers 11-16, closure check 11-17, post-mortem request on the 24h expiry limit 11-17); low-intensity, awaiting customer and Email Infra response.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "483553860",
+   "subject": "Amazon Connect CTI ACD uneven call distribution to German agents",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "Luigi Lavazza SpA",
+   "owner": "Nagapavan Kumar Mulinti",
+   "manager": "Sai Vikram",
+   "created": "2026-11-13T09:54:46.000+0000",
+   "sev1Start": "2026-11-13T09:54:47.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "No Active Critical Business Impact/RCA request",
+   "lastPublicActivity": null,
+   "lastModified": "2026-11-18T08:47:24.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": true,
+   "ageDays": 4.97,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CHDMML7RC",
+    "channelName": "sev1-483553860-luigi-lavazza-spa-sig",
+    "channelCreated": "2026-11-13T09:54:53Z",
+    "archived": false,
+    "msgTotal": 51,
+    "msg24h": 0,
+    "msg72h": 1,
+    "lastMessageTs": "2026-11-16T14:41:58Z",
+    "lastHumanMessageTs": "2026-11-16T14:41:58Z",
+    "participants": [
+     "Benita Lennon",
+     "Nagapavan Kumar Mulinti",
+     "Ramy El Saroy",
+     "Shubha Vijayaraghavan"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": true,
+     "csmOrTamPresent": true,
+     "engineeringOrBacklineEngaged": null,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [
+     {
+      "ts": "2026-11-16T14:41:58Z",
+      "author": "Nagapavan Kumar Mulinti",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T15:50:32Z",
+      "author": "Nagapavan Kumar Mulinti",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T14:52:54Z",
+      "author": "Nagapavan Kumar Mulinti",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T12:25:46Z",
+      "author": "Nagapavan Kumar Mulinti",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T12:02:04Z",
+      "author": "Ramy El Saroy",
+      "text": ""
+     }
+    ],
+    "summary": "Amazon Connect/Omni-Channel call acceptance failures and uneven call distribution. CIC (EMEA) disengaged Nov 13 10:42Z; support ran a bridge with AWS and Salesforce reviewing logs and raised a Sev-2 GUS investigation. Latest update Nov 16 14:41Z says the team followed up with the product team to expedite; no ETA stated and no activity since, so investigation is pending/slow.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "483544607",
+   "subject": "Feasibility to change production URL for security reasons",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "National Grid Interconnectors",
+   "owner": "Vinay Talapalle",
+   "manager": "Sai Vikram",
+   "created": "2026-11-13T09:12:54.000+0000",
+   "sev1Start": "2026-11-13T09:12:56.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": null,
+   "lastPublicActivity": "2026-11-13T13:36:03.000+0000",
+   "lastModified": "2026-11-18T08:17:24.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 5,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CHF4UNW90",
+    "channelName": "sev1-483544607-national-grid-interconnectors-prem",
+    "channelCreated": "2026-11-13T09:13:01Z",
+    "archived": false,
+    "msgTotal": 12,
+    "msg24h": 0,
+    "msg72h": 0,
+    "lastMessageTs": "2026-11-13T09:22:50Z",
+    "lastHumanMessageTs": null,
+    "participants": [],
+    "roles": {
+     "cicEngaged": false,
+     "cicDisengaged": null,
+     "bridgeMentioned": false,
+     "customerUpdateGiven": null,
+     "csmOrTamPresent": false,
+     "engineeringOrBacklineEngaged": false,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [],
+    "summary": "Channel created 2026-11-13 with swarm request and case-owner assignment, and nothing since (last message 2026-11-13). No human has ever posted; stalled/silent in Slack for about 5 days.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "483533756",
+   "subject": "Your Org (00DWL000009jCEL) on Instance USA774S has been throttled",
+   "status": "Working",
+   "subStatus": "In Progress",
+   "account": "PepsiCo, Inc.",
+   "owner": "Saipriya Madithati",
+   "manager": "Sai Vikram",
+   "created": "2026-11-13T08:20:13.000+0000",
+   "sev1Start": "2026-11-17T00:17:13.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Throttle didn\u2019t reoccur",
+   "lastPublicActivity": "2026-11-17T00:17:39.000+0000",
+   "lastModified": "2026-11-17T00:24:55.000+0000",
+   "activeSwarm": false,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 5.03,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CHEM0HWKC",
+    "channelName": "sev1-483533756-pepsico-inc-sig",
+    "channelCreated": "2026-11-13T08:20:18Z",
+    "archived": false,
+    "msgTotal": 41,
+    "msg24h": 0,
+    "msg72h": 3,
+    "lastMessageTs": "2026-11-17T00:19:00Z",
+    "lastHumanMessageTs": "2026-11-13T08:29:56Z",
+    "participants": [
+     "Anjali Chanagonda",
+     "Shubha Vijayaraghavan"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": false,
+     "customerUpdateGiven": null,
+     "csmOrTamPresent": false,
+     "engineeringOrBacklineEngaged": false,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [
+     {
+      "ts": "2026-11-13T08:29:56Z",
+      "author": "Anjali Chanagonda",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T08:24:10Z",
+      "author": "Shubha Vijayaraghavan",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T08:23:48Z",
+      "author": "Anjali Chanagonda",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T08:23:47Z",
+      "author": "Anjali Chanagonda",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T08:21:30Z",
+      "author": "Anjali Chanagonda",
+      "text": ""
+     }
+    ],
+    "summary": "APAC CIC engaged on 11-13 for an AutoThrottle (dbcpu) event on a PepsiCo instance; throttle expired and CIC disengaged within about 10 minutes after support management handed ownership to the case owner. No human discussion since; only two join events and a checklist workflow repost on 11-17. Stalled/quiet.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "483520007",
+   "subject": "Assistance Required \u2013 Configure External Provider DID Number as Outbound Caller ID in Salesforce Voice (Production)",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "DPS Holdings, Inc.",
+   "owner": "Naina Khatri",
+   "manager": "Jyothirmayee",
+   "created": "2026-11-13T07:12:01.000+0000",
+   "sev1Start": "2026-11-13T07:12:02.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Disengagement requested/Unscoped",
+   "lastPublicActivity": "2026-11-13T17:13:05.000+0000",
+   "lastModified": "2026-11-18T08:34:29.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": true,
+   "serviceRestored": true,
+   "ageDays": 5.08,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CHJ2KN2DA",
+    "channelName": "sev1-483520007-dps-holdings-inc-sig",
+    "channelCreated": "2026-11-13T07:12:08Z",
+    "archived": false,
+    "msgTotal": 46,
+    "msg24h": 0,
+    "msg72h": 0,
+    "lastMessageTs": "2026-11-13T15:29:03Z",
+    "lastHumanMessageTs": "2026-11-13T15:02:28Z",
+    "participants": [
+     "Arvind Kumar Attri",
+     "Gopalakrishnareddy Avuthu",
+     "Nagapavan Kumar Mulinti",
+     "Naina Khatri",
+     "Tanu Agarwal"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": null,
+     "customerUpdateGiven": true,
+     "csmOrTamPresent": false,
+     "engineeringOrBacklineEngaged": null,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [
+     {
+      "ts": "2026-11-13T08:00:11Z",
+      "author": "Gopalakrishnareddy Avuthu",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T08:04:58Z",
+      "author": "Arvind Kumar Attri",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T09:46:03Z",
+      "author": "Naina Khatri",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T10:14:13Z",
+      "author": "Nagapavan Kumar Mulinti",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T15:02:28Z",
+      "author": "Nagapavan Kumar Mulinti",
+      "text": ""
+     }
+    ],
+    "summary": "Outbound Caller ID request answered as unsupported on native telephony; case marked preventative and CIC disengaged 11-13 09:53Z; demo and help article shared for relay to customer. No human posts since 11-13 15:02Z; idle.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "483497341",
+   "subject": "High Priority - Sarathi ProductItem Snapshot Dailyrun_recipe Failed, due to 2 Billion output row limit",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "Mahindra & Mahindra Ltd.",
+   "owner": "Shubham Joshi",
+   "manager": "Rohit",
+   "created": "2026-11-13T05:19:13.000+0000",
+   "sev1Start": "2026-11-13T05:19:14.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Root cause/Resolution/Workaround provided",
+   "lastPublicActivity": "2026-11-13T10:26:45.000+0000",
+   "lastModified": "2026-11-18T08:35:27.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": true,
+   "serviceRestored": true,
+   "ageDays": 5.16,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CHDD66V8S",
+    "channelName": "sev1-483497341-mahindra--mahindra-ltd-sig",
+    "channelCreated": "2026-11-13T05:19:20Z",
+    "archived": false,
+    "msgTotal": 77,
+    "msg24h": 0,
+    "msg72h": 1,
+    "lastMessageTs": "2026-11-16T00:59:40Z",
+    "lastHumanMessageTs": "2026-11-13T10:37:42Z",
+    "participants": [
+     "Akash Chatterjee",
+     "Anjali Chanagonda",
+     "Dipanjan Saha",
+     "Gianlucantonio Mastrogiacomo",
+     "Manu Vatsal Sharma",
+     "Mirza Ameer Ali Baig",
+     "Neeti Raj",
+     "Nikita Gupta",
+     "Shubham Joshi",
+     "Varun Tandon",
+     "Venkata Kamaraju Kommaraju"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": null,
+     "csmOrTamPresent": null,
+     "engineeringOrBacklineEngaged": null,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [
+     {
+      "ts": "2026-11-13T10:37:42Z",
+      "author": "Akash Chatterjee",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T10:06:23Z",
+      "author": "Gianlucantonio Mastrogiacomo",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T09:59:28Z",
+      "author": "Shubham Joshi",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T09:52:45Z",
+      "author": "Akash Chatterjee",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T08:54:42Z",
+      "author": "Mirza Ameer Ali Baig",
+      "text": ""
+     }
+    ],
+    "summary": "Production CRM Analytics snapshot recipe failing on the 2 billion output-row limit. CIC (APAC, then EMEA after a re-engagement) ended with final disengagement Nov 13 10:06Z; an EMEA CRMA expert confirmed it is a hard platform limit (raising allocation will not help) and recommended engaging an Architect. No human posts since Nov 13 10:37Z, so wound down/stalled.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "483261210",
+   "subject": "Public Links and Content Deliveries \u2013 Need to Restrict Uncontrolled Public Link Creation Without Impacting Chat/Case File Sharing",
+   "status": "Working",
+   "subStatus": "In Progress",
+   "account": "Maersk A/S",
+   "owner": "Pavan Kumar Boya",
+   "manager": "Rohit",
+   "created": "2026-11-12T10:00:53.000+0000",
+   "sev1Start": "2026-11-12T10:00:55.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Resolved",
+   "lastPublicActivity": "2026-11-18T08:09:52.000+0000",
+   "lastModified": "2026-11-18T08:10:34.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": true,
+   "ageDays": 5.96,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CH3A3CF1Q",
+    "channelName": "sev1-483261210-maersk-as-sig",
+    "channelCreated": "2026-11-12T10:01:00Z",
+    "archived": false,
+    "msgTotal": 118,
+    "msg24h": 1,
+    "msg72h": 22,
+    "lastMessageTs": "2026-11-17T11:53:57Z",
+    "lastHumanMessageTs": "2026-11-16T14:28:57Z",
+    "participants": [
+     "Gianlucantonio Mastrogiacomo",
+     "Ravi Sankar Kota",
+     "Pavan Kumar Boya",
+     "Sarfaraj Siddiqui",
+     "Sai Vikram Kinnera",
+     "Bharat Karira",
+     "Sudha Rayaprolu",
+     "Sahan Dissanayake",
+     "Sapratibh Chatterjee",
+     "Krishna Teja Duggaraju",
+     "Rohit Kala"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "cicDisengaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": true,
+     "csmOrTamPresent": true,
+     "engineeringOrBacklineEngaged": null,
+     "nextStepOrEtaStated": true
+    },
+    "recent": [
+     {
+      "ts": "2026-11-16T14:28:57Z",
+      "author": "Sarfaraj Siddiqui",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T14:20:26Z",
+      "author": "Rohit Kala",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T12:38:25Z",
+      "author": "Gianlucantonio Mastrogiacomo",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T12:37:50Z",
+      "author": "Krishna Teja Duggaraju",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T12:36:31Z",
+      "author": "Gianlucantonio Mastrogiacomo",
+      "text": ""
+     }
+    ],
+    "summary": "Sev1 about public file links generated for files shared via messaging/email. Product confirmed working as designed and a VOC was filed; CIC disengaged on 2026-11-16, and the account team (CSM) asked for a path forward after a customer call. Latest message (2026-11-16 19:58 IST) says a success architect engagement request was created and the case remains with EMEA; slowing, monitoring mode with no human posts in the last ~40 hours.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "483235127",
+   "subject": "Production Experience Cloud Site Inaccessible from Uzbekistan (cci-ice.my.site.com)",
+   "status": "Working",
+   "subStatus": "In Progress",
+   "account": "COCA-COLA ICECEK A.S.",
+   "owner": "Rahul Dhiman",
+   "manager": "Rohit",
+   "created": "2026-11-12T08:01:48.000+0000",
+   "sev1Start": "2026-11-12T08:01:50.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Root cause/Resolution/Workaround provided",
+   "lastPublicActivity": "2026-11-16T05:17:46.000+0000",
+   "lastModified": "2026-11-18T08:56:23.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": true,
+   "ageDays": 6.05,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CGW6A1RQB",
+    "channelName": "sev1-483235127-coca-cola-icecek-as-sig",
+    "channelCreated": "2026-11-12T08:01:57Z",
+    "archived": false,
+    "msgTotal": 100,
+    "msg24h": 8,
+    "msg72h": 9,
+    "lastMessageTs": "2026-11-18T08:55:56Z",
+    "lastHumanMessageTs": "2026-11-18T08:55:56Z",
+    "participants": [
+     "Sai Vikram Kinnera",
+     "Saipriya Madithati",
+     "Vishnu Nambiar",
+     "Kumar Raja Addepalli",
+     "Pratyush Kesarwani",
+     "Prashant Verma",
+     "Sudha Rayaprolu",
+     "Rahul Dhiman"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": true,
+     "csmOrTamPresent": null,
+     "engineeringOrBacklineEngaged": true,
+     "nextStepOrEtaStated": true
+    },
+    "recent": [
+     {
+      "ts": "2026-11-18T08:55:56Z",
+      "author": "Rahul Dhiman",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T11:02:11Z",
+      "author": "Rahul Dhiman",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T19:11:38Z",
+      "author": "Sudha Rayaprolu",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T19:10:34Z",
+      "author": "Sudha Rayaprolu",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T15:29:29Z",
+      "author": "Pratyush Kesarwani",
+      "text": ""
+     }
+    ],
+    "summary": "Uzbekistan-region users cannot reach community CDN resources; CIC engaged and re-engaged (11-12, 11-13), internal bridges and a CDN Channels page ran, and engineering/CDN contacts engaged Cloudflare, which says no issue on its side and awaits customer with/without VPN test output. CIC handed command to Support 11-13; EMEA owner Rahul Dhiman acknowledged ownership 11-17/11-18 and is monitoring the investigation. Slow, waiting on customer/product response.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "483047121",
+   "subject": "No option to rotate Consumer Key/Secret on a packaged External Client App (ECA) in the Devhub org",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "Bullhorn",
+   "owner": "Vinay Talapalle",
+   "manager": "Sai Vikram",
+   "created": "2026-11-11T17:21:05.000+0000",
+   "sev1Start": "2026-11-11T17:21:07.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": null,
+   "lastPublicActivity": "2026-11-12T07:37:49.000+0000",
+   "lastModified": "2026-11-18T08:28:50.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 6.66,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CGY07FBGR",
+    "channelName": "sev1-483047121-bullhorn-prem",
+    "channelCreated": "2026-11-11T17:21:12Z",
+    "archived": false,
+    "msgTotal": 43,
+    "msg24h": 3,
+    "msg72h": 21,
+    "lastMessageTs": "2026-11-18T08:24:26Z",
+    "lastHumanMessageTs": "2026-11-16T16:53:27Z",
+    "participants": [
+     "Sarad Tripathi"
+    ],
+    "roles": {
+     "cicEngaged": false,
+     "bridgeMentioned": false,
+     "customerUpdateGiven": false,
+     "csmOrTamPresent": false,
+     "engineeringOrBacklineEngaged": null,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [
+     {
+      "ts": "2026-11-16T16:53:27Z",
+      "author": "Sarad Tripathi",
+      "text": ""
+     }
+    ],
+    "summary": "Almost entirely automated case-owner changes (latest 11-18 08:24Z). The only human discussion is a 11-16 swarm post asking about bug W-24159704 and a PM-restricted permission, with no reply visible.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "483014142",
+   "subject": "Request to Audit Data Access Through Backstory Integration",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "GXO Enterprise Services, LLC.",
+   "owner": "Neha Mishra",
+   "manager": "Mirza",
+   "created": "2026-11-11T14:46:48.000+0000",
+   "sev1Start": "2026-11-11T15:21:37.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Security issue",
+   "lastPublicActivity": "2026-11-13T15:37:11.000+0000",
+   "lastModified": "2026-11-18T07:38:30.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": true,
+   "ageDays": 6.76,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CGV3S0SKC",
+    "channelName": "sev1-483014142-gxo-enterprise-services-llc",
+    "channelCreated": "2026-11-11T16:03:21Z",
+    "archived": false,
+    "msgTotal": 36,
+    "msg24h": 0,
+    "msg72h": 0,
+    "lastMessageTs": "2026-11-14T00:21:44Z",
+    "lastHumanMessageTs": "2026-11-13T16:08:05Z",
+    "participants": [
+     "Jessi Carini",
+     "Neha Mishra",
+     "Sai Vikram Kinnera",
+     "Sakshi Srivastav",
+     "Seif Allam"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": true,
+     "csmOrTamPresent": true,
+     "engineeringOrBacklineEngaged": null,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [
+     {
+      "ts": "2026-11-13T16:08:05Z",
+      "author": "Neha Mishra",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T16:05:29Z",
+      "author": "Neha Mishra",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T15:07:17Z",
+      "author": "Neha Mishra",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T15:06:49Z",
+      "author": "Seif Allam",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T15:05:11Z",
+      "author": "Neha Mishra",
+      "text": ""
+     }
+    ],
+    "summary": "Security-related Sev1 (suspicious integration user activity). CIC noted on Nov 11 that security cases are not CIC-owned and moved toward disengaging; support gave the customer log-based findings on Nov 12 and ownership moved to a developer-aligned engineer. On Nov 13 the account team asked for self-service log access for a UAT sandbox; the engineer raised a request and asked a subteam to review a change case. No channel messages since Nov 13 16:08Z (a join on Nov 14), so awaiting the subteam response; stalled.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "482689799",
+   "subject": "Customer Async Limit nearly at 90%",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "Kantata (UK)",
+   "owner": "Vinay Talapalle",
+   "manager": "Sai Vikram",
+   "created": "2026-11-10T12:26:04.000+0000",
+   "sev1Start": "2026-11-10T12:26:05.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": null,
+   "lastPublicActivity": "2026-11-10T23:05:16.000+0000",
+   "lastModified": "2026-11-18T08:17:43.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 7.86,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CG8RHRB19",
+    "channelName": "sev1-482689799-kantata-uk-prem",
+    "channelCreated": "2026-11-10T12:26:09Z",
+    "archived": false,
+    "msgTotal": 19,
+    "msg24h": 0,
+    "msg72h": 0,
+    "lastMessageTs": "2026-11-11T08:06:37Z",
+    "lastHumanMessageTs": null,
+    "participants": [],
+    "roles": {
+     "cicEngaged": false,
+     "cicDisengaged": null,
+     "bridgeMentioned": false,
+     "customerUpdateGiven": null,
+     "csmOrTamPresent": false,
+     "engineeringOrBacklineEngaged": null,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [],
+    "summary": "Channel created 2026-11-10 with swarm request, several case-owner changes and one swarm member joining; no human has posted. Last activity is a case-owner change on 2026-11-11 (13:36 IST), so no visible progress in Slack for about a week.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "482442680",
+   "subject": "SalesForce - KEM (Deployment Monitoring) - Production Deployment Readiness 2026-NOV-17, 12:00AM ET to 2026-NOV-20, 06:00PM ET <November 17, 2026, 10:30 AM IST to November 21, 2026, 04:30 AM IST - APAC>",
+   "status": "Working",
+   "subStatus": "In Progress",
+   "account": "General Motors Holdings, LLC.",
+   "owner": "Manikanta Mullaguru",
+   "manager": "Mirza",
+   "created": "2026-11-09T16:41:41.000+0000",
+   "sev1Start": "2026-11-18T06:45:51.000+0000",
+   "cicFlag": true,
+   "cicSubstatus": null,
+   "lastPublicActivity": "2026-11-18T07:14:09.000+0000",
+   "lastModified": "2026-11-18T09:03:16.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": true,
+   "serviceRestored": false,
+   "ageDays": 8.69,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CJTDZUWUR",
+    "channelName": "sev1-482442680-general-motors-holdings-llc-sig",
+    "channelCreated": "2026-11-18T06:45:56Z",
+    "archived": false,
+    "msgTotal": 85,
+    "msg24h": 85,
+    "msg72h": 85,
+    "lastMessageTs": "2026-11-18T09:04:29Z",
+    "lastHumanMessageTs": "2026-11-18T08:41:04Z",
+    "participants": [
+     "Arvind Kumar Attri",
+     "Ravindra Ejjada",
+     "Ritika Das",
+     "Vishnu Nambiar",
+     "Sai Vikram Kinnera",
+     "Manikanta Mullaguru"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": true,
+     "csmOrTamPresent": false,
+     "engineeringOrBacklineEngaged": true,
+     "nextStepOrEtaStated": true
+    },
+    "recent": [
+     {
+      "ts": "2026-11-18T08:41:04Z",
+      "author": "Manikanta Mullaguru",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T08:35:51Z",
+      "author": "Sai Vikram Kinnera",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T08:25:08Z",
+      "author": "Vishnu Nambiar",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T08:15:14Z",
+      "author": "Ritika Das",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T08:13:45Z",
+      "author": "Ravindra Ejjada",
+      "text": ""
+     }
+    ],
+    "summary": "New channel today (11-18): production metadata deployment appeared stuck at 501 of 547 components; backline (Ravindra Ejjada) found it still processing and supplied Splunk queries, then later errors led to a structured investigation. CIC (Vishnu Nambiar) posted a CIC Update and an internal bridge ran; ownership is handing to EMEA (Manikanta Mullaguru, bridge posted 08:41Z). Customer plans a retry 11-19 23:00 EST and wants root cause first. Actively progressing. Thread replies were not read.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "481512203",
+   "subject": "Unable to verify Email change verification link from Experience Cloud",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "Insulet Corporation",
+   "owner": "Prince Sakariya",
+   "manager": "Shubha",
+   "created": "2026-11-06T14:04:05.000+0000",
+   "sev1Start": "2026-11-06T14:04:06.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Bug Identified/KI provided",
+   "lastPublicActivity": "2026-11-09T16:39:00.000+0000",
+   "lastModified": "2026-11-18T08:11:39.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": true,
+   "ageDays": 11.79,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CFGPM471U",
+    "channelName": "sev1-481512203-insulet-corporation-sig",
+    "channelCreated": "2026-11-06T14:04:11Z",
+    "archived": false,
+    "msgTotal": 58,
+    "msg24h": 0,
+    "msg72h": 0,
+    "lastMessageTs": "2026-11-12T16:40:27Z",
+    "lastHumanMessageTs": "2026-11-11T11:13:06Z",
+    "participants": [
+     "Prince Sakariya",
+     "Rahul Reddy Chitteti",
+     "Shubha Vijayaraghavan",
+     "Victor Ashby"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": null,
+     "customerUpdateGiven": null,
+     "csmOrTamPresent": false,
+     "engineeringOrBacklineEngaged": null,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [
+     {
+      "ts": "2026-11-06T17:47:44Z",
+      "author": "Victor Ashby",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-06T17:58:07Z",
+      "author": "Rahul Reddy Chitteti",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-06T18:07:15Z",
+      "author": "Rahul Reddy Chitteti",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-06T21:08:27Z",
+      "author": "Victor Ashby",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-11T11:13:06Z",
+      "author": "Prince Sakariya",
+      "text": ""
+     }
+    ],
+    "summary": "Known-issue (portal email link redirect, bug W-24551838) with Product contacted; CIC disengaged 11-06 21:08Z. Last human post 11-11 asks Product for a fix ETA and nothing since; stalled waiting on a fix.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "481472369",
+   "subject": "SEV1 | Suspected exposure of Salesforce integration credentials from external attack",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "Cimpress Schweiz GmbH",
+   "owner": "Shalini Singh(Service Cloud)",
+   "manager": "Rohit",
+   "created": "2026-11-06T11:06:13.000+0000",
+   "sev1Start": "2026-11-06T11:06:15.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "CIC no longer needed",
+   "lastPublicActivity": "2026-11-17T10:27:59.000+0000",
+   "lastModified": "2026-11-17T16:24:35.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": true,
+   "ageDays": 11.92,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CF200LWET",
+    "channelName": "sev1-481472369-vistaprint-limited-sig",
+    "channelCreated": "2026-11-06T11:06:20Z",
+    "archived": false,
+    "msgTotal": 58,
+    "msg24h": 0,
+    "msg72h": 2,
+    "lastMessageTs": "2026-11-16T08:16:54Z",
+    "lastHumanMessageTs": "2026-11-06T16:15:42Z",
+    "participants": [
+     "Khem Chand Mishra",
+     "Shubha Vijayaraghavan",
+     "Sonia Notani Notani"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": null,
+     "csmOrTamPresent": false,
+     "engineeringOrBacklineEngaged": false,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [
+     {
+      "ts": "2026-11-06T16:15:42Z",
+      "author": "Sonia Notani Notani",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-06T14:09:43Z",
+      "author": "Sonia Notani Notani",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-06T12:22:58Z",
+      "author": "Sonia Notani Notani",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-06T11:31:05Z",
+      "author": "Khem Chand Mishra",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-06T11:30:35Z",
+      "author": "Sonia Notani Notani",
+      "text": ""
+     }
+    ],
+    "summary": "Security Sev1 (suspected exposure of integration credentials from an external attack). CIC (EMEA) joined, a bridge was held on Nov 6, and CIC disengaged at 16:14Z the same day after chasing the owner for customer news. Since then only bot owner-reassignment notices (latest Nov 16 08:16Z); no human posts for about 12 days, so the channel is dormant/stalled.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "481471701",
+   "subject": "Omni-Channel Voice Login Error \u2013 Dial Pad Disabled for Few Users",
+   "status": "Working",
+   "subStatus": "In Progress",
+   "account": "Jaguar Land Rover Limited",
+   "owner": "Amrutha Baratam",
+   "manager": "Sai Vikram",
+   "created": "2026-11-06T11:03:12.000+0000",
+   "sev1Start": "2026-11-06T11:03:13.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Root cause/Resolution/Workaround provided",
+   "lastPublicActivity": "2026-11-17T15:56:44.000+0000",
+   "lastModified": "2026-11-18T08:12:14.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": true,
+   "ageDays": 11.92,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CFB3MCWDR",
+    "channelName": "sev1-481471701-jaguar-land-rover-limited-sig",
+    "channelCreated": "2026-11-06T11:03:17Z",
+    "archived": false,
+    "msgTotal": 46,
+    "msg24h": 0,
+    "msg72h": 0,
+    "lastMessageTs": "2026-11-11T08:29:41Z",
+    "lastHumanMessageTs": "2026-11-06T13:15:15Z",
+    "participants": [
+     "Shubha Vijayaraghavan",
+     "Amrutha Baratam",
+     "RajaShekhar Rao Velagaleti",
+     "Sowmya Kalidindi"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "cicDisengaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": true,
+     "csmOrTamPresent": true,
+     "engineeringOrBacklineEngaged": false,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [
+     {
+      "ts": "2026-11-06T13:15:15Z",
+      "author": "RajaShekhar Rao Velagaleti",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-06T13:06:26Z",
+      "author": "RajaShekhar Rao Velagaleti",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-06T12:38:11Z",
+      "author": "Amrutha Baratam",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-06T12:37:44Z",
+      "author": "Sowmya Kalidindi",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-06T12:03:27Z",
+      "author": "RajaShekhar Rao Velagaleti",
+      "text": ""
+     }
+    ],
+    "summary": "Amazon Connect/Service Cloud Voice login issue for Barcelona users (Sev1 impact duration 2h11m) on 2026-11-06; support owned by Amrutha Baratam with CIC on the bridge, and the customer reported the issue auto-resolved with a Final SCI posted at 18:45 IST. CIC disengaged the same day. The only later activity is bot case-owner changes on 2026-11-10 and 2026-11-11 (no human posts since 2026-11-06), so the channel is dormant and appears resolved/idle.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "481453216",
+   "subject": "Connect REST API messageText field returns null for RichLink/URL content",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "British American Shared Services (GSD) Limited",
+   "owner": "Sagar Mehta",
+   "manager": "Mirza",
+   "created": "2026-11-06T09:38:52.000+0000",
+   "sev1Start": "2026-11-06T09:38:54.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "No Active Critical Business Impact/RCA request",
+   "lastPublicActivity": "2026-11-12T05:32:49.000+0000",
+   "lastModified": "2026-11-18T06:14:02.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": true,
+   "serviceRestored": true,
+   "ageDays": 11.98,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CF193DP8X",
+    "channelName": "sev1-481453216-british-american-shared-services-gsd-limited-sig",
+    "channelCreated": "2026-11-06T09:38:59Z",
+    "archived": false,
+    "msgTotal": 67,
+    "msg24h": 0,
+    "msg72h": 2,
+    "lastMessageTs": "2026-11-16T08:03:04Z",
+    "lastHumanMessageTs": "2026-11-10T12:27:58Z",
+    "participants": [
+     "Shubha Vijayaraghavan",
+     "Sagar Mehta",
+     "Craig Cahill",
+     "Lavina Singh",
+     "Anusha Avula"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": true,
+     "csmOrTamPresent": true,
+     "engineeringOrBacklineEngaged": null,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [
+     {
+      "ts": "2026-11-10T12:27:58Z",
+      "author": "Sagar Mehta",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-10T12:08:41Z",
+      "author": "Anusha Avula",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-06T14:23:56Z",
+      "author": "Craig Cahill",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-06T11:44:11Z",
+      "author": "Sagar Mehta",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-06T11:27:03Z",
+      "author": "Anusha Avula",
+      "text": ""
+     }
+    ],
+    "summary": "CIC (Craig Cahill) engaged 11-06 and transitioned command to Support since the case waits on a customer config change and business impact is unconfirmed. Support held a customer call 11-06 (conversation data API question) and shared an update 11-10; customer is to implement internally. No channel activity since 11-10T12:27Z. Stalled pending customer.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "480894020",
+   "subject": "Urgent support requested for Case #480794939 and severity change to P1",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "Accenture LLP",
+   "owner": "Vinay Talapalle",
+   "manager": "Sai Vikram",
+   "created": "2026-11-05T08:51:54.000+0000",
+   "sev1Start": "2026-11-05T08:51:56.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": null,
+   "lastPublicActivity": "2026-11-11T09:19:10.000+0000",
+   "lastModified": "2026-11-18T08:16:12.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 13.01,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CENR96S0P",
+    "channelName": "sev1-480894020-accenture-llp-prem",
+    "channelCreated": "2026-11-05T08:52:02Z",
+    "archived": false,
+    "msgTotal": 12,
+    "msg24h": 0,
+    "msg72h": 0,
+    "lastMessageTs": "2026-11-05T09:41:17Z",
+    "lastHumanMessageTs": null,
+    "participants": [],
+    "roles": {
+     "cicEngaged": false,
+     "bridgeMentioned": false,
+     "customerUpdateGiven": false,
+     "csmOrTamPresent": false,
+     "engineeringOrBacklineEngaged": false,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [],
+    "summary": "Only bot posts and join events since creation 11-05; no human discussion.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "480844464",
+   "subject": "Experience cloud site not working in Uzbekistan Region",
+   "status": "Working",
+   "subStatus": "In Progress",
+   "account": "The Boeing Company",
+   "owner": "Snehal Nerkar",
+   "manager": "Sai Vikram",
+   "created": "2026-11-05T06:43:19.000+0000",
+   "sev1Start": "2026-11-12T08:19:27.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Root cause/Resolution/Workaround provided",
+   "lastPublicActivity": "2026-11-17T10:55:49.000+0000",
+   "lastModified": "2026-11-18T08:35:03.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": true,
+   "ageDays": 13.1,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CFB3DV6C9",
+    "channelName": "sev1-480844464-the-boeing-company-sig",
+    "channelCreated": "2026-11-05T17:26:04Z",
+    "archived": false,
+    "msgTotal": 100,
+    "msg24h": 30,
+    "msg72h": 66,
+    "lastMessageTs": "2026-11-18T08:33:57Z",
+    "lastHumanMessageTs": "2026-11-17T21:57:32Z",
+    "participants": [
+     "Dominika Barrett",
+     "Gulshan Bhalme",
+     "Harshita Saxena",
+     "Hugo Chan",
+     "Jessi Carini",
+     "Kendel Ringenberg",
+     "Naveen Salutagi",
+     "Rohit Kala",
+     "Rohit Mahla",
+     "Rushikesh Satpute",
+     "Shivom Verma"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": null,
+     "csmOrTamPresent": null,
+     "engineeringOrBacklineEngaged": true,
+     "nextStepOrEtaStated": true
+    },
+    "recent": [
+     {
+      "ts": "2026-11-17T21:57:32Z",
+      "author": "Jessi Carini",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T21:05:02Z",
+      "author": "Jessi Carini",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T20:00:06Z",
+      "author": "Jessi Carini",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T15:53:23Z",
+      "author": "Jessi Carini",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T15:39:12Z",
+      "author": "Dominika Barrett",
+      "text": ""
+     }
+    ],
+    "summary": "Production issue where roughly 270 users cannot reach an Experience Cloud community site; severity raised to Sev1 on Nov 17 and a VPN workaround is in place. GUS investigation W-24891286 with Secure Domains/Public DNS is tracking the long-term fix. CIC (EMEA then AMER) handed command back to Support and disengaged Nov 17 22:01Z; owner reassignments continued via bot through Nov 18 08:33Z. Progressing at lower urgency; no human posts for about 11 hours.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "480445853",
+   "subject": "Slack & Salesforce Swarming Integration: Action buttons (\"View Case\", \"Finish Swarm\", \"Reopen Swarm\") unresponsive in Slack Sandbox",
+   "status": "Call/Meeting Scheduled",
+   "subStatus": "Manually Scheduled",
+   "account": "Hewlett Packard Enterprise Company",
+   "owner": "Neha Mishra",
+   "manager": "Mirza",
+   "created": "2026-11-04T13:19:11.000+0000",
+   "sev1Start": "2026-11-04T13:19:12.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "No Active Critical Business Impact/RCA request",
+   "lastPublicActivity": "2026-11-17T15:41:14.000+0000",
+   "lastModified": "2026-11-18T07:38:30.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 13.83,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CECUKUBGF",
+    "channelName": "sev1-480445853-hewlett-packard-enterprise-company-sig",
+    "channelCreated": "2026-11-04T13:19:18Z",
+    "archived": false,
+    "msgTotal": 40,
+    "msg24h": 0,
+    "msg72h": 0,
+    "lastMessageTs": "2026-11-04T17:49:22Z",
+    "lastHumanMessageTs": "2026-11-04T15:24:02Z",
+    "participants": [
+     "Raj Lakshman",
+     "Neha Mishra",
+     "Rohit Kala"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "cicDisengaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": null,
+     "csmOrTamPresent": false,
+     "engineeringOrBacklineEngaged": false,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [
+     {
+      "ts": "2026-11-04T15:24:02Z",
+      "author": "Raj Lakshman",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-04T13:40:39Z",
+      "author": "Rohit Kala",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-04T13:31:44Z",
+      "author": "Neha Mishra",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-04T13:30:49Z",
+      "author": "Raj Lakshman",
+      "text": ""
+     }
+    ],
+    "summary": "Short-lived 2026-11-04 channel: case owner noted it is a sandbox issue, CIC Sev1 joined, then disengaged because the customer did not join the call (case on NMI, no BI info). No messages since 2026-11-04; effectively stalled/idle in Slack for two weeks.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "479795953",
+   "subject": "Session inactivity for Agentforce",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "Nestl\u00e9 Operational Services Worldwide (NOSW) S.A.",
+   "owner": "Sagar Mehta",
+   "manager": "Mirza",
+   "created": "2026-11-03T08:30:07.000+0000",
+   "sev1Start": "2026-11-05T07:35:32.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "WAD/Identified as a non-Salesforce issue",
+   "lastPublicActivity": "2026-11-16T08:43:10.000+0000",
+   "lastModified": "2026-11-18T07:12:50.000+0000",
+   "activeSwarm": false,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 15.03,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CE8DVFYHK",
+    "channelName": "sev1-479795953-nestl-operational-services-worldwide-nosw-sa-sig",
+    "channelCreated": "2026-11-03T08:52:23Z",
+    "archived": false,
+    "msgTotal": 54,
+    "msg24h": 0,
+    "msg72h": 0,
+    "lastMessageTs": "2026-11-05T07:37:35Z",
+    "lastHumanMessageTs": "2026-11-04T11:36:21Z",
+    "participants": [
+     "Dominika Barrett",
+     "Shankar Wagh",
+     "Mohammad Anas Khan",
+     "Rohit Kala",
+     "Sagar Mehta",
+     "Slavi\u0161a Masli\u0107"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": true,
+     "csmOrTamPresent": false,
+     "engineeringOrBacklineEngaged": null,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [
+     {
+      "ts": "2026-11-04T11:36:21Z",
+      "author": "Sagar Mehta",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-04T11:02:24Z",
+      "author": "Slavi\u0161a Masli\u0107",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-04T09:09:33Z",
+      "author": "Sagar Mehta",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-04T09:05:30Z",
+      "author": "Sagar Mehta",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-04T08:42:06Z",
+      "author": "Rohit Kala",
+      "text": ""
+     }
+    ],
+    "summary": "WhatsApp/Agentforce messaging session ends after 2h inactivity; Support confirmed behaviour is working as designed (11-03/11-04), CIC (Dominika Barrett) transitioned command and disengaged 11-03. Customer asked for a WhatsApp-only workaround/timeout config; last message 11-04T11:36Z, nothing since. Stalled/dormant.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "479205779",
+   "subject": "Case creation issue",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "Tokio Marine Kiln Insurance Services Limited",
+   "owner": "Vinay Talapalle",
+   "manager": "Sai Vikram",
+   "created": "2026-11-02T06:28:44.000+0000",
+   "sev1Start": "2026-11-11T04:54:51.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": null,
+   "lastPublicActivity": "2026-11-13T06:40:13.000+0000",
+   "lastModified": "2026-11-18T08:17:31.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 16.11,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CGJF3FVFF",
+    "channelName": "sev1-479205779-tokio-marine-kiln-insurance-services-limited-prem",
+    "channelCreated": "2026-11-11T04:54:55Z",
+    "archived": false,
+    "msgTotal": 23,
+    "msg24h": 0,
+    "msg72h": 5,
+    "lastMessageTs": "2026-11-17T08:25:55Z",
+    "lastHumanMessageTs": null,
+    "participants": [],
+    "roles": {
+     "cicEngaged": false,
+     "bridgeMentioned": false,
+     "customerUpdateGiven": false,
+     "csmOrTamPresent": false,
+     "engineeringOrBacklineEngaged": false,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [],
+    "summary": "Only bot posts and join events (case-owner changes up to 11-17); no human discussion.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "478275754",
+   "subject": "Close Amazon COnnect instance linked with org id 00DTI000007BoDZ or provide me access back the org",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "TDS Telecommunications LLC",
+   "owner": "Jayesh Kharche",
+   "manager": "Mirza",
+   "created": "2026-10-31T12:38:40.000+0000",
+   "sev1Start": "2026-10-31T12:38:41.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Disengagement requested/Unscoped",
+   "lastPublicActivity": "2026-11-02T12:43:26.000+0000",
+   "lastModified": "2026-11-18T07:59:57.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 17.85,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CDSTQGNR0",
+    "channelName": "sev1-478275754-tds-telecommunications-llc-sig",
+    "channelCreated": "2026-10-31T12:38:46Z",
+    "archived": false,
+    "msgTotal": 28,
+    "msg24h": 0,
+    "msg72h": 0,
+    "lastMessageTs": "2026-11-04T10:55:34Z",
+    "lastHumanMessageTs": "2026-11-04T10:55:34Z",
+    "participants": [
+     "Brandon Severn",
+     "Jayesh Kharche",
+     "Nishith Ranjan Mishra"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": null,
+     "customerUpdateGiven": null,
+     "csmOrTamPresent": true,
+     "engineeringOrBacklineEngaged": false,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [
+     {
+      "ts": "2026-11-04T10:55:34Z",
+      "author": "Jayesh Kharche",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-04T10:54:34Z",
+      "author": "Jayesh Kharche",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-04T02:56:43Z",
+      "author": "Brandon Severn",
+      "text": ""
+     },
+     {
+      "ts": "2026-10-31T12:41:21Z",
+      "author": "Nishith Ranjan Mishra",
+      "text": ""
+     }
+    ],
+    "summary": "Service Cloud Voice / Amazon Connect Sev1. CIC (weekend) joined and disengaged on Oct 31; on Nov 4 support submitted an AWS account closure request and was waiting on the customer about a GST invoice before closing. CSM asked for next steps Nov 4. No human posts since Nov 4 10:55Z (over 13 days), so stalled/likely winding down.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "476205795",
+   "subject": "Salesforce One App \u2013 Duplicate Contract Approval Submissions Due to UI Refresh Issue",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "Bacardi Martini BV",
+   "owner": "Krishna Teja Duggaraju",
+   "manager": "Rohit",
+   "created": "2026-10-27T06:48:08.000+0000",
+   "sev1Start": "2026-11-12T08:30:33.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "CIC no longer needed",
+   "lastPublicActivity": "2026-11-18T07:24:53.000+0000",
+   "lastModified": "2026-11-18T08:56:33.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": true,
+   "ageDays": 22.1,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CD8SHAZNC",
+    "channelName": "sev1-476205795-bacardi-martini-bv-sig",
+    "channelCreated": "2026-10-27T06:48:36Z",
+    "archived": false,
+    "msgTotal": 74,
+    "msg24h": 0,
+    "msg72h": 1,
+    "lastMessageTs": "2026-11-16T14:30:56Z",
+    "lastHumanMessageTs": "2026-11-16T14:30:56Z",
+    "participants": [
+     "Chandrackanth Kanchibhotla",
+     "Myles Slevin",
+     "Ritu Dwivedi",
+     "Md Rahman Khan",
+     "Jyothirmayee Ramineni",
+     "Sai Krishna Tirumalasetti",
+     "Maggie Fung",
+     "Rishabh Panwar",
+     "Sai Vikram Kinnera",
+     "Krishna Teja Duggaraju"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "cicDisengaged": null,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": true,
+     "csmOrTamPresent": null,
+     "engineeringOrBacklineEngaged": null,
+     "nextStepOrEtaStated": true
+    },
+    "recent": [
+     {
+      "ts": "2026-11-16T14:30:56Z",
+      "author": "Krishna Teja Duggaraju",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T16:14:31Z",
+      "author": "Krishna Teja Duggaraju",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T14:10:08Z",
+      "author": "Krishna Teja Duggaraju",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-12T08:34:13Z",
+      "author": "Sai Vikram Kinnera",
+      "text": ""
+     },
+     {
+      "ts": "2026-10-27T23:26:23Z",
+      "author": "Rishabh Panwar",
+      "text": ""
+     }
+    ],
+    "summary": "Intermittent mobile Submit-button/approval duplicate-submission issue. After CIC engagement in October, support (Krishna Teja Duggaraju) posted daily-style updates; on 2026-11-16 the behavior was matched to Known Issue W-17518506, findings were shared with the customer and an interim flow validation recommended, with closure pending customer feedback. Low-urgency waiting-on-customer; no new posts since 2026-11-16.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "476188450",
+   "subject": "Significant Initial Response Latency in Agentforce \u2013 Saks Sophie Enhanced Web Chat (Mobile Specific)",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "Saks.com LLC",
+   "owner": "Prakhar Singh",
+   "manager": "Shubha",
+   "created": "2026-10-26T09:57:23.000+0000",
+   "sev1Start": "2026-10-30T16:52:56.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Root cause/Resolution/Workaround provided",
+   "lastPublicActivity": "2026-11-16T11:13:43.000+0000",
+   "lastModified": "2026-11-17T19:43:02.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 22.97,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CDF8BD7U3",
+    "channelName": "sev1-476188450-sakscom-llc-sig",
+    "channelCreated": "2026-10-30T16:53:01Z",
+    "archived": false,
+    "msgTotal": 100,
+    "msg24h": 0,
+    "msg72h": 1,
+    "lastMessageTs": "2026-11-16T10:37:09Z",
+    "lastHumanMessageTs": "2026-11-16T10:37:09Z",
+    "participants": [
+     "Reetoban Chakraborty",
+     "Jayesh Kharche",
+     "Stacy Viola",
+     "Isha Chakraborty",
+     "Wayne Tam",
+     "Vaibhav Manewar",
+     "Ritu Dwivedi",
+     "Praveen Kumar Thaduri",
+     "Gaurav Suryawanshi",
+     "Prakash Chandra Srivastava",
+     "Andy Shah",
+     "Rahul Bajpai",
+     "Ben Drasin",
+     "Jyothirmayee Ramineni",
+     "Prakhar Singh",
+     "Rajendra Patil",
+     "Manoj Nagpure",
+     "Scott T Rohrkemper",
+     "Prateek Pannala"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": true,
+     "csmOrTamPresent": null,
+     "engineeringOrBacklineEngaged": true,
+     "nextStepOrEtaStated": true
+    },
+    "recent": [
+     {
+      "ts": "2026-11-16T10:37:09Z",
+      "author": "Prakhar Singh",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-12T14:50:16Z",
+      "author": "Prateek Pannala",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-12T12:55:25Z",
+      "author": "Prateek Pannala",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-12T12:03:53Z",
+      "author": "Prateek Pannala",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-12T11:16:39Z",
+      "author": "Prateek Pannala",
+      "text": ""
+     }
+    ],
+    "summary": "Apple WebKit/Safari chat latency bug; CIC managers rotated across regions through 11-02, perf/product teams provided a long-polling workaround script. Customer confirmed on 11-12 the fix works in staging; on 11-16 Support said no pending actions and the case would be closed by EOD, noting customer is in a code freeze for production. Wound down; no messages since 11-16T10:37Z. (A second private channel #476188450---sakscom-llc, C0CDGA31H8Q, also exists and was not read.)",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "476187068",
+   "subject": "ServiceCloud - Hyperforce Migration KEM - Schneider Electric",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "Schneider Electric Industries SAS",
+   "owner": "Balu Chennupati",
+   "manager": "Shubha",
+   "created": "2026-10-26T07:42:53.000+0000",
+   "sev1Start": "2026-11-07T04:46:53.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Resolved",
+   "lastPublicActivity": "2026-11-10T08:57:21.000+0000",
+   "lastModified": "2026-11-17T16:19:33.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": true,
+   "ageDays": 23.06,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CFT06G15F",
+    "channelName": "sev1-476187068-schneider-electric-industries-sas-sig",
+    "channelCreated": "2026-11-07T04:46:57Z",
+    "archived": false,
+    "msgTotal": 83,
+    "msg24h": 0,
+    "msg72h": 0,
+    "lastMessageTs": "2026-11-13T08:12:51Z",
+    "lastHumanMessageTs": "2026-11-09T08:22:52Z",
+    "participants": [
+     "Akash Tyagi",
+     "Bharath Kumar Reddy Gunna",
+     "Cara Cephus",
+     "DhanShyam Prasad Girimalla",
+     "Himanshu Ranjan",
+     "Mallikarjuna Burra",
+     "Sharon Anna Freida Raj"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": true,
+     "csmOrTamPresent": false,
+     "engineeringOrBacklineEngaged": null,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [
+     {
+      "ts": "2026-11-09T01:54:11Z",
+      "author": "Mallikarjuna Burra",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-09T08:10:51Z",
+      "author": "Mallikarjuna Burra",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-09T08:16:08Z",
+      "author": "Himanshu Ranjan",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-09T08:17:50Z",
+      "author": "Mallikarjuna Burra",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-09T08:22:52Z",
+      "author": "Mallikarjuna Burra",
+      "text": ""
+     }
+    ],
+    "summary": "Customer-side row-lock issue around hyperforce migration; CIC rotated across regions and disengaged 11-09 after support confirmed no pending actions, with closure awaiting customer app test. No human posts since 11-09 08:22Z; idle.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "476153774",
+   "subject": "How to restrict Guest users from accessing or downloading the attachment",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "Philips Electronics Nederland B.V (M2O)",
+   "owner": "Gulshan Bhalme",
+   "manager": "Rohit",
+   "created": "2026-10-23T13:09:08.000+0000",
+   "sev1Start": "2026-10-24T08:55:35.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Root cause/Resolution/Workaround provided",
+   "lastPublicActivity": "2026-11-06T08:53:06.000+0000",
+   "lastModified": "2026-11-18T09:06:11.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": true,
+   "ageDays": 25.83,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CBWKAEM6D",
+    "channelName": "sev1-476153774-philips-electronics-nederland-bv-m2o-sig",
+    "channelCreated": "2026-10-24T08:55:39Z",
+    "archived": false,
+    "msgTotal": 43,
+    "msg24h": 0,
+    "msg72h": 0,
+    "lastMessageTs": "2026-11-02T08:55:00Z",
+    "lastHumanMessageTs": "2026-10-24T16:59:17Z",
+    "participants": [
+     "Akash Tyagi",
+     "Anil Chand Rampeesa",
+     "Gulshan Bhalme"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": true,
+     "csmOrTamPresent": false,
+     "engineeringOrBacklineEngaged": false,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [
+     {
+      "ts": "2026-10-24T16:59:17Z",
+      "author": "Gulshan Bhalme",
+      "text": ""
+     },
+     {
+      "ts": "2026-10-24T12:23:42Z",
+      "author": "Akash Tyagi",
+      "text": ""
+     },
+     {
+      "ts": "2026-10-24T12:22:55Z",
+      "author": "Gulshan Bhalme",
+      "text": ""
+     },
+     {
+      "ts": "2026-10-24T12:22:35Z",
+      "author": "Akash Tyagi",
+      "text": ""
+     },
+     {
+      "ts": "2026-10-24T12:05:58Z",
+      "author": "Gulshan Bhalme",
+      "text": ""
+     }
+    ],
+    "summary": "Sev1 about guest users being able to access/download attachment files. A customer call with troubleshooting was held Oct 24, the impact was judged mitigated, the case was marked preventive and CIC disengaged the same day. Only bot owner-change notices since (Nov 2); no human posts for about 25 days, so dormant.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "476001667",
+   "subject": "Intermittent HTTP 503 \"Upstream Error Page\" (HTML, non-JSON) responses from REST API on [PROD ORG] \u2013 5 bursts between 2026-10-21 06:50 UTC and 2026-10-22 05:06 UTC",
+   "status": "Working",
+   "subStatus": "Waiting on Internal",
+   "account": "Airbnb, Inc*",
+   "owner": "Shubham Joshi",
+   "manager": "Rohit",
+   "created": "2026-10-22T08:17:52.000+0000",
+   "sev1Start": "2026-10-23T07:24:32.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "No Active Critical Business Impact/RCA request",
+   "lastPublicActivity": "2026-10-31T06:30:06.000+0000",
+   "lastModified": "2026-11-18T07:40:32.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": true,
+   "serviceRestored": true,
+   "ageDays": 27.03,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CC2R5MTJ4",
+    "channelName": "sev1-476001667-airbnb-inc-sig",
+    "channelCreated": "2026-10-22T08:17:58Z",
+    "archived": false,
+    "msgTotal": 49,
+    "msg24h": 0,
+    "msg72h": 0,
+    "lastMessageTs": "2026-10-26T07:34:35Z",
+    "lastHumanMessageTs": "2026-10-22T10:10:03Z",
+    "participants": [
+     "Myles Slevin",
+     "Shubham Joshi",
+     "Avinash Rao"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "cicDisengaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": null,
+     "csmOrTamPresent": false,
+     "engineeringOrBacklineEngaged": null,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [
+     {
+      "ts": "2026-10-22T10:10:03Z",
+      "author": "Myles Slevin",
+      "text": ""
+     },
+     {
+      "ts": "2026-10-22T10:07:27Z",
+      "author": "Myles Slevin",
+      "text": ""
+     },
+     {
+      "ts": "2026-10-22T09:44:02Z",
+      "author": "Myles Slevin",
+      "text": ""
+     },
+     {
+      "ts": "2026-10-22T09:01:02Z",
+      "author": "Avinash Rao",
+      "text": ""
+     },
+     {
+      "ts": "2026-10-22T08:23:25Z",
+      "author": "Shubham Joshi",
+      "text": ""
+     }
+    ],
+    "summary": "Intermittent HTTP 503 errors on REST API in a prod org (2026-10-21/22); a bridge was held and CIC disengaged on 2026-10-22 once the issue was out of impact, leaving an RCA delivery action with Support (Shubham Joshi). No human posts after 2026-10-22; only bot case-owner changes through 2026-10-26, so RCA status is not visible in Slack and the channel is dormant.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "475919656",
+   "subject": "Clarification & Architectural Guidance: OAuth Security Mandate \u2014 Refresh Token Idle TTL Limited to 30 Days",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
+   "account": "Amazon Kindle Books Support (B2C)",
+   "owner": "Sai Sankar Padamata Padamata",
+   "manager": "Shubha",
+   "created": "2026-10-21T07:45:42.000+0000",
+   "sev1Start": "2026-11-02T16:32:42.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "No Active Critical Business Impact/RCA request",
+   "lastPublicActivity": "2026-11-12T17:36:42.000+0000",
+   "lastModified": "2026-11-18T08:23:05.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 28.06,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CF0UZ3DHN",
+    "channelName": "sev1-475919656-amazon-kindle-books-support-b2c-sig",
+    "channelCreated": "2026-11-02T16:32:47Z",
+    "archived": false,
+    "msgTotal": 66,
+    "msg24h": 0,
+    "msg72h": 0,
+    "lastMessageTs": "2026-11-13T08:26:40Z",
+    "lastHumanMessageTs": "2026-11-05T16:30:56Z",
+    "participants": [
+     "Tim Darwick",
+     "Janet Lee",
+     "Lauren Pearse",
+     "Natalie Fochtman",
+     "Sean Holokai"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": false,
+     "customerUpdateGiven": null,
+     "csmOrTamPresent": true,
+     "engineeringOrBacklineEngaged": null,
+     "nextStepOrEtaStated": false
+    },
+    "recent": [
+     {
+      "ts": "2026-11-05T16:30:56Z",
+      "author": "Sean Holokai",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-03T17:11:54Z",
+      "author": "Sean Holokai",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-03T16:51:11Z",
+      "author": "Tim Darwick",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-02T16:49:30Z",
+      "author": "Janet Lee",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-02T16:45:39Z",
+      "author": "Janet Lee",
+      "text": ""
+     }
+    ],
+    "summary": "Sev1 raised 11-02 over inactivity/warming sentiment on a technical-question case; CIC (Janet Lee) engaged and disengaged the same day because customer is not in impact. Account team repeatedly asked (11-03, 11-05) for status on getting product-team answers to the customer; case owner changed daily via bot. No updates since 11-05T16:30Z. Stalled awaiting internal product response.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "475310697",
+   "subject": "Delay in assignment of chat cases",
+   "status": "Solution Provided",
+   "subStatus": "Solution Provided",
+   "account": "Google LLC",
+   "owner": "Narendra Reddy",
+   "manager": "Sai Vikram",
+   "created": "2026-10-13T14:28:51.000+0000",
+   "sev1Start": "2026-10-27T14:48:44.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "Root cause/Resolution/Workaround provided",
+   "lastPublicActivity": "2026-11-18T04:25:43.000+0000",
+   "lastModified": "2026-11-18T04:25:45.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": true,
+   "serviceRestored": false,
+   "ageDays": 35.78,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0C8VMUG20J",
+    "channelName": "sev1-475310697-google-llc-sig",
+    "channelCreated": "2026-10-13",
+    "archived": false,
+    "msgTotal": 100,
+    "msg24h": 1,
+    "msg72h": 4,
+    "lastMessageTs": "2026-11-18T06:56:53Z",
+    "lastHumanMessageTs": "2026-11-17T03:50:54Z",
+    "participants": [
+     "Abhinav Kumar(APAC)",
+     "Anjali Agrawal",
+     "Faizan Ahmed",
+     "Gaurav Suryawanshi",
+     "Harsh Mishra (APAC)",
+     "Meena Devi Sankaran",
+     "Narendra Reddy Guduru",
+     "Prajwal Larokar",
+     "Rahul Bajpai",
+     "Shagun Sood",
+     "Vishal Reddy Gummadi"
+    ],
+    "roles": {
+     "cicEngaged": null,
+     "bridgeMentioned": null,
+     "customerUpdateGiven": null,
+     "csmOrTamPresent": null,
+     "engineeringOrBacklineEngaged": null,
+     "nextStepOrEtaStated": true
+    },
+    "recent": [
+     {
+      "ts": "2026-11-13T15:45:23Z",
+      "author": "Narendra Reddy Guduru",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-13T18:28:49Z",
+      "author": "Rahul Bajpai",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T07:10:24Z",
+      "author": "Gaurav Suryawanshi",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T00:55:06Z",
+      "author": "Gaurav Suryawanshi",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-17T03:50:54Z",
+      "author": "Gaurav Suryawanshi",
+      "text": ""
+     }
+    ],
+    "summary": "Recurring stale-record Apex cleanup run by rotating engineers every 3-6h with sheet updates; interval tightened to 3h on 11-13 and new case 483609084 raised. Cadence is established but the latest post is 11-17 03:50Z with no next scheduled run stated, so activity may have lapsed or moved.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "474551147",
+   "subject": "High Priority \u2013 Embedded Service API: Conversation Error and Agent Send Event Not Triggered",
+   "status": "Solution Provided",
+   "subStatus": "Solution Provided",
+   "account": "Intel - SMG ISvC (SELA2)",
+   "owner": "Sinet Chowdhury",
+   "manager": "Rohit",
+   "created": "2026-09-08T08:10:21.000+0000",
+   "sev1Start": "2026-11-16T20:47:46.000+0000",
+   "cicFlag": false,
+   "cicSubstatus": "No Active Critical Business Impact/RCA request",
+   "lastPublicActivity": "2026-11-17T09:14:23.000+0000",
+   "lastModified": "2026-11-18T08:57:10.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": true,
+   "ageDays": 71.04,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0C06KZMWJ2",
+    "channelName": "sev1-474551147-intel-smg-isvc-sela2-sig",
+    "channelCreated": "2026-09-08T08:10:26Z",
+    "archived": false,
+    "msgTotal": 59,
+    "msg24h": 0,
+    "msg72h": 13,
+    "lastMessageTs": "2026-11-17T08:16:46Z",
+    "lastHumanMessageTs": "2026-11-16T21:11:17Z",
+    "participants": [
+     "Faizan Ahmed",
+     "Rahul Bajpai",
+     "Raj Lakshman",
+     "Shubha Vijayaraghavan",
+     "Sinet Chowdhury"
+    ],
+    "roles": {
+     "cicEngaged": true,
+     "bridgeMentioned": true,
+     "customerUpdateGiven": null,
+     "csmOrTamPresent": false,
+     "engineeringOrBacklineEngaged": false,
+     "nextStepOrEtaStated": true
+    },
+    "recent": [
+     {
+      "ts": "2026-11-16T21:11:17Z",
+      "author": "Faizan Ahmed",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T20:51:23Z",
+      "author": "Faizan Ahmed",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-16T20:50:12Z",
+      "author": "Rahul Bajpai",
+      "text": ""
+     },
+     {
+      "ts": "2026-09-08T08:53:11Z",
+      "author": "Raj Lakshman",
+      "text": ""
+     },
+     {
+      "ts": "2026-09-08T08:28:38Z",
+      "author": "Sinet Chowdhury",
+      "text": ""
+     }
+    ],
+    "summary": "Long-running Sev1 from Sep 8 (CIC joined and disengaged that day). On Nov 16 the Sev1 was reopened; the new owner noted the case had been closed for no customer response and planned to comment to the customer and route it back to the EMEA engineer who has context. Two bot owner changes since (Nov 17); no human follow-up after Nov 16 21:11Z, so restarting but slow.",
+    "error": null
+   }
+  }
+ ]
+}

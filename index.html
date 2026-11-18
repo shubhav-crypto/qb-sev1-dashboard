@@ -121,6 +121,54 @@
   .weekend-note{font-size:11px;color:#94a3b8;line-height:1.4}
 
 
+  /* ── Live Sev1 Audit tab ── */
+  .lv-toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:16px}
+  .lv-toolbar select,.lv-toolbar input{background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:6px 10px;font:inherit;font-size:12px;color:var(--text)}
+  .lv-toolbar input{min-width:200px}
+  .lv-status{font-size:12px;color:var(--text-muted);margin-left:auto}
+  .lv-kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:20px}
+  @media(max-width:1100px){.lv-kpis{grid-template-columns:repeat(3,1fr)}}
+  .lv-kpi{background:var(--surface);border:1px solid var(--border);border-radius:var(--card-radius);padding:14px 16px;cursor:default}
+  .lv-kpi b{display:block;font-size:28px;line-height:1.1}
+  .lv-kpi span{font-size:11px;color:var(--text-muted);font-weight:600}
+  .lv-kpi.red b{color:var(--red)}.lv-kpi.amber b{color:var(--yellow)}.lv-kpi.green b{color:var(--green)}.lv-kpi.blue b{color:var(--accent)}.lv-kpi.purple b{color:var(--accent2)}
+  .lv-kpi.click{cursor:pointer}.lv-kpi.click:hover{border-color:var(--accent)}
+  .lv-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--card-radius);padding:16px 18px;margin-bottom:20px;overflow-x:auto}
+  .lv-card h3{font-size:14px;margin-bottom:10px}
+  .lv-health{display:inline-block;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:700;white-space:nowrap}
+  .lv-health.crit{background:rgba(220,38,38,.12);color:var(--red)}.lv-health.warn{background:rgba(217,119,6,.14);color:var(--yellow)}.lv-health.ok{background:rgba(22,163,74,.12);color:var(--green)}
+  .lv-flag{display:inline-block;margin:1px 3px 1px 0;padding:1px 7px;border-radius:5px;font-size:11px;font-weight:600;white-space:nowrap}
+  .lv-flag.crit{background:rgba(220,38,38,.1);color:var(--red);border:1px solid rgba(220,38,38,.25)}
+  .lv-flag.warn{background:rgba(217,119,6,.1);color:var(--yellow);border:1px solid rgba(217,119,6,.25)}
+  .lv-flag.info{background:var(--surface2);color:var(--text-muted);border:1px solid var(--border)}
+  .lv-row{cursor:pointer}.lv-row:hover td{background:#f8fafc}
+  .lv-detail td{background:#f8fafc;padding:14px 18px}
+  .lv-msg{font-size:12px;padding:5px 0;border-bottom:1px dashed var(--border)}.lv-msg:last-child{border-bottom:none}
+  .lv-msg time{color:var(--text-muted);margin-right:6px}.lv-msg b{margin-right:6px}
+  .lv-trend{font-size:12px;font-weight:600;white-space:nowrap}
+  .lv-trend.up{color:var(--green)}.lv-trend.down{color:var(--red)}.lv-trend.flat{color:var(--text-muted)}
+  .lv-rules{font-size:12px;color:var(--text-muted);line-height:1.7}
+  .lv-rules code{background:var(--surface2);padding:1px 5px;border-radius:4px}
+  /* ── CIC live monitor ── */
+  .cic-wrap{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--red);border-radius:var(--card-radius);padding:16px 18px;margin-bottom:20px}
+  .cic-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+  .cic-head h3{font-size:15px}
+  .cic-pulse{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--green)}
+  .cic-pulse i{width:8px;height:8px;border-radius:50%;background:#22c55e;animation:pulse 2s infinite}
+  .cic-pulse.stale{color:var(--red)}.cic-pulse.stale i{background:var(--red);animation:none}
+  .cic-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:14px}
+  .cic-card{border:1px solid var(--border);border-radius:10px;padding:14px 16px;background:#fff}
+  .cic-card.crit{border-color:rgba(220,38,38,.5);box-shadow:0 0 0 2px rgba(220,38,38,.08)}.cic-card.warn{border-color:rgba(217,119,6,.5)}
+  .cic-top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start;margin-bottom:8px}
+  .cic-title{font-weight:700;font-size:14px}.cic-sub{font-size:12px;color:var(--text-muted)}
+  .cic-timers{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:10px 0}
+  .cic-timer{background:var(--surface2);border-radius:8px;padding:6px 8px;text-align:center}
+  .cic-timer b{display:block;font-size:15px}.cic-timer span{font-size:10px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:.03em}
+  .cic-timer.crit b{color:var(--red)}.cic-timer.warn b{color:var(--yellow)}
+  .cic-bars{display:flex;align-items:flex-end;gap:3px;height:34px;margin:6px 0 2px}
+  .cic-bars div{flex:1;background:var(--accent);border-radius:2px 2px 0 0;min-height:2px;opacity:.85}
+  .cic-bars div.zero{background:var(--border);opacity:1}
+  .cic-sum{font-size:12px;line-height:1.5;margin:8px 0}
 </style>
 </head>
 <body>
@@ -150,6 +198,10 @@
     <button id="ptab-weekend" onclick="switchPageTab('weekend')"
       style="background:none;border:none;border-bottom:3px solid transparent;margin-bottom:-2px;padding:10px 20px;font-size:14px;font-weight:600;color:var(--text-muted);cursor:pointer;display:flex;align-items:center;gap:7px;">
       🌙 Weekends <span id="ptab-weekend-badge" style="background:var(--surface2);border:1px solid var(--border);border-radius:10px;font-size:11px;padding:1px 7px;color:var(--text-muted);font-weight:500;"></span>
+    </button>
+    <button id="ptab-live" onclick="switchPageTab('live')"
+      style="background:none;border:none;border-bottom:3px solid transparent;margin-bottom:-2px;padding:10px 20px;font-size:14px;font-weight:600;color:var(--text-muted);cursor:pointer;display:flex;align-items:center;gap:7px;">
+      🔴 Live Sev1 Audit <span id="ptab-live-badge" style="background:rgba(220,38,38,.12);border-radius:10px;font-size:11px;padding:1px 7px;color:var(--red);font-weight:600;"></span>
     </button>
     <a href="account-sev1.html"
       style="background:none;border:none;border-bottom:3px solid transparent;margin-bottom:-2px;padding:10px 20px;font-size:14px;font-weight:600;color:var(--text-muted);text-decoration:none;display:flex;align-items:center;gap:7px;">
@@ -322,6 +374,36 @@
     <!-- hidden div kept so renderWeekends() still has a target for its badge update -->
     <div id="weekendGrid" style="display:none;"></div>
   </div>
+
+  <!-- ── Live Sev1 Audit panel ── -->
+  <div id="panel-live" style="display:none;">
+    <div class="lv-toolbar">
+      <select id="lvMgr" onchange="renderLive()" aria-label="Manager"></select>
+      <select id="lvHealth" onchange="renderLive()" aria-label="Health">
+        <option value="">All health</option><option value="crit">Needs action</option><option value="warn">Watch</option><option value="ok">On track</option>
+      </select>
+      <select id="lvCic" onchange="renderLive()" aria-label="CIC">
+        <option value="">CIC: any</option><option value="yes">CIC engaged</option><option value="no">No CIC</option>
+      </select>
+      <input id="lvSearch" type="search" placeholder="Search case, account, owner…" oninput="renderLive()" aria-label="Search">
+      <button class="refresh-btn" onclick="loadLive(true)">↻ Reload</button>
+      <span class="lv-status" id="lvStatus">Loading…</span>
+    </div>
+    <div class="cic-wrap" id="cicWrap">
+      <div class="cic-head">
+        <h3>🚨 CIC live monitor</h3>
+        <span class="cic-pulse" id="cicPulse"><i></i><span id="cicPulseTxt">connecting…</span></span>
+        <span class="lv-status" id="cicRules"></span>
+      </div>
+      <div class="cic-grid" id="cicGrid"></div>
+    </div>
+    <div class="lv-kpis" id="lvKpis"></div>
+    <div class="lv-card"><h3>By manager</h3><table class="case-table" id="lvMgrTable"></table></div>
+    <div class="lv-card" id="lvTrendCard" style="display:none"><h3>Open Sev1 trend (per snapshot)</h3><div id="lvTrend"></div></div>
+    <div class="lv-card"><h3 id="lvCasesTitle">Open Sev1s</h3><table class="case-table" id="lvTable"></table></div>
+    <div class="lv-card"><h3>How health is judged</h3>
+      <div class="lv-rules" id="lvRules"></div></div>
+  </div><!-- end #panel-live -->
 
   <div id="footer" style="text-align:center;color:var(--text-muted);font-size:12px;padding:24px 0 16px;border-top:1px solid var(--border);margin-top:12px;"></div>
 </div>
@@ -718,16 +800,275 @@ function groupByWeek(days){
   return weeks;
 }
 
+// ── LIVE SEV1 AUDIT ──────────────────────────────────────────────────────────
+// Reads live-sev1.json (OrgCS facts + Slack channel signals). Ages and flags are
+// computed here against the browser clock so they stay current between snapshots.
+// Slack/OrgCS text is untrusted: it is only ever inserted via textContent / esc().
+const LV={SILENT_WARN_H:24,SILENT_CRIT_H:48,WAIT_CUSTOMER_H:72,NO_CHANNEL_GRACE_H:2,CLOSE_OUT_H:72,STALE_SNAPSHOT_H:6};
+let LIVE=null,LIVE_HIST=[],lvOpen={};
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function lvHrs(ts){if(!ts)return null;const t=Date.parse(ts);return isNaN(t)?null:(Date.now()-t)/36e5;}
+function lvFmtAge(h){if(h==null)return '—';if(h<1)return Math.max(1,Math.round(h*60))+'m';if(h<48)return Math.round(h)+'h';return Math.round(h/24)+'d';}
+function lvFlags(c){
+  const f=[],s=c.slack||{},r=s.roles||{};
+  const waiting=c.status==='Need More Information';
+  const age=lvHrs(c.sev1Start||c.created);
+  const warnH=waiting?LV.WAIT_CUSTOMER_H:LV.SILENT_WARN_H,critH=waiting?LV.WAIT_CUSTOMER_H*2:LV.SILENT_CRIT_H;
+  if(!s.found){f.push({k:'No Slack channel',sev:age!=null&&age>LV.NO_CHANNEL_GRACE_H?'crit':'warn',tip:'No sev1-'+c.caseNum+' channel was found'});}
+  else{
+    const sh=lvHrs(s.lastHumanMessageTs||s.channelCreated);
+    if(sh!=null&&sh>=critH)f.push({k:'Slack silent '+lvFmtAge(sh),sev:'crit',tip:'No human message in the Sev1 channel'});
+    else if(sh!=null&&sh>=warnH)f.push({k:'Slack quiet '+lvFmtAge(sh),sev:'warn',tip:'No human message in the Sev1 channel'});
+    if(sh!=null&&sh<warnH&&r.nextStepOrEtaStated===false&&r.customerUpdateGiven===false)f.push({k:'No next step / ETA',sev:'warn',tip:'Channel is active but no next action, ETA or customer update is visible in the last 72h'});
+  }
+  const oh=lvHrs(c.lastPublicActivity||c.created);
+  if(oh!=null&&age!=null&&age>=warnH){
+    if(oh>=critH)f.push({k:'OrgCS no update '+lvFmtAge(oh),sev:'crit',tip:'No public case activity'});
+    else if(oh>=warnH)f.push({k:'OrgCS update due '+lvFmtAge(oh),sev:'warn',tip:'No public case activity'});
+  }
+  if(c.cicFlag){
+    if(s.found&&r.cicEngaged===false)f.push({k:'CIC flagged, not in channel',sev:'crit',tip:'Escalate to CIC is set in OrgCS but no CIC activity is visible in Slack'});
+    else if(s.found&&r.cicEngaged==null)f.push({k:'CIC unverified',sev:'warn',tip:'Escalate to CIC is set; Slack evidence unclear'});
+  }
+  if(c.status==='Solution Provided'){const oh2=lvHrs(c.lastPublicActivity);if(oh2!=null&&oh2>=LV.CLOSE_OUT_H)f.push({k:'Confirm & close',sev:'info',tip:'Solution provided, no customer response since'});}
+  if(waiting)f.push({k:'Waiting on customer',sev:'info',tip:'Status is Need More Information; silence thresholds are extended'});
+  if(c.cicSubstatus&&c.cicSubstatus!=='-')f.push({k:'CIC: '+c.cicSubstatus,sev:'info',tip:'AX CIC sub-status'});
+  return f;
+}
+function lvHealth(flags){return flags.some(function(x){return x.sev==='crit';})?'crit':flags.some(function(x){return x.sev==='warn';})?'warn':'ok';}
+function lvTrend(s){
+  if(!s||!s.found||s.msg72h==null||s.msg24h==null)return {t:'—',c:'flat'};
+  if(s.msg72h===0)return {t:'● silent 72h',c:'down'};
+  const prior=(s.msg72h-s.msg24h)/2;
+  if(s.msg24h===0)return {t:'↓ gone quiet',c:'down'};
+  if(s.msg24h>prior*1.5+1)return {t:'↑ accelerating',c:'up'};
+  if(s.msg24h<prior*0.5)return {t:'↓ slowing',c:'down'};
+  return {t:'→ steady',c:'flat'};
+}
+function lvEnrich(c){const flags=lvFlags(c);return Object.assign({},c,{_flags:flags,_health:lvHealth(flags),_age:lvHrs(c.sev1Start||c.created),_trend:lvTrend(c.slack)});}
+async function loadLive(force){
+  const st=document.getElementById('lvStatus');
+  try{
+    const q=force?'?t='+Date.now():'';
+    const r=await fetch('./live-sev1.json'+q);if(!r.ok)throw new Error('HTTP '+r.status);
+    LIVE=await r.json();
+    try{const h=await fetch('./live-sev1-history.json'+q);LIVE_HIST=h.ok?await h.json():[];}catch(e){LIVE_HIST=[];}
+    renderLive();
+  }catch(e){st.textContent='Could not load live-sev1.json ('+e.message+')';console.error(e);}
+}
+function lvSetFilter(health){document.getElementById('lvHealth').value=health;renderLive();}
+function renderLive(){
+  if(!LIVE)return;
+  const all=LIVE.cases.map(lvEnrich);
+  const mSel=document.getElementById('lvMgr');
+  if(!mSel.options.length){
+    const o0=document.createElement('option');o0.value='';o0.textContent='All managers';mSel.appendChild(o0);
+    LIVE.meta.managers.forEach(function(m){const o=document.createElement('option');o.value=m;o.textContent=m;mSel.appendChild(o);});
+  }
+  const mgr=mSel.value,hf=document.getElementById('lvHealth').value,cf=document.getElementById('lvCic').value,q=document.getElementById('lvSearch').value.trim().toLowerCase();
+  const rows=all.filter(function(c){
+    if(mgr&&c.manager!==mgr)return false;
+    if(hf&&c._health!==hf)return false;
+    if(cf==='yes'&&!c.cicFlag)return false;
+    if(cf==='no'&&c.cicFlag)return false;
+    if(q&&(c.caseNum+' '+c.account+' '+c.owner+' '+c.subject).toLowerCase().indexOf(q)===-1)return false;
+    return true;
+  });
+  const rank={crit:0,warn:1,ok:2};
+  rows.sort(function(a,b){return rank[a._health]-rank[b._health]||(b._age||0)-(a._age||0);});
+  // status line
+  const gh=lvHrs(LIVE.meta.generated);
+  const st=document.getElementById('lvStatus');
+  st.textContent='Snapshot '+lvFmtAge(gh)+' ago · '+LIVE.meta.slackChannelsFound+'/'+LIVE.meta.totalOpen+' Slack channels matched';
+  st.style.color=gh!=null&&gh>LV.STALE_SNAPSHOT_H?'var(--red)':'';
+  if(gh!=null&&gh>LV.STALE_SNAPSHOT_H)st.textContent+=' · snapshot is stale, refresh it';
+  // KPIs
+  const n=function(fn){return all.filter(fn).length;};
+  const kp=[
+    ['blue','Open Sev1s',all.length,''],
+    ['red','Needs action',n(function(c){return c._health==='crit';}),'crit'],
+    ['amber','Watch',n(function(c){return c._health==='warn';}),'warn'],
+    ['green','On track',n(function(c){return c._health==='ok';}),'ok'],
+    ['purple','CIC engaged',n(function(c){return c.cicFlag;}),''],
+    ['red','No Slack channel',n(function(c){return !(c.slack&&c.slack.found);}),'']
+  ];
+  const kEl=document.getElementById('lvKpis');kEl.textContent='';
+  kp.forEach(function(k){
+    const d=document.createElement('div');d.className='lv-kpi '+k[0]+(k[3]?' click':'');
+    const b=document.createElement('b');b.textContent=k[2];const s=document.createElement('span');s.textContent=k[1];
+    d.appendChild(b);d.appendChild(s);if(k[3])d.onclick=function(){lvSetFilter(k[3]);};
+    kEl.appendChild(d);
+  });
+  // manager table
+  const mt=document.getElementById('lvMgrTable');
+  let mh='<thead><tr><th>Manager</th><th>Open</th><th>Needs action</th><th>Watch</th><th>On track</th><th>CIC engaged</th><th>Slack silent &gt;24h</th></tr></thead><tbody>';
+  LIVE.meta.managers.forEach(function(m){
+    const cs=all.filter(function(c){return c.manager===m;});
+    const cnt=function(h){return cs.filter(function(c){return c._health===h;}).length;};
+    const silent=cs.filter(function(c){const s=c.slack||{};const h=lvHrs(s.lastHumanMessageTs||s.channelCreated);return s.found&&h!=null&&h>=24;}).length;
+    mh+='<tr><td>'+mgrChip(m)+'</td><td><b>'+cs.length+'</b></td><td style="color:var(--red)">'+cnt('crit')+'</td><td style="color:var(--yellow)">'+cnt('warn')+'</td><td style="color:var(--green)">'+cnt('ok')+'</td><td>'+cs.filter(function(c){return c.cicFlag;}).length+'</td><td>'+silent+'</td></tr>';
+  });
+  mt.innerHTML=mh+'</tbody>';
+  // history trend
+  const tc=document.getElementById('lvTrendCard'),te=document.getElementById('lvTrend');
+  if(LIVE_HIST.length>=2){
+    tc.style.display='';te.textContent='';
+    LIVE_HIST.slice(-12).forEach(function(h){
+      const sp=document.createElement('span');sp.className='lv-flag info';
+      sp.textContent=new Date(h.ts).toLocaleString([], {month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'})+' · '+h.total+' open';
+      te.appendChild(sp);
+    });
+  }else tc.style.display='none';
+  // cases table
+  document.getElementById('lvCasesTitle').textContent='Open Sev1s ('+rows.length+(rows.length!==all.length?' of '+all.length:'')+')';
+  const tb=document.getElementById('lvTable');tb.textContent='';
+  const th=document.createElement('thead');
+  th.innerHTML='<tr><th>Health</th><th>Case</th><th>Account</th><th>Manager / Owner</th><th>Status</th><th>Age</th><th>Slack (24h / 72h)</th><th>Trend</th><th>Why flagged</th></tr>';
+  tb.appendChild(th);
+  const body=document.createElement('tbody');tb.appendChild(body);
+  if(!rows.length){const tr=document.createElement('tr'),td=document.createElement('td');td.colSpan=9;td.style.padding='20px';td.textContent='No open Sev1s match these filters.';tr.appendChild(td);body.appendChild(tr);}
+  rows.forEach(function(c){
+    const s=c.slack||{};
+    const tr=document.createElement('tr');tr.className='lv-row';tr.tabIndex=0;
+    const tog=function(){lvOpen[c.caseNum]=!lvOpen[c.caseNum];renderLive();};
+    tr.onclick=tog;tr.onkeydown=function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();tog();}};
+    const lbl={crit:'Needs action',warn:'Watch',ok:'On track'}[c._health];
+    const flags=c._flags.filter(function(x){return x.sev!=='info'||c._health==='ok'||true;});
+    tr.innerHTML=
+      '<td><span class="lv-health '+c._health+'">'+lbl+'</span></td>'+
+      '<td><b>'+esc(c.caseNum)+'</b><div class="case-num" style="max-width:260px;white-space:normal">'+esc(c.subject)+'</div></td>'+
+      '<td>'+esc(c.account)+'</td>'+
+      '<td>'+mgrChip(c.manager)+'<div class="case-num">'+esc(c.owner)+'</div></td>'+
+      '<td>'+esc(c.status)+(c.cicFlag?' <span class="badge mci">CIC</span>':'')+'</td>'+
+      '<td>'+lvFmtAge(c._age)+'</td>'+
+      '<td>'+(s.found?esc(s.msg24h==null?'?':s.msg24h)+' / '+esc(s.msg72h==null?'?':s.msg72h):'—')+'</td>'+
+      '<td><span class="lv-trend '+c._trend.c+'">'+esc(c._trend.t)+'</span></td>'+
+      '<td>'+flags.map(function(x){return '<span class="lv-flag '+x.sev+'" title="'+esc(x.tip)+'">'+esc(x.k)+'</span>';}).join('')+'</td>';
+    body.appendChild(tr);
+    if(lvOpen[c.caseNum]){
+      const dr=document.createElement('tr');dr.className='lv-detail';
+      const dd=document.createElement('td');dd.colSpan=9;
+      const head=document.createElement('div');head.style.cssText='font-size:12px;margin-bottom:8px';
+      if(s.found){
+        const a=document.createElement('a');a.href='https://salesforce-internal.slack.com/archives/'+encodeURIComponent(s.channelId);a.target='_blank';a.rel='noopener';a.textContent='#'+s.channelName;
+        head.appendChild(a);
+        head.appendChild(document.createTextNode(' · '+(s.participants||[]).length+' people posted'+(s.summary?' · '+s.summary:'')));
+      }else head.textContent='No Slack channel found for this case.';
+      dd.appendChild(head);
+      const oc=document.createElement('div');oc.style.cssText='font-size:12px;color:var(--text-muted);margin-bottom:8px';
+      oc.textContent='OrgCS last public activity: '+(c.lastPublicActivity?lvFmtAge(lvHrs(c.lastPublicActivity))+' ago':'none')+' · message text is not published on this public site';
+      dd.appendChild(oc);
+      (s.recent||[]).forEach(function(m){
+        const d=document.createElement('div');d.className='lv-msg';
+        const t=document.createElement('time');t.textContent=m.ts?new Date(m.ts).toLocaleString([], {month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'}):'';
+        const b=document.createElement('b');b.textContent=m.author||'';
+        d.appendChild(t);d.appendChild(b);d.appendChild(document.createTextNode(m.text||''));dd.appendChild(d);
+      });
+      dr.appendChild(dd);body.appendChild(dr);
+    }
+  });
+  document.getElementById('ptab-live-badge').textContent=all.length?String(all.filter(function(c){return c._health==='crit';}).length||''):'';
+  document.getElementById('lvRules').innerHTML=
+    '<div><span class="lv-flag crit">Needs action</span> any of: no Slack channel after '+LV.NO_CHANNEL_GRACE_H+'h · no human Slack message for <code>'+LV.SILENT_CRIT_H+'h</code> · no public OrgCS update for <code>'+LV.SILENT_CRIT_H+'h</code> · CIC flagged in OrgCS but no CIC activity in the channel.</div>'+
+    '<div><span class="lv-flag warn">Watch</span> Slack or OrgCS quiet for <code>'+LV.SILENT_WARN_H+'h</code> · channel active but no next step, ETA or customer update in 72h · CIC engagement unverified.</div>'+
+    '<div>Cases in <code>Need More Information</code> are waiting on the customer, so silence thresholds stretch to '+LV.WAIT_CUSTOMER_H+'h / '+(LV.WAIT_CUSTOMER_H*2)+'h. Trend compares the last 24h of channel messages with the daily average of the 48h before.</div>'+
+    '<div>Open cases are cases owned by engineers who report to the six managers, Severity Level 1 – Critical. Ages are computed live in your browser; data comes from the last snapshot.</div>';
+}
+// ── CIC LIVE MONITOR ─────────────────────────────────────────────────────────
+// live-cic.json is refreshed every ~10 min by the live-sev1 skill (CIC-engaged = Escalate_to_CIC__c).
+// Tighter thresholds than the full roster because CIC cases are actively worked.
+const CIC={SLACK_WARN_M:30,SLACK_CRIT_M:60,CIC_WARN_M:60,CIC_CRIT_M:120,ORGCS_WARN_H:2,ORGCS_CRIT_H:4,BRIDGE_AFTER_M:60,STALE_WARN_M:25,POLL_MS:2*60*1000};
+let CICDATA=null;
+function cicMins(ts){const h=lvHrs(ts);return h==null?null:h*60;}
+function cicFmt(m){if(m==null)return '—';if(m<1)return '<1m';if(m<90)return Math.round(m)+'m';if(m<48*60)return (m/60).toFixed(m<600?1:0)+'h';return Math.round(m/1440)+'d';}
+function cicLvl(m,w,c){return m==null?'':m>=c?'crit':m>=w?'warn':'';}
+function cicEval(c){
+  const s=c.slack||{},fl=[];
+  const sm=cicMins(s.lastHumanTs||s.channelCreated),cm=cicMins(s.lastCicTs||s.cicJoinedAt),om=cicMins(c.lastPublicActivity||c.created);
+  const engagedM=cicMins(s.cicJoinedAt);
+  const tl={slack:cicLvl(sm,CIC.SLACK_WARN_M,CIC.SLACK_CRIT_M),cic:cicLvl(cm,CIC.CIC_WARN_M,CIC.CIC_CRIT_M),org:cicLvl(om,CIC.ORGCS_WARN_H*60,CIC.ORGCS_CRIT_H*60)};
+  if(!s.found)fl.push({k:'No Slack channel',sev:'crit'});
+  if(s.found&&!s.cicCommander)fl.push({k:'No CIC commander seen in channel',sev:'crit'});
+  if(tl.slack)fl.push({k:'Slack silent '+cicFmt(sm),sev:tl.slack});
+  if(s.cicCommander&&tl.cic)fl.push({k:'CIC silent '+cicFmt(cm),sev:tl.cic});
+  if(tl.org)fl.push({k:'OrgCS update '+cicFmt(om)+' old',sev:tl.org});
+  if(s.found&&engagedM!=null&&engagedM>CIC.BRIDGE_AFTER_M&&s.bridgeMentioned===false)fl.push({k:'No bridge yet',sev:'warn'});
+  if(s.found&&s.nextStepOrEtaStated===false&&sm!=null&&sm<CIC.SLACK_WARN_M*4)fl.push({k:'No next step / ETA',sev:'warn'});
+  if(s.found&&s.customerUpdateGiven===false&&engagedM!=null&&engagedM>120)fl.push({k:'No customer update',sev:'warn'});
+  const h=fl.some(function(x){return x.sev==='crit';})?'crit':fl.length?'warn':'ok';
+  return {fl:fl,h:h,tl:tl,sm:sm,cm:cm,om:om};
+}
+async function loadCic(){
+  try{
+    const r=await fetch('./live-cic.json?t='+Date.now());if(!r.ok)throw new Error('HTTP '+r.status);
+    CICDATA=await r.json();renderCic();
+  }catch(e){document.getElementById('cicPulseTxt').textContent='live-cic.json not available ('+e.message+')';document.getElementById('cicPulse').className='cic-pulse stale';}
+}
+function renderCic(){
+  if(!CICDATA)return;
+  const grid=document.getElementById('cicGrid');grid.textContent='';
+  const gm=cicMins(CICDATA.meta.generated),interval=CICDATA.meta.intervalMin||10;
+  const stale=gm!=null&&gm>CIC.STALE_WARN_M;
+  document.getElementById('cicPulse').className='cic-pulse'+(stale?' stale':'');
+  document.getElementById('cicPulseTxt').textContent=(stale?'STALE · ':'LIVE · ')+'refreshed '+cicFmt(gm)+' ago'+(stale?' — monitor is not refreshing':' · every ~'+interval+' min');
+  document.getElementById('cicRules').textContent='Alerts: Slack quiet '+CIC.SLACK_WARN_M+'/'+CIC.SLACK_CRIT_M+'m · CIC quiet '+CIC.CIC_WARN_M+'/'+CIC.CIC_CRIT_M+'m · OrgCS update '+CIC.ORGCS_WARN_H+'/'+CIC.ORGCS_CRIT_H+'h';
+  if(!CICDATA.cases.length){const p=document.createElement('div');p.className='cic-sub';p.textContent='No open Sev1 under the six managers is CIC-engaged right now.';grid.appendChild(p);return;}
+  const evs=CICDATA.cases.map(function(c){return {c:c,e:cicEval(c)};});
+  const rk={crit:0,warn:1,ok:2};evs.sort(function(a,b){return rk[a.e.h]-rk[b.e.h];});
+  evs.forEach(function(x){
+    const c=x.c,e=x.e,s=c.slack||{};
+    const card=document.createElement('div');card.className='cic-card '+e.h;
+    const top=document.createElement('div');top.className='cic-top';
+    const l=document.createElement('div');
+    const t=document.createElement('div');t.className='cic-title';t.textContent=c.account+' · '+c.caseNum;
+    const sub=document.createElement('div');sub.className='cic-sub';sub.textContent=c.subject+' — '+c.owner+' ('+c.manager+') · '+c.status;
+    l.appendChild(t);l.appendChild(sub);
+    const hp=document.createElement('span');hp.className='lv-health '+e.h;hp.textContent={crit:'Needs action',warn:'Watch',ok:'On track'}[e.h];
+    top.appendChild(l);top.appendChild(hp);card.appendChild(top);
+    if(e.fl.length){const f=document.createElement('div');e.fl.forEach(function(k){const sp=document.createElement('span');sp.className='lv-flag '+k.sev;sp.textContent=k.k;f.appendChild(sp);});card.appendChild(f);}
+    const tm=document.createElement('div');tm.className='cic-timers';
+    [['Slack last human',e.sm,e.tl.slack],['CIC last post',e.cm,e.tl.cic],['OrgCS last public',e.om,e.tl.org],['CIC engaged for',cicMins(s.cicJoinedAt),'']].forEach(function(a){
+      const d=document.createElement('div');d.className='cic-timer '+a[2];const b=document.createElement('b');b.textContent=cicFmt(a[1]);const sp=document.createElement('span');sp.textContent=a[0];d.appendChild(b);d.appendChild(sp);tm.appendChild(d);
+    });
+    card.appendChild(tm);
+    // activity bars: human msgs in the last 60m at each snapshot
+    const hist=(CICDATA.history||[]).map(function(h){const v=h.cases&&h.cases[c.caseNum];return v?v.m60:null;});
+    if(hist.length>=2){
+      const mx=Math.max.apply(null,hist.map(function(v){return v||0;}).concat([1]));
+      const bars=document.createElement('div');bars.className='cic-bars';bars.title='Human Slack messages in the trailing hour, one bar per refresh';
+      hist.forEach(function(v){const d=document.createElement('div');if(!v)d.className='zero';d.style.height=Math.max(6,Math.round((v||0)/mx*100))+'%';bars.appendChild(d);});
+      card.appendChild(bars);
+      const cap=document.createElement('div');cap.className='cic-sub';cap.textContent='Slack activity per refresh (msgs/hr) · now '+(s.humanMsgLast60m==null?'?':s.humanMsgLast60m)+'/hr';card.appendChild(cap);
+    }else{const cap=document.createElement('div');cap.className='cic-sub';cap.textContent='Msgs last 30m / 60m: '+(s.humanMsgLast30m==null?'?':s.humanMsgLast30m)+' / '+(s.humanMsgLast60m==null?'?':s.humanMsgLast60m)+' · trend appears after a few refreshes';card.appendChild(cap);}
+    const meta=document.createElement('div');meta.className='cic-sub';meta.style.margin='6px 0';
+    meta.textContent='CIC: '+(s.cicCommander||'not seen')+' · Bridge: '+(s.bridgeMentioned?'yes':s.bridgeMentioned===false?'none':'?')+' · Customer update: '+(s.customerUpdateGiven?'yes':s.customerUpdateGiven===false?'none':'?')+' · CSM: '+(s.csmPresent?'yes':s.csmPresent===false?'no':'?')+' · Backline: '+(s.backlineEngaged?'yes':s.backlineEngaged===false?'no':'?');
+    card.appendChild(meta);
+    if(s.summary){const sm=document.createElement('div');sm.className='cic-sum';sm.textContent=s.summary;card.appendChild(sm);}
+    (s.recent||[]).slice(0,3).forEach(function(m){
+      const d=document.createElement('div');d.className='lv-msg';
+      const tt=document.createElement('time');tt.textContent=m.ts?new Date(m.ts).toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}):'';
+      const b=document.createElement('b');b.textContent=m.author||'';
+      d.appendChild(tt);d.appendChild(b);d.appendChild(document.createTextNode(m.text||''));card.appendChild(d);
+    });
+    if(s.found){const a=document.createElement('a');a.href='https://salesforce-internal.slack.com/archives/'+encodeURIComponent(s.channelId);a.target='_blank';a.rel='noopener';a.textContent='Open #'+s.channelName;a.style.cssText='font-size:12px;display:inline-block;margin-top:6px';card.appendChild(a);}
+    grid.appendChild(card);
+  });
+}
+setInterval(loadCic,CIC.POLL_MS);
+setInterval(function(){if(CICDATA)renderCic();},30*1000);
+
+setInterval(function(){if(LIVE)renderLive();},60*1000);
+setInterval(function(){loadLive(true);},5*60*1000);
+
 // ── PAGE TABS ────────────────────────────────────────────────────────────────
 function switchPageTab(tab){
-  document.getElementById('panel-weekday').style.display=tab==='weekday'?'':'none';
-  document.getElementById('panel-weekend').style.display=tab==='weekend'?'':'none';
-  const wdBtn=document.getElementById('ptab-weekday');
-  const weBtn=document.getElementById('ptab-weekend');
-  wdBtn.style.cssText=wdBtn.style.cssText.replace(/border-bottom:[^;]+/,'border-bottom:3px solid '+(tab==='weekday'?'var(--accent)':'transparent'));
-  wdBtn.style.color=tab==='weekday'?'var(--accent)':'var(--text-muted)';
-  weBtn.style.cssText=weBtn.style.cssText.replace(/border-bottom:[^;]+/,'border-bottom:3px solid '+(tab==='weekend'?'var(--accent)':'transparent'));
-  weBtn.style.color=tab==='weekend'?'var(--accent)':'var(--text-muted)';
+  ['weekday','weekend','live'].forEach(function(t){
+    const panel=document.getElementById('panel-'+t),btn=document.getElementById('ptab-'+t);
+    panel.style.display=t===tab?'':'none';
+    btn.style.cssText=btn.style.cssText.replace(/border-bottom:[^;]+/,'border-bottom:3px solid '+(t===tab?'var(--accent)':'transparent'));
+    btn.style.color=t===tab?'var(--accent)':'var(--text-muted)';
+  });
+  if(tab==='live'){if(!LIVE)loadLive(true);loadCic();}
 }
 
 // ── WEEKENDS ─────────────────────────────────────────────────────────────────
@@ -1802,6 +2143,8 @@ function attachTooltips(){
 
 // ── BOOT ─────────────────────────────────────────────────────────────────────
 loadData(true);
+loadLive(true);
+loadCic();
 setInterval(()=>loadData(true),5*60*1000);
 </script>
 </body>
