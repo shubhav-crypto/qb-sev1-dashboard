@@ -1,17 +1,17 @@
 {
  "meta": {
-  "generated": "2026-11-18T10:14:22+00:00",
+  "generated": "2026-11-18T10:34:46+00:00",
   "intervalMin": 10,
   "refreshedBy": "shubhav-crypto",
-  "totalCic": 6,
+  "totalCic": 7,
   "source": "OrgCS Case (open, Level 1 - Critical, Escalate_to_CIC__c = true) + Slack sev1 channels"
  },
  "cases": [
   {
    "caseNum": "484988675",
    "subject": "Delay in Inbound Email Processing",
-   "status": "Working",
-   "subStatus": "In Progress",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
    "account": "IDFC First Ltd (Bancassurance)",
    "owner": "Sahithi Dhanekula",
    "manager": "Shubha",
@@ -20,12 +20,12 @@
    "cicFlag": true,
    "cicSubstatus": "Initial Impact Assessment",
    "lastPublicActivity": null,
-   "lastModified": "2026-11-18T10:12:00.000+0000",
+   "lastModified": "2026-11-18T10:32:57.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0,
+   "ageDays": 0.02,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -93,7 +93,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.03,
+   "ageDays": 0.04,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -102,11 +102,11 @@
     "channelCreated": "2026-11-18T09:33:48Z",
     "cicCommander": "Alisha Dias",
     "cicJoinedAt": "2026-11-18T09:34:33Z",
-    "lastHumanTs": "2026-11-18T10:10:19Z",
-    "lastCicTs": null,
-    "humanMsgLast30m": 2,
-    "humanMsgLast60m": 4,
-    "humanMsgLast24h": 4,
+    "lastHumanTs": "2026-11-18T10:26:28Z",
+    "lastCicTs": "2026-11-18T10:17:49Z",
+    "humanMsgLast30m": 6,
+    "humanMsgLast60m": 8,
+    "humanMsgLast24h": 8,
     "participants": [
      "Sai Vikram Kinnera",
      "Rohit Kala"
@@ -119,25 +119,30 @@
     "backlineEngaged": null,
     "recent": [
      {
-      "ts": "2026-11-18T10:10:19Z",
+      "ts": "2026-11-18T10:26:28Z",
       "author": "Rahul Dhiman",
       "text": ""
      },
      {
-      "ts": "2026-11-18T10:08:04Z",
+      "ts": "2026-11-18T10:24:19Z",
       "author": "Rahul Dhiman",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T10:17:49Z",
+      "author": "Alisha Dias",
       "text": ""
      }
     ],
-    "summary": "Owner posted that the deployment is running as expected.",
+    "summary": "Owner posted updates; CIC commander asked for the issue and business-impact details and whether CIC is still needed.",
     "error": null
    }
   },
   {
    "caseNum": "484979598",
    "subject": "Restore Deleted Certificate",
-   "status": "Working",
-   "subStatus": "In Progress",
+   "status": "Need More Information",
+   "subStatus": "Waiting on Customer",
    "account": "JEUNE AFRIQUE MEDIA GROUP",
    "owner": "Sai Sankar Padamata Padamata",
    "manager": "Shubha",
@@ -146,12 +151,12 @@
    "cicFlag": true,
    "cicSubstatus": null,
    "lastPublicActivity": null,
-   "lastModified": "2026-11-18T09:45:12.000+0000",
+   "lastModified": "2026-11-18T10:27:00.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.04,
+   "ageDays": 0.05,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -160,11 +165,11 @@
     "channelCreated": "2026-11-18T09:21:44Z",
     "cicCommander": "Gianlucantonio Mastrogiacomo",
     "cicJoinedAt": "2026-11-18T09:22:06Z",
-    "lastHumanTs": "2026-11-18T09:42:44Z",
+    "lastHumanTs": "2026-11-18T10:20:50Z",
     "lastCicTs": "2026-11-18T09:24:07Z",
-    "humanMsgLast30m": 0,
-    "humanMsgLast60m": 5,
-    "humanMsgLast24h": 5,
+    "humanMsgLast30m": 1,
+    "humanMsgLast60m": 6,
+    "humanMsgLast24h": 6,
     "participants": [
      "Gianlucantonio Mastrogiacomo",
      "Adeline Gaudefroy",
@@ -179,22 +184,12 @@
     "backlineEngaged": null,
     "recent": [
      {
-      "ts": "2026-11-18T09:42:44Z",
-      "author": "Sai Sankar Padamata",
-      "text": ""
-     },
-     {
-      "ts": "2026-11-18T09:42:21Z",
-      "author": "Sai Vikram Kinnera",
-      "text": ""
-     },
-     {
-      "ts": "2026-11-18T09:30:38Z",
-      "author": "Adeline Gaudefroy",
+      "ts": "2026-11-18T10:20:50Z",
+      "author": "Gianlucantonio Mastrogiacomo",
       "text": ""
      }
     ],
-    "summary": "Restore a deleted certificate. CSM supplied impact assessment (none) and asked engineering to confirm what the certificate is tied to. Owner reassigned to Sai Sankar at 15:13 IST and bridge details shared.",
+    "summary": "Waiting on the customer, who has not joined yet.",
     "error": null
    }
   },
@@ -211,12 +206,12 @@
    "cicFlag": true,
    "cicSubstatus": "Customer - Active Troubleshooting",
    "lastPublicActivity": "2026-11-18T07:48:00.000+0000",
-   "lastModified": "2026-11-18T10:04:39.000+0000",
+   "lastModified": "2026-11-18T10:23:06.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.1,
+   "ageDays": 0.12,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -227,7 +222,7 @@
     "cicJoinedAt": "2026-11-18T07:47:27Z",
     "lastHumanTs": "2026-11-18T10:02:04Z",
     "lastCicTs": "2026-11-18T09:57:45Z",
-    "humanMsgLast30m": 2,
+    "humanMsgLast30m": 0,
     "humanMsgLast60m": 3,
     "humanMsgLast24h": 14,
     "participants": [
@@ -274,12 +269,12 @@
    "cicFlag": true,
    "cicSubstatus": null,
    "lastPublicActivity": "2026-11-17T20:27:30.000+0000",
-   "lastModified": "2026-11-18T09:43:53.000+0000",
+   "lastModified": "2026-11-18T10:22:48.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 1.12,
+   "ageDays": 1.13,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -342,7 +337,7 @@
    "isEscalated": false,
    "redAccount": true,
    "serviceRestored": false,
-   "ageDays": 8.73,
+   "ageDays": 8.74,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -351,11 +346,11 @@
     "channelCreated": "2026-11-18T06:45:56Z",
     "cicCommander": "Vishnu Nambiar",
     "cicJoinedAt": "2026-11-18T06:54:34Z",
-    "lastHumanTs": "2026-11-18T09:50:31Z",
-    "lastCicTs": "2026-11-18T09:50:31Z",
-    "humanMsgLast30m": 3,
-    "humanMsgLast60m": 4,
-    "humanMsgLast24h": 43,
+    "lastHumanTs": "2026-11-18T10:31:14Z",
+    "lastCicTs": "2026-11-18T10:31:14Z",
+    "humanMsgLast30m": 2,
+    "humanMsgLast60m": 6,
+    "humanMsgLast24h": 45,
     "participants": [
      "Vishnu Nambiar",
      "Ravindra Ejjada",
@@ -370,25 +365,87 @@
     "customerUpdateGiven": true,
     "nextStepOrEtaStated": true,
     "csmPresent": null,
-    "backlineEngaged": null,
+    "backlineEngaged": true,
     "recent": [
      {
-      "ts": "2026-11-18T09:50:31Z",
+      "ts": "2026-11-18T10:31:14Z",
       "author": "Vishnu Nambiar",
       "text": ""
      },
      {
-      "ts": "2026-11-18T09:46:26Z",
-      "author": "Vishnu Nambiar",
-      "text": ""
-     },
-     {
-      "ts": "2026-11-18T09:45:39Z",
-      "author": "Vinay Pratap Singh",
+      "ts": "2026-11-18T10:17:42Z",
+      "author": "Rohit Kala",
       "text": ""
      }
     ],
-    "summary": "Deployment readiness monitoring; deployment hit a fatal error. Owner posted an update at 15:15 IST (customer to rerun in validation mode, product team page requested); CIC linked a GUS record, opened an internal bridge and paged the product team at 15:20 IST.",
+    "summary": "Warm handover from APAC: deployment fatal error, upgraded from Sev2, product team engaged live and another team paged.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "480445853",
+   "subject": "Slack & Salesforce Swarming Integration: Action buttons (\"View Case\", \"Finish Swarm\", \"Reopen Swarm\") unresponsive in Slack Sandbox",
+   "status": "Working",
+   "subStatus": "In Progress",
+   "account": "Hewlett Packard Enterprise Company",
+   "owner": "Neha Mishra",
+   "manager": "Mirza",
+   "created": "2026-11-04T13:19:11.000+0000",
+   "sev1Start": "2026-11-04T13:19:12.000+0000",
+   "cicFlag": true,
+   "cicSubstatus": null,
+   "lastPublicActivity": "2026-11-17T15:41:14.000+0000",
+   "lastModified": "2026-11-18T10:22:34.000+0000",
+   "activeSwarm": true,
+   "isEscalated": true,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 13.89,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CECUKUBGF",
+    "channelName": "sev1-480445853-hewlett-packard-enterprise-company-sig",
+    "channelCreated": "2026-11-04T13:19:18Z",
+    "cicCommander": "Raj Lakshman",
+    "cicJoinedAt": "2026-11-18T10:22:37Z",
+    "lastHumanTs": "2026-11-18T10:29:27Z",
+    "lastCicTs": "2026-11-18T10:24:03Z",
+    "humanMsgLast30m": 7,
+    "humanMsgLast60m": 7,
+    "humanMsgLast24h": 7,
+    "participants": [
+     "Neha Mishra",
+     "Nimit Vikrama",
+     "Rohit Kala",
+     "Raj Lakshman",
+     "Dorin Fazli",
+     "Sai Vikram Kinnera"
+    ],
+    "bridgeMentioned": false,
+    "lastBridgeTs": null,
+    "customerUpdateGiven": true,
+    "nextStepOrEtaStated": true,
+    "csmPresent": true,
+    "backlineEngaged": null,
+    "recent": [
+     {
+      "ts": "2026-11-18T10:29:27Z",
+      "author": "Neha Mishra",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T10:25:44Z",
+      "author": "Sai Vikram Kinnera",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T10:24:03Z",
+      "author": "Raj Lakshman",
+      "text": ""
+     }
+    ],
+    "summary": "CIC re-engaged today after the customer reported it blocks UAT sign-off; owner shared current and next steps after a customer call; CIC asked about the production go-live date.",
     "error": null
    }
   }
@@ -617,6 +674,53 @@
      "m30": 3,
      "lastHuman": "2026-11-18T09:50:31Z",
      "status": "Need More Information"
+    }
+   }
+  },
+  {
+   "ts": "2026-11-18T10:34:46+00:00",
+   "cases": {
+    "484988675": {
+     "m60": 5,
+     "m30": 5,
+     "lastHuman": "2026-11-18T10:11:29Z",
+     "status": "Need More Information"
+    },
+    "484981986": {
+     "m60": 8,
+     "m30": 6,
+     "lastHuman": "2026-11-18T10:26:28Z",
+     "status": "Working"
+    },
+    "484979598": {
+     "m60": 6,
+     "m30": 1,
+     "lastHuman": "2026-11-18T10:20:50Z",
+     "status": "Need More Information"
+    },
+    "484960341": {
+     "m60": 3,
+     "m30": 0,
+     "lastHuman": "2026-11-18T10:02:04Z",
+     "status": "Working"
+    },
+    "484669121": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T09:05:56Z",
+     "status": "Working"
+    },
+    "482442680": {
+     "m60": 6,
+     "m30": 2,
+     "lastHuman": "2026-11-18T10:31:14Z",
+     "status": "Need More Information"
+    },
+    "480445853": {
+     "m60": 7,
+     "m30": 7,
+     "lastHuman": "2026-11-18T10:29:27Z",
+     "status": "Working"
     }
    }
   }
