@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-18T12:02:30+00:00",
+  "generated": "2026-11-18T12:04:10+00:00",
   "intervalMin": 10,
   "refreshedBy": "shubhav-crypto",
   "totalCic": 8,
@@ -34,11 +34,11 @@
     "channelCreated": "2026-11-18T10:07:00Z",
     "cicCommander": "Dominika Barrett",
     "cicJoinedAt": "2026-11-18T10:09:38Z",
-    "lastHumanTs": "2026-11-18T10:11:29Z",
+    "lastHumanTs": "2026-11-18T12:03:07Z",
     "lastCicTs": "2026-11-18T10:10:45Z",
-    "humanMsgLast30m": 0,
-    "humanMsgLast60m": 0,
-    "humanMsgLast24h": 5,
+    "humanMsgLast30m": 1,
+    "humanMsgLast60m": 1,
+    "humanMsgLast24h": 6,
     "participants": [
      "Sai Vikram Kinnera",
      "Uthej Gattu",
@@ -56,6 +56,11 @@
     "backlineEngaged": null,
     "recent": [
      {
+      "ts": "2026-11-18T12:03:07Z",
+      "author": "Sahithi Dhanekula",
+      "text": ""
+     },
+     {
       "ts": "2026-11-18T10:11:29Z",
       "author": "Sai Vikram Kinnera",
       "text": ""
@@ -64,14 +69,9 @@
       "ts": "2026-11-18T10:10:45Z",
       "author": "Dominika Barrett",
       "text": ""
-     },
-     {
-      "ts": "2026-11-18T10:10:19Z",
-      "author": "Dominika Barrett",
-      "text": ""
      }
     ],
-    "summary": "New case: CIC commander joined and asked the CSM to clarify business impact; owner just added and asked to start the bridge, customer cannot join Google Meet.",
+    "summary": "Owner says the customer is waiting for their IT team's availability; the team will join a bridge once the customer sends an invite.",
     "error": null
    }
   },
@@ -216,7 +216,7 @@
    "cicFlag": true,
    "cicSubstatus": null,
    "lastPublicActivity": "2026-11-18T11:34:26.000+0000",
-   "lastModified": "2026-11-18T11:34:28.000+0000",
+   "lastModified": "2026-11-18T12:02:10.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
@@ -416,7 +416,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 13.96,
+   "ageDays": 13.97,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -538,41 +538,6 @@
   }
  ],
  "history": [
-  {
-   "ts": "2026-11-18T09:54:11+00:00",
-   "cases": {
-    "484981986": {
-     "m60": 2,
-     "m30": 2,
-     "lastHuman": "2026-11-18T09:45:25Z",
-     "status": "Working"
-    },
-    "484979598": {
-     "m60": 5,
-     "m30": 4,
-     "lastHuman": "2026-11-18T09:42:44Z",
-     "status": "Working"
-    },
-    "484960341": {
-     "m60": 3,
-     "m30": 0,
-     "lastHuman": "2026-11-18T09:10:07Z",
-     "status": "Working"
-    },
-    "484669121": {
-     "m60": 1,
-     "m30": 0,
-     "lastHuman": "2026-11-18T09:05:56Z",
-     "status": "Working"
-    },
-    "482442680": {
-     "m60": 4,
-     "m30": 3,
-     "lastHuman": "2026-11-18T09:50:31Z",
-     "status": "Need More Information"
-    }
-   }
-  },
   {
    "ts": "2026-11-18T10:04:39+00:00",
    "cases": {
@@ -1044,6 +1009,59 @@
      "m60": 0,
      "m30": 0,
      "lastHuman": "2026-11-18T10:11:29Z",
+     "status": "Need More Information"
+    },
+    "484979598": {
+     "m60": 3,
+     "m30": 2,
+     "lastHuman": "2026-11-18T11:54:27Z",
+     "status": "Need More Information"
+    },
+    "484960341": {
+     "m60": 1,
+     "m30": 0,
+     "lastHuman": "2026-11-18T11:17:31Z",
+     "status": "Working"
+    },
+    "484669121": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T09:05:56Z",
+     "status": "Working"
+    },
+    "482442680": {
+     "m60": 4,
+     "m30": 2,
+     "lastHuman": "2026-11-18T11:57:31Z",
+     "status": "Need More Information"
+    },
+    "480445853": {
+     "m60": 1,
+     "m30": 1,
+     "lastHuman": "2026-11-18T11:51:05Z",
+     "status": "Working"
+    },
+    "480436048": {
+     "m60": 8,
+     "m30": 0,
+     "lastHuman": "2026-11-18T11:27:47Z",
+     "status": "Working"
+    },
+    "484740694": {
+     "m60": 3,
+     "m30": 2,
+     "lastHuman": "2026-11-18T11:40:37Z",
+     "status": "Working"
+    }
+   }
+  },
+  {
+   "ts": "2026-11-18T12:04:10+00:00",
+   "cases": {
+    "484988675": {
+     "m60": 1,
+     "m30": 1,
+     "lastHuman": "2026-11-18T12:03:07Z",
      "status": "Need More Information"
     },
     "484979598": {
