@@ -1,12 +1,80 @@
 {
  "meta": {
-  "generated": "2026-11-18T10:04:39+00:00",
+  "generated": "2026-11-18T10:14:22+00:00",
   "intervalMin": 10,
   "refreshedBy": "shubhav-crypto",
-  "totalCic": 5,
+  "totalCic": 6,
   "source": "OrgCS Case (open, Level 1 - Critical, Escalate_to_CIC__c = true) + Slack sev1 channels"
  },
  "cases": [
+  {
+   "caseNum": "484988675",
+   "subject": "Delay in Inbound Email Processing",
+   "status": "Working",
+   "subStatus": "In Progress",
+   "account": "IDFC First Ltd (Bancassurance)",
+   "owner": "Sahithi Dhanekula",
+   "manager": "Shubha",
+   "created": "2026-11-18T10:06:55.000+0000",
+   "sev1Start": "2026-11-18T10:06:56.000+0000",
+   "cicFlag": true,
+   "cicSubstatus": "Initial Impact Assessment",
+   "lastPublicActivity": null,
+   "lastModified": "2026-11-18T10:12:00.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 0,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CJXDAKTJ8",
+    "channelName": "sev1-484988675-idfc-first-ltd-bancassurance-sig",
+    "channelCreated": "2026-11-18T10:07:00Z",
+    "cicCommander": "Dominika Barrett",
+    "cicJoinedAt": "2026-11-18T10:09:38Z",
+    "lastHumanTs": "2026-11-18T10:11:29Z",
+    "lastCicTs": "2026-11-18T10:10:45Z",
+    "humanMsgLast30m": 5,
+    "humanMsgLast60m": 5,
+    "humanMsgLast24h": 5,
+    "participants": [
+     "Sai Vikram Kinnera",
+     "Uthej Gattu",
+     "Dominika Barrett",
+     "Sahithi Dhanekula",
+     "Shreya Loni",
+     "Donempudi Prudhvi",
+     "Omer Abdul Azeez"
+    ],
+    "bridgeMentioned": true,
+    "lastBridgeTs": "2026-11-18T10:11:29Z",
+    "customerUpdateGiven": null,
+    "nextStepOrEtaStated": null,
+    "csmPresent": true,
+    "backlineEngaged": null,
+    "recent": [
+     {
+      "ts": "2026-11-18T10:11:29Z",
+      "author": "Sai Vikram Kinnera",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T10:10:45Z",
+      "author": "Dominika Barrett",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T10:10:19Z",
+      "author": "Dominika Barrett",
+      "text": ""
+     }
+    ],
+    "summary": "New case: CIC commander joined and asked the CSM to clarify business impact; owner just added and asked to start the bridge, customer cannot join Google Meet.",
+    "error": null
+   }
+  },
   {
    "caseNum": "484981986",
    "subject": "Issue with code validation status",
@@ -25,7 +93,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.02,
+   "ageDays": 0.03,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -34,11 +102,11 @@
     "channelCreated": "2026-11-18T09:33:48Z",
     "cicCommander": "Alisha Dias",
     "cicJoinedAt": "2026-11-18T09:34:33Z",
-    "lastHumanTs": "2026-11-18T09:45:25Z",
+    "lastHumanTs": "2026-11-18T10:10:19Z",
     "lastCicTs": null,
     "humanMsgLast30m": 2,
-    "humanMsgLast60m": 2,
-    "humanMsgLast24h": 2,
+    "humanMsgLast60m": 4,
+    "humanMsgLast24h": 4,
     "participants": [
      "Sai Vikram Kinnera",
      "Rohit Kala"
@@ -51,17 +119,17 @@
     "backlineEngaged": null,
     "recent": [
      {
-      "ts": "2026-11-18T09:45:25Z",
-      "author": "Rohit Kala",
+      "ts": "2026-11-18T10:10:19Z",
+      "author": "Rahul Dhiman",
       "text": ""
      },
      {
-      "ts": "2026-11-18T09:42:09Z",
-      "author": "Sai Vikram Kinnera",
+      "ts": "2026-11-18T10:08:04Z",
+      "author": "Rahul Dhiman",
       "text": ""
      }
     ],
-    "summary": "New Sev1: code validation status. CIC commander joined within a minute. Owner assigned to Rahul Dhiman at 15:15 IST and asked to contact the customer; no CIC post or customer update yet.",
+    "summary": "Owner posted that the deployment is running as expected.",
     "error": null
    }
   },
@@ -83,7 +151,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.03,
+   "ageDays": 0.04,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -94,7 +162,7 @@
     "cicJoinedAt": "2026-11-18T09:22:06Z",
     "lastHumanTs": "2026-11-18T09:42:44Z",
     "lastCicTs": "2026-11-18T09:24:07Z",
-    "humanMsgLast30m": 4,
+    "humanMsgLast30m": 0,
     "humanMsgLast60m": 5,
     "humanMsgLast24h": 5,
     "participants": [
@@ -141,9 +209,9 @@
    "created": "2026-11-18T07:45:37.000+0000",
    "sev1Start": "2026-11-18T07:45:39.000+0000",
    "cicFlag": true,
-   "cicSubstatus": null,
+   "cicSubstatus": "Customer - Active Troubleshooting",
    "lastPublicActivity": "2026-11-18T07:48:00.000+0000",
-   "lastModified": "2026-11-18T09:54:06.000+0000",
+   "lastModified": "2026-11-18T10:04:39.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
@@ -211,7 +279,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 1.11,
+   "ageDays": 1.12,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -223,7 +291,7 @@
     "lastHumanTs": "2026-11-18T09:05:56Z",
     "lastCicTs": "2026-11-18T09:05:56Z",
     "humanMsgLast30m": 0,
-    "humanMsgLast60m": 1,
+    "humanMsgLast60m": 0,
     "humanMsgLast24h": 32,
     "participants": [
      "Sonia Notani",
@@ -267,14 +335,14 @@
    "created": "2026-11-09T16:41:41.000+0000",
    "sev1Start": "2026-11-18T06:45:51.000+0000",
    "cicFlag": true,
-   "cicSubstatus": null,
+   "cicSubstatus": "T&P - Waiting for Resolution",
    "lastPublicActivity": "2026-11-18T07:14:09.000+0000",
-   "lastModified": "2026-11-18T09:37:04.000+0000",
+   "lastModified": "2026-11-18T10:13:35.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": true,
    "serviceRestored": false,
-   "ageDays": 8.72,
+   "ageDays": 8.73,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -499,6 +567,47 @@
     },
     "484669121": {
      "m60": 1,
+     "m30": 0,
+     "lastHuman": "2026-11-18T09:05:56Z",
+     "status": "Working"
+    },
+    "482442680": {
+     "m60": 4,
+     "m30": 3,
+     "lastHuman": "2026-11-18T09:50:31Z",
+     "status": "Need More Information"
+    }
+   }
+  },
+  {
+   "ts": "2026-11-18T10:14:22+00:00",
+   "cases": {
+    "484988675": {
+     "m60": 5,
+     "m30": 5,
+     "lastHuman": "2026-11-18T10:11:29Z",
+     "status": "Working"
+    },
+    "484981986": {
+     "m60": 4,
+     "m30": 2,
+     "lastHuman": "2026-11-18T10:10:19Z",
+     "status": "Working"
+    },
+    "484979598": {
+     "m60": 5,
+     "m30": 0,
+     "lastHuman": "2026-11-18T09:42:44Z",
+     "status": "Working"
+    },
+    "484960341": {
+     "m60": 3,
+     "m30": 2,
+     "lastHuman": "2026-11-18T10:02:04Z",
+     "status": "Working"
+    },
+    "484669121": {
+     "m60": 0,
      "m30": 0,
      "lastHuman": "2026-11-18T09:05:56Z",
      "status": "Working"
