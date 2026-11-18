@@ -1,17 +1,17 @@
 {
  "meta": {
-  "generated": "2026-11-18T11:04:38+00:00",
+  "generated": "2026-11-18T11:14:27+00:00",
   "intervalMin": 10,
   "refreshedBy": "shubhav-crypto",
-  "totalCic": 7,
+  "totalCic": 8,
   "source": "OrgCS Case (open, Level 1 - Critical, Escalate_to_CIC__c = true) + Slack sev1 channels"
  },
  "cases": [
   {
    "caseNum": "484988675",
    "subject": "Delay in Inbound Email Processing",
-   "status": "Need More Information",
-   "subStatus": "Waiting on Customer",
+   "status": "Working",
+   "subStatus": "In Progress",
    "account": "IDFC First Ltd (Bancassurance)",
    "owner": "Sahithi Dhanekula",
    "manager": "Shubha",
@@ -19,13 +19,13 @@
    "sev1Start": "2026-11-18T10:06:56.000+0000",
    "cicFlag": true,
    "cicSubstatus": "Initial Impact Assessment",
-   "lastPublicActivity": null,
-   "lastModified": "2026-11-18T10:48:41.000+0000",
+   "lastPublicActivity": "2026-11-18T11:09:33.000+0000",
+   "lastModified": "2026-11-18T11:09:35.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.04,
+   "ageDays": 0.05,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -37,7 +37,7 @@
     "lastHumanTs": "2026-11-18T10:11:29Z",
     "lastCicTs": "2026-11-18T10:10:45Z",
     "humanMsgLast30m": 0,
-    "humanMsgLast60m": 5,
+    "humanMsgLast60m": 0,
     "humanMsgLast24h": 5,
     "participants": [
      "Sai Vikram Kinnera",
@@ -93,7 +93,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.07,
+   "ageDays": 0.08,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -216,7 +216,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 1.15,
+   "ageDays": 1.16,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -291,7 +291,7 @@
     "cicJoinedAt": "2026-11-18T06:54:34Z",
     "lastHumanTs": "2026-11-18T10:53:42Z",
     "lastCicTs": "2026-11-18T10:31:14Z",
-    "humanMsgLast30m": 2,
+    "humanMsgLast30m": 1,
     "humanMsgLast60m": 4,
     "humanMsgLast24h": 47,
     "participants": [
@@ -361,7 +361,7 @@
     "lastHumanTs": "2026-11-18T10:29:27Z",
     "lastCicTs": "2026-11-18T10:24:03Z",
     "humanMsgLast30m": 0,
-    "humanMsgLast60m": 7,
+    "humanMsgLast60m": 4,
     "humanMsgLast24h": 7,
     "participants": [
      "Neha Mishra",
@@ -416,7 +416,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 13.92,
+   "ageDays": 13.93,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -425,11 +425,11 @@
     "channelCreated": "2026-11-18T06:34:26Z",
     "cicCommander": "Sonia Notani",
     "cicJoinedAt": "2026-11-18T09:28:42Z",
-    "lastHumanTs": "2026-11-18T10:10:34Z",
-    "lastCicTs": "2026-11-18T09:48:02Z",
-    "humanMsgLast30m": 0,
-    "humanMsgLast60m": 2,
-    "humanMsgLast24h": 20,
+    "lastHumanTs": "2026-11-18T11:13:09Z",
+    "lastCicTs": "2026-11-18T11:13:09Z",
+    "humanMsgLast30m": 5,
+    "humanMsgLast60m": 5,
+    "humanMsgLast24h": 25,
     "participants": [
      "Manikanta Mullaguru",
      "Ravindra Ejjada",
@@ -443,50 +443,100 @@
     ],
     "bridgeMentioned": false,
     "lastBridgeTs": null,
-    "customerUpdateGiven": null,
+    "customerUpdateGiven": true,
     "nextStepOrEtaStated": true,
     "csmPresent": null,
     "backlineEngaged": true,
     "recent": [
      {
-      "ts": "2026-11-18T10:10:34Z",
+      "ts": "2026-11-18T11:13:09Z",
+      "author": "Sonia Notani",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T11:11:40Z",
       "author": "Ravindra Ejjada",
       "text": ""
      },
      {
-      "ts": "2026-11-18T10:10:26Z",
-      "author": "Manikanta Mullaguru",
-      "text": ""
-     },
-     {
-      "ts": "2026-11-18T10:01:24Z",
+      "ts": "2026-11-18T11:10:38Z",
       "author": "Ravindra Ejjada",
       "text": ""
      }
     ],
-    "summary": "CIC re-engaged after the customer reported emails still failing; engineers shared log analysis; a new case owner was assigned in the last hour and the channel has been quiet since.",
+    "summary": "Customer call concluded; CIC posted the summary and next steps (customer to share a working email sample, owner to send findings) and asked whether CIC can disengage.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "484740694",
+   "subject": "Unable to Deploy Aura Site Due to Partner Enablement Setting",
+   "status": "Working",
+   "subStatus": "In Progress",
+   "account": "Aalto University Foundation sr",
+   "owner": "Pavan Kumar Boya",
+   "manager": "Rohit",
+   "created": "2026-11-17T13:20:47.000+0000",
+   "sev1Start": "2026-11-17T13:20:49.000+0000",
+   "cicFlag": true,
+   "cicSubstatus": null,
+   "lastPublicActivity": null,
+   "lastModified": "2026-11-18T11:04:45.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": true,
+   "serviceRestored": false,
+   "ageDays": 0.91,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CJAU4ABRB",
+    "channelName": "sev1-484740694-aalto-university-foundation-sr-sig",
+    "channelCreated": "2026-11-17T13:20:54Z",
+    "cicCommander": "Myles Slevin",
+    "cicJoinedAt": "2026-11-18T09:57:22Z",
+    "lastHumanTs": "2026-11-18T10:30:41Z",
+    "lastCicTs": "2026-11-18T10:30:41Z",
+    "humanMsgLast30m": 0,
+    "humanMsgLast60m": 0,
+    "humanMsgLast24h": 15,
+    "participants": [
+     "Pavan Kumar Boya",
+     "Myles Slevin",
+     "Karen Nash-Marchand",
+     "Arvind Kumar Attri",
+     "Rohit Kala",
+     "Naveen Salutagi"
+    ],
+    "bridgeMentioned": false,
+    "lastBridgeTs": null,
+    "customerUpdateGiven": true,
+    "nextStepOrEtaStated": true,
+    "csmPresent": null,
+    "backlineEngaged": null,
+    "recent": [
+     {
+      "ts": "2026-11-18T10:30:41Z",
+      "author": "Myles Slevin",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T10:03:17Z",
+      "author": "Pavan Kumar Boya",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T09:57:22Z",
+      "author": "Myles Slevin",
+      "text": ""
+     }
+    ],
+    "summary": "CIC re-engaged; the customer rejected the proposed workaround, the case is routed to the partner team but no one from Partner Ops is online, so a wait of a few hours is expected.",
     "error": null
    }
   }
  ],
  "history": [
-  {
-   "ts": "2026-11-18T09:17:34+00:00",
-   "cases": {
-    "484960341": {
-     "m60": 7,
-     "m30": 3,
-     "lastHuman": "2026-11-18T09:10:07Z",
-     "status": "Working"
-    },
-    "482442680": {
-     "m60": 3,
-     "m30": 0,
-     "lastHuman": "2026-11-18T08:41:04Z",
-     "status": "Working"
-    }
-   }
-  },
   {
    "ts": "2026-11-18T09:23:06+00:00",
    "cases": {
@@ -868,6 +918,59 @@
      "m60": 2,
      "m30": 0,
      "lastHuman": "2026-11-18T10:10:34Z",
+     "status": "Working"
+    }
+   }
+  },
+  {
+   "ts": "2026-11-18T11:14:27+00:00",
+   "cases": {
+    "484988675": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T10:11:29Z",
+     "status": "Working"
+    },
+    "484979598": {
+     "m60": 6,
+     "m30": 0,
+     "lastHuman": "2026-11-18T10:20:50Z",
+     "status": "Need More Information"
+    },
+    "484960341": {
+     "m60": 1,
+     "m30": 0,
+     "lastHuman": "2026-11-18T10:42:20Z",
+     "status": "Working"
+    },
+    "484669121": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T09:05:56Z",
+     "status": "Working"
+    },
+    "482442680": {
+     "m60": 4,
+     "m30": 1,
+     "lastHuman": "2026-11-18T10:53:42Z",
+     "status": "Need More Information"
+    },
+    "480445853": {
+     "m60": 4,
+     "m30": 0,
+     "lastHuman": "2026-11-18T10:29:27Z",
+     "status": "Working"
+    },
+    "480436048": {
+     "m60": 5,
+     "m30": 5,
+     "lastHuman": "2026-11-18T11:13:09Z",
+     "status": "Working"
+    },
+    "484740694": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T10:30:41Z",
      "status": "Working"
     }
    }
