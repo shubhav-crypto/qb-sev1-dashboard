@@ -814,7 +814,8 @@ function lvFlags(c){
   const waiting=c.status==='Need More Information';
   const age=lvHrs(c.sev1Start||c.created);
   const warnH=waiting?LV.WAIT_CUSTOMER_H:LV.SILENT_WARN_H,critH=waiting?LV.WAIT_CUSTOMER_H*2:LV.SILENT_CRIT_H;
-  if(!s.found){f.push({k:'No Slack channel',sev:age!=null&&age>LV.NO_CHANNEL_GRACE_H?'crit':'warn',tip:'No sev1-'+c.caseNum+' channel was found'});}
+  if(!c.cicFlag){/* CIC not engaged: Slack is not required, only OrgCS activity is judged */}
+  else if(!s.found){f.push({k:'No Slack channel',sev:age!=null&&age>LV.NO_CHANNEL_GRACE_H?'crit':'warn',tip:'No sev1-'+c.caseNum+' channel was found'});}
   else{
     const sh=lvHrs(s.lastHumanMessageTs||s.channelCreated);
     if(sh!=null&&sh>=critH)f.push({k:'Slack silent '+lvFmtAge(sh),sev:'crit',tip:'No human message in the Sev1 channel'});
@@ -845,7 +846,7 @@ function lvTrend(s){
   if(s.msg24h<prior*0.5)return {t:'↓ slowing',c:'down'};
   return {t:'→ steady',c:'flat'};
 }
-function lvEnrich(c){const flags=lvFlags(c);return Object.assign({},c,{_flags:flags,_health:lvHealth(flags),_age:lvHrs(c.sev1Start||c.created),_trend:lvTrend(c.slack)});}
+function lvEnrich(c){const flags=lvFlags(c);return Object.assign({},c,{_flags:flags,_health:lvHealth(flags),_age:lvHrs(c.sev1Start||c.created),_trend:c.cicFlag?lvTrend(c.slack):{t:'n/a',c:'flat'}});}
 async function loadLive(force){
   const st=document.getElementById('lvStatus');
   try{
@@ -890,7 +891,7 @@ function renderLive(){
     ['amber','Watch',n(function(c){return c._health==='warn';}),'warn'],
     ['green','On track',n(function(c){return c._health==='ok';}),'ok'],
     ['purple','CIC engaged',n(function(c){return c.cicFlag;}),''],
-    ['red','No Slack channel',n(function(c){return !(c.slack&&c.slack.found);}),'']
+    ['blue','CIC not engaged (OrgCS only)',n(function(c){return !c.cicFlag;}),'']
   ];
   const kEl=document.getElementById('lvKpis');kEl.textContent='';
   kp.forEach(function(k){
@@ -901,12 +902,12 @@ function renderLive(){
   });
   // manager table
   const mt=document.getElementById('lvMgrTable');
-  let mh='<thead><tr><th>Manager</th><th>Open</th><th>Needs action</th><th>Watch</th><th>On track</th><th>CIC engaged</th><th>Slack silent &gt;24h</th></tr></thead><tbody>';
+  let mh='<thead><tr><th>Manager</th><th>Open</th><th>CIC engaged</th><th>Not engaged</th><th>Needs action</th><th>Watch</th><th>On track</th></tr></thead><tbody>';
   LIVE.meta.managers.forEach(function(m){
     const cs=all.filter(function(c){return c.manager===m;});
     const cnt=function(h){return cs.filter(function(c){return c._health===h;}).length;};
-    const silent=cs.filter(function(c){const s=c.slack||{};const h=lvHrs(s.lastHumanMessageTs||s.channelCreated);return s.found&&h!=null&&h>=24;}).length;
-    mh+='<tr><td>'+mgrChip(m)+'</td><td><b>'+cs.length+'</b></td><td style="color:var(--red)">'+cnt('crit')+'</td><td style="color:var(--yellow)">'+cnt('warn')+'</td><td style="color:var(--green)">'+cnt('ok')+'</td><td>'+cs.filter(function(c){return c.cicFlag;}).length+'</td><td>'+silent+'</td></tr>';
+    const cicN=cs.filter(function(c){return c.cicFlag;}).length;
+    mh+='<tr><td>'+mgrChip(m)+'</td><td><b>'+cs.length+'</b></td><td>'+cicN+'</td><td>'+(cs.length-cicN)+'</td><td style="color:var(--red)">'+cnt('crit')+'</td><td style="color:var(--yellow)">'+cnt('warn')+'</td><td style="color:var(--green)">'+cnt('ok')+'</td></tr>';
   });
   mt.innerHTML=mh+'</tbody>';
   // history trend
@@ -923,10 +924,10 @@ function renderLive(){
   document.getElementById('lvCasesTitle').textContent='Open Sev1s ('+rows.length+(rows.length!==all.length?' of '+all.length:'')+')';
   const tb=document.getElementById('lvTable');tb.textContent='';
   const th=document.createElement('thead');
-  th.innerHTML='<tr><th>Health</th><th>Case</th><th>Account</th><th>Manager / Owner</th><th>Status</th><th>Age</th><th>Slack (24h / 72h)</th><th>Trend</th><th>Why flagged</th></tr>';
+  th.innerHTML='<tr><th>Health</th><th>Case</th><th>Account</th><th>Manager / Owner</th><th>CIC</th><th>Status</th><th>Age</th><th>Slack (24h / 72h)</th><th>Trend</th><th>Why flagged</th></tr>';
   tb.appendChild(th);
   const body=document.createElement('tbody');tb.appendChild(body);
-  if(!rows.length){const tr=document.createElement('tr'),td=document.createElement('td');td.colSpan=9;td.style.padding='20px';td.textContent='No open Sev1s match these filters.';tr.appendChild(td);body.appendChild(tr);}
+  if(!rows.length){const tr=document.createElement('tr'),td=document.createElement('td');td.colSpan=10;td.style.padding='20px';td.textContent='No open Sev1s match these filters.';tr.appendChild(td);body.appendChild(tr);}
   rows.forEach(function(c){
     const s=c.slack||{};
     const tr=document.createElement('tr');tr.className='lv-row';tr.tabIndex=0;
@@ -939,16 +940,18 @@ function renderLive(){
       '<td><b>'+esc(c.caseNum)+'</b><div class="case-num" style="max-width:260px;white-space:normal">'+esc(c.subject)+'</div></td>'+
       '<td>'+esc(c.account)+'</td>'+
       '<td>'+mgrChip(c.manager)+'<div class="case-num">'+esc(c.owner)+'</div></td>'+
-      '<td>'+esc(c.status)+(c.cicFlag?' <span class="badge mci">CIC</span>':'')+'</td>'+
+      '<td>'+(c.cicFlag?'<span class="badge mci">CIC engaged</span>':'<span class="badge pending">Not engaged</span>')+'</td>'+
+      '<td>'+esc(c.status)+'</td>'+
       '<td>'+lvFmtAge(c._age)+'</td>'+
-      '<td>'+(s.found?esc(s.msg24h==null?'?':s.msg24h)+' / '+esc(s.msg72h==null?'?':s.msg72h):'—')+'</td>'+
+      '<td>'+(!c.cicFlag?'<span class="case-num">not required</span>':s.found?esc(s.msg24h==null?'?':s.msg24h)+' / '+esc(s.msg72h==null?'?':s.msg72h):'—')+'</td>'+
       '<td><span class="lv-trend '+c._trend.c+'">'+esc(c._trend.t)+'</span></td>'+
       '<td>'+flags.map(function(x){return '<span class="lv-flag '+x.sev+'" title="'+esc(x.tip)+'">'+esc(x.k)+'</span>';}).join('')+'</td>';
     body.appendChild(tr);
     if(lvOpen[c.caseNum]){
       const dr=document.createElement('tr');dr.className='lv-detail';
-      const dd=document.createElement('td');dd.colSpan=9;
+      const dd=document.createElement('td');dd.colSpan=10;
       const head=document.createElement('div');head.style.cssText='font-size:12px;margin-bottom:8px';
+      if(!c.cicFlag){const nt=document.createElement('div');nt.style.cssText='font-size:12px;font-weight:600;margin-bottom:6px';nt.textContent='CIC not engaged: only OrgCS activity is judged. Slack below is for context only.';dd.appendChild(nt);}
       if(s.found){
         const a=document.createElement('a');a.href='https://salesforce-internal.slack.com/archives/'+encodeURIComponent(s.channelId);a.target='_blank';a.rel='noopener';a.textContent='#'+s.channelName;
         head.appendChild(a);
@@ -969,10 +972,10 @@ function renderLive(){
   });
   document.getElementById('ptab-live-badge').textContent=all.length?String(all.filter(function(c){return c._health==='crit';}).length||''):'';
   document.getElementById('lvRules').innerHTML=
-    '<div><span class="lv-flag crit">Needs action</span> any of: no Slack channel after '+LV.NO_CHANNEL_GRACE_H+'h · no human Slack message for <code>'+LV.SILENT_CRIT_H+'h</code> · no public OrgCS update for <code>'+LV.SILENT_CRIT_H+'h</code> · CIC flagged in OrgCS but no CIC activity in the channel.</div>'+
-    '<div><span class="lv-flag warn">Watch</span> Slack or OrgCS quiet for <code>'+LV.SILENT_WARN_H+'h</code> · channel active but no next step, ETA or customer update in 72h · CIC engagement unverified.</div>'+
-    '<div>Cases in <code>Need More Information</code> are waiting on the customer, so silence thresholds stretch to '+LV.WAIT_CUSTOMER_H+'h / '+(LV.WAIT_CUSTOMER_H*2)+'h. Trend compares the last 24h of channel messages with the daily average of the 48h before.</div>'+
-    '<div>Open cases are cases owned by engineers who report to the six managers, Severity Level 1 – Critical. Ages are computed live in your browser; data comes from the last snapshot.</div>';
+    '<div><b>CIC engaged</b> (Escalate to CIC set in OrgCS): Slack and OrgCS are both judged. <span class="lv-flag crit">Needs action</span> no Slack channel after '+LV.NO_CHANNEL_GRACE_H+'h · no human Slack message for <code>'+LV.SILENT_CRIT_H+'h</code> · no public OrgCS update for <code>'+LV.SILENT_CRIT_H+'h</code> · CIC flagged but no CIC activity in the channel. <span class="lv-flag warn">Watch</span> quiet for <code>'+LV.SILENT_WARN_H+'h</code> · active channel with no next step, ETA or customer update in 72h · CIC unverified. The CIC live monitor above uses tighter limits.</div>'+
+    '<div><b>CIC not engaged</b>: only OrgCS is judged (no public update for <code>'+LV.SILENT_WARN_H+'h</code> = Watch, <code>'+LV.SILENT_CRIT_H+'h</code> = Needs action). Slack silence or a missing channel is not flagged.</div>'+
+    '<div>Cases in <code>Need More Information</code> are waiting on the customer, so thresholds stretch to '+LV.WAIT_CUSTOMER_H+'h / '+(LV.WAIT_CUSTOMER_H*2)+'h. Trend (CIC cases only) compares the last 24h of channel messages with the daily average of the 48h before.</div>'+
+    '<div>Open cases are Severity Level 1 – Critical cases owned by engineers who report to the six managers. Ages are computed live in your browser; data comes from the last snapshot.</div>';
 }
 // ── CIC LIVE MONITOR ─────────────────────────────────────────────────────────
 // live-cic.json is refreshed every ~10 min by the live-sev1 skill (CIC-engaged = Escalate_to_CIC__c).

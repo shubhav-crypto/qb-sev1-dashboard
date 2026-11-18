@@ -41,6 +41,10 @@ Managers (OrgCS `User.Name`): Nikhil Srivastava · Jyothirmayee Ramineni · Shub
 4. **Merge:** `python3 skills/live-sev1/scripts/build_live.py`
 5. **Publish:** commit `live-sev1.json` and `live-sev1-history.json` and push to `main` (the Pages workflow deploys on push).
 
+## CIC engaged vs not engaged
+
+Every open Sev1 shows a CIC engaged / Not engaged badge (`Escalate_to_CIC__c`). For **non-CIC** cases the page judges OrgCS activity only: no Slack silence, missing-channel, next-step or CIC flags, and the Slack cell shows "not required". So the roster refresh only needs Slack reads for CIC-engaged cases (the CIC monitor already collects those); `batch*_slack.json` for non-CIC cases is optional context.
+
 ## Known limits
 
 - Snapshot, not streaming: the tab shows its snapshot age and turns red after 6h.
