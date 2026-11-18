@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-18T11:45:17+00:00",
+  "generated": "2026-11-18T11:47:18+00:00",
   "intervalMin": 10,
   "refreshedBy": "shubhav-crypto",
   "totalCic": 8,
@@ -164,7 +164,7 @@
     "cicJoinedAt": "2026-11-18T07:47:27Z",
     "lastHumanTs": "2026-11-18T11:17:31Z",
     "lastCicTs": "2026-11-18T09:57:45Z",
-    "humanMsgLast30m": 0,
+    "humanMsgLast30m": 1,
     "humanMsgLast60m": 1,
     "humanMsgLast24h": 16,
     "participants": [
@@ -538,35 +538,6 @@
   }
  ],
  "history": [
-  {
-   "ts": "2026-11-18T09:35:09+00:00",
-   "cases": {
-    "484979598": {
-     "m60": 2,
-     "m30": 2,
-     "lastHuman": "2026-11-18T09:30:38Z",
-     "status": "New"
-    },
-    "484960341": {
-     "m60": 4,
-     "m30": 2,
-     "lastHuman": "2026-11-18T09:10:07Z",
-     "status": "Working"
-    },
-    "484669121": {
-     "m60": 1,
-     "m30": 1,
-     "lastHuman": "2026-11-18T09:05:56Z",
-     "status": "Working"
-    },
-    "482442680": {
-     "m60": 2,
-     "m30": 0,
-     "lastHuman": "2026-11-18T08:41:04Z",
-     "status": "Working"
-    }
-   }
-  },
   {
    "ts": "2026-11-18T09:44:34+00:00",
    "cases": {
@@ -1013,6 +984,59 @@
     "484960341": {
      "m60": 1,
      "m30": 0,
+     "lastHuman": "2026-11-18T11:17:31Z",
+     "status": "Working"
+    },
+    "484669121": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T09:05:56Z",
+     "status": "Working"
+    },
+    "482442680": {
+     "m60": 3,
+     "m30": 2,
+     "lastHuman": "2026-11-18T11:28:03Z",
+     "status": "Need More Information"
+    },
+    "480445853": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T10:29:27Z",
+     "status": "Working"
+    },
+    "480436048": {
+     "m60": 8,
+     "m30": 1,
+     "lastHuman": "2026-11-18T11:27:47Z",
+     "status": "Working"
+    },
+    "484740694": {
+     "m60": 3,
+     "m30": 3,
+     "lastHuman": "2026-11-18T11:40:37Z",
+     "status": "Working"
+    }
+   }
+  },
+  {
+   "ts": "2026-11-18T11:47:18+00:00",
+   "cases": {
+    "484988675": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T10:11:29Z",
+     "status": "Working"
+    },
+    "484979598": {
+     "m60": 1,
+     "m30": 1,
+     "lastHuman": "2026-11-18T11:31:09Z",
+     "status": "Need More Information"
+    },
+    "484960341": {
+     "m60": 1,
+     "m30": 1,
      "lastHuman": "2026-11-18T11:17:31Z",
      "status": "Working"
     },
