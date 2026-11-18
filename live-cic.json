@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-18T10:44:09+00:00",
+  "generated": "2026-11-18T10:54:04+00:00",
   "intervalMin": 10,
   "refreshedBy": "shubhav-crypto",
   "totalCic": 6,
@@ -20,7 +20,7 @@
    "cicFlag": true,
    "cicSubstatus": "Initial Impact Assessment",
    "lastPublicActivity": null,
-   "lastModified": "2026-11-18T10:32:57.000+0000",
+   "lastModified": "2026-11-18T10:48:41.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
@@ -104,7 +104,7 @@
     "cicJoinedAt": "2026-11-18T09:22:06Z",
     "lastHumanTs": "2026-11-18T10:20:50Z",
     "lastCicTs": "2026-11-18T09:24:07Z",
-    "humanMsgLast30m": 1,
+    "humanMsgLast30m": 0,
     "humanMsgLast60m": 6,
     "humanMsgLast24h": 6,
     "participants": [
@@ -148,7 +148,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.12,
+   "ageDays": 0.13,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -275,12 +275,12 @@
    "cicFlag": true,
    "cicSubstatus": "T&P - Waiting for Resolution",
    "lastPublicActivity": "2026-11-18T07:14:09.000+0000",
-   "lastModified": "2026-11-18T10:13:35.000+0000",
+   "lastModified": "2026-11-18T10:52:20.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": true,
    "serviceRestored": false,
-   "ageDays": 8.75,
+   "ageDays": 8.76,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -289,11 +289,11 @@
     "channelCreated": "2026-11-18T06:45:56Z",
     "cicCommander": "Vishnu Nambiar",
     "cicJoinedAt": "2026-11-18T06:54:34Z",
-    "lastHumanTs": "2026-11-18T10:36:32Z",
+    "lastHumanTs": "2026-11-18T10:53:42Z",
     "lastCicTs": "2026-11-18T10:31:14Z",
     "humanMsgLast30m": 3,
     "humanMsgLast60m": 4,
-    "humanMsgLast24h": 46,
+    "humanMsgLast24h": 47,
     "participants": [
      "Vishnu Nambiar",
      "Ravindra Ejjada",
@@ -312,6 +312,11 @@
     "backlineEngaged": true,
     "recent": [
      {
+      "ts": "2026-11-18T10:53:42Z",
+      "author": "Sai Vikram Kinnera",
+      "text": ""
+     },
+     {
       "ts": "2026-11-18T10:36:32Z",
       "author": "Rahul Kathade",
       "text": ""
@@ -320,14 +325,9 @@
       "ts": "2026-11-18T10:31:14Z",
       "author": "Vishnu Nambiar",
       "text": ""
-     },
-     {
-      "ts": "2026-11-18T10:17:42Z",
-      "author": "Rohit Kala",
-      "text": ""
      }
     ],
-    "summary": "Warm handover from APAC: deployment fatal error, product team engaged and Database Performance team paged; the paged engineer is on another incident and a replacement is being arranged.",
+    "summary": "Warm handover from APAC: product team engaged and Database Performance team paged; a replacement engineer is being arranged and the owner was asked to follow up with the customer.",
     "error": null
    }
   },
@@ -349,7 +349,7 @@
    "isEscalated": true,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 13.89,
+   "ageDays": 13.9,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -360,7 +360,7 @@
     "cicJoinedAt": "2026-11-18T10:22:37Z",
     "lastHumanTs": "2026-11-18T10:29:27Z",
     "lastCicTs": "2026-11-18T10:24:03Z",
-    "humanMsgLast30m": 4,
+    "humanMsgLast30m": 2,
     "humanMsgLast60m": 7,
     "humanMsgLast24h": 7,
     "participants": [
@@ -709,6 +709,47 @@
     "480445853": {
      "m60": 7,
      "m30": 4,
+     "lastHuman": "2026-11-18T10:29:27Z",
+     "status": "Working"
+    }
+   }
+  },
+  {
+   "ts": "2026-11-18T10:54:04+00:00",
+   "cases": {
+    "484988675": {
+     "m60": 5,
+     "m30": 0,
+     "lastHuman": "2026-11-18T10:11:29Z",
+     "status": "Need More Information"
+    },
+    "484979598": {
+     "m60": 6,
+     "m30": 0,
+     "lastHuman": "2026-11-18T10:20:50Z",
+     "status": "Need More Information"
+    },
+    "484960341": {
+     "m60": 3,
+     "m30": 1,
+     "lastHuman": "2026-11-18T10:42:20Z",
+     "status": "Working"
+    },
+    "484669121": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T09:05:56Z",
+     "status": "Working"
+    },
+    "482442680": {
+     "m60": 4,
+     "m30": 3,
+     "lastHuman": "2026-11-18T10:53:42Z",
+     "status": "Need More Information"
+    },
+    "480445853": {
+     "m60": 7,
+     "m30": 2,
      "lastHuman": "2026-11-18T10:29:27Z",
      "status": "Working"
     }
