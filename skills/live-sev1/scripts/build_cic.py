@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -36,7 +37,19 @@ def now_iso() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
 
-def build(work: Path) -> dict:
+def default_runner() -> str:
+    """Who is refreshing: GitHub login (already public on the repo), else git user.name."""
+    for cmd in (["gh", "api", "user", "--jq", ".login"], ["git", "config", "user.name"]):
+        try:
+            out = subprocess.run(cmd, capture_output=True, text=True, timeout=15).stdout.strip()
+        except (OSError, subprocess.SubprocessError):
+            out = ""
+        if out:
+            return out
+    return "unknown"
+
+
+def build(work: Path, by: str = "unknown") -> dict:
     cases = json.loads((work / "cic_cases.json").read_text())
     slack = json.loads((work / "cic_slack.json").read_text())
     out = []
@@ -74,6 +87,7 @@ def build(work: Path) -> dict:
         "meta": {
             "generated": now_iso(),
             "intervalMin": INTERVAL_MIN,
+            "refreshedBy": by,
             "totalCic": len(out),
             "source": "OrgCS Case (open, Level 1 - Critical, Escalate_to_CIC__c = true) + Slack sev1 channels",
         },
@@ -106,9 +120,10 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--work", type=Path, default=ROOT / ".agents/artifacts/live")
     parser.add_argument("--out", type=Path, default=ROOT / "live-cic.json")
+    parser.add_argument("--by", default=None, help="who is refreshing (default: GitHub login)")
     parser.add_argument("--history", type=Path, default=ROOT / "live-cic-history.json")
     args = parser.parse_args()
-    snapshot = build(args.work)
+    snapshot = build(args.work, args.by or default_runner())
     history = append_history(snapshot, args.history)
     # ship the recent history inside the snapshot so the page needs a single fetch
     snapshot["history"] = history[-12:]

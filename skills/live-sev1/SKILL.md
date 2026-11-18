@@ -52,6 +52,8 @@ Every open Sev1 shows a CIC engaged / Not engaged badge (`Escalate_to_CIC__c`). 
 
 ## CIC monitor (every 10 minutes)
 
+> Shareable version for collaborators: `.claude/skills/cic-monitor/SKILL.md` (run `/cic-monitor`, or `/loop 10m /cic-monitor`). It adds a double-run guard and records who refreshed.
+
 "CIC-engaged" = open Level 1 Sev1 with `Escalate_to_CIC__c = true` under the six managers. Cases that have a disengagement `AX_CIC_Substatus__c` (e.g. "CIC no longer needed", "Resolved") have `Escalate_to_CIC__c = false` even though a CIC joined the channel earlier, so they stay in the full roster, not in the monitor.
 
 Each run:

@@ -1015,7 +1015,7 @@ function renderCic(){
   const gm=cicMins(CICDATA.meta.generated),interval=CICDATA.meta.intervalMin||10;
   const stale=gm!=null&&gm>CIC.STALE_WARN_M;
   document.getElementById('cicPulse').className='cic-pulse'+(stale?' stale':'');
-  document.getElementById('cicPulseTxt').textContent=(stale?'STALE · ':'LIVE · ')+'refreshed '+cicFmt(gm)+' ago'+(stale?' — monitor is not refreshing':' · every ~'+interval+' min');
+  document.getElementById('cicPulseTxt').textContent=(stale?'STALE · ':'LIVE · ')+'refreshed '+cicFmt(gm)+' ago'+(CICDATA.meta.refreshedBy&&CICDATA.meta.refreshedBy!=='unknown'?' by '+CICDATA.meta.refreshedBy:'')+(stale?' — monitor is not refreshing':' · every ~'+interval+' min');
   document.getElementById('cicRules').textContent='Alerts: Slack quiet '+CIC.SLACK_WARN_M+'/'+CIC.SLACK_CRIT_M+'m · CIC quiet '+CIC.CIC_WARN_M+'/'+CIC.CIC_CRIT_M+'m · OrgCS update '+CIC.ORGCS_WARN_H+'/'+CIC.ORGCS_CRIT_H+'h';
   if(!CICDATA.cases.length){const p=document.createElement('div');p.className='cic-sub';p.textContent='No open Sev1 under the six managers is CIC-engaged right now.';grid.appendChild(p);return;}
   const evs=CICDATA.cases.map(function(c){return {c:c,e:cicEval(c)};});
