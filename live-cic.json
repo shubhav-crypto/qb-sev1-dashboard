@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-18T09:44:34+00:00",
+  "generated": "2026-11-18T09:54:11+00:00",
   "intervalMin": 10,
   "totalCic": 5,
   "source": "OrgCS Case (open, Level 1 - Critical, Escalate_to_CIC__c = true) + Slack sev1 channels"
@@ -9,17 +9,17 @@
   {
    "caseNum": "484981986",
    "subject": "Issue with code validation status",
-   "status": "New",
-   "subStatus": "New",
+   "status": "Working",
+   "subStatus": "In Progress",
    "account": "ADP, Inc.",
-   "owner": "Prudhvi Donempudi",
+   "owner": "Rahul Dhiman",
    "manager": "Rohit",
    "created": "2026-11-18T09:33:42.000+0000",
    "sev1Start": "2026-11-18T09:33:44.000+0000",
    "cicFlag": true,
    "cicSubstatus": null,
    "lastPublicActivity": "2026-11-18T09:39:29.000+0000",
-   "lastModified": "2026-11-18T09:41:13.000+0000",
+   "lastModified": "2026-11-18T09:46:27.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
@@ -33,28 +33,34 @@
     "channelCreated": "2026-11-18T09:33:48Z",
     "cicCommander": "Alisha Dias",
     "cicJoinedAt": "2026-11-18T09:34:33Z",
-    "lastHumanTs": "2026-11-18T09:42:09Z",
+    "lastHumanTs": "2026-11-18T09:45:25Z",
     "lastCicTs": null,
-    "humanMsgLast30m": 1,
-    "humanMsgLast60m": 1,
-    "humanMsgLast24h": 1,
+    "humanMsgLast30m": 2,
+    "humanMsgLast60m": 2,
+    "humanMsgLast24h": 2,
     "participants": [
-     "Sai Vikram Kinnera"
+     "Sai Vikram Kinnera",
+     "Rohit Kala"
     ],
     "bridgeMentioned": false,
     "lastBridgeTs": null,
     "customerUpdateGiven": false,
-    "nextStepOrEtaStated": null,
+    "nextStepOrEtaStated": true,
     "csmPresent": true,
     "backlineEngaged": null,
     "recent": [
+     {
+      "ts": "2026-11-18T09:45:25Z",
+      "author": "Rohit Kala",
+      "text": ""
+     },
      {
       "ts": "2026-11-18T09:42:09Z",
       "author": "Sai Vikram Kinnera",
       "text": ""
      }
     ],
-    "summary": "New Sev1: code validation status. CIC commander joined within a minute; manager said an engineer will be engaged shortly. No CIC post or customer update yet.",
+    "summary": "New Sev1: code validation status. CIC commander joined within a minute. Owner assigned to Rahul Dhiman at 15:15 IST and asked to contact the customer; no CIC post or customer update yet.",
     "error": null
    }
   },
@@ -71,7 +77,7 @@
    "cicFlag": true,
    "cicSubstatus": null,
    "lastPublicActivity": null,
-   "lastModified": "2026-11-18T09:43:54.000+0000",
+   "lastModified": "2026-11-18T09:45:12.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
@@ -87,7 +93,7 @@
     "cicJoinedAt": "2026-11-18T09:22:06Z",
     "lastHumanTs": "2026-11-18T09:42:44Z",
     "lastCicTs": "2026-11-18T09:24:07Z",
-    "humanMsgLast30m": 5,
+    "humanMsgLast30m": 4,
     "humanMsgLast60m": 5,
     "humanMsgLast24h": 5,
     "participants": [
@@ -280,43 +286,44 @@
     "channelCreated": "2026-11-18T06:45:56Z",
     "cicCommander": "Vishnu Nambiar",
     "cicJoinedAt": "2026-11-18T06:54:34Z",
-    "lastHumanTs": "2026-11-18T09:41:26Z",
-    "lastCicTs": "2026-11-18T09:41:26Z",
-    "humanMsgLast30m": 1,
-    "humanMsgLast60m": 1,
-    "humanMsgLast24h": 40,
+    "lastHumanTs": "2026-11-18T09:50:31Z",
+    "lastCicTs": "2026-11-18T09:50:31Z",
+    "humanMsgLast30m": 3,
+    "humanMsgLast60m": 4,
+    "humanMsgLast24h": 43,
     "participants": [
      "Vishnu Nambiar",
      "Ravindra Ejjada",
      "Ritika Das",
      "Manikanta Mullaguru",
      "Sai Vikram Kinnera",
-     "Rohit Kala"
+     "Rohit Kala",
+     "Vinay Pratap Singh"
     ],
     "bridgeMentioned": true,
-    "lastBridgeTs": "2026-11-18T08:41:04Z",
+    "lastBridgeTs": "2026-11-18T09:50:31Z",
     "customerUpdateGiven": true,
     "nextStepOrEtaStated": true,
     "csmPresent": null,
     "backlineEngaged": null,
     "recent": [
      {
-      "ts": "2026-11-18T09:41:26Z",
+      "ts": "2026-11-18T09:50:31Z",
       "author": "Vishnu Nambiar",
       "text": ""
      },
      {
-      "ts": "2026-11-18T08:41:04Z",
-      "author": "Manikanta Mullaguru",
+      "ts": "2026-11-18T09:46:26Z",
+      "author": "Vishnu Nambiar",
       "text": ""
      },
      {
-      "ts": "2026-11-18T08:35:51Z",
-      "author": "Sai Vikram Kinnera",
+      "ts": "2026-11-18T09:45:39Z",
+      "author": "Vinay Pratap Singh",
       "text": ""
      }
     ],
-    "summary": "Deployment readiness monitoring; deployment hit a fatal error and customer wants root cause before retrying tomorrow. Owner changed to Vinay Pratap Singh at 15:05 IST; CIC asked at 15:11 IST whether the GUS investigation is with the right team.",
+    "summary": "Deployment readiness monitoring; deployment hit a fatal error. Owner posted an update at 15:15 IST (customer to rerun in validation mode, product team page requested); CIC linked a GUS record, opened an internal bridge and paged the product team at 15:20 IST.",
     "error": null
    }
   }
@@ -433,6 +440,41 @@
      "m60": 1,
      "m30": 1,
      "lastHuman": "2026-11-18T09:41:26Z",
+     "status": "Need More Information"
+    }
+   }
+  },
+  {
+   "ts": "2026-11-18T09:54:11+00:00",
+   "cases": {
+    "484981986": {
+     "m60": 2,
+     "m30": 2,
+     "lastHuman": "2026-11-18T09:45:25Z",
+     "status": "Working"
+    },
+    "484979598": {
+     "m60": 5,
+     "m30": 4,
+     "lastHuman": "2026-11-18T09:42:44Z",
+     "status": "Working"
+    },
+    "484960341": {
+     "m60": 3,
+     "m30": 0,
+     "lastHuman": "2026-11-18T09:10:07Z",
+     "status": "Working"
+    },
+    "484669121": {
+     "m60": 1,
+     "m30": 0,
+     "lastHuman": "2026-11-18T09:05:56Z",
+     "status": "Working"
+    },
+    "482442680": {
+     "m60": 4,
+     "m30": 3,
+     "lastHuman": "2026-11-18T09:50:31Z",
      "status": "Need More Information"
     }
    }
