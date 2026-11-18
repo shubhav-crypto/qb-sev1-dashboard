@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-18T12:48:31+00:00",
+  "generated": "2026-11-18T12:54:16+00:00",
   "intervalMin": 10,
   "refreshedBy": "shubhav-crypto",
   "totalCic": 9,
@@ -20,7 +20,7 @@
    "cicFlag": true,
    "cicSubstatus": "Initial Impact Assessment",
    "lastPublicActivity": null,
-   "lastModified": "2026-11-18T12:35:20.000+0000",
+   "lastModified": "2026-11-18T12:48:09.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
@@ -34,11 +34,11 @@
     "channelCreated": "2026-11-18T12:10:58Z",
     "cicCommander": "Dorin Fazli",
     "cicJoinedAt": "2026-11-18T12:11:25Z",
-    "lastHumanTs": "2026-11-18T12:30:51Z",
+    "lastHumanTs": "2026-11-18T12:53:54Z",
     "lastCicTs": "2026-11-18T12:23:03Z",
     "humanMsgLast30m": 2,
-    "humanMsgLast60m": 4,
-    "humanMsgLast24h": 4,
+    "humanMsgLast60m": 5,
+    "humanMsgLast24h": 5,
     "participants": [
      "Dorin Fazli",
      "Venkata Ravi Teja Sunkara",
@@ -52,13 +52,18 @@
      "Nikita Padhi",
      "David Meyer"
     ],
-    "bridgeMentioned": false,
-    "lastBridgeTs": null,
+    "bridgeMentioned": true,
+    "lastBridgeTs": "2026-11-18T12:53:54Z",
     "customerUpdateGiven": false,
     "nextStepOrEtaStated": false,
     "csmPresent": true,
     "backlineEngaged": null,
     "recent": [
+     {
+      "ts": "2026-11-18T12:53:54Z",
+      "author": "Manikanta Mullaguru",
+      "text": ""
+     },
      {
       "ts": "2026-11-18T12:30:51Z",
       "author": "Sai Vikram Kinnera",
@@ -68,14 +73,9 @@
       "ts": "2026-11-18T12:23:03Z",
       "author": "Dorin Fazli",
       "text": ""
-     },
-     {
-      "ts": "2026-11-18T12:14:51Z",
-      "author": "Sai Vikram Kinnera",
-      "text": ""
      }
     ],
-    "summary": "CIC commander asked the owner for next steps, business impact and whether CIC engagement is needed; the manager has asked the owner twice for an update. No owner reply yet.",
+    "summary": "Owner finally replied by starting a bridge; CIC commander and manager are still waiting on business impact and customer-success next steps.",
     "error": null
    }
   },
@@ -97,7 +97,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.11,
+   "ageDays": 0.12,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -165,7 +165,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.14,
+   "ageDays": 0.15,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -177,7 +177,7 @@
     "lastHumanTs": "2026-11-18T12:04:16Z",
     "lastCicTs": "2026-11-18T09:24:07Z",
     "humanMsgLast30m": 0,
-    "humanMsgLast60m": 3,
+    "humanMsgLast60m": 2,
     "humanMsgLast24h": 10,
     "participants": [
      "Gianlucantonio Mastrogiacomo",
@@ -225,7 +225,7 @@
    "cicFlag": true,
    "cicSubstatus": "Customer - Active Troubleshooting",
    "lastPublicActivity": "2026-11-18T07:48:00.000+0000",
-   "lastModified": "2026-11-18T12:00:39.000+0000",
+   "lastModified": "2026-11-18T12:52:01.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
@@ -241,7 +241,7 @@
     "cicJoinedAt": "2026-11-18T07:47:27Z",
     "lastHumanTs": "2026-11-18T12:21:17Z",
     "lastCicTs": "2026-11-18T12:21:17Z",
-    "humanMsgLast30m": 1,
+    "humanMsgLast30m": 0,
     "humanMsgLast60m": 1,
     "humanMsgLast24h": 17,
     "participants": [
@@ -293,7 +293,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 1.22,
+   "ageDays": 1.23,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -373,7 +373,7 @@
     "cicJoinedAt": "2026-11-18T06:54:34Z",
     "lastHumanTs": "2026-11-18T12:18:34Z",
     "lastCicTs": "2026-11-18T11:55:30Z",
-    "humanMsgLast30m": 1,
+    "humanMsgLast30m": 0,
     "humanMsgLast60m": 4,
     "humanMsgLast24h": 53,
     "participants": [
@@ -444,8 +444,8 @@
     "cicJoinedAt": "2026-11-18T10:22:37Z",
     "lastHumanTs": "2026-11-18T12:23:54Z",
     "lastCicTs": "2026-11-18T12:23:54Z",
-    "humanMsgLast30m": 1,
-    "humanMsgLast60m": 2,
+    "humanMsgLast30m": 0,
+    "humanMsgLast60m": 1,
     "humanMsgLast24h": 9,
     "participants": [
      "Neha Mishra",
@@ -574,11 +574,11 @@
     "channelCreated": "2026-11-17T13:20:54Z",
     "cicCommander": "Myles Slevin",
     "cicJoinedAt": "2026-11-18T09:57:22Z",
-    "lastHumanTs": "2026-11-18T12:25:22Z",
-    "lastCicTs": "2026-11-18T10:30:41Z",
-    "humanMsgLast30m": 1,
-    "humanMsgLast60m": 1,
-    "humanMsgLast24h": 19,
+    "lastHumanTs": "2026-11-18T12:52:56Z",
+    "lastCicTs": "2026-11-18T12:52:56Z",
+    "humanMsgLast30m": 2,
+    "humanMsgLast60m": 2,
+    "humanMsgLast24h": 20,
     "participants": [
      "Pavan Kumar Boya",
      "Myles Slevin",
@@ -588,13 +588,18 @@
      "Naveen Salutagi",
      "Sai Vikram Kinnera"
     ],
-    "bridgeMentioned": false,
-    "lastBridgeTs": null,
+    "bridgeMentioned": true,
+    "lastBridgeTs": "2026-11-18T12:52:56Z",
     "customerUpdateGiven": true,
     "nextStepOrEtaStated": true,
     "csmPresent": null,
     "backlineEngaged": null,
     "recent": [
+     {
+      "ts": "2026-11-18T12:52:56Z",
+      "author": "Myles Slevin",
+      "text": ""
+     },
      {
       "ts": "2026-11-18T12:25:22Z",
       "author": "Pavan Kumar Boya",
@@ -604,60 +609,14 @@
       "ts": "2026-11-18T11:40:37Z",
       "author": "Pavan Kumar Boya",
       "text": ""
-     },
-     {
-      "ts": "2026-11-18T11:38:25Z",
-      "author": "Pavan Kumar Boya",
-      "text": ""
      }
     ],
-    "summary": "Owner is waiting on the account team to confirm whether Partner Enablement was provisioned on 28 Oct; the follow-up was posted in the channel.",
+    "summary": "CIC commander asked the owner and the account team to join a quick meeting; the owner is waiting on the account team to confirm whether Partner Enablement was provisioned on 28 Oct.",
     "error": null
    }
   }
  ],
  "history": [
-  {
-   "ts": "2026-11-18T10:54:04+00:00",
-   "cases": {
-    "484988675": {
-     "m60": 5,
-     "m30": 0,
-     "lastHuman": "2026-11-18T10:11:29Z",
-     "status": "Need More Information"
-    },
-    "484979598": {
-     "m60": 6,
-     "m30": 0,
-     "lastHuman": "2026-11-18T10:20:50Z",
-     "status": "Need More Information"
-    },
-    "484960341": {
-     "m60": 3,
-     "m30": 1,
-     "lastHuman": "2026-11-18T10:42:20Z",
-     "status": "Working"
-    },
-    "484669121": {
-     "m60": 0,
-     "m30": 0,
-     "lastHuman": "2026-11-18T09:05:56Z",
-     "status": "Working"
-    },
-    "482442680": {
-     "m60": 4,
-     "m30": 3,
-     "lastHuman": "2026-11-18T10:53:42Z",
-     "status": "Need More Information"
-    },
-    "480445853": {
-     "m60": 7,
-     "m30": 2,
-     "lastHuman": "2026-11-18T10:29:27Z",
-     "status": "Working"
-    }
-   }
-  },
   {
    "ts": "2026-11-18T11:04:38+00:00",
    "cases": {
@@ -1255,6 +1214,65 @@
      "m60": 1,
      "m30": 1,
      "lastHuman": "2026-11-18T12:25:22Z",
+     "status": "Working"
+    }
+   }
+  },
+  {
+   "ts": "2026-11-18T12:54:16+00:00",
+   "cases": {
+    "485013416": {
+     "m60": 5,
+     "m30": 2,
+     "lastHuman": "2026-11-18T12:53:54Z",
+     "status": "Working"
+    },
+    "484988675": {
+     "m60": 1,
+     "m30": 0,
+     "lastHuman": "2026-11-18T12:03:07Z",
+     "status": "Need More Information"
+    },
+    "484979598": {
+     "m60": 2,
+     "m30": 0,
+     "lastHuman": "2026-11-18T12:04:16Z",
+     "status": "Need More Information"
+    },
+    "484960341": {
+     "m60": 1,
+     "m30": 0,
+     "lastHuman": "2026-11-18T12:21:17Z",
+     "status": "Working"
+    },
+    "484669121": {
+     "m60": 1,
+     "m30": 0,
+     "lastHuman": "2026-11-18T12:12:04Z",
+     "status": "Working"
+    },
+    "482442680": {
+     "m60": 4,
+     "m30": 0,
+     "lastHuman": "2026-11-18T12:18:34Z",
+     "status": "Need More Information"
+    },
+    "480445853": {
+     "m60": 1,
+     "m30": 0,
+     "lastHuman": "2026-11-18T12:23:54Z",
+     "status": "Working"
+    },
+    "480436048": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T11:27:47Z",
+     "status": "Working"
+    },
+    "484740694": {
+     "m60": 2,
+     "m30": 2,
+     "lastHuman": "2026-11-18T12:52:56Z",
      "status": "Working"
     }
    }
