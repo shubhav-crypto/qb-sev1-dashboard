@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated": "2026-11-18T10:54:04+00:00",
+  "generated": "2026-11-18T11:04:38+00:00",
   "intervalMin": 10,
   "refreshedBy": "shubhav-crypto",
-  "totalCic": 6,
+  "totalCic": 7,
   "source": "OrgCS Case (open, Level 1 - Critical, Escalate_to_CIC__c = true) + Slack sev1 channels"
  },
  "cases": [
@@ -25,7 +25,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.03,
+   "ageDays": 0.04,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -93,7 +93,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.06,
+   "ageDays": 0.07,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -148,7 +148,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.13,
+   "ageDays": 0.14,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -159,8 +159,8 @@
     "cicJoinedAt": "2026-11-18T07:47:27Z",
     "lastHumanTs": "2026-11-18T10:42:20Z",
     "lastCicTs": "2026-11-18T09:57:45Z",
-    "humanMsgLast30m": 1,
-    "humanMsgLast60m": 3,
+    "humanMsgLast30m": 0,
+    "humanMsgLast60m": 1,
     "humanMsgLast24h": 15,
     "participants": [
      "Vishnu Nambiar",
@@ -211,12 +211,12 @@
    "cicFlag": true,
    "cicSubstatus": null,
    "lastPublicActivity": "2026-11-17T20:27:30.000+0000",
-   "lastModified": "2026-11-18T10:36:20.000+0000",
+   "lastModified": "2026-11-18T11:01:01.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 1.14,
+   "ageDays": 1.15,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -280,7 +280,7 @@
    "isEscalated": false,
    "redAccount": true,
    "serviceRestored": false,
-   "ageDays": 8.76,
+   "ageDays": 8.77,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -291,7 +291,7 @@
     "cicJoinedAt": "2026-11-18T06:54:34Z",
     "lastHumanTs": "2026-11-18T10:53:42Z",
     "lastCicTs": "2026-11-18T10:31:14Z",
-    "humanMsgLast30m": 3,
+    "humanMsgLast30m": 2,
     "humanMsgLast60m": 4,
     "humanMsgLast24h": 47,
     "participants": [
@@ -349,7 +349,7 @@
    "isEscalated": true,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 13.9,
+   "ageDays": 13.91,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -360,7 +360,7 @@
     "cicJoinedAt": "2026-11-18T10:22:37Z",
     "lastHumanTs": "2026-11-18T10:29:27Z",
     "lastCicTs": "2026-11-18T10:24:03Z",
-    "humanMsgLast30m": 2,
+    "humanMsgLast30m": 0,
     "humanMsgLast60m": 7,
     "humanMsgLast24h": 7,
     "participants": [
@@ -395,6 +395,76 @@
      }
     ],
     "summary": "CIC re-engaged today after the customer reported it blocks UAT sign-off; owner shared current and next steps after a customer call; CIC asked about the production go-live date.",
+    "error": null
+   }
+  },
+  {
+   "caseNum": "480436048",
+   "subject": "Unable to Trigger Emails in Digital Portal User Context \u2013 External Credential Access Error",
+   "status": "Working",
+   "subStatus": "Manually Scheduled",
+   "account": "Sky Business",
+   "owner": "Manikanta Mullaguru",
+   "manager": "Mirza",
+   "created": "2026-11-04T12:54:06.000+0000",
+   "sev1Start": "2026-11-18T06:34:21.000+0000",
+   "cicFlag": true,
+   "cicSubstatus": null,
+   "lastPublicActivity": null,
+   "lastModified": "2026-11-18T11:01:01.000+0000",
+   "activeSwarm": true,
+   "isEscalated": false,
+   "redAccount": false,
+   "serviceRestored": false,
+   "ageDays": 13.92,
+   "hasBridge": false,
+   "slack": {
+    "found": true,
+    "channelId": "C0CJPEZB81L",
+    "channelName": "sev1-480436048-sky-business-sig",
+    "channelCreated": "2026-11-18T06:34:26Z",
+    "cicCommander": "Sonia Notani",
+    "cicJoinedAt": "2026-11-18T09:28:42Z",
+    "lastHumanTs": "2026-11-18T10:10:34Z",
+    "lastCicTs": "2026-11-18T09:48:02Z",
+    "humanMsgLast30m": 0,
+    "humanMsgLast60m": 2,
+    "humanMsgLast24h": 20,
+    "participants": [
+     "Manikanta Mullaguru",
+     "Ravindra Ejjada",
+     "Sai Vikram Kinnera",
+     "Sonia Notani",
+     "Rajashree Das",
+     "Charlotte Montaut",
+     "Joao Roque",
+     "Vinay Pratap Singh",
+     "Mallikarjuna Burra"
+    ],
+    "bridgeMentioned": false,
+    "lastBridgeTs": null,
+    "customerUpdateGiven": null,
+    "nextStepOrEtaStated": true,
+    "csmPresent": null,
+    "backlineEngaged": true,
+    "recent": [
+     {
+      "ts": "2026-11-18T10:10:34Z",
+      "author": "Ravindra Ejjada",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T10:10:26Z",
+      "author": "Manikanta Mullaguru",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T10:01:24Z",
+      "author": "Ravindra Ejjada",
+      "text": ""
+     }
+    ],
+    "summary": "CIC re-engaged after the customer reported emails still failing; engineers shared log analysis; a new case owner was assigned in the last hour and the channel has been quiet since.",
     "error": null
    }
   }
@@ -751,6 +821,53 @@
      "m60": 7,
      "m30": 2,
      "lastHuman": "2026-11-18T10:29:27Z",
+     "status": "Working"
+    }
+   }
+  },
+  {
+   "ts": "2026-11-18T11:04:38+00:00",
+   "cases": {
+    "484988675": {
+     "m60": 5,
+     "m30": 0,
+     "lastHuman": "2026-11-18T10:11:29Z",
+     "status": "Need More Information"
+    },
+    "484979598": {
+     "m60": 6,
+     "m30": 0,
+     "lastHuman": "2026-11-18T10:20:50Z",
+     "status": "Need More Information"
+    },
+    "484960341": {
+     "m60": 1,
+     "m30": 0,
+     "lastHuman": "2026-11-18T10:42:20Z",
+     "status": "Working"
+    },
+    "484669121": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T09:05:56Z",
+     "status": "Working"
+    },
+    "482442680": {
+     "m60": 4,
+     "m30": 2,
+     "lastHuman": "2026-11-18T10:53:42Z",
+     "status": "Need More Information"
+    },
+    "480445853": {
+     "m60": 7,
+     "m30": 0,
+     "lastHuman": "2026-11-18T10:29:27Z",
+     "status": "Working"
+    },
+    "480436048": {
+     "m60": 2,
+     "m30": 0,
+     "lastHuman": "2026-11-18T10:10:34Z",
      "status": "Working"
     }
    }
