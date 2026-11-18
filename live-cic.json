@@ -1,7 +1,8 @@
 {
  "meta": {
-  "generated": "2026-11-18T09:54:11+00:00",
+  "generated": "2026-11-18T10:04:39+00:00",
   "intervalMin": 10,
+  "refreshedBy": "shubhav-crypto",
   "totalCic": 5,
   "source": "OrgCS Case (open, Level 1 - Critical, Escalate_to_CIC__c = true) + Slack sev1 channels"
  },
@@ -24,7 +25,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.01,
+   "ageDays": 0.02,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -82,7 +83,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.02,
+   "ageDays": 0.03,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -142,12 +143,12 @@
    "cicFlag": true,
    "cicSubstatus": null,
    "lastPublicActivity": "2026-11-18T07:48:00.000+0000",
-   "lastModified": "2026-11-18T09:10:03.000+0000",
+   "lastModified": "2026-11-18T09:54:06.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.08,
+   "ageDays": 0.1,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -156,18 +157,19 @@
     "channelCreated": "2026-11-18T07:45:44Z",
     "cicCommander": "Vishnu Nambiar",
     "cicJoinedAt": "2026-11-18T07:47:27Z",
-    "lastHumanTs": "2026-11-18T09:10:07Z",
-    "lastCicTs": "2026-11-18T09:10:07Z",
-    "humanMsgLast30m": 0,
+    "lastHumanTs": "2026-11-18T10:02:04Z",
+    "lastCicTs": "2026-11-18T09:57:45Z",
+    "humanMsgLast30m": 2,
     "humanMsgLast60m": 3,
-    "humanMsgLast24h": 12,
+    "humanMsgLast24h": 14,
     "participants": [
      "Vishnu Nambiar",
      "Gaurang Joshi",
      "Rahul Tiwari",
      "Sai Vikram Kinnera",
      "Vamsi Krishna Settipalli",
-     "Fernanda Granado"
+     "Fernanda Granado",
+     "David Ryan"
     ],
     "bridgeMentioned": true,
     "lastBridgeTs": "2026-11-18T08:21:36Z",
@@ -177,22 +179,17 @@
     "backlineEngaged": null,
     "recent": [
      {
-      "ts": "2026-11-18T09:10:07Z",
-      "author": "Vishnu Nambiar",
-      "text": ""
-     },
-     {
-      "ts": "2026-11-18T09:06:24Z",
+      "ts": "2026-11-18T10:02:04Z",
       "author": "Gaurang Joshi",
       "text": ""
      },
      {
-      "ts": "2026-11-18T08:55:37Z",
+      "ts": "2026-11-18T09:57:45Z",
       "author": "Vishnu Nambiar",
       "text": ""
      }
     ],
-    "summary": "Voice call-end flow not populating summary fields. Owner posted troubleshooting plus next steps (call end-time logic, flow re-run, customer debug logs); CIC actively asking questions; swarm member added.",
+    "summary": "CIC commander asked for investigation status and debug logs; owner called the customer to retest the flow and collect logs; a swarm member joined.",
     "error": null
    }
   },
@@ -209,12 +206,12 @@
    "cicFlag": true,
    "cicSubstatus": null,
    "lastPublicActivity": "2026-11-17T20:27:30.000+0000",
-   "lastModified": "2026-11-18T09:12:29.000+0000",
+   "lastModified": "2026-11-18T09:43:53.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 1.09,
+   "ageDays": 1.11,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -277,7 +274,7 @@
    "isEscalated": false,
    "redAccount": true,
    "serviceRestored": false,
-   "ageDays": 8.7,
+   "ageDays": 8.72,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -463,6 +460,41 @@
      "m60": 3,
      "m30": 0,
      "lastHuman": "2026-11-18T09:10:07Z",
+     "status": "Working"
+    },
+    "484669121": {
+     "m60": 1,
+     "m30": 0,
+     "lastHuman": "2026-11-18T09:05:56Z",
+     "status": "Working"
+    },
+    "482442680": {
+     "m60": 4,
+     "m30": 3,
+     "lastHuman": "2026-11-18T09:50:31Z",
+     "status": "Need More Information"
+    }
+   }
+  },
+  {
+   "ts": "2026-11-18T10:04:39+00:00",
+   "cases": {
+    "484981986": {
+     "m60": 2,
+     "m30": 2,
+     "lastHuman": "2026-11-18T09:45:25Z",
+     "status": "Working"
+    },
+    "484979598": {
+     "m60": 5,
+     "m30": 4,
+     "lastHuman": "2026-11-18T09:42:44Z",
+     "status": "Working"
+    },
+    "484960341": {
+     "m60": 3,
+     "m30": 2,
+     "lastHuman": "2026-11-18T10:02:04Z",
      "status": "Working"
     },
     "484669121": {
