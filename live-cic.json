@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-18T13:28:39+00:00",
+  "generated": "2026-11-18T13:34:12+00:00",
   "intervalMin": 10,
   "refreshedBy": "shubhav-crypto",
   "totalCic": 9,
@@ -25,7 +25,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.05,
+   "ageDays": 0.06,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -37,7 +37,7 @@
     "lastHumanTs": "2026-11-18T13:05:45Z",
     "lastCicTs": "2026-11-18T12:50:59Z",
     "humanMsgLast30m": 1,
-    "humanMsgLast60m": 8,
+    "humanMsgLast60m": 7,
     "humanMsgLast24h": 12,
     "participants": [
      "Gianlucantonio Mastrogiacomo",
@@ -97,7 +97,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.05,
+   "ageDays": 0.06,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -106,11 +106,11 @@
     "channelCreated": "2026-11-18T12:10:58Z",
     "cicCommander": "Dorin Fazli",
     "cicJoinedAt": "2026-11-18T12:11:25Z",
-    "lastHumanTs": "2026-11-18T12:57:32Z",
+    "lastHumanTs": "2026-11-18T13:27:32Z",
     "lastCicTs": "2026-11-18T12:23:03Z",
-    "humanMsgLast30m": 0,
+    "humanMsgLast30m": 1,
     "humanMsgLast60m": 3,
-    "humanMsgLast24h": 6,
+    "humanMsgLast24h": 7,
     "participants": [
      "Dorin Fazli",
      "Venkata Ravi Teja Sunkara",
@@ -123,15 +123,21 @@
      "Brooks Toth",
      "Nikita Padhi",
      "David Meyer",
-     "Fernanda Granado"
+     "Fernanda Granado",
+     "Ravi Sankar Kota"
     ],
     "bridgeMentioned": true,
     "lastBridgeTs": "2026-11-18T12:57:32Z",
-    "customerUpdateGiven": false,
+    "customerUpdateGiven": true,
     "nextStepOrEtaStated": false,
     "csmPresent": true,
     "backlineEngaged": null,
     "recent": [
+     {
+      "ts": "2026-11-18T13:27:32Z",
+      "author": "Manikanta Mullaguru",
+      "text": ""
+     },
      {
       "ts": "2026-11-18T12:57:32Z",
       "author": "Manikanta Mullaguru",
@@ -141,14 +147,9 @@
       "ts": "2026-11-18T12:53:54Z",
       "author": "Manikanta Mullaguru",
       "text": ""
-     },
-     {
-      "ts": "2026-11-18T12:30:51Z",
-      "author": "Sai Vikram Kinnera",
-      "text": ""
      }
     ],
-    "summary": "Owner started a bridge and shared the customer's Teams meeting; the CIC commander's request for business impact and customer-success next steps is still open.",
+    "summary": "Owner reported that the backend indexing job is still running and passed the customer's questions on duration and business impact to the swarm; a further swarm member joined.",
     "error": null
    }
   },
@@ -170,7 +171,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.17,
+   "ageDays": 0.18,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -230,7 +231,7 @@
    "cicFlag": true,
    "cicSubstatus": "Customer - Active Troubleshooting",
    "lastPublicActivity": "2026-11-18T12:51:58.000+0000",
-   "lastModified": "2026-11-18T13:27:09.000+0000",
+   "lastModified": "2026-11-18T13:33:28.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
@@ -244,11 +245,11 @@
     "channelCreated": "2026-11-18T07:45:44Z",
     "cicCommander": "Vishnu Nambiar",
     "cicJoinedAt": "2026-11-18T07:47:27Z",
-    "lastHumanTs": "2026-11-18T12:21:17Z",
-    "lastCicTs": "2026-11-18T12:21:17Z",
-    "humanMsgLast30m": 0,
-    "humanMsgLast60m": 0,
-    "humanMsgLast24h": 17,
+    "lastHumanTs": "2026-11-18T13:31:23Z",
+    "lastCicTs": "2026-11-18T13:31:23Z",
+    "humanMsgLast30m": 1,
+    "humanMsgLast60m": 1,
+    "humanMsgLast24h": 18,
     "participants": [
      "Vishnu Nambiar",
      "Gaurang Joshi",
@@ -265,6 +266,11 @@
     "csmPresent": true,
     "backlineEngaged": null,
     "recent": [
+     {
+      "ts": "2026-11-18T13:31:23Z",
+      "author": "Vishnu Nambiar",
+      "text": ""
+     },
      {
       "ts": "2026-11-18T12:21:17Z",
       "author": "Vishnu Nambiar",
@@ -298,7 +304,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 1.25,
+   "ageDays": 1.26,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -307,11 +313,11 @@
     "channelCreated": "2026-11-17T18:30:08Z",
     "cicCommander": "Sonia Notani",
     "cicJoinedAt": "2026-11-18T01:07:39Z",
-    "lastHumanTs": "2026-11-18T12:12:04Z",
-    "lastCicTs": "2026-11-18T09:05:56Z",
-    "humanMsgLast30m": 0,
-    "humanMsgLast60m": 0,
-    "humanMsgLast24h": 33,
+    "lastHumanTs": "2026-11-18T13:30:21Z",
+    "lastCicTs": "2026-11-18T13:30:21Z",
+    "humanMsgLast30m": 1,
+    "humanMsgLast60m": 1,
+    "humanMsgLast24h": 34,
     "participants": [
      "Sonia Notani",
      "Kaya Cook",
@@ -330,6 +336,11 @@
     "backlineEngaged": null,
     "recent": [
      {
+      "ts": "2026-11-18T13:30:21Z",
+      "author": "Sonia Notani",
+      "text": ""
+     },
+     {
       "ts": "2026-11-18T12:12:04Z",
       "author": "Ali Arquam Ansari",
       "text": ""
@@ -337,11 +348,6 @@
      {
       "ts": "2026-11-18T09:05:56Z",
       "author": "Sonia Notani",
-      "text": ""
-     },
-     {
-      "ts": "2026-11-18T01:19:10Z",
-      "author": "Kaya Cook",
       "text": ""
      }
     ],
@@ -362,12 +368,12 @@
    "cicFlag": true,
    "cicSubstatus": "Customer - Active Troubleshooting",
    "lastPublicActivity": "2026-11-18T12:25:09.000+0000",
-   "lastModified": "2026-11-18T12:29:51.000+0000",
+   "lastModified": "2026-11-18T13:32:29.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": true,
    "serviceRestored": false,
-   "ageDays": 8.86,
+   "ageDays": 8.87,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -376,11 +382,11 @@
     "channelCreated": "2026-11-18T06:45:56Z",
     "cicCommander": "Vishnu Nambiar",
     "cicJoinedAt": "2026-11-18T06:54:34Z",
-    "lastHumanTs": "2026-11-18T12:18:34Z",
-    "lastCicTs": "2026-11-18T11:55:30Z",
-    "humanMsgLast30m": 0,
-    "humanMsgLast60m": 0,
-    "humanMsgLast24h": 53,
+    "lastHumanTs": "2026-11-18T13:28:11Z",
+    "lastCicTs": "2026-11-18T13:28:11Z",
+    "humanMsgLast30m": 1,
+    "humanMsgLast60m": 1,
+    "humanMsgLast24h": 54,
     "participants": [
      "Vishnu Nambiar",
      "Ravindra Ejjada",
@@ -401,6 +407,11 @@
     "backlineEngaged": true,
     "recent": [
      {
+      "ts": "2026-11-18T13:28:11Z",
+      "author": "Vishnu Nambiar",
+      "text": ""
+     },
+     {
       "ts": "2026-11-18T12:18:34Z",
       "author": "R\u00f3bert Koltai",
       "text": ""
@@ -408,11 +419,6 @@
      {
       "ts": "2026-11-18T12:15:44Z",
       "author": "Rohit Kala",
-      "text": ""
-     },
-     {
-      "ts": "2026-11-18T11:57:31Z",
-      "author": "Vinay Pratap Singh",
       "text": ""
      }
     ],
@@ -438,7 +444,7 @@
    "isEscalated": true,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 14,
+   "ageDays": 14.01,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -500,7 +506,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 14.02,
+   "ageDays": 14.03,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -565,12 +571,12 @@
    "cicFlag": true,
    "cicSubstatus": null,
    "lastPublicActivity": "2026-11-18T11:21:43.000+0000",
-   "lastModified": "2026-11-18T11:24:49.000+0000",
+   "lastModified": "2026-11-18T13:27:41.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": true,
    "serviceRestored": false,
-   "ageDays": 1,
+   "ageDays": 1.01,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -622,59 +628,6 @@
   }
  ],
  "history": [
-  {
-   "ts": "2026-11-18T11:47:18+00:00",
-   "cases": {
-    "484988675": {
-     "m60": 0,
-     "m30": 0,
-     "lastHuman": "2026-11-18T10:11:29Z",
-     "status": "Working"
-    },
-    "484979598": {
-     "m60": 1,
-     "m30": 1,
-     "lastHuman": "2026-11-18T11:31:09Z",
-     "status": "Need More Information"
-    },
-    "484960341": {
-     "m60": 1,
-     "m30": 1,
-     "lastHuman": "2026-11-18T11:17:31Z",
-     "status": "Working"
-    },
-    "484669121": {
-     "m60": 0,
-     "m30": 0,
-     "lastHuman": "2026-11-18T09:05:56Z",
-     "status": "Working"
-    },
-    "482442680": {
-     "m60": 3,
-     "m30": 2,
-     "lastHuman": "2026-11-18T11:28:03Z",
-     "status": "Need More Information"
-    },
-    "480445853": {
-     "m60": 0,
-     "m30": 0,
-     "lastHuman": "2026-11-18T10:29:27Z",
-     "status": "Working"
-    },
-    "480436048": {
-     "m60": 8,
-     "m30": 1,
-     "lastHuman": "2026-11-18T11:27:47Z",
-     "status": "Working"
-    },
-    "484740694": {
-     "m60": 3,
-     "m30": 3,
-     "lastHuman": "2026-11-18T11:40:37Z",
-     "status": "Working"
-    }
-   }
-  },
   {
    "ts": "2026-11-18T12:02:30+00:00",
    "cases": {
@@ -1302,6 +1255,65 @@
      "m60": 0,
      "m30": 0,
      "lastHuman": "2026-11-18T12:18:34Z",
+     "status": "Need More Information"
+    },
+    "480445853": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T12:23:54Z",
+     "status": "Working"
+    },
+    "480436048": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T11:27:47Z",
+     "status": "Working"
+    },
+    "484740694": {
+     "m60": 4,
+     "m30": 2,
+     "lastHuman": "2026-11-18T13:18:41Z",
+     "status": "Working"
+    }
+   }
+  },
+  {
+   "ts": "2026-11-18T13:34:12+00:00",
+   "cases": {
+    "485013520": {
+     "m60": 7,
+     "m30": 1,
+     "lastHuman": "2026-11-18T13:05:45Z",
+     "status": "Working"
+    },
+    "485013416": {
+     "m60": 3,
+     "m30": 1,
+     "lastHuman": "2026-11-18T13:27:32Z",
+     "status": "Working"
+    },
+    "484979598": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T12:04:16Z",
+     "status": "Need More Information"
+    },
+    "484960341": {
+     "m60": 1,
+     "m30": 1,
+     "lastHuman": "2026-11-18T13:31:23Z",
+     "status": "Working"
+    },
+    "484669121": {
+     "m60": 1,
+     "m30": 1,
+     "lastHuman": "2026-11-18T13:30:21Z",
+     "status": "Working"
+    },
+    "482442680": {
+     "m60": 1,
+     "m30": 1,
+     "lastHuman": "2026-11-18T13:28:11Z",
      "status": "Need More Information"
     },
     "480445853": {
