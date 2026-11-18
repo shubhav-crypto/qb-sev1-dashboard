@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-18T12:34:15+00:00",
+  "generated": "2026-11-18T12:48:31+00:00",
   "intervalMin": 10,
   "refreshedBy": "shubhav-crypto",
   "totalCic": 9,
@@ -20,12 +20,12 @@
    "cicFlag": true,
    "cicSubstatus": "Initial Impact Assessment",
    "lastPublicActivity": null,
-   "lastModified": "2026-11-18T12:14:22.000+0000",
+   "lastModified": "2026-11-18T12:35:20.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.02,
+   "ageDays": 0.03,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -36,7 +36,7 @@
     "cicJoinedAt": "2026-11-18T12:11:25Z",
     "lastHumanTs": "2026-11-18T12:30:51Z",
     "lastCicTs": "2026-11-18T12:23:03Z",
-    "humanMsgLast30m": 4,
+    "humanMsgLast30m": 2,
     "humanMsgLast60m": 4,
     "humanMsgLast24h": 4,
     "participants": [
@@ -97,7 +97,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.1,
+   "ageDays": 0.11,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -165,7 +165,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.13,
+   "ageDays": 0.14,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -176,7 +176,7 @@
     "cicJoinedAt": "2026-11-18T09:22:06Z",
     "lastHumanTs": "2026-11-18T12:04:16Z",
     "lastCicTs": "2026-11-18T09:24:07Z",
-    "humanMsgLast30m": 1,
+    "humanMsgLast30m": 0,
     "humanMsgLast60m": 3,
     "humanMsgLast24h": 10,
     "participants": [
@@ -230,7 +230,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.2,
+   "ageDays": 0.21,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -293,7 +293,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 1.21,
+   "ageDays": 1.22,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -304,7 +304,7 @@
     "cicJoinedAt": "2026-11-18T01:07:39Z",
     "lastHumanTs": "2026-11-18T12:12:04Z",
     "lastCicTs": "2026-11-18T09:05:56Z",
-    "humanMsgLast30m": 1,
+    "humanMsgLast30m": 0,
     "humanMsgLast60m": 1,
     "humanMsgLast24h": 33,
     "participants": [
@@ -362,7 +362,7 @@
    "isEscalated": false,
    "redAccount": true,
    "serviceRestored": false,
-   "ageDays": 8.83,
+   "ageDays": 8.84,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -373,7 +373,7 @@
     "cicJoinedAt": "2026-11-18T06:54:34Z",
     "lastHumanTs": "2026-11-18T12:18:34Z",
     "lastCicTs": "2026-11-18T11:55:30Z",
-    "humanMsgLast30m": 2,
+    "humanMsgLast30m": 1,
     "humanMsgLast60m": 4,
     "humanMsgLast24h": 53,
     "participants": [
@@ -385,7 +385,8 @@
      "Rohit Kala",
      "Vinay Pratap Singh",
      "Rahul Kathade",
-     "R\u00f3bert Koltai"
+     "R\u00f3bert Koltai",
+     "Karen Nash-Marchand"
     ],
     "bridgeMentioned": true,
     "lastBridgeTs": "2026-11-18T09:50:31Z",
@@ -432,7 +433,7 @@
    "isEscalated": true,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 13.97,
+   "ageDays": 13.98,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -494,7 +495,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 13.99,
+   "ageDays": 14,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -564,7 +565,7 @@
    "isEscalated": false,
    "redAccount": true,
    "serviceRestored": false,
-   "ageDays": 0.97,
+   "ageDays": 0.98,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -576,7 +577,7 @@
     "lastHumanTs": "2026-11-18T12:25:22Z",
     "lastCicTs": "2026-11-18T10:30:41Z",
     "humanMsgLast30m": 1,
-    "humanMsgLast60m": 3,
+    "humanMsgLast60m": 1,
     "humanMsgLast24h": 19,
     "participants": [
      "Pavan Kumar Boya",
@@ -616,47 +617,6 @@
   }
  ],
  "history": [
-  {
-   "ts": "2026-11-18T10:44:09+00:00",
-   "cases": {
-    "484988675": {
-     "m60": 5,
-     "m30": 0,
-     "lastHuman": "2026-11-18T10:11:29Z",
-     "status": "Need More Information"
-    },
-    "484979598": {
-     "m60": 6,
-     "m30": 1,
-     "lastHuman": "2026-11-18T10:20:50Z",
-     "status": "Need More Information"
-    },
-    "484960341": {
-     "m60": 3,
-     "m30": 1,
-     "lastHuman": "2026-11-18T10:42:20Z",
-     "status": "Working"
-    },
-    "484669121": {
-     "m60": 0,
-     "m30": 0,
-     "lastHuman": "2026-11-18T09:05:56Z",
-     "status": "Working"
-    },
-    "482442680": {
-     "m60": 4,
-     "m30": 3,
-     "lastHuman": "2026-11-18T10:36:32Z",
-     "status": "Need More Information"
-    },
-    "480445853": {
-     "m60": 7,
-     "m30": 4,
-     "lastHuman": "2026-11-18T10:29:27Z",
-     "status": "Working"
-    }
-   }
-  },
   {
    "ts": "2026-11-18T10:54:04+00:00",
    "cases": {
@@ -1234,6 +1194,65 @@
     },
     "484740694": {
      "m60": 3,
+     "m30": 1,
+     "lastHuman": "2026-11-18T12:25:22Z",
+     "status": "Working"
+    }
+   }
+  },
+  {
+   "ts": "2026-11-18T12:48:31+00:00",
+   "cases": {
+    "485013416": {
+     "m60": 4,
+     "m30": 2,
+     "lastHuman": "2026-11-18T12:30:51Z",
+     "status": "Working"
+    },
+    "484988675": {
+     "m60": 1,
+     "m30": 0,
+     "lastHuman": "2026-11-18T12:03:07Z",
+     "status": "Need More Information"
+    },
+    "484979598": {
+     "m60": 3,
+     "m30": 0,
+     "lastHuman": "2026-11-18T12:04:16Z",
+     "status": "Need More Information"
+    },
+    "484960341": {
+     "m60": 1,
+     "m30": 1,
+     "lastHuman": "2026-11-18T12:21:17Z",
+     "status": "Working"
+    },
+    "484669121": {
+     "m60": 1,
+     "m30": 0,
+     "lastHuman": "2026-11-18T12:12:04Z",
+     "status": "Working"
+    },
+    "482442680": {
+     "m60": 4,
+     "m30": 1,
+     "lastHuman": "2026-11-18T12:18:34Z",
+     "status": "Need More Information"
+    },
+    "480445853": {
+     "m60": 2,
+     "m30": 1,
+     "lastHuman": "2026-11-18T12:23:54Z",
+     "status": "Working"
+    },
+    "480436048": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T11:27:47Z",
+     "status": "Working"
+    },
+    "484740694": {
+     "m60": 1,
      "m30": 1,
      "lastHuman": "2026-11-18T12:25:22Z",
      "status": "Working"
