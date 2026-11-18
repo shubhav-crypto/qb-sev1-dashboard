@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-18T11:14:27+00:00",
+  "generated": "2026-11-18T11:25:09+00:00",
   "intervalMin": 10,
   "refreshedBy": "shubhav-crypto",
   "totalCic": 8,
@@ -20,7 +20,7 @@
    "cicFlag": true,
    "cicSubstatus": "Initial Impact Assessment",
    "lastPublicActivity": "2026-11-18T11:09:33.000+0000",
-   "lastModified": "2026-11-18T11:09:35.000+0000",
+   "lastModified": "2026-11-18T11:22:36.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
@@ -88,12 +88,12 @@
    "cicFlag": true,
    "cicSubstatus": null,
    "lastPublicActivity": null,
-   "lastModified": "2026-11-18T10:27:00.000+0000",
+   "lastModified": "2026-11-18T11:18:26.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.08,
+   "ageDays": 0.09,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -105,7 +105,7 @@
     "lastHumanTs": "2026-11-18T10:20:50Z",
     "lastCicTs": "2026-11-18T09:24:07Z",
     "humanMsgLast30m": 0,
-    "humanMsgLast60m": 6,
+    "humanMsgLast60m": 0,
     "humanMsgLast24h": 6,
     "participants": [
      "Gianlucantonio Mastrogiacomo",
@@ -143,12 +143,12 @@
    "cicFlag": true,
    "cicSubstatus": "Customer - Active Troubleshooting",
    "lastPublicActivity": "2026-11-18T07:48:00.000+0000",
-   "lastModified": "2026-11-18T10:43:40.000+0000",
+   "lastModified": "2026-11-18T11:16:13.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 0.14,
+   "ageDays": 0.15,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -157,11 +157,11 @@
     "channelCreated": "2026-11-18T07:45:44Z",
     "cicCommander": "Vishnu Nambiar",
     "cicJoinedAt": "2026-11-18T07:47:27Z",
-    "lastHumanTs": "2026-11-18T10:42:20Z",
+    "lastHumanTs": "2026-11-18T11:17:31Z",
     "lastCicTs": "2026-11-18T09:57:45Z",
-    "humanMsgLast30m": 0,
-    "humanMsgLast60m": 1,
-    "humanMsgLast24h": 15,
+    "humanMsgLast30m": 1,
+    "humanMsgLast60m": 2,
+    "humanMsgLast24h": 16,
     "participants": [
      "Vishnu Nambiar",
      "Gaurang Joshi",
@@ -179,22 +179,17 @@
     "backlineEngaged": null,
     "recent": [
      {
+      "ts": "2026-11-18T11:17:31Z",
+      "author": "Gaurang Joshi",
+      "text": ""
+     },
+     {
       "ts": "2026-11-18T10:42:20Z",
       "author": "Gaurang Joshi",
       "text": ""
-     },
-     {
-      "ts": "2026-11-18T10:02:04Z",
-      "author": "Gaurang Joshi",
-      "text": ""
-     },
-     {
-      "ts": "2026-11-18T09:57:45Z",
-      "author": "Vishnu Nambiar",
-      "text": ""
      }
     ],
-    "summary": "Owner shared investigation findings and asked the customer for a reproducible scenario; next step is waiting on the customer.",
+    "summary": "Owner posted further debugging findings on the flow fault path and where to look in the debug logs.",
     "error": null
    }
   },
@@ -216,7 +211,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 1.16,
+   "ageDays": 1.17,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -280,7 +275,7 @@
    "isEscalated": false,
    "redAccount": true,
    "serviceRestored": false,
-   "ageDays": 8.77,
+   "ageDays": 8.78,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -289,11 +284,11 @@
     "channelCreated": "2026-11-18T06:45:56Z",
     "cicCommander": "Vishnu Nambiar",
     "cicJoinedAt": "2026-11-18T06:54:34Z",
-    "lastHumanTs": "2026-11-18T10:53:42Z",
-    "lastCicTs": "2026-11-18T10:31:14Z",
+    "lastHumanTs": "2026-11-18T11:24:17Z",
+    "lastCicTs": "2026-11-18T11:24:17Z",
     "humanMsgLast30m": 1,
     "humanMsgLast60m": 4,
-    "humanMsgLast24h": 47,
+    "humanMsgLast24h": 48,
     "participants": [
      "Vishnu Nambiar",
      "Ravindra Ejjada",
@@ -312,6 +307,11 @@
     "backlineEngaged": true,
     "recent": [
      {
+      "ts": "2026-11-18T11:24:17Z",
+      "author": "Vishnu Nambiar",
+      "text": ""
+     },
+     {
       "ts": "2026-11-18T10:53:42Z",
       "author": "Sai Vikram Kinnera",
       "text": ""
@@ -320,14 +320,9 @@
       "ts": "2026-11-18T10:36:32Z",
       "author": "Rahul Kathade",
       "text": ""
-     },
-     {
-      "ts": "2026-11-18T10:31:14Z",
-      "author": "Vishnu Nambiar",
-      "text": ""
      }
     ],
-    "summary": "Warm handover from APAC: product team engaged and Database Performance team paged; a replacement engineer is being arranged and the owner was asked to follow up with the customer.",
+    "summary": "CIC posted an internal call update: support, product and database teams traced the failure to a database connection drop tied to a pod version update during the deployment window.",
     "error": null
    }
   },
@@ -349,7 +344,7 @@
    "isEscalated": true,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 13.91,
+   "ageDays": 13.92,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -361,7 +356,7 @@
     "lastHumanTs": "2026-11-18T10:29:27Z",
     "lastCicTs": "2026-11-18T10:24:03Z",
     "humanMsgLast30m": 0,
-    "humanMsgLast60m": 4,
+    "humanMsgLast60m": 1,
     "humanMsgLast24h": 7,
     "participants": [
      "Neha Mishra",
@@ -416,7 +411,7 @@
    "isEscalated": false,
    "redAccount": false,
    "serviceRestored": false,
-   "ageDays": 13.93,
+   "ageDays": 13.94,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -425,11 +420,11 @@
     "channelCreated": "2026-11-18T06:34:26Z",
     "cicCommander": "Sonia Notani",
     "cicJoinedAt": "2026-11-18T09:28:42Z",
-    "lastHumanTs": "2026-11-18T11:13:09Z",
+    "lastHumanTs": "2026-11-18T11:16:38Z",
     "lastCicTs": "2026-11-18T11:13:09Z",
-    "humanMsgLast30m": 5,
-    "humanMsgLast60m": 5,
-    "humanMsgLast24h": 25,
+    "humanMsgLast30m": 7,
+    "humanMsgLast60m": 7,
+    "humanMsgLast24h": 27,
     "participants": [
      "Manikanta Mullaguru",
      "Ravindra Ejjada",
@@ -449,22 +444,22 @@
     "backlineEngaged": true,
     "recent": [
      {
+      "ts": "2026-11-18T11:16:38Z",
+      "author": "Ravindra Ejjada",
+      "text": ""
+     },
+     {
+      "ts": "2026-11-18T11:16:32Z",
+      "author": "Ravindra Ejjada",
+      "text": ""
+     },
+     {
       "ts": "2026-11-18T11:13:09Z",
       "author": "Sonia Notani",
       "text": ""
-     },
-     {
-      "ts": "2026-11-18T11:11:40Z",
-      "author": "Ravindra Ejjada",
-      "text": ""
-     },
-     {
-      "ts": "2026-11-18T11:10:38Z",
-      "author": "Ravindra Ejjada",
-      "text": ""
      }
     ],
-    "summary": "Customer call concluded; CIC posted the summary and next steps (customer to share a working email sample, owner to send findings) and asked whether CIC can disengage.",
+    "summary": "Customer call concluded and next steps agreed; owner asked CIC to stay on standby until 7 PM IST, then disengage and route the case back to APAC.",
     "error": null
    }
   },
@@ -481,12 +476,12 @@
    "cicFlag": true,
    "cicSubstatus": null,
    "lastPublicActivity": null,
-   "lastModified": "2026-11-18T11:04:45.000+0000",
+   "lastModified": "2026-11-18T11:21:46.000+0000",
    "activeSwarm": true,
    "isEscalated": false,
    "redAccount": true,
    "serviceRestored": false,
-   "ageDays": 0.91,
+   "ageDays": 0.92,
    "hasBridge": false,
    "slack": {
     "found": true,
@@ -506,7 +501,8 @@
      "Karen Nash-Marchand",
      "Arvind Kumar Attri",
      "Rohit Kala",
-     "Naveen Salutagi"
+     "Naveen Salutagi",
+     "Sai Vikram Kinnera"
     ],
     "bridgeMentioned": false,
     "lastBridgeTs": null,
@@ -537,23 +533,6 @@
   }
  ],
  "history": [
-  {
-   "ts": "2026-11-18T09:23:06+00:00",
-   "cases": {
-    "484960341": {
-     "m60": 7,
-     "m30": 3,
-     "lastHuman": "2026-11-18T09:10:07Z",
-     "status": "Working"
-    },
-    "482442680": {
-     "m60": 3,
-     "m30": 0,
-     "lastHuman": "2026-11-18T08:41:04Z",
-     "status": "Working"
-    }
-   }
-  },
   {
    "ts": "2026-11-18T09:23:26+00:00",
    "cases": {
@@ -965,6 +944,59 @@
      "m60": 5,
      "m30": 5,
      "lastHuman": "2026-11-18T11:13:09Z",
+     "status": "Working"
+    },
+    "484740694": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T10:30:41Z",
+     "status": "Working"
+    }
+   }
+  },
+  {
+   "ts": "2026-11-18T11:25:09+00:00",
+   "cases": {
+    "484988675": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T10:11:29Z",
+     "status": "Working"
+    },
+    "484979598": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T10:20:50Z",
+     "status": "Need More Information"
+    },
+    "484960341": {
+     "m60": 2,
+     "m30": 1,
+     "lastHuman": "2026-11-18T11:17:31Z",
+     "status": "Working"
+    },
+    "484669121": {
+     "m60": 0,
+     "m30": 0,
+     "lastHuman": "2026-11-18T09:05:56Z",
+     "status": "Working"
+    },
+    "482442680": {
+     "m60": 4,
+     "m30": 1,
+     "lastHuman": "2026-11-18T11:24:17Z",
+     "status": "Need More Information"
+    },
+    "480445853": {
+     "m60": 1,
+     "m30": 0,
+     "lastHuman": "2026-11-18T10:29:27Z",
+     "status": "Working"
+    },
+    "480436048": {
+     "m60": 7,
+     "m30": 7,
+     "lastHuman": "2026-11-18T11:16:38Z",
      "status": "Working"
     },
     "484740694": {
